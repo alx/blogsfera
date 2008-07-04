@@ -1,0 +1,296 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP-Print 2.20\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2008-02-05 14:31+0100\n"
+"Last-Translator: Maria Rodriguez <maria@lasindias.com>\n"
+"Language-Team: Lester Chan <gamerz84@hotmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: SINGAPORE\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: print-options.php:32
+#: print-options.php:239
+msgid "Update Options"
+msgstr "Actualizar opciones"
+
+#: print-options.php:46
+#: print-options.php:131
+#: print-options.php:197
+msgid "Print Options"
+msgstr "Opciones de impresi&oacute;n"
+
+#: print-options.php:51
+msgid "Updated"
+msgstr "Actualizar"
+
+#: print-options.php:56
+msgid "No Print Option Updated"
+msgstr "Ninguna opci&oacute;n de impresi&oacute;n actualizada"
+
+#: print-options.php:60
+#: print-options.php:277
+msgid "UNINSTALL WP-Print"
+msgstr "DESINSTALAR WP-Print"
+
+#: print-options.php:68
+#, php-format
+msgid "Setting Key '%s' has been deleted."
+msgstr "Setting Key '%s' borrada."
+
+#: print-options.php:72
+#, php-format
+msgid "Error deleting Setting Key '%s'."
+msgstr "Error borrando Setting Key '%s'."
+
+#: print-options.php:94
+#: print-options.php:247
+msgid "Uninstall WP-Print"
+msgstr "Desinstalar WP-Print"
+
+#: print-options.php:95
+#, php-format
+msgid "<a href=\"%s\">Click Here</a> To Finish The Uninstallation And WP-Print Will Be Deactivated Automatically."
+msgstr "<a href=\"%s\">Pulse aqu&iacute;</a> para finalizar la desinstalaci&oacute;n y WP-Print ser&aacute; autom&aacute;ticamente desactivado"
+
+#: print-options.php:121
+#: print.php:368
+#, php-format
+msgid "Copyright &copy; %s %s. All rights reserved."
+msgstr ""
+
+#: print-options.php:133
+msgid "Print Styles"
+msgstr "Estilos de impresi&oacute;n"
+
+#: print-options.php:136
+msgid "Print Text Link For Post"
+msgstr "Mostrar enlace de texto en el post."
+
+#: print-options.php:142
+msgid "Print Text Link For Page"
+msgstr "Mostrar enlace de texto en la p&aacute;gina."
+
+#: print-options.php:148
+msgid "Print Icon"
+msgstr "Mostrar icono"
+
+#: print-options.php:176
+msgid "Print Text Link Style"
+msgstr "Mostrar estilo de enlace de texto."
+
+#: print-options.php:179
+msgid "Print Icon With Text Link"
+msgstr "Mostrar icono con enlace de texto."
+
+#: print-options.php:180
+msgid "Print Icon Only"
+msgstr "Mostrar s&oacute;lo el icono."
+
+#: print-options.php:181
+msgid "Print Text Link Only"
+msgstr "Mostrar s&oacute;lo enlace de texto."
+
+#: print-options.php:182
+msgid "Custom"
+msgstr "Personalizada."
+
+#: print-options.php:186
+#: print-options.php:233
+msgid "HTML is allowed."
+msgstr "HTML permitido."
+
+#: print-options.php:187
+msgid "URL to the printable post/page."
+msgstr "URL del post o p&aacute;gina imprimible."
+
+#: print-options.php:188
+msgid "Print text link of the post/page that you have typed in above."
+msgstr "Mostrar texto de enlace del post o página que usted ha escrito arriba."
+
+#: print-options.php:189
+msgid "URL to the print icon you have chosen above."
+msgstr "URL del icono de impresi&oacute;n que usted ha elegido arriba."
+
+#: print-options.php:190
+#: print-options.php:230
+msgid "Restore Default Template"
+msgstr "Restablecer plantilla por defecto"
+
+#: print-options.php:200
+msgid "Print Comments?"
+msgstr "&#191;Imprimir comentarios?"
+
+#: print-options.php:203
+#: print-options.php:212
+#: print-options.php:221
+#: print-options.php:276
+msgid "Yes"
+msgstr "S&iacute;"
+
+#: print-options.php:204
+#: print-options.php:213
+#: print-options.php:222
+msgid "No"
+msgstr ""
+
+#: print-options.php:209
+msgid "Print Links?"
+msgstr "&#191;Imprimir enlaces?"
+
+#: print-options.php:218
+msgid "Print Images?"
+msgstr "&#191;Imprimir im&aacute;genes?"
+
+#: print-options.php:228
+msgid "Disclaimer/Copyright Text?"
+msgstr "&#191;Texto de Disclaimer/Copyright?"
+
+#: print-options.php:239
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: print-options.php:249
+msgid "Deactivating WP-Print plugin does not remove any data that may have been created, such as the print options. To completely remove this plugin, you can uninstall it here."
+msgstr "Desactivar el plugin no supone el borrado de datos que hayan sido creados, como las opciones de impresi&oacute;n. Para eliminar completamente este plugin, tiene que desinstalarlo aqu&iacute;."
+
+#: print-options.php:252
+msgid "WARNING:"
+msgstr "ADVERTENCIA:"
+
+#: print-options.php:253
+msgid "Once uninstalled, this cannot be undone. You should use a Database Backup plugin of WordPress to back up all the data first."
+msgstr "Una vez desinstalado, no hay vuelta atr&aacute;s. Debe usar primero un plugin de Wordpress de backups para salvar los datos"
+
+#: print-options.php:256
+msgid "The following WordPress Options will be DELETED:"
+msgstr "Las siguientes opciones de Wordpress ser&aacute;n BORRADAS:"
+
+#: print-options.php:260
+msgid "WordPress Options"
+msgstr "Opciones de WordPress"
+
+#: print-options.php:277
+msgid ""
+"You Are About To Uninstall WP-Print From WordPress.\\n"
+"This Action Is Not Reversible.\\n"
+"\\n"
+" Choose [Cancel] To Stop, [OK] To Uninstall."
+msgstr ""
+"Est&aacute; usted a punto de desinstalar WP-Print de WordPress.\\n"
+"Esta acci&oacute;n no es reversible.\\n"
+"\\n"
+" Elija [Cancel] para parar, [OK] para desinstalar."
+
+#: print.php:42
+msgid "Print"
+msgstr "Imprimir"
+
+#: print.php:158
+msgid "Note: There is a print link embedded within this post, please visit this post to print it."
+msgstr "Nota: Hay un enlace de impresi&oacute;n embebido dentro de este post, por favor visite el post para imprimirlo"
+
+#: print.php:204
+#: print.php:257
+msgid "Image"
+msgstr "Imagen"
+
+#: print.php:279
+msgid "No Comments"
+msgstr "Sin comentarios"
+
+#: print.php:281
+msgid "1 Comment"
+msgstr "1 comentario"
+
+#: print.php:283
+#, php-format
+msgid "%s Comments"
+msgstr "%s comentarios"
+
+#: print.php:286
+msgid "Comments Disabled"
+msgstr "Comentarios deshabilitados"
+
+#: print.php:289
+msgid "Comments Hidden"
+msgstr "Comentarios ocultos"
+
+#: print.php:300
+msgid "URLs in this post:"
+msgstr "URLs en este post:"
+
+#: print.php:360
+msgid "Print This Post"
+msgstr "Imprimir este post"
+
+#: print.php:361
+msgid "Print This Page"
+msgstr "Imprimir esta p&aacute;gina"
+
+#: wp-print-comments.php:21
+msgid "Open"
+msgstr "Abrir"
+
+#: wp-print-comments.php:21
+msgid "Close"
+msgstr "Cerrar"
+
+#: wp-print-comments.php:23
+msgid "To"
+msgstr "A"
+
+#: wp-print-comments.php:26
+msgid "By"
+msgstr "Por"
+
+#: wp-print-comments.php:26
+#: wp-print.php:48
+msgid "On"
+msgstr "El"
+
+#: wp-print-comments.php:30
+msgid "Your comment is awaiting moderation."
+msgstr "Su comentario est&aacute; esperando moderaci&oacute;n."
+
+#: wp-print.php:48
+msgid "Posted By"
+msgstr "Escrito por"
+
+#: wp-print.php:48
+msgid "In"
+msgstr "En"
+
+#: wp-print.php:55
+msgid "Article printed from"
+msgstr "Art&iacute;culo impreso desde"
+
+#: wp-print.php:56
+msgid "URL to article"
+msgstr "URL del art&iacute;culo"
+
+#: wp-print.php:60
+msgid "Click"
+msgstr "Pulse"
+
+#: wp-print.php:60
+msgid "Click here to print."
+msgstr "Pulse aqu&iacute; para imprimir."
+
+#: wp-print.php:60
+msgid "here"
+msgstr "aqu&iacute;"
+
+#: wp-print.php:60
+msgid "to print."
+msgstr "para imprimir."
+
+#: wp-print.php:62
+msgid "No posts matched your criteria."
+msgstr "Ning&uacute;n post encaja con el criterio."
+

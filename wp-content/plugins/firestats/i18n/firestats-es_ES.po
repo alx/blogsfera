@@ -1,0 +1,2488 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FireStats 0.9.5-beta\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2007-10-10 09:22+0100\n"
+"Last-Translator: Motarile <motarile@gmail.com>\n"
+"Language-Team: Omry Nayam <motarile@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish(Castellano)\n"
+"X-Poedit-Country: Spain\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: fs_e;fs_r\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: c:\\FS\n"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/firestats-wordpress.php:29
+# C:\www\testwp-en\wp-content\plugins\FireStats/index.php:51
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/footer.php:8
+msgid "FireStats"
+msgstr "FireStats"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/firestats-wordpress.php:29
+msgid "Loading..."
+msgstr "Cargando..."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/firestats-wordpress.php:49
+#, php-format
+msgid "Total : %s hits and %s unique hits"
+msgstr "Total : %s páginas vistas y %s visitas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/firestats-wordpress.php:50
+#, php-format
+msgid "Last 24 hours : %s hits and %s unique hits"
+msgstr "Últimas 24 horas : %s páginas vistas y %s visitas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:296
+msgid "FireStats is installed inside WordPress"
+msgstr "FireStats está  instalado en Wordpress"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/index.php:26
+msgid "Please access it from the WordPress admin interface"
+msgstr "Por favor, accede a través del interface de administración de Wordpress"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/js/firestats-admin.js.php:52
+# C:\www\testwp-en\wp-content\plugins\FireStats/js/firestats-admin.js.php:80
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:3
+msgid "Refresh statistics"
+msgstr "Actualizar estadísticas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/js/firestats-admin.js.php:69
+# C:\www\testwp-en\wp-content\plugins\FireStats/js/firestats-admin.js.php:190
+msgid "Not a positive number : "
+msgstr "No es un número positivo :"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/js/firestats-admin.js.php:97
+msgid "You need to select an bot you want to remove from the table"
+msgstr "Es necesario seleccionar el BOT que quieras eliminar de la tabla"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/js/firestats-admin.js.php:119
+msgid "Invalid IP address"
+msgstr "Dirección IP inválida"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/js/firestats-admin.js.php:128
+msgid "You need to select an IP address you want to remove from the table"
+msgstr "Es necesario seleccionar la dirección IP que quieras eliminar de la tabla"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/first_time.php:116
+msgid "Import in progress"
+msgstr "Realizando la importación"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:62
+#, php-format
+msgid "Unsupported action code : %s"
+msgstr "Código de acción no soportado: %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:69
+#, php-format
+msgid "Unexpexted output: %s"
+msgstr "Salida inesperada: %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:81
+#, php-format
+msgid "Saved %d entries to show"
+msgstr "Guardadas %d entradas a mostrar"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:83
+msgid "Saved"
+msgstr "Guardado"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:94
+#, php-format
+msgid "Imported %d records from Counterize"
+msgstr "Importados %d registros desde Counterize"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/first_time.php:34
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/first_time.php:130
+msgid "Import"
+msgstr "Importar"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:99
+#, php-format
+msgid "An Error occured while importing from Counterize : %s"
+msgstr "Ocurrió un error importando desde Counterize : %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:110
+#, php-format
+msgid "Added %s to exclude list"
+msgstr "Añadido %s a la lista de exclusión"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:126
+#, php-format
+msgid "Removed %s from exclude list"
+msgstr "Eliminado %s de la lista de exclusión"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:171
+msgid "Excluded users list saved"
+msgstr "Lista de usuarios excluidos guardada"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:189
+#, php-format
+msgid "Added %s to bots list"
+msgstr "añadido %s a la lista de BOT's"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:201
+msgid "Empty string is not allowed"
+msgstr "No están permitidas las cadenas vacias"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:211
+msgid "Removed"
+msgstr "Eliminado"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:290
+msgid "Not using configuration file"
+msgstr "Sin usar fichero de configuración"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:296
+msgid "Not installed inside Wordpress"
+msgstr "No instalado en Wordpress"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:306
+#, php-format
+msgid "Failed to delete fs-config.php : %s"
+msgstr "Falló el borrado de fs-config.php : %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:328
+msgid "Error creating config file: "
+msgstr "Error al crear fichero de configuración:"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:354
+msgid "Error upgrading tables"
+msgstr "Error al actualizar tablas:"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:354
+msgid "Error installing tables"
+msgstr "Error al instalar tablas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+msgid "Error rebuilding database cache"
+msgstr "Error reconstruyendo la caché de la base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:354
+msgid "Database cache rebuilt successfully"
+msgstr "Caché de la base de datos reconstruida satisfactoriamente."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/ajax-handler.php:515
+#, php-format
+msgid "Unkown field: %s"
+msgstr "Campo desconocido: %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/ajax-handler.php:563
+msgid "file"
+msgstr "archivo"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/ajax-handler.php:565
+msgid "An error has occured while trying to update the IP-to-country database"
+msgstr "Ocurrió un error al intentar actualizar la base de datos de IP-to-country"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/ajax-handler.php:567
+#, php-format
+msgid "You can update the database manually by downloading this %s and extracting it into %s"
+msgstr "Puede actualizar la base de datos manualmente desgardando este %s y extrayéndolo dentro de %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/ajax-handler.php:568
+msgid "Error"
+msgstr "Error"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-settings.php:17
+msgid "IP-to-country database is already up-to-date"
+msgstr "La base de datos IP-to-country ya está actualizada"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/ajax-handler.php:583
+#, php-format
+msgid "Error purging excluded records: %s"
+msgstr "Error al purgar registros excluidos: %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/ajax-handler.php:588
+msgid "Purged excluded records"
+msgstr "Purgados los registros excluidos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:61
+msgid "Database tab"
+msgstr "Pestaña de la base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+msgid "FireStats database tab"
+msgstr "Pestaña de base de datos Firestats"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db_config_utils.php:118
+msgid "FireStats is properly installed in the database"
+msgstr "Firestats está instalado correctamente."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db-common.php:98
+#, php-format
+msgid "Database error, go to the %s to correct configuration"
+msgstr "Error en la base de datos, mira en %s para corregir la configuración"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db-common.php:101
+#, php-format
+msgid "FireStats is not installed in the database, go to the %s to configure FireStats"
+msgstr "FireStats no está instalado en la base de datos, vaya a la %s para configurar FireStats"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db-common.php:104
+#, php-format
+msgid "FireStats database need to be upgraded, go to the %s to upgrade"
+msgstr "La base de datos de FireStats necesita ser actualizada, mira en %s para actualizarla."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db-common.php:107
+msgid "The FireStats database version is newer this code version, you need to upgrade FireStats"
+msgstr "La versión de la base de datos es posterior a la versión del programa, necesita actualizar FireStats"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db-common.php:110
+msgid "Unknown database status code"
+msgstr "Código de estado de la base de datos desconocido"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+msgid "Error accessing database"
+msgstr "Error accediendo a la  base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+msgid "Error connecting to database"
+msgstr "Error al conectar a la base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/db-config-utils.php:25
+msgid "Cannot write configuration file (read only file or directory)"
+msgstr "Imposible escribir fichero de configuración (fichero de sólo lectura o directorio)"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+msgid "Error creating database"
+msgstr "Eror al crear la base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:328
+msgid "Error creating user"
+msgstr "Error al crear usuario"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+msgid "Error creating tables"
+msgstr "Error al crear tablas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:290
+msgid "Error saving configuration"
+msgstr "Error guardando configuración"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/db-config-utils.php:40
+msgid "Password not specified"
+msgstr "La contraseña no ha sido especificada"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/tabbed-pane.php:39
+msgid "Wrong password"
+msgstr "Contraseña errónea"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db_config_utils.php:110
+msgid "FireStats tables are not installed"
+msgstr "Las tablas de FireStats no están instaladas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db_config_utils.php:118
+msgid "FireStats is installed"
+msgstr "Firestats está instalado"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db_config_utils.php:124
+msgid "Another FireStats database detected"
+msgstr "Detectada otra base de datos de FireStats"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db-config-utils.php:198
+msgid "New database created successfuly"
+msgstr "Nueva base de datos creada satisfactoriamente."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:22
+msgid "Configuration is locked"
+msgstr "Configuración bloqueada"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:328
+msgid "Error changing lock file"
+msgstr "Error al modificar fichero de bloqueos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:22
+msgid "Configuration unlocked"
+msgstr "Configuración desbloqueada"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ezsql/mysql/ez_sql_mysql.php:45
+#, php-format
+msgid "Unexpected error code %s"
+msgstr "Código de error inesperado %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db-config-utils.php:15
+msgid "Not configured"
+msgstr "No configurado"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db_config_utils.php:11
+msgid "FireStats configuration file"
+msgstr "Fichero de configuración FireStats"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db_config_utils.php:13
+msgid "Wordpress configuration file"
+msgstr "Fichero de configuración de Wordpress"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1384
+msgid "Counterize not detected"
+msgstr "Counterize no detectado"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:453
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:487
+#, php-format
+msgid "Invalid IP address: %s"
+msgstr "Dirección IP inválida: %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:463
+#, php-format
+msgid "The IP address %s is already in the database"
+msgstr "La dirección IP %s ya está en la base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:522
+#, php-format
+msgid "The bot wildcard %s is already in the database"
+msgstr "La máscara para el bot %s ya está en la base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/db-sql.php:541
+msgid "Others"
+msgstr "Otros"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1482
+#, php-format
+msgid "Database error: %s"
+msgstr "Error en la base de datos: %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/html-utils.php:27
+msgid "Invalid"
+msgstr "Inválido"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:943
+msgid "unknown"
+msgstr "desconocido"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:998
+msgid "IP"
+msgstr "IP"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:999
+msgid "TimeStamp"
+msgstr "Timestamp"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1000
+msgid "URL"
+msgstr "URL"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1001
+msgid "Referrer"
+msgstr "Referrer"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1002
+msgid "Image"
+msgstr "Imagen"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1003
+msgid "UserAgent"
+msgstr "UserAgent"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1024
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1047
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1217
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1319
+msgid "No data yet, go get some hits"
+msgstr "Todavia no hay datos, ve a buscar algún hit"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1112
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1145
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1170
+msgid "Empty"
+msgstr "Vacio"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1153
+msgid "excluded"
+msgstr "excluido"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db_config_utils.php:10
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1226
+msgid "Unknown"
+msgstr "Desconocido"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1248
+#, php-format
+msgid "(%d hits) (%d more from %s)"
+msgstr "(%d páginas vistas) (%d más desde %s)"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1253
+#, php-format
+msgid "%d hits"
+msgstr "%d páginas vistas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1270
+#, php-format
+msgid "%d hits from %s"
+msgstr "%d páginas vistas desde %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:328
+msgid "Error creating temporary file"
+msgstr "Error al crear fichero fichero tempora"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+#, php-format
+msgid "Error opening connection to %s"
+msgstr "Error al abrir conexión con %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/ip2country.php:27
+#, php-format
+msgid "Error sending request to %s"
+msgstr "Error al enviar solicitud a %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+#, php-format
+msgid "Error reading data from %s : %s"
+msgstr "Error leyendo datos desde %s : %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-settings.php:17
+#, php-format
+msgid "Error extracting IP-to-country database: %s"
+msgstr "Error extrayendo base de datos IP-to-country : %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:62
+#, php-format
+msgid "Unsupported file type : %s"
+msgstr "Tipo de fichero no soportado : %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/ip2country.php:157
+#, php-format
+msgid "can't update ip-to-country database, read-only directory : %s"
+msgstr "No se puede actualizar la base de datos IP-to-country, directorio de sólo lectura : %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-settings.php:17
+#, php-format
+msgid "can't update ip-to-country database, read-only file : %s"
+msgstr "No se puede actualizar base de datos IP-to-country, fichero de sólo lectura : %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-settings.php:17
+msgid "Error installing new IP-to-country database"
+msgstr "Error instalando nueva base de datos IP-to-country"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-settings.php:17
+msgid "Successfuly updated IP-to-country database"
+msgstr "Base de datos IP-to-country actualizada satisfactoriamente"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:328
+#, php-format
+msgid "Error updating version file : %s"
+msgstr "Error al actualizar fichero de versión : %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db_config_utils.php:124
+msgid "FireStats database need to be upgraded."
+msgstr "La base de datos de FireStats necesita ser actualizada"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-database.php:73
+msgid "Upgrade"
+msgstr "Actualizar"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:22
+#, php-format
+msgid "Configuration source : %s"
+msgstr "Origen de configuración : %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:28
+msgid "To use wordpress database, click this button."
+msgstr "Para usar la base de datos de Wordpress, pulsa éste botón"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:29
+msgid "FireStats database configuration will be lost."
+msgstr "Se perderá la base de datos de configuración de FireStats"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:30
+msgid "Use Wordpress database"
+msgstr "Usar la base de datos de Wordpress"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:50
+msgid "To perform one of the following actions:"
+msgstr "Para realizar una de las siguientes acciones:"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:52
+msgid "Attach to an existing FireStats installation"
+msgstr "Unirse / usar una instalació existente de FireStats"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:53
+msgid "Install FireStats into an existing database"
+msgstr "Instalar FireStats en una base de datos existente"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:54
+msgid "Create a new database and install FireStats there"
+msgstr "Crear una base de datos nueva e instalar FireStats en ella"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-database.php:90
+msgid "Follow instructions in the help"
+msgstr "Siga las instrucciones de la ayuda"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:61
+msgid "Database host"
+msgstr "Host de la base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:65
+msgid "Database name"
+msgstr "Nombre de la base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:69
+msgid "Database user name"
+msgstr "Nombre de usuario de la base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:73
+msgid "Database password"
+msgstr "Contraseña de la base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:77
+msgid "Tables prefix"
+msgstr "Prefijo para las tablas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:84
+msgid "Test connection"
+msgstr "Probar conexión"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:94
+msgid "Click to install and switch to new FireStats tables"
+msgstr "Pulse para instalar y cambiar a las tablas nuevas de FireStats"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:97
+msgid "Install tables"
+msgstr "Instalar tablas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:106
+msgid "Click to use this FireStats database"
+msgstr "Pulsa para usar la base de datos de FireStats"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:30
+msgid "Use this database"
+msgstr "Usar esta base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-database.php:167
+msgid "To create a new database, an administrator user should be used in the above fields."
+msgstr "Para crear una nueva base de datos, un usuario administrador, deberia rellenar los campos a continuación."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-database.php:168
+msgid "However, For security reason, it is recommanded not to use a database administrator user for day to day operations."
+msgstr "Sin embargo, por razones de seguridad, es recomendable no usar una un usuario administrador para las operaciones diarias."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-database.php:169
+msgid "Enter new user name and password for FireStats, this user will only have access to the FireStats database"
+msgstr "Entre un nuevo nombre de usuario y contraseña para FireStats, este usuario sólo tendrá acceso a la base de datos de FireStats."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-database.php:170
+msgid "If you will not specify user and password the Admin user and password will be used."
+msgstr "Si no se especifica un usuario y una contraseña, el usuario Admin será usado."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db_config_utils.php:118
+msgid "FireStats User name"
+msgstr "Nombre de usuario de Firestats"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/tabbed-pane.php:39
+msgid "FireStats password"
+msgstr "Contraseña de FireStats"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+msgid "Create database"
+msgstr "Crear base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-database.php:21
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/tabbed-pane.php:86
+msgid "Help"
+msgstr "Ayuda"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:52
+msgid "Attach to an existing FireStats database"
+msgstr "Unirse (usar) una base de datos existente de FireStats"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-database.php:23
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-database.php:26
+#, php-format
+msgid "Enter the parameters in the table, press %s, and then %s."
+msgstr "Entre los parámetros en la tabla, pulse %s y después %s."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-database.php:29
+#, php-format
+msgid "Enter the parameters into the table, <u>you need to enter a database administrator user</u>. press %s, and then enter FireStats database user and password, and finally press %s."
+msgstr "Entre los parámetros en la tabla, <u> es necesario usar un usuario administrador de la base de datos </u>. Pulse %s, y después entre el usuario y la contraseña de base de datos de FireStats, y para finalizar pulse %s."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:22
+msgid "Configuration locked"
+msgstr "Configuración bloqueada"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-database.php:222
+msgid "To change the database configuration you need to unlock it, please enter the password."
+msgstr "Para cambiar la configuración de la base de datos es necesario desbloquearla, por favor introduzca la contraseña."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-database.php:223
+#, php-format
+msgid "if you forgot your password you can simply delete the file %s from firestats/php directory."
+msgstr "Si ha olvidado la contraseña, simplemente borre el fichero %s del directorio firestats/php."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-database.php:237
+msgid "Database configuration is locked, to unlock for 5 minutes enter the lock password."
+msgstr "Configuración de la base de datos bloqueada, entre la contraseña para desbloquearla durante 5 minutos."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-database.php:239
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-database.php:247
+msgid "Password"
+msgstr "Contraseña"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-database.php:240
+msgid "Unlock"
+msgstr "Desbloquear"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-database.php:245
+msgid "Database configuration is open for changes, enter a password to lock."
+msgstr "La configuración de la base de datos está lista para ser modificada, introduzca una contraseña para bloquearla."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-database.php:248
+msgid "Lock"
+msgstr "Bloquear"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-help.php:2
+msgid "Collect hits from PHP pages"
+msgstr "Recogiendo Hits de la páginas PHP"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/first_time.php:14
+msgid "To allow FireStats to track access to pages outside of Wordpress, you need to add the following line inside the head tag of each of the pages you want to monitor (the page must be a php page)."
+msgstr "Para permitir a FireStats llevar el control de accesos a tus páginas externas, necesitas añadir una linea similar a la siguiente en el tag de cabecera de cada una de las páginas que quieras monitorizar (la página ha de ser una página PHP)."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/first_time.php:14
+msgid "To allow FireStats to track access to your pages, you need to add the following line inside the head tag of each of the pages you want to monitor (the page must be a php page)."
+msgstr "Para permitir a FireStats llevar el control de accesos a tus páginas, necesitas añadir una linea similar a la siguiente en el tag de cabecera de cada una de las páginas que quieras monitorizar (la página ha de ser una página php)."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/first_time.php:21
+msgid "A typical page header will look like this:"
+msgstr "Una cabecera típica de página seria algo similar a esto:"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/first_time.php:37
+msgid "You can import your hits from another statistics system here."
+msgstr "Aqui puedes importar los hits de tu actual sistema de estadísticas."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+msgid "Recalculate database cache"
+msgstr "Recalcular caché de la base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-import.php:7
+msgid "In case of data consistency problems, The database cache may need to be rebuilt."
+msgstr "En caso de problemas de inconsistencia de datos, puede ser necesario reconstruir la caché de la base de datos."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-import.php:8
+msgid "Its not normally needed, but it does not cause any damage"
+msgstr "Normalmente no es necesario, aunque es recomendable realizarlo de tanto en tanto, hacerlo no provocará ningún tipo de daño."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/first_time.php:125
+msgid "Counterize"
+msgstr "Counterize "
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-import.php:16
+#, php-format
+msgid "%s detected"
+msgstr "%s detectados"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1384
+#, php-format
+msgid "%s was not detected"
+msgstr "%s no detectado"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-settings.php:5
+msgid "Automatic version check"
+msgstr "Control de versión automático"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:23
+msgid "Automatically check if there is a new version of FireStats (recommended)"
+msgstr "Comprobar automaticamente si hay una nueva versión de FireStats (recomendado)"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-settings.php:17
+msgid "IP-to-country database"
+msgstr "Base de datos IP-to-country"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-settings.php:17
+#, php-format
+msgid "IP-to-country database version : %s"
+msgstr "Versión base de datos IP-to-country : %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:23
+msgid "Automatically check if there is a new version of IP-to-country database"
+msgstr "Comprobar automaticamente si hay una nueva versión de FireStats"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-settings.php:17
+msgid "Update IP-to-country database now (only if needed)"
+msgstr "Actualizar base de datos IP-to-country ahora (sólo si es necesario )"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-database.php:73
+msgid "Update"
+msgstr "Actualizar"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-settings.php:40
+msgid "Language"
+msgstr "Idioma"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-settings.php:40
+msgid "Select language"
+msgstr "Seleccionar idioma"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:13
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:40
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:77
+msgid "Save"
+msgstr "Guardar"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-settings.php:45
+msgid "How to translate to a new language"
+msgstr "¿ Cómo traducirlo a un nuevo idioma ?"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:54
+msgid "Exclude hits"
+msgstr "Excluir hits"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-settings.php:69
+msgid "Save excluded records (not recommended)"
+msgstr "Guardar registros excluidos (no recomendado)"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:522
+msgid "Purge excluded records stored in the database"
+msgstr "Purgar registros excluidos almacenados en la base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-settings.php:75
+msgid "Purge"
+msgstr "Purgar"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:92
+msgid "Bots list"
+msgstr "Lista de BOT's"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:59
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:97
+msgid "Add"
+msgstr "añadir"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:60
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:98
+msgid "Remove"
+msgstr "Eliminar"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:54
+msgid "Excluded IPs"
+msgstr "IP's excluidas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:73
+msgid "Excluded users"
+msgstr "Usuarios excluidos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:36
+msgid "Auto refresh every"
+msgstr "Auto-refrescar cada"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:39
+msgid "minutes"
+msgstr "minutos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:7
+msgid "Status"
+msgstr "Estado"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:10
+msgid "Total hits:"
+msgstr "Páginas vistas totales:"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:11
+msgid "Unique hits ever"
+msgstr "Visitas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:12
+msgid "Hits in last 24 hours"
+msgstr "Páginas vistas en las últimas 24 horas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:13
+msgid "Unique hits in last 24 hours"
+msgstr "Visitas en las últimas 24 horas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:19
+msgid "Recent referrers"
+msgstr "Referrers recientes"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:23
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:50
+msgid "Maximum"
+msgstr "Máximo"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:31
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:58
+msgid "Days ago"
+msgstr "Días desde"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:26
+msgid "Recent popular pages"
+msgstr "Páginas más visitadas recientemente"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:33
+msgid "Browsers"
+msgstr "Navegadores"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:43
+msgid "Operating systems"
+msgstr "Sistemas operativos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/first_time.php:125
+msgid "Countries"
+msgstr "Paises"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:52
+msgid "Hits table"
+msgstr "Tabla de hits"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:8
+msgid "Number of hits to show"
+msgstr "Número de hits a mostrar"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/tabbed-pane.php:32
+msgid "Hide"
+msgstr "Ocultar"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/tabbed-pane.php:32
+msgid "Demo"
+msgstr "Demo"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/tabbed-pane.php:45
+msgid "Statistics"
+msgstr "Estadísticas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/tabbed-pane.php:49
+msgid "Settings"
+msgstr "Ajustes"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:61
+msgid "Database"
+msgstr "Base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/version-check.php:135
+msgid "A new version of the IP-to-country database is available! you can update it from the settings tab"
+msgstr "Una nueva versión de la base de datos Ip-t-country está disponible. La puede actualizar desde la pestaña de ajustes"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/utils.php:71
+#, php-format
+msgid "Version %s is available! click %s for more info"
+msgstr "Versión %s disponible!, pulsa %s para más información"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/first_time.php:40
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/utils.php:73
+msgid "here"
+msgstr "aqui"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+#, php-format
+msgid "Error opening %s"
+msgstr "Error al abrir  %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ezsql/mysql/ez_sql_mysql.php:41
+msgid "User name and password are required to connect to database"
+msgstr "Nombre de usuario y contraseña requerido para conectar a la base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ezsql/mysql/ez_sql_mysql.php:42
+msgid "Error establishing mySQL database connection"
+msgstr "Error conectando a la base de datos de MySQL"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ezsql/mysql/ez_sql_mysql.php:43
+msgid "Database name is required to connect to database"
+msgstr "Nombre de la base de datos es necesario para conectar."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ezsql/mysql/ez_sql_mysql.php:44
+msgid "mySQL database connection is not active"
+msgstr "La conexión a la base de datos MySQL no está activa"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ezsql/mysql/ez_sql_mysql.php:45
+msgid "Unexpected error while querying database"
+msgstr "Error inesperado accediendo a la base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ezsql/mysql/ez_sql_mysql.php:114
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ezsql/mysql/ez_sql_mysql.php:125
+#, php-format
+msgid "Can't disconnect: %s"
+msgstr "No es posible desconectar: %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:84
+msgid "Not connected"
+msgstr "No conectado"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/firestats-wordpress.php:49
+#, php-format
+msgid "Total : %s page views and %s visits"
+msgstr "Total : %s páginas vistas y %s visitas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/firestats-wordpress.php:50
+#, php-format
+msgid "Last 24 hours : %s page views and %s visits"
+msgstr "Últimas 24 horas : %s páginas vistas y %s visitas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/firestats-wordpress.php:29
+# C:\www\testwp-en\wp-content\plugins\FireStats/index.php:51
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/footer.php:8
+msgid "Powered by FireStats"
+msgstr "Con la potencia de FireStats"
+
+msgid "Pages displayed : "
+msgstr "Páginas mostradas :"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:11
+msgid "Unique visitors : "
+msgstr "Visitas :"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:12
+msgid "Pages displayed in last 24 hours : "
+msgstr "Páginas vistas en las últimas 24 horas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:13
+msgid "Unique visitors in last 24 hours : "
+msgstr "Visitas en las últimas 24 horas"
+
+# c:\FS/branches/firestats-1.1/firestats-wordpress.php:469
+# c:\FS/trunk/firestats/firestats-wordpress.php:469
+msgid " pages viewed"
+msgstr " páginas vistas"
+
+# c:\FS/branches/firestats-1.1/firestats-wordpress.php:469
+# c:\FS/branches/firestats-1.1/firestats-wordpress.php:470
+# c:\FS/trunk/firestats/firestats-wordpress.php:469
+# c:\FS/trunk/firestats/firestats-wordpress.php:470
+msgid "today"
+msgstr "hoy"
+
+# c:\FS/branches/firestats-1.1/firestats-wordpress.php:470
+# c:\FS/trunk/firestats/firestats-wordpress.php:470
+msgid " visits"
+msgstr " visitas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-settings.php:17
+msgid "Successfully updated bots list"
+msgstr "Base de datos de Bots actualizada satisfactoriamente"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:328
+#, php-format
+msgid "Error updadating bots list: %s"
+msgstr "Error al actualizar fichero de bots: %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+#, php-format
+msgid "Error opening file : %s"
+msgstr "Error al abrir fichero  %s"
+
+msgid "Pages viewed:"
+msgstr "Páginas vistas:"
+
+# c:\FS/branches/firestats-1.1/php/donation-window.php:31
+# c:\FS/trunk/firestats/php/donation-window.php:31
+msgid "Visitors:"
+msgstr "Visitantes:"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:97
+msgid "Installed:"
+msgstr "Instalado"
+
+# c:\FS/branches/firestats-1.1/php/donation-window.php:42
+msgid "Even though FireStats is free, it takes a lot of time and hard work to develop and maintain.<br/>"
+msgstr "Aunque FireStats es gratuito, ha llevado cantidad de tiempo y trabajo duro desarrollarlo y mantenerlo. <br/>"
+
+# c:\FS/branches/firestats-1.1/php/donation-window.php:43
+msgid "If you like FireStats and would like to show your support for the hard work I put into it, You can make a small Donation. Even a $5 donation would be greatly appreciated.<br/>"
+msgstr "Si te gusta FireStats y quisieras mostrar tu apoyo por el trabajo realizado, puedes hacer una pequeña donación. Incluso 5 dolares serian bienvenidos.<br/>"
+
+# c:\FS/branches/firestats-1.1/php/donation-window.php:47
+# c:\FS/trunk/firestats/php/donation-window.php:47
+msgid "Yeah, I want to help"
+msgstr "Si, quiero ayudar"
+
+# c:\FS/branches/firestats-1.1/php/donation-window.php:48
+# c:\FS/trunk/firestats/php/donation-window.php:48
+msgid "Nah, go away"
+msgstr "No, paso"
+
+# c:\FS/branches/firestats-1.1/php/donation-window.php:49
+# c:\FS/trunk/firestats/php/donation-window.php:49
+msgid "Maybe later"
+msgstr "Quizás más tarde"
+
+# c:\FS/branches/firestats-1.1/php/donation-window.php:50
+# c:\FS/trunk/firestats/php/donation-window.php:50
+msgid "Already donated"
+msgstr "Ya he contribuido"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:31
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:58
+#, php-format
+msgid "%d seconds ago"
+msgstr "Hace %d segundos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:39
+#, php-format
+msgid "%d minutes ago"
+msgstr "hace %d minutos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:31
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:58
+msgid "one hour ago"
+msgstr "Hace una hora"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:31
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:58
+#, php-format
+msgid "%d hours ago"
+msgstr "Hace %d horas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:31
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:58
+msgid "one day ago"
+msgstr "Hace un dia"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:31
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:58
+#, php-format
+msgid "%d days ago"
+msgstr "Hace %d días"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:31
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:58
+#, php-format
+msgid "%d weeks ago"
+msgstr "Hace %d semanas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:39
+#, php-format
+msgid "%d months ago"
+msgstr "hace %d meses"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:31
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-stats.php:58
+#, php-format
+msgid "%d years ago"
+msgstr "Hace %d años"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+msgid "Error exporting bots list"
+msgstr "Error al exportar lista de bots"
+
+# c:\FS/branches/firestats-1.1/php/import-bots-list.php:18
+# c:\FS/trunk/firestats/php/import-bots-list.php:18
+msgid "Select bot-list file"
+msgstr "Selecciona fichero de lista de Bots"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/first_time.php:34
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/first_time.php:130
+msgid "Import type"
+msgstr "Tipo de importación"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:189
+msgid "Add to bots list"
+msgstr "añadir la lista de bots"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:92
+msgid "Replace bots list"
+msgstr "Remplazar lista de bots"
+
+# c:\FS/branches/firestats-1.1/php/import-bots-list.php:34
+# c:\FS/trunk/firestats/php/import-bots-list.php:34
+msgid "Incorrect file format"
+msgstr "Formato de fichero incorrecto"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:328
+#, php-format
+msgid "Error importing bots list : %s"
+msgstr "Error importando lista de bots : %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:354
+msgid "bots list imported successfully"
+msgstr "Lista de bots actualizada satisfactoriamente."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-settings.php:40
+msgid "Time and language"
+msgstr "Hora e idioma"
+
+# c:\FS/branches/firestats-1.1/php/page-settings.php:52
+# c:\FS/trunk/firestats/php/page-settings.php:52
+msgid "Select your time zone"
+msgstr "Selecciona tu huso horario"
+
+# c:\FS/branches/firestats-1.1/php/page-settings.php:67
+# c:\FS/trunk/firestats/php/page-settings.php:67
+#, php-format
+msgid "Time zone selection requires %s or newer"
+msgstr "La selección de la zona horaria requiere %s o posterior."
+
+# c:\FS/branches/firestats-1.1/php/page-settings.php:115
+# c:\FS/trunk/firestats/php/page-settings.php:115
+msgid "Automatic update"
+msgstr "Actualización automática"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-database.php:73
+msgid "Update now"
+msgstr "Actualizar ahora"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/first_time.php:34
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/first_time.php:130
+msgid "Export"
+msgstr "Exportar"
+
+# c:\FS/branches/firestats-1.1/php/page-stats.php:29
+# c:\FS/trunk/firestats/php/page-stats.php:29
+msgid "Page views"
+msgstr "Páginas vistas"
+
+# c:\FS/branches/firestats-1.1/php/page-stats.php:30
+# c:\FS/trunk/firestats/php/page-stats.php:30
+msgid "Visits"
+msgstr "Visitas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:12
+msgid "Page views in last 24 hours"
+msgstr "Páginas vistas en las últimas 24 horas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:12
+msgid "Visits in last 24 hours"
+msgstr "Visitas en las últimas 24 horas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/tabbed-pane.php:45
+msgid "Statistics widget"
+msgstr "Widget de Estadísticas"
+
+# c:\FS/branches/firestats-1.1/php/page-wordpress-settings.php:17
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:17
+#, php-format
+msgid "You can configure the sidebar widget from %s"
+msgstr "Puedes configurar el widget de la barra lateral desde %s"
+
+# c:\FS/branches/firestats-1.1/php/page-wordpress-settings.php:21
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:21
+#, php-format
+msgid "The statistics widget requires the %s plugin for optimal usage."
+msgstr "El widget de estadísticas requiere el %s plugin para un uso óptimo."
+
+# c:\FS/branches/firestats-1.1/php/page-wordpress-settings.php:24
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:24
+msgid "Widgets"
+msgstr "Widgets"
+
+# c:\FS/branches/firestats-1.1/php/page-wordpress-settings.php:26
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:26
+msgid "You can also manually add the following code to your theme sidebar:"
+msgstr "Puedes añadir manualmente el siguiente código al tema de tu barra lateral:"
+
+# c:\FS/branches/firestats-1.1/php/page-wordpress-settings.php:34
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:34
+msgid "Comments icons"
+msgstr "Iconos de comentarios"
+
+# c:\FS/branches/firestats-1.1/php/page-wordpress-settings.php:42
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:42
+msgid "Add flag icon to comments"
+msgstr "Añadir icono de bandera a tus comentarios"
+
+# c:\FS/branches/firestats-1.1/php/page-wordpress-settings.php:51
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:51
+msgid "Add browser and operating system icons to comments"
+msgstr "Añadir iconos de navegadores y sistemas operativos a comentarios"
+
+# c:\FS/branches/firestats-1.1/php/page-wordpress-settings.php:56
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:56
+msgid "Blog footer"
+msgstr "Pié del Blog"
+
+# c:\FS/branches/firestats-1.1/php/page-wordpress-settings.php:64
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:64
+msgid "Add FireStats footer to blog"
+msgstr "Añadir pie de FireStats a tu blog"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/tabbed-pane.php:45
+msgid "Show statistics in footer"
+msgstr "Mostrar estadísticas en el pie"
+
+# c:\FS/branches/firestats-1.1/php/tabbed-pane.php:90
+# c:\FS/trunk/firestats/php/tabbed-pane.php:90
+msgid "WordPress settings"
+msgstr "Ajustes Wordpress"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+#, php-format
+msgid "Error getting version information from %s : %s"
+msgstr "Error accediendo a la información de la versión desde %s : %s"
+
+# c:\FS/branches/firestats-1.2/firestats/firestats-wordpress.php:195
+# c:\FS/trunk/firestats/firestats-wordpress.php:195
+msgid "Only blog administrators can access FireStats"
+msgstr "Tan sólo los administradores del Blog pueden acceder a FireStats"
+
+# c:\FS/branches/firestats-1.1/firestats-wordpress.php:469
+# c:\FS/trunk/firestats/firestats-wordpress.php:469
+msgid "pages viewed"
+msgstr "páginas vistas"
+
+# c:\FS/branches/firestats-1.1/firestats-wordpress.php:470
+# c:\FS/trunk/firestats/firestats-wordpress.php:470
+msgid "visits"
+msgstr " visitas"
+
+# c:\FS/branches/firestats-1.2/firestats/js/firestats.js.php:525
+# c:\FS/trunk/firestats/js/firestats.js.php:525
+msgid "Session expired, press ok to reload"
+msgstr "La sesión ha expirado, pulse ok para recargar"
+
+# c:\FS/branches/firestats-1.2/firestats/php/ajax-handler.php:734
+# c:\FS/trunk/firestats/php/ajax-handler.php:733
+msgid "this"
+msgstr "éste"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/ajax-handler.php:567
+#, php-format
+msgid "You can update the database manually by opening %s and downloading the <b>zip_url</b>, and extracting it into %s"
+msgstr "Puede actualizar la base de datos manualmente abriendo %s y descargándo <b>zip_url</b>, y extrayéndolo dentro de %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:328
+#, php-format
+msgid "Error updating bots list: %s"
+msgstr "Error al actualizar lista de bots: %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db_config_utils.php:118
+msgid "FireStats is not configured"
+msgstr "Firestats no está configurado"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db-common.php:98
+msgid "Database error, check your configuration"
+msgstr "Error en la base de datos, compruebe su configuración"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db_config_utils.php:118
+msgid "FireStats is not installed in the database"
+msgstr "Firestats está instalado en la base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db_config_utils.php:124
+msgid "FireStats database need to be upgraded"
+msgstr "La base de datos de FireStats necesita ser actualizada"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/db-config-utils.php:40
+msgid "Site name not specified"
+msgstr "Nombre del sitio no especificado"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/js/firestats-admin.js.php:69
+# C:\www\testwp-en\wp-content\plugins\FireStats/js/firestats-admin.js.php:190
+msgid "Site ID must be a positive number"
+msgstr "ID de sito debe ser un número positivo "
+
+# c:\FS/branches/firestats-1.2/firestats/php/db-sql.php:39
+# c:\FS/branches/firestats-1.2/firestats/php/db-sql.php:73
+# c:\FS/trunk/firestats/php/db-sql.php:39
+# c:\FS/trunk/firestats/php/db-sql.php:73
+#, php-format
+msgid "A site with the ID %s already exists"
+msgstr "Ya existe el sitio con el ID %s"
+
+# c:\FS/branches/firestats-1.2/firestats/php/db-sql.php:64
+# c:\FS/branches/firestats-1.2/firestats/php/db-sql.php:115
+# c:\FS/branches/firestats-1.2/firestats/php/db-sql.php:131
+# c:\FS/trunk/firestats/php/db-sql.php:64
+# c:\FS/trunk/firestats/php/db-sql.php:115
+# c:\FS/trunk/firestats/php/db-sql.php:131
+#, php-format
+msgid "No site with the id %s exists"
+msgstr "No existe ningún sitio con el ID %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/firestats-wordpress.php:29
+# C:\www\testwp-en\wp-content\plugins\FireStats/index.php:51
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/footer.php:8
+msgid "Support FireStats"
+msgstr "Soporte FireStats"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:97
+msgid "Installed"
+msgstr "Instalado"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/ajax-handler.php:515
+msgid "Unknown site type"
+msgstr "Tipo de sitio desconocido"
+
+# c:\FS/branches/firestats-1.1/php/tabbed-pane.php:90
+# c:\FS/trunk/firestats/php/tabbed-pane.php:90
+msgid "WordPress"
+msgstr "Wordpress"
+
+# c:\FS/branches/firestats-1.2/firestats/php/help-window.php:102
+# c:\FS/trunk/firestats/php/help-window.php:102
+msgid "The WordPress plugin registers itself automatically when the its activated"
+msgstr "El plugin Wordpress se registra automaticamente cuando es activado"
+
+# c:\FS/branches/firestats-1.2/firestats/php/help-window.php:108
+# c:\FS/branches/firestats-1.2/firestats/php/help-window.php:116
+# c:\FS/branches/firestats-1.2/firestats/php/help-window.php:131
+# c:\FS/branches/firestats-1.2/firestats/php/help-window.php:137
+# c:\FS/branches/firestats-1.2/firestats/php/help-window.php:149
+# c:\FS/trunk/firestats/php/help-window.php:108
+# c:\FS/trunk/firestats/php/help-window.php:116
+# c:\FS/trunk/firestats/php/help-window.php:131
+# c:\FS/trunk/firestats/php/help-window.php:137
+# c:\FS/trunk/firestats/php/help-window.php:149
+msgid "plugin"
+msgstr "plugin"
+
+# c:\FS/branches/firestats-1.2/firestats/php/help-window.php:124
+# c:\FS/trunk/firestats/php/help-window.php:124
+msgid "module"
+msgstr "módulo"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-help.php:2
+#, php-format
+msgid "Collect hits from a %s site"
+msgstr "Recoger hits del sitio %s"
+
+# c:\FS/branches/firestats-1.2/firestats/php/help-window.php:189
+# c:\FS/trunk/firestats/php/help-window.php:189
+#, php-format
+msgid "and then configure it in the administration menu with the path %s and the ID %s"
+msgstr "y entonces configuralo a través del mengu de administración con el path %s y el ID %s"
+
+# c:\FS/branches/firestats-1.2/firestats/php/help-window.php:199
+# c:\FS/trunk/firestats/php/help-window.php:199
+#, php-format
+msgid "and then edit the lines in %s to contain this:"
+msgstr "y entonces edita las lineas en %s que contengan esto:"
+
+# c:\FS/branches/firestats-1.2/firestats/php/help-window.php:206
+# c:\FS/trunk/firestats/php/help-window.php:206
+#, php-format
+msgid "To collect statistics from your %s site your need to install the %s"
+msgstr "Para recoger estadísticas de su sition %s necesita instalarlo en %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:997
+msgid "ID"
+msgstr "ID"
+
+# c:\FS/branches/firestats-1.2/firestats/php/html-utils.php:31
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:122
+# c:\FS/trunk/firestats/php/html-utils.php:31
+# c:\FS/trunk/firestats/php/page-sites.php:122
+msgid "Name"
+msgstr "Nombre"
+
+# c:\FS/branches/firestats-1.2/firestats/php/html-utils.php:32
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:123
+# c:\FS/trunk/firestats/php/html-utils.php:32
+# c:\FS/trunk/firestats/php/page-sites.php:123
+msgid "Type"
+msgstr "Tipo"
+
+# c:\FS/branches/firestats-1.2/firestats/php/html-utils.php:47
+# c:\FS/trunk/firestats/php/html-utils.php:47
+msgid "How to integrate with this site"
+msgstr "Como integrarlo en éste sitio"
+
+# c:\FS/branches/firestats-1.2/firestats/php/html-utils.php:73
+msgid "Orphaned hits"
+msgstr "Hits huerfanos"
+
+# c:\FS/branches/firestats-1.2/firestats/php/html-utils.php:62
+# c:\FS/trunk/firestats/php/html-utils.php:62
+msgid "Add a new site"
+msgstr "Añadir un  nuevo sitio"
+
+# c:\FS/branches/firestats-1.2/firestats/php/html-utils.php:97
+# c:\FS/trunk/firestats/php/html-utils.php:97
+msgid "Generic PHP site"
+msgstr "Sitio PHP genérico"
+
+# c:\FS/branches/firestats-1.2/firestats/php/html-utils.php:99
+# c:\FS/trunk/firestats/php/html-utils.php:99
+msgid "Wordpress"
+msgstr "Wordpress"
+
+# c:\FS/branches/firestats-1.2/firestats/php/html-utils.php:101
+# c:\FS/trunk/firestats/php/html-utils.php:101
+msgid "Django"
+msgstr "Django"
+
+# c:\FS/branches/firestats-1.2/firestats/php/html-utils.php:103
+# c:\FS/trunk/firestats/php/html-utils.php:103
+msgid "Drupal"
+msgstr "Drupal"
+
+# c:\FS/branches/firestats-1.2/firestats/php/html-utils.php:105
+# c:\FS/trunk/firestats/php/html-utils.php:105
+msgid "Gregarius"
+msgstr "Gregarius"
+
+# c:\FS/branches/firestats-1.2/firestats/php/html-utils.php:107
+# c:\FS/trunk/firestats/php/html-utils.php:107
+msgid "Joomla"
+msgstr "Joomla"
+
+# c:\FS/branches/firestats-1.2/firestats/php/html-utils.php:109
+# c:\FS/trunk/firestats/php/html-utils.php:109
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+# c:\FS/branches/firestats-1.2/firestats/php/html-utils.php:111
+# c:\FS/trunk/firestats/php/html-utils.php:111
+msgid "Trac"
+msgstr "Trac"
+
+# c:\FS/trunk/firestats/php/html-utils.php:99
+msgid "All"
+msgstr "Todo"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/tabbed-pane.php:45
+msgid "Show statistics from"
+msgstr "Origen de las estadísticas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:189
+msgid "Import bots list"
+msgstr "Importar lista de bots"
+
+# c:\FS/branches/firestats-1.2/firestats/php/import-bots-list.php:31
+# c:\FS/trunk/firestats/php/import-bots-list.php:31
+msgid "Send File"
+msgstr "Enviar fichero"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:61
+msgid "Database status"
+msgstr "estado de la base de datos"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-database.php:138
+# c:\FS/trunk/firestats/php/page-database.php:138
+msgid "Click to upgrade"
+msgstr "Pulsa para actualizar"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-settings.php:113
+# c:\FS/trunk/firestats/php/page-settings.php:113
+msgid "Options"
+msgstr "Opciones"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-settings.php:142
+# c:\FS/trunk/firestats/php/page-settings.php:142
+msgid "Select WHOIS provider"
+msgstr "Selecciona el proveedor de WHOIS"
+
+# c:\FS/branches/firestats-1.1/php/page-settings.php:115
+# c:\FS/trunk/firestats/php/page-settings.php:115
+msgid "Automatic"
+msgstr "Automático"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:91
+# c:\FS/trunk/firestats/php/page-sites.php:91
+msgid "Delete"
+msgstr "Borrar"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:91
+# c:\FS/trunk/firestats/php/page-sites.php:91
+msgid "Transfer"
+msgstr "Tranferir"
+
+# c:\FS/branches/firestats-1.1/php/page-stats.php:29
+# c:\FS/trunk/firestats/php/page-stats.php:29
+msgid "Manage sites"
+msgstr "Gestión de sitios"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:118
+# c:\FS/branches/firestats-1.2/firestats/php/page-stats.php:323
+# c:\FS/trunk/firestats/php/page-sites.php:118
+# c:\FS/trunk/firestats/php/page-stats.php:323
+msgid "Clear"
+msgstr "Limpiar"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:125
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:148
+# c:\FS/trunk/firestats/php/page-sites.php:125
+# c:\FS/trunk/firestats/php/page-sites.php:148
+msgid "Close"
+msgstr "Cerrar"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:133
+# c:\FS/trunk/firestats/php/page-sites.php:133
+msgid "This will delete this site from the database, the operation is irreversible!"
+msgstr "Esto borrará el sitio de la Base de datos. Es una operación irreversible!"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:134
+# c:\FS/trunk/firestats/php/page-sites.php:134
+msgid "What do you want to do with the site hits?"
+msgstr "Qué quieres hacer con los hits del sitio?"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:137
+# c:\FS/trunk/firestats/php/page-sites.php:137
+msgid "Delete all the hits"
+msgstr "Borrar todos los hits"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:138
+# c:\FS/trunk/firestats/php/page-sites.php:138
+msgid "Transfer the hits to another site"
+msgstr "Transferir los hits a otro sitio"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:141
+# c:\FS/trunk/firestats/php/page-sites.php:141
+msgid "Enter an existing site ID to transfer the hits to"
+msgstr "Introduce un ID existente para transferirle los hits."
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:159
+# c:\FS/trunk/firestats/php/page-sites.php:159
+msgid "Warning, you can really mess things up from here, be careful!"
+msgstr "Atención, a partir de ahora se puede liar la cosa, tenga cuidado!"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:161
+# c:\FS/trunk/firestats/php/page-sites.php:161
+msgid "FireStats can collect statistics from multiple sites (on the same server)."
+msgstr "FireStats puede recoger estadisticas desde multiples sitios. (en el mismo servidor)."
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:163
+# c:\FS/trunk/firestats/php/page-sites.php:163
+msgid "The site need to be registered in the sites table"
+msgstr "El sitio debe ser registrado en la tabla de sitios."
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:164
+# c:\FS/trunk/firestats/php/page-sites.php:164
+msgid "The site should be configured to use its ID when reporting a hit, click on the help button next to the site you created for more information"
+msgstr "El sito deberia ser configurado para usar su propio ID cuando reporte un hit. Pulse sobre el boton de ayuda que hay junto al sitio que creó para ampliar información"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:167
+# c:\FS/trunk/firestats/php/page-sites.php:167
+#, php-format
+msgid "Click %s for more information"
+msgstr "Pulse %s para más información"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-stats.php:141
+# c:\FS/branches/firestats-1.2/firestats/php/page-stats.php:174
+# c:\FS/branches/firestats-1.2/firestats/php/page-stats.php:199
+# c:\FS/branches/firestats-1.2/firestats/php/page-stats.php:266
+# c:\FS/branches/firestats-1.2/firestats/php/page-stats.php:328
+# c:\FS/trunk/firestats/php/page-stats.php:141
+# c:\FS/trunk/firestats/php/page-stats.php:174
+# c:\FS/trunk/firestats/php/page-stats.php:199
+# c:\FS/trunk/firestats/php/page-stats.php:266
+# c:\FS/trunk/firestats/php/page-stats.php:328
+msgid "Apply"
+msgstr "Aplicar"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1003
+msgid "User agent"
+msgstr "User Agent"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-stats.php:299
+# c:\FS/trunk/firestats/php/page-stats.php:299
+msgid "Filter"
+msgstr "Filtro"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-wordpress-settings.php:128
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:128
+msgid "Advanced"
+msgstr "Avanzado"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-wordpress-settings.php:129
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:129
+msgid "WordPress site ID, every hit From this blog is recorded with this as the source Site ID"
+msgstr "ID de sitio Wordpress, cada hit generado por este blog es guardado como ID de sitio origen."
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-wordpress-settings.php:130
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:130
+msgid "This should be the same ID as the Site ID in the sites table. you don't normally need to change this."
+msgstr "Este deberia ser el mismo ID que el que hay en la tabla de sitios. Normalmente no es necesario cambiarlo."
+
+# c:\FS/branches/firestats-1.2/firestats/php/tabbed-pane.php:67
+# c:\FS/trunk/firestats/php/tabbed-pane.php:67
+msgid "No"
+msgstr "No"
+
+# c:\FS/branches/firestats-1.2/firestats/php/tabbed-pane.php:68
+# c:\FS/trunk/firestats/php/tabbed-pane.php:68
+msgid "Yes"
+msgstr "Sí"
+
+# c:\FS/branches/firestats-1.2/firestats/php/tabbed-pane.php:120
+msgid "Sites management"
+msgstr "Gestión de sitios"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1384
+#, php-format
+msgid "%s days can be compacted"
+msgstr "%s días pueden ser compactados"
+
+# c:\FS/branches/firestats-1.3/firestats/php/ajax-handler.php:946
+#, php-format
+msgid "Compacting %s days, %s done"
+msgstr "Compactando %s días, %s realizado"
+
+# c:\FS/branches/firestats-1.3/firestats/php/ajax-handler.php:1029
+# c:\FS/trunk/firestats/php/ajax-handler.php:1029
+#, php-format
+msgid "Done, took %s second"
+msgstr "Hecho, tomó %s segundos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/first_time.php:116
+msgid "Operation already in progress"
+msgstr "La operación ya está en marcha"
+
+# c:\FS/branches/firestats-1.3/firestats/php/db-sql.php:48
+# c:\FS/trunk/firestats/php/db-sql.php:48
+msgid "Data compacting is already in progress"
+msgstr "La compactación de datos todavía está en proceso"
+
+# c:\FS/branches/firestats-1.3/firestats/php/db-sql.php:67
+# c:\FS/branches/firestats-1.3/firestats/php/page-settings.php:176
+msgid "MySQL 4.1.14 or newer is required for data compacting support"
+msgstr "Se requiere MySQL 4.1.14 o superior para poder compactar datos"
+
+# c:\FS/branches/firestats-1.3/firestats/php/footer.php:44
+# c:\FS/trunk/firestats/php/footer.php:44
+#, php-format
+msgid "If you have any problems or questions, please visit the %s"
+msgstr "Si tienes cualquier duda o problema, por favor, visítanos en %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db_config_utils.php:118
+msgid "FireStats homepage"
+msgstr "Página principal de FireStats"
+
+# c:\FS/branches/firestats-1.2/firestats/php/help-window.php:102
+# c:\FS/trunk/firestats/php/help-window.php:102
+msgid "The WordPress plugin registers itself automatically when it's activated"
+msgstr "El plugin Wordpress se registra automaticamente cuando es activado"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/first_time.php:40
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/utils.php:73
+msgid "Link here"
+msgstr "enlace aqui"
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:222
+# c:\FS/branches/firestats-1.4/firestats/php/html-utils.php:303
+# c:\FS/trunk/firestats/php/html-utils.php:303
+msgid "Gallery2"
+msgstr "Gallery2"
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:724
+# c:\FS/trunk/firestats/php/html-utils.php:836
+msgid "Start date is missing"
+msgstr "Falta la fecha de inicio"
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:729
+# c:\FS/trunk/firestats/php/html-utils.php:841
+msgid "End date is missing"
+msgstr "Falta la fecha final"
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:749
+# c:\FS/trunk/firestats/php/html-utils.php:858
+msgid "Please wait..."
+msgstr "Por favor espera ..."
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:1092
+# c:\FS/trunk/firestats/php/html-utils.php:1175
+msgid "System information"
+msgstr "Información del sistema"
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:1093
+# c:\FS/trunk/firestats/php/html-utils.php:1176
+msgid "You can help by sending anonymous system information that will help make better decisions about new features"
+msgstr "Puedes ayudarnos enviando información de manera anónima que nos permitirá tomar mejores decisiones en futuras mejoras"
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:1094
+# c:\FS/trunk/firestats/php/html-utils.php:1177
+msgid "The information will be sent anonymously, but a unique identifier will be sent to prevent duplicate entries from the same FireStats"
+msgstr "Esta información será enviada de manera anónima, aunque un  único identificador será enviado para prevenir posibles entradas duplicadas en el propio FireStats."
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:1097
+# c:\FS/trunk/firestats/php/html-utils.php:1180
+msgid "You can change this later from the Tools tab"
+msgstr "Podrás cambiarlo más tarde desde la pestaña de Utilidades"
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:1114
+# c:\FS/trunk/firestats/php/html-utils.php:1197
+msgid "Sure, send system information"
+msgstr "Seguro, envia la información del sistema"
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:1115
+# c:\FS/trunk/firestats/php/html-utils.php:1198
+msgid "Nope, don't send"
+msgstr "No, no lo envies."
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:1117
+# c:\FS/trunk/firestats/php/html-utils.php:1200
+msgid "Do you agree to send anonymous system information?"
+msgstr "Estás de acuerdo con enviar esta información de manera anónima?"
+
+# c:\FS/branches/firestats-1.1/php/donation-window.php:42
+msgid "Even though FireStats is free, it takes a lot of time and hard work to develop and maintain."
+msgstr "Aunque FireStats es gratuito, ha llevado cantidad de tiempo y trabajo duro desarrollarlo y mantenerlo. "
+
+# c:\FS/branches/firestats-1.1/php/donation-window.php:43
+msgid "If you like FireStats and would like to show your support for the hard work I put into it, You can make a small Donation. Even a $5 donation would be greatly appreciated."
+msgstr "Si te gusta FireStats y quisieras mostrar tu apoyo por el trabajo realizado, puedes hacer una pequeña donación. Incluso 5 dolares serian bienvenidos."
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:1153
+# c:\FS/trunk/firestats/php/html-utils.php:1234
+msgid "Compacting old data"
+msgstr "Compactando datos antiguos"
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:1154
+# c:\FS/trunk/firestats/php/html-utils.php:1235
+msgid "FireStats can tranform old data to a more compact form,"
+msgstr "FireStats puede compactar los datos antiguo a una manera mucho más compacta."
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:1155
+# c:\FS/trunk/firestats/php/html-utils.php:1236
+msgid "This will reduce storage size and improve performance at the cost of losing some information which is not essential."
+msgstr "Esto reducirá el tamaño de almacenamiento y mejorará la velocidad a cambio de perder cierta información que no es esencial"
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:1156
+msgid "it is highly recommended that you allow FireStats to do this automatically."
+msgstr "Es altamente redomendable que permita a FireStats realizar esto automáticamente."
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:1157
+msgid "Yes (Recommended)"
+msgstr "Sí (Recomendado)"
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:1160
+# c:\FS/trunk/firestats/php/html-utils.php:1241
+#, php-format
+msgid "Click %s if you would like FireStats to automatically compact data older than %s days"
+msgstr "Pulse %s si le gustaría que Firestats compacte automaticamente los datos con más de %s días de antigüedad."
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:1161
+# c:\FS/trunk/firestats/php/html-utils.php:1242
+#, php-format
+msgid "Click %s if you want to compact data manually or change compacting options (From the Settings tab)"
+msgstr "Pulse %s si quiere compactar los datos manualmente o cambiar las opciones de compactación (desde la pestaña de ajustes)"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-database.php:63
+# c:\FS/trunk/firestats/php/page-database.php:63
+msgid "Upgrading, do not interrupt"
+msgstr "Actualizando, no interrumpir"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-database.php:168
+msgid "However, For security reason, it is recommended not to use a database administrator user for day to day operations."
+msgstr "Sin embargo, por razones de seguridad, es recomendable no usar una un usuario administrador para las operaciones diarias."
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-settings.php:72
+# c:\FS/trunk/firestats/php/page-settings.php:72
+msgid "Stop"
+msgstr "Parar"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/firestats-wordpress.php:29
+msgid "Compacting..."
+msgstr "Compactando..."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/firestats-wordpress.php:29
+msgid "Stopping..."
+msgstr "Parando..."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-database.php:73
+msgid "Compact now"
+msgstr "Compactar ahora"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-settings.php:154
+# c:\FS/trunk/firestats/php/page-settings.php:154
+msgid "Compact old data"
+msgstr "Compatar datos antiguos"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-settings.php:165
+# c:\FS/trunk/firestats/php/page-settings.php:165
+#, php-format
+msgid "%s compact data older than %s"
+msgstr "%s datos compactados de mayor antigüedad que %s"
+
+# c:\FS/branches/firestats-1.1/php/page-settings.php:115
+# c:\FS/trunk/firestats/php/page-settings.php:115
+msgid "Automatically"
+msgstr "Automáticamente"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-settings.php:340
+# c:\FS/trunk/firestats/php/page-settings.php:340
+msgid "Manually"
+msgstr "Manualmente"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-settings.php:341
+# c:\FS/trunk/firestats/php/page-settings.php:341
+msgid "Please select"
+msgstr "Por favor seleccione"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-settings.php:358
+# c:\FS/trunk/firestats/php/page-settings.php:358
+msgid "One month"
+msgstr "Un més"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:39
+msgid "Two months"
+msgstr "Dos meses"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-settings.php:360
+# c:\FS/trunk/firestats/php/page-settings.php:360
+msgid "Three months"
+msgstr "Tres meses"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-settings.php:361
+# c:\FS/trunk/firestats/php/page-settings.php:361
+msgid "Half a year"
+msgstr "Medio año"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-settings.php:362
+# c:\FS/trunk/firestats/php/page-settings.php:362
+msgid "One year"
+msgstr "Un año"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-settings.php:363
+# c:\FS/trunk/firestats/php/page-settings.php:363
+msgid "Two years"
+msgstr "Dos años"
+
+# c:\FS/branches/firestats-1.1/firestats-wordpress.php:469
+# c:\FS/trunk/firestats/firestats-wordpress.php:469
+#, fuzzy
+msgid "Baseline page views"
+msgstr " páginas vistas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:11
+#, fuzzy
+msgid "Baseline visitors"
+msgstr "Visitas :"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:160
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:209
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:271
+# c:\FS/trunk/firestats/php/page-stats.php:160
+# c:\FS/trunk/firestats/php/page-stats.php:209
+# c:\FS/trunk/firestats/php/page-stats.php:271
+#, php-format
+msgid "Show at most %s items for the last %s days"
+msgstr "Muestra los mayores %s elementos de los últimos %s dias"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:174
+# c:\FS/trunk/firestats/php/page-stats.php:174
+msgid "Search terms"
+msgstr "Términos de búsqueda"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:181
+# c:\FS/trunk/firestats/php/page-stats.php:181
+#, php-format
+msgid "Show at most %s search terms for %s"
+msgstr "Muestra los mayores %s términos de búsqueda para %s"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:188
+# c:\FS/trunk/firestats/php/page-stats.php:188
+msgid "Start date:"
+msgstr "Fecha de inicio:"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:189
+# c:\FS/trunk/firestats/php/page-stats.php:189
+msgid "End date:"
+msgstr "Fecha final:"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:229
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:250
+# c:\FS/trunk/firestats/php/page-stats.php:229
+# c:\FS/trunk/firestats/php/page-stats.php:250
+#, php-format
+msgid "Show items for the last %s days"
+msgstr "Mostrar elementos de los últimos %s días"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:12
+msgid "the last 24 hours"
+msgstr " las últimas 24 horas"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:355
+# c:\FS/trunk/firestats/php/page-stats.php:355
+msgid "the last week"
+msgstr "la última semana"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:356
+# c:\FS/trunk/firestats/php/page-stats.php:356
+msgid "the last month"
+msgstr "el último més"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:357
+# c:\FS/trunk/firestats/php/page-stats.php:357
+msgid "the three months"
+msgstr "los últimos tres meses"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:358
+# c:\FS/trunk/firestats/php/page-stats.php:358
+msgid "the last six months"
+msgstr "los últimos seis meses"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:359
+# c:\FS/trunk/firestats/php/page-stats.php:359
+msgid "the last year"
+msgstr "el último año"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:360
+# c:\FS/trunk/firestats/php/page-stats.php:360
+msgid "all time"
+msgstr "todo el tiempo"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:361
+# c:\FS/trunk/firestats/php/page-stats.php:361
+msgid "time range"
+msgstr "rango de tiempo"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-tools.php:9
+# c:\FS/trunk/firestats/php/page-tools.php:9
+msgid "Abort"
+msgstr "Abortar"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-wordpress-settings.php:128
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:128
+msgid "Canceled"
+msgstr "Cancelado"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:7
+msgid "Start"
+msgstr "Inicio"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-tools.php:49
+# c:\FS/branches/firestats-1.3/firestats/php/tabbed-pane.php:95
+# c:\FS/trunk/firestats/php/page-tools.php:49
+# c:\FS/trunk/firestats/php/tabbed-pane.php:95
+msgid "Tools"
+msgstr "Herramientas"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-tools.php:50
+# c:\FS/trunk/firestats/php/page-tools.php:50
+msgid "This section contains various tools"
+msgstr "Ésta sección contiene varias herramientas"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-tools.php:55
+# c:\FS/trunk/firestats/php/page-tools.php:55
+msgid "I agree to send system information"
+msgstr "Estoy de acuerdo con enviar información del sistema"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-tools.php:59
+# c:\FS/trunk/firestats/php/page-tools.php:59
+msgid "Diagnostics"
+msgstr "Diagnósticos"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-tools.php:60
+# c:\FS/trunk/firestats/php/page-tools.php:60
+msgid "System diagnostics page"
+msgstr "Página de diagnósticos del sistema"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-tools.php:60
+# c:\FS/trunk/firestats/php/page-tools.php:60
+msgid "Open"
+msgstr "Abrir"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-tools.php:65
+# c:\FS/trunk/firestats/php/page-tools.php:65
+msgid "PHP Version"
+msgstr "Version PHP"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-tools.php:68
+# c:\FS/trunk/firestats/php/page-tools.php:68
+msgid "MySQL Version"
+msgstr "Versión MySQL"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-tools.php:71
+# c:\FS/trunk/firestats/php/page-tools.php:71
+msgid "Memory limit"
+msgstr "Límite de memoria"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:65
+msgid "Database cache"
+msgstr "caché de la base de datos"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-tools.php:78
+# c:\FS/trunk/firestats/php/page-tools.php:78
+msgid "The following section can recalculate different aspects of the database. you don't normally need to use it."
+msgstr "La siguiente sección puede recalcular diferentes aspectos de las base de datos. Normalmente, no necesitará usarlos."
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-tools.php:81
+# c:\FS/trunk/firestats/php/page-tools.php:81
+msgid "Recalculate country codes : "
+msgstr "Recalcular códigos de pais:"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+msgid "Rebuild database cache: "
+msgstr "Reconstruir la caché de la base de datos"
+
+# c:\FS/branches/firestats-1.2/firestats/firestats-wordpress.php:195
+# c:\FS/trunk/firestats/firestats-wordpress.php:195
+msgid "You are not authorized to access FireStats"
+msgstr "No está autorizado a acceder a FireStats"
+
+# c:\FS/branches/firestats-1.4/firestats/firestats-wordpress.php:718
+# c:\FS/branches/firestats-1.4/firestats/firestats-wordpress.php:821
+# c:\FS/trunk/firestats/firestats-wordpress.php:718
+# c:\FS/trunk/firestats/firestats-wordpress.php:821
+msgid "Title:"
+msgstr "Título:"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db_config_utils.php:118
+msgid "Hide FireStats logo"
+msgstr "Ocultar logotipo de FireStats"
+
+# c:\FS/branches/firestats-1.4/firestats/firestats-wordpress.php:737
+# c:\FS/branches/firestats-1.4/firestats/firestats-wordpress.php:788
+# c:\FS/trunk/firestats/firestats-wordpress.php:737
+# c:\FS/trunk/firestats/firestats-wordpress.php:788
+msgid "Popular posts"
+msgstr "Entradas más populares"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:8
+msgid "Number to show"
+msgstr "Cantidad a mostrar"
+
+# c:\FS/branches/firestats-1.4/firestats/firestats-wordpress.php:829
+# c:\FS/trunk/firestats/firestats-wordpress.php:829
+msgid "Days ago (Empty for all time)"
+msgstr "Días que hace (Nada para mostrar todo el periodo)"
+
+# c:\FS/branches/firestats-1.4/firestats/index.php:15
+msgid "Access denied"
+msgstr "Acceso denegado"
+
+# c:\FS/branches/firestats-1.4/firestats/login.php:10
+# c:\FS/branches/firestats-1.4/firestats/login.php:25
+# c:\FS/trunk/firestats/login.php:10
+# c:\FS/trunk/firestats/login.php:25
+msgid "Login"
+msgstr "Login"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1003
+msgid "Username"
+msgstr "Nombre de usuario"
+
+# c:\FS/branches/firestats-1.4/firestats/login.php:24
+# c:\FS/trunk/firestats/login.php:24
+msgid "Remember me for the next 14 days"
+msgstr "Recuerda mis datos en los próximos 14 días"
+
+# c:\FS/branches/firestats-1.4/firestats/login.php:30
+# c:\FS/trunk/firestats/login.php:30
+#, php-format
+msgid "Forgot your password? click %s."
+msgstr "¿ Olvidaste tu contraseña ? pulsa %s."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1384
+#, php-format
+msgid "%s days can be compacted, database size %s"
+msgstr "%s días pueden ser compactados, el tamaño de la base de datos es %s"
+
+# c:\FS/branches/firestats-1.3/firestats/php/ajax-handler.php:946
+#, php-format
+msgid "Compacting %s days, %s done, database size is %s"
+msgstr "Compactando %s días, %s realizado, el tamaño de la base de datos es %s"
+
+# c:\FS/branches/firestats-1.4/firestats/php/ajax-handler.php:1050
+# c:\FS/trunk/firestats/php/ajax-handler.php:1050
+#, php-format
+msgid "%d of %d"
+msgstr "%d de %d"
+
+# c:\FS/branches/firestats-1.4/firestats/php/ajax-handler.php:1185
+# c:\FS/trunk/firestats/php/ajax-handler.php:1185
+msgid "Incorrect user-name or password"
+msgstr "Nombre de usuario o contraseña incorrecta"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/db-config-utils.php:40
+msgid "User name not specified"
+msgstr "Nombre de usuario no especificado"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/db-config-utils.php:40
+msgid "Email not specified"
+msgstr "El correo electrónico no ha sido especificado"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/db-config-utils.php:40
+msgid "Passwords did not match"
+msgstr "La contraseña no coincide"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:73
+msgid "Empty password"
+msgstr "Contraseña en blanco"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/js/firestats-admin.js.php:119
+msgid "Invalid email address"
+msgstr "Correo electrónico inválido"
+
+# c:\FS/branches/firestats-1.2/firestats/php/db-sql.php:39
+# c:\FS/branches/firestats-1.2/firestats/php/db-sql.php:73
+# c:\FS/trunk/firestats/php/db-sql.php:39
+# c:\FS/trunk/firestats/php/db-sql.php:73
+msgid "A user with this name already exists"
+msgstr "Nombre de usuario existente"
+
+# c:\FS/branches/firestats-1.2/firestats/php/db-sql.php:39
+# c:\FS/branches/firestats-1.2/firestats/php/db-sql.php:73
+# c:\FS/trunk/firestats/php/db-sql.php:39
+# c:\FS/trunk/firestats/php/db-sql.php:73
+msgid "A user with this email address already exists"
+msgstr "Dirección de correo electrónico existente"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db-common.php:107
+msgid "The FireStats database version is newer than this code version, you need to upgrade FireStats"
+msgstr "La versión de la base de datos es posterior a la versión del programa, necesita actualizar FireStats"
+
+# c:\FS/branches/firestats-1.4/firestats/php/db-sql.php:394
+# c:\FS/trunk/firestats/php/db-sql.php:394
+msgid "New site_id must not be empty"
+msgstr "El nuevo site_id no debe estar vacio"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:138
+# c:\FS/trunk/firestats/php/page-sites.php:138
+msgid "Can't move the hits to the same site"
+msgstr "No se pueden mover los hits al mismo sitio."
+
+# c:\FS/branches/firestats-1.4/firestats/php/header.php:28
+# c:\FS/trunk/firestats/php/header.php:28
+msgid "Log out"
+msgstr "Salir"
+
+# c:\FS/branches/firestats-1.4/firestats/php/html-utils.php:135
+# c:\FS/branches/firestats-1.4/firestats/php/page-add-admin.php:33
+# c:\FS/branches/firestats-1.4/firestats/php/window-edit-user.php:22
+# c:\FS/branches/firestats-1.4/firestats/php/window-new-user.php:17
+# c:\FS/trunk/firestats/php/html-utils.php:135
+# c:\FS/trunk/firestats/php/page-add-admin.php:33
+# c:\FS/trunk/firestats/php/window-edit-user.php:22
+# c:\FS/trunk/firestats/php/window-new-user.php:17
+msgid "Email"
+msgstr "Correo electrónico."
+
+# c:\FS/branches/firestats-1.4/firestats/php/html-utils.php:136
+# c:\FS/branches/firestats-1.4/firestats/php/window-edit-user.php:34
+# c:\FS/branches/firestats-1.4/firestats/php/window-new-user.php:29
+# c:\FS/trunk/firestats/php/html-utils.php:136
+# c:\FS/trunk/firestats/php/window-edit-user.php:34
+# c:\FS/trunk/firestats/php/window-new-user.php:29
+msgid "Security level"
+msgstr "Nivel de seguridad"
+
+# c:\FS/branches/firestats-1.4/firestats/php/html-utils.php:158
+# c:\FS/trunk/firestats/php/html-utils.php:158
+msgid "Admin"
+msgstr "Administrador"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1003
+msgid "User"
+msgstr "Usuario"
+
+# c:\FS/branches/firestats-1.2/firestats/php/html-utils.php:62
+# c:\FS/trunk/firestats/php/html-utils.php:62
+msgid "Add a new user"
+msgstr "Añadir nuevo usuario"
+
+# c:\FS/branches/firestats-1.4/firestats/php/page-add-admin.php:22
+# c:\FS/trunk/firestats/php/page-add-admin.php:22
+msgid "Create administrator user"
+msgstr "Crear usuario administrador"
+
+# c:\FS/branches/firestats-1.4/firestats/php/page-add-admin.php:24
+# c:\FS/trunk/firestats/php/page-add-admin.php:24
+msgid "You need to create an administrator user for FireStats."
+msgstr "Es necesario crear un usuario administrador para usar FireStats."
+
+# c:\FS/branches/firestats-1.4/firestats/php/page-add-admin.php:25
+# c:\FS/trunk/firestats/php/page-add-admin.php:25
+msgid "The administrator has full control over FireStats, and will be able to create other users/administrators from the administration interface"
+msgstr "El administrador tiene control total sobre FireStats, y puede crear otros usuarios/administradores desde el panel de administración"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1003
+msgid "User name"
+msgstr "Nombre de usuario"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/tabbed-pane.php:39
+msgid "Verify password"
+msgstr "Verificar contraseña "
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+msgid "Create user"
+msgstr "Crear usuario"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:160
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:209
+# c:\FS/branches/firestats-1.3/firestats/php/page-stats.php:271
+# c:\FS/trunk/firestats/php/page-stats.php:160
+# c:\FS/trunk/firestats/php/page-stats.php:209
+# c:\FS/trunk/firestats/php/page-stats.php:271
+#, php-format
+msgid "Show at most %s items for the last %s days, sorted by %s"
+msgstr "Muestra los mayores %s elementos de los últimos %s dias, ordenados por %s"
+
+# c:\FS/branches/firestats-1.4/firestats/php/page-stats.php:362
+# c:\FS/trunk/firestats/php/page-stats.php:362
+msgid "Newest first"
+msgstr "Primero los nuevos"
+
+# c:\FS/branches/firestats-1.4/firestats/php/page-stats.php:363
+# c:\FS/trunk/firestats/php/page-stats.php:363
+msgid "Most hits first"
+msgstr "Mayor número de hits primero"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-tools.php:81
+# c:\FS/trunk/firestats/php/page-tools.php:81
+msgid "Recalculate country codes"
+msgstr "Recalcular códigos de pais:"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+msgid "Rebuild database cache"
+msgstr "Reconstruir la caché de la base de datos"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+msgid "Recalculate search engine terms"
+msgstr "Recalcular términos del motor de búsqueda"
+
+# c:\FS/branches/firestats-1.1/php/page-stats.php:29
+# c:\FS/trunk/firestats/php/page-stats.php:29
+msgid "Manage users"
+msgstr "Gestión de usuarios"
+
+# c:\FS/branches/firestats-1.4/firestats/php/page-users.php:34
+# c:\FS/trunk/firestats/php/page-users.php:34
+msgid "You can manage users here"
+msgstr "Puede gestionar los usuarios desde aquí"
+
+# c:\FS/branches/firestats-1.4/firestats/php/page-wordpress-settings.php:97
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:97
+msgid "WordPress users selected here will not be counted in the statistics"
+msgstr "Los usuarios de Wordpress seleccionados aquí, no contabilizarán en las estadísticas"
+
+# c:\FS/branches/firestats-1.3/firestats/php/page-tools.php:65
+# c:\FS/trunk/firestats/php/page-tools.php:65
+msgid "Permissions"
+msgstr "Permisos"
+
+# c:\FS/branches/firestats-1.4/firestats/php/page-wordpress-settings.php:102
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:102
+msgid "Select the minimum user role that can access FireStats (Only administrators can manage FireStats)"
+msgstr "Seleccione el rol de usuario mínimo para acceder a FireStats. (tan sólo los administradores podrán gestionar FireStats)"
+
+# c:\FS/branches/firestats-1.4/firestats/php/page-wordpress-settings.php:106
+# c:\FS/branches/firestats-1.4/firestats/php/window-edit-user.php:11
+# c:\FS/branches/firestats-1.4/firestats/php/window-new-user.php:6
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:106
+# c:\FS/trunk/firestats/php/window-edit-user.php:11
+# c:\FS/trunk/firestats/php/window-new-user.php:6
+msgid "Administrator"
+msgstr "Administrador"
+
+# c:\FS/branches/firestats-1.4/firestats/php/page-wordpress-settings.php:107
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:107
+msgid "Editor"
+msgstr "Editor"
+
+# c:\FS/branches/firestats-1.4/firestats/php/page-wordpress-settings.php:108
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:108
+msgid "Author"
+msgstr "Autor"
+
+# c:\FS/branches/firestats-1.4/firestats/php/page-wordpress-settings.php:109
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:109
+msgid "Contributor"
+msgstr "Contribuyente"
+
+# c:\FS/branches/firestats-1.4/firestats/php/page-wordpress-settings.php:110
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:110
+msgid "Subscriber"
+msgstr "Suscriptor"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-wordpress-settings.php:130
+# c:\FS/trunk/firestats/php/page-wordpress-settings.php:130
+msgid "This will update the titles of the blog posts inside FireStats, you don't normally need to use it"
+msgstr "Esto actualiza los títulos de las entradas en FireStats, normalmente no necesitará hacer esto."
+
+# c:\FS/branches/firestats-1.4/firestats/php/rebuild-db.php:16
+# c:\FS/trunk/firestats/php/rebuild-db.php:16
+msgid "Recalculating matching bots"
+msgstr "Recalculando coincidencias de bots"
+
+# c:\FS/branches/firestats-1.2/firestats/php/tabbed-pane.php:120
+msgid "Users management"
+msgstr "Gestión de usuarios"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/tabbed-pane.php:39
+msgid "FireStats tools"
+msgstr "Herramientas FireStats"
+
+# c:\FS/branches/firestats-1.4/firestats/php/tools-menu.php:3
+# c:\FS/trunk/firestats/php/tools-menu.php:3
+msgid "System test"
+msgstr "Sistema de pruebas"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:73
+msgid "Reset password"
+msgstr "Reinicializar Contraseña"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:91
+# c:\FS/trunk/firestats/php/page-sites.php:91
+msgid "Delete site"
+msgstr "Borrar sitio"
+
+# c:\FS/branches/firestats-1.4/firestats/php/window-delete-user.php:8
+# c:\FS/branches/firestats-1.4/firestats/php/window-edit-user.php:8
+# c:\FS/trunk/firestats/php/window-delete-user.php:8
+# c:\FS/trunk/firestats/php/window-edit-user.php:8
+msgid "No such user"
+msgstr "No existe el usuario"
+
+# c:\FS/branches/firestats-1.2/firestats/php/page-sites.php:91
+# c:\FS/trunk/firestats/php/page-sites.php:91
+msgid "Delete user"
+msgstr "Borrar usuario"
+
+# c:\FS/branches/firestats-1.3/firestats/php/html-utils.php:1093
+# c:\FS/trunk/firestats/php/html-utils.php:1176
+msgid "You can help by sending anonymous system information that will help make better decisions about new features."
+msgstr "Puedes ayudarnos enviando información de manera anónima que nos permitirá tomar mejores decisiones en futuras mejoras"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:73
+msgid "Edit user"
+msgstr "Editar usuario"
+
+# c:\FS/branches/firestats-1.4/firestats/php/window-edit-user.php:26
+# c:\FS/trunk/firestats/php/window-edit-user.php:26
+msgid "New password (Optional)"
+msgstr "Nueva contraseña (opcional)"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/tabbed-pane.php:39
+msgid "Verify new password"
+msgstr "Verificar nueva contraseña"
+
+# c:\FS/branches/firestats-1.4/firestats/php/window-new-edit-site.php:17
+# c:\FS/trunk/firestats/php/window-new-edit-site.php:17
+msgid "Edit site"
+msgstr "Editar sitio"
+
+# c:\FS/branches/firestats-1.2/firestats/php/html-utils.php:62
+# c:\FS/trunk/firestats/php/html-utils.php:62
+msgid "Create a new site"
+msgstr "Crear un  nuevo sitio"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-advanced.php:120
+msgid "Create a new user"
+msgstr "Crear nuevo usuario"
+
+# c:\FS/branches/firestats-1.4/firestats/php/tools/emergency-manage-users.php:9
+msgid "Message"
+msgstr "Mensage"
+
+# c:\FS/branches/firestats-1.4/firestats/php/tools/emergency-manage-users.php:10
+# c:\FS/trunk/firestats/php/tools/emergency-manage-users.php:10
+msgid "This page will allow you to change the password of any user in FireStats."
+msgstr "Esta página le permite cambiar la contraseña de cualquier usuario de FireStats."
+
+# c:\FS/branches/firestats-1.4/firestats/php/tools/emergency-manage-users.php:11
+# c:\FS/trunk/firestats/php/tools/emergency-manage-users.php:11
+#, php-format
+msgid "For security reasons, you must first edit the file %s"
+msgstr "Por razones de seguridad, es necesario editar primero el fichero %s"
+
+# c:\FS/branches/firestats-1.2/firestats/php/help-window.php:199
+# c:\FS/trunk/firestats/php/help-window.php:199
+#, php-format
+msgid "and change the line %s to %s and then refresh this page."
+msgstr "y edita desde la linea %s hasta la %s y despues refresca ésta página."
+
+# c:\FS/branches/firestats-1.4/firestats/php/tools/emergency-manage-users.php:13
+# c:\FS/trunk/firestats/php/tools/emergency-manage-users.php:13
+msgid "Don't forget to change it back when you are done."
+msgstr "No olvide revertir el cambio cuando haya finalizado."
+
+# c:\FS/branches/firestats-1.4/firestats/php/tools/emergency-manage-users.php:18
+# c:\FS/trunk/firestats/php/tools/emergency-manage-users.php:18
+msgid "IMPORTANT"
+msgstr "IMPORTANTE"
+
+# c:\FS/branches/firestats-1.4/firestats/php/tools/reset-password.php:18
+#, php-format
+msgid "You can request an password reset email from here. If it does not work or you don't know your username or email, you can also change your password using the %s"
+msgstr "Desde aquí puede solicitar la reinicialización de su contraseña por correo electrónico. Si no funciona o no recuerda su nombre de usuario o contraseña, tambien puede cambiar su contraseña usando %s"
+
+# c:\FS/branches/firestats-1.4/firestats/php/tools/reset-password.php:18
+# c:\FS/trunk/firestats/php/tools/reset-password.php:18
+msgid "Emergency user management page"
+msgstr "Página de emergencia en la gestión de usuarios."
+
+# c:\FS/branches/firestats-1.4/firestats/php/tools/reset-password.php:28
+# c:\FS/trunk/firestats/php/tools/reset-password.php:28
+msgid "A user with this username and email was not found"
+msgstr "No fue encontrado ningún usuario con este nombre o correo electrónico."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/tabbed-pane.php:39
+msgid "FireStats password recovery"
+msgstr "Recuperar contraseña de FireStats"
+
+# c:\FS/branches/firestats-1.4/firestats/php/tools/reset-password.php:38
+# c:\FS/trunk/firestats/php/tools/reset-password.php:38
+#, php-format
+msgid "Click %s to change your FireStats password, this link will work for a short time"
+msgstr "Pulse %s para cambiar su contraseña de FireStats, éste enlace funcionará por un breve periodo de tiempo."
+
+# c:\FS/branches/firestats-1.4/firestats/php/tools/reset-password.php:42
+# c:\FS/trunk/firestats/php/tools/reset-password.php:42
+msgid "Email sent"
+msgstr "Correo electrónico enviado"
+
+# c:\FS/branches/firestats-1.4/firestats/php/tools/reset-password.php:46
+# c:\FS/trunk/firestats/php/tools/reset-password.php:46
+msgid "Failed to send email"
+msgstr "Falló el envio del correo electrónico"
+
+# c:\FS/branches/firestats-1.4/firestats/php/tools/reset-password.php:61
+# c:\FS/trunk/firestats/php/tools/reset-password.php:61
+#, php-format
+msgid "Failed, maybe too much time have passed since you generated the email? %s"
+msgstr "Falló! quizás pasó demasiado tiempo desde que este correo fue generado. %s"
+
+# c:\FS/branches/firestats-1.4/firestats/php/tools/reset-password.php:61
+# c:\FS/trunk/firestats/php/tools/reset-password.php:61
+msgid "try again"
+msgstr "Pruebe de nuevo"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-database.php:239
+# C:\www\testwp-en\wp-content\plugins\FireStats/trunk/firestats/php/page-database.php:247
+msgid "New password"
+msgstr "Nueva contraseña"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/tabbed-pane.php:39
+msgid "Change password"
+msgstr "Cambiar contraseña"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/js/firestats-admin.js.php:119
+msgid "Email address"
+msgstr "Dirección de correo electrónico"
+
+# c:\FS/branches/firestats-1.4/firestats/php/tools/reset-password.php:118
+# c:\FS/trunk/firestats/php/tools/reset-password.php:118
+msgid "Send password reset email"
+msgstr "Enviar correo de reinicialización de contraseña"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:296
+msgid "FireStats is installed inside Wordpress"
+msgstr "FireStats está  instalado en Wordpress"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/index.php:26
+msgid "Please access it from the Wordperss admin interface"
+msgstr "Por favor, accede a través del interface de administración de Wordpress"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:354
+msgid "Database upgraded successfuly"
+msgstr "Base de datos actualizada satisfactoriamente."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/ajax-handler.php:403
+msgid "Error connecting as an administrator"
+msgstr "Error conectando como administrador"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/db-common.php:101
+#, php-format
+msgid "FireStats is not installed in the database, go to the %s to install FireStats in the database"
+msgstr "FireStats no está instalado en la base de datos, vé a la %s para instalarlo."
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/sql-functions.php:1001
+msgid "Referer"
+msgstr "Referer"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-settings.php:8
+msgid "Number of entries to show in the table"
+msgstr "Número de entradas a mostrar en la tabla"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/page-stats.php:19
+msgid "Recent referers"
+msgstr "Referers recientes"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/tabbed-pane.php:39
+#, php-format
+msgid "FireStats %s"
+msgstr "FireStats %s"
+
+# C:\www\testwp-en\wp-content\plugins\FireStats/php/tabbed-pane.php:39
+#, php-format
+msgid "FireStats %s %s"
+msgstr "FireStats %s %s"
+
+# c:\FS/trunk/firestats/php/tools/emergency-manage-users.php:9
+msgid "Meassage"
+msgstr "Mensage"
+
+# c:\FS/trunk/firestats/php/tools/reset-password.php:18
+#, php-format
+msgid "You can request an password reset email from here. if it does not work or you don't know your username or email, you can also change your password using the %s"
+msgstr "Desde aquí puede solicitar la reinicialización de su contraseña por correo electrónico. Si no funciona o no recuerda su nombre de usuario o contraseña, tambien puede cambiar su contraseña usando %s"
+

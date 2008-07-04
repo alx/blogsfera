@@ -1,0 +1,2217 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Firestats\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2007-10-03 20:08+0100\n"
+"Last-Translator: Martin Štěpán <drewak@gmail.com>\n"
+"Language-Team:  <drewak@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Czech\n"
+"X-Poedit-Country: CZECH REPUBLIC\n"
+"X-Poedit-KeywordsList: fs_e;fs_r\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: F:\\starypc\\sysdvd2\\projects\\localization\\firestats\\firestats_svn\\firestats-1.1\n"
+"X-Poedit-SearchPath-1: F:\\starypc\\sysdvd2\\projects\\localization\\firestats\\firestats_svn\\firestats-1.2\\firestats\n"
+"X-Poedit-SearchPath-2: F:\\starypc\\sysdvd2\\projects\\localization\\firestats\\firestats_svn\\firestats-1.3\n"
+"X-Poedit-SearchPath-3: F:\\starypc\\sysdvd2\\projects\\localization\\firestats\\firestats_svn\\firestats-1.4\n"
+
+# c:/temp/firestats/firestats-wordpress.php:80
+# c:/temp/firestats/index.php:22
+# c:/temp/firestats/index.php:45
+# c:/temp/firestats/php/footer.php:8
+msgid "FireStats"
+msgstr "FireStats"
+
+# c:/temp/firestats/firestats-wordpress.php:80
+msgid "Loading..."
+msgstr "Nahrávám..."
+
+# c:/temp/firestats/firestats-wordpress.php:99
+#, php-format
+msgid "Total : %s page views and %s visits"
+msgstr "Celkem : %s zobrazení stránek a %s návštěv"
+
+# c:/temp/firestats/firestats-wordpress.php:100
+#, php-format
+msgid "Last 24 hours : %s page views and %s visits"
+msgstr "Posledních 24 hodin: %s prohlédnutí stránek a %s návštěv"
+
+# c:/temp/firestats/firestats-wordpress.php:80
+# c:/temp/firestats/index.php:22
+# c:/temp/firestats/index.php:45
+# c:/temp/firestats/php/footer.php:8
+msgid "Powered by FireStats"
+msgstr "Generováno systémem FireStats"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/firestats-wordpress.php:413
+msgid "Pages displayed : "
+msgstr "Stránky zobrazeny : "
+
+# c:/temp/firestats/php/page-stats.php:30
+msgid "Unique visitors : "
+msgstr "Unikátní návšěvníci : "
+
+# c:/temp/firestats/php/page-stats.php:31
+msgid "Pages displayed in last 24 hours : "
+msgstr "Stránky zobrazené v posledních 24 hodinách : "
+
+# c:/temp/firestats/php/page-stats.php:32
+msgid "Unique visitors in last 24 hours : "
+msgstr "Unikátní návštěvníci za posledních 24 hodin : "
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/firestats-wordpress.php:467
+msgid " pages viewed"
+msgstr "stránky zobrazeny"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/firestats-wordpress.php:467
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/firestats-wordpress.php:468
+msgid "today"
+msgstr "dnes"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/firestats-wordpress.php:468
+msgid " visits"
+msgstr " návštěvy"
+
+# c:/temp/firestats/index.php:25
+msgid "FireStats is installed inside WordPress"
+msgstr "FireStats je instalován do WordPressu"
+
+# c:/temp/firestats/index.php:26
+msgid "Please access it from the WordPress admin interface"
+msgstr "Prosím, přistupujte přes administrátorské rozhraní WordPressu"
+
+# c:/temp/firestats/js/firestats.js.php:55
+# c:/temp/firestats/js/firestats.js.php:106
+# c:/temp/firestats/php/page-stats.php:4
+msgid "Refresh statistics"
+msgstr "Obnovení statistik"
+
+# c:/temp/firestats/js/firestats.js.php:95
+# c:/temp/firestats/js/firestats.js.php:221
+msgid "Not a positive number : "
+msgstr "Není kladné číslo :"
+
+# c:/temp/firestats/js/firestats.js.php:123
+msgid "You need to select an bot you want to remove from the table"
+msgstr "Musíte vybrat robota, kterého chcete odstranit z tabulky"
+
+# c:/temp/firestats/js/firestats.js.php:145
+msgid "Invalid IP address"
+msgstr "Neplatná IP adresa"
+
+# c:/temp/firestats/js/firestats.js.php:154
+msgid "You need to select an IP address you want to remove from the table"
+msgstr "Musíte vybrat IP adresu, kterou chcete odstranit z tabulky"
+
+# c:/temp/firestats/js/firestats.js.php:447
+msgid "Import in progress"
+msgstr "Probíhá import"
+
+# c:/temp/firestats/php/ajax-handler.php:97
+#, php-format
+msgid "Unsupported action code : %s"
+msgstr "Kód nepodporované akce: %s"
+
+# c:/temp/firestats/php/ajax-handler.php:105
+#, php-format
+msgid "Unexpexted output: %s"
+msgstr "Neočekávaný výstup: %s"
+
+# c:/temp/firestats/php/ajax-handler.php:117
+#, php-format
+msgid "Saved %d entries to show"
+msgstr "Uloženo %d vstupů pro zobrazení"
+
+# c:/temp/firestats/php/ajax-handler.php:119
+msgid "Saved"
+msgstr "Uloženo"
+
+# c:/temp/firestats/php/ajax-handler.php:131
+#, php-format
+msgid "Imported %d records from Counterize"
+msgstr "Importováno %d záznamů z Counterize"
+
+# c:/temp/firestats/php/ajax-handler.php:132
+# c:/temp/firestats/php/page-import.php:17
+# c:/temp/firestats/php/tabbed-pane.php:98
+msgid "Import"
+msgstr "Import"
+
+# c:/temp/firestats/php/ajax-handler.php:137
+#, php-format
+msgid "An Error occured while importing from Counterize : %s"
+msgstr "Při importu z Counterize se objevila chyba: %s"
+
+# c:/temp/firestats/php/ajax-handler.php:148
+#, php-format
+msgid "Added %s to exclude list"
+msgstr "%s přidáno do seznamu vyjímek"
+
+# c:/temp/firestats/php/ajax-handler.php:165
+#, php-format
+msgid "Removed %s from exclude list"
+msgstr "%s odebráno ze seznamu vyjímek"
+
+# c:/temp/firestats/php/ajax-handler.php:210
+msgid "Excluded users list saved"
+msgstr "Seznam s vyjmutými uživateli uložen"
+
+# c:/temp/firestats/php/ajax-handler.php:228
+#, php-format
+msgid "Added %s to bots list"
+msgstr "%s přidán do seznamu robotů"
+
+# c:/temp/firestats/php/ajax-handler.php:241
+msgid "Empty string is not allowed"
+msgstr "Musíte doplnit údaj, nevyplněná hodnota není dovolena"
+
+# c:/temp/firestats/php/ajax-handler.php:251
+msgid "Removed"
+msgstr "Odstraněno"
+
+# c:/temp/firestats/php/ajax-handler.php:302
+msgid "Not using configuration file"
+msgstr "Nepoužívá konfigurační soubor"
+
+# c:/temp/firestats/php/ajax-handler.php:309
+msgid "Not installed inside Wordpress"
+msgstr "Nenainstalováno do WordPressu"
+
+# c:/temp/firestats/php/ajax-handler.php:320
+#, php-format
+msgid "Failed to delete fs-config.php : %s"
+msgstr "Nezdařilo se smazat fs-config.php : %s"
+
+# c:/temp/firestats/php/ajax-handler.php:341
+msgid "Error creating config file: "
+msgstr "Chyba vytvoření souboru s nastavením:"
+
+# c:/temp/firestats/php/ajax-handler.php:364
+msgid "Error upgrading tables"
+msgstr "Chyba při aktualizaci tabulek"
+
+# c:/temp/firestats/php/ajax-handler.php:389
+msgid "Error installing tables"
+msgstr "Chyba při instalaci tabulek"
+
+# c:/temp/firestats/php/ajax-handler.php:498
+msgid "Error rebuilding database cache"
+msgstr "Chyba při znovuvytváření cache databáze"
+
+# c:/temp/firestats/php/ajax-handler.php:502
+msgid "Database cache rebuilt successfully"
+msgstr "Cache databáze znovuvytvořena úspěšně"
+
+# c:/temp/firestats/php/ajax-handler.php:538
+#, php-format
+msgid "Unkown field: %s"
+msgstr "Neznámé pole: %s"
+
+# c:/temp/firestats/php/ajax-handler.php:563
+msgid "file"
+msgstr "soubor"
+
+# c:/temp/firestats/php/ajax-handler.php:565
+msgid "An error has occured while trying to update the IP-to-country database"
+msgstr "Objevila se chyba při pokusu aktualizovat databázi IP-to-country"
+
+# c:/temp/firestats/php/ajax-handler.php:567
+#, php-format
+msgid "You can update the database manually by downloading this %s and extracting it into %s"
+msgstr "Můžete aktualizovat databázi ručně, stáhněte %s a rozbalte ho do  %s"
+
+# c:/temp/firestats/php/ajax-handler.php:568
+msgid "Error"
+msgstr "Chyba"
+
+# c:/temp/firestats/php/ajax-handler.php:573
+msgid "IP-to-country database is already up-to-date"
+msgstr "IP-to-country databáze je aktuální"
+
+# c:/temp/firestats/php/ip2country.php:182
+msgid "Successfully updated bots list"
+msgstr "Seznam robotů úspěšně zaktualizován"
+
+# c:/temp/firestats/php/ip2country.php:186
+#, php-format
+msgid "Error updadating bots list: %s"
+msgstr "Chyba při aktualizaci seznamu robotů: %s"
+
+# c:/temp/firestats/php/ajax-handler.php:583
+#, php-format
+msgid "Error purging excluded records: %s"
+msgstr "Chyba při vymazávání vyjmutých záznamů: %s"
+
+# c:/temp/firestats/php/ajax-handler.php:588
+msgid "Purged excluded records"
+msgstr "Vyjmuté záznamy vymazány"
+
+# c:/temp/firestats/php/db-common.php:100
+msgid "Database tab"
+msgstr "Databázová tabulka"
+
+# c:/temp/firestats/php/db-common.php:104
+msgid "FireStats database tab"
+msgstr "Tabulka databáze FireStats"
+
+# c:/temp/firestats/php/db-common.php:111
+msgid "FireStats is properly installed in the database"
+msgstr "FireStats je správně nainstalován do databáze"
+
+# c:/temp/firestats/php/db-common.php:114
+#, php-format
+msgid "Database error, go to the %s to correct configuration"
+msgstr "Chyba databáze, pro opravu přejít na  %s"
+
+# c:/temp/firestats/php/db-common.php:117
+#, php-format
+msgid "FireStats is not installed in the database, go to the %s to configure FireStats"
+msgstr "Firestats není nainstalován do databáze, pro nastavení FireStats přejít na  %s"
+
+# c:/temp/firestats/php/db-common.php:120
+#, php-format
+msgid "FireStats database need to be upgraded, go to the %s to upgrade"
+msgstr "FireStats databáze by měla být zaktualizována, pro aktualizaci přejděte sem %s"
+
+# c:/temp/firestats/php/db-common.php:123
+msgid "The FireStats database version is newer this code version, you need to upgrade FireStats"
+msgstr "The FireStats database version is newer this code version, you need to upgrade FireStats"
+
+# c:/temp/firestats/php/db-common.php:126
+msgid "Unknown database status code"
+msgstr "Neznámý kód stavu databáze"
+
+# c:/temp/firestats/php/db-config-utils.php:19
+msgid "Error accessing database"
+msgstr "Chyba při přístupu k databázi"
+
+# c:/temp/firestats/php/db-config-utils.php:22
+msgid "Error connecting to database"
+msgstr "Chyba při připojení k databázi"
+
+# c:/temp/firestats/php/db-config-utils.php:25
+msgid "Cannot write configuration file (read only file or directory)"
+msgstr "Nemohu zapsat do konfiguračního souboru (soubor nebo adresář je pouze pro čtení)"
+
+# c:/temp/firestats/php/db-config-utils.php:28
+msgid "Error creating database"
+msgstr "Chyba vytvoření databáze"
+
+# c:/temp/firestats/php/db-config-utils.php:31
+msgid "Error creating user"
+msgstr "Chyba při vytvoření uživatele"
+
+# c:/temp/firestats/php/db-config-utils.php:34
+msgid "Error creating tables"
+msgstr "Chyba při vytvoření tabulek"
+
+# c:/temp/firestats/php/db-config-utils.php:37
+msgid "Error saving configuration"
+msgstr "Chyba při uložení konfigurace"
+
+# c:/temp/firestats/php/db-config-utils.php:40
+msgid "Password not specified"
+msgstr "Nebylo zadáno heslo"
+
+# c:/temp/firestats/php/db-config-utils.php:43
+msgid "Wrong password"
+msgstr "Špatné heslo"
+
+# c:/temp/firestats/php/db-config-utils.php:53
+msgid "FireStats tables are not installed"
+msgstr "Tabulky FireStats nejsou nainstalovány"
+
+# c:/temp/firestats/php/db-config-utils.php:58
+msgid "FireStats is installed"
+msgstr "FireStats je instalován"
+
+# c:/temp/firestats/php/db-config-utils.php:63
+msgid "Another FireStats database detected"
+msgstr "Nalezena další databáze FireStats"
+
+# c:/temp/firestats/php/db-config-utils.php:68
+msgid "New database created successfuly"
+msgstr "Nová databáze byla úspěšně vytvořena"
+
+# c:/temp/firestats/php/db-config-utils.php:72
+msgid "Configuration is locked"
+msgstr "Konfigurace je uzamčena"
+
+# c:/temp/firestats/php/db-config-utils.php:75
+msgid "Error changing lock file"
+msgstr "Chyba při změně uzamykání souboru"
+
+# c:/temp/firestats/php/db-config-utils.php:80
+# c:/temp/firestats/php/page-database.php:248
+msgid "Configuration unlocked"
+msgstr "Konfigurace odemčena"
+
+# c:/temp/firestats/php/db-config-utils.php:83
+#, php-format
+msgid "Unexpected error code %s"
+msgstr "Kód neočekávané chyby %s"
+
+# c:/temp/firestats/php/db-config-utils.php:311
+msgid "Not configured"
+msgstr "Nenakonfigurováno"
+
+# c:/temp/firestats/php/db-config-utils.php:314
+msgid "FireStats configuration file"
+msgstr "Konfigurační soubor FireStats"
+
+# c:/temp/firestats/php/db-config-utils.php:317
+msgid "Wordpress configuration file"
+msgstr "Konfigurační soubor WordPressu"
+
+# c:/temp/firestats/php/db-import.php:24
+msgid "Counterize not detected"
+msgstr "Nebylo zjištěno, že by plugin Counterize byl nainstalován"
+
+# c:/temp/firestats/php/db-sql.php:15
+# c:/temp/firestats/php/db-sql.php:52
+#, php-format
+msgid "Invalid IP address: %s"
+msgstr "Neplatná IP adresa: %s"
+
+# c:/temp/firestats/php/db-sql.php:27
+#, php-format
+msgid "The IP address %s is already in the database"
+msgstr "IP adresa %s je již v databázi"
+
+# c:/temp/firestats/php/db-sql.php:89
+#, php-format
+msgid "The bot wildcard %s is already in the database"
+msgstr "Maska robota %s je již v databázi"
+
+# c:/temp/firestats/php/html-utils.php:357
+msgid "Unknown"
+msgstr "Neznámý"
+
+# c:/temp/firestats/php/db-sql.php:541
+msgid "Others"
+msgstr "Jiné"
+
+# c:/temp/firestats/php/db-sql.php:573
+#, php-format
+msgid "Database error: %s"
+msgstr "Chyba databáze: %s"
+
+# c:/temp/firestats/php/version-check.php:188
+#, php-format
+msgid "Error opening file : %s"
+msgstr "Chyba při otevírání souboru: %s"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:30
+msgid "Pages viewed:"
+msgstr "Prohlížené stránky:"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:31
+msgid "Visitors:"
+msgstr "Návštěvníci:"
+
+# c:/temp/firestats/php/page-database.php:155
+# c:/temp/firestats/php/page-database.php:218
+msgid "Installed:"
+msgstr "Instalováno:"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:42
+msgid "Even though FireStats is free, it takes a lot of time and hard work to develop and maintain.<br/>"
+msgstr "Ačkoliv je FireStats volně dostupný, zabral hodně času a tvrdé práce při vývoji a údržbě.<br/>"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:43
+msgid "If you like FireStats and would like to show your support for the hard work I put into it, You can make a small Donation. Even a $5 donation would be greatly appreciated.<br/>"
+msgstr "Pokud se Vám FireStats líbí a chtěli by jste ocenit práci, kterou jsem do něj vložil ocenit malým darem. I částka $5 bude velmi vítána.<br/> "
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:47
+msgid "Yeah, I want to help"
+msgstr "Ano, chci pomoci"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:48
+msgid "Nah, go away"
+msgstr "Ne, odejít"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:49
+msgid "Maybe later"
+msgstr "Možná později"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:50
+msgid "Already donated"
+msgstr "Již darováno"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:60
+#, php-format
+msgid "%d seconds ago"
+msgstr "Před %d sekundami"
+
+# c:/temp/firestats/php/page-stats.php:20
+#, php-format
+msgid "%d minutes ago"
+msgstr "před %d minutami"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:66
+msgid "one hour ago"
+msgstr "před hodinou"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:69
+#, php-format
+msgid "%d hours ago"
+msgstr "Před %d hodinami"
+
+# c:/temp/firestats/php/page-stats.php:50
+# c:/temp/firestats/php/page-stats.php:77
+# c:/temp/firestats/php/page-stats.php:97
+# c:/temp/firestats/php/page-stats.php:120
+# c:/temp/firestats/php/page-stats.php:150
+msgid "one day ago"
+msgstr "včera"
+
+# c:/temp/firestats/php/page-stats.php:50
+# c:/temp/firestats/php/page-stats.php:77
+# c:/temp/firestats/php/page-stats.php:97
+# c:/temp/firestats/php/page-stats.php:120
+# c:/temp/firestats/php/page-stats.php:150
+#, php-format
+msgid "%d days ago"
+msgstr "Před %d dny"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:78
+#, php-format
+msgid "%d weeks ago"
+msgstr "Před %d týdny"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:81
+#, php-format
+msgid "%d months ago"
+msgstr "Před %d měsíci"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:84
+#, php-format
+msgid "%d years ago"
+msgstr "Před %d roky"
+
+# c:/temp/firestats/php/db-config-utils.php:34
+msgid "Error exporting bots list"
+msgstr "Chyba při exportu seznamu robotů"
+
+# c:/temp/firestats/php/html-utils.php:27
+msgid "Invalid"
+msgstr "Neplatný"
+
+# c:/temp/firestats/php/html-utils.php:80
+msgid "unknown"
+msgstr "neznámý"
+
+# c:/temp/firestats/php/html-utils.php:136
+msgid "IP"
+msgstr "IP"
+
+# c:/temp/firestats/php/html-utils.php:137
+msgid "TimeStamp"
+msgstr "Datum a čas"
+
+# c:/temp/firestats/php/html-utils.php:138
+msgid "URL"
+msgstr "URL"
+
+# c:/temp/firestats/php/html-utils.php:139
+msgid "Referrer"
+msgstr "Referer"
+
+# c:/temp/firestats/php/html-utils.php:140
+msgid "Image"
+msgstr "Obrázek"
+
+# c:/temp/firestats/php/html-utils.php:141
+msgid "UserAgent"
+msgstr "UserAgent"
+
+# c:/temp/firestats/php/html-utils.php:162
+# c:/temp/firestats/php/html-utils.php:198
+# c:/temp/firestats/php/html-utils.php:348
+# c:/temp/firestats/php/html-utils.php:442
+# c:/temp/firestats/php/html-utils.php:477
+msgid "No data yet, go get some hits"
+msgstr "Zatím žádná data"
+
+# c:/temp/firestats/php/html-utils.php:264
+# c:/temp/firestats/php/html-utils.php:288
+# c:/temp/firestats/php/html-utils.php:314
+msgid "Empty"
+msgstr "Žádné"
+
+# c:/temp/firestats/php/html-utils.php:296
+msgid "excluded"
+msgstr "vyjmuto"
+
+# c:/temp/firestats/php/html-utils.php:377
+#, php-format
+msgid "(%d hits) (%d more from %s)"
+msgstr "(%d přístupů) (%d více z %s)"
+
+# c:/temp/firestats/php/html-utils.php:382
+#, php-format
+msgid "%d hits"
+msgstr "%d přístupů"
+
+# c:/temp/firestats/php/html-utils.php:399
+#, php-format
+msgid "%d hits from %s"
+msgstr "%d přístupů z %s"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/import-bots-list.php:18
+msgid "Select bot-list file"
+msgstr "Vybrat soubor se seznamem robotů"
+
+# c:/temp/firestats/php/ajax-handler.php:132
+# c:/temp/firestats/php/page-import.php:17
+# c:/temp/firestats/php/tabbed-pane.php:98
+msgid "Import type"
+msgstr "Typ importu"
+
+# c:/temp/firestats/php/ajax-handler.php:228
+msgid "Add to bots list"
+msgstr "Přidat do seznamu robotů"
+
+# c:/temp/firestats/php/page-settings.php:85
+msgid "Replace bots list"
+msgstr "Nahradit seznam robotů"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/import-bots-list.php:34
+msgid "Incorrect file format"
+msgstr "Nesprávný formát souboru"
+
+# c:/temp/firestats/php/ip2country.php:186
+#, php-format
+msgid "Error importing bots list : %s"
+msgstr "Chyba při importu seznamu robotů: %s"
+
+# c:/temp/firestats/php/db-config-utils.php:68
+msgid "bots list imported successfully"
+msgstr "Seznam robotů importován úspěšně"
+
+# c:/temp/firestats/php/ip2country.php:83
+# c:/temp/firestats/php/ip2country.php:198
+msgid "Error creating temporary file"
+msgstr "Chyba při vytvoření dočasného souboru"
+
+# c:/temp/firestats/php/ip2country.php:92
+#, php-format
+msgid "Error opening connection to %s"
+msgstr "Chyba při otevírání spojení k %s"
+
+# c:/temp/firestats/php/ip2country.php:98
+#, php-format
+msgid "Error sending request to %s"
+msgstr "Chyba při vysílání požadavku k  %s"
+
+# c:/temp/firestats/php/ip2country.php:112
+#, php-format
+msgid "Error reading data from %s : %s"
+msgstr "Chyba při čtení dat z  %s : %s"
+
+# c:/temp/firestats/php/ip2country.php:139
+#, php-format
+msgid "Error extracting IP-to-country database: %s"
+msgstr "Chyba při rozbalování databáze IP-to-country: %s"
+
+# c:/temp/firestats/php/ip2country.php:144
+#, php-format
+msgid "Unsupported file type : %s"
+msgstr "Nepodporovaný typ souboru: %s"
+
+# c:/temp/firestats/php/ip2country.php:157
+#, php-format
+msgid "can't update ip-to-country database, read-only directory : %s"
+msgstr "nemohu zaktualizovat IP-to-country databázi, adresář pouze ke čtení: %s"
+
+# c:/temp/firestats/php/ip2country.php:159
+# c:/temp/firestats/php/ip2country.php:161
+#, php-format
+msgid "can't update ip-to-country database, read-only file : %s"
+msgstr "nemohu zaktualizovat IP-to-country databázi, soubor pouze ke čtení: %s"
+
+# c:/temp/firestats/php/ip2country.php:176
+msgid "Error installing new IP-to-country database"
+msgstr "Chyba při instalaci nové IP-to-country databáze"
+
+# c:/temp/firestats/php/ip2country.php:182
+msgid "Successfuly updated IP-to-country database"
+msgstr "IP-to-country databáze úspěšně zaktualizována"
+
+# c:/temp/firestats/php/ip2country.php:186
+#, php-format
+msgid "Error updating version file : %s"
+msgstr "Chyba aktualizace souboru s verzí: %s"
+
+# c:/temp/firestats/php/page-database.php:48
+msgid "FireStats database need to be upgraded."
+msgstr "Databáze FireStats by měla být aktualizována."
+
+# c:/temp/firestats/php/page-database.php:49
+msgid "Upgrade"
+msgstr "Aktualizovat"
+
+# c:/temp/firestats/php/page-database.php:75
+#, php-format
+msgid "Configuration source : %s"
+msgstr "Zdroj pro konfiguraci: %s"
+
+# c:/temp/firestats/php/page-database.php:81
+msgid "To use wordpress database, click this button."
+msgstr "Pro použití wordpress databáze klikněte na toto tlačítko."
+
+# c:/temp/firestats/php/page-database.php:82
+msgid "FireStats database configuration will be lost."
+msgstr "Konfigurace FireStats databáze bude ztracena."
+
+# c:/temp/firestats/php/page-database.php:83
+msgid "Use Wordpress database"
+msgstr "použít WordPress databázi"
+
+# c:/temp/firestats/php/page-database.php:94
+msgid "To perform one of the following actions:"
+msgstr "Vyberte jednu z následujících akcí:"
+
+# c:/temp/firestats/php/page-database.php:96
+msgid "Attach to an existing FireStats installation"
+msgstr "Připojit k existující instalaci FireStats"
+
+# c:/temp/firestats/php/page-database.php:97
+# c:/temp/firestats/php/page-database.php:217
+msgid "Install FireStats into an existing database"
+msgstr "Instalovat FireStats do existující databáze"
+
+# c:/temp/firestats/php/page-database.php:98
+# c:/temp/firestats/php/page-database.php:220
+msgid "Create a new database and install FireStats there"
+msgstr "Vytvořit novou databázi a instalovat tam FireStats"
+
+# c:/temp/firestats/php/page-database.php:100
+msgid "Follow instructions in the help"
+msgstr "Postupuj dle instrukcí v okně Pomoc (napravo)"
+
+# c:/temp/firestats/php/page-database.php:109
+msgid "Database host"
+msgstr "Host"
+
+# c:/temp/firestats/php/page-database.php:115
+msgid "Database name"
+msgstr "Název databáze"
+
+# c:/temp/firestats/php/page-database.php:121
+msgid "Database user name"
+msgstr "Jméno uživatele databáze"
+
+# c:/temp/firestats/php/page-database.php:127
+msgid "Database password"
+msgstr "Heslo do databáze"
+
+# c:/temp/firestats/php/page-database.php:133
+msgid "Tables prefix"
+msgstr "Prefix tabulek"
+
+# c:/temp/firestats/php/page-database.php:142
+# c:/temp/firestats/php/page-database.php:215
+# c:/temp/firestats/php/page-database.php:218
+# c:/temp/firestats/php/page-database.php:221
+msgid "Test connection"
+msgstr "Otestovat připojení"
+
+# c:/temp/firestats/php/page-database.php:152
+msgid "Click to install and switch to new FireStats tables"
+msgstr "Kliknout na instalovat a přepnout na nové tabulky FireStats"
+
+# c:/temp/firestats/php/page-database.php:155
+# c:/temp/firestats/php/page-database.php:218
+msgid "Install tables"
+msgstr "Instalovat tabulky"
+
+# c:/temp/firestats/php/page-database.php:164
+msgid "Click to use this FireStats database"
+msgstr "Klikněte pro použití teto FireStats databáze"
+
+# c:/temp/firestats/php/page-database.php:168
+# c:/temp/firestats/php/page-database.php:215
+msgid "Use this database"
+msgstr "Použít tuto databázi"
+
+# c:/temp/firestats/php/page-database.php:180
+msgid "To create a new database, an administrator user should be used in the above fields."
+msgstr "Pro vytvoření nové databáze by měl být použit uživatel s administrátorskými právy."
+
+# c:/temp/firestats/php/page-database.php:181
+msgid "However, For security reason, it is recommanded not to use a database administrator user for day to day operations."
+msgstr "Avšak z bezpečnostních důvodů je doporučeno nepoužívat pro běžné operace uživatele s administrátorskými právy"
+
+# c:/temp/firestats/php/page-database.php:182
+msgid "Enter new user name and password for FireStats, this user will only have access to the FireStats database"
+msgstr "Zadejte jméno uživatele a heslo pro FireStats, tento uživatel bude mít pouze přístup k FireStats databázi"
+
+# c:/temp/firestats/php/page-database.php:183
+msgid "If you will not specify user and password the Admin user and password will be used."
+msgstr "Pokud nezadáte jméno uživatele a heslo, bude použit uživatel Admin s jeho heslem."
+
+# c:/temp/firestats/php/page-database.php:190
+msgid "FireStats User name"
+msgstr "FireStats jméno uživatele"
+
+# c:/temp/firestats/php/page-database.php:194
+msgid "FireStats password"
+msgstr "FireSzats heslo"
+
+# c:/temp/firestats/php/page-database.php:200
+# c:/temp/firestats/php/page-database.php:221
+msgid "Create database"
+msgstr "Vytvořit databázi"
+
+# c:/temp/firestats/php/page-database.php:213
+# c:/temp/firestats/php/page-database.php:224
+# c:/temp/firestats/php/tabbed-pane.php:111
+msgid "Help"
+msgstr "Pomoc"
+
+# c:/temp/firestats/php/page-database.php:214
+msgid "Attach to an existing FireStats database"
+msgstr "Připojit k existující FireStats databázi"
+
+# c:/temp/firestats/php/page-database.php:215
+# c:/temp/firestats/php/page-database.php:218
+#, php-format
+msgid "Enter the parameters in the table, press %s, and then %s."
+msgstr "Zadejte parametry v tabulce, zmáčkni %s, a pak %s."
+
+# c:/temp/firestats/php/page-database.php:221
+#, php-format
+msgid "Enter the parameters into the table, <u>you need to enter a database administrator user</u>. press %s, and then enter FireStats database user and password, and finally press %s."
+msgstr "Zadejte parametry do tabulky, <u>bude potřeba zadat uživatele s administrátorskými právy</u>. Stiskněte %s, a pak zadejte jméno uživatele a heslo do FireStats, a na závěr stiskněte %s."
+
+# c:/temp/firestats/php/page-database.php:225
+# c:/temp/firestats/php/page-database.php:240
+msgid "Configuration locked"
+msgstr "Konfigurace uzamčena"
+
+# c:/temp/firestats/php/page-database.php:226
+msgid "To change the database configuration you need to unlock it, please enter the password."
+msgstr "Pro změny v konfiguraci databáze je nutno ji odemknout, prosím zadejte heslo. "
+
+# c:/temp/firestats/php/page-database.php:227
+#, php-format
+msgid "if you forgot your password you can simply delete the file %s from firestats/php directory."
+msgstr "pokud jste Vaše heslo zapoměli, můžete jednoduše smazat soubor %s z adresáře firestats/php."
+
+# c:/temp/firestats/php/page-database.php:241
+msgid "Database configuration is locked, to unlock for 5 minutes enter the lock password."
+msgstr "Konfigurace databáze je uzamčena, pro odemčení na 5 minut zadejte heslo."
+
+# c:/temp/firestats/php/page-database.php:243
+# c:/temp/firestats/php/page-database.php:251
+msgid "Password"
+msgstr "Heslo"
+
+# c:/temp/firestats/php/page-database.php:244
+msgid "Unlock"
+msgstr "Odemknout"
+
+# c:/temp/firestats/php/page-database.php:249
+msgid "Database configuration is open for changes, enter a password to lock."
+msgstr "Konfigurace databáze může být měnena, pro uzamčení změn zadejte heslo."
+
+# c:/temp/firestats/php/page-database.php:252
+msgid "Lock"
+msgstr "Uzamknout"
+
+# c:/temp/firestats/php/page-help.php:2
+msgid "Collect hits from PHP pages"
+msgstr "Záznamy o přístupech z PHP stránek"
+
+# c:/temp/firestats/php/page-help.php:6
+msgid "To allow FireStats to track access to pages outside of Wordpress, you need to add the following line inside the head tag of each of the pages you want to monitor (the page must be a php page)."
+msgstr "Pro sledování přístupů na Vaše stránky nacházející se mimo WordPress pomocí FireStats je nutno přidat následující řádek do hlavičky každé stránky, kterou chcete sledovat (stránka musí být ve formátu PHP)."
+
+# c:/temp/firestats/php/page-help.php:10
+msgid "To allow FireStats to track access to your pages, you need to add the following line inside the head tag of each of the pages you want to monitor (the page must be a php page)."
+msgstr "Pro sledování přístupů na Vaše stránky pomocí FireStats je nutno přidat následující řádek do hlavičky každé stránky, kterou chcete sledovat (stránka musí být ve formátu PHP)"
+
+# c:/temp/firestats/php/page-help.php:19
+msgid "A typical page header will look like this:"
+msgstr "Typická hlavička stránky bude vypadat asi takto:"
+
+# c:/temp/firestats/php/page-import.php:4
+msgid "You can import your hits from another statistics system here."
+msgstr "Zde můžete importovat údaje z jiných statistik."
+
+# c:/temp/firestats/php/page-import.php:6
+# c:/temp/firestats/php/page-import.php:9
+msgid "Recalculate database cache"
+msgstr "Přepočítat cache databáze"
+
+# c:/temp/firestats/php/page-import.php:7
+msgid "In case of data consistency problems, The database cache may need to be rebuilt."
+msgstr "V případě problémů s konzistencí dat bude nutno znovu vytvořit cache databáze."
+
+# c:/temp/firestats/php/page-import.php:8
+msgid "Its not normally needed, but it does not cause any damage"
+msgstr "Znovuvytvoření není za normálních okolností nezbytné, ale jeho provedení nezpůsobí žádná poškození."
+
+# c:/temp/firestats/php/page-import.php:11
+# c:/temp/firestats/php/page-import.php:16
+# c:/temp/firestats/php/page-import.php:22
+msgid "Counterize"
+msgstr "Counterize"
+
+# c:/temp/firestats/php/page-import.php:16
+#, php-format
+msgid "%s detected"
+msgstr "%s zjištěn"
+
+# c:/temp/firestats/php/page-import.php:22
+#, php-format
+msgid "%s was not detected"
+msgstr "%s nebyl zjištěn"
+
+# c:/temp/firestats/php/page-settings.php:5
+msgid "Automatic version check"
+msgstr "Automatická kontrola verzí"
+
+# c:/temp/firestats/php/page-settings.php:13
+msgid "Automatically check if there is a new version of FireStats (recommended)"
+msgstr "Automaticky kontrolovat, zda není dostupná nová verze FireStats (doporučeno)"
+
+# c:/temp/firestats/php/page-settings.php:22
+msgid "IP-to-country database"
+msgstr "IP-to-country databáze"
+
+# c:/temp/firestats/php/page-settings.php:25
+#, php-format
+msgid "IP-to-country database version : %s"
+msgstr "Verze IP-to-country databáze : %s"
+
+# c:/temp/firestats/php/page-settings.php:30
+msgid "Automatically check if there is a new version of IP-to-country database"
+msgstr "Automaticky kontrolovat, zda není dostupná nová verze IP-to-country databáze "
+
+# c:/temp/firestats/php/page-settings.php:32
+msgid "Update IP-to-country database now (only if needed)"
+msgstr "Aktualizovat IP-to-country databázi nyní (pouze pokud je to nutno)"
+
+# c:/temp/firestats/php/page-settings.php:34
+msgid "Update"
+msgstr "Aktualizace"
+
+# c:/temp/firestats/php/page-settings.php:43
+msgid "Time and language"
+msgstr "Časová zóna a jazyk rozhraní"
+
+# c:/temp/firestats/php/page-settings.php:43
+msgid "Select language"
+msgstr "Vyberte jazyk"
+
+# c:/temp/firestats/php/page-settings.php:47
+# c:/temp/firestats/php/page-settings.php:129
+# c:/temp/firestats/php/page-stats.php:21
+# c:/temp/firestats/php/page-stats.php:47
+# c:/temp/firestats/php/page-stats.php:55
+# c:/temp/firestats/php/page-stats.php:74
+# c:/temp/firestats/php/page-stats.php:82
+# c:/temp/firestats/php/page-stats.php:102
+# c:/temp/firestats/php/page-stats.php:125
+# c:/temp/firestats/php/page-stats.php:147
+# c:/temp/firestats/php/page-stats.php:155
+# c:/temp/firestats/php/page-stats.php:174
+msgid "Save"
+msgstr "Uložit"
+
+# c:/temp/firestats/php/page-settings.php:48
+msgid "How to translate to a new language"
+msgstr "Postup pro přeložení do nového jazyka"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-settings.php:57
+msgid "Select your time zone"
+msgstr "Vyberte Vaši časovou zónu"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-settings.php:67
+#, php-format
+msgid "Time zone selection requires %s or newer"
+msgstr "Výběr časové zóny vyžaduje %s nebo novější"
+
+# c:/temp/firestats/php/page-settings.php:54
+msgid "Exclude hits"
+msgstr "Nezapočítávané přístupy"
+
+# c:/temp/firestats/php/page-settings.php:69
+msgid "Save excluded records (not recommended)"
+msgstr "Ukládat i záznamy pro IP ze seznamu vyjímek (nedoporučeno)"
+
+# c:/temp/firestats/php/page-settings.php:72
+msgid "Purge excluded records stored in the database"
+msgstr "Vymazat záznamy pro IP ze seznamu vyjímek již uložené v databázi"
+
+# c:/temp/firestats/php/page-settings.php:75
+msgid "Purge"
+msgstr "Vyčistit"
+
+# c:/temp/firestats/php/page-settings.php:85
+msgid "Bots list"
+msgstr "Seznam robotů"
+
+# c:/temp/firestats/php/page-settings.php:90
+# c:/temp/firestats/php/page-settings.php:109
+msgid "Add"
+msgstr "Přidat"
+
+# c:/temp/firestats/php/page-settings.php:91
+# c:/temp/firestats/php/page-settings.php:110
+msgid "Remove"
+msgstr "Odstranit"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-settings.php:128
+msgid "Automatic update"
+msgstr "Automatická aktualizace"
+
+# c:/temp/firestats/php/page-settings.php:34
+msgid "Update now"
+msgstr "Aktualizovat nyní"
+
+# c:/temp/firestats/php/ajax-handler.php:132
+# c:/temp/firestats/php/page-import.php:17
+# c:/temp/firestats/php/tabbed-pane.php:98
+msgid "Export"
+msgstr "Export"
+
+# c:/temp/firestats/php/page-settings.php:104
+msgid "Excluded IPs"
+msgstr "Seznam vyjímek (IP pro které se nebudou započítávat přístupy)"
+
+# c:/temp/firestats/php/page-stats.php:17
+msgid "Auto refresh every"
+msgstr "Automatické obnovení každých"
+
+# c:/temp/firestats/php/page-stats.php:20
+msgid "minutes"
+msgstr "minut"
+
+# c:/temp/firestats/php/page-stats.php:26
+msgid "Status"
+msgstr "Stav"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-stats.php:29
+msgid "Page views"
+msgstr "Zobrazení stránek"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-stats.php:30
+msgid "Visits"
+msgstr "Návštěvy"
+
+# c:/temp/firestats/php/page-stats.php:31
+msgid "Page views in last 24 hours"
+msgstr "Zobrazení stránek za posledních 24 hodin"
+
+# c:/temp/firestats/php/page-stats.php:31
+msgid "Visits in last 24 hours"
+msgstr "Návštěvy za posledních 24 hodin"
+
+# c:/temp/firestats/php/page-stats.php:38
+msgid "Recent referrers"
+msgstr "Poslední referery"
+
+# c:/temp/firestats/php/page-stats.php:42
+# c:/temp/firestats/php/page-stats.php:69
+# c:/temp/firestats/php/page-stats.php:142
+msgid "Maximum"
+msgstr "Kolik hodnot maximálně zobrazit?"
+
+# c:/temp/firestats/php/page-stats.php:50
+# c:/temp/firestats/php/page-stats.php:77
+# c:/temp/firestats/php/page-stats.php:97
+# c:/temp/firestats/php/page-stats.php:120
+# c:/temp/firestats/php/page-stats.php:150
+msgid "Days ago"
+msgstr "Za kolik uplynulých dnů?"
+
+# c:/temp/firestats/php/page-stats.php:65
+msgid "Recent popular pages"
+msgstr "Poslední oblíbené stránky"
+
+# c:/temp/firestats/php/page-stats.php:92
+msgid "Browsers"
+msgstr "Prohlížeče"
+
+# c:/temp/firestats/php/page-stats.php:115
+msgid "Operating systems"
+msgstr "Operační systémy"
+
+# c:/temp/firestats/php/page-stats.php:138
+msgid "Countries"
+msgstr "Země"
+
+# c:/temp/firestats/php/page-stats.php:165
+msgid "Hits table"
+msgstr "Seznam přístupů"
+
+# c:/temp/firestats/php/page-stats.php:169
+msgid "Number of hits to show"
+msgstr "Kolik přístupů zobrazovat?"
+
+# c:/temp/firestats/php/tabbed-pane.php:64
+msgid "Statistics widget"
+msgstr "Statistic widget"
+
+# c:/temp/firestats/php/version-check.php:164
+msgid "here"
+msgstr "zde"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:17
+#, php-format
+msgid "You can configure the sidebar widget from %s"
+msgstr "Můžete konfigurovat (sidebar widget) z %s"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:21
+#, php-format
+msgid "The statistics widget requires the %s plugin for optimal usage."
+msgstr "Statistic widget vyžaduje plugin %s pro optimální funkci."
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:24
+msgid "Widgets"
+msgstr "Widgets"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:26
+msgid "You can also manually add the following code to your theme sidebar:"
+msgstr "Také můžete ručně přidat následující kód do sidebaru Vaší šablony:"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:34
+msgid "Comments icons"
+msgstr "Ikonky komentářů"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:42
+msgid "Add flag icon to comments"
+msgstr "Přidat ikonku vlaječky ke komentářům"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:51
+msgid "Add browser and operating system icons to comments"
+msgstr "Přidat ikonku prohlížeče a operačního systému ke komentářům"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:56
+msgid "Blog footer"
+msgstr "Patička (footer) blogu"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:64
+msgid "Add FireStats footer to blog"
+msgstr "Přidat FireStats patičku (footer) k blogu"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:73
+msgid "Show statistics in footer"
+msgstr "Zobrazovat statistiky v patičče (footeru)"
+
+# c:/temp/firestats/php/page-settings.php:125
+msgid "Excluded users"
+msgstr "Vyjmutí uživatelé"
+
+# c:/temp/firestats/php/tabbed-pane.php:27
+msgid "Hide"
+msgstr "Skrýt"
+
+# c:/temp/firestats/php/tabbed-pane.php:35
+msgid "Demo"
+msgstr "Demo"
+
+# c:/temp/firestats/php/tabbed-pane.php:64
+msgid "Statistics"
+msgstr "Statistiky"
+
+# c:/temp/firestats/php/tabbed-pane.php:78
+msgid "Settings"
+msgstr "Nastavení"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/tabbed-pane.php:90
+msgid "WordPress settings"
+msgstr "Nastavení Wordpress"
+
+# c:/temp/firestats/php/tabbed-pane.php:93
+msgid "Database"
+msgstr "Databáze"
+
+# c:/temp/firestats/php/ip2country.php:112
+#, php-format
+msgid "Error getting version information from %s : %s"
+msgstr "Chyba při získávání informace o verzi z %s : %s"
+
+# c:/temp/firestats/php/version-check.php:142
+msgid "A new version of the IP-to-country database is available! you can update it from the settings tab"
+msgstr "Je dostupná nová verze IP-to-country databáze! Její aktualizaci lze provést v záložce Nastavení"
+
+# c:/temp/firestats/php/version-check.php:162
+#, php-format
+msgid "Version %s is available! click %s for more info"
+msgstr "Je dostupná verze %s! Pro více informací klikněte %s"
+
+# c:/temp/firestats/php/version-check.php:188
+#, php-format
+msgid "Error opening %s"
+msgstr "Chyba při otevírání %s"
+
+# c:/temp/firestats/php/ezsql/mysql/ez_sql_mysql.php:41
+msgid "User name and password are required to connect to database"
+msgstr "Pro připojení k databázi je vyžadováno jméno uživatele a heslo"
+
+# c:/temp/firestats/php/ezsql/mysql/ez_sql_mysql.php:42
+msgid "Error establishing mySQL database connection"
+msgstr "Chyba při připojování k mySQL databázi"
+
+# c:/temp/firestats/php/ezsql/mysql/ez_sql_mysql.php:43
+msgid "Database name is required to connect to database"
+msgstr "Pro připojení k databázi je vyžadováno jméno databáze"
+
+# c:/temp/firestats/php/ezsql/mysql/ez_sql_mysql.php:44
+msgid "mySQL database connection is not active"
+msgstr "připojení k mySQL databázi není aktivní"
+
+# c:/temp/firestats/php/ezsql/mysql/ez_sql_mysql.php:45
+msgid "Unexpected error while querying database"
+msgstr "Neočekávaná chyba při dotazu do databáze"
+
+# c:/temp/firestats/php/ezsql/mysql/ez_sql_mysql.php:121
+# c:/temp/firestats/php/ezsql/mysql/ez_sql_mysql.php:132
+#, php-format
+msgid "Can't disconnect: %s"
+msgstr "Nelze odpojit: %s"
+
+# c:/temp/firestats/php/ezsql/mysql/ez_sql_mysql.php:132
+msgid "Not connected"
+msgstr "Nepřipojeno"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/firestats-wordpress.php:195
+msgid "Only blog administrators can access FireStats"
+msgstr "FireStats je přístupný pouze správci blogu"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/firestats-wordpress.php:467
+msgid "pages viewed"
+msgstr "stránky zobrazeny"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/firestats-wordpress.php:468
+msgid "visits"
+msgstr " návštěvy"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/js/firestats.js.php:525
+msgid "Session expired, press ok to reload"
+msgstr "Session vypršela, stiskněte ok pro znovunačtení"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/ajax-handler.php:734
+msgid "this"
+msgstr "tato"
+
+# c:/temp/firestats/php/ajax-handler.php:567
+#, php-format
+msgid "You can update the database manually by opening %s and downloading the <b>zip_url</b>, and extracting it into %s"
+msgstr "Můžete aktualizovat databázi ručně, otevřete %s, stáhněte <b>zip_url</b>  a rozbalte ho do  %s"
+
+# c:/temp/firestats/php/ip2country.php:186
+#, php-format
+msgid "Error updating bots list: %s"
+msgstr "Chyba při aktualizaci seznamu robotů: %s"
+
+# c:/temp/firestats/php/db-config-utils.php:58
+msgid "FireStats is not configured"
+msgstr "FireStats není nakonfigurován"
+
+# c:/temp/firestats/php/db-common.php:114
+msgid "Database error, check your configuration"
+msgstr "Chyba databáze, zkontrolujte Vaši konfiguraci"
+
+# c:/temp/firestats/php/db-common.php:111
+msgid "FireStats is not installed in the database"
+msgstr "FireStats není nainstalován do databáze"
+
+# c:/temp/firestats/php/page-database.php:48
+msgid "FireStats database need to be upgraded"
+msgstr "Databáze FireStats by měla být aktualizována"
+
+# c:/temp/firestats/php/db-config-utils.php:40
+msgid "Site name not specified"
+msgstr "Nebylo zadáno jméno stránky"
+
+# c:/temp/firestats/js/firestats.js.php:95
+# c:/temp/firestats/js/firestats.js.php:221
+msgid "Site ID must be a positive number"
+msgstr "ID stránky musí být kladné číslo"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/db-sql.php:39
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/db-sql.php:73
+#, php-format
+msgid "A site with the ID %s already exists"
+msgstr "Stránka s ID %s již existuje"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/db-sql.php:64
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/db-sql.php:115
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/db-sql.php:131
+#, php-format
+msgid "No site with the id %s exists"
+msgstr "Neexistuje žádná stranka s id %s"
+
+# c:/temp/firestats/firestats-wordpress.php:80
+# c:/temp/firestats/index.php:22
+# c:/temp/firestats/index.php:45
+# c:/temp/firestats/php/footer.php:8
+msgid "Support FireStats"
+msgstr "Podpořte FireStats"
+
+# c:/temp/firestats/php/page-database.php:155
+# c:/temp/firestats/php/page-database.php:218
+msgid "Installed"
+msgstr "Instalován"
+
+# c:/temp/firestats/php/ajax-handler.php:538
+msgid "Unknown site type"
+msgstr "Neznámý typ stránky"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/tabbed-pane.php:90
+msgid "WordPress"
+msgstr "Wordpress"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/help-window.php:102
+msgid "The WordPress plugin registers itself automatically when the its activated"
+msgstr "Plugin do WordPressu se registruje sám automaticky když je aktivován"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/help-window.php:108
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/help-window.php:116
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/help-window.php:131
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/help-window.php:137
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/help-window.php:149
+msgid "plugin"
+msgstr "plugin"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/help-window.php:124
+msgid "module"
+msgstr "modul"
+
+# c:/temp/firestats/php/page-help.php:2
+#, php-format
+msgid "Collect hits from a %s site"
+msgstr "Sbírat přístupy ze stránky %s"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/help-window.php:189
+#, php-format
+msgid "and then configure it in the administration menu with the path %s and the ID %s"
+msgstr "a poté nastavit v administrátorském rozhraní s cestou %s a ID %s"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/help-window.php:199
+#, php-format
+msgid "and then edit the lines in %s to contain this:"
+msgstr "a poté editovat řádky v %s aby obsahovaly toto:"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/help-window.php:206
+#, php-format
+msgid "To collect statistics from your %s site your need to install the %s"
+msgstr "Pro záznam statistických údajů z Vaší stránky %s musíte instalovat %s"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/html-utils.php:30
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:110
+msgid "ID"
+msgstr "ID"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/html-utils.php:31
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:122
+msgid "Name"
+msgstr "Název"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/html-utils.php:32
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:123
+msgid "Type"
+msgstr "Typ"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/html-utils.php:47
+msgid "How to integrate with this site"
+msgstr "Jak sloučit s touto stránkou"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/html-utils.php:73
+msgid "Orphaned hits"
+msgstr "Přístupy s nepřiřazeným ID"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/html-utils.php:62
+msgid "Add a new site"
+msgstr "Přidat novou stránku"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/html-utils.php:97
+msgid "Generic PHP site"
+msgstr "Obecná PHP stránka"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/html-utils.php:99
+msgid "Wordpress"
+msgstr "Wordpress"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/html-utils.php:101
+msgid "Django"
+msgstr "Django"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/html-utils.php:103
+msgid "Drupal"
+msgstr "Drupal"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/html-utils.php:105
+msgid "Gregarius"
+msgstr "Gregarius"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/html-utils.php:107
+msgid "Joomla"
+msgstr "Joomla"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/html-utils.php:109
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/html-utils.php:111
+msgid "Trac"
+msgstr "Trac"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/html-utils.php:211
+msgid "All"
+msgstr "Vše"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:73
+msgid "Show statistics from"
+msgstr "Zobrazit statistiky z"
+
+# c:/temp/firestats/php/ajax-handler.php:228
+msgid "Import bots list"
+msgstr "Importovat seznam robotů"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/import-bots-list.php:31
+msgid "Send File"
+msgstr "Poslat soubor"
+
+# c:/temp/firestats/php/db-common.php:100
+msgid "Database status"
+msgstr "Stav databáze"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-database.php:138
+msgid "Click to upgrade"
+msgstr "Klikněte pro aktualizaci"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-settings.php:113
+msgid "Options"
+msgstr "Nastavení"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-settings.php:142
+msgid "Select WHOIS provider"
+msgstr "Vyberte poskytovatele služby WHOIS"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-settings.php:128
+msgid "Automatic"
+msgstr "Automatický"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:91
+msgid "Delete"
+msgstr "Smazat"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:91
+msgid "Transfer"
+msgstr "Převod"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-stats.php:29
+msgid "Manage sites"
+msgstr "Spravovat stránky"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:118
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-stats.php:323
+msgid "Clear"
+msgstr "Vyčistit"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:125
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:148
+msgid "Close"
+msgstr "Zavřít"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:133
+msgid "This will delete this site from the database, the operation is irreversible!"
+msgstr "Tato akce vymaže stránku z databáze, tento krok je nevratný!"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:134
+msgid "What do you want to do with the site hits?"
+msgstr "Co chcete provést se záznamy o přístupech na stránku?"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:137
+msgid "Delete all the hits"
+msgstr "Smazat všechny záznamy"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:138
+msgid "Transfer the hits to another site"
+msgstr "Převést záznamy na jinou stránku"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:141
+msgid "Enter an existing site ID to transfer the hits to"
+msgstr "Zadejte ID existující stránky pro převod přístupů"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:159
+msgid "Warning, you can really mess things up from here, be careful!"
+msgstr "Upozornění, při dalším postupu mohou nastat problémy, buďte opatrní!"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:161
+msgid "FireStats can collect statistics from multiple sites (on the same server)."
+msgstr "FireStats umí zaznamenávat statistická data z vícero stránek (na stejném serveru)."
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:163
+msgid "The site need to be registered in the sites table"
+msgstr "Stránka musí být registrována s tabulce stránek"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:164
+msgid "The site should be configured to use its ID when reporting a hit, click on the help button next to the site you created for more information"
+msgstr "Stránka by měla být nastavena pro použití svého ID při hlášení přístupu, stiskněte tlačítko help pro více informací o vytvořené stránce"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:167
+#, php-format
+msgid "Click %s for more information"
+msgstr "Klikněte zde %s pro více informací"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-stats.php:141
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-stats.php:174
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-stats.php:199
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-stats.php:266
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-stats.php:328
+msgid "Apply"
+msgstr "Použít"
+
+# c:/temp/firestats/php/html-utils.php:141
+msgid "User agent"
+msgstr "User Agent"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-stats.php:299
+msgid "Filter"
+msgstr "Filtr"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-wordpress-settings.php:128
+msgid "Advanced"
+msgstr "Pokročilý"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-wordpress-settings.php:129
+msgid "WordPress site ID, every hit From this blog is recorded with this as the source Site ID"
+msgstr "ID stránky WordPressu, každý přístup z tohoto blogu je zaznamenáván s tímto ID jako zdrojovým ID stránky"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-wordpress-settings.php:130
+msgid "This should be the same ID as the Site ID in the sites table. you don't normally need to change this."
+msgstr "Toto ID by mělo být stejné jako ID stránky v tabulce stránek. Za normálních okolností toto ID měnit nepotřebujete."
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/tabbed-pane.php:67
+msgid "No"
+msgstr "Ne"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/tabbed-pane.php:68
+msgid "Yes"
+msgstr "Ano"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/tabbed-pane.php:120
+msgid "Sites management"
+msgstr "Správa stránek"
+
+# c:/temp/firestats/php/page-import.php:22
+#, php-format
+msgid "%s days can be compacted"
+msgstr "Záznamy za %s dnů mohou být zmenšeny"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/ajax-handler.php:954
+#, php-format
+msgid "Compacting %s days, %s done"
+msgstr "Zmenšuji %s dnů, hotovo %s"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/ajax-handler.php:1037
+#, php-format
+msgid "Done, took %s second"
+msgstr "Hotovo, proces trval %s sekund"
+
+# c:/temp/firestats/js/firestats.js.php:447
+msgid "Operation already in progress"
+msgstr "Proces již probíhá"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/db-sql.php:48
+msgid "Data compacting is already in progress"
+msgstr "Zmenšování dat již probíhá"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/db-sql.php:67
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-settings.php:176
+msgid "MySQL 4.1.14 or newer is required for data compacting support"
+msgstr "Aby bylo podporováno zmenšování dat, je vyžadována MySQL verze 4.1.14 nebo novější"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/footer.php:44
+#, php-format
+msgid "If you have any problems or questions, please visit the %s"
+msgstr "Pokud máte nějaké problémy nebo dotazy, prosím navštivte %s"
+
+# c:/temp/firestats/php/page-database.php:190
+msgid "FireStats homepage"
+msgstr "domovskou stránku FireStats "
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/help-window.php:102
+msgid "The WordPress plugin registers itself automatically when it's activated"
+msgstr "Plugin do WordPressu se registruje samostatně a automaticky, když je aktivován"
+
+# c:/temp/firestats/php/version-check.php:164
+msgid "Link here"
+msgstr "Odkaz zde"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:222
+msgid "Gallery2"
+msgstr "Gallery2"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:724
+msgid "Start date is missing"
+msgstr "Chybí startovní datum"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:729
+msgid "End date is missing"
+msgstr "Chybí koncové datum"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:749
+msgid "Please wait..."
+msgstr "Čekejte prosím"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:1095
+msgid "System information"
+msgstr "Informace o systému"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:1096
+msgid "You can help by sending anonymous system information that will help make better decisions about new features"
+msgstr "Můžete pomoci anonymním odesláním informací o systému, které nám pomůže při rozhodování o nových vlastnostech"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:1097
+msgid "The information will be sent anonymously, but a unique identifier will be sent to prevent duplicate entries from the same FireStats"
+msgstr "Informace budou odeslány anonymně, ale unikátní identifikátor bude odeslán ,aby se zabránilo duplicitním udajům ze stejné instalace FireStats"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:1100
+msgid "You can change this later from the Tools tab"
+msgstr "Později toto můžete změnit na záložce Nástroje"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:1117
+msgid "Sure, send system information"
+msgstr "Ano, poslat informace o systému"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:1118
+msgid "Nope, don't send"
+msgstr "Ne, neodesílat"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:1120
+msgid "Do you agree to send anonymous system information?"
+msgstr "Souhlasíte s anonymním odesláním informací o systému?"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:42
+msgid "Even though FireStats is free, it takes a lot of time and hard work to develop and maintain."
+msgstr "Ačkoliv je FireStats volně dostupný, zabral hodně času a tvrdé práce při vývoji a údržbě."
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:43
+msgid "If you like FireStats and would like to show your support for the hard work I put into it, You can make a small Donation. Even a $5 donation would be greatly appreciated."
+msgstr "Pokud se Vám FireStats líbí a chtěli by jste ocenit práci, kterou jsem do něj vložil ocenit malým darem. I částka $5 bude velmi vítána. "
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:1156
+msgid "Compacting old data"
+msgstr "Zmenšuji stará data"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:1157
+msgid "FireStats can tranform old data to a more compact form,"
+msgstr "FireStats umí převést stará data do více zhuštěné podoby,"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:1158
+msgid "This will reduce storage size and improve performance at the cost of losing some information which is not essential."
+msgstr "Toto zredukuje"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:1159
+msgid "it is highly recommended that you allow FireStats to do this automatically."
+msgstr "je rozhodně doporučeno aby FireStats tuto činnost mohl provést automaticky."
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:1160
+msgid "Yes (Recommended)"
+msgstr "Ano (doporučeno)"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:1163
+#, php-format
+msgid "Click %s if you would like FireStats to automatically compact data older than %s days"
+msgstr "Klikněte zde %s pokud chcete aby FireStats zmenšoval data starší než %s dnů"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:1164
+#, php-format
+msgid "Click %s if you want to compact data manually or change compacting options (From the Settings tab)"
+msgstr "Klikněte zde %s pokud chcete data zmenšit manuálně nebo změnit nastavení"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-database.php:63
+msgid "Upgrading, do not interrupt"
+msgstr "Aktualizuji, nepřerušujte"
+
+# c:/temp/firestats/php/page-database.php:181
+msgid "However, For security reason, it is recommended not to use a database administrator user for day to day operations."
+msgstr "Avšak z bezpečnostních důvodů je doporučeno nepoužívat pro běžné operace uživatele s administrátorskými právy."
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-settings.php:72
+msgid "Stop"
+msgstr "Zastavit"
+
+# c:/temp/firestats/firestats-wordpress.php:80
+msgid "Compacting..."
+msgstr "Zmenšuji..."
+
+# c:/temp/firestats/firestats-wordpress.php:80
+msgid "Stopping..."
+msgstr "Zastavuji..."
+
+# c:/temp/firestats/php/page-settings.php:34
+msgid "Compact now"
+msgstr "Zmenšit nyní"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-settings.php:154
+msgid "Compact old data"
+msgstr "Zmenšit stará data"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-settings.php:165
+#, php-format
+msgid "%s compact data older than %s"
+msgstr "%s zmenšit data starší než %s"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-settings.php:128
+msgid "Automatically"
+msgstr "Automaticky"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-settings.php:340
+msgid "Manually"
+msgstr "Ručně"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-settings.php:341
+msgid "Please select"
+msgstr "Vyberte prosím"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-settings.php:358
+msgid "One month"
+msgstr "Jeden měsíc"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:81
+msgid "Two months"
+msgstr "Dva měsíce"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-settings.php:360
+msgid "Three months"
+msgstr "Tři měsíce"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-settings.php:361
+msgid "Half a year"
+msgstr "Půlrok"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-settings.php:362
+msgid "One year"
+msgstr "Jeden rok"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-settings.php:363
+msgid "Two years"
+msgstr "Dva roky"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/firestats-wordpress.php:467
+msgid "Baseline page views"
+msgstr "Základní stránky zobrazeny"
+
+# c:/temp/firestats/php/page-stats.php:30
+msgid "Baseline visitors"
+msgstr "Základní návštěvníci"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:160
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:209
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:271
+#, php-format
+msgid "Show at most %s items for the last %s days"
+msgstr "Zobrazit nejvýše %s položek za posledních %s dnů"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:174
+msgid "Search terms"
+msgstr "Hledané výrazy"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:181
+#, php-format
+msgid "Show at most %s search terms for %s"
+msgstr "Zobrazit nejvýše %s hledaných položek pro %s"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:188
+msgid "Start date:"
+msgstr "Startovní datum:"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:189
+msgid "End date:"
+msgstr "Koncové datum:"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:229
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:250
+#, php-format
+msgid "Show items for the last %s days"
+msgstr "Zobrazit položky za posledních %s dnů"
+
+# c:/temp/firestats/php/page-stats.php:31
+msgid "the last 24 hours"
+msgstr "posledních 24 hodin"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:355
+msgid "the last week"
+msgstr "poslední týden"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:356
+msgid "the last month"
+msgstr "poslední měsíc"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:357
+msgid "the three months"
+msgstr "tři měsíce"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:358
+msgid "the last six months"
+msgstr "posledních šest měsícu"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:359
+msgid "the last year"
+msgstr "minulý rok"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:360
+msgid "all time"
+msgstr "celé období"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:361
+msgid "time range"
+msgstr "časový rozsah"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-tools.php:9
+msgid "Abort"
+msgstr "Zrušit"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-wordpress-settings.php:128
+msgid "Canceled"
+msgstr "Zrušeno"
+
+# c:/temp/firestats/php/page-stats.php:26
+msgid "Start"
+msgstr "Start"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-tools.php:49
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/tabbed-pane.php:95
+msgid "Tools"
+msgstr "Nástroje"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-tools.php:50
+msgid "This section contains various tools"
+msgstr "Tato sekce obsahuje různé nástroje"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-tools.php:55
+msgid "I agree to send system information"
+msgstr "Souhlasím s odesláním informací o systému"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-tools.php:59
+msgid "Diagnostics"
+msgstr "Diagnostika"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-tools.php:60
+msgid "System diagnostics page"
+msgstr "Stránka s diagnostikou systému"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-tools.php:60
+msgid "Open"
+msgstr "Otevřít"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-tools.php:65
+msgid "PHP Version"
+msgstr "verze PHP"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-tools.php:68
+msgid "MySQL Version"
+msgstr "verze MySQL"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-tools.php:71
+msgid "Memory limit"
+msgstr "Limit paměti"
+
+# c:/temp/firestats/php/page-database.php:115
+msgid "Database cache"
+msgstr "Cache databáze"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-tools.php:78
+msgid "The following section can recalculate different aspects of the database. you don't normally need to use it."
+msgstr "V následující sekci lze přepočítat různé "
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-tools.php:81
+msgid "Recalculate country codes : "
+msgstr "Přepočítat kódy zemí :"
+
+# c:/temp/firestats/php/ajax-handler.php:498
+msgid "Rebuild database cache: "
+msgstr "Znovuvytvořit cache databáze:"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/firestats-wordpress.php:195
+msgid "You are not authorized to access FireStats"
+msgstr "Nemáte povolen přístup k FireStats"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/firestats-wordpress.php:718
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/firestats-wordpress.php:821
+msgid "Title:"
+msgstr "Titulek:"
+
+# c:/temp/firestats/php/page-database.php:190
+msgid "Hide FireStats logo"
+msgstr "Skrýt logo FireStats "
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/firestats-wordpress.php:737
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/firestats-wordpress.php:788
+msgid "Popular posts"
+msgstr "Oblíbené příspěvky"
+
+# c:/temp/firestats/php/page-stats.php:169
+msgid "Number to show"
+msgstr "Počet zobrazovaných přístupů"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/firestats-wordpress.php:829
+msgid "Days ago (Empty for all time)"
+msgstr "dnů zpět(nechte prázdné pro celé časové období)"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/login.php:10
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/login.php:25
+msgid "Login"
+msgstr "Přihlašovací jméno"
+
+# c:/temp/firestats/php/html-utils.php:141
+msgid "Username"
+msgstr "Uživatelské jméno"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/login.php:24
+msgid "Remember me for the next 14 days"
+msgstr "Zapamatuj si mne pro následujících 14 dnů"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/login.php:30
+#, php-format
+msgid "Forgot your password? click %s."
+msgstr "Zapomšěli jste heslo? Klikněte zde %s."
+
+# c:/temp/firestats/php/page-import.php:22
+#, php-format
+msgid "%s days can be compacted, database size %s"
+msgstr "Záznamy za %s dnů mohou být zmenšeny, velikost databáze je %s"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/ajax-handler.php:954
+#, php-format
+msgid "Compacting %s days, %s done, database size is %s"
+msgstr "Zmenšuji %s dnů, hotovo %s, velikost databáze je %s"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/ajax-handler.php:1050
+#, php-format
+msgid "%d of %d"
+msgstr "%d z %d"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/ajax-handler.php:1185
+msgid "Incorrect user-name or password"
+msgstr "Nesprávné uživatelské jméno nebo heslo"
+
+# c:/temp/firestats/php/db-config-utils.php:40
+msgid "User name not specified"
+msgstr "Nebylo zadáno jméno uživatele"
+
+# c:/temp/firestats/php/db-config-utils.php:40
+msgid "Email not specified"
+msgstr "Nebyla zadána emailová adresa"
+
+# c:/temp/firestats/php/db-config-utils.php:40
+msgid "Passwords did not match"
+msgstr "Heslo neodpovídá"
+
+# c:/temp/firestats/php/page-database.php:127
+msgid "Empty password"
+msgstr "Prázdné heslo"
+
+# c:/temp/firestats/js/firestats.js.php:145
+msgid "Invalid email address"
+msgstr "Neplatná emailová adresa"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/db-sql.php:39
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/db-sql.php:73
+msgid "A user with this name already exists"
+msgstr "Uživatel s tímto jménem již existuje"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/db-sql.php:39
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/db-sql.php:73
+msgid "A user with this email address already exists"
+msgstr "Uživatel s touto emailovou adresou již existuje"
+
+# c:/temp/firestats/php/db-common.php:123
+msgid "The FireStats database version is newer than this code version, you need to upgrade FireStats"
+msgstr "Verze databáze FireStats je novější než tato kódová verze, musíte aktualizovat FireStats"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/db-sql.php:394
+msgid "New site_id must not be empty"
+msgstr "Nové ID stránky nesmí být prázdné"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:138
+msgid "Can't move the hits to the same site"
+msgstr "Nemohu přesunout záznamy na stejnou stránku"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/header.php:28
+msgid "Log out"
+msgstr "Odhlásit"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/html-utils.php:135
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/page-add-admin.php:33
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/window-edit-user.php:22
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/window-new-user.php:17
+msgid "Email"
+msgstr "Email"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/html-utils.php:136
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/window-edit-user.php:34
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/window-new-user.php:29
+msgid "Security level"
+msgstr "Úroveň zabezpečení"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/html-utils.php:158
+msgid "Admin"
+msgstr "Administrátor"
+
+# c:/temp/firestats/php/html-utils.php:141
+msgid "User"
+msgstr "Uživatel"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/html-utils.php:62
+msgid "Add a new user"
+msgstr "Přidat nového uživatele"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/page-add-admin.php:22
+msgid "Create administrator user"
+msgstr "Vytvořit uživatele s administrátorskými právy"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/page-add-admin.php:24
+msgid "You need to create an administrator user for FireStats."
+msgstr "Musíte vytvořit uživatele s administrátorskými právy pro FireStats."
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/page-add-admin.php:25
+msgid "The administrator has full control over FireStats, and will be able to create other users/administrators from the administration interface"
+msgstr "Administrátor zcela ovládá FireStats, a bude schopen vytvářet další uživatelské(administrátorské) účty z administrátorského rozhraní"
+
+# c:/temp/firestats/php/html-utils.php:141
+msgid "User name"
+msgstr "Uživatelské jméno"
+
+# c:/temp/firestats/php/db-config-utils.php:43
+msgid "Verify password"
+msgstr "Ověřit heslo"
+
+# c:/temp/firestats/php/page-database.php:200
+# c:/temp/firestats/php/page-database.php:221
+msgid "Create user"
+msgstr "Vytvořit uživatele"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:160
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:209
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-stats.php:271
+#, php-format
+msgid "Show at most %s items for the last %s days, sorted by %s"
+msgstr "Zobrazit nejvýše %s položek za posledních %s dnů, seřadit podle %s"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/page-stats.php:362
+msgid "Newest first"
+msgstr "Nejdříve nejnovější"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/page-stats.php:363
+msgid "Most hits first"
+msgstr "Nejdříve většinové přístupy"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-tools.php:81
+msgid "Recalculate country codes"
+msgstr "Přepočítat kódy zemí"
+
+# c:/temp/firestats/php/ajax-handler.php:498
+msgid "Rebuild database cache"
+msgstr "Znovuvytvořit cache databáze"
+
+# c:/temp/firestats/php/page-import.php:6
+# c:/temp/firestats/php/page-import.php:9
+msgid "Recalculate search engine terms"
+msgstr "Přepočítat výsledky vyhledávání"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-stats.php:29
+msgid "Manage users"
+msgstr "Spravovat uživatele"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/page-users.php:34
+msgid "You can manage users here"
+msgstr "Zde můžete spravovat uživatelské účty"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/page-wordpress-settings.php:97
+msgid "WordPress users selected here will not be counted in the statistics"
+msgstr "Zde vybraní uživatelé WordPressu nebudou zahrnuti do statistik"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/page-tools.php:65
+msgid "Permissions"
+msgstr "Oprávnění"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/page-wordpress-settings.php:102
+msgid "Select the minimum user role that can access FireStats (Only administrators can manage FireStats)"
+msgstr "Vyberte úroveň uživatele, který bude mít přístup k FireStats (pouze administrátoři mohou ovládat Firestats)"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/page-wordpress-settings.php:106
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/window-edit-user.php:11
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/window-new-user.php:6
+msgid "Administrator"
+msgstr "Administrátor"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/page-wordpress-settings.php:107
+msgid "Editor"
+msgstr "Editor"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/page-wordpress-settings.php:108
+msgid "Author"
+msgstr "Autor"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/page-wordpress-settings.php:109
+msgid "Contributor"
+msgstr "Spolupracovník"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/page-wordpress-settings.php:110
+msgid "Subscriber"
+msgstr "Přispěvovatel"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-wordpress-settings.php:130
+msgid "This will update the titles of the blog posts inside FireStats, you don't normally need to use it"
+msgstr "Toto zaktualizuje titulky článků blogu uvnitř FireStats, za normálních okolností toto měnit nepotřebujete."
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/rebuild-db.php:16
+msgid "Recalculating matching bots"
+msgstr "Přepočítávám odpovídající roboty"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/tabbed-pane.php:120
+msgid "Users management"
+msgstr "Správa uživatelů"
+
+# c:/temp/firestats/firestats-wordpress.php:80
+# c:/temp/firestats/index.php:22
+# c:/temp/firestats/index.php:45
+# c:/temp/firestats/php/footer.php:8
+msgid "FireStats tools"
+msgstr "Nástroje FireStats"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/tools-menu.php:3
+msgid "System test"
+msgstr "test systému"
+
+# c:/temp/firestats/php/page-database.php:127
+msgid "Reset password"
+msgstr "Změnit heslo"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:91
+msgid "Delete site"
+msgstr "Smazat stránku"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/window-delete-user.php:8
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/window-edit-user.php:8
+msgid "No such user"
+msgstr "Neexistující uživatel"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/page-sites.php:91
+msgid "Delete user"
+msgstr "Smazat uživatele"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.3/firestats/php/html-utils.php:1096
+msgid "You can help by sending anonymous system information that will help make better decisions about new features."
+msgstr "Můžete pomoci anonymním odesláním informací o systému, které nám pomůže při rozhodování o nových vlastnostech."
+
+# c:/temp/firestats/php/page-settings.php:125
+msgid "Edit user"
+msgstr "Upravit uživatele"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/window-edit-user.php:26
+msgid "New password (Optional)"
+msgstr "Nové heslo (volitelné)"
+
+# c:/temp/firestats/php/db-config-utils.php:43
+msgid "Verify new password"
+msgstr "Ověřit nové heslo"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/window-new-edit-site.php:17
+msgid "Edit site"
+msgstr "Nastavit stránku"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/html-utils.php:62
+msgid "Create a new site"
+msgstr "Vytvořit novou stránku"
+
+# c:/temp/firestats/php/page-database.php:200
+# c:/temp/firestats/php/page-database.php:221
+msgid "Create a new user"
+msgstr "Vytvořit nového uživatele"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/tools/emergency-manage-users.php:9
+msgid "Meassage"
+msgstr "Zpráva"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/tools/emergency-manage-users.php:10
+msgid "This page will allow you to change the password of any user in FireStats."
+msgstr "Tato stránka dovoluje změnit heslo jakéhokoliv uživatele FireStats."
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/tools/emergency-manage-users.php:11
+#, php-format
+msgid "For security reasons, you must first edit the file %s"
+msgstr "Z bezpečnostních důvodů musíte nejprve upravit soubor %s"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.2\firestats/php/help-window.php:199
+#, php-format
+msgid "and change the line %s to %s and then refresh this page."
+msgstr "a poté změňte řádek %s na %s a pak obnovte stránku."
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/tools/emergency-manage-users.php:13
+msgid "Don't forget to change it back when you are done."
+msgstr "Nezapomeňte vrátit původní hodnoty."
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/tools/emergency-manage-users.php:18
+msgid "IMPORTANT"
+msgstr "Důležité!"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/tools/reset-password.php:18
+#, php-format
+msgid "You can request an password reset email from here. if it does not work or you don't know your username or email, you can also change your password using the %s"
+msgstr "Zde můžete požádat o zaslání emailu s novým heslem. Pokud to nefunguje anebo si nepamatujete uživatelské jméno nebo emailovou adresu, můžete heslo také změnit použitím %s"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/tools/reset-password.php:18
+msgid "Emergency user management page"
+msgstr "Nouzová stránka pro správu uživatelů"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/tools/reset-password.php:28
+msgid "A user with this username and email was not found"
+msgstr "Uživatel s tímto jménem a emailovou adresou nebyl nalezen"
+
+# c:/temp/firestats/php/page-database.php:194
+msgid "FireStats password recovery"
+msgstr "Znovunastavení hesla FireStats"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/tools/reset-password.php:38
+#, php-format
+msgid "Click %s to change your FireStats password, this link will work for a short time"
+msgstr "Klikněte zde %s pro změnu hesla do FireStats, tento odkaz je pouze krátkodobý"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/tools/reset-password.php:42
+msgid "Email sent"
+msgstr "Email odeslán"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/tools/reset-password.php:46
+msgid "Failed to send email"
+msgstr "Email se nepodařilo odeslat"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/tools/reset-password.php:61
+#, php-format
+msgid "Failed, maybe too much time have passed since you generated the email? %s"
+msgstr "Nezdařilo se, možná uplynula moc dlouhá doba od vygenerování emailu? %s"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/tools/reset-password.php:61
+msgid "try again"
+msgstr "zkuste znovu"
+
+# c:/temp/firestats/php/page-database.php:243
+# c:/temp/firestats/php/page-database.php:251
+msgid "New password"
+msgstr "Nové heslo"
+
+# c:/temp/firestats/php/db-config-utils.php:43
+msgid "Change password"
+msgstr "Změnit heslo"
+
+# c:/temp/firestats/js/firestats.js.php:145
+msgid "Email address"
+msgstr "Emailová adresa"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.4/firestats/php/tools/reset-password.php:118
+msgid "Send password reset email"
+msgstr "Odeslat mail s novým heslem"
+

@@ -1,0 +1,2079 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FireStats Slovene\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2007-07-03 01:33+0100\n"
+"Last-Translator: Kosir <vkosir@gmail.com>\n"
+"Language-Team: Kosir (http://kosir.info) <vkosir@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Slovenian\n"
+"X-Poedit-Country: SLOVENIA\n"
+"X-Poedit-KeywordsList: fs_r;fs_e\n"
+"X-Poedit-Basepath: C:\\Documents and Settings\\Vid\\My Documents\\WWW\\KOSIR NEW2\\WP 2.2.1\\wp-content\\plugins\\firestats\n"
+"X-Poedit-SearchPath-0: C:\\Documents and Settings\\Vid\\My Documents\\WWW\\KOSIR NEW2\\WP 2.2.1\\wp-content\\plugins\\firestats\n"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/firestats-wordpress.php:130
+#: 2.2.1\wp-content\plugins\firestats/index.php:20
+#: 2.2.1\wp-content\plugins\firestats/index.php:43
+#: 2.2.1\wp-content\plugins\firestats/php/footer.php:31
+#: 2.2.1\wp-content\plugins\firestats/php/tabbed-pane.php:45
+msgid "FireStats"
+msgstr "FireStats"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/firestats-wordpress.php:130
+msgid "Loading..."
+msgstr "Nalagam..."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/firestats-wordpress.php:149
+#, php-format
+msgid "Total : %s page views and %s visits"
+msgstr "Skupaj : %s ogledov strani in %s obiskov"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/firestats-wordpress.php:150
+#, php-format
+msgid "Last 24 hours : %s page views and %s visits"
+msgstr "Zadnjih 24 ur : %s ogledov strani in %s obiskov"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/firestats-wordpress.php:208
+msgid "Only blog administrators can access FireStats"
+msgstr "Samo administrator bloga lahko uporablja FireStats"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/firestats-wordpress.php:483
+msgid "Pages displayed : "
+msgstr "Prikazov strani :"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/firestats-wordpress.php:484
+msgid "Unique visitors : "
+msgstr "Unikatnih obiskovalcev :"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/firestats-wordpress.php:485
+msgid "Pages displayed in last 24 hours : "
+msgstr "Strani prikazane v zadnjih 24 urah"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/firestats-wordpress.php:486
+msgid "Unique visitors in last 24 hours : "
+msgstr "Unikatni obiskovalci v zadnjih 24 urah"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/firestats-wordpress.php:537
+msgid "pages viewed"
+msgstr "ogledov strani"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/firestats-wordpress.php:537
+#: 2.2.1\wp-content\plugins\firestats/firestats-wordpress.php:538
+msgid "today"
+msgstr "danes"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/firestats-wordpress.php:538
+msgid "visits"
+msgstr "obiskov"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/firestats-wordpress.php:547
+msgid "Powered by FireStats"
+msgstr "Poganja FireStats"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/index.php:23
+msgid "FireStats is installed inside WordPress"
+msgstr "FireStats je nameščen znotraj WordPress-a"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/index.php:24
+msgid "Please access it from the WordPress admin interface"
+msgstr "Prosimo uporabljajte iz nadzorne plošče WordPress-a."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/js/firestats.js.php:203
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:91
+msgid "Not a positive number : "
+msgstr "Ni pozitivno število :"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/js/firestats.js.php:523
+msgid "Session expired, press ok to reload"
+msgstr "Seja je potekla, pritnisnite ok za osvežitev"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:153
+#, php-format
+msgid "Unsupported action code : %s"
+msgstr "Nepodprta akcija : %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:162
+#, php-format
+msgid "Unexpexted output: %s"
+msgstr "Nepričakovana vrnitev : %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:174
+#, php-format
+msgid "Saved %d entries to show"
+msgstr "Shranjeni %d vpisi za prikaz"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:176
+msgid "Saved"
+msgstr "Shranjeno"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:188
+#, php-format
+msgid "Imported %d records from Counterize"
+msgstr "Uvoženi %d vpisi iz Counterize"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:189
+#: 2.2.1\wp-content\plugins\firestats/php/page-import.php:36
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:218
+#: 2.2.1\wp-content\plugins\firestats/php/tabbed-pane.php:112
+msgid "Import"
+msgstr "Uvoz"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:194
+#, php-format
+msgid "An Error occured while importing from Counterize : %s"
+msgstr "Napaka med uvozom iz Counterize : %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:205
+#, php-format
+msgid "Added %s to exclude list"
+msgstr "%s dodano in se ne bo upošteval"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:222
+#, php-format
+msgid "Removed %s from exclude list"
+msgstr "%s odstranjen"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:318
+msgid "Excluded users list saved"
+msgstr "Spisek uporabnikov, ki se ne upoštevajo je shranjen."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:336
+#, php-format
+msgid "Added %s to bots list"
+msgstr "%s dodano v spisek robotov"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:349
+msgid "Empty string is not allowed"
+msgstr "Prazen vpis ni dovoljen"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:359
+msgid "Removed"
+msgstr "Odstranjeno"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:410
+msgid "Not using configuration file"
+msgstr "Datoteka z nastavitvami ni uporabljena"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:417
+msgid "Not installed inside Wordpress"
+msgstr "Ni nameščeno znotraj WordPress-a."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:428
+#, php-format
+msgid "Failed to delete fs-config.php : %s"
+msgstr "Izbris fs-config.php ni uspel : %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:449
+msgid "Error creating config file: "
+msgstr "Napaka pri ustvarjanju datoteke z nastavitvami:"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:472
+msgid "Error upgrading tables"
+msgstr "Napaka pri posodobitvi tabel"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:497
+msgid "Error installing tables"
+msgstr "Napaka pri inštalaciji tabel"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:608
+msgid "Error rebuilding database cache"
+msgstr "Napaka pri obnovi cacha baze"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:612
+msgid "Database cache rebuilt successfully"
+msgstr "Cache baze je bil uspešno obnovljen"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:686
+#, php-format
+msgid "Unkown field: %s"
+msgstr "Neznano polje: %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:721
+msgid "IP-to-country database is already up-to-date"
+msgstr "Ni posodobitev za IP-to-country bazo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:728
+msgid "An error has occured while trying to update the IP-to-country database"
+msgstr "Napaka med posodobitvijo IP-to-country baze"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:732
+msgid "file"
+msgstr "datoteka"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:734
+#, php-format
+msgid "You can update the database manually by downloading this %s and extracting it into %s"
+msgstr "Bazo lahko posodobite ročno. Prenesite %s in razpakirajte v %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:739
+msgid "this"
+msgstr "to"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:741
+#, php-format
+msgid "You can update the database manually by opening %s and downloading the <b>zip_url</b>, and extracting it into %s"
+msgstr "Bazo lahko posodobite ročno. Odprite %s in prenesite <b>zip_url</b>. Vse skupaj razpakirajte v %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:743
+msgid "Error"
+msgstr "Napaka"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:765
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:784
+#, php-format
+msgid "Error updating bots list: %s"
+msgstr "Napaka pri posodobitvi spiska robotov: %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:777
+msgid "Successfully updated bots list"
+msgstr "Spisek robotov je bil uspešno posodobljen"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:799
+#, php-format
+msgid "Error purging excluded records: %s"
+msgstr "Napaka pri izbrisu vpisov, ki se ne upoštevajo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:804
+msgid "Purged excluded records"
+msgstr "Izbrisani izključeni vpisi"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ajax-handler.php:886
+#: 2.2.1\wp-content\plugins\firestats/php/db-common.php:132
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:22
+msgid "Error connecting to database"
+msgstr "Napaka pri povezavi z bazo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-common.php:114
+msgid "FireStats is properly installed in the database"
+msgstr "FireStats je pravilno nameščen v bazo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-common.php:117
+msgid "FireStats is not configured"
+msgstr "FireStats ni nastavljen"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-common.php:120
+msgid "Database error, check your configuration"
+msgstr "Napaka pri bazi. Preverite nastavitve"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-common.php:123
+msgid "FireStats is not installed in the database"
+msgstr "FireStats ni nameščen v baoz"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-common.php:126
+msgid "FireStats database need to be upgraded"
+msgstr "FireStats baza mora biti posodobljena"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-common.php:129
+msgid "The FireStats database version is newer this code version, you need to upgrade FireStats"
+msgstr "Verzija FireStats baze je novejša kot koda. Posodobite FireStats"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-common.php:135
+msgid "Unknown database status code"
+msgstr "Neznana koda statusa baze"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:19
+msgid "Error accessing database"
+msgstr "Napaka pri dostopu do baze"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:25
+msgid "Cannot write configuration file (read only file or directory)"
+msgstr "V datoteko z nastavitvami ni mogoče pisati (read only datoteka ali mapa)"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:28
+msgid "Error creating database"
+msgstr "Napaka pri ustvarjanju baze"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:31
+msgid "Error creating user"
+msgstr "Napaka pri dodajanju uporabnika"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:34
+msgid "Error creating tables"
+msgstr "Napaka pri izgradnji tabel"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:37
+msgid "Error saving configuration"
+msgstr "Napaka pri shranjevanju nastavitev"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:40
+msgid "Password not specified"
+msgstr "Geslo ni navedeno"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:43
+msgid "Wrong password"
+msgstr "Geslo ni pravilno"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:53
+msgid "FireStats tables are not installed"
+msgstr "FireStats tabele niso nameščene"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:58
+msgid "FireStats is installed"
+msgstr "FireStats je nameščen"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:63
+msgid "Another FireStats database detected"
+msgstr "FireStats baza že obstaja"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:68
+msgid "New database created successfuly"
+msgstr "Nova baza uspešno ustvarjena"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:72
+msgid "Configuration is locked"
+msgstr "Nastavitve so zaklenjene"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:75
+msgid "Error changing lock file"
+msgstr "Napaka pri spreminjanju datoteke za zaklep"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:80
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:338
+msgid "Configuration unlocked"
+msgstr "Nastavitve so odklenjene"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:83
+#, php-format
+msgid "Unexpected error code %s"
+msgstr "Nepričakovana napaka %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:311
+msgid "Not configured"
+msgstr "Ni nastavljeno"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:314
+msgid "FireStats configuration file"
+msgstr "FireStats datoteka z nastavitvami"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-config-utils.php:317
+msgid "Wordpress configuration file"
+msgstr "WordPress datoteka z nastavitvami"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-hit.php:254
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:822
+#, php-format
+msgid "Database error: %s"
+msgstr "Napaka v bazi: %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-import.php:24
+msgid "Counterize not detected"
+msgstr "Counterize ni zaznan"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:24
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:53
+msgid "Site name not specified"
+msgstr "Ime strani ni navedeno"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:36
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:57
+msgid "Site ID must be a positive number"
+msgstr "ID strani mora biti pozitivno število"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:39
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:73
+#, php-format
+msgid "A site with the ID %s already exists"
+msgstr "Stran z ID %s že obstaja"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:64
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:115
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:131
+#, php-format
+msgid "No site with the id %s exists"
+msgstr "Stran za ID %s ne obstaja"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:174
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:211
+#, php-format
+msgid "Invalid IP address: %s"
+msgstr "Napaka pri IP naslovu: %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:186
+#, php-format
+msgid "The IP address %s is already in the database"
+msgstr "IP naslov %s je že vpisan v bazo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:247
+#, php-format
+msgid "The bot wildcard %s is already in the database"
+msgstr "Zapis za robota %s že obstaja v bazi"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:610
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:656
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:136
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:559
+msgid "Unknown"
+msgstr "Neznano"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:790
+msgid "Others"
+msgstr "Ostali"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/db-sql.php:857
+#, php-format
+msgid "Error opening file : %s"
+msgstr "Napaka pri odpiranju datoteke : %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:20
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:42
+#: 2.2.1\wp-content\plugins\firestats/php/tabbed-pane.php:42
+msgid "Support FireStats"
+msgstr "Podpri FireStats"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:45
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:33
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:149
+msgid "Page views"
+msgstr "Ogledov strani"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:46
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:150
+msgid "Visits"
+msgstr "Obiskov"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:47
+msgid "Installed"
+msgstr "Nameščeno"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:57
+msgid "Even though FireStats is free, it takes a lot of time and hard work to develop and maintain.<br/>"
+msgstr "Kljub temu, da je FireStats brezplačen njegov razvoj zahteva ogromno trdega dela."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:58
+msgid "If you like FireStats and would like to show your support for the hard work I put into it, You can make a small Donation. Even a $5 donation would be greatly appreciated.<br/>"
+msgstr "Če ti je FireStats všeč in bi rad izkazal majhno podporo za vloženo trdo delo mi lahko nameniš majhno donacijo. Tudi 5€ je več kot dovolj.<br/>"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:61
+msgid "Yeah, I want to help"
+msgstr "Da, želim pomagati"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:62
+msgid "Nah, go away"
+msgstr "Ne, pojdo stran"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:63
+msgid "Maybe later"
+msgstr "Mogoče kasneje"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:64
+msgid "Already donated"
+msgstr "Sem že doniral/a"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:76
+#, php-format
+msgid "%d seconds ago"
+msgstr "%d sekund nazaj"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:79
+#, php-format
+msgid "%d minutes ago"
+msgstr "%d minut nazaj"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:82
+msgid "one hour ago"
+msgstr "eno uro nazaj"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:85
+#, php-format
+msgid "%d hours ago"
+msgstr "%d ur nazaj"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:88
+msgid "one day ago"
+msgstr "en dan nazaj"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:91
+#, php-format
+msgid "%d days ago"
+msgstr "%d dni nazaj"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:94
+#, php-format
+msgid "%d weeks ago"
+msgstr "%d tednov nazaj"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:97
+#, php-format
+msgid "%d months ago"
+msgstr "%d mescev nazaj"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/donation-window.php:100
+#, php-format
+msgid "%d years ago"
+msgstr "%d let nazaj"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/export-bots-list.php:21
+msgid "Error exporting bots list"
+msgstr "Napaka pri izvozu spiska robotov"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/help-window.php:34
+msgid "Unknown site type"
+msgstr "Neznan tip strani"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/help-window.php:77
+msgid "Collect hits from PHP pages"
+msgstr "Zbira obiske iz PHP strani"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/help-window.php:78
+msgid "To allow FireStats to track access to your pages, you need to add the following line inside the head tag of each of the pages you want to monitor (the page must be a php page)."
+msgstr "Če želite, da FireStats beleži obiske vaše strani morate dodati spodnjo vrstico v head del vsake strani za katero želite beležiti statistiko obiskov (stran mora biti php stran)."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/help-window.php:84
+msgid "A typical page header will look like this:"
+msgstr "Tipična glava strani izgleda tako:"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/help-window.php:101
+msgid "WordPress"
+msgstr "WordPress"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/help-window.php:102
+msgid "The WordPress plugin registers itself automatically when the its activated"
+msgstr "WordPress dodatek se registrira avtomatsko ko je dodatek aktiviran"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/help-window.php:108
+#: 2.2.1\wp-content\plugins\firestats/php/help-window.php:116
+#: 2.2.1\wp-content\plugins\firestats/php/help-window.php:131
+#: 2.2.1\wp-content\plugins\firestats/php/help-window.php:137
+#: 2.2.1\wp-content\plugins\firestats/php/help-window.php:149
+msgid "plugin"
+msgstr "dodatek"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/help-window.php:124
+msgid "module"
+msgstr "modul"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/help-window.php:168
+#, php-format
+msgid "Collect hits from a %s site"
+msgstr "Zbiraj podatke iz strani %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/help-window.php:189
+#, php-format
+msgid "and then configure it in the administration menu with the path %s and the ID %s"
+msgstr "in nato spremenite nastavitve v nadzorni plošči z potjo %s in ID-jem %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/help-window.php:199
+#, php-format
+msgid "and then edit the lines in %s to contain this:"
+msgstr "in potem uredi vrstive %s, ki vsebujejo:"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/help-window.php:206
+#, php-format
+msgid "To collect statistics from your %s site your need to install the %s"
+msgstr "Za zbiranje podatkov o strani %s moraš namestiti %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:30
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:110
+msgid "ID"
+msgstr "ID"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:31
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:122
+msgid "Name"
+msgstr "Ime"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:32
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:123
+msgid "Type"
+msgstr "Tip"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:50
+msgid "How to integrate with this site"
+msgstr "Integracija z stranjo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:73
+msgid "Orphaned hits"
+msgstr "Osiroteli obiski"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:85
+msgid "Add a new site"
+msgstr "Dodaj novo stran"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:120
+msgid "Generic PHP site"
+msgstr "Generična PHP stran"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:122
+msgid "Wordpress"
+msgstr "WordPress"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:124
+msgid "Django"
+msgstr "Django"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:126
+msgid "Drupal"
+msgstr "Drupal"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:128
+msgid "Gregarius"
+msgstr "Gregarius"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:130
+msgid "Joomla"
+msgstr "Joomla"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:132
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:134
+msgid "Trac"
+msgstr "Trac"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:221
+msgid "Invalid"
+msgstr "Neveljavno"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:233
+msgid "All"
+msgstr "Vse"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:234
+msgid "Show statistics from"
+msgstr "Prikaži statistiko za"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:263
+msgid "unknown"
+msgstr "neznano"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:325
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:292
+msgid "IP"
+msgstr "IP"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:326
+msgid "TimeStamp"
+msgstr "Časovna oznaka"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:327
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:293
+msgid "URL"
+msgstr "URL"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:328
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:294
+msgid "Referrer"
+msgstr "Predal"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:329
+msgid "Image"
+msgstr "Slika"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:330
+msgid "UserAgent"
+msgstr "UserAgent"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:351
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:407
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:550
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:639
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:674
+msgid "No data yet, go get some hits"
+msgstr "Ni podatkov, potrebnih je nekaj obiskov"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:469
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:493
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:519
+msgid "Empty"
+msgstr "Prazno"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:501
+msgid "excluded"
+msgstr "izključeno"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:579
+#, php-format
+msgid "(%d hits) (%d more from %s)"
+msgstr "(%d obiskov) (%d več za %s)"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:584
+#, php-format
+msgid "%d hits"
+msgstr "%d obiskov"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/html-utils.php:601
+#, php-format
+msgid "%d hits from %s"
+msgstr "%d obiskov od %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/import-bots-list.php:15
+#: 2.2.1\wp-content\plugins\firestats/php/import-bots-list.php:23
+msgid "Import bots list"
+msgstr "Uvozi spisek robotov"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/import-bots-list.php:34
+msgid "Select bot-list file"
+msgstr "Izberi datoteko z spiskom robotov"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/import-bots-list.php:35
+msgid "Import type"
+msgstr "Uvozi tip"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/import-bots-list.php:37
+msgid "Add to bots list"
+msgstr "Dodaj k spisku robotov"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/import-bots-list.php:38
+msgid "Replace bots list"
+msgstr "Zamenjaj spisek robotov"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/import-bots-list.php:40
+msgid "Send File"
+msgstr "Pošlji datoteko"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/import-bots-list.php:50
+msgid "Incorrect file format"
+msgstr "Nepravilen format datoteke"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/import-bots-list.php:62
+#, php-format
+msgid "Error importing bots list : %s"
+msgstr "Napaka pri uvozu spiska robotov : %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/import-bots-list.php:67
+msgid "bots list imported successfully"
+msgstr "spisek robotov je bil uspešno uvožen"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ip2country.php:87
+#: 2.2.1\wp-content\plugins\firestats/php/ip2country.php:201
+msgid "Error creating temporary file"
+msgstr "Napaka pri ustvarjanju delovnih datotek"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ip2country.php:96
+#, php-format
+msgid "Error opening connection to %s"
+msgstr "Napaka pri povezavi z %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ip2country.php:101
+#, php-format
+msgid "Error sending request to %s"
+msgstr "Napaka pri pošiljanju zahteve strani %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ip2country.php:115
+#, php-format
+msgid "Error reading data from %s : %s"
+msgstr "Napaka pri branju podatkov %s : %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ip2country.php:142
+#, php-format
+msgid "Error extracting IP-to-country database: %s"
+msgstr "Napaka pri razširitvi datoteke IP-to-country: %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ip2country.php:147
+#, php-format
+msgid "Unsupported file type : %s"
+msgstr "Nepodprt tip datoteke : %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ip2country.php:160
+#, php-format
+msgid "can't update ip-to-country database, read-only directory : %s"
+msgstr "IP-to-country datotek ni mogoče posodobiti. Read only mapa : %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ip2country.php:162
+#: 2.2.1\wp-content\plugins\firestats/php/ip2country.php:164
+#, php-format
+msgid "can't update ip-to-country database, read-only file : %s"
+msgstr "IP-to-country datotek ni mogoče posodobiti. Read only datoteka : %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ip2country.php:179
+msgid "Error installing new IP-to-country database"
+msgstr "Napaka pri namestitvi nove IP-to-country baze"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ip2country.php:185
+msgid "Successfuly updated IP-to-country database"
+msgstr "IP-to-country baza je bila uspešno posodobljena"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ip2country.php:189
+#, php-format
+msgid "Error updating version file : %s"
+msgstr "Napaka pri posodobitvi datoteke : %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:103
+msgid "Database status"
+msgstr "Stanje baze"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:138
+msgid "Click to upgrade"
+msgstr "Klikni za posodobitev"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:139
+msgid "Upgrade"
+msgstr "Posodobi"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:165
+#, php-format
+msgid "Configuration source : %s"
+msgstr "Vir nastavitev : %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:171
+msgid "To use wordpress database, click this button."
+msgstr "Za uporabo WordPress baze kliknite ta gumb."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:172
+msgid "FireStats database configuration will be lost."
+msgstr "Nastavitve baze FireStats bodo izgubljene."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:173
+msgid "Use Wordpress database"
+msgstr "Uporabi WordPress bazo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:184
+msgid "To perform one of the following actions:"
+msgstr "Izvedi eno izmed naslednjih akcij:"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:186
+msgid "Attach to an existing FireStats installation"
+msgstr "Dodaj k obstoječi FireStats namestitvi"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:187
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:307
+msgid "Install FireStats into an existing database"
+msgstr "Namesti FireStats v obstoječo bazo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:188
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:310
+msgid "Create a new database and install FireStats there"
+msgstr "Ustvari novo bazo in namesti FireStats tja"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:190
+msgid "Follow instructions in the help"
+msgstr "Sledi napotkom v pomoči"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:199
+msgid "Database host"
+msgstr "Naslov (host) baze"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:205
+msgid "Database name"
+msgstr "Ime Baze"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:211
+msgid "Database user name"
+msgstr "Uporabniško ime baze"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:217
+msgid "Database password"
+msgstr "Geslo baze"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:223
+msgid "Tables prefix"
+msgstr "Predpona tabel"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:232
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:305
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:308
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:311
+msgid "Test connection"
+msgstr "Preveri povezavo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:242
+msgid "Click to install and switch to new FireStats tables"
+msgstr "Klikni za namestitev in preklop na novo FireStats tabelo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:245
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:308
+msgid "Install tables"
+msgstr "Namesti tabele"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:254
+msgid "Click to use this FireStats database"
+msgstr "Klikni za uporabo te FireStats baze"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:258
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:305
+msgid "Use this database"
+msgstr "Uporabi to bazo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:270
+msgid "To create a new database, an administrator user should be used in the above fields."
+msgstr "Za ustvaritev nove povezave morate vpisatit uporabniško ime administratorja v polje zgoraj."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:271
+msgid "However, For security reason, it is recommanded not to use a database administrator user for day to day operations."
+msgstr "Vendar za dneven operacije ni priporočeno uporabljati uporabnika z administratorskimi privilegiji."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:272
+msgid "Enter new user name and password for FireStats, this user will only have access to the FireStats database"
+msgstr "Vpišite novo uporabniško ime in geslo za FireStats. Ta uporabnik bo imel dostop samo do FireStats baze"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:273
+msgid "If you will not specify user and password the Admin user and password will be used."
+msgstr "Če uporabniško ime in geslo nista navedena bodo uporabljeni podatki administratorja."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:280
+msgid "FireStats User name"
+msgstr "FireStats uporabniško ime"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:284
+msgid "FireStats password"
+msgstr "FireStats geslo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:290
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:311
+msgid "Create database"
+msgstr "Ustvari bazo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:303
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:314
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:158
+msgid "Help"
+msgstr "Pomoč"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:304
+msgid "Attach to an existing FireStats database"
+msgstr "Dodaj k obstoječi namestitvi FireStats"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:305
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:308
+#, php-format
+msgid "Enter the parameters in the table, press %s, and then %s."
+msgstr "Vpiši parametre v tabelo. Pritisni %s in potem %s."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:311
+#, php-format
+msgid "Enter the parameters into the table, <u>you need to enter a database administrator user</u>. press %s, and then enter FireStats database user and password, and finally press %s."
+msgstr "Vpiši parametre v tabelo. <u>Vpisati morate uporabnika z privilegiji administratorja</u>. pritisni %s in vpiši podatke za uporabljeno bazo in pritisni %s."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:315
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:330
+msgid "Configuration locked"
+msgstr "Nastavitve zaklenjene"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:316
+msgid "To change the database configuration you need to unlock it, please enter the password."
+msgstr "Za spremembo nastavitev morate le-te odklenite. Vpišite geslo."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:317
+#, php-format
+msgid "if you forgot your password you can simply delete the file %s from firestats/php directory."
+msgstr "Če ste geslo pozabili lahko izbrišete datoteko %s iz firestats/php mape."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:331
+msgid "Database configuration is locked, to unlock for 5 minutes enter the lock password."
+msgstr "Nastavitve baze so zaklenjene. Za odklep za 5 minut vpišite geslo."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:333
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:341
+msgid "Password"
+msgstr "Geslo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:334
+msgid "Unlock"
+msgstr "Odkleni"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:339
+msgid "Database configuration is open for changes, enter a password to lock."
+msgstr "Nastavitve baze so odklenjene. Vpišite geslo za zaklep."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-database.php:342
+msgid "Lock"
+msgstr "Zakleni"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-import.php:13
+msgid "Import in progress"
+msgstr "Uvoz v postopku"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-import.php:23
+msgid "You can import your hits from another statistics system here."
+msgstr "Statistiko obiskov lahko uvozite is ostalih sistemov."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-import.php:25
+#: 2.2.1\wp-content\plugins\firestats/php/page-import.php:28
+msgid "Recalculate database cache"
+msgstr "Ponovno preračunaj cache baze"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-import.php:26
+msgid "In case of data consistency problems, The database cache may need to be rebuilt."
+msgstr "V primeru problemov z bazo je možno, da boste moralo obnovit cache baze."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-import.php:27
+msgid "Its not normally needed, but it does not cause any damage"
+msgstr "Ni potrebo vendar ne naredi nobene škode"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-import.php:30
+#: 2.2.1\wp-content\plugins\firestats/php/page-import.php:35
+#: 2.2.1\wp-content\plugins\firestats/php/page-import.php:41
+msgid "Counterize"
+msgstr "Counterize"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-import.php:35
+#, php-format
+msgid "%s detected"
+msgstr "%s odkrit"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-import.php:41
+#, php-format
+msgid "%s was not detected"
+msgstr "%s ni bil odkrit"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:17
+msgid "You need to select an bot you want to remove from the table"
+msgstr "Izbrati morate robota, ki ga želite odstraniti iz tabele"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:39
+msgid "Invalid IP address"
+msgstr "Neveljaven IP naslov"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:48
+msgid "You need to select an IP address you want to remove from the table"
+msgstr "Izbrati morate IP naslov, ki ga želite odstraniti iz tabele"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:76
+msgid "Automatic version check"
+msgstr "Avtomatsko preverjanje verzije"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:84
+msgid "Automatically check if there is a new version of FireStats (recommended)"
+msgstr "Avtomatsko preveri če je na voljo novejša verzija FireStats (priporočeno)"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:93
+msgid "IP-to-country database"
+msgstr "IP-to-country baza"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:96
+#, php-format
+msgid "IP-to-country database version : %s"
+msgstr "IP-to-country baza verzije : %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:101
+msgid "Automatically check if there is a new version of IP-to-country database"
+msgstr "Avtomatsko preveri če je na voljo nova verzija baze IP-to-country"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:103
+msgid "Update IP-to-country database now (only if needed)"
+msgstr "Posodobi IP-to-country bazo zdaj (samo če je potrebno)"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:105
+msgid "Update"
+msgstr "Posodobi"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:113
+msgid "Options"
+msgstr "Možnosti"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:114
+msgid "Select language"
+msgstr "Izberite jezik"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:120
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:132
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:148
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:126
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:218
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:239
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:283
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:113
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:135
+msgid "Save"
+msgstr "Shrani"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:122
+msgid "How to translate to a new language"
+msgstr "Kako prevesti v nov jezik"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:128
+msgid "Select your time zone"
+msgstr "Izberite časovni pas"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:138
+#, php-format
+msgid "Time zone selection requires %s or newer"
+msgstr "Izbira časovnega pasa zahteva %s ali novejše"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:142
+msgid "Select WHOIS provider"
+msgstr "Izberi WHOIS ponudnika"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:159
+msgid "Exclude hits"
+msgstr "Izključeni obiski"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:174
+msgid "Save excluded records (not recommended)"
+msgstr "Shranjuj statistiko za izključene obiskovalce (ni priporočeno)"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:177
+msgid "Purge excluded records stored in the database"
+msgstr "Odstrani vpise za izključene uporabnike iz baze"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:180
+msgid "Purge"
+msgstr "Odstrani"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:190
+msgid "Bots list"
+msgstr "Seznam robotov"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:196
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:243
+msgid "Add"
+msgstr "Dodaj"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:197
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:244
+msgid "Remove"
+msgstr "Odstrani"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:211
+msgid "Automatic update"
+msgstr "Avtomatska posodobitev"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:214
+msgid "Update now"
+msgstr "Posodobi zdaj"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:222
+msgid "Export"
+msgstr "Izvozi"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-settings.php:238
+msgid "Excluded IPs"
+msgstr "Izključeni IP naslovi"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:22
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:24
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:65
+msgid "Automatic"
+msgstr "Avtomatsko"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:91
+msgid "Delete"
+msgstr "Izbriši"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:91
+msgid "Transfer"
+msgstr "Prenesi"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:103
+msgid "Manage sites"
+msgstr "Upravljanje z stranmi"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:118
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:323
+msgid "Clear"
+msgstr "Počisti"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:125
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:148
+msgid "Close"
+msgstr "Zapri"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:133
+msgid "This will delete this site from the database, the operation is irreversible!"
+msgstr "To bo izbrisalo stran iz baze. Operacije se ne da preklicati."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:134
+msgid "What do you want to do with the site hits?"
+msgstr "Kaj želiš narediti z obiski strani?"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:137
+msgid "Delete all the hits"
+msgstr "Izbriši vse obiske"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:138
+msgid "Transfer the hits to another site"
+msgstr "Prenesi obiske na drugo stran"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:141
+msgid "Enter an existing site ID to transfer the hits to"
+msgstr "Vpiši obstoječ ID strani za prenos obiskov"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:159
+msgid "Warning, you can really mess things up from here, be careful!"
+msgstr "Opozorilo! Od tukaj lahko marsikaj pokvariš. Bodi previden!"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:161
+msgid "FireStats can collect statistics from multiple sites (on the same server)."
+msgstr "FireStats lahko vodi statistiko obiskov več strani (na istem strežniku)"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:163
+msgid "The site need to be registered in the sites table"
+msgstr "Stran mora biti vpisana v tabelo strani"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:164
+msgid "The site should be configured to use its ID when reporting a hit, click on the help button next to the site you created for more information"
+msgstr "Stran bi morala uporabljati svoj ID za beleženje obiskov. Klikni na gumb pomoč ob strani za več informacij."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:167
+#, php-format
+msgid "Click %s for more information"
+msgstr "Klikni %s za več informacij"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-sites.php:168
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:35
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:40
+#: 2.2.1\wp-content\plugins\firestats/php/version-check.php:148
+msgid "here"
+msgstr "tukaj"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:68
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:102
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:117
+msgid "Refresh statistics"
+msgstr "Osveži statistiko"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:137
+msgid "Auto refresh every"
+msgstr "Avtomatsko osveži vsake"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:140
+msgid "minutes"
+msgstr "minut"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:141
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:174
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:199
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:266
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:328
+msgid "Apply"
+msgstr "Uporabi"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:146
+msgid "Status"
+msgstr "Status"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:151
+msgid "Page views in last 24 hours"
+msgstr "Ogledov strani v zadnjih 24 urah"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:152
+msgid "Visits in last 24 hours"
+msgstr "Obiskov v zadnjih 24 urah"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:158
+msgid "Recent referrers"
+msgstr "Zadnji predajalci"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:162
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:188
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:254
+msgid "Maximum"
+msgstr "Največ"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:169
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:193
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:213
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:234
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:261
+msgid "Days ago"
+msgstr "Dni nazaj"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:184
+msgid "Recent popular pages"
+msgstr "Zadnje popularne strani"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:208
+msgid "Browsers"
+msgstr "Brskalniki"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:229
+msgid "Operating systems"
+msgstr "Operacijski sistemi"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:250
+msgid "Countries"
+msgstr "Države"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:274
+msgid "Hits table"
+msgstr "Tabela ogledov"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:278
+msgid "Number of hits to show"
+msgstr "Število prikazanih ogledov"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:295
+msgid "User agent"
+msgstr "User agent"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-stats.php:299
+msgid "Filter"
+msgstr "Filter"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:30
+msgid "Statistics widget"
+msgstr ""
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:45
+#, php-format
+msgid "You can configure the sidebar widget from %s"
+msgstr ""
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:49
+#, php-format
+msgid "The statistics widget requires the %s plugin for optimal usage."
+msgstr ""
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:52
+msgid "Widgets"
+msgstr ""
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:54
+msgid "You can also manually add the following code to your theme sidebar:"
+msgstr "To kodo lahko dodaš v stranski stolpec ročno:"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:62
+msgid "Comments icons"
+msgstr "Ikone pri komentarjih"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:70
+msgid "Add flag icon to comments"
+msgstr "Dodaj zastavo države ob komentar"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:79
+msgid "Add browser and operating system icons to comments"
+msgstr "Dodaj brskalnik in operacijski sistem ob komentar"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:84
+msgid "Blog footer"
+msgstr "Noga bloga"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:92
+msgid "Add FireStats footer to blog"
+msgstr "Dodaj FireStats nogo v blog"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:101
+msgid "Show statistics in footer"
+msgstr "Prikaži statistiko v nogi bloga"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:109
+msgid "Excluded users"
+msgstr "Izključeni uporabniki"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:128
+msgid "Advanced"
+msgstr "Napredno"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:129
+msgid "WordPress site ID, every hit From this blog is recorded with this as the source Site ID"
+msgstr "ID WordPress strani. Vsak ogled tega bloga bo zabeležen kot obisk strani ID"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/page-wordpress-settings.php:130
+msgid "This should be the same ID as the Site ID in the sites table. you don't normally need to change this."
+msgstr "Ta ID se mora ujemati z ID-jem vpisanim v tabeli strani. V veliki večini tega ni potrebno spreminjati."
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/tabbed-pane.php:47
+msgid "Demo"
+msgstr "Demo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/tabbed-pane.php:57
+msgid "Hide"
+msgstr "Skrij"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/tabbed-pane.php:63
+msgid "No"
+msgstr "Ne"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/tabbed-pane.php:64
+msgid "Yes"
+msgstr "Da"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/tabbed-pane.php:90
+msgid "Statistics"
+msgstr "Statistika"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/tabbed-pane.php:94
+msgid "Settings"
+msgstr "Nastavitve"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/tabbed-pane.php:100
+msgid "WordPress settings"
+msgstr "WordPress nastavitve"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/tabbed-pane.php:108
+msgid "Database"
+msgstr "Baza"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/tabbed-pane.php:116
+msgid "Sites management"
+msgstr "Upravljanje strani"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/version-check.php:41
+#, php-format
+msgid "Error getting version information from %s : %s"
+msgstr "Napaka pri preverjanju verzije na %s : %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/version-check.php:123
+msgid "A new version of the IP-to-country database is available! you can update it from the settings tab"
+msgstr "Nova verzija baze IP-to-country je na voljo. Posodobiš jo lahko v zavihku nastavitve"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/version-check.php:146
+#, php-format
+msgid "Version %s is available! click %s for more info"
+msgstr "Verzija %s je na voljo! Klikni %s za več informacij"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/version-check.php:172
+#, php-format
+msgid "Error opening %s"
+msgstr "Napaka pri odpiranju %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ezsql/mysql/ez_sql_mysql.php:41
+msgid "User name and password are required to connect to database"
+msgstr "Uporabniško ime in geslo sta obvezni za povezavo z bazo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ezsql/mysql/ez_sql_mysql.php:42
+msgid "Error establishing mySQL database connection"
+msgstr "Napaka med vspostavljanjem povezave z mySQL bazo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ezsql/mysql/ez_sql_mysql.php:43
+msgid "Database name is required to connect to database"
+msgstr "Ime baze je obvezno za povezavo z bazo"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ezsql/mysql/ez_sql_mysql.php:44
+msgid "mySQL database connection is not active"
+msgstr "Povezava z mySQL bazo ni aktivna"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ezsql/mysql/ez_sql_mysql.php:45
+msgid "Unexpected error while querying database"
+msgstr "Nepričakovana napaka med pregledovanjem baze"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ezsql/mysql/ez_sql_mysql.php:122
+#: 2.2.1\wp-content\plugins\firestats/php/ezsql/mysql/ez_sql_mysql.php:133
+#, php-format
+msgid "Can't disconnect: %s"
+msgstr "Nemorem prekiniti: %s"
+
+#: C:\Documents
+#: and Settings\Vid\My Documents\WWW\KOSIR NEW2\WP
+#: 2.2.1\wp-content\plugins\firestats/php/ezsql/mysql/ez_sql_mysql.php:133
+msgid "Not connected"
+msgstr "Ni povezano"
+

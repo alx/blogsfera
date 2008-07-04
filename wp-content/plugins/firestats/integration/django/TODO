@@ -1,0 +1,5 @@
+TODO list for firestats and django integration
+==============================================
+
+27/11/2006
+- find alternative to os.system call to register hit. possibly use a unix-socket or named-pipe

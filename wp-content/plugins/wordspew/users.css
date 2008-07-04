@@ -1,0 +1,4 @@
+/* this file controls the look of registered users */
+
+#chatoutput .jal_user, #chatoutput .jal_user a { font-weight: bold;  }
+.Pierre { background: url(http://pierre.sudarovich.free.fr/wp-content/plugins/wordspew/img/tux.gif) no-repeat; padding-left: 16px; margin-left: -14px; }

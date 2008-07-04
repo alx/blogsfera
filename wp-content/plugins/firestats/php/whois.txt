@@ -1,0 +1,2 @@
+ARIN http://ws.arin.net/cgi-bin/whois.pl?queryinput=%s
+RIPE http://www.ripe.net/fcgi-bin/whois?form_type=simple&full_query_string=&searchtext=%s&submit.x=0&submit.y=0&submit=Search

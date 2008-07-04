@@ -1,0 +1,1789 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FireStats1.4 ja_JP.po\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2007-11-10 13:13+0900\n"
+"Last-Translator: SANO Atsushi\n"
+"Language-Team: FireStats1.4 ja_JP.po\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Japanese(日本語)\n"
+"X-Poedit-Country: JAPAN\n"
+"X-Poedit-KeywordsList: fs_r;fs_e\n"
+"X-Poedit-Basepath: D:\\work\\firestats\n"
+"X-Poedit-SearchPath-0: firestats-1.4\\firestats\\php\n"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:193
+#, php-format
+msgid "Unsupported action code : %s"
+msgstr "サポートされていないアクションコード : %s"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:202
+#, php-format
+msgid "Unexpexted output: %s"
+msgstr "不明な出力: %s"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:229
+#, php-format
+msgid "Added %s to exclude list"
+msgstr "%s を除外IPリストに追加しました"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:245
+#, php-format
+msgid "Removed %s from exclude list"
+msgstr "%s を統計除外IPアドレスリストから削除しました"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:354
+msgid "Excluded users list saved"
+msgstr "統計から除外するユーザを変更しました"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:371
+#, php-format
+msgid "Added %s to bots list"
+msgstr "%s をボットリストに追加しました"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:382
+msgid "Empty string is not allowed"
+msgstr "何も入力されていません"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:392
+msgid "Removed"
+msgstr "削除しました"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:444
+msgid "Not using configuration file"
+msgstr "設定ファイルを使っていません"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:450
+msgid "Not installed inside Wordpress"
+msgstr "Wordpress内にインストールされていません。"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:460
+#, php-format
+msgid "Failed to delete fs-config.php : %s"
+msgstr "fs-config.php の削除に失敗しました : %s"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:480
+msgid "Error creating config file: "
+msgstr "設定ファイルが作成できません"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:504
+msgid "Error upgrading tables"
+msgstr "テーブルのアップグレードができません"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:530
+msgid "Error installing tables"
+msgstr "テーブルがインストールできません"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:609
+msgid "Error rebuilding database cache"
+msgstr "データベースキャッシュの再構築できません"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:613
+msgid "Database cache rebuilt successfully"
+msgstr "データベースキャッシュを再構築しました"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:692
+#: firestats-1.4\firestats\php/page-settings.php:72
+#, php-format
+msgid "%s days can be compacted, database size %s"
+msgstr "%s 日分のデータを圧縮できます"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:695
+#, php-format
+msgid "Unkown field: %s"
+msgstr "不明なフィールドです : %s"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:731
+msgid "IP-to-country database is already up-to-date"
+msgstr "IP2Cデータベースは、すでに最新のものです。"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:738
+msgid "An error has occured while trying to update the IP-to-country database"
+msgstr "IP2Cデータベースの更新中にエラーが発生しました"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:742
+msgid "file"
+msgstr "ファイル"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:744
+#, php-format
+msgid "You can update the database manually by downloading this %s and extracting it into %s"
+msgstr "この%sをダウンロード・展開して、%s ディレクトリに置けば手動でも更新できます。"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:749
+msgid "this"
+msgstr "これ"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:751
+#, php-format
+msgid "You can update the database manually by opening %s and downloading the <b>zip_url</b>, and extracting it into %s"
+msgstr "%s を開き、<b>zip_url</b> をダウンロード・展開して、%s ディレクトリに置けば手動でも更新できます。"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:753
+msgid "Error"
+msgstr "エラー"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:777
+#: firestats-1.4\firestats\php/ajax-handler.php:795
+#, php-format
+msgid "Error updating bots list: %s"
+msgstr "ボットリストが更新できません: %s"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:789
+msgid "Successfully updated bots list"
+msgstr "ボットリストを更新しました"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:808
+#, php-format
+msgid "Error purging excluded records: %s"
+msgstr "統計から除外したログを完全削除できません: %s"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:812
+msgid "Purged excluded records"
+msgstr "統計除外ログを完全削除しました"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:896
+#: firestats-1.4\firestats\php/db-common.php:134
+#: firestats-1.4\firestats\php/db-config-utils.php:23
+msgid "Error connecting to database"
+msgstr "データベースに接続できません"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:979
+#, php-format
+msgid "Compacting %s days, %s done, database size is %s"
+msgstr "%s 日分 %s のデータを圧縮しました"
+
+# 実際の画面で確認
+#: firestats-1.4\firestats\php/ajax-handler.php:1054
+#, php-format
+msgid "%d of %d"
+msgstr "%d / %d"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:1066
+#, php-format
+msgid "Done, took %s second"
+msgstr "完了 %s 秒"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:1189
+msgid "Incorrect user-name or password"
+msgstr "ユーザ名かパスワードが間違えています"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:1210
+#: firestats-1.4\firestats\php/ajax-handler.php:1245
+#: firestats-1.4\firestats\php/ajax-handler.php:1266
+msgid "User name not specified"
+msgstr "ユーザ名が指定されていません"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:1211
+#: firestats-1.4\firestats\php/ajax-handler.php:1246
+msgid "Email not specified"
+msgstr "メールが指定されていません"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:1212
+#: firestats-1.4\firestats\php/db-config-utils.php:41
+msgid "Password not specified"
+msgstr "パスワードが入力されていません"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:1213
+#: firestats-1.4\firestats\php/ajax-handler.php:1249
+#: firestats-1.4\firestats\php/ajax-handler.php:1267
+msgid "Passwords did not match"
+msgstr "パスワードが合いません"
+
+#: firestats-1.4\firestats\php/ajax-handler.php:1268
+msgid "Empty password"
+msgstr "パスワードが空です"
+
+#: firestats-1.4\firestats\php/auth.php:86
+#, php-format
+msgid "Error connecting to database (%s)"
+msgstr "データベース接続エラー (%s)"
+
+#: firestats-1.4\firestats\php/auth.php:189
+#: firestats-1.4\firestats\php/auth.php:218
+msgid "Invalid email address"
+msgstr "不正なメールアドレス"
+
+#: firestats-1.4\firestats\php/auth.php:199
+#: firestats-1.4\firestats\php/auth.php:228
+msgid "A user with this name already exists"
+msgstr "すでに存在するユーザ名"
+
+#: firestats-1.4\firestats\php/auth.php:203
+#: firestats-1.4\firestats\php/auth.php:232
+msgid "A user with this email address already exists"
+msgstr "すでに存在するユーザのメールアドレス"
+
+#: firestats-1.4\firestats\php/db-common.php:116
+msgid "FireStats is properly installed in the database"
+msgstr "FireStatsはデータベースの中に適切にインストールされています"
+
+#: firestats-1.4\firestats\php/db-common.php:119
+msgid "FireStats is not configured"
+msgstr "何も入力されていません"
+
+#: firestats-1.4\firestats\php/db-common.php:122
+msgid "Database error, check your configuration"
+msgstr "データベースエラー %sの接続の設定をし直してください"
+
+#: firestats-1.4\firestats\php/db-common.php:125
+msgid "FireStats is not installed in the database"
+msgstr "FireStatsはデータベースの中にインストールされていません"
+
+#: firestats-1.4\firestats\php/db-common.php:128
+msgid "FireStats database need to be upgraded"
+msgstr "FireStatsデータベースをアップグレートする必要があります。"
+
+#: firestats-1.4\firestats\php/db-common.php:131
+msgid "The FireStats database version is newer than this code version, you need to upgrade FireStats"
+msgstr "FireStatsデータベースのバージョンが、現在のバージョンより新しくなっています。FireStatsのアップグレードが必要です。"
+
+#: firestats-1.4\firestats\php/db-common.php:137
+msgid "Unknown database status code"
+msgstr "不明なデータベース ステータス コードです"
+
+#: firestats-1.4\firestats\php/db-common.php:544
+#: firestats-1.4\firestats\php/db-hit.php:350
+#, php-format
+msgid "Database error: %s"
+msgstr "データベースエラー: %s"
+
+#: firestats-1.4\firestats\php/db-config-utils.php:20
+msgid "Error accessing database"
+msgstr "データベースにアクセスできません"
+
+#: firestats-1.4\firestats\php/db-config-utils.php:26
+msgid "Cannot write configuration file (read only file or directory)"
+msgstr "設定ファイルに書き込みできません（ファイルかディレクトリが書き込み不可）"
+
+#: firestats-1.4\firestats\php/db-config-utils.php:29
+msgid "Error creating database"
+msgstr "データベースが作成できません"
+
+#: firestats-1.4\firestats\php/db-config-utils.php:32
+msgid "Error creating user"
+msgstr "ユーザが作成できません"
+
+#: firestats-1.4\firestats\php/db-config-utils.php:35
+msgid "Error creating tables"
+msgstr "テーブルが作成できません"
+
+#: firestats-1.4\firestats\php/db-config-utils.php:38
+msgid "Error saving configuration"
+msgstr "設定を保存できません"
+
+#: firestats-1.4\firestats\php/db-config-utils.php:44
+msgid "Wrong password"
+msgstr "パスワードが違います"
+
+#: firestats-1.4\firestats\php/db-config-utils.php:54
+msgid "FireStats tables are not installed"
+msgstr "FireStats データテーブルがインストールされていません"
+
+#: firestats-1.4\firestats\php/db-config-utils.php:59
+msgid "FireStats is installed"
+msgstr "FireStats がインストールされました"
+
+#: firestats-1.4\firestats\php/db-config-utils.php:64
+msgid "Another FireStats database detected"
+msgstr "別の FireStats データベースが見つかりました"
+
+#: firestats-1.4\firestats\php/db-config-utils.php:69
+msgid "New database created successfuly"
+msgstr "新しいデータベースが作成されました"
+
+#: firestats-1.4\firestats\php/db-config-utils.php:72
+#, php-format
+msgid "Unexpected error code %s"
+msgstr "エラー発生： %s"
+
+#: firestats-1.4\firestats\php/db-config-utils.php:281
+msgid "Not configured"
+msgstr "設定されていません"
+
+#: firestats-1.4\firestats\php/db-config-utils.php:284
+msgid "FireStats configuration file"
+msgstr "FireStats 設定ファイル"
+
+#: firestats-1.4\firestats\php/db-config-utils.php:287
+msgid "Wordpress configuration file"
+msgstr "WordPress 設定ファイル"
+
+#: firestats-1.4\firestats\php/db-setup.php:17
+msgid "Operation already in progress"
+msgstr "IPアドレス %s はデータベースに登録済みです"
+
+#: firestats-1.4\firestats\php/db-sql.php:39
+msgid "Data compacting is already in progress"
+msgstr "データはすでに圧縮されています"
+
+#: firestats-1.4\firestats\php/db-sql.php:59
+#: firestats-1.4\firestats\php/page-settings.php:77
+msgid "MySQL 4.1.14 or newer is required for data compacting support"
+msgstr "データ圧縮には、MySQL 4.1.0 以上が必要です"
+
+#: firestats-1.4\firestats\php/db-sql.php:259
+#: firestats-1.4\firestats\php/db-sql.php:297
+msgid "Site name not specified"
+msgstr "サイト名が入力されていません"
+
+#: firestats-1.4\firestats\php/db-sql.php:271
+#: firestats-1.4\firestats\php/db-sql.php:301
+msgid "Site ID must be a positive number"
+msgstr "サイトIDは正の数でなければなりません"
+
+#: firestats-1.4\firestats\php/db-sql.php:274
+#: firestats-1.4\firestats\php/db-sql.php:320
+#, php-format
+msgid "A site with the ID %s already exists"
+msgstr "ID %s のサイトが、すでにあります"
+
+#: firestats-1.4\firestats\php/db-sql.php:308
+#: firestats-1.4\firestats\php/db-sql.php:378
+#: firestats-1.4\firestats\php/db-sql.php:425
+#, php-format
+msgid "No site with the id %s exists"
+msgstr "ID %s のサイトが、ありません"
+
+#: firestats-1.4\firestats\php/db-sql.php:410
+msgid "New site_id must not be empty"
+msgstr "新しいサイトIDは空ではいけません"
+
+#: firestats-1.4\firestats\php/db-sql.php:416
+msgid "Can't move the hits to the same site"
+msgstr "同じサイトにヒット数を移動することはできません"
+
+#: firestats-1.4\firestats\php/db-sql.php:508
+#: firestats-1.4\firestats\php/db-sql.php:548
+#, php-format
+msgid "Invalid IP address: %s"
+msgstr "IPアドレスが不正です: %s"
+
+#: firestats-1.4\firestats\php/db-sql.php:521
+#, php-format
+msgid "The IP address %s is already in the database"
+msgstr "IPアドレス %s はデータベースに登録済みです"
+
+#: firestats-1.4\firestats\php/db-sql.php:583
+#, php-format
+msgid "The bot wildcard %s is already in the database"
+msgstr "ボット・ワイルドカード %s はデータベースに登録済みです"
+
+#: firestats-1.4\firestats\php/db-sql.php:1087
+#: firestats-1.4\firestats\php/db-sql.php:1133
+#: firestats-1.4\firestats\php/html-utils.php:167
+#: firestats-1.4\firestats\php/html-utils.php:305
+msgid "Unknown"
+msgstr "不明"
+
+#: firestats-1.4\firestats\php/db-sql.php:1500
+#, php-format
+msgid "Error opening file : %s"
+msgstr "ファイルオープン エラー : %s"
+
+#: firestats-1.4\firestats\php/export-bots-list.php:21
+msgid "Error exporting bots list"
+msgstr "ボットリストをエクスポートできません"
+
+#: firestats-1.4\firestats\php/footer.php:3
+#, php-format
+msgid "If you have any problems or questions, please visit the %s"
+msgstr "ご意見・ご要望は %s へ"
+
+#: firestats-1.4\firestats\php/footer.php:3
+msgid "FireStats homepage"
+msgstr "FireStats 公式サイト"
+
+#: firestats-1.4\firestats\php/footer.php:5
+#: firestats-1.4\firestats\php/header.php:38
+#: firestats-1.4\firestats\php/html-utils.php:1097
+msgid "FireStats"
+msgstr "FireStats"
+
+#: firestats-1.4\firestats\php/header.php:19
+#: firestats-1.4\firestats\php/window-donation.php:7
+msgid "Support FireStats"
+msgstr "Support FireStats"
+
+#: firestats-1.4\firestats\php/header.php:28
+msgid "Log out"
+msgstr "ログアウト"
+
+#: firestats-1.4\firestats\php/header.php:40
+msgid "Demo"
+msgstr "デモ"
+
+#: firestats-1.4\firestats\php/header.php:54
+msgid "Hide"
+msgstr "×"
+
+#: firestats-1.4\firestats\php/help-window.php:34
+msgid "Unknown site type"
+msgstr "不明なサイト形式"
+
+#: firestats-1.4\firestats\php/help-window.php:80
+msgid "Collect hits from PHP pages"
+msgstr "一般のPHPページでの統計方法"
+
+#: firestats-1.4\firestats\php/help-window.php:81
+msgid "To allow FireStats to track access to your pages, you need to add the following line inside the head tag of each of the pages you want to monitor (the page must be a php page)."
+msgstr "FireStats は、あなたのウェブページのアクセス解析をしてくれます。管理したいウェブページに HEAD タグ内に埋め込む必要があります（ PHP が動作しなければなりません）。"
+
+#: firestats-1.4\firestats\php/help-window.php:87
+msgid "A typical page header will look like this:"
+msgstr "head タグ内の設定例："
+
+#: firestats-1.4\firestats\php/help-window.php:104
+msgid "WordPress"
+msgstr "WordPress の設定"
+
+#: firestats-1.4\firestats\php/help-window.php:105
+msgid "The WordPress plugin registers itself automatically when it's activated"
+msgstr "WordPress プラグインは「有効化」したとき自動的に登録されます"
+
+#: firestats-1.4\firestats\php/help-window.php:111
+#: firestats-1.4\firestats\php/help-window.php:119
+#: firestats-1.4\firestats\php/help-window.php:139
+#: firestats-1.4\firestats\php/help-window.php:145
+#: firestats-1.4\firestats\php/help-window.php:157
+msgid "plugin"
+msgstr "プラグイン"
+
+#: firestats-1.4\firestats\php/help-window.php:127
+#: firestats-1.4\firestats\php/help-window.php:133
+msgid "module"
+msgstr "モジュール"
+
+#: firestats-1.4\firestats\php/help-window.php:176
+#, php-format
+msgid "Collect hits from a %s site"
+msgstr "一般のPHPサイトでの統計方法"
+
+#: firestats-1.4\firestats\php/help-window.php:197
+#, php-format
+msgid "and then configure it in the administration menu with the path %s and the ID %s"
+msgstr "そして、パス %s とID %s で、管理メニューから設定します"
+
+#: firestats-1.4\firestats\php/help-window.php:207
+#, php-format
+msgid "and then edit the lines in %s to contain this:"
+msgstr "そして、これを含むために、%sを含む行を編集してください："
+
+#: firestats-1.4\firestats\php/help-window.php:214
+#, php-format
+msgid "To collect statistics from your %s site your need to install the %s"
+msgstr "サイト%sからの集計に、%sをインストールする必要があります"
+
+#: firestats-1.4\firestats\php/html-utils.php:8
+msgid "Link here"
+msgstr "リンク"
+
+#: firestats-1.4\firestats\php/html-utils.php:134
+#: firestats-1.4\firestats\php/html-utils.php:197
+#: firestats-1.4\firestats\php/window-new-edit-site.php:32
+msgid "Name"
+msgstr "サイト名"
+
+#: firestats-1.4\firestats\php/html-utils.php:135
+#: firestats-1.4\firestats\php/page-add-admin.php:33
+#: firestats-1.4\firestats\php/window-edit-user.php:23
+#: firestats-1.4\firestats\php/window-new-user.php:18
+msgid "Email"
+msgstr "メール"
+
+#: firestats-1.4\firestats\php/html-utils.php:136
+#: firestats-1.4\firestats\php/window-edit-user.php:35
+#: firestats-1.4\firestats\php/window-new-user.php:30
+msgid "Security level"
+msgstr "セキュリティレベル"
+
+#: firestats-1.4\firestats\php/html-utils.php:158
+msgid "Admin"
+msgstr "管理人"
+
+#: firestats-1.4\firestats\php/html-utils.php:163
+#: firestats-1.4\firestats\php/window-edit-user.php:13
+#: firestats-1.4\firestats\php/window-new-user.php:8
+msgid "User"
+msgstr "ユーザ"
+
+#: firestats-1.4\firestats\php/html-utils.php:183
+msgid "Add a new user"
+msgstr "新しいユーザを追加"
+
+#: firestats-1.4\firestats\php/html-utils.php:196
+#: firestats-1.4\firestats\php/window-new-edit-site.php:21
+msgid "ID"
+msgstr "ID"
+
+#: firestats-1.4\firestats\php/html-utils.php:198
+#: firestats-1.4\firestats\php/window-new-edit-site.php:36
+msgid "Type"
+msgstr "タイプ"
+
+#: firestats-1.4\firestats\php/html-utils.php:199
+#: firestats-1.4\firestats\php/page-stats.php:149
+msgid "Page views"
+msgstr "ページビュー"
+
+#: firestats-1.4\firestats\php/html-utils.php:216
+msgid "How to integrate with this site"
+msgstr "このサイトと統合する方法"
+
+#: firestats-1.4\firestats\php/html-utils.php:239
+msgid "Orphaned hits"
+msgstr "単独ヒット"
+
+#: firestats-1.4\firestats\php/html-utils.php:251
+msgid "Add a new site"
+msgstr "サイトを追加"
+
+#: firestats-1.4\firestats\php/html-utils.php:287
+msgid "Generic PHP site"
+msgstr "PHPサイト"
+
+#: firestats-1.4\firestats\php/html-utils.php:289
+msgid "Wordpress"
+msgstr "WordPress"
+
+#: firestats-1.4\firestats\php/html-utils.php:291
+msgid "Django"
+msgstr "Django"
+
+#: firestats-1.4\firestats\php/html-utils.php:293
+msgid "Drupal"
+msgstr "Drupal"
+
+#: firestats-1.4\firestats\php/html-utils.php:295
+msgid "Gregarius"
+msgstr "Gregarius"
+
+#: firestats-1.4\firestats\php/html-utils.php:297
+msgid "Joomla"
+msgstr "Joomla"
+
+#: firestats-1.4\firestats\php/html-utils.php:299
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: firestats-1.4\firestats\php/html-utils.php:301
+msgid "Trac"
+msgstr "Trac"
+
+#: firestats-1.4\firestats\php/html-utils.php:303
+msgid "Gallery2"
+msgstr "Gallery2"
+
+#: firestats-1.4\firestats\php/html-utils.php:396
+msgid "Invalid"
+msgstr "不正"
+
+#: firestats-1.4\firestats\php/html-utils.php:408
+msgid "All"
+msgstr "すべて"
+
+#: firestats-1.4\firestats\php/html-utils.php:409
+msgid "Show statistics from"
+msgstr "統計表示"
+
+#: firestats-1.4\firestats\php/html-utils.php:437
+msgid "unknown"
+msgstr "不明"
+
+#: firestats-1.4\firestats\php/html-utils.php:508
+#: firestats-1.4\firestats\php/page-stats.php:310
+msgid "IP"
+msgstr "IPアドレス"
+
+#: firestats-1.4\firestats\php/html-utils.php:509
+msgid "TimeStamp"
+msgstr "日時"
+
+#: firestats-1.4\firestats\php/html-utils.php:510
+#: firestats-1.4\firestats\php/page-stats.php:311
+msgid "URL"
+msgstr "URL"
+
+#: firestats-1.4\firestats\php/html-utils.php:511
+#: firestats-1.4\firestats\php/page-stats.php:312
+msgid "Referrer"
+msgstr "参照元（リファラ）"
+
+#: firestats-1.4\firestats\php/html-utils.php:512
+msgid "Image"
+msgstr "種別"
+
+#: firestats-1.4\firestats\php/html-utils.php:513
+msgid "UserAgent"
+msgstr "ブラウザ（UA）"
+
+#: firestats-1.4\firestats\php/html-utils.php:534
+#: firestats-1.4\firestats\php/html-utils.php:598
+#: firestats-1.4\firestats\php/html-utils.php:783
+#: firestats-1.4\firestats\php/html-utils.php:875
+#: firestats-1.4\firestats\php/html-utils.php:908
+#: firestats-1.4\firestats\php/html-utils.php:953
+#: firestats-1.4\firestats\php/html-utils.php:1030
+msgid "No data yet, go get some hits"
+msgstr "データがありません"
+
+#: firestats-1.4\firestats\php/html-utils.php:659
+#: firestats-1.4\firestats\php/html-utils.php:682
+#: firestats-1.4\firestats\php/html-utils.php:707
+msgid "Empty"
+msgstr "データがありません"
+
+#: firestats-1.4\firestats\php/html-utils.php:812
+msgid "Start date is missing"
+msgstr "開始日が指定されていません。"
+
+#: firestats-1.4\firestats\php/html-utils.php:817
+msgid "End date is missing"
+msgstr "終了日が指定されていません。"
+
+#: firestats-1.4\firestats\php/html-utils.php:837
+msgid "Please wait..."
+msgstr "しばらくお待ちください…"
+
+#: firestats-1.4\firestats\php/html-utils.php:927
+#, php-format
+msgid "%d hits from %s"
+msgstr "%s から %d ヒット "
+
+#: firestats-1.4\firestats\php/html-utils.php:1014
+msgid "Others"
+msgstr "その他"
+
+#: firestats-1.4\firestats\php/html-utils.php:1057
+#: firestats-1.4\firestats\php/window-do-you-agree-to-send-sysinfo.php:8
+msgid "System information"
+msgstr "システム情報"
+
+#: firestats-1.4\firestats\php/html-utils.php:1058
+msgid "You can help by sending anonymous system information that will help make better decisions about new features"
+msgstr "匿名のシステム情報を送信することによって、次期バージョンの機能の決定に役立てることができます"
+
+#: firestats-1.4\firestats\php/html-utils.php:1059
+#: firestats-1.4\firestats\php/window-do-you-agree-to-send-sysinfo.php:11
+msgid "The information will be sent anonymously, but a unique identifier will be sent to prevent duplicate entries from the same FireStats"
+msgstr "この情報は匿名で送信されます。ただし、同じ FireStats からの重複エントリを防ぐために、ユニークIDが送信されます"
+
+#: firestats-1.4\firestats\php/import-bots-list.php:15
+#: firestats-1.4\firestats\php/import-bots-list.php:23
+msgid "Import bots list"
+msgstr "ボットリストを置換"
+
+#: firestats-1.4\firestats\php/import-bots-list.php:34
+msgid "Select bot-list file"
+msgstr "ボットリストファイルの選択"
+
+#: firestats-1.4\firestats\php/import-bots-list.php:35
+msgid "Import type"
+msgstr "インポート種別"
+
+#: firestats-1.4\firestats\php/import-bots-list.php:37
+msgid "Add to bots list"
+msgstr "ボットリストに追加"
+
+#: firestats-1.4\firestats\php/import-bots-list.php:38
+msgid "Replace bots list"
+msgstr "ボットリストを置換"
+
+#: firestats-1.4\firestats\php/import-bots-list.php:40
+msgid "Send File"
+msgstr "ファイル送信"
+
+#: firestats-1.4\firestats\php/import-bots-list.php:56
+msgid "Incorrect file format"
+msgstr "不正なファイル形式です"
+
+#: firestats-1.4\firestats\php/import-bots-list.php:68
+#, php-format
+msgid "Error importing bots list : %s"
+msgstr "ボットリスト %s がインポートできません"
+
+#: firestats-1.4\firestats\php/import-bots-list.php:73
+msgid "bots list imported successfully"
+msgstr "ボットリストをインポートしました"
+
+#: firestats-1.4\firestats\php/ip2country.php:116
+#: firestats-1.4\firestats\php/ip2country.php:120
+#: firestats-1.4\firestats\php/ip2country.php:250
+msgid "Error creating temporary file"
+msgstr "テンポラリファイルの生成ができません"
+
+#: firestats-1.4\firestats\php/ip2country.php:128
+#, php-format
+msgid "Error opening connection to %s"
+msgstr "%s の接続開始ができません"
+
+#: firestats-1.4\firestats\php/ip2country.php:133
+#, php-format
+msgid "Error sending request to %s"
+msgstr "%s の送信要求ができません"
+
+#: firestats-1.4\firestats\php/ip2country.php:139
+#: firestats-1.4\firestats\php/utils.php:305
+#, php-format
+msgid "Server returned error %s for %s"
+msgstr "サーバがエラーを返しました：%s - %s"
+
+#: firestats-1.4\firestats\php/ip2country.php:153
+#, php-format
+msgid "Error reading data from %s : %s"
+msgstr "%sからデータが読み取れません: %s"
+
+#: firestats-1.4\firestats\php/ip2country.php:182
+#, php-format
+msgid "Error extracting IP-to-country database: %s"
+msgstr "IP2Cデータベースが展開できません: %s"
+
+#: firestats-1.4\firestats\php/ip2country.php:187
+#, php-format
+msgid "Unsupported file type : %s"
+msgstr "サポートされていないファイル形式です: %s"
+
+#: firestats-1.4\firestats\php/ip2country.php:207
+#, php-format
+msgid "can't update ip-to-country database, read-only directory : %s"
+msgstr "IP2Cデータベースが更新できません。ディレクトリが書き込み不可 : %"
+
+#: firestats-1.4\firestats\php/ip2country.php:209
+#: firestats-1.4\firestats\php/ip2country.php:211
+#, php-format
+msgid "can't update ip-to-country database, read-only file : %s"
+msgstr "IP2Cデータベースが更新できません。ファイルに書き込み不可 : %"
+
+#: firestats-1.4\firestats\php/ip2country.php:226
+msgid "Error installing new IP-to-country database"
+msgstr "新しいIP2Cデータベースがインストールできません"
+
+#: firestats-1.4\firestats\php/ip2country.php:232
+msgid "Successfuly updated IP-to-country database"
+msgstr "IP2Cデータベースの更新しました"
+
+#: firestats-1.4\firestats\php/ip2country.php:236
+#, php-format
+msgid "Error updating version file : %s"
+msgstr "更新に失敗したバージョン : %s"
+
+#: firestats-1.4\firestats\php/page-add-admin.php:22
+msgid "Create administrator user"
+msgstr "管理権限ユーザを作成"
+
+#: firestats-1.4\firestats\php/page-add-admin.php:24
+msgid "You need to create an administrator user for FireStats."
+msgstr "FireStats 用の管理人を作成する必要があります"
+
+#: firestats-1.4\firestats\php/page-add-admin.php:25
+msgid "The administrator has full control over FireStats, and will be able to create other users/administrators from the administration interface"
+msgstr "管理人は、FireStats にたいするすべての操作ができます。管理インターフェースから、ほかのユーザや管理人を登録することができます"
+
+#: firestats-1.4\firestats\php/page-add-admin.php:29
+#: firestats-1.4\firestats\php/window-edit-user.php:19
+#: firestats-1.4\firestats\php/window-new-user.php:14
+#: firestats-1.4\firestats\php/tools/reset-password.php:80
+#: firestats-1.4\firestats\php/tools/reset-password.php:108
+msgid "User name"
+msgstr "ユーザ名"
+
+#: firestats-1.4\firestats\php/page-add-admin.php:37
+#: firestats-1.4\firestats\php/window-new-user.php:22
+msgid "Password"
+msgstr "パスワード"
+
+#: firestats-1.4\firestats\php/page-add-admin.php:41
+#: firestats-1.4\firestats\php/window-new-user.php:26
+msgid "Verify password"
+msgstr "確認パスワード"
+
+#: firestats-1.4\firestats\php/page-add-admin.php:45
+#: firestats-1.4\firestats\php/window-new-user.php:35
+msgid "Create user"
+msgstr "ユーザ作成"
+
+#: firestats-1.4\firestats\php/page-database.php:51
+msgid "Database status"
+msgstr "データベースの状態"
+
+#: firestats-1.4\firestats\php/page-database.php:59
+msgid "Click to upgrade"
+msgstr "アップグレードするにはクリック"
+
+#: firestats-1.4\firestats\php/page-database.php:60
+msgid "Upgrade"
+msgstr "アップグレードしました"
+
+#: firestats-1.4\firestats\php/page-database.php:83
+#, php-format
+msgid "Configuration source : %s"
+msgstr "設定ソース : %s"
+
+#: firestats-1.4\firestats\php/page-database.php:89
+msgid "To use wordpress database, click this button."
+msgstr "WordPressのデータベースを利用する場合は下のボタンを押してください。"
+
+#: firestats-1.4\firestats\php/page-database.php:90
+msgid "FireStats database configuration will be lost."
+msgstr "FireStatsデータベースの設定がなくなりました。"
+
+#: firestats-1.4\firestats\php/page-database.php:91
+msgid "Use Wordpress database"
+msgstr "WordPressのデータベースを利用する"
+
+#: firestats-1.4\firestats\php/page-database.php:102
+msgid "To perform one of the following actions:"
+msgstr "次の中から１つ選んで作業してください。"
+
+#: firestats-1.4\firestats\php/page-database.php:104
+msgid "Attach to an existing FireStats installation"
+msgstr "いまインストールされている FireStats に取り付ける"
+
+#: firestats-1.4\firestats\php/page-database.php:105
+#: firestats-1.4\firestats\php/page-database.php:223
+msgid "Install FireStats into an existing database"
+msgstr "いまあるデータベースの中に FireStats をインストールする"
+
+#: firestats-1.4\firestats\php/page-database.php:106
+#: firestats-1.4\firestats\php/page-database.php:226
+msgid "Create a new database and install FireStats there"
+msgstr "新しいデータベースを作成して、FireStats をそこにインストールする"
+
+#: firestats-1.4\firestats\php/page-database.php:108
+msgid "Follow instructions in the help"
+msgstr "詳しくはヘルプの指示にしたがってください"
+
+#: firestats-1.4\firestats\php/page-database.php:116
+msgid "Database host"
+msgstr "ホスト名"
+
+#: firestats-1.4\firestats\php/page-database.php:122
+msgid "Database name"
+msgstr "データベース名"
+
+#: firestats-1.4\firestats\php/page-database.php:128
+msgid "Database user name"
+msgstr "ユーザ名"
+
+#: firestats-1.4\firestats\php/page-database.php:134
+msgid "Database password"
+msgstr "パスワード"
+
+#: firestats-1.4\firestats\php/page-database.php:140
+msgid "Tables prefix"
+msgstr "接頭辞"
+
+#: firestats-1.4\firestats\php/page-database.php:149
+#: firestats-1.4\firestats\php/page-database.php:221
+#: firestats-1.4\firestats\php/page-database.php:224
+#: firestats-1.4\firestats\php/page-database.php:227
+msgid "Test connection"
+msgstr "接続テスト"
+
+#: firestats-1.4\firestats\php/page-database.php:159
+msgid "Click to install and switch to new FireStats tables"
+msgstr "新しいFiresStatsテーブルをインストールして使うときにクリック"
+
+#: firestats-1.4\firestats\php/page-database.php:162
+#: firestats-1.4\firestats\php/page-database.php:224
+msgid "Install tables"
+msgstr "データテーブルのインストール"
+
+#: firestats-1.4\firestats\php/page-database.php:171
+msgid "Click to use this FireStats database"
+msgstr "このFireStatsデータベースを使うにはクリック"
+
+#: firestats-1.4\firestats\php/page-database.php:175
+#: firestats-1.4\firestats\php/page-database.php:221
+msgid "Use this database"
+msgstr "このデータベースを使う"
+
+#: firestats-1.4\firestats\php/page-database.php:187
+msgid "To create a new database, an administrator user should be used in the above fields."
+msgstr "新しいデータベースを作成するには、フィールドを操作できる権限が必要です"
+
+#: firestats-1.4\firestats\php/page-database.php:188
+msgid "However, For security reason, it is recommended not to use a database administrator user for day to day operations."
+msgstr "しかしながら、セキュリティ上の理由から、データベースの管理権限があるユーザを、通常作業で利用しないことを推奨します。"
+
+#: firestats-1.4\firestats\php/page-database.php:189
+msgid "Enter new user name and password for FireStats, this user will only have access to the FireStats database"
+msgstr "FireStats 専用の新しいユーザ名とパスワードを入力してください。このユーザ はFireStats のデータベースだけにアクセスできます。"
+
+#: firestats-1.4\firestats\php/page-database.php:190
+msgid "If you will not specify user and password the Admin user and password will be used."
+msgstr "特別なユーザが必要ない場合は、管理人のユーザ名とパスワードが使えます。"
+
+#: firestats-1.4\firestats\php/page-database.php:197
+msgid "FireStats User name"
+msgstr "FireStats ユーザ名"
+
+#: firestats-1.4\firestats\php/page-database.php:201
+msgid "FireStats password"
+msgstr "FireStats パスワード"
+
+#: firestats-1.4\firestats\php/page-database.php:207
+#: firestats-1.4\firestats\php/page-database.php:227
+msgid "Create database"
+msgstr "データベース作成"
+
+#: firestats-1.4\firestats\php/page-database.php:219
+#: firestats-1.4\firestats\php/page-sites.php:23
+#: firestats-1.4\firestats\php/page-users.php:34
+msgid "Help"
+msgstr "ヘルプ"
+
+#: firestats-1.4\firestats\php/page-database.php:220
+msgid "Attach to an existing FireStats database"
+msgstr "いまある FireStats データベースを取り付ける"
+
+#: firestats-1.4\firestats\php/page-database.php:221
+#: firestats-1.4\firestats\php/page-database.php:224
+#, php-format
+msgid "Enter the parameters in the table, press %s, and then %s."
+msgstr "入力フォームにデータベース接続に必要なパラメータを入力し、「%s」ボタンを押して、「%s」を押す。"
+
+#: firestats-1.4\firestats\php/page-database.php:227
+#, php-format
+msgid "Enter the parameters into the table, <u>you need to enter a database administrator user</u>. press %s, and then enter FireStats database user and password, and finally press %s."
+msgstr "入力フォームに<u>データベースの管理権限をもつユーザ名とパスワード</u>を入力し（データベース名は空けておきます）、「%s」ボタンを押します。そして、FireStas専用のユーザ名とパスワードを入力し、最後に「%s」ボタンを押します。"
+
+#: firestats-1.4\firestats\php/page-settings.php:12
+msgid "Options"
+msgstr "オプション"
+
+#: firestats-1.4\firestats\php/page-settings.php:13
+msgid "Select language"
+msgstr "言語の選択"
+
+#: firestats-1.4\firestats\php/page-settings.php:19
+#: firestats-1.4\firestats\php/page-settings.php:30
+#: firestats-1.4\firestats\php/page-settings.php:46
+#: firestats-1.4\firestats\php/page-stats.php:301
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:131
+#: firestats-1.4\firestats\php/window-new-edit-site.php:49
+msgid "Save"
+msgstr "設定変更"
+
+#: firestats-1.4\firestats\php/page-settings.php:21
+msgid "How to translate to a new language"
+msgstr "ほかの言語を翻訳する方法"
+
+#: firestats-1.4\firestats\php/page-settings.php:26
+msgid "Select your time zone"
+msgstr "タイムゾーン（時間帯）の選択"
+
+#: firestats-1.4\firestats\php/page-settings.php:36
+#, php-format
+msgid "Time zone selection requires %s or newer"
+msgstr "タイムゾーン（時間帯）選択には、%s 以上が必要です"
+
+#: firestats-1.4\firestats\php/page-settings.php:40
+msgid "Select WHOIS provider"
+msgstr "WHOIS選択"
+
+#: firestats-1.4\firestats\php/page-settings.php:56
+msgid "Compact old data"
+msgstr "古くなったデータの圧縮"
+
+#: firestats-1.4\firestats\php/page-settings.php:67
+#, php-format
+msgid "%s compact data older than %s"
+msgstr "%s 圧縮するデータの期間 %s"
+
+#: firestats-1.4\firestats\php/page-settings.php:70
+msgid "Compact now"
+msgstr "いま圧縮する"
+
+#: firestats-1.4\firestats\php/page-settings.php:84
+msgid "Automatic version check"
+msgstr "自動更新チェック"
+
+#: firestats-1.4\firestats\php/page-settings.php:86
+msgid "Automatically check if there is a new version of FireStats (recommended)"
+msgstr "FireStatsの最新版を自動確認する（推奨）"
+
+#: firestats-1.4\firestats\php/page-settings.php:93
+msgid "IP-to-country database"
+msgstr "IP2C（IPアドレス・国名変換）データベース"
+
+#: firestats-1.4\firestats\php/page-settings.php:95
+#, php-format
+msgid "IP-to-country database version : %s"
+msgstr "IP2Cデータベース バージョン : %s"
+
+#: firestats-1.4\firestats\php/page-settings.php:98
+msgid "Automatically check if there is a new version of IP-to-country database"
+msgstr "IP2Cデータベースの最新バージョンを自動確認する"
+
+#: firestats-1.4\firestats\php/page-settings.php:102
+msgid "Update IP-to-country database now (only if needed)"
+msgstr "IP2Cデータベースをいま更新する(必要なときだけ)"
+
+#: firestats-1.4\firestats\php/page-settings.php:104
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:137
+#: firestats-1.4\firestats\php/window-edit-user.php:40
+msgid "Update"
+msgstr "更新"
+
+#: firestats-1.4\firestats\php/page-settings.php:112
+msgid "Exclude hits"
+msgstr "統計の補正"
+
+#: firestats-1.4\firestats\php/page-settings.php:119
+msgid "Save excluded records (not recommended)"
+msgstr "統計から除外したログを削除する（非推奨）"
+
+#: firestats-1.4\firestats\php/page-settings.php:122
+msgid "Purge excluded records stored in the database"
+msgstr "統計から除外したログをデータベースから完全に削除する"
+
+#: firestats-1.4\firestats\php/page-settings.php:125
+msgid "Purge"
+msgstr "完全削除"
+
+#: firestats-1.4\firestats\php/page-settings.php:135
+msgid "Bots list"
+msgstr "ボットリスト"
+
+#: firestats-1.4\firestats\php/page-settings.php:141
+#: firestats-1.4\firestats\php/page-settings.php:185
+msgid "Add"
+msgstr "追加"
+
+#: firestats-1.4\firestats\php/page-settings.php:142
+#: firestats-1.4\firestats\php/page-settings.php:186
+msgid "Remove"
+msgstr "削除"
+
+#: firestats-1.4\firestats\php/page-settings.php:156
+msgid "Automatic update"
+msgstr "自動更新"
+
+#: firestats-1.4\firestats\php/page-settings.php:159
+msgid "Update now"
+msgstr "いま更新する"
+
+#: firestats-1.4\firestats\php/page-settings.php:161
+msgid "Import"
+msgstr "インポート"
+
+#: firestats-1.4\firestats\php/page-settings.php:164
+msgid "Export"
+msgstr "エクスポート"
+
+#: firestats-1.4\firestats\php/page-settings.php:180
+msgid "Excluded IPs"
+msgstr "統計除外IPアドレスリスト"
+
+#: firestats-1.4\firestats\php/page-settings.php:203
+msgid "Automatically"
+msgstr "自動"
+
+#: firestats-1.4\firestats\php/page-settings.php:204
+msgid "Manually"
+msgstr "手動"
+
+#: firestats-1.4\firestats\php/page-settings.php:205
+msgid "Please select"
+msgstr "選んでください"
+
+#: firestats-1.4\firestats\php/page-settings.php:222
+msgid "One month"
+msgstr "1か月前"
+
+#: firestats-1.4\firestats\php/page-settings.php:223
+msgid "Two months"
+msgstr "2か月前"
+
+#: firestats-1.4\firestats\php/page-settings.php:224
+msgid "Three months"
+msgstr "3か月前"
+
+#: firestats-1.4\firestats\php/page-settings.php:225
+msgid "Half a year"
+msgstr "半年前"
+
+#: firestats-1.4\firestats\php/page-settings.php:226
+msgid "One year"
+msgstr "1年前"
+
+#: firestats-1.4\firestats\php/page-settings.php:227
+msgid "Two years"
+msgstr "2年前"
+
+#: firestats-1.4\firestats\php/page-sites.php:14
+msgid "Manage sites"
+msgstr "サイト管理"
+
+#: firestats-1.4\firestats\php/page-sites.php:24
+msgid "Warning, you can really mess things up from here, be careful!"
+msgstr "警告： データがおかしくなることがあります。慎重に設定してください！"
+
+#: firestats-1.4\firestats\php/page-sites.php:26
+msgid "FireStats can collect statistics from multiple sites (on the same server)."
+msgstr "FireStats は、同じサーバの複数のサイトから集計することができます。"
+
+#: firestats-1.4\firestats\php/page-sites.php:28
+msgid "The site need to be registered in the sites table"
+msgstr "サイトはサイト管理テーブルに登録する必要があります"
+
+#: firestats-1.4\firestats\php/page-sites.php:29
+msgid "The site should be configured to use its ID when reporting a hit, click on the help button next to the site you created for more information"
+msgstr "サイトはヒット数の集計用にサイトIDを設定しなければなりません。ヘルプボタンをクリックすると詳しい説明が表示されます"
+
+#: firestats-1.4\firestats\php/page-sites.php:32
+#, php-format
+msgid "Click %s for more information"
+msgstr "詳しいことは %s をクリック"
+
+#: firestats-1.4\firestats\php/page-sites.php:33
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:28
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:36
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:40
+#: firestats-1.4\firestats\php/version-check.php:148
+#: firestats-1.4\firestats\php/tools/reset-password.php:38
+msgid "here"
+msgstr "ここ"
+
+#: firestats-1.4\firestats\php/page-stats.php:43
+#: firestats-1.4\firestats\php/page-stats.php:77
+#: firestats-1.4\firestats\php/page-stats.php:109
+msgid "Refresh statistics"
+msgstr "更新"
+
+#: firestats-1.4\firestats\php/page-stats.php:66
+msgid "Not a positive number : "
+msgstr "正の数でありません。"
+
+#: firestats-1.4\firestats\php/page-stats.php:135
+msgid "Auto refresh every"
+msgstr "自動更新する"
+
+#: firestats-1.4\firestats\php/page-stats.php:138
+msgid "minutes"
+msgstr "分毎"
+
+#: firestats-1.4\firestats\php/page-stats.php:139
+#: firestats-1.4\firestats\php/page-stats.php:169
+#: firestats-1.4\firestats\php/page-stats.php:192
+#: firestats-1.4\firestats\php/page-stats.php:221
+#: firestats-1.4\firestats\php/page-stats.php:241
+#: firestats-1.4\firestats\php/page-stats.php:262
+#: firestats-1.4\firestats\php/page-stats.php:284
+#: firestats-1.4\firestats\php/page-stats.php:346
+msgid "Apply"
+msgstr "適用"
+
+#: firestats-1.4\firestats\php/page-stats.php:146
+msgid "Status"
+msgstr "統計"
+
+#: firestats-1.4\firestats\php/page-stats.php:150
+msgid "Visits"
+msgstr "ビジター数"
+
+#: firestats-1.4\firestats\php/page-stats.php:151
+msgid "Page views in last 24 hours"
+msgstr "ページビュー（過去24時間）"
+
+#: firestats-1.4\firestats\php/page-stats.php:152
+msgid "Visits in last 24 hours"
+msgstr "ビジター数（過去24時間）"
+
+#: firestats-1.4\firestats\php/page-stats.php:158
+msgid "Recent referrers"
+msgstr "リンク元"
+
+#: firestats-1.4\firestats\php/page-stats.php:165
+#, php-format
+msgid "Show at most %s items for the last %s days, sorted by %s"
+msgstr "表示する数（最大） %s 集計期間（日） %s ソート方法 %s"
+
+#: firestats-1.4\firestats\php/page-stats.php:179
+msgid "Search terms"
+msgstr "期間集計"
+
+#: firestats-1.4\firestats\php/page-stats.php:186
+#, php-format
+msgid "Show at most %s search terms for %s"
+msgstr "表示する数（最大） %s 集計期間 %s"
+
+#: firestats-1.4\firestats\php/page-stats.php:196
+msgid "Start date:"
+msgstr "開始日:"
+
+#: firestats-1.4\firestats\php/page-stats.php:197
+msgid "End date:"
+msgstr "終了日:"
+
+#: firestats-1.4\firestats\php/page-stats.php:211
+msgid "Recent popular pages"
+msgstr "ヒット数"
+
+#: firestats-1.4\firestats\php/page-stats.php:217
+#: firestats-1.4\firestats\php/page-stats.php:279
+#, php-format
+msgid "Show at most %s items for the last %s days"
+msgstr "表示する数（最大） %s 集計期間（日） %s"
+
+#: firestats-1.4\firestats\php/page-stats.php:231
+msgid "Browsers"
+msgstr "ブラウザ"
+
+#: firestats-1.4\firestats\php/page-stats.php:237
+#: firestats-1.4\firestats\php/page-stats.php:258
+#, php-format
+msgid "Show items for the last %s days"
+msgstr "集計期間（日） %s"
+
+#: firestats-1.4\firestats\php/page-stats.php:252
+msgid "Operating systems"
+msgstr "OS"
+
+#: firestats-1.4\firestats\php/page-stats.php:273
+msgid "Countries"
+msgstr "国別"
+
+#: firestats-1.4\firestats\php/page-stats.php:292
+msgid "Hits table"
+msgstr "アクセスログ"
+
+#: firestats-1.4\firestats\php/page-stats.php:296
+msgid "Number of hits to show"
+msgstr "表示するログ数"
+
+#: firestats-1.4\firestats\php/page-stats.php:313
+msgid "User agent"
+msgstr "ブラウザ（UA）"
+
+#: firestats-1.4\firestats\php/page-stats.php:317
+msgid "Filter"
+msgstr "フィルタ"
+
+#: firestats-1.4\firestats\php/page-stats.php:341
+#: firestats-1.4\firestats\php/window-new-edit-site.php:26
+msgid "Clear"
+msgstr "クリア"
+
+#: firestats-1.4\firestats\php/page-stats.php:362
+msgid "Newest first"
+msgstr "最新順"
+
+#: firestats-1.4\firestats\php/page-stats.php:363
+msgid "Most hits first"
+msgstr "ヒット数順"
+
+#: firestats-1.4\firestats\php/page-stats.php:372
+msgid "the last 24 hours"
+msgstr "24時間"
+
+#: firestats-1.4\firestats\php/page-stats.php:373
+msgid "the last week"
+msgstr "1週間"
+
+#: firestats-1.4\firestats\php/page-stats.php:374
+msgid "the last month"
+msgstr "1か月間"
+
+#: firestats-1.4\firestats\php/page-stats.php:375
+msgid "the three months"
+msgstr "3か月間"
+
+#: firestats-1.4\firestats\php/page-stats.php:376
+msgid "the last six months"
+msgstr "6か月間"
+
+#: firestats-1.4\firestats\php/page-stats.php:377
+msgid "the last year"
+msgstr "1年間"
+
+#: firestats-1.4\firestats\php/page-stats.php:378
+msgid "all time"
+msgstr "全期間"
+
+#: firestats-1.4\firestats\php/page-stats.php:379
+msgid "time range"
+msgstr "期間指定"
+
+#: firestats-1.4\firestats\php/page-tools.php:8
+#: firestats-1.4\firestats\php/tabbed-pane.php:63
+msgid "Tools"
+msgstr "ツール"
+
+#: firestats-1.4\firestats\php/page-tools.php:9
+msgid "This section contains various tools"
+msgstr "この項目にはさまざまなツールがあります"
+
+#: firestats-1.4\firestats\php/page-tools.php:14
+msgid "I agree to send system information"
+msgstr "私はシステム情報を送信することに同意します。"
+
+#: firestats-1.4\firestats\php/page-tools.php:18
+msgid "Diagnostics"
+msgstr "システム診断"
+
+#: firestats-1.4\firestats\php/page-tools.php:19
+msgid "System diagnostics page"
+msgstr "システム診断ページ"
+
+#: firestats-1.4\firestats\php/page-tools.php:19
+msgid "Open"
+msgstr "開く"
+
+#: firestats-1.4\firestats\php/page-tools.php:24
+msgid "PHP Version"
+msgstr "PHPバージョン"
+
+#: firestats-1.4\firestats\php/page-tools.php:27
+msgid "MySQL Version"
+msgstr "MySQLバージョン"
+
+#: firestats-1.4\firestats\php/page-tools.php:30
+msgid "Memory limit"
+msgstr "メモリ制限"
+
+#: firestats-1.4\firestats\php/page-tools.php:36
+msgid "Database cache"
+msgstr "データベースキャッシュ"
+
+#: firestats-1.4\firestats\php/page-tools.php:37
+msgid "The following section can recalculate different aspects of the database. you don't normally need to use it."
+msgstr "この項では、データ誤差を再計算します。普段、使う必要はありません。"
+
+#: firestats-1.4\firestats\php/page-tools.php:40
+msgid "Recalculate country codes"
+msgstr "国別コードの再計算"
+
+#: firestats-1.4\firestats\php/page-tools.php:41
+#: firestats-1.4\firestats\php/page-tools.php:46
+#: firestats-1.4\firestats\php/page-tools.php:51
+msgid "Start"
+msgstr "開始"
+
+#: firestats-1.4\firestats\php/page-tools.php:45
+msgid "Rebuild database cache"
+msgstr "データベースキャッシュの再構築"
+
+#: firestats-1.4\firestats\php/page-tools.php:50
+msgid "Recalculate search engine terms"
+msgstr "検索ワードの再計算"
+
+#: firestats-1.4\firestats\php/page-users.php:26
+#: firestats-1.4\firestats\php/tools-menu.php:5
+msgid "Manage users"
+msgstr "ユーザ管理"
+
+#: firestats-1.4\firestats\php/page-users.php:35
+msgid "You can manage users here"
+msgstr "ここでユーザを管理できます"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:21
+msgid "Statistics widget"
+msgstr "統計ウィジェット"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:46
+#, php-format
+msgid "You can configure the sidebar widgets from %s"
+msgstr "%s から、サイドバー Widgets を設定できます"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:50
+#, php-format
+msgid "The statistics widget requires the %s plugin for optimal usage."
+msgstr "統計ウィジェットを利用するには、%s プラグインが必要です。"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:53
+msgid "Widgets"
+msgstr "Widgets"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:55
+msgid "You can also manually add the following code to your theme sidebar:"
+msgstr "次のPHPコードをテーマのサイドバーに手動で入力しても使えます。"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:63
+msgid "Comments icons"
+msgstr "コメント欄へのアイコン表示"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:71
+msgid "Add flag icon to comments"
+msgstr "コメントに国旗アイコンを追加する"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:78
+msgid "Add browser and operating system icons to comments"
+msgstr "コメントにブラウザアイコンとOSアイコンを追加する"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:81
+msgid "Blog footer"
+msgstr "ブログのフッタ（ページ最下部）処理"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:88
+msgid "Add FireStats footer to blog"
+msgstr "フッタに FireStats ロゴを追加する"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:96
+msgid "Show statistics in footer"
+msgstr "フッタに統計を表示する"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:102
+msgid "Excluded users"
+msgstr "統計から除外するユーザ"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:103
+msgid "WordPress users selected here will not be counted in the statistics"
+msgstr "ここで選択された WordPress ユーザーは、統計に含めません。"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:107
+msgid "Permissions"
+msgstr "許可"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:108
+msgid "Select the minimum user role that can access FireStats (Only administrators can manage FireStats)"
+msgstr "FireStats にアクセスできる最低限のユーザー権限を選択してください（管理人だけは、FireStats を管理することができます）"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:112
+#: firestats-1.4\firestats\php/window-edit-user.php:12
+#: firestats-1.4\firestats\php/window-new-user.php:7
+msgid "Administrator"
+msgstr "管理人 - (Administrator)"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:113
+msgid "Editor"
+msgstr "編集者 - (Editor)"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:114
+msgid "Author"
+msgstr "投稿者 - (Author)"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:115
+msgid "Contributor"
+msgstr "寄稿者 - (Contributor)"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:116
+msgid "Subscriber"
+msgstr "購読者 - (Subscriber)"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:124
+msgid "Advanced"
+msgstr "高度な設定"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:125
+msgid "WordPress site ID, every hit From this blog is recorded with this as the source Site ID"
+msgstr "WordPress のサイトIDは、このブログがヒットされるごとに、ソースサイトIDとして一緒に記録されます。"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:126
+msgid "This should be the same ID as the Site ID in the sites table. you don't normally need to change this."
+msgstr "サイトテーブルのサイトIDと同じIDでなければなりません。通常、変更する必要はありません。"
+
+#: firestats-1.4\firestats\php/page-wordpress-settings.php:136
+msgid "This will update the titles of the blog posts inside FireStats, you don't normally need to use it"
+msgstr "これは FireStats 内部のブログ投稿記事のタイトルを更新します。通常、使う必要はありません"
+
+#: firestats-1.4\firestats\php/rebuild-db.php:15
+msgid "Recalculating matching bots"
+msgstr "ボット照合を再計算"
+
+#: firestats-1.4\firestats\php/tabbed-pane.php:22
+msgid "Statistics"
+msgstr "統計"
+
+#: firestats-1.4\firestats\php/tabbed-pane.php:25
+msgid "Settings"
+msgstr "設定"
+
+#: firestats-1.4\firestats\php/tabbed-pane.php:33
+msgid "WordPress settings"
+msgstr "WordPress設定"
+
+#: firestats-1.4\firestats\php/tabbed-pane.php:44
+msgid "Database"
+msgstr "データベース"
+
+#: firestats-1.4\firestats\php/tabbed-pane.php:50
+msgid "Users management"
+msgstr "ユーザ管理"
+
+#: firestats-1.4\firestats\php/tabbed-pane.php:57
+msgid "Sites management"
+msgstr "サイト管理"
+
+#: firestats-1.4\firestats\php/tabbed-pane.php:94
+msgid "Loading..."
+msgstr "ロード中…"
+
+#: firestats-1.4\firestats\php/tools-menu.php:1
+msgid "FireStats tools"
+msgstr "FireStats ツール"
+
+#: firestats-1.4\firestats\php/tools-menu.php:3
+msgid "System test"
+msgstr "システムテスト"
+
+#: firestats-1.4\firestats\php/tools-menu.php:4
+#: firestats-1.4\firestats\php/tools/reset-password.php:16
+msgid "Reset password"
+msgstr "パスワードをリセット"
+
+#: firestats-1.4\firestats\php/version-check.php:41
+#, php-format
+msgid "Error getting version information from %s : %s"
+msgstr "%s からバージョン情報を得られません : %s"
+
+#: firestats-1.4\firestats\php/version-check.php:123
+msgid "A new version of the IP-to-country database is available! you can update it from the settings tab"
+msgstr "IP2Cデータベースの最新版が出ています。設定タブから更新できます。"
+
+#: firestats-1.4\firestats\php/version-check.php:146
+#, php-format
+msgid "Version %s is available! click %s for more info"
+msgstr "バージョン %s があります！ %s をクリックすると詳しい情報が得られます。"
+
+#: firestats-1.4\firestats\php/version-check.php:171
+#, php-format
+msgid "Error opening %s"
+msgstr "オープンできません %s"
+
+#: firestats-1.4\firestats\php/window-archive-notification.php:5
+msgid "Yes (Recommended)"
+msgstr "はい（推奨）"
+
+#: firestats-1.4\firestats\php/window-archive-notification.php:6
+msgid "No"
+msgstr "いいえ"
+
+#: firestats-1.4\firestats\php/window-archive-notification.php:9
+msgid "Compacting old data"
+msgstr "古くなったデータの圧縮"
+
+#: firestats-1.4\firestats\php/window-archive-notification.php:10
+msgid "FireStats can tranform old data to a more compact form,"
+msgstr "FireStats は、古くなったデータを圧縮することができます。"
+
+#: firestats-1.4\firestats\php/window-archive-notification.php:11
+msgid "This will reduce storage size and improve performance at the cost of losing some information which is not essential."
+msgstr "重要でなくなったデータ項目を削除することによって、データサイズを小さくして、パフォーマンスを向上させます。"
+
+#: firestats-1.4\firestats\php/window-archive-notification.php:12
+msgid "it is highly recommended that you allow FireStats to do this automatically."
+msgstr "FireStats を自動的にさせておくことを、高く推薦します。"
+
+#: firestats-1.4\firestats\php/window-archive-notification.php:14
+#, php-format
+msgid "Click %s if you would like FireStats to automatically compact data older than %s days"
+msgstr "%s をクリックすると、自動で %s 日前より古いデータが自動的に圧縮されます。"
+
+#: firestats-1.4\firestats\php/window-archive-notification.php:15
+#, php-format
+msgid "Click %s if you want to compact data manually or change compacting options (From the Settings tab)"
+msgstr "%s をクリックすると、手動でデータが圧縮されます。また、「設定」タブから設定の変更ができます。"
+
+#: firestats-1.4\firestats\php/window-delete-site.php:10
+msgid "Delete site"
+msgstr "サイト削除"
+
+#: firestats-1.4\firestats\php/window-delete-site.php:14
+msgid "This will delete this site from the database, the operation is irreversible!"
+msgstr "データベースからこのサイトの集計データを削除してしまうと、元に戻すことはできません"
+
+#: firestats-1.4\firestats\php/window-delete-site.php:15
+msgid "What do you want to do with the site hits?"
+msgstr "このサイトの集計データをどうしますか？"
+
+#: firestats-1.4\firestats\php/window-delete-site.php:18
+msgid "Delete all the hits"
+msgstr "集計データをすべて削除する"
+
+#: firestats-1.4\firestats\php/window-delete-site.php:19
+msgid "Transfer the hits to another site"
+msgstr "集計データを別のサイトに転送する"
+
+#: firestats-1.4\firestats\php/window-delete-site.php:22
+msgid "Enter an existing site ID to transfer the hits to"
+msgstr "集計データを移すために、既存のサイトIDを入力してください"
+
+#: firestats-1.4\firestats\php/window-delete-site.php:30
+#: firestats-1.4\firestats\php/window-delete-user.php:19
+msgid "Delete"
+msgstr "削除"
+
+#: firestats-1.4\firestats\php/window-delete-site.php:31
+#: firestats-1.4\firestats\php/window-delete-user.php:20
+#: firestats-1.4\firestats\php/window-edit-user.php:41
+#: firestats-1.4\firestats\php/window-new-edit-site.php:50
+#: firestats-1.4\firestats\php/window-new-user.php:36
+msgid "Close"
+msgstr "閉じる"
+
+#: firestats-1.4\firestats\php/window-delete-user.php:9
+#: firestats-1.4\firestats\php/window-edit-user.php:9
+msgid "No such user"
+msgstr "そのようなユーザはいません"
+
+#: firestats-1.4\firestats\php/window-delete-user.php:12
+msgid "Delete user"
+msgstr "ユーザ削除"
+
+#: firestats-1.4\firestats\php/window-do-you-agree-to-send-sysinfo.php:9
+msgid "You can help by sending anonymous system information that will help make better decisions about new features."
+msgstr "次期バージョンの新機能の決定に、匿名でシステム情報を送信することによって、あなたは手助けをすることができます。"
+
+#: firestats-1.4\firestats\php/window-do-you-agree-to-send-sysinfo.php:13
+msgid "You can change this later from the Tools tab"
+msgstr "あとで「ツール」タブから設定を変更できます"
+
+#: firestats-1.4\firestats\php/window-do-you-agree-to-send-sysinfo.php:17
+msgid "Do you agree to send anonymous system information?"
+msgstr "匿名でシステム情報を送信することに同意しますか？"
+
+#: firestats-1.4\firestats\php/window-do-you-agree-to-send-sysinfo.php:20
+msgid "Sure, send system information"
+msgstr "はい。システム情報を送信します"
+
+#: firestats-1.4\firestats\php/window-do-you-agree-to-send-sysinfo.php:23
+msgid "Nope, don't send"
+msgstr "いいえ。送信しません"
+
+#: firestats-1.4\firestats\php/window-donation.php:8
+msgid "Even though FireStats is free, it takes a lot of time and hard work to develop and maintain."
+msgstr "FireStats はフリーです。しかし、開発や管理に膨大な時間を費やしていることにご理解ください。"
+
+#: firestats-1.4\firestats\php/window-donation.php:9
+msgid "If you like FireStats and would like to show your support for the hard work I put into it, You can make a small Donation. Even a $5 donation would be greatly appreciated."
+msgstr "FireStats を気に入ってくださり、開発支援をしてくださる方は、小さな寄付ができます。わずかな額でも大変助かります。"
+
+#: firestats-1.4\firestats\php/window-donation.php:11
+msgid "Yeah, I want to help"
+msgstr "はい。やり方を教えてください"
+
+#: firestats-1.4\firestats\php/window-donation.php:12
+msgid "Nah, go away"
+msgstr "いいえ"
+
+#: firestats-1.4\firestats\php/window-donation.php:13
+msgid "Maybe later"
+msgstr "たぶんあとで"
+
+#: firestats-1.4\firestats\php/window-donation.php:14
+msgid "Already donated"
+msgstr "すでに寄付しています"
+
+#: firestats-1.4\firestats\php/window-edit-user.php:16
+msgid "Edit user"
+msgstr "ユーザ変更"
+
+#: firestats-1.4\firestats\php/window-edit-user.php:27
+msgid "New password (Optional)"
+msgstr "新しいパスワード（オプション）"
+
+#: firestats-1.4\firestats\php/window-edit-user.php:31
+#: firestats-1.4\firestats\php/tools/reset-password.php:88
+msgid "Verify new password"
+msgstr "確認用"
+
+#: firestats-1.4\firestats\php/window-new-edit-site.php:18
+msgid "Edit site"
+msgstr "サイト編集"
+
+#: firestats-1.4\firestats\php/window-new-edit-site.php:18
+msgid "Create a new site"
+msgstr "新しいサイトを作成"
+
+#: firestats-1.4\firestats\php/window-new-edit-site.php:23
+#: firestats-1.4\firestats\php/window-new-edit-site.php:24
+msgid "Automatic"
+msgstr "オートインクリメント"
+
+#: firestats-1.4\firestats\php/window-new-edit-site.php:40
+msgid "Baseline page views"
+msgstr "ページビューの起算数"
+
+#: firestats-1.4\firestats\php/window-new-edit-site.php:44
+msgid "Baseline visitors"
+msgstr "ビジターの起算数"
+
+#: firestats-1.4\firestats\php/window-new-user.php:11
+msgid "Create a new user"
+msgstr "新しいユーザを作成"
+
+#: firestats-1.4\firestats\php/tools/emergency-manage-users.php:9
+msgid "Message"
+msgstr "メッセージ"
+
+#: firestats-1.4\firestats\php/tools/emergency-manage-users.php:10
+msgid "This page will allow you to change the password of any user in FireStats."
+msgstr "このページでは、FireStats 内の各ユーザーのパスワードを変更できます。"
+
+#: firestats-1.4\firestats\php/tools/emergency-manage-users.php:11
+#, php-format
+msgid "For security reasons, you must first edit the file %s"
+msgstr "セキュリティ上の理由により、ファイル %s を最初に編集しなければなりません"
+
+#: firestats-1.4\firestats\php/tools/emergency-manage-users.php:12
+#, php-format
+msgid "and change the line %s to %s and then refresh this page."
+msgstr "そして、%s 行を %s に変えてください。それから、このページをリロードしてください。"
+
+#: firestats-1.4\firestats\php/tools/emergency-manage-users.php:13
+msgid "Don't forget to change it back when you are done."
+msgstr "処理したとき、元に戻す変更を忘れないでください。(Don't forget to change it back when you are done.)"
+
+#: firestats-1.4\firestats\php/tools/emergency-manage-users.php:18
+msgid "IMPORTANT"
+msgstr "【重要】"
+
+#: firestats-1.4\firestats\php/tools/reset-password.php:18
+#, php-format
+msgid "You can request an password reset email from here. If it does not work or you don't know your username or email, you can also change your password using the %s"
+msgstr "ここからメールでパスワードの変更を申請できます。動作しないとか、ユーザ名やメールアドレスを知らない場合、%s を使って、パスワードを変更することもできます"
+
+#: firestats-1.4\firestats\php/tools/reset-password.php:18
+msgid "Emergency user management page"
+msgstr "緊急ユーザ管理ページ"
+
+#: firestats-1.4\firestats\php/tools/reset-password.php:28
+msgid "A user with this username and email was not found"
+msgstr "このユーザ名とメールアドレスを持つユーザが、見つかりませんでした"
+
+#: firestats-1.4\firestats\php/tools/reset-password.php:37
+msgid "FireStats password recovery"
+msgstr "FireStats パスワード復元"
+
+#: firestats-1.4\firestats\php/tools/reset-password.php:38
+#, php-format
+msgid "Click %s to change your FireStats password, this link will work for a short time"
+msgstr "FireStats パスワードを変更するために、%s をクリックしてください。このリンクは短時間機能します"
+
+#: firestats-1.4\firestats\php/tools/reset-password.php:42
+msgid "Email sent"
+msgstr "メール送信済み"
+
+#: firestats-1.4\firestats\php/tools/reset-password.php:46
+msgid "Failed to send email"
+msgstr "メール送信失敗l"
+
+#: firestats-1.4\firestats\php/tools/reset-password.php:61
+#, php-format
+msgid "Failed, maybe too much time have passed since you generated the email? %s"
+msgstr "失敗しました。メールを作成してから長い時間が経過していませんか？ %s"
+
+#: firestats-1.4\firestats\php/tools/reset-password.php:61
+msgid "try again"
+msgstr "もう一度お願いします"
+
+#: firestats-1.4\firestats\php/tools/reset-password.php:84
+msgid "New password"
+msgstr "新しいパスワード"
+
+#: firestats-1.4\firestats\php/tools/reset-password.php:93
+msgid "Change password"
+msgstr "パスワード変更"
+
+#: firestats-1.4\firestats\php/tools/reset-password.php:113
+msgid "Email address"
+msgstr "メールアドレス"
+
+#: firestats-1.4\firestats\php/tools/reset-password.php:118
+msgid "Send password reset email"
+msgstr "パスワードをリセットしたメールを送る"
+

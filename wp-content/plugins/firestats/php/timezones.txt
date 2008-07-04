@@ -1,0 +1,29 @@
+# This file contains the list of time zone offsets.
+# if you have some funky timezone offset like 2.5 you can add it here
+# so it will appear in your list.
+system 
+-12:0
+-11:0
+-10:0
+-9:0
+-8:0
+-7:0
+-6:0
+-5:0
+-4:0
+-3:0
+-2:0
+-1:0
++0:0
++1:0
++2:0
++3:0
++4:0
++5:0
++6:0
++7:0
++8:0
++9:0
++10:0
++11:0
++12:0
