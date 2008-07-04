@@ -1,0 +1,35 @@
+/* Blog Switcher */
+
+#all-my-blogs-tab a.current {
+	position: relative;
+	padding-bottom: 10px;
+}
+
+#all-my-blogs {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	right: 0;
+	_width: 100%; /* IE6 Hack */
+	margin: 4px 7px;
+	padding: 6px 10px;
+	font-size: 12px;
+}
+
+#all-my-blogs * {
+	margin: 0;
+}
+
+form#all-my-blogs p, form#all-my-blogs p * {
+	vertical-align: middle;
+}
+
+#all-my-blogs a {
+	font-size: 10px;
+	text-decoration: underline;
+	margin: 0 14px;
+}
+
+#all-my-blogs a:hover, #all-my-blogs a:active  {
+	text-decoration: none;
+}
