@@ -16,8 +16,8 @@ Author URI: http://blog.alexgirard.com
 * =========
 */
 include "feevy_soup.php";
-define('API_KEY','52326fc86dce42ca84ec82a0b7a0f4f04ff3c50b');
-define('FEEVY_CODE','6362');
+define('API_KEY','');
+define('FEEVY_CODE','');
 
 
 
