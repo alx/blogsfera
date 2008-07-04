@@ -1,0 +1,68 @@
+Binary IP2Counry 1.42 - Copyright (C) 2006 Omry Yadan (omry@yadan.net), all rights reserved
+--------------------------------------------------------------------------------------------------
+IP2C uses the IP-to-Country Database
+provided by WebHosting.Info (http://www.webhosting.info),
+available from http://ip-to-country.webhosting.info.
+
+Home page:
+http://firefang.net/projects/firestats/wiki/ip2c
+
+== Supports == 
+ * Command line
+ * Java
+ * PHP 
+
+== Command line (requires java in path) ==
+Usage :
+To resolve an IP address:
+java -jar ip2c.jar ip-address
+Output format:
+if not found:
+UNKNOWN
+
+if found:
+2C 3C NAME
+
+Example:
+java -jar ip2c.jar 85.64.225.159
+Outputs:
+IL ISR ISRAEL
+
+
+To build binary file from CSV:
+java -jar ip2c csv_file bin_file
+
+== Java code == 
+String ip = 85.64.225.159;
+boolean cache = true; // true will load the file into memory, using around 460k ram. (much faster)
+IP2Country ip2c = new IP2Country(cache);
+Country c = ip2c.getCountry(ip);
+if (c == null)
+{
+	System.out.println("UNKNOWN");				
+}
+else
+{
+	// will output IL ISR ISRAEL
+	System.out.println(c.get2cStr() + " " + c.get3cStr() + " " + c.getName());	
+}
+
+
+== PHP ==
+Install the ip2c.php and the binary file in the same directroy.
+
+<?php
+require_once('ip2c.php');
+
+$ip2c = new ip2country();
+$res = $ip2c->get_country("85.64.225.159");
+if ($res == false)
+  echo "not found";
+else
+{
+  $o2c = $res['id2'];
+  $o3c = $res['id3'];
+  $oname = $res['name'];
+  echo "$o2c $o3c $oname"; // will output IL ISR ISRAEL
+}
+?>

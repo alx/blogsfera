@@ -1,0 +1,463 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wordspew\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2007-10-22 11:10+0100\n"
+"Last-Translator: Pierre\n"
+"Language-Team: Pedro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: __;_e;sprintf\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: fatAjax.php:130
+#: wordspew.php:728
+msgid "link"
+msgstr "Link"
+
+#: fatAjax.php:144
+#: wordspew.php:728
+msgid "email"
+msgstr "Email"
+
+#: fatAjax.php:231
+msgid "Click here to expand/collapse the smiley's list"
+msgstr ""
+
+#: fatAjax.php:307
+msgid "0 minute ago"
+msgstr "Hace 0 minutos"
+
+#: widgetized.php:25
+msgid "Title:"
+msgstr "Título :"
+
+#: wordspew.php:86
+msgid "Congratulations, you just completed the installation of this shoutbox."
+msgstr "Felicidades, has completado la instalación de este shoutbox."
+
+#: wordspew.php:148
+#: wordspew.php:705
+msgid "Sorry, but you can post only one url by message..."
+msgstr "Lo siento, pero solo puedes enviar una URL por mensaje..."
+
+#: wordspew.php:164
+msgid "No, sorry you used a banned word!"
+msgstr "¡¡¡ NO SE PERMITE SPAM (has utilizado una palabra prohibida) !!!"
+
+#: wordspew.php:187
+msgid "No, sorry you used the name of a registered user! You have to change it please."
+msgstr ""
+
+#: wordspew.php:244
+msgid "No Access for you!"
+msgstr "¡No se te permite el acceso!"
+
+#: wordspew.php:248
+msgid "The comment was deleted successfully."
+msgstr "El comentario se borró satisfactoriamente."
+
+#: wordspew.php:250
+msgid "The comment was edited successfully."
+msgstr "El comentario se editó satisfactoriamente."
+
+#: wordspew.php:252
+msgid "The shoutbox database has been wiped. You now have a fresh slate!"
+msgstr "Has borrado la base de datos del shoutbox. Ahora lo tienes como nuevo."
+
+#: wordspew.php:254
+msgid "The source ip of this comment was marked as spammer."
+msgstr "La IP de este comentario ha sido marcada como spam."
+
+#: wordspew.php:258
+#, php-format
+msgid "Jalenack's Live Shoutbox (Actually <font color=\"red\">%s</font> spams blocked)"
+msgstr "Jalenack's Live Shoutbox (Actualmente <font color=\"red\">%s</font> spams bloqueados)"
+
+#: wordspew.php:260
+msgid "When you update the Times and Colors, you may need to refresh/empty cache before you see the changes take effect"
+msgstr "Cuando actualizas Tiempo y Colores, tendrás que refrescar o vaciar la caché para ver que los cambios surten efecto."
+
+#: wordspew.php:263
+#, php-format
+msgid "There have been <b>%s</b> messages in this shoutbox"
+msgstr "Hay  <b>%s</b> mensajes en este shoutbox."
+
+#: wordspew.php:266
+msgid "Colors (Must be 6 digit hex)"
+msgstr "Colores (Tienen que ser de 6 dígitos en hexadecimal)"
+
+#: wordspew.php:268
+msgid "Fade from"
+msgstr "Fundido desde"
+
+#: wordspew.php:271
+msgid "The color that new messages fade in from. Default"
+msgstr "El color desde el que los nuevos mensajes hacen fundido. Por defecto"
+
+#: wordspew.php:272
+msgid "Fade to"
+msgstr "Fundido a"
+
+#: wordspew.php:273
+msgid "Also used as the background color of the box. Default: FFFFFF (white)"
+msgstr "Usar también el color de la caja como fondo. Por defecto: FFFFFF (blanco)"
+
+#: wordspew.php:274
+msgid "Text Color"
+msgstr "Color del Texto"
+
+#: wordspew.php:277
+msgid "The color of text within the box. Default"
+msgstr "Color del texto del shoutbox. Por defecto"
+
+#: wordspew.php:278
+msgid "Name Color"
+msgstr "Color del Nombre"
+
+#: wordspew.php:281
+msgid "The color of peoples' names. Default"
+msgstr "El color de los nombres de la gente. Por defecto"
+
+#: wordspew.php:285
+msgid "Other"
+msgstr "Otro"
+
+#: wordspew.php:287
+msgid "Show"
+msgstr ""
+
+#: wordspew.php:288
+msgid "comments in the shoutbox"
+msgstr ""
+
+#: wordspew.php:289
+msgid "Enter, here, the number of shouts you want to show in your shoutbox"
+msgstr ""
+
+#: wordspew.php:291
+msgid "Update Every"
+msgstr "Actualizar Cada"
+
+#: wordspew.php:292
+#: wordspew.php:295
+msgid "Seconds"
+msgstr "Segundos"
+
+#: wordspew.php:293
+msgid "This determines how \"live\" the shoutbox is. With a bigger number, it will take more time for messages to show up, but also decrease the server load. You may use decimals. This number is used as the base for the first 8 javascript loads. After that, the number gets successively bigger. Adding a new comment or mousing over the shoutbox will reset the interval to the number suplied above. Default: 4 Seconds"
+msgstr "Esto determina como se comporta el shoutbox. Con un número mayor, tardará más tiempo en mostrar los mensajes, pero también decrecerá la carga del servidor. Puedes usar decimales. Este número es usado como base para las primeras 8 cargas javascript. Después de eso, el número crecerá sucesivamente. Añadiendo un nuevo comentario o pasando sobre el shoutbox reseteará el intervalo al número que determines. Por defecto : 4 segundos"
+
+#: wordspew.php:294
+msgid "Fade Length"
+msgstr "Duración del Fundido"
+
+#: wordspew.php:296
+msgid "The amount of time it takes for the fader to completely blend with the background color. You may use decimals. Default 1.5 seconds"
+msgstr "Tiempo necesario para el fundido con el color de fondo. Puedes usar decimales (usando el punto). Por defecto: 1.5 segundos"
+
+#: wordspew.php:297
+msgid "Use textarea"
+msgstr "Utilizar área de texto"
+
+#: wordspew.php:298
+msgid "A textarea is a bigger type of input box. Users will have more room to type their comments, but it will take up more space."
+msgstr "Un área de texto es una caja más grande en la que introducir el texto. Los usuarios tendrán más espacio para escribir sus comentarios, pero necesitarás más espacio."
+
+#: wordspew.php:299
+msgid "Use URL field"
+msgstr "Utilizar campo URL"
+
+#: wordspew.php:300
+msgid "Check this if you want users to have an option to add their URL when submitting a message."
+msgstr "Selecciona esto si quieres que los usuarios tengan opción a introducir su URL al introducir un mensaje."
+
+#: wordspew.php:301
+msgid "Use sound alert"
+msgstr "Utilizar sonido de alerta"
+
+#: wordspew.php:302
+msgid "Check this if you want to hear a sound alert when someone post message"
+msgstr "Selecciona esto si quieres escuchar un solido de alerta cuando alguien escribe un mensaje."
+
+#: wordspew.php:303
+msgid "XHTML strict"
+msgstr ""
+
+#: wordspew.php:304
+msgid "Check this if you want to use XHTML strict"
+msgstr ""
+
+#: wordspew.php:305
+msgid "Show users online"
+msgstr ""
+
+#: wordspew.php:306
+msgid "Check this if you want to show, in real time, users online"
+msgstr ""
+
+#: wordspew.php:307
+msgid "Show smileys list"
+msgstr ""
+
+#: wordspew.php:308
+msgid "Check this if you want to show the smileys list"
+msgstr ""
+
+#: wordspew.php:309
+msgid "Show blocked spams"
+msgstr ""
+
+#: wordspew.php:310
+msgid "Check this if you want to show blocked spams"
+msgstr ""
+
+#: wordspew.php:311
+msgid "Use a captcha"
+msgstr ""
+
+#: wordspew.php:312
+msgid "Enter here your secret sentence"
+msgstr ""
+
+#: wordspew.php:313
+msgid "Check this if you want to use a captcha (in fact it's a simple addition that users have to resolve before post any new message in the shoutbox)."
+msgstr ""
+
+#: wordspew.php:314
+msgid "Hide users list"
+msgstr ""
+
+#: wordspew.php:315
+msgid "Check this if you want to hide users list from document header in the javascript function. It permit to not expose your users list from a \"view source\"."
+msgstr ""
+
+#: wordspew.php:316
+msgid "Only allow registered users"
+msgstr "Solo permitir mensajes de usuarios registrados."
+
+#: wordspew.php:317
+msgid "This will only let your registered users use the form that allows one to type messages. Users who are NOT logged in will be able to watch the chat and a message saying they must be logged in to comment. <b>Note:</b> this is not completely \"secure\"... If someone REALLY wanted to, they could write a script that interacts directly with the message receiving file. They'd have to know what they're doing and it would be quite pointless."
+msgstr "Esto solo permitirá a los usuarios registrados escribir mensajes. Los usuarios que NO estén identificados podrán ver el chat pero aparecerá un mensaje diciendo que tienen que estar registrados para comentar. <b>Nota:</b> este método no es completamente infalible... Si alguien DE VERDAD quiere hacerlo, puede escribir un script que interactúe directamente con el archivo de mensajes recibidos. Tienen que saber lo que hacen y puede ser bastante decepcionante."
+
+#: wordspew.php:319
+msgid "Save"
+msgstr "Grabar"
+
+#: wordspew.php:320
+msgid ""
+"You are about to delete ALL messages in the shoutbox. It will completely erase all messages.\\n"
+"Are you sure you want to do this?\\n"
+"\\'Cancel\\' to stop, \\'OK\\' to delete."
+msgstr ""
+"Estás a punto de borrar TODOS los mensajes del shoutbox. Los borrará por completo.\\n"
+"\\'Cancelar\\' para parar, \\'OK\\' para borrar."
+
+#: wordspew.php:320
+msgid "Delete ALL messages"
+msgstr "Borrar TODOS los mensajes"
+
+#: wordspew.php:323
+msgid "Data"
+msgstr "Datos"
+
+#: wordspew.php:323
+#, php-format
+msgid "(showing the last <b>%s</b> messages)"
+msgstr "(mostrando los últimos <b>%s</b> mensajes)"
+
+#: wordspew.php:324
+msgid "Reminder: You MUST have at LEAST one comment in your shoutbox at all times. This is not live. New comments made while viewing this page will not magically appear like they do in the real thing."
+msgstr "Recordatorio: TIENES que guardar COMO MÍNIMO un comentario en tu shoutbox siempre. Esto no es en directo. Los nuevos comentarios hechos mientras estás viendo esta página no aparecerán por arte de magia como lo hacen en el shoutbox real."
+
+#: wordspew.php:325
+#, php-format
+msgid "<a href=\"%s\"><b>Click here</b></a> to manage your banned words list and IP addresses."
+msgstr "<a href=\"%s\"><b>Haz click aquí</b></a> para gestionar tus IPs baneadas y palabras prohibidas."
+
+#: wordspew.php:326
+msgid "<b><font color=\"red\">Important !</font></b> To ban a single IP address just click on \"Ban this IP\" button. If you want to ban a range of IP, use this syntax (for this example i can say good bye to Vsevolod Stetsinsky) : 195.225.176/179.* where slash means from 176 to 179 and * from 0 to 255.<br/>BTW i ban IP addresses from 195.225.176.0 to 195.225.179.255. You can mix the two options..."
+msgstr "<b><font color=\"red\">Importante !</font></b> Para banear una sola dirección IP haz click en el botón \"Spam\" . Si lo que quieres es banear un rango de IPs, usa esta sintaxis (en este ejemplo, quiero despedirme de Vsevolod Stetsinsky) : 195.225.176/179.* donde la barra significa desde 176 hasta 179 y el asterisco * de 0 a 255.<br/> Así habré baneado direcciones IP desde 195.225.176.0 hasta 195.225.179.255. Puedes mezclar las dos opciones..."
+
+#: wordspew.php:337
+#: wordspew.php:749
+#, php-format
+msgid "<div id=\"lastMessage\"><span>Last Message</span> <em id=\"responseTime\">%s ago</em></div>"
+msgstr "<div id=\"lastMessage\"><span>Último mensaje hace</span> <em id=\"responseTime\">%s</em></div>"
+
+#: wordspew.php:346
+msgid "Ban this IP"
+msgstr ""
+
+#: wordspew.php:347
+msgid "Delete"
+msgstr "Borrar"
+
+#: wordspew.php:348
+msgid "Edit"
+msgstr "Editar"
+
+#: wordspew.php:369
+msgid "year"
+msgstr "año"
+
+#: wordspew.php:369
+msgid "years"
+msgstr "años"
+
+#: wordspew.php:370
+msgid "month"
+msgstr "mes"
+
+#: wordspew.php:370
+msgid "months"
+msgstr "meses"
+
+#: wordspew.php:371
+msgid "week"
+msgstr "semana"
+
+#: wordspew.php:371
+msgid "weeks"
+msgstr "semanas"
+
+#: wordspew.php:372
+msgid "day"
+msgstr "dia"
+
+#: wordspew.php:372
+msgid "days"
+msgstr "dias"
+
+#: wordspew.php:373
+msgid "hour"
+msgstr "hora"
+
+#: wordspew.php:373
+msgid "hours"
+msgstr "horas"
+
+#: wordspew.php:374
+msgid "minute"
+msgstr "minuto"
+
+#: wordspew.php:374
+msgid "minutes"
+msgstr "minutos"
+
+#: wordspew.php:703
+msgid "You should learn to count before use the shoutbox :)"
+msgstr ""
+
+#: wordspew.php:704
+msgid "I DON'T LIKE SPAM !!!"
+msgstr ""
+
+#: wordspew.php:706
+msgid "Your IP address have been banned from this blog, if you feel this is in error please contact the webmaster."
+msgstr "Tu dirección IP ha sido baneada de este blog, si crees que puede ser un error, por favor contacta con el administrador del sitio."
+
+#: wordspew.php:741
+msgid "Click this to turn on/off sound"
+msgstr "Click aquí para activar/desactivar el sonido"
+
+#: wordspew.php:747
+#, php-format
+msgid "<div id=\"Show_Spam\">%s spams blocked</div>"
+msgstr ""
+
+#: wordspew.php:758
+msgid "Info"
+msgstr ""
+
+#: wordspew.php:758
+msgid "Please, resolve the addition below before post any new comment..."
+msgstr ""
+
+#: wordspew.php:778
+msgid "Guest_"
+msgstr "Invitado_"
+
+#: wordspew.php:785
+msgid "Admin"
+msgstr "Administrador"
+
+#: wordspew.php:791
+#: wordspew.php:812
+msgid "Name"
+msgstr "Nombre"
+
+#: wordspew.php:799
+msgid "Captcha"
+msgstr ""
+
+#: wordspew.php:814
+msgid "URL/Email"
+msgstr "URL/Email"
+
+#: wordspew.php:817
+msgid "Message"
+msgstr "Mensaje"
+
+#: wordspew.php:826
+msgid "Send"
+msgstr "Enviar"
+
+#: wordspew.php:831
+msgid "You must be a registered user to participate in this chat"
+msgstr "Debes ser un usuario registrado para participar en este chat"
+
+#: wordspew.php:859
+#: wordspew.php:909
+#: wordspew.php:921
+#: wordspew.php:939
+#: wordspew.php:955
+msgid "Cheatin' uh ?"
+msgstr "Haciendo trampas, eh?"
+
+#: wordspew.php:882
+msgid "Your secret sentence"
+msgstr ""
+
+#: wordspew.php:944
+msgid "Your shoutbox is blank. Add a message!"
+msgstr "Añade un mensaje !!!"
+
+#: wordspew.php:1104
+msgid "No one online."
+msgstr ""
+
+#: wordspew.php:1105
+msgid "guest"
+msgstr "invitado"
+
+#: wordspew.php:1106
+msgid "guests"
+msgstr ""
+
+#: wordspew.php:1107
+msgid "and"
+msgstr ""
+
+#: wordspew.php:1108
+msgid "is crawling the site."
+msgstr ""
+
+#: wordspew.php:1109
+msgid "are crawling the site."
+msgstr ""
+
+#: wordspew.php:1110
+msgid "is online."
+msgstr ""
+
+#: wordspew.php:1111
+msgid "are online."
+msgstr ""
+

@@ -1,0 +1,9 @@
+FireStats 1.4.4-stable - Copyright (C) 2006-2007 Omry Yadan (omry@yadan.net), all rights reserved
+-------------------------------------------------------------------------------------------
+See http://firestats.cc/
+
+IP to country database
+----------------------
+FireStats uses the IP-to-Country Database
+provided by WebHosting.Info (http://www.webhosting.info),
+available from http://ip-to-country.webhosting.info.

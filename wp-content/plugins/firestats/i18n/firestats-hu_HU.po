@@ -1,0 +1,2450 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Firestats\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2007-11-05 22:02+0100\n"
+"Last-Translator: Cenzi <lupus.lupine@gmail.com>\n"
+"Language-Team: Cenzi <lupus.lupine@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Hungarian\n"
+"X-Poedit-Country: Hungary\n"
+"X-Poedit-KeywordsList: fs_e;fs_r\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: c:\\work\\firestats-1.4\\firestats\n"
+
+# c:/temp/firestats/firestats-wordpress.php:80
+# c:/temp/firestats/index.php:22
+# c:/temp/firestats/index.php:45
+# c:/temp/firestats/php/footer.php:8
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:281
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:695
+#: c:\work\firestats-1.4\firestats/php/footer.php:5
+#: c:\work\firestats-1.4\firestats/php/header.php:38
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:1098
+msgid "FireStats"
+msgstr "FireStats"
+
+# c:/temp/firestats/firestats-wordpress.php:80
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:281
+#: c:\work\firestats-1.4\firestats/php/tabbed-pane.php:95
+msgid "Loading..."
+msgstr "Betöltés..."
+
+# c:/temp/firestats/firestats-wordpress.php:99
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:300
+#, php-format
+msgid "Total : %s page views and %s visits"
+msgstr "Összesen : %s találat - %s újratöltés"
+
+# c:/temp/firestats/firestats-wordpress.php:100
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:301
+#, php-format
+msgid "Last 24 hours : %s page views and %s visits"
+msgstr "24 óra adatai : %s találat - %s újratöltés"
+
+# c:\work\firestats-1.2\firestats/firestats-wordpress.php:208
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:447
+#, fuzzy
+msgid "You are not authorized to access FireStats"
+msgstr "Csak a blog-adminok férhetnek hozzá a FireStats-hoz"
+
+# c:/temp/firestats/php/ajax-handler.php:563
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:718
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:821
+#, fuzzy
+msgid "Title:"
+msgstr "fájl"
+
+# c:/temp/firestats/php/page-database.php:190
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:723
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:835
+#, fuzzy
+msgid "Hide FireStats logo"
+msgstr "FireStats weboldal"
+
+# c:/temp/firestats/php/tabbed-pane.php:64
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:736
+#: c:\work\firestats-1.4\firestats/php/tabbed-pane.php:22
+msgid "Statistics"
+msgstr "Statisztika"
+
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:737
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:788
+msgid "Popular posts"
+msgstr "Híres bejegyzések"
+
+# c:/temp/firestats/php/page-stats.php:169
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:825
+#, fuzzy
+msgid "Number to show"
+msgstr "Megjelenő találatok száma"
+
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:829
+msgid "Days ago (Empty for all time)"
+msgstr "napja"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/firestats-wordpress.php:413
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:902
+msgid "Pages displayed : "
+msgstr "Megtekintett oldalak : "
+
+# c:/temp/firestats/php/page-stats.php:30
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:903
+msgid "Unique visitors : "
+msgstr "Egyedi látogatók : "
+
+# c:/temp/firestats/php/page-stats.php:31
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:904
+msgid "Pages displayed in last 24 hours : "
+msgstr "Megtekintett oldalak 24 órája : "
+
+# c:/temp/firestats/php/page-stats.php:32
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:905
+msgid "Unique visitors in last 24 hours : "
+msgstr "Egyedi látogatók 24 órája : "
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/firestats-wordpress.php:467
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:956
+#, fuzzy
+msgid "pages viewed"
+msgstr " megtekintett oldal"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/firestats-wordpress.php:467
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/firestats-wordpress.php:468
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:956
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:957
+msgid "today"
+msgstr "ma"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/firestats-wordpress.php:468
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:957
+#, fuzzy
+msgid "visits"
+msgstr " látogató"
+
+# c:/temp/firestats/firestats-wordpress.php:80
+# c:/temp/firestats/index.php:22
+# c:/temp/firestats/index.php:45
+# c:/temp/firestats/php/footer.php:8
+#: c:\work\firestats-1.4\firestats/firestats-wordpress.php:966
+msgid "Powered by FireStats"
+msgstr "Powered by FireStats"
+
+# c:/temp/firestats/index.php:25
+#: c:\work\firestats-1.4\firestats/index.php:16
+msgid "FireStats is installed inside WordPress"
+msgstr "FireStats a Wordpress rendszerre telepítve lett"
+
+# c:/temp/firestats/index.php:26
+#: c:\work\firestats-1.4\firestats/index.php:17
+msgid "Please access it from the WordPress admin interface"
+msgstr "Lépjen be a Wordpress adminrendszeren keresztül"
+
+#: c:\work\firestats-1.4\firestats/login.php:10
+#: c:\work\firestats-1.4\firestats/login.php:25
+msgid "Login"
+msgstr "Bejelentkezés"
+
+# c:/temp/firestats/php/html-utils.php:141
+#: c:\work\firestats-1.4\firestats/login.php:13
+#, fuzzy
+msgid "Username"
+msgstr "UserAgent"
+
+# c:/temp/firestats/php/page-database.php:243
+# c:/temp/firestats/php/page-database.php:251
+#: c:\work\firestats-1.4\firestats/login.php:17
+#: c:\work\firestats-1.4\firestats/php/page-add-admin.php:37
+#: c:\work\firestats-1.4\firestats/php/window-new-user.php:21
+msgid "Password"
+msgstr "Jelszó"
+
+#: c:\work\firestats-1.4\firestats/login.php:24
+msgid "Remember me for the next 14 days"
+msgstr "Emlékezzen rám 2 hétig"
+
+#: c:\work\firestats-1.4\firestats/login.php:30
+#, php-format
+msgid "Forgot your password? click %s."
+msgstr "Elfelejtette a jelszót? Kattintson %s."
+
+# c:/temp/firestats/php/version-check.php:164
+#: c:\work\firestats-1.4\firestats/login.php:30
+#: c:\work\firestats-1.4\firestats/php/page-sites.php:32
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:22
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:30
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:34
+#: c:\work\firestats-1.4\firestats/php/version-check.php:148
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:38
+msgid "here"
+msgstr "ide"
+
+# c:/temp/firestats/js/firestats.js.php:95
+# c:/temp/firestats/js/firestats.js.php:221
+#: c:\work\firestats-1.4\firestats/js/firestats.js.php:252
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:66
+msgid "Not a positive number : "
+msgstr "Nem pozitív szám :"
+
+# c:\work\firestats-1.2\firestats/js/firestats.js.php:525
+#: c:\work\firestats-1.4\firestats/js/firestats.js.php:614
+msgid "Session expired, press ok to reload"
+msgstr "A session érvényessége lejárt, kattints az ok gombra a frissítéshez"
+
+#: c:\work\firestats-1.4\firestats/js/page-database.js.php:65
+msgid "Upgrading, do not interrupt"
+msgstr "Frissítés, kérlek ne szakítsd meg"
+
+# c:/temp/firestats/php/page-database.php:49
+#: c:\work\firestats-1.4\firestats/js/page-database.js.php:72
+#: c:\work\firestats-1.4\firestats/php/page-database.php:59
+msgid "Upgrade"
+msgstr "Frisítés"
+
+# c:/temp/firestats/js/firestats.js.php:123
+#: c:\work\firestats-1.4\firestats/js/page-settings.js.php:18
+msgid "You need to select an bot you want to remove from the table"
+msgstr "Válassza ki az eltávolítandó robotot a listából"
+
+# c:/temp/firestats/js/firestats.js.php:145
+#: c:\work\firestats-1.4\firestats/js/page-settings.js.php:39
+msgid "Invalid IP address"
+msgstr "Hibás IP cím"
+
+# c:/temp/firestats/js/firestats.js.php:154
+#: c:\work\firestats-1.4\firestats/js/page-settings.js.php:48
+msgid "You need to select an IP address you want to remove from the table"
+msgstr "Jelölje ki az eltávolítandó IP címet a listából"
+
+#: c:\work\firestats-1.4\firestats/js/page-settings.js.php:73
+msgid "Stop"
+msgstr "Megállít"
+
+# c:/temp/firestats/firestats-wordpress.php:80
+#: c:\work\firestats-1.4\firestats/js/page-settings.js.php:74
+#, fuzzy
+msgid "Compacting..."
+msgstr "Betöltés..."
+
+# c:/temp/firestats/firestats-wordpress.php:80
+#: c:\work\firestats-1.4\firestats/js/page-settings.js.php:97
+#, fuzzy
+msgid "Stopping..."
+msgstr "Betöltés..."
+
+# c:/temp/firestats/php/page-settings.php:34
+#: c:\work\firestats-1.4\firestats/js/page-settings.js.php:106
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:69
+#, fuzzy
+msgid "Compact now"
+msgstr "Frissítés"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-settings.php:128
+#: c:\work\firestats-1.4\firestats/js/page-sites.js.php:26
+#: c:\work\firestats-1.4\firestats/js/page-sites.js.php:28
+#: c:\work\firestats-1.4\firestats/js/page-sites.js.php:46
+#: c:\work\firestats-1.4\firestats/js/page-sites.js.php:48
+#: c:\work\firestats-1.4\firestats/php/window-new-edit-site.php:22
+#: c:\work\firestats-1.4\firestats/php/window-new-edit-site.php:23
+#, fuzzy
+msgid "Automatic"
+msgstr "Automatikus frissítés"
+
+# c:\work\firestats-1.2\firestats/php/page-sites.php:91
+#: c:\work\firestats-1.4\firestats/js/page-sites.js.php:92
+#: c:\work\firestats-1.4\firestats/php/window-delete-site.php:29
+#: c:\work\firestats-1.4\firestats/php/window-delete-user.php:18
+msgid "Delete"
+msgstr "Törlés"
+
+# c:\work\firestats-1.2\firestats/php/page-sites.php:91
+#: c:\work\firestats-1.4\firestats/js/page-sites.js.php:92
+msgid "Transfer"
+msgstr "Átvitel"
+
+#: c:\work\firestats-1.4\firestats/js/page-tools.js.php:12
+msgid "Abort"
+msgstr "Megszakítás"
+
+# c:\work\firestats-1.2\firestats/php/page-wordpress-settings.php:128
+#: c:\work\firestats-1.4\firestats/js/page-tools.js.php:27
+#, fuzzy
+msgid "Canceled"
+msgstr "Haladó"
+
+# c:/temp/firestats/php/page-stats.php:26
+#: c:\work\firestats-1.4\firestats/js/page-tools.js.php:28
+#: c:\work\firestats-1.4\firestats/js/page-tools.js.php:32
+#: c:\work\firestats-1.4\firestats/js/page-tools.js.php:40
+#: c:\work\firestats-1.4\firestats/php/page-tools.php:40
+#: c:\work\firestats-1.4\firestats/php/page-tools.php:45
+#: c:\work\firestats-1.4\firestats/php/page-tools.php:50
+#, fuzzy
+msgid "Start"
+msgstr "Állapot"
+
+# c:/temp/firestats/php/ezsql/mysql/ez_sql_mysql.php:41
+#: c:\work\firestats-1.4\firestats/lib/ezsql/mysql/ez_sql_mysql.php:41
+msgid "User name and password are required to connect to database"
+msgstr "Felhasználói név és jelszó szükséges az adatbázishoz kapcsolódáshoz"
+
+# c:/temp/firestats/php/ezsql/mysql/ez_sql_mysql.php:42
+#: c:\work\firestats-1.4\firestats/lib/ezsql/mysql/ez_sql_mysql.php:42
+msgid "Error establishing mySQL database connection"
+msgstr "Hiba a mySQL adatbázishoz kapcsolódáskor"
+
+# c:/temp/firestats/php/ezsql/mysql/ez_sql_mysql.php:43
+#: c:\work\firestats-1.4\firestats/lib/ezsql/mysql/ez_sql_mysql.php:43
+msgid "Database name is required to connect to database"
+msgstr "Szükséges az adatbázis neve a kapcsolódáshoz"
+
+# c:/temp/firestats/php/ezsql/mysql/ez_sql_mysql.php:44
+#: c:\work\firestats-1.4\firestats/lib/ezsql/mysql/ez_sql_mysql.php:44
+msgid "mySQL database connection is not active"
+msgstr "mySQL adatbázis inaktív"
+
+# c:/temp/firestats/php/ezsql/mysql/ez_sql_mysql.php:45
+#: c:\work\firestats-1.4\firestats/lib/ezsql/mysql/ez_sql_mysql.php:45
+msgid "Unexpected error while querying database"
+msgstr "Kiszámíthatatlan hiba"
+
+# c:/temp/firestats/php/ezsql/mysql/ez_sql_mysql.php:121
+# c:/temp/firestats/php/ezsql/mysql/ez_sql_mysql.php:132
+#: c:\work\firestats-1.4\firestats/lib/ezsql/mysql/ez_sql_mysql.php:122
+#: c:\work\firestats-1.4\firestats/lib/ezsql/mysql/ez_sql_mysql.php:133
+#, php-format
+msgid "Can't disconnect: %s"
+msgstr "Nem lehet lekapcsolódni : %s"
+
+# c:/temp/firestats/php/ezsql/mysql/ez_sql_mysql.php:132
+#: c:\work\firestats-1.4\firestats/lib/ezsql/mysql/ez_sql_mysql.php:133
+msgid "Not connected"
+msgstr "Nincs kapcsolat"
+
+# c:/temp/firestats/php/ajax-handler.php:97
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:190
+#, php-format
+msgid "Unsupported action code : %s"
+msgstr "Hibás parancs kód : %s"
+
+# c:/temp/firestats/php/ajax-handler.php:105
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:199
+#, php-format
+msgid "Unexpexted output: %s"
+msgstr "Hibás kimenet : %s"
+
+# c:/temp/firestats/php/ajax-handler.php:148
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:226
+#, php-format
+msgid "Added %s to exclude list"
+msgstr "%s hozzá lett adva a kivétel listához"
+
+# c:/temp/firestats/php/ajax-handler.php:165
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:242
+#, php-format
+msgid "Removed %s from exclude list"
+msgstr "%s el lett távolsítva a kivétel listából"
+
+# c:/temp/firestats/php/ajax-handler.php:210
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:351
+msgid "Excluded users list saved"
+msgstr "Kivétel listva mentve"
+
+# c:/temp/firestats/php/ajax-handler.php:228
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:368
+#, php-format
+msgid "Added %s to bots list"
+msgstr "%s hozzá lett adva a robot listához"
+
+# c:/temp/firestats/php/ajax-handler.php:241
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:379
+msgid "Empty string is not allowed"
+msgstr "Üres mező nincs engedélyezve"
+
+# c:/temp/firestats/php/ajax-handler.php:251
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:389
+msgid "Removed"
+msgstr "Eltávolítva"
+
+# c:/temp/firestats/php/ajax-handler.php:302
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:441
+msgid "Not using configuration file"
+msgstr "Nincs konfigurációs fájl"
+
+# c:/temp/firestats/php/ajax-handler.php:309
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:447
+msgid "Not installed inside Wordpress"
+msgstr "Nem lett telepítve a Wordpress rendszerből"
+
+# c:/temp/firestats/php/ajax-handler.php:320
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:457
+#, php-format
+msgid "Failed to delete fs-config.php : %s"
+msgstr "fs-config.php törlése sikertelen : %s"
+
+# c:/temp/firestats/php/ajax-handler.php:341
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:477
+msgid "Error creating config file: "
+msgstr "Konfigurációs fájl elkészítése közben hiba lépett fel:"
+
+# c:/temp/firestats/php/ajax-handler.php:364
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:501
+msgid "Error upgrading tables"
+msgstr "Hiba a táblák frissítésében"
+
+# c:/temp/firestats/php/ajax-handler.php:389
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:527
+msgid "Error installing tables"
+msgstr "Hiba a táblák telepítésekor"
+
+# c:/temp/firestats/php/ajax-handler.php:498
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:606
+msgid "Error rebuilding database cache"
+msgstr "Hiba az adatbázis újjáépítésekor"
+
+# c:/temp/firestats/php/ajax-handler.php:502
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:610
+msgid "Database cache rebuilt successfully"
+msgstr "Adatbázis sikeresen felépítve"
+
+# c:/temp/firestats/php/page-import.php:22
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:689
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:72
+#, fuzzy, php-format
+msgid "%s days can be compacted, database size %s"
+msgstr "%s nincs meg"
+
+# c:/temp/firestats/php/ajax-handler.php:538
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:692
+#, php-format
+msgid "Unkown field: %s"
+msgstr "Ismeretlen mező : %s"
+
+# c:/temp/firestats/php/ajax-handler.php:573
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:728
+msgid "IP-to-country database is already up-to-date"
+msgstr "IP-to-country frissítésére nincs szükség"
+
+# c:/temp/firestats/php/ajax-handler.php:565
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:735
+msgid "An error has occured while trying to update the IP-to-country database"
+msgstr "Hiba lépett fel az IP-to-country frissítésekor"
+
+# c:/temp/firestats/php/ajax-handler.php:563
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:739
+msgid "file"
+msgstr "fájl"
+
+# c:/temp/firestats/php/ajax-handler.php:567
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:741
+#, php-format
+msgid "You can update the database manually by downloading this %s and extracting it into %s"
+msgstr "Frissítheti az adatbázist a %s letöltésével, amit a %s könyvtárba kell kibontani"
+
+# c:\work\firestats-1.2\firestats/php/ajax-handler.php:739
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:746
+msgid "this"
+msgstr "ez"
+
+# c:/temp/firestats/php/ajax-handler.php:567
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:748
+#, fuzzy, php-format
+msgid "You can update the database manually by opening %s and downloading the <b>zip_url</b>, and extracting it into %s"
+msgstr "Frissítheti az adatbázist a %s letöltésével, amit a %s könyvtárba kell kibontani"
+
+# c:/temp/firestats/php/ajax-handler.php:568
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:750
+msgid "Error"
+msgstr "Hiba"
+
+# c:/temp/firestats/php/ip2country.php:186
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:774
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:792
+#, fuzzy, php-format
+msgid "Error updating bots list: %s"
+msgstr "Hiba a robotlista frissítésekor: %s"
+
+# c:/temp/firestats/php/ip2country.php:182
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:786
+msgid "Successfully updated bots list"
+msgstr "Robotlista sikeresen frissült"
+
+# c:/temp/firestats/php/ajax-handler.php:583
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:805
+#, php-format
+msgid "Error purging excluded records: %s"
+msgstr "Hiba a bejegyzésekben: %s"
+
+# c:/temp/firestats/php/ajax-handler.php:588
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:809
+msgid "Purged excluded records"
+msgstr "Bejegyzések"
+
+# c:/temp/firestats/php/db-config-utils.php:22
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:893
+#: c:\work\firestats-1.4\firestats/php/db-common.php:134
+#: c:\work\firestats-1.4\firestats/php/db-config-utils.php:23
+msgid "Error connecting to database"
+msgstr "Sikertelen kapcsolódás az adatbázishoz"
+
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:976
+#, fuzzy, php-format
+msgid "Compacting %s days, %s done, database size is %s"
+msgstr "Tömörítés %s nap, %s kész"
+
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:1050
+#, php-format
+msgid "%d of %d"
+msgstr "%d / %d"
+
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:1062
+#, php-format
+msgid "Done, took %s second"
+msgstr "Kész, %s másodpercbe telt."
+
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:1185
+msgid "Incorrect user-name or password"
+msgstr "Hibás felhasználói név vagy jelszó"
+
+# c:/temp/firestats/php/db-config-utils.php:40
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:1206
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:1241
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:1262
+#, fuzzy
+msgid "User name not specified"
+msgstr "Hibás jelszó"
+
+# c:/temp/firestats/php/db-config-utils.php:40
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:1207
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:1242
+#, fuzzy
+msgid "Email not specified"
+msgstr "Hibás jelszó"
+
+# c:/temp/firestats/php/db-config-utils.php:40
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:1208
+#: c:\work\firestats-1.4\firestats/php/db-config-utils.php:41
+msgid "Password not specified"
+msgstr "Hibás jelszó"
+
+# c:/temp/firestats/php/db-config-utils.php:40
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:1209
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:1245
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:1263
+#, fuzzy
+msgid "Passwords did not match"
+msgstr "Hibás jelszó"
+
+# c:/temp/firestats/php/page-database.php:127
+#: c:\work\firestats-1.4\firestats/php/ajax-handler.php:1264
+#, fuzzy
+msgid "Empty password"
+msgstr "Adatbázis jelszava"
+
+# c:/temp/firestats/js/firestats.js.php:145
+#: c:\work\firestats-1.4\firestats/php/auth.php:174
+#: c:\work\firestats-1.4\firestats/php/auth.php:203
+#, fuzzy
+msgid "Invalid email address"
+msgstr "Hibás IP cím"
+
+# c:\work\firestats-1.2\firestats/php/db-sql.php:39
+# c:\work\firestats-1.2\firestats/php/db-sql.php:73
+#: c:\work\firestats-1.4\firestats/php/auth.php:184
+#: c:\work\firestats-1.4\firestats/php/auth.php:213
+#, fuzzy
+msgid "A user with this name already exists"
+msgstr "A %s oldal ID már létezik."
+
+# c:\work\firestats-1.2\firestats/php/db-sql.php:39
+# c:\work\firestats-1.2\firestats/php/db-sql.php:73
+#: c:\work\firestats-1.4\firestats/php/auth.php:188
+#: c:\work\firestats-1.4\firestats/php/auth.php:217
+#, fuzzy
+msgid "A user with this email address already exists"
+msgstr "A %s oldal ID már létezik."
+
+# c:/temp/firestats/php/db-common.php:111
+#: c:\work\firestats-1.4\firestats/php/db-common.php:116
+msgid "FireStats is properly installed in the database"
+msgstr "FireStats adatbázisa telepítve lett"
+
+# c:/temp/firestats/php/db-config-utils.php:58
+#: c:\work\firestats-1.4\firestats/php/db-common.php:119
+#, fuzzy
+msgid "FireStats is not configured"
+msgstr "FireStats telepítve van"
+
+# c:/temp/firestats/php/db-common.php:114
+#: c:\work\firestats-1.4\firestats/php/db-common.php:122
+#, fuzzy
+msgid "Database error, check your configuration"
+msgstr "Adatbázis hiba, menjen a %s-be a helyes konfigurációért"
+
+# c:/temp/firestats/php/db-common.php:111
+#: c:\work\firestats-1.4\firestats/php/db-common.php:125
+#, fuzzy
+msgid "FireStats is not installed in the database"
+msgstr "FireStats adatbázisa telepítve lett"
+
+# c:/temp/firestats/php/page-database.php:48
+#: c:\work\firestats-1.4\firestats/php/db-common.php:128
+#, fuzzy
+msgid "FireStats database need to be upgraded"
+msgstr "A FireStats adatbázis frissítésre szorul"
+
+# c:/temp/firestats/php/db-common.php:123
+#: c:\work\firestats-1.4\firestats/php/db-common.php:131
+#, fuzzy
+msgid "The FireStats database version is newer than this code version, you need to upgrade FireStats"
+msgstr "A FireStats adatbázis verzió újabb, frissítenie kell a jelenlegit"
+
+# c:/temp/firestats/php/db-common.php:126
+#: c:\work\firestats-1.4\firestats/php/db-common.php:137
+msgid "Unknown database status code"
+msgstr "Ismeretlen adatbázis kód"
+
+# c:/temp/firestats/php/db-sql.php:573
+#: c:\work\firestats-1.4\firestats/php/db-common.php:544
+#: c:\work\firestats-1.4\firestats/php/db-hit.php:350
+#, php-format
+msgid "Database error: %s"
+msgstr "Adatbázis hiba : %s"
+
+# c:/temp/firestats/php/db-config-utils.php:19
+#: c:\work\firestats-1.4\firestats/php/db-config-utils.php:20
+msgid "Error accessing database"
+msgstr "Hiba az adatbázishoz való kapcsolódáskor"
+
+# c:/temp/firestats/php/db-config-utils.php:25
+#: c:\work\firestats-1.4\firestats/php/db-config-utils.php:26
+msgid "Cannot write configuration file (read only file or directory)"
+msgstr "Írhatatlan a konfigurációs fájl (csak olvasható)"
+
+# c:/temp/firestats/php/db-config-utils.php:28
+#: c:\work\firestats-1.4\firestats/php/db-config-utils.php:29
+msgid "Error creating database"
+msgstr "Hiba az adatbázis létrehozásánál"
+
+# c:/temp/firestats/php/db-config-utils.php:31
+#: c:\work\firestats-1.4\firestats/php/db-config-utils.php:32
+msgid "Error creating user"
+msgstr "Hiba a felhasználó létrehozásakor"
+
+# c:/temp/firestats/php/db-config-utils.php:34
+#: c:\work\firestats-1.4\firestats/php/db-config-utils.php:35
+msgid "Error creating tables"
+msgstr "Hiba a táblák létrehozásakor"
+
+# c:/temp/firestats/php/db-config-utils.php:37
+#: c:\work\firestats-1.4\firestats/php/db-config-utils.php:38
+msgid "Error saving configuration"
+msgstr "Hiba a konfiguráció mentésekor"
+
+# c:/temp/firestats/php/db-config-utils.php:43
+#: c:\work\firestats-1.4\firestats/php/db-config-utils.php:44
+msgid "Wrong password"
+msgstr "Hibás jelszó"
+
+# c:/temp/firestats/php/db-config-utils.php:53
+#: c:\work\firestats-1.4\firestats/php/db-config-utils.php:54
+msgid "FireStats tables are not installed"
+msgstr "FireStats táblák nincsennek telepítve"
+
+# c:/temp/firestats/php/db-config-utils.php:58
+#: c:\work\firestats-1.4\firestats/php/db-config-utils.php:59
+msgid "FireStats is installed"
+msgstr "FireStats telepítve van"
+
+# c:/temp/firestats/php/db-config-utils.php:63
+#: c:\work\firestats-1.4\firestats/php/db-config-utils.php:64
+msgid "Another FireStats database detected"
+msgstr "Másik FireStats adatbázist találtunk"
+
+# c:/temp/firestats/php/db-config-utils.php:68
+#: c:\work\firestats-1.4\firestats/php/db-config-utils.php:69
+msgid "New database created successfuly"
+msgstr "Adatbázis létrehozása sikeres volt"
+
+# c:/temp/firestats/php/db-config-utils.php:83
+#: c:\work\firestats-1.4\firestats/php/db-config-utils.php:72
+#, php-format
+msgid "Unexpected error code %s"
+msgstr "Hiba kód: %s"
+
+# c:/temp/firestats/php/db-config-utils.php:311
+#: c:\work\firestats-1.4\firestats/php/db-config-utils.php:281
+msgid "Not configured"
+msgstr "Nincs beállítva"
+
+# c:/temp/firestats/php/db-config-utils.php:314
+#: c:\work\firestats-1.4\firestats/php/db-config-utils.php:284
+msgid "FireStats configuration file"
+msgstr "FireStats konfigurációs fájl"
+
+# c:/temp/firestats/php/db-config-utils.php:317
+#: c:\work\firestats-1.4\firestats/php/db-config-utils.php:287
+msgid "Wordpress configuration file"
+msgstr "Wordpress konfigurációs fájl"
+
+# c:/temp/firestats/js/firestats.js.php:447
+#: c:\work\firestats-1.4\firestats/php/db-setup.php:17
+#, fuzzy
+msgid "Operation already in progress"
+msgstr "Importálás folyamatban"
+
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:39
+msgid "Data compacting is already in progress"
+msgstr "Adat tömörítése folyamatban"
+
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:59
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:77
+#, fuzzy
+msgid "MySQL 4.1.14 or newer is required for data compacting support"
+msgstr "MySQL 4.1.0 vagy újabb szükséges"
+
+# c:/temp/firestats/php/db-config-utils.php:40
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:259
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:297
+#, fuzzy
+msgid "Site name not specified"
+msgstr "Hibás jelszó"
+
+# c:/temp/firestats/js/firestats.js.php:95
+# c:/temp/firestats/js/firestats.js.php:221
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:271
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:301
+#, fuzzy
+msgid "Site ID must be a positive number"
+msgstr "Nem pozitív szám :"
+
+# c:\work\firestats-1.2\firestats/php/db-sql.php:39
+# c:\work\firestats-1.2\firestats/php/db-sql.php:73
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:274
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:320
+#, php-format
+msgid "A site with the ID %s already exists"
+msgstr "A %s oldal ID már létezik."
+
+# c:\work\firestats-1.2\firestats/php/db-sql.php:64
+# c:\work\firestats-1.2\firestats/php/db-sql.php:115
+# c:\work\firestats-1.2\firestats/php/db-sql.php:131
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:308
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:378
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:409
+#, php-format
+msgid "No site with the id %s exists"
+msgstr "Nincs oldal a %s ID-vel"
+
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:394
+msgid "New site_id must not be empty"
+msgstr "Az új site_id nem lehet üres"
+
+# c:\work\firestats-1.2\firestats/php/page-sites.php:138
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:400
+#, fuzzy
+msgid "Can't move the hits to the same site"
+msgstr "Másik oldal találatainak átvitele"
+
+# c:/temp/firestats/php/db-sql.php:15
+# c:/temp/firestats/php/db-sql.php:52
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:492
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:532
+#, php-format
+msgid "Invalid IP address: %s"
+msgstr "Hibás IP cím : %s"
+
+# c:/temp/firestats/php/db-sql.php:27
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:505
+#, php-format
+msgid "The IP address %s is already in the database"
+msgstr "Az IP cím %s már az adatbázisban van"
+
+# c:/temp/firestats/php/db-sql.php:89
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:567
+#, php-format
+msgid "The bot wildcard %s is already in the database"
+msgstr "A robot %s már az adatbázisban van"
+
+# c:/temp/firestats/php/html-utils.php:357
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:1070
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:1116
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:167
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:305
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+# c:/temp/firestats/php/version-check.php:188
+#: c:\work\firestats-1.4\firestats/php/db-sql.php:1483
+#, php-format
+msgid "Error opening file : %s"
+msgstr "Hiba a fájl megnyitásakor: %s"
+
+# c:/temp/firestats/php/db-config-utils.php:34
+#: c:\work\firestats-1.4\firestats/php/export-bots-list.php:21
+msgid "Error exporting bots list"
+msgstr "Hiba a robotok exportálásakor"
+
+#: c:\work\firestats-1.4\firestats/php/footer.php:3
+#, php-format
+msgid "If you have any problems or questions, please visit the %s"
+msgstr "Ha kérdésed vagy problémád lenne, látogass el ide: %s"
+
+# c:/temp/firestats/php/page-database.php:190
+#: c:\work\firestats-1.4\firestats/php/footer.php:3
+msgid "FireStats homepage"
+msgstr "FireStats weboldal"
+
+# c:/temp/firestats/firestats-wordpress.php:80
+# c:/temp/firestats/index.php:22
+# c:/temp/firestats/index.php:45
+# c:/temp/firestats/php/footer.php:8
+#: c:\work\firestats-1.4\firestats/php/header.php:19
+#: c:\work\firestats-1.4\firestats/php/window-donation.php:6
+#, fuzzy
+msgid "Support FireStats"
+msgstr "FireStats"
+
+#: c:\work\firestats-1.4\firestats/php/header.php:28
+msgid "Log out"
+msgstr "Kijelentkezés"
+
+# c:/temp/firestats/php/tabbed-pane.php:35
+#: c:\work\firestats-1.4\firestats/php/header.php:40
+msgid "Demo"
+msgstr "Demo"
+
+# c:/temp/firestats/php/tabbed-pane.php:27
+#: c:\work\firestats-1.4\firestats/php/header.php:54
+msgid "Hide"
+msgstr "Elrejt"
+
+# c:/temp/firestats/php/ajax-handler.php:538
+#: c:\work\firestats-1.4\firestats/php/help-window.php:34
+#, fuzzy
+msgid "Unknown site type"
+msgstr "Ismeretlen mező : %s"
+
+# c:/temp/firestats/php/page-help.php:2
+#: c:\work\firestats-1.4\firestats/php/help-window.php:80
+msgid "Collect hits from PHP pages"
+msgstr "Találatok a PHP oldalakról"
+
+# c:/temp/firestats/php/page-help.php:10
+#: c:\work\firestats-1.4\firestats/php/help-window.php:81
+msgid "To allow FireStats to track access to your pages, you need to add the following line inside the head tag of each of the pages you want to monitor (the page must be a php page)."
+msgstr "Engedélyezheted FireStats-t, hogy a többi Wordpressen kívüli oldalt is átnázze, de ehhez az oldalak fejlécébe a következő PHP kódot kell beillesztened (az oldalaknak mindenképpen php oldalaknak kell lenniük)."
+
+# c:/temp/firestats/php/page-help.php:19
+#: c:\work\firestats-1.4\firestats/php/help-window.php:87
+msgid "A typical page header will look like this:"
+msgstr "A fejléc így néz ki :"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/tabbed-pane.php:90
+#: c:\work\firestats-1.4\firestats/php/help-window.php:104
+#, fuzzy
+msgid "WordPress"
+msgstr "Wordpress beállítások"
+
+# c:\work\firestats-1.2\firestats/php/help-window.php:102
+#: c:\work\firestats-1.4\firestats/php/help-window.php:105
+#, fuzzy
+msgid "The WordPress plugin registers itself automatically when it's activated"
+msgstr "A WordPress kiegészítő automatikusan regisztrálja magát, amikor aktiválod"
+
+# c:\work\firestats-1.2\firestats/php/help-window.php:108
+# c:\work\firestats-1.2\firestats/php/help-window.php:116
+# c:\work\firestats-1.2\firestats/php/help-window.php:131
+# c:\work\firestats-1.2\firestats/php/help-window.php:137
+# c:\work\firestats-1.2\firestats/php/help-window.php:149
+#: c:\work\firestats-1.4\firestats/php/help-window.php:111
+#: c:\work\firestats-1.4\firestats/php/help-window.php:119
+#: c:\work\firestats-1.4\firestats/php/help-window.php:139
+#: c:\work\firestats-1.4\firestats/php/help-window.php:145
+#: c:\work\firestats-1.4\firestats/php/help-window.php:157
+msgid "plugin"
+msgstr "kiegészítő"
+
+# c:\work\firestats-1.2\firestats/php/help-window.php:124
+#: c:\work\firestats-1.4\firestats/php/help-window.php:127
+#: c:\work\firestats-1.4\firestats/php/help-window.php:133
+msgid "module"
+msgstr "modul"
+
+# c:/temp/firestats/php/page-help.php:2
+#: c:\work\firestats-1.4\firestats/php/help-window.php:176
+#, fuzzy, php-format
+msgid "Collect hits from a %s site"
+msgstr "Találatok a PHP oldalakról"
+
+# c:\work\firestats-1.2\firestats/php/help-window.php:189
+#: c:\work\firestats-1.4\firestats/php/help-window.php:197
+#, php-format
+msgid "and then configure it in the administration menu with the path %s and the ID %s"
+msgstr "és ezután az admin menü elérését (%s) és ID-jét (%s) kell beállítanod"
+
+# c:\work\firestats-1.2\firestats/php/help-window.php:199
+#: c:\work\firestats-1.4\firestats/php/help-window.php:207
+#, php-format
+msgid "and then edit the lines in %s to contain this:"
+msgstr "ezek után szerkeszd át a sorokat (%s), hogy ezt tartalmazzák:"
+
+# c:\work\firestats-1.2\firestats/php/help-window.php:206
+#: c:\work\firestats-1.4\firestats/php/help-window.php:214
+#, php-format
+msgid "To collect statistics from your %s site your need to install the %s"
+msgstr "A statisztika elkészítéséhez az oldaladról (%s) telepítened kell a következőt: %s"
+
+# c:/temp/firestats/php/version-check.php:164
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:8
+#, fuzzy
+msgid "Link here"
+msgstr "ide"
+
+# c:\work\firestats-1.2\firestats/php/html-utils.php:31
+# c:\work\firestats-1.2\firestats/php/page-sites.php:122
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:134
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:197
+#: c:\work\firestats-1.4\firestats/php/window-new-edit-site.php:31
+msgid "Name"
+msgstr "Név"
+
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:135
+#: c:\work\firestats-1.4\firestats/php/page-add-admin.php:33
+#: c:\work\firestats-1.4\firestats/php/window-edit-user.php:22
+#: c:\work\firestats-1.4\firestats/php/window-new-user.php:17
+msgid "Email"
+msgstr "E-mail"
+
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:136
+#: c:\work\firestats-1.4\firestats/php/window-edit-user.php:34
+#: c:\work\firestats-1.4\firestats/php/window-new-user.php:29
+msgid "Security level"
+msgstr "Biztonsági szint"
+
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:158
+msgid "Admin"
+msgstr "Admin"
+
+# c:/temp/firestats/php/html-utils.php:141
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:163
+#: c:\work\firestats-1.4\firestats/php/window-edit-user.php:12
+#: c:\work\firestats-1.4\firestats/php/window-new-user.php:7
+#, fuzzy
+msgid "User"
+msgstr "UserAgent"
+
+# c:\work\firestats-1.2\firestats/php/html-utils.php:85
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:183
+#, fuzzy
+msgid "Add a new user"
+msgstr "Új oldal felvétele"
+
+# c:\work\firestats-1.2\firestats/php/html-utils.php:30
+# c:\work\firestats-1.2\firestats/php/page-sites.php:110
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:196
+#: c:\work\firestats-1.4\firestats/php/window-new-edit-site.php:20
+msgid "ID"
+msgstr "ID"
+
+# c:\work\firestats-1.2\firestats/php/html-utils.php:32
+# c:\work\firestats-1.2\firestats/php/page-sites.php:123
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:198
+#: c:\work\firestats-1.4\firestats/php/window-new-edit-site.php:35
+msgid "Type"
+msgstr "Tipus"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-stats.php:29
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:199
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:149
+msgid "Page views"
+msgstr "Oldal megtekintések"
+
+# c:\work\firestats-1.2\firestats/php/html-utils.php:50
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:216
+msgid "How to integrate with this site"
+msgstr "Hogyan integrálódjon a oldalba"
+
+# c:\work\firestats-1.2\firestats/php/html-utils.php:73
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:239
+msgid "Orphaned hits"
+msgstr "Régebbi találatok"
+
+# c:\work\firestats-1.2\firestats/php/html-utils.php:85
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:251
+msgid "Add a new site"
+msgstr "Új oldal felvétele"
+
+# c:\work\firestats-1.2\firestats/php/html-utils.php:120
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:287
+msgid "Generic PHP site"
+msgstr "PHP oldal"
+
+# c:\work\firestats-1.2\firestats/php/html-utils.php:122
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:289
+msgid "Wordpress"
+msgstr "Wordpress"
+
+# c:\work\firestats-1.2\firestats/php/html-utils.php:124
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:291
+msgid "Django"
+msgstr "Django"
+
+# c:\work\firestats-1.2\firestats/php/html-utils.php:126
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:293
+msgid "Drupal"
+msgstr "Drupal"
+
+# c:\work\firestats-1.2\firestats/php/html-utils.php:128
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:295
+msgid "Gregarius"
+msgstr "Gregarius"
+
+# c:\work\firestats-1.2\firestats/php/html-utils.php:130
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:297
+msgid "Joomla"
+msgstr "Joomla"
+
+# c:\work\firestats-1.2\firestats/php/html-utils.php:132
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:299
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+# c:\work\firestats-1.2\firestats/php/html-utils.php:134
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:301
+msgid "Trac"
+msgstr "Trac"
+
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:303
+msgid "Gallery2"
+msgstr "Gallery2"
+
+# c:/temp/firestats/php/html-utils.php:27
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:396
+msgid "Invalid"
+msgstr "Érvénytelen"
+
+# c:\work\firestats-1.2\firestats/php/html-utils.php:233
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:408
+msgid "All"
+msgstr "Összes"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:73
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:409
+#, fuzzy
+msgid "Show statistics from"
+msgstr "Statisztika megjelenítése a footerben"
+
+# c:/temp/firestats/php/html-utils.php:80
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:437
+msgid "unknown"
+msgstr "ismeretlen"
+
+# c:/temp/firestats/php/html-utils.php:136
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:508
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:310
+msgid "IP"
+msgstr "IP"
+
+# c:/temp/firestats/php/html-utils.php:137
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:509
+msgid "TimeStamp"
+msgstr "Idő"
+
+# c:/temp/firestats/php/html-utils.php:138
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:510
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:311
+msgid "URL"
+msgstr "URL"
+
+# c:/temp/firestats/php/html-utils.php:139
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:511
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:312
+msgid "Referrer"
+msgstr "Honnan"
+
+# c:/temp/firestats/php/html-utils.php:140
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:512
+msgid "Image"
+msgstr "Kép"
+
+# c:/temp/firestats/php/html-utils.php:141
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:513
+msgid "UserAgent"
+msgstr "UserAgent"
+
+# c:/temp/firestats/php/html-utils.php:162
+# c:/temp/firestats/php/html-utils.php:198
+# c:/temp/firestats/php/html-utils.php:348
+# c:/temp/firestats/php/html-utils.php:442
+# c:/temp/firestats/php/html-utils.php:477
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:534
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:599
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:784
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:876
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:909
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:954
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:1031
+msgid "No data yet, go get some hits"
+msgstr "Jelenleg nincs adat"
+
+# c:/temp/firestats/php/html-utils.php:264
+# c:/temp/firestats/php/html-utils.php:288
+# c:/temp/firestats/php/html-utils.php:314
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:660
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:683
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:708
+msgid "Empty"
+msgstr "Üres"
+
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:813
+msgid "Start date is missing"
+msgstr "Kezdő időpont hiányzik"
+
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:818
+msgid "End date is missing"
+msgstr "Befejező időpont hiányzik"
+
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:838
+msgid "Please wait..."
+msgstr "Kis türelmet..."
+
+# c:/temp/firestats/php/html-utils.php:399
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:928
+#, php-format
+msgid "%d hits from %s"
+msgstr "%d egyéb a %s címről"
+
+# c:/temp/firestats/php/db-sql.php:541
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:1015
+msgid "Others"
+msgstr "Egyéb"
+
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:1058
+#: c:\work\firestats-1.4\firestats/php/window-do-you-agree-to-send-sysinfo.php:7
+msgid "System information"
+msgstr "Rendszer információk"
+
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:1059
+msgid "You can help by sending anonymous system information that will help make better decisions about new features"
+msgstr "Segíthetsz névtelen rendszerinformációk küldésével, hogy új funkciókat hozhassunk létre"
+
+#: c:\work\firestats-1.4\firestats/php/html-utils.php:1060
+#: c:\work\firestats-1.4\firestats/php/window-do-you-agree-to-send-sysinfo.php:10
+msgid "The information will be sent anonymously, but a unique identifier will be sent to prevent duplicate entries from the same FireStats"
+msgstr "Az információk névtelenül lesznek elküldve, de egy egyedi azonosító lesz a FireStats számára elküldve, hogy ne legyenek duplikált bejegyzések"
+
+# c:/temp/firestats/php/ajax-handler.php:228
+#: c:\work\firestats-1.4\firestats/php/import-bots-list.php:15
+#: c:\work\firestats-1.4\firestats/php/import-bots-list.php:23
+#, fuzzy
+msgid "Import bots list"
+msgstr "Hozzáadás a robotokhoz"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/import-bots-list.php:18
+#: c:\work\firestats-1.4\firestats/php/import-bots-list.php:34
+msgid "Select bot-list file"
+msgstr "Robotlista fájl kiválasztása"
+
+# c:/temp/firestats/php/ajax-handler.php:132
+# c:/temp/firestats/php/page-import.php:17
+# c:/temp/firestats/php/tabbed-pane.php:98
+#: c:\work\firestats-1.4\firestats/php/import-bots-list.php:35
+msgid "Import type"
+msgstr "Importálás típusa"
+
+# c:/temp/firestats/php/ajax-handler.php:228
+#: c:\work\firestats-1.4\firestats/php/import-bots-list.php:37
+msgid "Add to bots list"
+msgstr "Hozzáadás a robotokhoz"
+
+# c:/temp/firestats/php/page-settings.php:85
+#: c:\work\firestats-1.4\firestats/php/import-bots-list.php:38
+msgid "Replace bots list"
+msgstr "Robot lista kicserélése"
+
+# c:\work\firestats-1.2\firestats/php/import-bots-list.php:31
+#: c:\work\firestats-1.4\firestats/php/import-bots-list.php:40
+msgid "Send File"
+msgstr "Fájl küldése"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/import-bots-list.php:34
+#: c:\work\firestats-1.4\firestats/php/import-bots-list.php:50
+msgid "Incorrect file format"
+msgstr "Hibás fájlformátum"
+
+# c:/temp/firestats/php/ip2country.php:186
+#: c:\work\firestats-1.4\firestats/php/import-bots-list.php:62
+#, php-format
+msgid "Error importing bots list : %s"
+msgstr "Hiba a robotlilsta importálásakor : %s"
+
+# c:/temp/firestats/php/db-config-utils.php:68
+#: c:\work\firestats-1.4\firestats/php/import-bots-list.php:67
+msgid "bots list imported successfully"
+msgstr "robotlista sikeresen importálva"
+
+# c:/temp/firestats/php/ip2country.php:83
+# c:/temp/firestats/php/ip2country.php:198
+#: c:\work\firestats-1.4\firestats/php/ip2country.php:116
+#: c:\work\firestats-1.4\firestats/php/ip2country.php:120
+#: c:\work\firestats-1.4\firestats/php/ip2country.php:244
+msgid "Error creating temporary file"
+msgstr "Hiba a temp fájl elkészítésekor"
+
+# c:/temp/firestats/php/ip2country.php:92
+#: c:\work\firestats-1.4\firestats/php/ip2country.php:128
+#, php-format
+msgid "Error opening connection to %s"
+msgstr "Hiba a kapcsolat megnyitásakor a %s címre"
+
+# c:/temp/firestats/php/ip2country.php:98
+#: c:\work\firestats-1.4\firestats/php/ip2country.php:133
+#, php-format
+msgid "Error sending request to %s"
+msgstr "Hiba a %s címre való küldéskor"
+
+# c:/temp/firestats/php/ip2country.php:112
+#: c:\work\firestats-1.4\firestats/php/ip2country.php:147
+#, php-format
+msgid "Error reading data from %s : %s"
+msgstr "Hiba a %s adatok olvasásakor: %s"
+
+# c:/temp/firestats/php/ip2country.php:139
+#: c:\work\firestats-1.4\firestats/php/ip2country.php:176
+#, php-format
+msgid "Error extracting IP-to-country database: %s"
+msgstr "Hiba az IP-to-country kibontásakor: %s"
+
+# c:/temp/firestats/php/ip2country.php:144
+#: c:\work\firestats-1.4\firestats/php/ip2country.php:181
+#, php-format
+msgid "Unsupported file type : %s"
+msgstr "Ismeretlen fájltipus : %s"
+
+# c:/temp/firestats/php/ip2country.php:157
+#: c:\work\firestats-1.4\firestats/php/ip2country.php:201
+#, php-format
+msgid "can't update ip-to-country database, read-only directory : %s"
+msgstr "Nem lehet frissíteni az ip-to-country-t, csak olvasható könyvtár: %s"
+
+# c:/temp/firestats/php/ip2country.php:159
+# c:/temp/firestats/php/ip2country.php:161
+#: c:\work\firestats-1.4\firestats/php/ip2country.php:203
+#: c:\work\firestats-1.4\firestats/php/ip2country.php:205
+#, php-format
+msgid "can't update ip-to-country database, read-only file : %s"
+msgstr "Nem lehet frissíteni az ip-to-country-t, csak olvasható fájl: %s"
+
+# c:/temp/firestats/php/ip2country.php:176
+#: c:\work\firestats-1.4\firestats/php/ip2country.php:220
+msgid "Error installing new IP-to-country database"
+msgstr "Hiba az új IP-to-country telepítésekor"
+
+# c:/temp/firestats/php/ip2country.php:182
+#: c:\work\firestats-1.4\firestats/php/ip2country.php:226
+msgid "Successfuly updated IP-to-country database"
+msgstr "Sikeres IP-to-country frissítés"
+
+# c:/temp/firestats/php/ip2country.php:186
+#: c:\work\firestats-1.4\firestats/php/ip2country.php:230
+#, php-format
+msgid "Error updating version file : %s"
+msgstr "Hibás frissítési verzió : %s"
+
+# c:/temp/firestats/php/page-database.php:200
+# c:/temp/firestats/php/page-database.php:221
+#: c:\work\firestats-1.4\firestats/php/page-add-admin.php:22
+#, fuzzy
+msgid "Create administrator user"
+msgstr "Adatbázis elkészítése"
+
+#: c:\work\firestats-1.4\firestats/php/page-add-admin.php:24
+msgid "You need to create an administrator user for FireStats."
+msgstr "Vegyen fel adminisztrátort a FireStats számára"
+
+#: c:\work\firestats-1.4\firestats/php/page-add-admin.php:25
+msgid "The administrator has full control over FireStats, and will be able to create other users/administrators from the administration interface"
+msgstr "Az adminisztrátornak teljes jogosultsága van a FireStats rendszerben."
+
+# c:/temp/firestats/php/html-utils.php:141
+#: c:\work\firestats-1.4\firestats/php/page-add-admin.php:29
+#: c:\work\firestats-1.4\firestats/php/window-edit-user.php:18
+#: c:\work\firestats-1.4\firestats/php/window-new-user.php:13
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:80
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:108
+#, fuzzy
+msgid "User name"
+msgstr "UserAgent"
+
+# c:/temp/firestats/php/db-config-utils.php:43
+#: c:\work\firestats-1.4\firestats/php/page-add-admin.php:41
+#: c:\work\firestats-1.4\firestats/php/window-new-user.php:25
+#, fuzzy
+msgid "Verify password"
+msgstr "Hibás jelszó"
+
+# c:/temp/firestats/php/page-database.php:200
+# c:/temp/firestats/php/page-database.php:221
+#: c:\work\firestats-1.4\firestats/php/page-add-admin.php:45
+#: c:\work\firestats-1.4\firestats/php/window-new-user.php:34
+#, fuzzy
+msgid "Create user"
+msgstr "Adatbázis elkészítése"
+
+# c:/temp/firestats/php/db-common.php:100
+#: c:\work\firestats-1.4\firestats/php/page-database.php:50
+#, fuzzy
+msgid "Database status"
+msgstr "Adatbázis fül"
+
+# c:\work\firestats-1.2\firestats/php/page-database.php:138
+#: c:\work\firestats-1.4\firestats/php/page-database.php:58
+msgid "Click to upgrade"
+msgstr "Kattintsál a frissítésre"
+
+# c:/temp/firestats/php/page-database.php:75
+#: c:\work\firestats-1.4\firestats/php/page-database.php:82
+#, php-format
+msgid "Configuration source : %s"
+msgstr "Konfiguráció forrása : %s"
+
+# c:/temp/firestats/php/page-database.php:81
+#: c:\work\firestats-1.4\firestats/php/page-database.php:88
+msgid "To use wordpress database, click this button."
+msgstr "A WordPress adatbázis használatához kattintson ide."
+
+# c:/temp/firestats/php/page-database.php:82
+#: c:\work\firestats-1.4\firestats/php/page-database.php:89
+msgid "FireStats database configuration will be lost."
+msgstr "A FireStats konfiguráció el fog veszni."
+
+# c:/temp/firestats/php/page-database.php:83
+#: c:\work\firestats-1.4\firestats/php/page-database.php:90
+msgid "Use Wordpress database"
+msgstr "Wordpress adatbázis használata"
+
+# c:/temp/firestats/php/page-database.php:94
+#: c:\work\firestats-1.4\firestats/php/page-database.php:101
+msgid "To perform one of the following actions:"
+msgstr "Parancsok végrehajtása :"
+
+# c:/temp/firestats/php/page-database.php:96
+#: c:\work\firestats-1.4\firestats/php/page-database.php:103
+msgid "Attach to an existing FireStats installation"
+msgstr "Régebbi FireStats telepítés csatolása"
+
+# c:/temp/firestats/php/page-database.php:97
+# c:/temp/firestats/php/page-database.php:217
+#: c:\work\firestats-1.4\firestats/php/page-database.php:104
+#: c:\work\firestats-1.4\firestats/php/page-database.php:222
+msgid "Install FireStats into an existing database"
+msgstr "FireStats telepítése meglévő adatbázisba"
+
+# c:/temp/firestats/php/page-database.php:98
+# c:/temp/firestats/php/page-database.php:220
+#: c:\work\firestats-1.4\firestats/php/page-database.php:105
+#: c:\work\firestats-1.4\firestats/php/page-database.php:225
+msgid "Create a new database and install FireStats there"
+msgstr "Új FireStats adatbázis telepítése"
+
+# c:/temp/firestats/php/page-database.php:100
+#: c:\work\firestats-1.4\firestats/php/page-database.php:107
+msgid "Follow instructions in the help"
+msgstr "Tanácsok követése a súgóból."
+
+# c:/temp/firestats/php/page-database.php:109
+#: c:\work\firestats-1.4\firestats/php/page-database.php:115
+msgid "Database host"
+msgstr "Adatbázis host"
+
+# c:/temp/firestats/php/page-database.php:115
+#: c:\work\firestats-1.4\firestats/php/page-database.php:121
+msgid "Database name"
+msgstr "Adatbázis neve"
+
+# c:/temp/firestats/php/page-database.php:121
+#: c:\work\firestats-1.4\firestats/php/page-database.php:127
+msgid "Database user name"
+msgstr "Adatbázis felhasználó neve"
+
+# c:/temp/firestats/php/page-database.php:127
+#: c:\work\firestats-1.4\firestats/php/page-database.php:133
+msgid "Database password"
+msgstr "Adatbázis jelszava"
+
+# c:/temp/firestats/php/page-database.php:133
+#: c:\work\firestats-1.4\firestats/php/page-database.php:139
+msgid "Tables prefix"
+msgstr "Táblázat prefixe"
+
+# c:/temp/firestats/php/page-database.php:142
+# c:/temp/firestats/php/page-database.php:215
+# c:/temp/firestats/php/page-database.php:218
+# c:/temp/firestats/php/page-database.php:221
+#: c:\work\firestats-1.4\firestats/php/page-database.php:148
+#: c:\work\firestats-1.4\firestats/php/page-database.php:220
+#: c:\work\firestats-1.4\firestats/php/page-database.php:223
+#: c:\work\firestats-1.4\firestats/php/page-database.php:226
+msgid "Test connection"
+msgstr "Próba kapcsolat"
+
+# c:/temp/firestats/php/page-database.php:152
+#: c:\work\firestats-1.4\firestats/php/page-database.php:158
+msgid "Click to install and switch to new FireStats tables"
+msgstr "Kattintson a DireStats táblázatok telepítéséhez"
+
+# c:/temp/firestats/php/page-database.php:155
+# c:/temp/firestats/php/page-database.php:218
+#: c:\work\firestats-1.4\firestats/php/page-database.php:161
+#: c:\work\firestats-1.4\firestats/php/page-database.php:223
+msgid "Install tables"
+msgstr "Táblázatok telepítése"
+
+# c:/temp/firestats/php/page-database.php:164
+#: c:\work\firestats-1.4\firestats/php/page-database.php:170
+msgid "Click to use this FireStats database"
+msgstr "kattintson a FireStats adatbázis használatához"
+
+# c:/temp/firestats/php/page-database.php:168
+# c:/temp/firestats/php/page-database.php:215
+#: c:\work\firestats-1.4\firestats/php/page-database.php:174
+#: c:\work\firestats-1.4\firestats/php/page-database.php:220
+msgid "Use this database"
+msgstr "Adatbázis használata"
+
+# c:/temp/firestats/php/page-database.php:180
+#: c:\work\firestats-1.4\firestats/php/page-database.php:186
+msgid "To create a new database, an administrator user should be used in the above fields."
+msgstr "Új adatbázis készítéséhez az adminisztrátornak jóvá kell hagynia a mezőkez."
+
+# c:/temp/firestats/php/page-database.php:181
+#: c:\work\firestats-1.4\firestats/php/page-database.php:187
+#, fuzzy
+msgid "However, For security reason, it is recommended not to use a database administrator user for day to day operations."
+msgstr "Biztonsági okokból nem ajánlott az adatbázis használata mindennapi szerkesztésre."
+
+# c:/temp/firestats/php/page-database.php:182
+#: c:\work\firestats-1.4\firestats/php/page-database.php:188
+msgid "Enter new user name and password for FireStats, this user will only have access to the FireStats database"
+msgstr "Írja be a FireStats felhasználói nevét és jelszavát. A későbbiekben ezzel férhet majd hozzá a FireStats adatbázishoz."
+
+# c:/temp/firestats/php/page-database.php:183
+#: c:\work\firestats-1.4\firestats/php/page-database.php:189
+msgid "If you will not specify user and password the Admin user and password will be used."
+msgstr "Ha nem választ külön felhasználói nevet és jelszót, akkor az Admin beállítások fognak működni."
+
+# c:/temp/firestats/php/page-database.php:190
+#: c:\work\firestats-1.4\firestats/php/page-database.php:196
+msgid "FireStats User name"
+msgstr "FireStats felhasználói név"
+
+# c:/temp/firestats/php/page-database.php:194
+#: c:\work\firestats-1.4\firestats/php/page-database.php:200
+msgid "FireStats password"
+msgstr "FireStats jelszó"
+
+# c:/temp/firestats/php/page-database.php:200
+# c:/temp/firestats/php/page-database.php:221
+#: c:\work\firestats-1.4\firestats/php/page-database.php:206
+#: c:\work\firestats-1.4\firestats/php/page-database.php:226
+msgid "Create database"
+msgstr "Adatbázis elkészítése"
+
+# c:/temp/firestats/php/page-database.php:213
+# c:/temp/firestats/php/page-database.php:224
+# c:/temp/firestats/php/tabbed-pane.php:111
+#: c:\work\firestats-1.4\firestats/php/page-database.php:218
+#: c:\work\firestats-1.4\firestats/php/page-sites.php:22
+#: c:\work\firestats-1.4\firestats/php/page-users.php:33
+msgid "Help"
+msgstr "Súgó"
+
+# c:/temp/firestats/php/page-database.php:214
+#: c:\work\firestats-1.4\firestats/php/page-database.php:219
+msgid "Attach to an existing FireStats database"
+msgstr "Meglévő FireStats adatbázis"
+
+# c:/temp/firestats/php/page-database.php:215
+# c:/temp/firestats/php/page-database.php:218
+#: c:\work\firestats-1.4\firestats/php/page-database.php:220
+#: c:\work\firestats-1.4\firestats/php/page-database.php:223
+#, php-format
+msgid "Enter the parameters in the table, press %s, and then %s."
+msgstr "Írja be a paramétereket a táblába, nyomja a %s gombot, és ezután a %s gombot."
+
+# c:/temp/firestats/php/page-database.php:221
+#: c:\work\firestats-1.4\firestats/php/page-database.php:226
+#, php-format
+msgid "Enter the parameters into the table, <u>you need to enter a database administrator user</u>. press %s, and then enter FireStats database user and password, and finally press %s."
+msgstr "Írja be a paramétereket a táblába, <u>de elötte adminként kell bejelentkezned</u>.nyomd meg a %s gombot, és lépj be a FireStats adatbázisba, majd nyomd meg az %s gombot."
+
+# c:\work\firestats-1.2\firestats/php/page-settings.php:113
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:11
+msgid "Options"
+msgstr "Beállítások"
+
+# c:/temp/firestats/php/page-settings.php:43
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:12
+msgid "Select language"
+msgstr "Nyelv kiválasztása"
+
+# c:/temp/firestats/php/page-settings.php:47
+# c:/temp/firestats/php/page-settings.php:129
+# c:/temp/firestats/php/page-stats.php:21
+# c:/temp/firestats/php/page-stats.php:47
+# c:/temp/firestats/php/page-stats.php:55
+# c:/temp/firestats/php/page-stats.php:74
+# c:/temp/firestats/php/page-stats.php:82
+# c:/temp/firestats/php/page-stats.php:102
+# c:/temp/firestats/php/page-stats.php:125
+# c:/temp/firestats/php/page-stats.php:147
+# c:/temp/firestats/php/page-stats.php:155
+# c:/temp/firestats/php/page-stats.php:174
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:18
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:29
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:45
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:301
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:125
+#: c:\work\firestats-1.4\firestats/php/window-new-edit-site.php:48
+msgid "Save"
+msgstr "Mentés"
+
+# c:/temp/firestats/php/page-settings.php:48
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:20
+msgid "How to translate to a new language"
+msgstr "Új nyelvre fordítás"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-settings.php:57
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:25
+msgid "Select your time zone"
+msgstr "Időzóna:"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-settings.php:67
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:35
+#, php-format
+msgid "Time zone selection requires %s or newer"
+msgstr "Időzóna kiválasztásához szükséges: %s"
+
+# c:\work\firestats-1.2\firestats/php/page-settings.php:142
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:39
+msgid "Select WHOIS provider"
+msgstr "Válaszd ki a WHOIS szolgáltatót"
+
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:55
+msgid "Compact old data"
+msgstr "Régi adatok tömörítése"
+
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:66
+#, php-format
+msgid "%s compact data older than %s"
+msgstr "%s adatok tömörítése, ha régebbi mint %s"
+
+# c:/temp/firestats/php/page-settings.php:5
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:84
+msgid "Automatic version check"
+msgstr "Automatikus verzió ellenőrzés"
+
+# c:/temp/firestats/php/page-settings.php:13
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:86
+msgid "Automatically check if there is a new version of FireStats (recommended)"
+msgstr "Automatikusan ellenőrizze, hogy van-e újabb FireStats verzió (ajánlott)"
+
+# c:/temp/firestats/php/page-settings.php:22
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:93
+msgid "IP-to-country database"
+msgstr "IP-to-country adatbázis"
+
+# c:/temp/firestats/php/page-settings.php:25
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:95
+#, php-format
+msgid "IP-to-country database version : %s"
+msgstr "IP-to-country adatbázis verzió: %s"
+
+# c:/temp/firestats/php/page-settings.php:30
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:98
+msgid "Automatically check if there is a new version of IP-to-country database"
+msgstr "Automatikusan ellenőrzi, hogy van-e újabb IP-to-country verzió"
+
+# c:/temp/firestats/php/page-settings.php:32
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:102
+msgid "Update IP-to-country database now (only if needed)"
+msgstr "IP-to-country frissítése"
+
+# c:/temp/firestats/php/page-settings.php:34
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:104
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:131
+#: c:\work\firestats-1.4\firestats/php/window-edit-user.php:39
+msgid "Update"
+msgstr "Frissítés"
+
+# c:/temp/firestats/php/page-settings.php:54
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:112
+msgid "Exclude hits"
+msgstr "Kivételek"
+
+# c:/temp/firestats/php/page-settings.php:69
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:119
+msgid "Save excluded records (not recommended)"
+msgstr "Kivételek mentése"
+
+# c:/temp/firestats/php/page-settings.php:72
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:122
+msgid "Purge excluded records stored in the database"
+msgstr "Kivételek adatainak tisztítása az adatbázisból"
+
+# c:/temp/firestats/php/page-settings.php:75
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:125
+msgid "Purge"
+msgstr "Tisztítás"
+
+# c:/temp/firestats/php/page-settings.php:85
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:135
+msgid "Bots list"
+msgstr "Robot lista"
+
+# c:/temp/firestats/php/page-settings.php:90
+# c:/temp/firestats/php/page-settings.php:109
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:141
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:185
+msgid "Add"
+msgstr "Hozzáadás"
+
+# c:/temp/firestats/php/page-settings.php:91
+# c:/temp/firestats/php/page-settings.php:110
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:142
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:186
+msgid "Remove"
+msgstr "Törlés"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-settings.php:128
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:156
+msgid "Automatic update"
+msgstr "Automatikus frissítés"
+
+# c:/temp/firestats/php/page-settings.php:34
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:159
+msgid "Update now"
+msgstr "Frissítés"
+
+# c:/temp/firestats/php/ajax-handler.php:132
+# c:/temp/firestats/php/page-import.php:17
+# c:/temp/firestats/php/tabbed-pane.php:98
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:161
+msgid "Import"
+msgstr "Importálás"
+
+# c:/temp/firestats/php/ajax-handler.php:132
+# c:/temp/firestats/php/page-import.php:17
+# c:/temp/firestats/php/tabbed-pane.php:98
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:164
+msgid "Export"
+msgstr "Exportálás"
+
+# c:/temp/firestats/php/page-settings.php:104
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:180
+msgid "Excluded IPs"
+msgstr "IP kivételek"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-settings.php:128
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:203
+#, fuzzy
+msgid "Automatically"
+msgstr "Automatikus frissítés"
+
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:204
+msgid "Manually"
+msgstr "Kézzel"
+
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:205
+msgid "Please select"
+msgstr "Kérlek válassz"
+
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:222
+msgid "One month"
+msgstr "egy hónap"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:81
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:223
+msgid "Two months"
+msgstr "két hónap"
+
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:224
+msgid "Three months"
+msgstr "három hónap"
+
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:225
+msgid "Half a year"
+msgstr "fél év"
+
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:226
+msgid "One year"
+msgstr "egy év"
+
+#: c:\work\firestats-1.4\firestats/php/page-settings.php:227
+msgid "Two years"
+msgstr "két év"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-stats.php:29
+#: c:\work\firestats-1.4\firestats/php/page-sites.php:13
+#, fuzzy
+msgid "Manage sites"
+msgstr "Oldal megtekintések"
+
+# c:\work\firestats-1.2\firestats/php/page-sites.php:159
+#: c:\work\firestats-1.4\firestats/php/page-sites.php:23
+msgid "Warning, you can really mess things up from here, be careful!"
+msgstr "Figyelem! Információkat veszíthetsz el, legyél óvatos!"
+
+# c:\work\firestats-1.2\firestats/php/page-sites.php:161
+#: c:\work\firestats-1.4\firestats/php/page-sites.php:25
+msgid "FireStats can collect statistics from multiple sites (on the same server)."
+msgstr "FireStats statisztikákat gyűjt össze az oldalakról (amik ugyan azon a szerveren vannak)"
+
+# c:\work\firestats-1.2\firestats/php/page-sites.php:163
+#: c:\work\firestats-1.4\firestats/php/page-sites.php:27
+msgid "The site need to be registered in the sites table"
+msgstr "Az oldalt be kell regisztrálni az oldal-táblázatba"
+
+# c:\work\firestats-1.2\firestats/php/page-sites.php:164
+#: c:\work\firestats-1.4\firestats/php/page-sites.php:28
+msgid "The site should be configured to use its ID when reporting a hit, click on the help button next to the site you created for more information"
+msgstr "Az oldal be lesz állítva, hogy megfelelően regisztrálja a találatokat. További információt a súgó gomb alatt találhatsz."
+
+# c:\work\firestats-1.2\firestats/php/page-sites.php:167
+#: c:\work\firestats-1.4\firestats/php/page-sites.php:31
+#, php-format
+msgid "Click %s for more information"
+msgstr "Kattints %s további információért."
+
+# c:/temp/firestats/js/firestats.js.php:55
+# c:/temp/firestats/js/firestats.js.php:106
+# c:/temp/firestats/php/page-stats.php:4
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:43
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:77
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:109
+msgid "Refresh statistics"
+msgstr "Statisztika frissitese"
+
+# c:/temp/firestats/php/page-stats.php:17
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:135
+msgid "Auto refresh every"
+msgstr "Automatikus frissítés"
+
+# c:/temp/firestats/php/page-stats.php:20
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:138
+msgid "minutes"
+msgstr "percenként"
+
+# c:\work\firestats-1.2\firestats/php/page-stats.php:141
+# c:\work\firestats-1.2\firestats/php/page-stats.php:174
+# c:\work\firestats-1.2\firestats/php/page-stats.php:199
+# c:\work\firestats-1.2\firestats/php/page-stats.php:266
+# c:\work\firestats-1.2\firestats/php/page-stats.php:328
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:139
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:169
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:192
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:221
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:241
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:262
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:284
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:346
+msgid "Apply"
+msgstr "Módosítás"
+
+# c:/temp/firestats/php/page-stats.php:26
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:146
+msgid "Status"
+msgstr "Állapot"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-stats.php:30
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:150
+msgid "Visits"
+msgstr "Látogatások"
+
+# c:/temp/firestats/php/page-stats.php:31
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:151
+msgid "Page views in last 24 hours"
+msgstr "Megtekintések 24 órája"
+
+# c:/temp/firestats/php/page-stats.php:31
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:152
+msgid "Visits in last 24 hours"
+msgstr "Látogatások 24 órája"
+
+# c:/temp/firestats/php/page-stats.php:38
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:158
+msgid "Recent referrers"
+msgstr "Gyakori oldalak"
+
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:165
+#, fuzzy, php-format
+msgid "Show at most %s items for the last %s days, sorted by %s"
+msgstr "Mutassa a leg- %s elemet az elmúlt %s napban"
+
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:179
+msgid "Search terms"
+msgstr "Kereső-kulcsszavak"
+
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:186
+#, php-format
+msgid "Show at most %s search terms for %s"
+msgstr "Mutassa a %s keresett elemet: %s"
+
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:196
+msgid "Start date:"
+msgstr "Kezdeti idő:"
+
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:197
+msgid "End date:"
+msgstr "Befejezési idő:"
+
+# c:/temp/firestats/php/page-stats.php:65
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:211
+msgid "Recent popular pages"
+msgstr "Népszerű oldalak"
+
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:217
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:279
+#, php-format
+msgid "Show at most %s items for the last %s days"
+msgstr "Mutassa a leg- %s elemet az elmúlt %s napban"
+
+# c:/temp/firestats/php/page-stats.php:92
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:231
+msgid "Browsers"
+msgstr "Böngészők"
+
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:237
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:258
+#, php-format
+msgid "Show items for the last %s days"
+msgstr "Elem megjelenítése az elmúlt %s napban"
+
+# c:/temp/firestats/php/page-stats.php:115
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:252
+msgid "Operating systems"
+msgstr "Operációs rendszerek"
+
+# c:/temp/firestats/php/page-stats.php:138
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:273
+msgid "Countries"
+msgstr "Országok"
+
+# c:/temp/firestats/php/page-stats.php:165
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:292
+msgid "Hits table"
+msgstr "Találatok"
+
+# c:/temp/firestats/php/page-stats.php:169
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:296
+msgid "Number of hits to show"
+msgstr "Megjelenő találatok száma"
+
+# c:/temp/firestats/php/html-utils.php:141
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:313
+#, fuzzy
+msgid "User agent"
+msgstr "UserAgent"
+
+# c:\work\firestats-1.2\firestats/php/page-stats.php:299
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:317
+msgid "Filter"
+msgstr "Szűrő"
+
+# c:\work\firestats-1.2\firestats/php/page-sites.php:118
+# c:\work\firestats-1.2\firestats/php/page-stats.php:323
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:341
+#: c:\work\firestats-1.4\firestats/php/window-new-edit-site.php:25
+msgid "Clear"
+msgstr "Tisztítás"
+
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:362
+msgid "Newest first"
+msgstr "Legújabb előre"
+
+# c:/temp/firestats/php/html-utils.php:399
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:363
+#, fuzzy
+msgid "Most hits first"
+msgstr "%d egyéb a %s címről"
+
+# c:/temp/firestats/php/page-stats.php:31
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:372
+#, fuzzy
+msgid "the last 24 hours"
+msgstr "Látogatások 24 órája"
+
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:373
+msgid "the last week"
+msgstr "múlt héten"
+
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:374
+msgid "the last month"
+msgstr "múlt hónapban"
+
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:375
+msgid "the three months"
+msgstr "három hónapja"
+
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:376
+msgid "the last six months"
+msgstr "hat hónapja"
+
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:377
+msgid "the last year"
+msgstr "előző évben"
+
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:378
+msgid "all time"
+msgstr "eddig"
+
+#: c:\work\firestats-1.4\firestats/php/page-stats.php:379
+msgid "time range"
+msgstr "időrendben"
+
+#: c:\work\firestats-1.4\firestats/php/page-tools.php:7
+#: c:\work\firestats-1.4\firestats/php/tabbed-pane.php:63
+msgid "Tools"
+msgstr "Eszközök"
+
+#: c:\work\firestats-1.4\firestats/php/page-tools.php:8
+msgid "This section contains various tools"
+msgstr "Ez a szekció különböző eszközt tartalmaz"
+
+#: c:\work\firestats-1.4\firestats/php/page-tools.php:13
+msgid "I agree to send system information"
+msgstr "Beleegyezek a rendszerinformációk küldésébe"
+
+#: c:\work\firestats-1.4\firestats/php/page-tools.php:17
+msgid "Diagnostics"
+msgstr "Diagnosztika"
+
+#: c:\work\firestats-1.4\firestats/php/page-tools.php:18
+msgid "System diagnostics page"
+msgstr "Rendszer diagnosztika oldal"
+
+#: c:\work\firestats-1.4\firestats/php/page-tools.php:18
+msgid "Open"
+msgstr "Megnyitás"
+
+#: c:\work\firestats-1.4\firestats/php/page-tools.php:23
+msgid "PHP Version"
+msgstr "PHP Verzió"
+
+#: c:\work\firestats-1.4\firestats/php/page-tools.php:26
+msgid "MySQL Version"
+msgstr "MySQL Verzió"
+
+#: c:\work\firestats-1.4\firestats/php/page-tools.php:29
+msgid "Memory limit"
+msgstr "Memória határ"
+
+# c:/temp/firestats/php/page-database.php:115
+#: c:\work\firestats-1.4\firestats/php/page-tools.php:35
+#, fuzzy
+msgid "Database cache"
+msgstr "Adatbázis neve"
+
+#: c:\work\firestats-1.4\firestats/php/page-tools.php:36
+msgid "The following section can recalculate different aspects of the database. you don't normally need to use it."
+msgstr "A következő szekció az adatbázis műveleteket tartalmazza. Nem szükséges a használatuk!"
+
+#: c:\work\firestats-1.4\firestats/php/page-tools.php:39
+#, fuzzy
+msgid "Recalculate country codes"
+msgstr "Ország-kódok újrakalkulálása:"
+
+# c:/temp/firestats/php/ajax-handler.php:498
+#: c:\work\firestats-1.4\firestats/php/page-tools.php:44
+#, fuzzy
+msgid "Rebuild database cache"
+msgstr "Adatbázis cache újraépítése:"
+
+#: c:\work\firestats-1.4\firestats/php/page-tools.php:49
+msgid "Recalculate search engine terms"
+msgstr "Gyakori keresők"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-stats.php:29
+#: c:\work\firestats-1.4\firestats/php/page-users.php:25
+#: c:\work\firestats-1.4\firestats/php/tools-menu.php:5
+#, fuzzy
+msgid "Manage users"
+msgstr "Oldal megtekintések"
+
+#: c:\work\firestats-1.4\firestats/php/page-users.php:34
+msgid "You can manage users here"
+msgstr "Felhasználók beállítása"
+
+# c:/temp/firestats/php/tabbed-pane.php:64
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:17
+msgid "Statistics widget"
+msgstr "Statisztika widget"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:17
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:40
+#, php-format
+msgid "You can configure the sidebar widget from %s"
+msgstr "Beállíthatod %s a sidebarodon a widgetet."
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:21
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:44
+#, php-format
+msgid "The statistics widget requires the %s plugin for optimal usage."
+msgstr "A statisztika widgethez szükséges a %s plugin."
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:24
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:47
+msgid "Widgets"
+msgstr "Widgets"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:26
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:49
+msgid "You can also manually add the following code to your theme sidebar:"
+msgstr "Manuálisan felveheted a következő kódot a sidebarodba:"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:34
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:57
+msgid "Comments icons"
+msgstr "Komment ikonok"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:42
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:65
+msgid "Add flag icon to comments"
+msgstr "Zászló a kommenteknél"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:51
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:72
+msgid "Add browser and operating system icons to comments"
+msgstr "Böngésző és operációs rendszer ikon a kommenteknél"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:56
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:75
+msgid "Blog footer"
+msgstr "Blog footer"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:64
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:82
+msgid "Add FireStats footer to blog"
+msgstr "FireStats footer a blogon"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-wordpress-settings.php:73
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:90
+msgid "Show statistics in footer"
+msgstr "Statisztika megjelenítése a footerben"
+
+# c:/temp/firestats/php/page-settings.php:125
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:96
+msgid "Excluded users"
+msgstr "Felhasználó kivételek"
+
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:97
+msgid "WordPress users selected here will not be counted in the statistics"
+msgstr "WordPress felhasználók nem lesznek beszámítva a statisztikába"
+
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:101
+msgid "Permissions"
+msgstr "Engedélyek"
+
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:102
+msgid "Select the minimum user role that can access FireStats (Only administrators can manage FireStats)"
+msgstr "Válassza ki a minimum felhasználói szintet a FireStats számára (csak adminisztrátoroknak)"
+
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:106
+#: c:\work\firestats-1.4\firestats/php/window-edit-user.php:11
+#: c:\work\firestats-1.4\firestats/php/window-new-user.php:6
+msgid "Administrator"
+msgstr "Adminisztrátor"
+
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:107
+msgid "Editor"
+msgstr "Szerkesztő"
+
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:108
+msgid "Author"
+msgstr "Író"
+
+# c:/temp/firestats/php/page-stats.php:138
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:109
+#, fuzzy
+msgid "Contributor"
+msgstr "Országok"
+
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:110
+msgid "Subscriber"
+msgstr "Feliratkozó"
+
+# c:\work\firestats-1.2\firestats/php/page-wordpress-settings.php:128
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:118
+msgid "Advanced"
+msgstr "Haladó"
+
+# c:\work\firestats-1.2\firestats/php/page-wordpress-settings.php:129
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:119
+msgid "WordPress site ID, every hit From this blog is recorded with this as the source Site ID"
+msgstr "WordPress ID, minden találat ebből a blogból felvételre kerül"
+
+# c:\work\firestats-1.2\firestats/php/page-wordpress-settings.php:130
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:120
+msgid "This should be the same ID as the Site ID in the sites table. you don't normally need to change this."
+msgstr "Ugyan annak az ID-nek kell lennie, mint az oldal ID-je. Ha nem ez látható, meg kell változtatni."
+
+# c:\work\firestats-1.2\firestats/php/page-wordpress-settings.php:130
+#: c:\work\firestats-1.4\firestats/php/page-wordpress-settings.php:130
+#, fuzzy
+msgid "This will update the titles of the blog posts inside FireStats, you don't normally need to use it"
+msgstr "Ugyan annak az ID-nek kell lennie, mint az oldal ID-je. Ha nem ez látható, meg kell változtatni."
+
+#: c:\work\firestats-1.4\firestats/php/rebuild-db.php:16
+msgid "Recalculating matching bots"
+msgstr "Egyező botok újrakalkulálása"
+
+# c:/temp/firestats/php/tabbed-pane.php:78
+#: c:\work\firestats-1.4\firestats/php/tabbed-pane.php:25
+msgid "Settings"
+msgstr "Beállítások"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/tabbed-pane.php:90
+#: c:\work\firestats-1.4\firestats/php/tabbed-pane.php:33
+msgid "WordPress settings"
+msgstr "Wordpress beállítások"
+
+# c:/temp/firestats/php/tabbed-pane.php:93
+#: c:\work\firestats-1.4\firestats/php/tabbed-pane.php:44
+msgid "Database"
+msgstr "Adatbázis"
+
+# c:\work\firestats-1.2\firestats/php/tabbed-pane.php:120
+#: c:\work\firestats-1.4\firestats/php/tabbed-pane.php:50
+#, fuzzy
+msgid "Users management"
+msgstr "Oldalbeállítások"
+
+# c:\work\firestats-1.2\firestats/php/tabbed-pane.php:120
+#: c:\work\firestats-1.4\firestats/php/tabbed-pane.php:57
+msgid "Sites management"
+msgstr "Oldalbeállítások"
+
+# c:/temp/firestats/firestats-wordpress.php:80
+# c:/temp/firestats/index.php:22
+# c:/temp/firestats/index.php:45
+# c:/temp/firestats/php/footer.php:8
+#: c:\work\firestats-1.4\firestats/php/tools-menu.php:1
+#, fuzzy
+msgid "FireStats tools"
+msgstr "FireStats"
+
+#: c:\work\firestats-1.4\firestats/php/tools-menu.php:3
+msgid "System test"
+msgstr "Rendszer teszt"
+
+# c:/temp/firestats/php/page-database.php:127
+#: c:\work\firestats-1.4\firestats/php/tools-menu.php:4
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:16
+#, fuzzy
+msgid "Reset password"
+msgstr "Adatbázis jelszava"
+
+# c:/temp/firestats/php/ip2country.php:112
+#: c:\work\firestats-1.4\firestats/php/version-check.php:41
+#, php-format
+msgid "Error getting version information from %s : %s"
+msgstr "Hiba az információ lekérésnél %s : %s"
+
+# c:/temp/firestats/php/version-check.php:142
+#: c:\work\firestats-1.4\firestats/php/version-check.php:123
+msgid "A new version of the IP-to-country database is available! you can update it from the settings tab"
+msgstr "Új IP-to-country jelent meg! Frissíteni a Beállítások fül alatt lehet."
+
+# c:/temp/firestats/php/version-check.php:162
+#: c:\work\firestats-1.4\firestats/php/version-check.php:146
+#, php-format
+msgid "Version %s is available! click %s for more info"
+msgstr "A %s verzió elérhető! További információhoz kattintson %s"
+
+# c:/temp/firestats/php/version-check.php:188
+#: c:\work\firestats-1.4\firestats/php/version-check.php:171
+#, php-format
+msgid "Error opening %s"
+msgstr "Hiba a megnyitáskor %s"
+
+#: c:\work\firestats-1.4\firestats/php/window-archive-notification.php:4
+msgid "Yes (Recommended)"
+msgstr "Igen (ajánlott)"
+
+# c:\work\firestats-1.2\firestats/php/tabbed-pane.php:67
+#: c:\work\firestats-1.4\firestats/php/window-archive-notification.php:5
+msgid "No"
+msgstr "Nem"
+
+#: c:\work\firestats-1.4\firestats/php/window-archive-notification.php:8
+msgid "Compacting old data"
+msgstr "Régi adatok tömörítése"
+
+#: c:\work\firestats-1.4\firestats/php/window-archive-notification.php:9
+msgid "FireStats can tranform old data to a more compact form,"
+msgstr "FireStats tömörítheti a régi adatokat"
+
+#: c:\work\firestats-1.4\firestats/php/window-archive-notification.php:10
+msgid "This will reduce storage size and improve performance at the cost of losing some information which is not essential."
+msgstr "Ez adatvesztés nélkül jár, viszont a rendszer gyorsaságát segítheti."
+
+#: c:\work\firestats-1.4\firestats/php/window-archive-notification.php:11
+#, fuzzy
+msgid "it is highly recommended that you allow FireStats to do this automatically."
+msgstr "ajánlott a FireStats számára ezt a funkciót engedélyezni"
+
+#: c:\work\firestats-1.4\firestats/php/window-archive-notification.php:13
+#, php-format
+msgid "Click %s if you would like FireStats to automatically compact data older than %s days"
+msgstr "Kattints %s ha szeretnéd, hogy a FireStats automatikusan tömörítse a %s napos adatokat"
+
+#: c:\work\firestats-1.4\firestats/php/window-archive-notification.php:14
+#, php-format
+msgid "Click %s if you want to compact data manually or change compacting options (From the Settings tab)"
+msgstr "Kattitns %s ha szeretnéd kézzel tömöríteni az adatokat, vagy változtatni szeretnél a tömörítési beállításokon (Beállítások fül)"
+
+# c:\work\firestats-1.2\firestats/php/page-sites.php:91
+#: c:\work\firestats-1.4\firestats/php/window-delete-site.php:9
+#, fuzzy
+msgid "Delete site"
+msgstr "Törlés"
+
+# c:\work\firestats-1.2\firestats/php/page-sites.php:133
+#: c:\work\firestats-1.4\firestats/php/window-delete-site.php:13
+msgid "This will delete this site from the database, the operation is irreversible!"
+msgstr "Ezzel az oldalt törlöd az adatbázisból. A művelet visszafordíthatatlan lesz!"
+
+# c:\work\firestats-1.2\firestats/php/page-sites.php:134
+#: c:\work\firestats-1.4\firestats/php/window-delete-site.php:14
+msgid "What do you want to do with the site hits?"
+msgstr "Biztos, hogy törölni akarod az összes találatot?"
+
+# c:\work\firestats-1.2\firestats/php/page-sites.php:137
+#: c:\work\firestats-1.4\firestats/php/window-delete-site.php:17
+msgid "Delete all the hits"
+msgstr "Összes találat törlése"
+
+# c:\work\firestats-1.2\firestats/php/page-sites.php:138
+#: c:\work\firestats-1.4\firestats/php/window-delete-site.php:18
+msgid "Transfer the hits to another site"
+msgstr "Másik oldal találatainak átvitele"
+
+# c:\work\firestats-1.2\firestats/php/page-sites.php:141
+#: c:\work\firestats-1.4\firestats/php/window-delete-site.php:21
+msgid "Enter an existing site ID to transfer the hits to"
+msgstr "Írd be a másik ID-t a találatok átviteléhet"
+
+# c:\work\firestats-1.2\firestats/php/page-sites.php:125
+# c:\work\firestats-1.2\firestats/php/page-sites.php:148
+#: c:\work\firestats-1.4\firestats/php/window-delete-site.php:30
+#: c:\work\firestats-1.4\firestats/php/window-delete-user.php:19
+#: c:\work\firestats-1.4\firestats/php/window-edit-user.php:40
+#: c:\work\firestats-1.4\firestats/php/window-new-edit-site.php:49
+#: c:\work\firestats-1.4\firestats/php/window-new-user.php:35
+msgid "Close"
+msgstr "Bezárás"
+
+#: c:\work\firestats-1.4\firestats/php/window-delete-user.php:8
+#: c:\work\firestats-1.4\firestats/php/window-edit-user.php:8
+msgid "No such user"
+msgstr "Nincs ilyen felhasználó"
+
+# c:\work\firestats-1.2\firestats/php/page-sites.php:91
+#: c:\work\firestats-1.4\firestats/php/window-delete-user.php:11
+#, fuzzy
+msgid "Delete user"
+msgstr "Törlés"
+
+#: c:\work\firestats-1.4\firestats/php/window-do-you-agree-to-send-sysinfo.php:8
+#, fuzzy
+msgid "You can help by sending anonymous system information that will help make better decisions about new features."
+msgstr "Segíthetsz névtelen rendszerinformációk küldésével, hogy új funkciókat hozhassunk létre"
+
+#: c:\work\firestats-1.4\firestats/php/window-do-you-agree-to-send-sysinfo.php:12
+msgid "You can change this later from the Tools tab"
+msgstr "Ezt később módosíthatod az Eszközök fül alatt"
+
+#: c:\work\firestats-1.4\firestats/php/window-do-you-agree-to-send-sysinfo.php:16
+msgid "Do you agree to send anonymous system information?"
+msgstr "Beleegyezel a rendszerinformációk küldésébe?"
+
+#: c:\work\firestats-1.4\firestats/php/window-do-you-agree-to-send-sysinfo.php:19
+msgid "Sure, send system information"
+msgstr "Természetesen, küldjön rendszerinformációkat"
+
+#: c:\work\firestats-1.4\firestats/php/window-do-you-agree-to-send-sysinfo.php:22
+msgid "Nope, don't send"
+msgstr "Ne küldjön"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:42
+#: c:\work\firestats-1.4\firestats/php/window-donation.php:7
+#, fuzzy
+msgid "Even though FireStats is free, it takes a lot of time and hard work to develop and maintain."
+msgstr "Habar a FireStats ingyenes, hosszu idot, es kemeny munkat vesz igenybe a fejlesztese.<br/>"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:43
+#: c:\work\firestats-1.4\firestats/php/window-donation.php:8
+#, fuzzy
+msgid "If you like FireStats and would like to show your support for the hard work I put into it, You can make a small Donation. Even a $5 donation would be greatly appreciated."
+msgstr "Ha szereted a FireStats-t, és tamogatni szeretned a fejlesztest, akkor adomanyozhatsz nekunk.<br/>"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:47
+#: c:\work\firestats-1.4\firestats/php/window-donation.php:10
+msgid "Yeah, I want to help"
+msgstr "Igen, segiteni szeretnek"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:48
+#: c:\work\firestats-1.4\firestats/php/window-donation.php:11
+msgid "Nah, go away"
+msgstr "Menj innen"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:49
+#: c:\work\firestats-1.4\firestats/php/window-donation.php:12
+msgid "Maybe later"
+msgstr "Talan kesobb"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/donation-window.php:50
+#: c:\work\firestats-1.4\firestats/php/window-donation.php:13
+msgid "Already donated"
+msgstr "Mar adomanyoztam"
+
+# c:/temp/firestats/php/page-settings.php:125
+#: c:\work\firestats-1.4\firestats/php/window-edit-user.php:15
+#, fuzzy
+msgid "Edit user"
+msgstr "Felhasználó kivételek"
+
+#: c:\work\firestats-1.4\firestats/php/window-edit-user.php:26
+msgid "New password (Optional)"
+msgstr "Új jelszó (ajánlott)"
+
+# c:/temp/firestats/php/db-config-utils.php:43
+#: c:\work\firestats-1.4\firestats/php/window-edit-user.php:30
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:88
+#, fuzzy
+msgid "Verify new password"
+msgstr "Hibás jelszó"
+
+#: c:\work\firestats-1.4\firestats/php/window-new-edit-site.php:17
+msgid "Edit site"
+msgstr "Oldal szerkesztése"
+
+# c:\work\firestats-1.2\firestats/php/html-utils.php:85
+#: c:\work\firestats-1.4\firestats/php/window-new-edit-site.php:17
+#, fuzzy
+msgid "Create a new site"
+msgstr "Új oldal felvétele"
+
+# F:\starypc\sysdvd2\projects\localization\firestats\firestats_svn\firestats-1.1/php/page-stats.php:29
+#: c:\work\firestats-1.4\firestats/php/window-new-edit-site.php:39
+#, fuzzy
+msgid "Baseline page views"
+msgstr "Oldal megtekintések"
+
+# c:/temp/firestats/php/page-stats.php:30
+#: c:\work\firestats-1.4\firestats/php/window-new-edit-site.php:43
+#, fuzzy
+msgid "Baseline visitors"
+msgstr "Egyedi látogatók : "
+
+# c:/temp/firestats/php/page-database.php:200
+# c:/temp/firestats/php/page-database.php:221
+#: c:\work\firestats-1.4\firestats/php/window-new-user.php:10
+#, fuzzy
+msgid "Create a new user"
+msgstr "Adatbázis elkészítése"
+
+#: c:\work\firestats-1.4\firestats/php/tools/emergency-manage-users.php:9
+msgid "Message"
+msgstr "Üzenet"
+
+#: c:\work\firestats-1.4\firestats/php/tools/emergency-manage-users.php:10
+msgid "This page will allow you to change the password of any user in FireStats."
+msgstr "Ezen az oldalon megváltoztathatod a FireStats felhasználók jelszavát"
+
+#: c:\work\firestats-1.4\firestats/php/tools/emergency-manage-users.php:11
+#, php-format
+msgid "For security reasons, you must first edit the file %s"
+msgstr "Boztonsági okokból, szerkesztsd át a következő fájlt:"
+
+# c:\work\firestats-1.2\firestats/php/help-window.php:199
+#: c:\work\firestats-1.4\firestats/php/tools/emergency-manage-users.php:12
+#, fuzzy, php-format
+msgid "and change the line %s to %s and then refresh this page."
+msgstr "ezek után szerkeszd át a sorokat (%s), hogy ezt tartalmazzák:"
+
+#: c:\work\firestats-1.4\firestats/php/tools/emergency-manage-users.php:13
+msgid "Don't forget to change it back when you are done."
+msgstr "Ne felejtse el megváltoztatni, amikor elkészült."
+
+#: c:\work\firestats-1.4\firestats/php/tools/emergency-manage-users.php:18
+msgid "IMPORTANT"
+msgstr "FONTOS"
+
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:18
+#, php-format
+msgid "You can request an password reset email from here. if it does not work or you don't know your username or email, you can also change your password using the %s"
+msgstr "Igényelheti a jelszavának lenullázását e-mailen keresztül."
+
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:18
+msgid "Emergency user management page"
+msgstr "Biztonsági felhasználói oldal"
+
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:28
+msgid "A user with this username and email was not found"
+msgstr "Nincs ilyen felhasználó ezzel az e-mail címmel."
+
+# c:/temp/firestats/php/page-database.php:194
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:37
+#, fuzzy
+msgid "FireStats password recovery"
+msgstr "FireStats jelszó"
+
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:38
+#, php-format
+msgid "Click %s to change your FireStats password, this link will work for a short time"
+msgstr "Kattintson %s, hogy a FireStats jelszavát megváltoztassuk."
+
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:42
+msgid "Email sent"
+msgstr "E-mail elküldve"
+
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:46
+msgid "Failed to send email"
+msgstr "E-mail küldése sikertelen"
+
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:61
+#, php-format
+msgid "Failed, maybe too much time have passed since you generated the email? %s"
+msgstr "Sikertelen, talán túl sok idő telt el az e-mail küldése óta? %s"
+
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:61
+msgid "try again"
+msgstr "próbálja újból"
+
+# c:/temp/firestats/php/page-database.php:243
+# c:/temp/firestats/php/page-database.php:251
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:84
+#, fuzzy
+msgid "New password"
+msgstr "Jelszó"
+
+# c:/temp/firestats/php/db-config-utils.php:43
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:93
+#, fuzzy
+msgid "Change password"
+msgstr "Hibás jelszó"
+
+# c:/temp/firestats/js/firestats.js.php:145
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:113
+#, fuzzy
+msgid "Email address"
+msgstr "Hibás IP cím"
+
+#: c:\work\firestats-1.4\firestats/php/tools/reset-password.php:118
+msgid "Send password reset email"
+msgstr "Jelszó nullázása e-mailben"
+

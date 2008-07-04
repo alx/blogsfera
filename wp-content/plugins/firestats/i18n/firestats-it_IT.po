@@ -1,0 +1,1924 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FireStats\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2007-10-25 01:22+0100\n"
+"Last-Translator: Marco Peverelli <info@web2dev.it>\n"
+"Language-Team: Marco Peverelli <paperogiallo@paperogiallo.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: Italy\n"
+"X-Poedit-KeywordsList: fs_e;fs_r\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: c:\\translations\\firestats-1.4\n"
+
+# C:\WebDev\firestats/firestats-wordpress.php:80
+# C:\WebDev\firestats/index.php:22
+# C:\WebDev\firestats/index.php:45
+# C:\WebDev\firestats/php/footer.php:8
+msgid "FireStats"
+msgstr "FireStats"
+
+# C:\WebDev\firestats/firestats-wordpress.php:80
+msgid "Loading..."
+msgstr "Sto caricando..."
+
+# C:\WebDev\firestats/firestats-wordpress.php:99
+#, php-format
+msgid "Total : %s page views and %s visits"
+msgstr "Totale: %s pagine visitate e %s visitatori"
+
+# C:\WebDev\firestats/firestats-wordpress.php:100
+#, php-format
+msgid "Last 24 hours : %s page views and %s visits"
+msgstr "Ultime 24 ore: %s pagine visitate e %s visitatori"
+
+# c:\translations\firestats-1.2/firestats/firestats-wordpress.php:195
+msgid "You are not authorized to access FireStats"
+msgstr "Non sei autorizzato ad accedere a FireStats"
+
+# c:\translations\firestats-1.4/firestats/firestats-wordpress.php:742
+# c:\translations\firestats-1.4/firestats/firestats-wordpress.php:849
+msgid "Title:"
+msgstr "Titolo:"
+
+# C:\WebDev\firestats/php/page-database.php:190
+msgid "Hide FireStats logo"
+msgstr "Nascondi il logo di FireStats"
+
+# c:\translations\firestats-1.4/firestats/firestats-wordpress.php:815
+msgid "Popular posts"
+msgstr "Articoli più visti"
+
+# C:\WebDev\firestats/php/page-stats.php:169
+msgid "Number to show"
+msgstr "Numero da mostrare"
+
+# c:\translations\firestats-1.4/firestats/firestats-wordpress.php:857
+msgid "Days ago (Empty for all time)"
+msgstr "Giorni fa (vuoto per \"da sempre\")"
+
+# C:\WebDev\firestats-trunk/firestats-wordpress.php:415
+msgid "Pages displayed : "
+msgstr "Pagine mostrate: "
+
+# C:\WebDev\firestats/php/page-stats.php:30
+msgid "Unique visitors : "
+msgstr "Visitatori unici: "
+
+# C:\WebDev\firestats/php/page-stats.php:31
+msgid "Pages displayed in last 24 hours : "
+msgstr "Pagine visitate nelle ultime 24 ore: "
+
+# C:\WebDev\firestats/php/page-stats.php:32
+msgid "Unique visitors in last 24 hours : "
+msgstr "Visitatori unici nelle ultime 24 ore: "
+
+# C:\WebDev\firestats-trunk/firestats-wordpress.php:465
+msgid "pages viewed"
+msgstr "pagine visitate"
+
+# C:\WebDev\firestats-trunk/firestats-wordpress.php:465
+# C:\WebDev\firestats-trunk/firestats-wordpress.php:466
+msgid "today"
+msgstr "oggi"
+
+# C:\WebDev\firestats-trunk/firestats-wordpress.php:466
+msgid "visits"
+msgstr "visite"
+
+# C:\WebDev\firestats/firestats-wordpress.php:80
+# C:\WebDev\firestats/index.php:22
+# C:\WebDev\firestats/index.php:45
+# C:\WebDev\firestats/php/footer.php:8
+msgid "Powered by FireStats"
+msgstr "Powered by FireStats"
+
+# C:\WebDev\firestats/php/ajax-handler.php:568
+msgid "Error"
+msgstr "Errore"
+
+# c:\translations\firestats-1.4/firestats/index.php:15
+msgid "Access denied"
+msgstr "Accesso non consentito"
+
+# c:\translations\firestats-1.4/firestats/login.php:10
+# c:\translations\firestats-1.4/firestats/login.php:25
+msgid "Login"
+msgstr "Login"
+
+# C:\WebDev\firestats/php/html-utils.php:141
+msgid "Username"
+msgstr "Nome utente"
+
+# C:\WebDev\firestats/php/page-database.php:243
+# C:\WebDev\firestats/php/page-database.php:251
+msgid "Password"
+msgstr "Password"
+
+# c:\translations\firestats-1.4/firestats/login.php:24
+msgid "Remember me for the next 14 days"
+msgstr "Ricordami per i prossimi 14 giorni"
+
+# c:\translations\firestats-1.4/firestats/login.php:30
+#, php-format
+msgid "Forgot your password? click %s."
+msgstr "Hai dimenticato la password? clicca %s."
+
+# C:\WebDev\firestats/php/version-check.php:164
+msgid "here"
+msgstr "qui"
+
+# c:\translations\firestats-1.3/firestats/php/page-settings.php:72
+msgid "Stop"
+msgstr "Ferma"
+
+# C:\WebDev\firestats/firestats-wordpress.php:80
+msgid "Compacting..."
+msgstr "Sto riducendo..."
+
+# C:\WebDev\firestats/firestats-wordpress.php:80
+msgid "Stopping..."
+msgstr "Sto fermando..."
+
+# C:\WebDev\firestats/php/page-settings.php:34
+msgid "Compact now"
+msgstr "Riduci ora"
+
+# c:\translations\firestats-1.3/firestats/php/page-tools.php:9
+msgid "Abort"
+msgstr "Ferma"
+
+# C:\WebDev\firestats/php/page-stats.php:26
+msgid "Start"
+msgstr "Avvio"
+
+# c:\translations\firestats-1.2/firestats/php/page-wordpress-settings.php:128
+msgid "Canceled"
+msgstr "Cancellato"
+
+# C:\WebDev\firestats/js/firestats.js.php:95
+# C:\WebDev\firestats/js/firestats.js.php:221
+msgid "Not a positive number : "
+msgstr "Non è un numero positivo : "
+
+# c:\translations\firestats-1.2/firestats/js/firestats.js.php:525
+msgid "Session expired, press ok to reload"
+msgstr "La sessione è scaduta, premi ok per ricaricare"
+
+# c:\translations\firestats-1.3/firestats/php/page-database.php:63
+msgid "Upgrading, do not interrupt"
+msgstr "Sto aggiornando, non interrompere"
+
+# C:\WebDev\firestats/php/page-database.php:49
+msgid "Upgrade"
+msgstr "Aggiornamento"
+
+# C:\WebDev\firestats/js/firestats.js.php:123
+msgid "You need to select an bot you want to remove from the table"
+msgstr "Devi selezionare il bot che vuoi rimuovere dalla tabella"
+
+# C:\WebDev\firestats/js/firestats.js.php:145
+msgid "Invalid IP address"
+msgstr "Indirizzo IP non valido"
+
+# C:\WebDev\firestats/js/firestats.js.php:154
+msgid "You need to select an IP address you want to remove from the table"
+msgstr "Devi selezionare l'indirizzo IP che vuoi rimuovere dalla tabella"
+
+# C:\WebDev\firestats-trunk/php/page-settings.php:108
+msgid "Automatic"
+msgstr "Automatico"
+
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:91
+msgid "Delete"
+msgstr "Cancella"
+
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:91
+msgid "Transfer"
+msgstr "Trasferisci"
+
+# C:\WebDev\firestats/php/ezsql/mysql/ez_sql_mysql.php:41
+msgid "User name and password are required to connect to database"
+msgstr "Nome utente e password sono necessarie per connettersi al database"
+
+# C:\WebDev\firestats/php/ezsql/mysql/ez_sql_mysql.php:42
+msgid "Error establishing mySQL database connection"
+msgstr "Errore nella connessione al database mySQL"
+
+# C:\WebDev\firestats/php/ezsql/mysql/ez_sql_mysql.php:43
+msgid "Database name is required to connect to database"
+msgstr "Il nome del database è necessario per connettersi al database"
+
+# C:\WebDev\firestats/php/ezsql/mysql/ez_sql_mysql.php:44
+msgid "mySQL database connection is not active"
+msgstr "La connessione al database mySQL non è attiva"
+
+# C:\WebDev\firestats/php/ezsql/mysql/ez_sql_mysql.php:45
+msgid "Unexpected error while querying database"
+msgstr "Errore inaspettato nell'interrogazione al database"
+
+# C:\WebDev\firestats/php/ezsql/mysql/ez_sql_mysql.php:121
+# C:\WebDev\firestats/php/ezsql/mysql/ez_sql_mysql.php:132
+#, php-format
+msgid "Can't disconnect: %s"
+msgstr "Impossibile disconnettersi: %s"
+
+# C:\WebDev\firestats/php/ezsql/mysql/ez_sql_mysql.php:132
+msgid "Not connected"
+msgstr "Non connesso"
+
+# C:\WebDev\firestats/php/ajax-handler.php:97
+#, php-format
+msgid "Unsupported action code : %s"
+msgstr "Codice azione non supportato : %s"
+
+# C:\WebDev\firestats/php/ajax-handler.php:105
+#, php-format
+msgid "Unexpexted output: %s"
+msgstr "Output inaspettato: %s"
+
+# C:\WebDev\firestats/php/ajax-handler.php:148
+#, php-format
+msgid "Added %s to exclude list"
+msgstr "%s aggiunto alla lista esclusioni"
+
+# C:\WebDev\firestats/php/ajax-handler.php:165
+#, php-format
+msgid "Removed %s from exclude list"
+msgstr "%s rimosso dalla lista esclusioni"
+
+# C:\WebDev\firestats/php/ajax-handler.php:210
+msgid "Excluded users list saved"
+msgstr "Lista utenti esclusi salvata"
+
+# C:\WebDev\firestats/php/ajax-handler.php:228
+#, php-format
+msgid "Added %s to bots list"
+msgstr "%s aggiunto alla lista bot"
+
+# C:\WebDev\firestats/php/ajax-handler.php:241
+msgid "Empty string is not allowed"
+msgstr "Non è permessa una stringa vuota"
+
+# C:\WebDev\firestats/php/ajax-handler.php:251
+msgid "Removed"
+msgstr "Rimosso"
+
+# C:\WebDev\firestats/php/ajax-handler.php:302
+msgid "Not using configuration file"
+msgstr "Non sto usando il file di configurazione"
+
+# C:\WebDev\firestats/php/ajax-handler.php:309
+msgid "Not installed inside Wordpress"
+msgstr "Non installato in Wordpress"
+
+# C:\WebDev\firestats/php/ajax-handler.php:320
+#, php-format
+msgid "Failed to delete fs-config.php : %s"
+msgstr "Errore nella cancellazione di fs-config.php: %s"
+
+# C:\WebDev\firestats/php/ajax-handler.php:341
+msgid "Error creating config file: "
+msgstr "Errore nella creazione del file di configurazione"
+
+# C:\WebDev\firestats/php/ajax-handler.php:364
+msgid "Error upgrading tables"
+msgstr "Errore nell'aggiornamento delle tabelle"
+
+# C:\WebDev\firestats/php/ajax-handler.php:389
+msgid "Error installing tables"
+msgstr "Errore nell'installazione delle tabelle"
+
+# C:\WebDev\firestats/php/ajax-handler.php:498
+msgid "Error rebuilding database cache"
+msgstr "Errore nella ricostruzione della cache del database"
+
+# C:\WebDev\firestats/php/ajax-handler.php:502
+msgid "Database cache rebuilt successfully"
+msgstr "Cache del database ricostruita correttamente"
+
+# C:\WebDev\firestats/php/page-import.php:22
+#, php-format
+msgid "%s days can be compacted, database size %s"
+msgstr "%s giorni posso essere ridotti, dimensione database %s"
+
+# C:\WebDev\firestats/php/ajax-handler.php:538
+#, php-format
+msgid "Unkown field: %s"
+msgstr "Campo sconosciuto: %s"
+
+# C:\WebDev\firestats/php/ajax-handler.php:573
+msgid "IP-to-country database is already up-to-date"
+msgstr "Il database IP-to-country è già aggiornato all'ultima versione"
+
+# C:\WebDev\firestats/php/ajax-handler.php:565
+msgid "An error has occured while trying to update the IP-to-country database"
+msgstr "Si è verificato un errore nell'aggiornamento del database IP-to-country"
+
+# C:\WebDev\firestats/php/ajax-handler.php:563
+msgid "file"
+msgstr "file"
+
+# C:\WebDev\firestats/php/ajax-handler.php:567
+#, php-format
+msgid "You can update the database manually by downloading this %s and extracting it into %s"
+msgstr "Puoi aggiornare il database manualmente scaricando questo %s ed estraendolo in %s"
+
+# c:\translations\firestats-1.2/firestats/php/ajax-handler.php:734
+msgid "this"
+msgstr "questo"
+
+# C:\WebDev\firestats/php/ajax-handler.php:567
+#, php-format
+msgid "You can update the database manually by opening %s and downloading the <b>zip_url</b>, and extracting it into %s"
+msgstr "Puoi aggiornare il database manualmente aprendo %s e scaricando il <b>zip_url</b>, e poi estraendolo in %s"
+
+# C:\WebDev\firestats/php/ip2country.php:186
+#, php-format
+msgid "Error updating bots list: %s"
+msgstr "Errore nell'aggiornamento della lista bot: %s"
+
+# C:\WebDev\firestats/php/ip2country.php:182
+msgid "Successfully updated bots list"
+msgstr "Database dei bot aggiornato correttamente"
+
+# C:\WebDev\firestats/php/ajax-handler.php:583
+#, php-format
+msgid "Error purging excluded records: %s"
+msgstr "Errore nell'eliminazione dei records esclusi: %s"
+
+# C:\WebDev\firestats/php/ajax-handler.php:588
+msgid "Purged excluded records"
+msgstr "Records esclusi eliminati"
+
+# C:\WebDev\firestats/php/db-config-utils.php:22
+msgid "Error connecting to database"
+msgstr "Errore nella connessione al database"
+
+# c:\translations\firestats-1.3/firestats/php/ajax-handler.php:946
+#, php-format
+msgid "Compacting %s days, %s done, database size is %s"
+msgstr "Sto riducendo %s giorni, %s completato, la dimensione del database è %s"
+
+# c:\translations\firestats-1.4/firestats/php/ajax-handler.php:1054
+#, php-format
+msgid "%d of %d"
+msgstr "%d di %d"
+
+# c:\translations\firestats-1.3/firestats/php/ajax-handler.php:1029
+#, php-format
+msgid "Done, took %s second"
+msgstr "Completato in %s secondi"
+
+# c:\translations\firestats-1.4/firestats/php/ajax-handler.php:1189
+msgid "Incorrect user-name or password"
+msgstr "Nome utente o password non corretti"
+
+# C:\WebDev\firestats/php/db-config-utils.php:40
+msgid "User name not specified"
+msgstr "Nome utente non specificato"
+
+# C:\WebDev\firestats/php/db-config-utils.php:40
+msgid "Email not specified"
+msgstr "Indirizzo email non specificato"
+
+# C:\WebDev\firestats/php/db-config-utils.php:40
+msgid "Password not specified"
+msgstr "Password non specificata"
+
+# C:\WebDev\firestats/php/db-config-utils.php:40
+msgid "Passwords did not match"
+msgstr "Le password non coincidono"
+
+# C:\WebDev\firestats/php/page-database.php:127
+msgid "Empty password"
+msgstr "Password vuota"
+
+# C:\WebDev\firestats/php/db-config-utils.php:22
+#, php-format
+msgid "Error connecting to database (%s)"
+msgstr "Errore nella connessione al database (%s)"
+
+# C:\WebDev\firestats/js/firestats.js.php:145
+msgid "Invalid email address"
+msgstr "Indirizzo email non valido"
+
+# c:\translations\firestats-1.2/firestats/php/db-sql.php:39
+# c:\translations\firestats-1.2/firestats/php/db-sql.php:73
+msgid "A user with this name already exists"
+msgstr "Un utente con questo nome esiste già"
+
+# c:\translations\firestats-1.2/firestats/php/db-sql.php:39
+# c:\translations\firestats-1.2/firestats/php/db-sql.php:73
+msgid "A user with this email address already exists"
+msgstr "Un utente con questo indirizzo email esiste già"
+
+# C:\WebDev\firestats/php/db-common.php:111
+msgid "FireStats is properly installed in the database"
+msgstr "FireStats correttamente installato nel database"
+
+# C:\WebDev\firestats/php/db-config-utils.php:58
+msgid "FireStats is not configured"
+msgstr "FireStats non è configurato"
+
+# C:\WebDev\firestats/php/db-common.php:114
+msgid "Database error, check your configuration"
+msgstr "Errore database, controlla la configurazione"
+
+# C:\WebDev\firestats/php/db-common.php:111
+msgid "FireStats is not installed in the database"
+msgstr "FireStats non è installato nel database"
+
+# C:\WebDev\firestats/php/page-database.php:48
+msgid "FireStats database need to be upgraded"
+msgstr "Il database di FireStats deve essere aggiornato."
+
+# C:\WebDev\firestats/php/db-common.php:123
+msgid "The FireStats database version is newer than this code version, you need to upgrade FireStats"
+msgstr "Il database usato da FireStats è più aggiornato del codice di FireStats, devi aggiornare FireStats"
+
+# C:\WebDev\firestats/php/db-common.php:126
+msgid "Unknown database status code"
+msgstr "Codice status del database sconosciuto"
+
+# C:\WebDev\firestats/php/db-sql.php:573
+#, php-format
+msgid "Database error: %s"
+msgstr "Errore database: %s"
+
+# C:\WebDev\firestats/php/db-config-utils.php:19
+msgid "Error accessing database"
+msgstr "Errore nell'accesso al database"
+
+# C:\WebDev\firestats/php/db-config-utils.php:25
+msgid "Cannot write configuration file (read only file or directory)"
+msgstr "Non posso scrivere nel file di configurazione (il file o la cartella sono in sola lettura)"
+
+# C:\WebDev\firestats/php/db-config-utils.php:28
+msgid "Error creating database"
+msgstr "Errore nella creazione del database"
+
+# C:\WebDev\firestats/php/db-config-utils.php:31
+msgid "Error creating user"
+msgstr "Errore nella creazione dell'utente"
+
+# C:\WebDev\firestats/php/db-config-utils.php:34
+msgid "Error creating tables"
+msgstr "Errore nella creazione delle tabelle del database"
+
+# C:\WebDev\firestats/php/db-config-utils.php:37
+msgid "Error saving configuration"
+msgstr "Errore nel salvataggio della configurazione"
+
+# C:\WebDev\firestats/php/db-config-utils.php:43
+msgid "Wrong password"
+msgstr "Password errata"
+
+# C:\WebDev\firestats/php/db-config-utils.php:53
+msgid "FireStats tables are not installed"
+msgstr "Le tabelle di FireStats non sono installate"
+
+# C:\WebDev\firestats/php/db-config-utils.php:58
+msgid "FireStats is installed"
+msgstr "FireStats è installato"
+
+# C:\WebDev\firestats/php/db-config-utils.php:63
+msgid "Another FireStats database detected"
+msgstr "E' stato trovato un altro database di FireStats"
+
+# C:\WebDev\firestats/php/db-config-utils.php:68
+msgid "New database created successfuly"
+msgstr "Nuovo database creato correttamente"
+
+# C:\WebDev\firestats/php/db-config-utils.php:83
+#, php-format
+msgid "Unexpected error code %s"
+msgstr "Errore imprevisto codice %s"
+
+# C:\WebDev\firestats/php/db-config-utils.php:311
+msgid "Not configured"
+msgstr "Non configurato"
+
+# C:\WebDev\firestats/php/db-config-utils.php:314
+msgid "FireStats configuration file"
+msgstr "File di configurazione di FireStats"
+
+# C:\WebDev\firestats/php/db-config-utils.php:317
+msgid "Wordpress configuration file"
+msgstr "File di configurazione di WordPress"
+
+# C:\WebDev\firestats/js/firestats.js.php:447
+msgid "Operation already in progress"
+msgstr "Oprazione già in corso"
+
+# c:\translations\firestats-1.3/firestats/php/db-sql.php:48
+msgid "Data compacting is already in progress"
+msgstr "La riduzione dei dati è già in corso"
+
+# c:\translations\firestats-1.3/firestats/php/db-sql.php:67
+# c:\translations\firestats-1.3/firestats/php/page-settings.php:176
+msgid "MySQL 4.1.14 or newer is required for data compacting support"
+msgstr "E' richiesto MySQL 4.1.14 o superiore per la riduzione dei dati"
+
+# C:\WebDev\firestats/php/db-config-utils.php:40
+msgid "Site name not specified"
+msgstr "Nome del sito non specificato"
+
+# C:\WebDev\firestats/js/firestats.js.php:95
+# C:\WebDev\firestats/js/firestats.js.php:221
+msgid "Site ID must be a positive number"
+msgstr "L'ID del sito dev'essere un numero positivo"
+
+# c:\translations\firestats-1.2/firestats/php/db-sql.php:39
+# c:\translations\firestats-1.2/firestats/php/db-sql.php:73
+#, php-format
+msgid "A site with the ID %s already exists"
+msgstr "Un sito con ID %s esiste già"
+
+# c:\translations\firestats-1.2/firestats/php/db-sql.php:64
+# c:\translations\firestats-1.2/firestats/php/db-sql.php:115
+# c:\translations\firestats-1.2/firestats/php/db-sql.php:131
+#, php-format
+msgid "No site with the id %s exists"
+msgstr "Non esiste un sito con ID %s"
+
+# c:\translations\firestats-1.4/firestats/php/db-sql.php:394
+msgid "New site_id must not be empty"
+msgstr "Il nuovo site_id non può essere vuoto"
+
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:138
+msgid "Can't move the hits to the same site"
+msgstr "Non puoi trasferire i record dallo stesso sito"
+
+# C:\WebDev\firestats/php/db-sql.php:15
+# C:\WebDev\firestats/php/db-sql.php:52
+#, php-format
+msgid "Invalid IP address: %s"
+msgstr "Indirizzo IP non valido: %s"
+
+# C:\WebDev\firestats/php/db-sql.php:27
+#, php-format
+msgid "The IP address %s is already in the database"
+msgstr "L'indirizzo IP %s è già nel database"
+
+# C:\WebDev\firestats/php/db-sql.php:89
+#, php-format
+msgid "The bot wildcard %s is already in the database"
+msgstr "La wildcard bot %s è già nel database"
+
+# C:\WebDev\firestats/php/html-utils.php:357
+msgid "Unknown"
+msgstr "Sconosciuto"
+
+# C:\WebDev\firestats/php/version-check.php:188
+#, php-format
+msgid "Error opening file : %s"
+msgstr "Errore nell'apertura del file %s"
+
+# C:\WebDev\firestats/php/db-config-utils.php:34
+msgid "Error exporting bots list"
+msgstr "Errore nell'esportazione della lista dei bot"
+
+# c:\translations\firestats-1.3/firestats/php/footer.php:44
+#, php-format
+msgid "If you have any problems or questions, please visit the %s"
+msgstr "Per qualsiasi domanda o problema, per favore visita %s"
+
+# C:\WebDev\firestats/php/page-database.php:190
+msgid "FireStats homepage"
+msgstr "Homepage di FireStats"
+
+# C:\WebDev\firestats/firestats-wordpress.php:80
+# C:\WebDev\firestats/index.php:22
+# C:\WebDev\firestats/index.php:45
+# C:\WebDev\firestats/php/footer.php:8
+msgid "Support FireStats"
+msgstr "Supporta FireStats"
+
+# c:\translations\firestats-1.4/firestats/php/header.php:28
+msgid "Log out"
+msgstr "Logout"
+
+# C:\WebDev\firestats/php/tabbed-pane.php:35
+msgid "Demo"
+msgstr "Demo"
+
+# C:\WebDev\firestats/php/tabbed-pane.php:27
+msgid "Hide"
+msgstr "Nascondi"
+
+# C:\WebDev\firestats/php/ajax-handler.php:538
+msgid "Unknown site type"
+msgstr "Tipo sito sconosciuto"
+
+# C:\WebDev\firestats/php/page-help.php:2
+msgid "Collect hits from PHP pages"
+msgstr "Raccogli pagine visitate dalle pagine PHP"
+
+# C:\WebDev\firestats/php/page-help.php:10
+msgid "To allow FireStats to track access to your pages, you need to add the following line inside the head tag of each of the pages you want to monitor (the page must be a php page)."
+msgstr "Per permettere a FireStats di monitorare le tue pagine, devi aggiungere la riga seguente nel tag head di ciascuna pagina che desideri monitorare (la pagina deve essere una pagina php)."
+
+# C:\WebDev\firestats/php/page-help.php:19
+msgid "A typical page header will look like this:"
+msgstr "La tipica testata della pagina apparirà così:"
+
+# C:\WebDev\firestats-trunk/php/tabbed-pane.php:90
+msgid "WordPress"
+msgstr "Wordpress"
+
+# c:\translations\firestats-1.2/firestats/php/help-window.php:102
+msgid "The WordPress plugin registers itself automatically when it's activated"
+msgstr "Il plugin di Wordpress si registra automaticamente quando viene attivato"
+
+# c:\translations\firestats-1.2/firestats/php/help-window.php:108
+# c:\translations\firestats-1.2/firestats/php/help-window.php:116
+# c:\translations\firestats-1.2/firestats/php/help-window.php:131
+# c:\translations\firestats-1.2/firestats/php/help-window.php:137
+# c:\translations\firestats-1.2/firestats/php/help-window.php:149
+msgid "plugin"
+msgstr "plugin"
+
+# c:\translations\firestats-1.2/firestats/php/help-window.php:124
+msgid "module"
+msgstr "modulo"
+
+# C:\WebDev\firestats/php/page-help.php:2
+#, php-format
+msgid "Collect hits from a %s site"
+msgstr "Raccogli hits da un sito %s"
+
+# c:\translations\firestats-1.2/firestats/php/help-window.php:189
+#, php-format
+msgid "and then configure it in the administration menu with the path %s and the ID %s"
+msgstr "e poi configuralo nel menu amministrazione con percorso %s e ID %s"
+
+# c:\translations\firestats-1.2/firestats/php/help-window.php:199
+#, php-format
+msgid "and then edit the lines in %s to contain this:"
+msgstr "e poi modifica queste righe in %s in modo che contengano questo:"
+
+# c:\translations\firestats-1.2/firestats/php/help-window.php:206
+#, php-format
+msgid "To collect statistics from your %s site your need to install the %s"
+msgstr "Per raccogliere statistiche dal tuo sito %s devi installare %s"
+
+# C:\WebDev\firestats/php/version-check.php:164
+msgid "Link here"
+msgstr "link qui"
+
+# c:\translations\firestats-1.2/firestats/php/html-utils.php:31
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:122
+msgid "Name"
+msgstr "Nome"
+
+# c:\translations\firestats-1.4/firestats/php/html-utils.php:135
+# c:\translations\firestats-1.4/firestats/php/page-add-admin.php:33
+# c:\translations\firestats-1.4/firestats/php/window-edit-user.php:23
+# c:\translations\firestats-1.4/firestats/php/window-new-user.php:18
+msgid "Email"
+msgstr "Email"
+
+# c:\translations\firestats-1.4/firestats/php/html-utils.php:136
+# c:\translations\firestats-1.4/firestats/php/window-edit-user.php:35
+# c:\translations\firestats-1.4/firestats/php/window-new-user.php:30
+msgid "Security level"
+msgstr "Livello di sicurezza"
+
+# c:\translations\firestats-1.4/firestats/php/html-utils.php:158
+msgid "Admin"
+msgstr "Amministratore"
+
+# C:\WebDev\firestats/php/html-utils.php:141
+msgid "User"
+msgstr "Utente"
+
+# c:\translations\firestats-1.2/firestats/php/html-utils.php:62
+msgid "Add a new user"
+msgstr "Aggiungi un nuovo utente"
+
+# c:\translations\firestats-1.2/firestats/php/html-utils.php:30
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:110
+msgid "ID"
+msgstr "ID"
+
+# c:\translations\firestats-1.2/firestats/php/html-utils.php:32
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:123
+msgid "Type"
+msgstr "Tipo"
+
+# C:\WebDev\firestats-trunk/firestats-wordpress.php:465
+msgid "Page views"
+msgstr "pagine visitate"
+
+# c:\translations\firestats-1.2/firestats/php/html-utils.php:47
+msgid "How to integrate with this site"
+msgstr "Come intergrarlo in questo sito"
+
+# c:\translations\firestats-1.2/firestats/php/html-utils.php:73
+msgid "Orphaned hits"
+msgstr "Visite orfane"
+
+# c:\translations\firestats-1.2/firestats/php/html-utils.php:62
+msgid "Add a new site"
+msgstr "Aggiungi un nuovo sito"
+
+# c:\translations\firestats-1.2/firestats/php/html-utils.php:97
+msgid "Generic PHP site"
+msgstr "Sito PHP generico"
+
+# c:\translations\firestats-1.2/firestats/php/html-utils.php:99
+msgid "Wordpress"
+msgstr "Wordpress"
+
+# c:\translations\firestats-1.2/firestats/php/html-utils.php:101
+msgid "Django"
+msgstr "Django"
+
+# c:\translations\firestats-1.2/firestats/php/html-utils.php:103
+msgid "Drupal"
+msgstr "Drupal"
+
+# c:\translations\firestats-1.2/firestats/php/html-utils.php:105
+msgid "Gregarius"
+msgstr "Gregarius"
+
+# c:\translations\firestats-1.2/firestats/php/html-utils.php:107
+msgid "Joomla"
+msgstr "Joomla"
+
+# c:\translations\firestats-1.2/firestats/php/html-utils.php:109
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+# c:\translations\firestats-1.2/firestats/php/html-utils.php:111
+msgid "Trac"
+msgstr "Trac"
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:222
+msgid "Gallery2"
+msgstr "Gallery2"
+
+# C:\WebDev\firestats/php/html-utils.php:27
+msgid "Invalid"
+msgstr "Non valido"
+
+# c:\translations\firestats-1.2/firestats/php/html-utils.php:211
+msgid "All"
+msgstr "Tutti"
+
+# C:\WebDev\firestats-trunk/php/page-wordpress-settings.php:73
+msgid "Show statistics from"
+msgstr "Mostra statistiche da"
+
+# C:\WebDev\firestats/php/html-utils.php:80
+msgid "unknown"
+msgstr "sconosciuto"
+
+# C:\WebDev\firestats/php/html-utils.php:136
+msgid "IP"
+msgstr "IP"
+
+# C:\WebDev\firestats/php/html-utils.php:137
+msgid "TimeStamp"
+msgstr "TimeStamp"
+
+# C:\WebDev\firestats/php/html-utils.php:138
+msgid "URL"
+msgstr "URL"
+
+# C:\WebDev\firestats/php/html-utils.php:139
+msgid "Referrer"
+msgstr "Referrer"
+
+# C:\WebDev\firestats/php/html-utils.php:140
+msgid "Image"
+msgstr "Immagine"
+
+# C:\WebDev\firestats/php/html-utils.php:141
+msgid "UserAgent"
+msgstr "UserAgent"
+
+# C:\WebDev\firestats/php/html-utils.php:162
+# C:\WebDev\firestats/php/html-utils.php:198
+# C:\WebDev\firestats/php/html-utils.php:348
+# C:\WebDev\firestats/php/html-utils.php:442
+# C:\WebDev\firestats/php/html-utils.php:477
+msgid "No data yet, go get some hits"
+msgstr "Ancora nessun dato, devi avere qualche visita"
+
+# C:\WebDev\firestats/php/html-utils.php:264
+# C:\WebDev\firestats/php/html-utils.php:288
+# C:\WebDev\firestats/php/html-utils.php:314
+msgid "Empty"
+msgstr "Vuoto"
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:724
+msgid "Start date is missing"
+msgstr "Data di inizio mancante"
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:729
+msgid "End date is missing"
+msgstr "Data di fine mancante"
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:749
+msgid "Please wait..."
+msgstr "Per favore attendi..."
+
+# C:\WebDev\firestats/php/html-utils.php:399
+#, php-format
+msgid "%d hits from %s"
+msgstr "%d pagine visitate da %s"
+
+# C:\WebDev\firestats/php/db-sql.php:541
+msgid "Others"
+msgstr "Altri"
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:1092
+msgid "System information"
+msgstr "Informazioni sul sistema"
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:1093
+msgid "You can help by sending anonymous system information that will help make better decisions about new features"
+msgstr "Tu puoi aiutare inviando anonime informazioni sul sistema che ci aiuteranno a prendere decisioni migliori riguardo a nuove caratteristiche"
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:1094
+msgid "The information will be sent anonymously, but a unique identifier will be sent to prevent duplicate entries from the same FireStats"
+msgstr "Le informazioni saranno inviate anonimamente, insieme ad un identificatore univoco per evitare duplicazioni di dati da una stessa installazione di FireStats"
+
+# C:\WebDev\firestats/php/ajax-handler.php:228
+msgid "Import bots list"
+msgstr "Importa lista bot"
+
+# C:\WebDev\firestats-trunk/php/import-bots-list.php:18
+msgid "Select bot-list file"
+msgstr "Seleziona il file della lista bot"
+
+# C:\WebDev\firestats/php/ajax-handler.php:132
+# C:\WebDev\firestats/php/page-import.php:17
+# C:\WebDev\firestats/php/tabbed-pane.php:98
+msgid "Import type"
+msgstr "Importa tipo"
+
+# C:\WebDev\firestats/php/ajax-handler.php:228
+msgid "Add to bots list"
+msgstr "Aggiungi alla lista bot"
+
+# C:\WebDev\firestats/php/page-settings.php:85
+msgid "Replace bots list"
+msgstr "Sostituisci lista bot"
+
+# c:\translations\firestats-1.2/firestats/php/import-bots-list.php:31
+msgid "Send File"
+msgstr "Invia file"
+
+# C:\WebDev\firestats-trunk/php/import-bots-list.php:34
+msgid "Incorrect file format"
+msgstr "Formato file non corretto"
+
+# C:\WebDev\firestats/php/ip2country.php:186
+#, php-format
+msgid "Error importing bots list : %s"
+msgstr "Errore nell'importazione della lista dei bot: %s"
+
+# C:\WebDev\firestats/php/db-config-utils.php:68
+msgid "bots list imported successfully"
+msgstr "Lista dei bot importata correttamente"
+
+# C:\WebDev\firestats/php/ip2country.php:83
+# C:\WebDev\firestats/php/ip2country.php:198
+msgid "Error creating temporary file"
+msgstr "Errore nella creazione del file temporaneo"
+
+# C:\WebDev\firestats/php/ip2country.php:92
+#, php-format
+msgid "Error opening connection to %s"
+msgstr "Errore all'apertura della connessione a %s"
+
+# C:\WebDev\firestats/php/ip2country.php:98
+#, php-format
+msgid "Error sending request to %s"
+msgstr "Errore nell'invio della richiesta a %s"
+
+# c:\translations\firestats-1.4/firestats/php/ip2country.php:139
+# c:\translations\firestats-1.4/firestats/php/utils.php:305
+#, php-format
+msgid "Server returned error %s for %s"
+msgstr "Il server ha restituito errore %s per %s"
+
+# C:\WebDev\firestats/php/ip2country.php:112
+#, php-format
+msgid "Error reading data from %s : %s"
+msgstr "Errore nella lettura dei dati da %s: %s"
+
+# C:\WebDev\firestats/php/ip2country.php:139
+#, php-format
+msgid "Error extracting IP-to-country database: %s"
+msgstr "Errore nell'estrazione del database IP-to-country: %s"
+
+# C:\WebDev\firestats/php/ip2country.php:144
+#, php-format
+msgid "Unsupported file type : %s"
+msgstr "Tipo di file non supportato: %s"
+
+# C:\WebDev\firestats/php/ip2country.php:157
+#, php-format
+msgid "can't update ip-to-country database, read-only directory : %s"
+msgstr "Non posso aggiornare il database IP-to-country, la cartella è in modalità sola lettura: %s"
+
+# C:\WebDev\firestats/php/ip2country.php:159
+# C:\WebDev\firestats/php/ip2country.php:161
+#, php-format
+msgid "can't update ip-to-country database, read-only file : %s"
+msgstr "Non posso aggiornare il database IP-to-country, il file è in modalità sola lettura: %s"
+
+# C:\WebDev\firestats/php/ip2country.php:176
+msgid "Error installing new IP-to-country database"
+msgstr "Errore nell'installazione del nuovo database IP-to-country"
+
+# C:\WebDev\firestats/php/ip2country.php:182
+msgid "Successfuly updated IP-to-country database"
+msgstr "Database IP-to-country aggiornato correttamente"
+
+# C:\WebDev\firestats/php/ip2country.php:186
+#, php-format
+msgid "Error updating version file : %s"
+msgstr "Errore nell'aggiornamento del file: %s"
+
+# c:\translations\firestats-1.4/firestats/php/page-add-admin.php:22
+msgid "Create administrator user"
+msgstr "Crea l'utente amministratore"
+
+# c:\translations\firestats-1.4/firestats/php/page-add-admin.php:24
+msgid "You need to create an administrator user for FireStats."
+msgstr "Devi creare un utente amministratore per FireStats."
+
+# c:\translations\firestats-1.4/firestats/php/page-add-admin.php:25
+msgid "The administrator has full control over FireStats, and will be able to create other users/administrators from the administration interface"
+msgstr "L'amministratore ha pieno controllo di FireStats, e può creare altri utenti o amministratori dal pannello di amministrazione"
+
+# C:\WebDev\firestats/php/html-utils.php:141
+msgid "User name"
+msgstr "Nome utente"
+
+# C:\WebDev\firestats/php/db-config-utils.php:43
+msgid "Verify password"
+msgstr "Verifica password"
+
+# C:\WebDev\firestats/php/page-database.php:200
+# C:\WebDev\firestats/php/page-database.php:221
+msgid "Create user"
+msgstr "Crea utente"
+
+# C:\WebDev\firestats/php/db-common.php:100
+msgid "Database status"
+msgstr "Stato database"
+
+# c:\translations\firestats-1.2/firestats/php/page-database.php:138
+msgid "Click to upgrade"
+msgstr "Clicca per aggiornare"
+
+# C:\WebDev\firestats/php/page-database.php:75
+#, php-format
+msgid "Configuration source : %s"
+msgstr "Sorgente configurazione: %s"
+
+# C:\WebDev\firestats/php/page-database.php:81
+msgid "To use wordpress database, click this button."
+msgstr "Per usare il database di Wordpress, clicca questo bottone."
+
+# C:\WebDev\firestats/php/page-database.php:82
+msgid "FireStats database configuration will be lost."
+msgstr "La configurazione del database di FireStats andrà persa."
+
+# C:\WebDev\firestats/php/page-database.php:83
+msgid "Use Wordpress database"
+msgstr "Usa il database di Wordpress"
+
+# C:\WebDev\firestats/php/page-database.php:94
+msgid "To perform one of the following actions:"
+msgstr "Per compiere una delle seguenti azioni:"
+
+# C:\WebDev\firestats/php/page-database.php:96
+msgid "Attach to an existing FireStats installation"
+msgstr "Accoda a una precedente installazione di FireStats"
+
+# C:\WebDev\firestats/php/page-database.php:97
+# C:\WebDev\firestats/php/page-database.php:217
+msgid "Install FireStats into an existing database"
+msgstr "Installa FireStats "
+
+# C:\WebDev\firestats/php/page-database.php:98
+# C:\WebDev\firestats/php/page-database.php:220
+msgid "Create a new database and install FireStats there"
+msgstr "Crea un nuovo database e usalo per installare FireStats"
+
+# C:\WebDev\firestats/php/page-database.php:100
+msgid "Follow instructions in the help"
+msgstr "Segui le istruzioni in questo aiuto"
+
+# C:\WebDev\firestats/php/page-database.php:109
+msgid "Database host"
+msgstr "Host database"
+
+# C:\WebDev\firestats/php/page-database.php:115
+msgid "Database name"
+msgstr "Nome database"
+
+# C:\WebDev\firestats/php/page-database.php:121
+msgid "Database user name"
+msgstr "Username database"
+
+# C:\WebDev\firestats/php/page-database.php:127
+msgid "Database password"
+msgstr "Password database"
+
+# C:\WebDev\firestats/php/page-database.php:133
+msgid "Tables prefix"
+msgstr "Prefisso tabelle"
+
+# C:\WebDev\firestats/php/page-database.php:142
+# C:\WebDev\firestats/php/page-database.php:215
+# C:\WebDev\firestats/php/page-database.php:218
+# C:\WebDev\firestats/php/page-database.php:221
+msgid "Test connection"
+msgstr "Test connessione"
+
+# C:\WebDev\firestats/php/page-database.php:152
+msgid "Click to install and switch to new FireStats tables"
+msgstr "Clicca per installare e passare alle nuove tabelle di FireStats"
+
+# C:\WebDev\firestats/php/page-database.php:155
+# C:\WebDev\firestats/php/page-database.php:218
+msgid "Install tables"
+msgstr "Installa tabelle"
+
+# C:\WebDev\firestats/php/page-database.php:164
+msgid "Click to use this FireStats database"
+msgstr "Clicca per usare questo database di FireStats"
+
+# C:\WebDev\firestats/php/page-database.php:168
+# C:\WebDev\firestats/php/page-database.php:215
+msgid "Use this database"
+msgstr "Usa questo database"
+
+# C:\WebDev\firestats/php/page-database.php:180
+msgid "To create a new database, an administrator user should be used in the above fields."
+msgstr "Per creare un nuovo database, un utente amministratore dovrebbe essere usato nei campi sovrastanti."
+
+# C:\WebDev\firestats/php/page-database.php:181
+msgid "However, For security reason, it is recommended not to use a database administrator user for day to day operations."
+msgstr "Tuttavia, per ragioni di sicurezza, è consigliato non utilizzare un utente \"amministratore\" del database per le operazioni quotidiane."
+
+# C:\WebDev\firestats/php/page-database.php:182
+msgid "Enter new user name and password for FireStats, this user will only have access to the FireStats database"
+msgstr "Inserisci un nuovo nome utente e una nuova password per FireStats, questo utente avrà accesso solo al database di FireStats"
+
+# C:\WebDev\firestats/php/page-database.php:183
+msgid "If you will not specify user and password the Admin user and password will be used."
+msgstr "Se non specifichi utente e password, saranno utilizzati l'utente Admin e la sua password."
+
+# C:\WebDev\firestats/php/page-database.php:190
+msgid "FireStats User name"
+msgstr "Nome utente per FireStats"
+
+# C:\WebDev\firestats/php/page-database.php:194
+msgid "FireStats password"
+msgstr "Password per FireStats"
+
+# C:\WebDev\firestats/php/page-database.php:200
+# C:\WebDev\firestats/php/page-database.php:221
+msgid "Create database"
+msgstr "Crea database"
+
+# C:\WebDev\firestats/php/page-database.php:213
+# C:\WebDev\firestats/php/page-database.php:224
+# C:\WebDev\firestats/php/tabbed-pane.php:111
+msgid "Help"
+msgstr "Aiuto"
+
+# C:\WebDev\firestats/php/page-database.php:214
+msgid "Attach to an existing FireStats database"
+msgstr "Accoda a un database FireStats esistente"
+
+# C:\WebDev\firestats/php/page-database.php:215
+# C:\WebDev\firestats/php/page-database.php:218
+#, php-format
+msgid "Enter the parameters in the table, press %s, and then %s."
+msgstr "Inserisci i parametri nella tabella, premi %s e poi %s."
+
+# C:\WebDev\firestats/php/page-database.php:221
+#, php-format
+msgid "Enter the parameters into the table, <u>you need to enter a database administrator user</u>. press %s, and then enter FireStats database user and password, and finally press %s."
+msgstr "Inserisci i parametri nella tabella, <u>devi inserire un utente amministratore del database</u>, premi %s, poi inserisci l'utente del database FireStats e la sua password, e alla fine premi %s. "
+
+# c:\translations\firestats-1.2/firestats/php/page-settings.php:113
+msgid "Options"
+msgstr "Opzioni"
+
+# C:\WebDev\firestats/php/page-settings.php:43
+msgid "Select language"
+msgstr "Seleziona lingua"
+
+# C:\WebDev\firestats/php/page-settings.php:47
+# C:\WebDev\firestats/php/page-settings.php:129
+# C:\WebDev\firestats/php/page-stats.php:21
+# C:\WebDev\firestats/php/page-stats.php:47
+# C:\WebDev\firestats/php/page-stats.php:55
+# C:\WebDev\firestats/php/page-stats.php:74
+# C:\WebDev\firestats/php/page-stats.php:82
+# C:\WebDev\firestats/php/page-stats.php:102
+# C:\WebDev\firestats/php/page-stats.php:125
+# C:\WebDev\firestats/php/page-stats.php:147
+# C:\WebDev\firestats/php/page-stats.php:155
+# C:\WebDev\firestats/php/page-stats.php:174
+msgid "Save"
+msgstr "Salva"
+
+# C:\WebDev\firestats/php/page-settings.php:48
+msgid "How to translate to a new language"
+msgstr "Come tradurre in una nuova lingua"
+
+# c:\webdev\firestats/php/page-settings.php:57
+msgid "Select your time zone"
+msgstr "Seleziona la tua time zone"
+
+# c:\webdev\firestats/php/page-settings.php:67
+#, php-format
+msgid "Time zone selection requires %s or newer"
+msgstr "La selezione della time zone richiede %s o più nuova"
+
+# c:\translations\firestats-1.2/firestats/php/page-settings.php:142
+msgid "Select WHOIS provider"
+msgstr "Seleziona un provider WHOIS"
+
+# c:\translations\firestats-1.3/firestats/php/page-settings.php:154
+msgid "Compact old data"
+msgstr "Riduci i vecchi dati"
+
+# c:\translations\firestats-1.3/firestats/php/page-settings.php:165
+#, php-format
+msgid "%s compact data older than %s"
+msgstr "%s riduci i dati più vecchi di %s"
+
+# C:\WebDev\firestats/php/page-settings.php:5
+msgid "Automatic version check"
+msgstr "Controllo automatico della versione"
+
+# C:\WebDev\firestats/php/page-settings.php:13
+msgid "Automatically check if there is a new version of FireStats (recommended)"
+msgstr "Controlla automaticamente se è disponibile una nuova versione di FireStats (raccomandato)"
+
+# C:\WebDev\firestats/php/page-settings.php:22
+msgid "IP-to-country database"
+msgstr "database IP-to-country"
+
+# C:\WebDev\firestats/php/page-settings.php:25
+#, php-format
+msgid "IP-to-country database version : %s"
+msgstr "Versione del database IP-to-country: %s"
+
+# C:\WebDev\firestats/php/page-settings.php:30
+msgid "Automatically check if there is a new version of IP-to-country database"
+msgstr "Controlla automaticamente se è disponibile una nuova versione del database IP-to-country"
+
+# C:\WebDev\firestats/php/page-settings.php:32
+msgid "Update IP-to-country database now (only if needed)"
+msgstr "Aggiorna ora il database IP-to-country (solo se necessario)"
+
+# C:\WebDev\firestats/php/page-settings.php:34
+msgid "Update"
+msgstr "Aggiorna"
+
+# C:\WebDev\firestats/php/page-settings.php:54
+msgid "Exclude hits"
+msgstr "Escludi pagine visitate"
+
+# C:\WebDev\firestats/php/page-settings.php:69
+msgid "Save excluded records (not recommended)"
+msgstr "Salva i record esclusi (non raccomandato)"
+
+# C:\WebDev\firestats/php/page-settings.php:72
+msgid "Purge excluded records stored in the database"
+msgstr "Cancella i record esclusi salvati nel database"
+
+# C:\WebDev\firestats/php/page-settings.php:75
+msgid "Purge"
+msgstr "Cancella"
+
+# C:\WebDev\firestats/php/page-settings.php:85
+msgid "Bots list"
+msgstr "Lista Bots"
+
+# C:\WebDev\firestats/php/page-settings.php:90
+# C:\WebDev\firestats/php/page-settings.php:109
+msgid "Add"
+msgstr "Aggiungi"
+
+# C:\WebDev\firestats/php/page-settings.php:91
+# C:\WebDev\firestats/php/page-settings.php:110
+msgid "Remove"
+msgstr "Rimuovi"
+
+# C:\WebDev\firestats-trunk/php/page-settings.php:108
+msgid "Automatic update"
+msgstr "Aggiornamento automatico"
+
+# C:\WebDev\firestats/php/page-settings.php:34
+msgid "Update now"
+msgstr "Aggiorna ora"
+
+# C:\WebDev\firestats/php/ajax-handler.php:132
+# C:\WebDev\firestats/php/page-import.php:17
+# C:\WebDev\firestats/php/tabbed-pane.php:98
+msgid "Import"
+msgstr "Importa"
+
+# C:\WebDev\firestats/php/ajax-handler.php:132
+# C:\WebDev\firestats/php/page-import.php:17
+# C:\WebDev\firestats/php/tabbed-pane.php:98
+msgid "Export"
+msgstr "Esporta"
+
+# C:\WebDev\firestats/php/page-settings.php:104
+msgid "Excluded IPs"
+msgstr "IP esclusi"
+
+# C:\WebDev\firestats-trunk/php/page-settings.php:108
+msgid "Automatically"
+msgstr "Automaticamente"
+
+# c:\translations\firestats-1.3/firestats/php/page-settings.php:340
+msgid "Manually"
+msgstr "Manualmente"
+
+# c:\translations\firestats-1.3/firestats/php/page-settings.php:341
+msgid "Please select"
+msgstr "Per favore seleziona"
+
+# c:\translations\firestats-1.3/firestats/php/page-settings.php:358
+msgid "One month"
+msgstr "Un mese"
+
+# c:\webdev\firestats/php/donation-window.php:81
+msgid "Two months"
+msgstr "Due mesi"
+
+# c:\translations\firestats-1.3/firestats/php/page-settings.php:360
+msgid "Three months"
+msgstr "Tre mesi"
+
+# c:\translations\firestats-1.3/firestats/php/page-settings.php:361
+msgid "Half a year"
+msgstr "Sei mesi"
+
+# c:\translations\firestats-1.3/firestats/php/page-settings.php:362
+msgid "One year"
+msgstr "Un anno"
+
+# c:\translations\firestats-1.3/firestats/php/page-settings.php:363
+msgid "Two years"
+msgstr "Due anni"
+
+# C:\WebDev\firestats-trunk/firestats-wordpress.php:465
+msgid "Manage sites"
+msgstr "Amministra siti"
+
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:159
+msgid "Warning, you can really mess things up from here, be careful!"
+msgstr "Attenzione, puoi davvero incasinare le così da qui, fa attenzione!"
+
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:161
+msgid "FireStats can collect statistics from multiple sites (on the same server)."
+msgstr "FireStats può raccogliere statistiche da diversi siti (sullo stesso server)."
+
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:163
+msgid "The site need to be registered in the sites table"
+msgstr "Il sito deve essere registrato nella tabella siti"
+
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:164
+msgid "The site should be configured to use its ID when reporting a hit, click on the help button next to the site you created for more information"
+msgstr "Il sito dev'essere configurato per usare il proprio ID quando mostra una hit, clicca sul pulsante di aiuto accanto al sito che hai creato per maggiori informazioni"
+
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:167
+#, php-format
+msgid "Click %s for more information"
+msgstr "Clicca %s per maggiori informazioni"
+
+# C:\WebDev\firestats/js/firestats.js.php:55
+# C:\WebDev\firestats/js/firestats.js.php:106
+# C:\WebDev\firestats/php/page-stats.php:4
+msgid "Refresh statistics"
+msgstr "Aggiorna statistiche"
+
+# C:\WebDev\firestats/php/page-stats.php:17
+msgid "Auto refresh every"
+msgstr "Aggiorna automaticamente ogni"
+
+# C:\WebDev\firestats/php/page-stats.php:20
+msgid "minutes"
+msgstr "minuti"
+
+# c:\translations\firestats-1.2/firestats/php/page-stats.php:141
+# c:\translations\firestats-1.2/firestats/php/page-stats.php:174
+# c:\translations\firestats-1.2/firestats/php/page-stats.php:199
+# c:\translations\firestats-1.2/firestats/php/page-stats.php:266
+# c:\translations\firestats-1.2/firestats/php/page-stats.php:328
+msgid "Apply"
+msgstr "Applica"
+
+# C:\WebDev\firestats/php/page-stats.php:26
+msgid "Status"
+msgstr "Stato"
+
+# C:\WebDev\firestats-trunk/firestats-wordpress.php:466
+msgid "Visits"
+msgstr "visitatori"
+
+# C:\WebDev\firestats/php/page-stats.php:31
+msgid "Page views in last 24 hours"
+msgstr "Pagine visitate nelle ultime 24 ore"
+
+# C:\WebDev\firestats/php/page-stats.php:31
+msgid "Visits in last 24 hours"
+msgstr "Visitatori nelle ultime 24 ore"
+
+# C:\WebDev\firestats/php/page-stats.php:38
+msgid "Recent referrers"
+msgstr "Referrers recenti"
+
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:160
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:209
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:271
+#, php-format
+msgid "Show at most %s items for the last %s days, sorted by %s"
+msgstr "Mostra al massimo %s voci per gli ultimi %s giorni, ordinati per %s"
+
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:174
+msgid "Search terms"
+msgstr "Mostra termini"
+
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:181
+#, php-format
+msgid "Show at most %s search terms for %s"
+msgstr "Mostra al massimo %s termini di ricerca per %s"
+
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:188
+msgid "Start date:"
+msgstr "Data di inizio:"
+
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:189
+msgid "End date:"
+msgstr "Data di fine:"
+
+# C:\WebDev\firestats/php/page-stats.php:65
+msgid "Recent popular pages"
+msgstr "Pagine più visitate recenti"
+
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:160
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:209
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:271
+#, php-format
+msgid "Show at most %s items for the last %s days"
+msgstr "Mostra al massimo %s voci per gli ultimi %s giorni"
+
+# C:\WebDev\firestats/php/page-stats.php:92
+msgid "Browsers"
+msgstr "Browsers"
+
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:229
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:250
+#, php-format
+msgid "Show items for the last %s days"
+msgstr "Mostra voci degli ultimi %s giorni"
+
+# C:\WebDev\firestats/php/page-stats.php:115
+msgid "Operating systems"
+msgstr "Sistemi operativi"
+
+# C:\WebDev\firestats/php/page-stats.php:138
+msgid "Countries"
+msgstr "Paesi"
+
+# C:\WebDev\firestats/php/page-stats.php:165
+msgid "Hits table"
+msgstr "Tabella pagine visitate"
+
+# C:\WebDev\firestats/php/page-stats.php:169
+msgid "Number of hits to show"
+msgstr "Numero di pagine visitate da mostrare"
+
+# C:\WebDev\firestats/php/html-utils.php:141
+msgid "User agent"
+msgstr "User Agent"
+
+# c:\translations\firestats-1.2/firestats/php/page-stats.php:299
+msgid "Filter"
+msgstr "Filtra"
+
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:118
+# c:\translations\firestats-1.2/firestats/php/page-stats.php:323
+msgid "Clear"
+msgstr "Pulisci"
+
+# c:\translations\firestats-1.4/firestats/php/page-stats.php:362
+msgid "Newest first"
+msgstr "Prima i più nuovi"
+
+# c:\translations\firestats-1.4/firestats/php/page-stats.php:363
+msgid "Most hits first"
+msgstr "Prima i più visti"
+
+# C:\WebDev\firestats/php/page-stats.php:31
+msgid "the last 24 hours"
+msgstr "ultime 24 ore"
+
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:355
+msgid "the last week"
+msgstr "la scorsa settimana"
+
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:356
+msgid "the last month"
+msgstr "lo scorso mese"
+
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:357
+msgid "the three months"
+msgstr "gli ultimi tre mesi"
+
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:358
+msgid "the last six months"
+msgstr "gli ultimi sei mesi"
+
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:359
+msgid "the last year"
+msgstr "l'ultimo anno"
+
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:360
+msgid "all time"
+msgstr "da sempre"
+
+# c:\translations\firestats-1.3/firestats/php/page-stats.php:361
+msgid "time range"
+msgstr "intervallo temporale"
+
+# c:\translations\firestats-1.3/firestats/php/page-tools.php:49
+# c:\translations\firestats-1.3/firestats/php/tabbed-pane.php:95
+msgid "Tools"
+msgstr "Strumenti"
+
+# c:\translations\firestats-1.3/firestats/php/page-tools.php:50
+msgid "This section contains various tools"
+msgstr "Questa sezione contiene vari strumenti"
+
+# c:\translations\firestats-1.3/firestats/php/page-tools.php:55
+msgid "I agree to send system information"
+msgstr "Acconsento a inviare informazioni sul sistema"
+
+# c:\translations\firestats-1.3/firestats/php/page-tools.php:59
+msgid "Diagnostics"
+msgstr "Strumenti di diagnosi"
+
+# c:\translations\firestats-1.3/firestats/php/page-tools.php:60
+msgid "System diagnostics page"
+msgstr "Pagina per la diagnosi del sistema"
+
+# c:\translations\firestats-1.3/firestats/php/page-tools.php:60
+msgid "Open"
+msgstr "Apri"
+
+# c:\translations\firestats-1.3/firestats/php/page-tools.php:65
+msgid "PHP Version"
+msgstr "Versione PHP"
+
+# c:\translations\firestats-1.3/firestats/php/page-tools.php:68
+msgid "MySQL Version"
+msgstr "Versione MySQL"
+
+# c:\translations\firestats-1.3/firestats/php/page-tools.php:71
+msgid "Memory limit"
+msgstr "Limite di memoria"
+
+# C:\WebDev\firestats/php/page-database.php:115
+msgid "Database cache"
+msgstr "Cache del database"
+
+# c:\translations\firestats-1.3/firestats/php/page-tools.php:78
+msgid "The following section can recalculate different aspects of the database. you don't normally need to use it."
+msgstr "Questa sezione può ricalcolare differenti aspetti del database, normalmente non dovresti usarla."
+
+# c:\translations\firestats-1.3/firestats/php/page-tools.php:81
+msgid "Recalculate country codes"
+msgstr "Ricalcola i codici Paesi"
+
+# C:\WebDev\firestats/php/ajax-handler.php:498
+msgid "Rebuild database cache"
+msgstr "Ricostruisci la cache del database"
+
+# c:\translations\firestats-1.4/firestats/php/page-tools.php:50
+msgid "Recalculate search engine terms"
+msgstr "Ricalcola i termini del motore di ricerca"
+
+# C:\WebDev\firestats-trunk/firestats-wordpress.php:465
+msgid "Manage users"
+msgstr "Amministra utenti"
+
+# c:\translations\firestats-1.4/firestats/php/page-users.php:35
+msgid "You can manage users here"
+msgstr "Puoi amministrare gli utenti qui"
+
+# C:\WebDev\firestats/php/tabbed-pane.php:64
+msgid "Statistics widget"
+msgstr "Widget delle statistiche"
+
+# C:\WebDev\firestats-trunk/php/page-wordpress-settings.php:17
+#, php-format
+msgid "You can configure the sidebar widgets from %s"
+msgstr "Puoi configurare il widget della barra laterale da %s"
+
+# C:\WebDev\firestats-trunk/php/page-wordpress-settings.php:21
+#, php-format
+msgid "The statistics widget requires the %s plugin for optimal usage."
+msgstr "Il widget delle statistiche richiede il %s plugin per un utilizzo ottimale."
+
+# C:\WebDev\firestats-trunk/php/page-wordpress-settings.php:24
+msgid "Widgets"
+msgstr "Widgets"
+
+# C:\WebDev\firestats-trunk/php/page-wordpress-settings.php:26
+msgid "You can also manually add the following code to your theme sidebar:"
+msgstr "Puoi anche aggiungere manualmente il seguente codice al tema della barra laterale (sidebar):"
+
+# C:\WebDev\firestats-trunk/php/page-wordpress-settings.php:34
+msgid "Comments icons"
+msgstr "Icone commenti"
+
+# C:\WebDev\firestats-trunk/php/page-wordpress-settings.php:42
+msgid "Add flag icon to comments"
+msgstr "Aggiungi icona della bandiera ai commenti"
+
+# C:\WebDev\firestats-trunk/php/page-wordpress-settings.php:51
+msgid "Add browser and operating system icons to comments"
+msgstr "Aggiungi icone del browser e del sistema operativo ai commenti"
+
+# C:\WebDev\firestats-trunk/php/page-wordpress-settings.php:56
+msgid "Blog footer"
+msgstr "Pié di pagina del blog"
+
+# C:\WebDev\firestats-trunk/php/page-wordpress-settings.php:64
+msgid "Add FireStats footer to blog"
+msgstr "Aggiungi il pié di pagina di FireStats al blog"
+
+# C:\WebDev\firestats-trunk/php/page-wordpress-settings.php:73
+msgid "Show statistics in footer"
+msgstr "Mostra statistiche nel pié di pagina"
+
+# C:\WebDev\firestats/php/page-settings.php:125
+msgid "Excluded users"
+msgstr "Utenti esclusi"
+
+# c:\translations\firestats-1.4/firestats/php/page-wordpress-settings.php:103
+msgid "WordPress users selected here will not be counted in the statistics"
+msgstr "Gli utenti WordPress selezionati qui non saranno conteggiati nelle statistiche"
+
+# c:\translations\firestats-1.3/firestats/php/page-tools.php:65
+msgid "Permissions"
+msgstr "Permessi"
+
+# c:\translations\firestats-1.4/firestats/php/page-wordpress-settings.php:108
+msgid "Select the minimum user role that can access FireStats (Only administrators can manage FireStats)"
+msgstr "Seleziona il ruolo più basso che può accedere alle statistiche di FireStats (in ogni caso, solo gli amministratori possono amministrare FireStats)"
+
+# c:\translations\firestats-1.4/firestats/php/page-wordpress-settings.php:112
+# c:\translations\firestats-1.4/firestats/php/window-edit-user.php:12
+# c:\translations\firestats-1.4/firestats/php/window-new-user.php:7
+msgid "Administrator"
+msgstr "Amministratore"
+
+# c:\translations\firestats-1.4/firestats/php/page-wordpress-settings.php:113
+msgid "Editor"
+msgstr "Editor"
+
+# c:\translations\firestats-1.4/firestats/php/page-wordpress-settings.php:114
+msgid "Author"
+msgstr "Autore"
+
+# c:\translations\firestats-1.4/firestats/php/page-wordpress-settings.php:115
+msgid "Contributor"
+msgstr ""
+
+# c:\translations\firestats-1.4/firestats/php/page-wordpress-settings.php:116
+msgid "Subscriber"
+msgstr "Utente registrato"
+
+# c:\translations\firestats-1.2/firestats/php/page-wordpress-settings.php:128
+msgid "Advanced"
+msgstr "Avanzato"
+
+# c:\translations\firestats-1.2/firestats/php/page-wordpress-settings.php:129
+msgid "WordPress site ID, every hit From this blog is recorded with this as the source Site ID"
+msgstr "ID di sito Wordpress, ogni hit da questo blog è registrato con l'ID del sito sorgente"
+
+# c:\translations\firestats-1.2/firestats/php/page-wordpress-settings.php:130
+msgid "This should be the same ID as the Site ID in the sites table. you don't normally need to change this."
+msgstr "Questo dovrebbe essere lo stesso ID dell'ID del sito nella tabella siti. Normalmente non dovresti aver bisogno di modificarlo."
+
+# c:\translations\firestats-1.2/firestats/php/page-wordpress-settings.php:130
+msgid "This will update the titles of the blog posts inside FireStats, you don't normally need to use it"
+msgstr "Questo aggiornerà i titoli dei post del blog all'interno di FireStats, normalmente non dovresti aver bisogno di usare questo comando"
+
+# c:\translations\firestats-1.4/firestats/php/rebuild-db.php:15
+msgid "Recalculating matching bots"
+msgstr "Sto ricalcolando i bots che coincidono"
+
+# C:\WebDev\firestats/php/tabbed-pane.php:64
+msgid "Statistics"
+msgstr "Statistiche"
+
+# C:\WebDev\firestats/php/tabbed-pane.php:78
+msgid "Settings"
+msgstr "Impostazioni"
+
+# C:\WebDev\firestats-trunk/php/tabbed-pane.php:90
+msgid "WordPress settings"
+msgstr "Impostazioni di Wordpress"
+
+# C:\WebDev\firestats/php/tabbed-pane.php:93
+msgid "Database"
+msgstr "Database"
+
+# c:\translations\firestats-1.2/firestats/php/tabbed-pane.php:120
+msgid "Users management"
+msgstr "Amministrazione utenti"
+
+# c:\translations\firestats-1.2/firestats/php/tabbed-pane.php:120
+msgid "Sites management"
+msgstr "Amministrazione siti"
+
+# C:\WebDev\firestats/firestats-wordpress.php:80
+# C:\WebDev\firestats/index.php:22
+# C:\WebDev\firestats/index.php:45
+# C:\WebDev\firestats/php/footer.php:8
+msgid "FireStats tools"
+msgstr "Strumenti di FireStats"
+
+# c:\translations\firestats-1.4/firestats/php/tools-menu.php:3
+msgid "System test"
+msgstr "Test del sistema"
+
+# C:\WebDev\firestats/php/page-database.php:127
+msgid "Reset password"
+msgstr "Richiesta nuova password"
+
+# C:\WebDev\firestats/php/ip2country.php:112
+#, php-format
+msgid "Error getting version information from %s : %s"
+msgstr "Errore nella lettura delle informazioni sulla versione da %s: %s"
+
+# C:\WebDev\firestats/php/version-check.php:142
+msgid "A new version of the IP-to-country database is available! you can update it from the settings tab"
+msgstr "Una nuova versione del database IP-to-country è disponibile! Puoi aggiornarla dal tab impostazioni"
+
+# C:\WebDev\firestats/php/version-check.php:162
+#, php-format
+msgid "Version %s is available! click %s for more info"
+msgstr "La versione %s è disponibile! Clicca %s per ulteriori informazioni"
+
+# C:\WebDev\firestats/php/version-check.php:188
+#, php-format
+msgid "Error opening %s"
+msgstr "Errore nell'apertura di %s"
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:1157
+msgid "Yes (Recommended)"
+msgstr "Sì (consigliato)"
+
+# c:\translations\firestats-1.2/firestats/php/tabbed-pane.php:67
+msgid "No"
+msgstr "No"
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:1153
+msgid "Compacting old data"
+msgstr "Sto riducendo i vecchi dati"
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:1154
+msgid "FireStats can tranform old data to a more compact form,"
+msgstr "FireStats può trasformare i vecchi dati in una forma ridotta,"
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:1155
+msgid "This will reduce storage size and improve performance at the cost of losing some information which is not essential."
+msgstr "Questo ridurrà lo spazio su disco occupato e migliorerà le prestazioni, al solo costo della perdita di alcune informazioni non essenziali."
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:1156
+msgid "it is highly recommended that you allow FireStats to do this automatically."
+msgstr "E' altamente consigliato che tu permetti a FireStats di fare ciò automaticamente."
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:1160
+#, php-format
+msgid "Click %s if you would like FireStats to automatically compact data older than %s days"
+msgstr "Clicca %s se vuoi che FireStats riduca automaticamente i dati più vecchi di %s giorni"
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:1161
+#, php-format
+msgid "Click %s if you want to compact data manually or change compacting options (From the Settings tab)"
+msgstr "Clicca %s se vuoi ridurre i dati manualmente o modificare le opzioni di riduzione (dal tab Strumenti)"
+
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:91
+msgid "Delete site"
+msgstr "Cancella il sito"
+
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:133
+msgid "This will delete this site from the database, the operation is irreversible!"
+msgstr "Questo cancellerà il sito dal database, l'operazione è irreversibile!"
+
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:134
+msgid "What do you want to do with the site hits?"
+msgstr "Cosa vuoi fare con le hits del sito?"
+
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:137
+msgid "Delete all the hits"
+msgstr "Cancella tutte le hits"
+
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:138
+msgid "Transfer the hits to another site"
+msgstr "Trasferisci le hits a un altro sito"
+
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:141
+msgid "Enter an existing site ID to transfer the hits to"
+msgstr "Inserisci un ID di un sito esistente per trasferire le hits"
+
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:125
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:148
+msgid "Close"
+msgstr "Chiudi"
+
+# c:\translations\firestats-1.4/firestats/php/window-delete-user.php:9
+# c:\translations\firestats-1.4/firestats/php/window-edit-user.php:9
+msgid "No such user"
+msgstr "Nessun utente"
+
+# c:\translations\firestats-1.2/firestats/php/page-sites.php:91
+msgid "Delete user"
+msgstr "Cancella l'utente"
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:1093
+msgid "You can help by sending anonymous system information that will help make better decisions about new features."
+msgstr "Tu puoi aiutare inviando anonime informazioni sul sistema che ci aiuteranno a prendere decisioni migliori riguardo a nuove caratteristiche."
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:1097
+msgid "You can change this later from the Tools tab"
+msgstr "Puoi modificarlo più tardi dal tab Strumenti"
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:1117
+msgid "Do you agree to send anonymous system information?"
+msgstr "Consenti all'invio di anonime informazioni sul sistema?"
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:1114
+msgid "Sure, send system information"
+msgstr "Sicuro, invia le informazioni sul sistema"
+
+# c:\translations\firestats-1.3/firestats/php/html-utils.php:1115
+msgid "Nope, don't send"
+msgstr "No, non inviare"
+
+# c:\webdev\firestats/php/donation-window.php:42
+msgid "Even though FireStats is free, it takes a lot of time and hard work to develop and maintain."
+msgstr "Nonostante FireStats sia gratuito, mi richiede molto tempo e duro lavoro per lo sviluppo e l'aggiornamento del codice."
+
+# c:\webdev\firestats/php/donation-window.php:43
+msgid "If you like FireStats and would like to show your support for the hard work I put into it, You can make a small Donation. Even a $5 donation would be greatly appreciated."
+msgstr "Se apprezzi FireStats e desideri dimostrare il tuo sostegno per il lavoro che svolgo su di esso, puoi fare una piccola donazione. Anche una donazione di 5 $ sarà molto apprezzata."
+
+# c:\webdev\firestats/php/donation-window.php:47
+msgid "Yeah, I want to help"
+msgstr "Sì, voglio aiutare"
+
+# c:\webdev\firestats/php/donation-window.php:48
+msgid "Nah, go away"
+msgstr "No, vattene"
+
+# c:\webdev\firestats/php/donation-window.php:49
+msgid "Maybe later"
+msgstr "Forse più tardi"
+
+# c:\webdev\firestats/php/donation-window.php:50
+msgid "Already donated"
+msgstr "Ho già donato"
+
+# C:\WebDev\firestats/php/page-settings.php:125
+msgid "Edit user"
+msgstr "Modifica utente"
+
+# c:\translations\firestats-1.4/firestats/php/window-edit-user.php:27
+msgid "New password (Optional)"
+msgstr "Nuova password (opzionale)"
+
+# C:\WebDev\firestats/php/db-config-utils.php:43
+msgid "Verify new password"
+msgstr "Verifica nuova password"
+
+# c:\translations\firestats-1.4/firestats/php/window-new-edit-site.php:18
+msgid "Edit site"
+msgstr "Modifica sito"
+
+# c:\translations\firestats-1.2/firestats/php/html-utils.php:62
+msgid "Create a new site"
+msgstr "Aggiungi un nuovo sito"
+
+# C:\WebDev\firestats-trunk/firestats-wordpress.php:465
+msgid "Baseline page views"
+msgstr "pagine visitate (baseline)"
+
+# C:\WebDev\firestats/php/page-stats.php:30
+msgid "Baseline visitors"
+msgstr "Visitatori unici (baseline)"
+
+# C:\WebDev\firestats/php/page-database.php:200
+# C:\WebDev\firestats/php/page-database.php:221
+msgid "Create a new user"
+msgstr "Aggiungi un nuovo utente"
+
+# c:\translations\firestats-1.4/firestats/php/tools/emergency-manage-users.php:9
+msgid "Message"
+msgstr "Messaggio"
+
+# c:\translations\firestats-1.4/firestats/php/tools/emergency-manage-users.php:10
+msgid "This page will allow you to change the password of any user in FireStats."
+msgstr "Questa pagina ti permette di modificare la password di qualsiasi utente di FireStats."
+
+# c:\translations\firestats-1.4/firestats/php/tools/emergency-manage-users.php:11
+#, php-format
+msgid "For security reasons, you must first edit the file %s"
+msgstr "Per motivi di sicurezza, devi prima modificare il file %s"
+
+# c:\translations\firestats-1.2/firestats/php/help-window.php:199
+#, php-format
+msgid "and change the line %s to %s and then refresh this page."
+msgstr "e poi modifica la riga %s in modo che contengano %s, quindi aggiorna questa pagina."
+
+# c:\translations\firestats-1.4/firestats/php/tools/emergency-manage-users.php:13
+msgid "Don't forget to change it back when you are done."
+msgstr "Non scordare di modificarlo di nuovo quando hai finito."
+
+# c:\translations\firestats-1.4/firestats/php/tools/emergency-manage-users.php:18
+msgid "IMPORTANT"
+msgstr "IMPORTANTE"
+
+# c:\translations\firestats-1.4/firestats/php/tools/reset-password.php:18
+#, php-format
+msgid "You can request an password reset email from here. If it does not work or you don't know your username or email, you can also change your password using the %s"
+msgstr "Puoi chiedere una mail di cambio password da qui. Se questa procedura non funziona o non conosci il tuo nome utente o la tua email, puoi cambiare la password anche usando il %s"
+
+# c:\translations\firestats-1.4/firestats/php/tools/reset-password.php:18
+msgid "Emergency user management page"
+msgstr "Pagina di amministrazione utenti di emergenza"
+
+# c:\translations\firestats-1.4/firestats/php/tools/reset-password.php:28
+msgid "A user with this username and email was not found"
+msgstr "Un utente con questo nome utente e questa email non è stato trovato"
+
+# C:\WebDev\firestats/php/page-database.php:194
+msgid "FireStats password recovery"
+msgstr "Ripristina password di FireStats"
+
+# c:\translations\firestats-1.4/firestats/php/tools/reset-password.php:38
+#, php-format
+msgid "Click %s to change your FireStats password, this link will work for a short time"
+msgstr "Clicca %s per modificare la tua password di FireStats, questo link sarà valido per un breve periodo di tempo"
+
+# c:\translations\firestats-1.4/firestats/php/tools/reset-password.php:42
+msgid "Email sent"
+msgstr "Email inviata"
+
+# c:\translations\firestats-1.4/firestats/php/tools/reset-password.php:46
+msgid "Failed to send email"
+msgstr "Errore nell'invio della mail"
+
+# c:\translations\firestats-1.4/firestats/php/tools/reset-password.php:61
+#, php-format
+msgid "Failed, maybe too much time have passed since you generated the email? %s"
+msgstr "Procedura fallita, forse è passato troppo tempo da quando hai ricevuto il messaggio email? %s"
+
+# c:\translations\firestats-1.4/firestats/php/tools/reset-password.php:61
+msgid "try again"
+msgstr "prova di nuovo"
+
+# C:\WebDev\firestats/php/page-database.php:243
+# C:\WebDev\firestats/php/page-database.php:251
+msgid "New password"
+msgstr "Nuova password"
+
+# C:\WebDev\firestats/php/db-config-utils.php:43
+msgid "Change password"
+msgstr "Modifica password"
+
+# C:\WebDev\firestats/js/firestats.js.php:145
+msgid "Email address"
+msgstr "Indirizzo email"
+
+# c:\translations\firestats-1.4/firestats/php/tools/reset-password.php:118
+msgid "Send password reset email"
+msgstr "Invia messaggio email di cambio password"
+

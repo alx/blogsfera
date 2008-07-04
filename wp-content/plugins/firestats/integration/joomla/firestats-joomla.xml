@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="1.0.x" type="mambot" group="system">
+	<name>FireStats plugin</name>
+	<author>Omry Yadan</author>
+	<creationDate>2006/12/19</creationDate>
+	<copyright>Copyright (C) 2006 Omry Yadan, all rights reserved</copyright>
+	<license>http://firestats.cc/wiki/License</license>
+	<authorEmail>omry@yadan.net</authorEmail>
+	<authorUrl>blog.firestats.cc</authorUrl>
+	<version>1.0</version>
+	<description>FireStats integration plugin for Joomla.</description>
+	<files>
+		<filename mambot="firestats-joomla">firestats-joomla.php</filename>
+	</files>
+</mosinstall>
+

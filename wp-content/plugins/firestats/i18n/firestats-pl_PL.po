@@ -1,0 +1,2090 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FireStats\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2007-11-22 11:34+0100\n"
+"Last-Translator: Jakub Zwoliński <snowdog@o2.pl>\n"
+"Language-Team: SnowDog <snowdog@o2.pl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Polish(Polski)\n"
+"X-Poedit-Country: POLAND\n"
+"X-Poedit-KeywordsList: fs_r ;fs_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: F:\\PRACA\\materiały\\wordpress\\wtyczki\\Firestats\\firestats-1.4\n"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:305
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:720
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/footer.php:5
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/header.php:38
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:1097
+msgid "FireStats"
+msgstr "FireStats "
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:305
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tabbed-pane.php:94
+msgid "Loading..."
+msgstr "Ładowanie..."
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:324
+#, php-format
+msgid "Total : %s page views and %s visits"
+msgstr "Łącznie: %s obejrzanych stron i %s gości"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:325
+#, php-format
+msgid "Last 24 hours : %s page views and %s visits"
+msgstr "Ostatnie 24 godziny: %s obejrzanych stron i %s wizyt(y)"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/firestats-wordpress.php:195
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:472
+msgid "You are not authorized to access FireStats"
+msgstr "Nie masz uprawnień dostępu do FireStats"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:743
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:850
+msgid "Title:"
+msgstr "Tytuł:"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:748
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:864
+msgid "Hide FireStats logo"
+msgstr "Ukryj logo FireStats "
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:816
+msgid "Popular posts"
+msgstr "Popularne wpisy"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:854
+msgid "Number to show"
+msgstr "Liczba do pokazania"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:858
+msgid "Days ago (Empty for all time)"
+msgstr "Dni temu (puste dla całego czasu)"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/firestats-wordpress.php:415
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:931
+msgid "Pages displayed : "
+msgstr "Wyświetlone strony:"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:932
+msgid "Unique visitors : "
+msgstr "Goście łącznie:"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:933
+msgid "Pages displayed in last 24 hours : "
+msgstr "Wyświetlone strony w trakcie ostatnich 24 godzin:"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:934
+msgid "Unique visitors in last 24 hours : "
+msgstr "Goście w trakcie ostatnich 24 godzin:"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/firestats-wordpress.php:469
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:985
+msgid "pages viewed"
+msgstr "obejrzane strony"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/firestats-wordpress.php:469
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/firestats-wordpress.php:470
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:985
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:986
+msgid "today"
+msgstr "dzisiaj"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/firestats-wordpress.php:470
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:986
+msgid "visits"
+msgstr "wizyty"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/firestats-wordpress.php:995
+msgid "Powered by FireStats"
+msgstr "Działa dzięki FireStats "
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/index.php:15
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:753
+msgid "Error"
+msgstr "Błąd"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/index.php:15
+msgid "Access denied"
+msgstr "Dostęp wzbroniony"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/login.php:10
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/login.php:25
+msgid "Login"
+msgstr "Login"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/login.php:13
+msgid "Username"
+msgstr "Nazwa użytkownika"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/login.php:17
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-add-admin.php:37
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-user.php:22
+msgid "Password"
+msgstr "Hasło"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/login.php:24
+msgid "Remember me for the next 14 days"
+msgstr "Pamiętaj mnie przez kolejne 14 dni"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/login.php:30
+#, php-format
+msgid "Forgot your password? click %s."
+msgstr "Zapomniane hasło? Kliknij %s."
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/login.php:30
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-sites.php:33
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:28
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:36
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:40
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/version-check.php:148
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:38
+msgid "here"
+msgstr "tutaj"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/firestats.js.php:50
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/firestats.js.php:97
+msgid "Stop"
+msgstr "Stop"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/firestats.js.php:51
+#, fuzzy
+msgid "Compacting..."
+msgstr "Ładowanie..."
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/firestats.js.php:63
+msgid "Stopping..."
+msgstr "Zatrzymywanie..."
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/firestats.js.php:74
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:70
+#, fuzzy
+msgid "Compact now"
+msgstr "Aktualizuj teraz"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/firestats.js.php:119
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/firestats.js.php:139
+msgid "Abort"
+msgstr "Przerwij"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/firestats.js.php:134
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/firestats.js.php:146
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/firestats.js.php:154
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-tools.php:41
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-tools.php:46
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-tools.php:51
+msgid "Start"
+msgstr "Start"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-wordpress-settings.php:128
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/firestats.js.php:135
+msgid "Canceled"
+msgstr "Anulowane"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/firestats.js.php:368
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:66
+msgid "Not a positive number : "
+msgstr "To nie jest dodatnia liczba:"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/js/firestats.js.php:525
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/firestats.js.php:744
+msgid "Session expired, press ok to reload"
+msgstr "Sesja wygasła, naciśnik OK aby przeładować"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/page-database.js.php:66
+msgid "Upgrading, do not interrupt"
+msgstr "Aktualizacja, nie przerywaj."
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/page-database.js.php:73
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:60
+msgid "Upgrade"
+msgstr "Aktualizacja"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/page-settings.js.php:19
+msgid "You need to select an bot you want to remove from the table"
+msgstr "Musisz zaznaczyć bota, którego chcesz usunąć z tabeli wyników"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/page-settings.js.php:40
+msgid "Invalid IP address"
+msgstr "Błędny adres IP"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/page-settings.js.php:49
+msgid "You need to select an IP address you want to remove from the table"
+msgstr "Musisz zaznaczyć adres IP, który chcesz usunąć z tabeli wyników"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-settings.php:115
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/page-sites.js.php:27
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/page-sites.js.php:29
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/page-sites.js.php:47
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/page-sites.js.php:49
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-edit-site.php:23
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-edit-site.php:24
+msgid "Automatic"
+msgstr "Automatyczne"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-sites.php:91
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/page-sites.js.php:93
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-delete-site.php:30
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-delete-user.php:19
+msgid "Delete"
+msgstr "Usuń"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-sites.php:91
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/js/page-sites.js.php:93
+msgid "Transfer"
+msgstr "Transfer"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/lib/ezsql/mysql/ez_sql_mysql.php:41
+msgid "User name and password are required to connect to database"
+msgstr "Nazwa użytkownika i hasło są niezbędne do połaczenia z bazą danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/lib/ezsql/mysql/ez_sql_mysql.php:42
+msgid "Error establishing mySQL database connection"
+msgstr "Bład podczas tworzenia połaczenia z bazą danych mySQL"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/lib/ezsql/mysql/ez_sql_mysql.php:43
+msgid "Database name is required to connect to database"
+msgstr "Nazwa bazy danych jest niezbędna do połączenia"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/lib/ezsql/mysql/ez_sql_mysql.php:44
+msgid "mySQL database connection is not active"
+msgstr "Połączenia z bazą danych mySQL nie jest aktywne"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/lib/ezsql/mysql/ez_sql_mysql.php:45
+msgid "Unexpected error while querying database"
+msgstr "Niespodziewany błąd podczas wysyłania zapytania do bazy danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/lib/ezsql/mysql/ez_sql_mysql.php:122
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/lib/ezsql/mysql/ez_sql_mysql.php:133
+#, php-format
+msgid "Can't disconnect: %s"
+msgstr "Nie można rozłączyć: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/lib/ezsql/mysql/ez_sql_mysql.php:133
+msgid "Not connected"
+msgstr "Nie połączony"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:193
+#, php-format
+msgid "Unsupported action code : %s"
+msgstr "Kod nieobsługiwanej akcji: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:202
+#, php-format
+msgid "Unexpexted output: %s"
+msgstr "Nieoczekiwany wynik: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:229
+#, php-format
+msgid "Added %s to exclude list"
+msgstr "Dodano %s do listy wykluczeń"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:245
+#, php-format
+msgid "Removed %s from exclude list"
+msgstr "Usunięto %s z listy wykluczeń"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:354
+msgid "Excluded users list saved"
+msgstr "Lista wyłączeń została zapisana"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:371
+#, php-format
+msgid "Added %s to bots list"
+msgstr "Dodano %s do listy botów"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:382
+msgid "Empty string is not allowed"
+msgstr "Pusty łańcuch znaków jest niedozwolony"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:392
+msgid "Removed"
+msgstr "Usunięto"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:444
+msgid "Not using configuration file"
+msgstr "Plik konfiguracyjnu nie jest użyty"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:450
+msgid "Not installed inside Wordpress"
+msgstr "Nie zainstalowano wewnątrz WordPress"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:460
+#, php-format
+msgid "Failed to delete fs-config.php : %s"
+msgstr "Nie udało się usunąć fs-config.php: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:480
+msgid "Error creating config file: "
+msgstr "Wystąpił bląd podczas tworzenia pliku konfiguracyjnego:"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:504
+msgid "Error upgrading tables"
+msgstr "Wystąpił bląd podczas uaktualniania tabel:"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:530
+msgid "Error installing tables"
+msgstr "Wystąpił bląd podczas instalacji tabel:"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:609
+msgid "Error rebuilding database cache"
+msgstr "Wystąpił bląd podczas przebudowywania pamieci  podręcznej bazy danych:"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:613
+msgid "Database cache rebuilt successfully"
+msgstr "Pamięć podręczna bazy danych została przebudowana"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:692
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:72
+#, php-format
+msgid "%s days can be compacted, database size %s"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:695
+#, php-format
+msgid "Unkown field: %s"
+msgstr "Nieznane pole: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:731
+msgid "IP-to-country database is already up-to-date"
+msgstr "Baza danych IP-to-country jest już zaktualizowana"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:738
+msgid "An error has occured while trying to update the IP-to-country database"
+msgstr "Wystąpił błąd podczas próby uaktualnienia bazy danych IP-to-country"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:742
+msgid "file"
+msgstr "plik"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:744
+#, php-format
+msgid "You can update the database manually by downloading this %s and extracting it into %s"
+msgstr "Możesz zaktualizować bazę ręcznie przez pobranie tego %s i rozpakowanie go w %s"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/ajax-handler.php:734
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:749
+msgid "this"
+msgstr "to"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:751
+#, php-format
+msgid "You can update the database manually by opening %s and downloading the <b>zip_url</b>, and extracting it into %s"
+msgstr "Możesz zaktualizować bazę ręcznie przez otwarcie %s, ściągnięcie <b>zip_url</b> i rozpakowanie go w %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:777
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:795
+#, php-format
+msgid "Error updating bots list: %s"
+msgstr "Błąd podczas aktualizacji listy botów: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:789
+msgid "Successfully updated bots list"
+msgstr "Lista botów została zaktualizowana"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:808
+#, php-format
+msgid "Error purging excluded records: %s"
+msgstr "Wystąpił błąd podczas opróżniania wykluczonych zapisów: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:812
+msgid "Purged excluded records"
+msgstr "Wykluczone zapisy opróżnione"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:896
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-common.php:134
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-config-utils.php:23
+msgid "Error connecting to database"
+msgstr "Błąd połączenia z bazą danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:979
+#, php-format
+msgid "Compacting %s days, %s done, database size is %s"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:1054
+#, php-format
+msgid "%d of %d"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:1066
+#, php-format
+msgid "Done, took %s second"
+msgstr "Zrobione, zajęło to %s sekund"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:1189
+msgid "Incorrect user-name or password"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:1210
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:1245
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:1266
+msgid "User name not specified"
+msgstr "Nazwa użytkownika nie jest sprecyzowana"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:1211
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:1246
+msgid "Email not specified"
+msgstr "E-mail nie jest sprecyzowany"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:1212
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-config-utils.php:41
+msgid "Password not specified"
+msgstr "Hasło nie jest wybrane"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:1213
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:1249
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:1267
+msgid "Passwords did not match"
+msgstr "Hasła nie pasują"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ajax-handler.php:1268
+msgid "Empty password"
+msgstr "Puste hasło"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/auth.php:86
+#, php-format
+msgid "Error connecting to database (%s)"
+msgstr "Błąd połączenia z bazą danych (%s)"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/auth.php:189
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/auth.php:218
+msgid "Invalid email address"
+msgstr "Błędny adres e-mail"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/db-sql.php:39
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/db-sql.php:73
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/auth.php:199
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/auth.php:228
+#, fuzzy
+msgid "A user with this name already exists"
+msgstr "Strona z ID %s już istnieje"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/db-sql.php:39
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/db-sql.php:73
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/auth.php:203
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/auth.php:232
+#, fuzzy
+msgid "A user with this email address already exists"
+msgstr "Strona z ID %s już istnieje"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-common.php:116
+msgid "FireStats is properly installed in the database"
+msgstr "FireStats nie jest poprawnie zainstalowany w bazie danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-common.php:119
+msgid "FireStats is not configured"
+msgstr "FireStats nie jest skonfigurowany"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-common.php:122
+msgid "Database error, check your configuration"
+msgstr "Błąd bazy danych, sprawdź swoją konfigurację"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-common.php:125
+msgid "FireStats is not installed in the database"
+msgstr "FireStats nie jest poprawnie zainstalowany w bazie danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-common.php:128
+msgid "FireStats database need to be upgraded"
+msgstr "Baza danych FireStats musi zostać zaktualizowana"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-common.php:131
+#, fuzzy
+msgid "The FireStats database version is newer than this code version, you need to upgrade FireStats"
+msgstr "Baza danych FireStats jest nowsza niż wersja kodu, musisz zaktualizować FireStats"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-common.php:137
+msgid "Unknown database status code"
+msgstr "Nierozpozany kod statusu bazy danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-common.php:544
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-hit.php:350
+#, php-format
+msgid "Database error: %s"
+msgstr "Błąd bazy danych: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-config-utils.php:20
+msgid "Error accessing database"
+msgstr "Błąd dostępu do bazy danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-config-utils.php:26
+msgid "Cannot write configuration file (read only file or directory)"
+msgstr "Nie można zapisać pliku kofiguracyjnego (plik lub katalog jest tylko do odczytu)"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-config-utils.php:29
+msgid "Error creating database"
+msgstr "Błąd podczas tworzenia bazy danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-config-utils.php:32
+msgid "Error creating user"
+msgstr "Błąd podczas tworzenia użytkownika"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-config-utils.php:35
+msgid "Error creating tables"
+msgstr "Bład podczas tworzenia tabeli"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-config-utils.php:38
+msgid "Error saving configuration"
+msgstr "Bład podczas zapisu konfiguracji"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-config-utils.php:44
+msgid "Wrong password"
+msgstr "Błędne hasło"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-config-utils.php:54
+msgid "FireStats tables are not installed"
+msgstr "Tabele FireStats nie są zainstalowane"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-config-utils.php:59
+msgid "FireStats is installed"
+msgstr "FireStats jest zainstalowany"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-config-utils.php:64
+msgid "Another FireStats database detected"
+msgstr "Inna baza danych FireStats została wykryta"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-config-utils.php:69
+msgid "New database created successfuly"
+msgstr "Nowa baza danych została utworzona"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-config-utils.php:72
+#, php-format
+msgid "Unexpected error code %s"
+msgstr "Nieoczekiwany błąd kodu %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-config-utils.php:281
+msgid "Not configured"
+msgstr "Nie skonfigurowane"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-config-utils.php:284
+msgid "FireStats configuration file"
+msgstr "Plik konfiguracyjny FireStats"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-config-utils.php:287
+msgid "Wordpress configuration file"
+msgstr "Plik konfiguracyjny WordPress"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-setup.php:17
+#, fuzzy
+msgid "Operation already in progress"
+msgstr "Trwa import"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:39
+msgid "Data compacting is already in progress"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:59
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:77
+msgid "MySQL 4.1.14 or newer is required for data compacting support"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:259
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:297
+msgid "Site name not specified"
+msgstr "Nazwa strony nie ustawiona"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:271
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:301
+msgid "Site ID must be a positive number"
+msgstr "ID strony msi być liczną dodatnią"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/db-sql.php:39
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/db-sql.php:73
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:274
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:320
+#, php-format
+msgid "A site with the ID %s already exists"
+msgstr "Strona z ID %s już istnieje"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/db-sql.php:64
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/db-sql.php:115
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/db-sql.php:131
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:308
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:378
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:425
+#, php-format
+msgid "No site with the id %s exists"
+msgstr "Żadna strona z ID %s nie istnieje"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:410
+msgid "New site_id must not be empty"
+msgstr ""
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-sites.php:138
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:416
+#, fuzzy
+msgid "Can't move the hits to the same site"
+msgstr "Transferuj wizyty do innej strony"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:508
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:548
+#, php-format
+msgid "Invalid IP address: %s"
+msgstr "Błędny adres IP: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:521
+#, php-format
+msgid "The IP address %s is already in the database"
+msgstr "Adres IP %s jest już w bazie danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:583
+#, php-format
+msgid "The bot wildcard %s is already in the database"
+msgstr "Bot %s jest już w bazie danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:1087
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:1133
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:167
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:305
+msgid "Unknown"
+msgstr "Nieznany"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/db-sql.php:1500
+#, php-format
+msgid "Error opening file : %s"
+msgstr "Bład podczas otwierania pliku: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/export-bots-list.php:21
+msgid "Error exporting bots list"
+msgstr "Bład podczas eksportu listy botów"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/footer.php:3
+#, php-format
+msgid "If you have any problems or questions, please visit the %s"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/footer.php:3
+msgid "FireStats homepage"
+msgstr "Strona domowa FireStats"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/header.php:19
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-donation.php:7
+msgid "Support FireStats"
+msgstr "Wspomagaj FireStats "
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/header.php:28
+msgid "Log out"
+msgstr "Wylogowanie"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/header.php:40
+msgid "Demo"
+msgstr "Demo"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/header.php:54
+msgid "Hide"
+msgstr "Ukryj"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/help-window.php:34
+msgid "Unknown site type"
+msgstr "Nieznany typ strony"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/help-window.php:80
+msgid "Collect hits from PHP pages"
+msgstr "Zbierz liczbę odświeżeń ze stron PHP"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/help-window.php:81
+msgid "To allow FireStats to track access to your pages, you need to add the following line inside the head tag of each of the pages you want to monitor (the page must be a php page)."
+msgstr "Aby umożliwić FireStats śledzenie ruchu na Twoich stronach, musisz dodać następującą linie wewnątrz nagłówka każdej strony, którą zamierzasz monitorować (to musi być strona PHP)."
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/help-window.php:87
+msgid "A typical page header will look like this:"
+msgstr "Typowy nagłówek strony wygląda nastepująco:"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/tabbed-pane.php:90
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/help-window.php:104
+msgid "WordPress"
+msgstr "WordPress"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/help-window.php:102
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/help-window.php:105
+msgid "The WordPress plugin registers itself automatically when it's activated"
+msgstr "Wtyczka WordPress automatycznie się zarejestruje w momencie aktywacji"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/help-window.php:108
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/help-window.php:116
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/help-window.php:131
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/help-window.php:137
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/help-window.php:149
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/help-window.php:111
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/help-window.php:119
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/help-window.php:139
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/help-window.php:145
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/help-window.php:157
+msgid "plugin"
+msgstr "wtyczka"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/help-window.php:124
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/help-window.php:127
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/help-window.php:133
+msgid "module"
+msgstr "moduł"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/help-window.php:176
+#, php-format
+msgid "Collect hits from a %s site"
+msgstr "Zbiera liczbę odwiedzin ze strony %s"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/help-window.php:189
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/help-window.php:197
+#, php-format
+msgid "and then configure it in the administration menu with the path %s and the ID %s"
+msgstr "and then configure it in the administration menu with the path %s and the ID %s"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/help-window.php:199
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/help-window.php:207
+#, php-format
+msgid "and then edit the lines in %s to contain this:"
+msgstr "and then edit the lines in %s to contain this:"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/help-window.php:206
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/help-window.php:214
+#, php-format
+msgid "To collect statistics from your %s site your need to install the %s"
+msgstr "To collect statistics from your %s site your need to install the %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:8
+#, fuzzy
+msgid "Link here"
+msgstr "tutaj"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/html-utils.php:31
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-sites.php:122
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:134
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:197
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-edit-site.php:32
+msgid "Name"
+msgstr "Nazwa"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:135
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-add-admin.php:33
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-edit-user.php:23
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-user.php:18
+msgid "Email"
+msgstr "E-mail"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:136
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-edit-user.php:35
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-user.php:30
+msgid "Security level"
+msgstr "Poziom bezpieczeństwa"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:158
+msgid "Admin"
+msgstr "Admin"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:163
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-edit-user.php:13
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-user.php:8
+msgid "User"
+msgstr "Użytkownik"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/html-utils.php:62
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:183
+msgid "Add a new user"
+msgstr "Dodaj nowego użytkownika"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/html-utils.php:30
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-sites.php:110
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:196
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-edit-site.php:21
+msgid "ID"
+msgstr "ID"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/html-utils.php:32
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-sites.php:123
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:198
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-edit-site.php:36
+msgid "Type"
+msgstr "Typ"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-stats.php:29
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:199
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:149
+msgid "Page views"
+msgstr "Obejrzane strony"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/html-utils.php:47
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:216
+msgid "How to integrate with this site"
+msgstr "How to integrate with this site"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/html-utils.php:73
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:239
+msgid "Orphaned hits"
+msgstr "Odwiedziny z nieznanego IP"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/html-utils.php:62
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:251
+msgid "Add a new site"
+msgstr "Dodaj nową stronę"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/html-utils.php:97
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:287
+msgid "Generic PHP site"
+msgstr "Strona PHP"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/html-utils.php:99
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:289
+msgid "Wordpress"
+msgstr "WordPress"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/html-utils.php:101
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:291
+msgid "Django"
+msgstr "Django"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/html-utils.php:103
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:293
+msgid "Drupal"
+msgstr "Drupal"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/html-utils.php:105
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:295
+msgid "Gregarius"
+msgstr "Gregarius"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/html-utils.php:107
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:297
+msgid "Joomla"
+msgstr "Joomla"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/html-utils.php:109
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:299
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/html-utils.php:111
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:301
+msgid "Trac"
+msgstr "Trac"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:303
+msgid "Gallery2"
+msgstr "Gallery2"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:396
+msgid "Invalid"
+msgstr "Błędny"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/html-utils.php:211
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:408
+msgid "All"
+msgstr "Wszystkie"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-wordpress-settings.php:73
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:409
+msgid "Show statistics from"
+msgstr "Pokaż statystyki z "
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:437
+msgid "unknown"
+msgstr "nieznany"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:508
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:310
+msgid "IP"
+msgstr "IP"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:509
+msgid "TimeStamp"
+msgstr "Znacznik czasowy"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:510
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:311
+msgid "URL"
+msgstr "URL"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:511
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:312
+msgid "Referrer"
+msgstr "Referer "
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:512
+msgid "Image"
+msgstr "W skrócie"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:513
+msgid "UserAgent"
+msgstr "Klient użytkownika"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:534
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:598
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:783
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:875
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:908
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:953
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:1030
+msgid "No data yet, go get some hits"
+msgstr "Na razie brak danych, zaproś na stronę gości :)"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:659
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:682
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:707
+msgid "Empty"
+msgstr "Pusty"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:812
+msgid "Start date is missing"
+msgstr "Brakuje początkowej daty"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:817
+msgid "End date is missing"
+msgstr "Brakuje końcowej daty"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:837
+msgid "Please wait..."
+msgstr "Proszę czekać..."
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:927
+#, php-format
+msgid "%d hits from %s"
+msgstr "odwiedzone strony: %d od %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:1014
+msgid "Others"
+msgstr "Inne"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:1057
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-do-you-agree-to-send-sysinfo.php:8
+msgid "System information"
+msgstr "Informacje o systemie"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:1058
+msgid "You can help by sending anonymous system information that will help make better decisions about new features"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/html-utils.php:1059
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-do-you-agree-to-send-sysinfo.php:11
+msgid "The information will be sent anonymously, but a unique identifier will be sent to prevent duplicate entries from the same FireStats"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/import-bots-list.php:15
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/import-bots-list.php:23
+msgid "Import bots list"
+msgstr "Importuj listę botów"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/import-bots-list.php:18
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/import-bots-list.php:34
+msgid "Select bot-list file"
+msgstr "Wybierz plik z listą botów"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/import-bots-list.php:35
+msgid "Import type"
+msgstr "Typ importu"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/import-bots-list.php:37
+msgid "Add to bots list"
+msgstr "Dodaj do listy botów"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/import-bots-list.php:38
+msgid "Replace bots list"
+msgstr "Wymień listę botów"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/import-bots-list.php:31
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/import-bots-list.php:40
+msgid "Send File"
+msgstr "Wyślij plik"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/import-bots-list.php:34
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/import-bots-list.php:56
+msgid "Incorrect file format"
+msgstr "Błędny format pliku"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/import-bots-list.php:68
+#, php-format
+msgid "Error importing bots list : %s"
+msgstr "Błąd podczas importu listy botów: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/import-bots-list.php:73
+msgid "bots list imported successfully"
+msgstr "lista botów zaimportowana pomyślnie"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ip2country.php:116
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ip2country.php:120
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ip2country.php:250
+msgid "Error creating temporary file"
+msgstr "Błąd podczas tworzenia pliku tymczasowego"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ip2country.php:128
+#, php-format
+msgid "Error opening connection to %s"
+msgstr "Błąd podczas otwierania połączenia do %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ip2country.php:133
+#, php-format
+msgid "Error sending request to %s"
+msgstr "Błąd podczas wysyłania zapytania do %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ip2country.php:139
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/utils.php:305
+#, php-format
+msgid "Server returned error %s for %s"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ip2country.php:153
+#, php-format
+msgid "Error reading data from %s : %s"
+msgstr "Błąd podczas czytania danych z %s: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ip2country.php:182
+#, php-format
+msgid "Error extracting IP-to-country database: %s"
+msgstr "Błąd podczas czytania bazy danych IP-to-country: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ip2country.php:187
+#, php-format
+msgid "Unsupported file type : %s"
+msgstr "Nieobsługiwany typ pliku: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ip2country.php:207
+#, php-format
+msgid "can't update ip-to-country database, read-only directory : %s"
+msgstr "nie można zaktualizowac bazy danych IP-to-country, katalog tylko do odczytu: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ip2country.php:209
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ip2country.php:211
+#, php-format
+msgid "can't update ip-to-country database, read-only file : %s"
+msgstr "nie można zaktualizowac bazy danych IP-to-country, plik tylko do odczytu: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ip2country.php:226
+msgid "Error installing new IP-to-country database"
+msgstr "Błąd podczas instalacji nowej bazy danych IP-to-country "
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ip2country.php:232
+msgid "Successfuly updated IP-to-country database"
+msgstr "Baza danych IP-to-country została zaktualizowana"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/ip2country.php:236
+#, php-format
+msgid "Error updating version file : %s"
+msgstr "Błąd podczas aktualizacji pliku wersji: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-add-admin.php:22
+msgid "Create administrator user"
+msgstr "Utwórz administratora"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-add-admin.php:24
+msgid "You need to create an administrator user for FireStats."
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-add-admin.php:25
+msgid "The administrator has full control over FireStats, and will be able to create other users/administrators from the administration interface"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-add-admin.php:29
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-edit-user.php:19
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-user.php:14
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:80
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:108
+msgid "User name"
+msgstr "Nazwa użytkownika"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-add-admin.php:41
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-user.php:26
+msgid "Verify password"
+msgstr "Potwierdź hasło"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-add-admin.php:45
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-user.php:35
+msgid "Create user"
+msgstr "Utwórz użytkownika"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:51
+msgid "Database status"
+msgstr "Status bazy danych"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-database.php:138
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:59
+msgid "Click to upgrade"
+msgstr "Kliknij żeby aktualizować"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:83
+#, php-format
+msgid "Configuration source : %s"
+msgstr "Źródło konfiguracji: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:89
+msgid "To use wordpress database, click this button."
+msgstr "Użyj ten przycisk aby skorzystać z bazy danych WordPress."
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:90
+msgid "FireStats database configuration will be lost."
+msgstr "Konfiguracja bazy danych FireStats zostanie utracona."
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:91
+msgid "Use Wordpress database"
+msgstr "Użyj bazy danych  Wordpress"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:102
+msgid "To perform one of the following actions:"
+msgstr "Aby przeprowadzić którąś z następujących czynności:"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:104
+msgid "Attach to an existing FireStats installation"
+msgstr "Przyłacz do istniejącej instalacji FireStats"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:105
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:223
+msgid "Install FireStats into an existing database"
+msgstr "Instaluj FireStats w istniejącej bazie danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:106
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:226
+msgid "Create a new database and install FireStats there"
+msgstr "Utwórz nową bazę danych i zainstaluj FireStats"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:108
+msgid "Follow instructions in the help"
+msgstr "Postępuj według instrukcji z pomocy"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:116
+msgid "Database host"
+msgstr "Adres bazy danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:122
+msgid "Database name"
+msgstr "Nazwa bazy danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:128
+msgid "Database user name"
+msgstr "Użytkownik bazy danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:134
+msgid "Database password"
+msgstr "Hasło bazy danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:140
+msgid "Tables prefix"
+msgstr "Prefiks tabeli"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:149
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:221
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:224
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:227
+msgid "Test connection"
+msgstr "Test połączenia"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:159
+msgid "Click to install and switch to new FireStats tables"
+msgstr "Kliknik aby zainstalować i przełaczyć się do nowych tabel FireStats"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:162
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:224
+msgid "Install tables"
+msgstr "Zainstaluj tabele"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:171
+msgid "Click to use this FireStats database"
+msgstr "Kliknij aby użyć tę baze danych FireStats"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:175
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:221
+msgid "Use this database"
+msgstr "Użyj tę bazę danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:187
+msgid "To create a new database, an administrator user should be used in the above fields."
+msgstr "Aby utworzyć nową bazę danych w powyższych polach powinien się znaleźć użytkownik o prawach administratora."
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:188
+#, fuzzy
+msgid "However, For security reason, it is recommended not to use a database administrator user for day to day operations."
+msgstr "Jakkolwiek, z powodów bezpieczeństwa, nie jest zalecane używanie użytkownika o prawach administratora w codziennych czynnościach."
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:189
+msgid "Enter new user name and password for FireStats, this user will only have access to the FireStats database"
+msgstr "Wpisz nową nazwę użytkownika i hasło dla FireStats, ten użytkownik będzie miał dostęp tylko do bazy danych FireStats"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:190
+msgid "If you will not specify user and password the Admin user and password will be used."
+msgstr "Jeśli nie sprecyzujesz nazwy użytkownika i hasła, użytkownik Admin i jego hasło zostaną użyte."
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:197
+msgid "FireStats User name"
+msgstr "Nazwa użytkownika FireStats"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:201
+msgid "FireStats password"
+msgstr "Hasło FireStats"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:207
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:227
+msgid "Create database"
+msgstr "Utwórz bazę danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:219
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-sites.php:23
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-users.php:34
+msgid "Help"
+msgstr "Pomoc"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:220
+msgid "Attach to an existing FireStats database"
+msgstr "Przyłącz do istniejącej bazy danych FireStats"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:221
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:224
+#, php-format
+msgid "Enter the parameters in the table, press %s, and then %s."
+msgstr "Wpisz parametry w tabeli, naciśnij %s, następnie %s."
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-database.php:227
+#, php-format
+msgid "Enter the parameters into the table, <u>you need to enter a database administrator user</u>. press %s, and then enter FireStats database user and password, and finally press %s."
+msgstr "Wpisz parametry w tabeli, <u>musisz wpisać użytkownika z prawami administratora bazy danych</u>. Naciśnij %s, następnie wpisz użytkownika i hasło FireStats, następnie wciśnij %s."
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-settings.php:113
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:12
+msgid "Options"
+msgstr "Opcje"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:13
+msgid "Select language"
+msgstr "Wybierz język"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:19
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:30
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:46
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:301
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:131
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-edit-site.php:49
+msgid "Save"
+msgstr "Zapisz"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:21
+msgid "How to translate to a new language"
+msgstr "Jak przetłumaczyć na nowy język"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-settings.php:52
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:26
+msgid "Select your time zone"
+msgstr "Wybierz swoją strefę czasową"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-settings.php:67
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:36
+#, php-format
+msgid "Time zone selection requires %s or newer"
+msgstr "Wybór strefy czasowej wymaga %s (lub nowszy)"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-settings.php:142
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:40
+msgid "Select WHOIS provider"
+msgstr "Wybierz usługodawcę WHOIS"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:56
+msgid "Compact old data"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:67
+#, php-format
+msgid "%s compact data older than %s"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:84
+msgid "Automatic version check"
+msgstr "Automatyczna kontrola wersji"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:86
+msgid "Automatically check if there is a new version of FireStats (recommended)"
+msgstr "Sprawdzaj automatycznie czy istnieje nowsza wersja FireStats (zalecane)"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:93
+msgid "IP-to-country database"
+msgstr "Baza danych IP-to-country"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:95
+#, php-format
+msgid "IP-to-country database version : %s"
+msgstr "Baza danych IP-to-country, wersja: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:98
+msgid "Automatically check if there is a new version of IP-to-country database"
+msgstr "Automatycznie sprawdzaj czy jest nowa wersja bazy danych IP-to-country"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:102
+msgid "Update IP-to-country database now (only if needed)"
+msgstr "Aktualizuj bazę danych IP-to-country teraz (tylko jeśli to konieczne)"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:104
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:137
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-edit-user.php:40
+msgid "Update"
+msgstr "Aktualizuj"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:112
+msgid "Exclude hits"
+msgstr "Wykluczone odwiedziny"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:119
+msgid "Save excluded records (not recommended)"
+msgstr "Zapisz wykluczone zapisy (nie zalecane)"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:122
+msgid "Purge excluded records stored in the database"
+msgstr "Opróżnij wykluczone zapisy przetrzymywane w bazie danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:125
+msgid "Purge"
+msgstr "Opróżnij"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:135
+msgid "Bots list"
+msgstr "Lista botów"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:141
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:185
+msgid "Add"
+msgstr "Dodaj"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:142
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:186
+msgid "Remove"
+msgstr "Usuń"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-settings.php:115
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:156
+msgid "Automatic update"
+msgstr "Automatyczna aktualizacja"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:159
+msgid "Update now"
+msgstr "Aktualizuj teraz"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:161
+msgid "Import"
+msgstr "Import"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:164
+msgid "Export"
+msgstr "Eksport"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:180
+msgid "Excluded IPs"
+msgstr "Wykluczone adresy IP"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-settings.php:115
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:203
+msgid "Automatically"
+msgstr "Automatycznie"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:204
+msgid "Manually"
+msgstr "Ręcznie"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:205
+msgid "Please select"
+msgstr "Proszę wybrać"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:222
+msgid "One month"
+msgstr "Jeden miesiąc"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/donation-window.php:81
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:223
+msgid "Two months"
+msgstr "Dwa miesiące"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:224
+msgid "Three months"
+msgstr "Trzy miesiące"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:225
+msgid "Half a year"
+msgstr "Pół roku"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:226
+msgid "One year"
+msgstr "Jeden rok"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-settings.php:227
+msgid "Two years"
+msgstr "Dwa lata"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-stats.php:29
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-sites.php:14
+msgid "Manage sites"
+msgstr "Zarządzaj stronami"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-sites.php:159
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-sites.php:24
+msgid "Warning, you can really mess things up from here, be careful!"
+msgstr "Uwaga, możesz naprawdę coś popsuć zmieniając coś tutaj, uważaj!"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-sites.php:161
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-sites.php:26
+msgid "FireStats can collect statistics from multiple sites (on the same server)."
+msgstr "FireStats może zbierać statystyki z wielu stron (na tym samym serwerze)."
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-sites.php:163
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-sites.php:28
+msgid "The site need to be registered in the sites table"
+msgstr "Strona musi być zarejestrowana w tabeli stron."
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-sites.php:164
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-sites.php:29
+msgid "The site should be configured to use its ID when reporting a hit, click on the help button next to the site you created for more information"
+msgstr "Strona powinna być skonfigurowana do używania jej ID w trakcie zapisywania informacji o odwiedzinach, kliknij na guzik pomocy obok utworzonej strony aby uzyskać więcej informacji"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-sites.php:167
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-sites.php:32
+#, php-format
+msgid "Click %s for more information"
+msgstr "Kliknij %s aby uzyskać więcej informacji"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:43
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:77
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:109
+msgid "Refresh statistics"
+msgstr "Odśwież statystyki"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:135
+msgid "Auto refresh every"
+msgstr "Odświeżaj automatycznie co"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:138
+msgid "minutes"
+msgstr "minut"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-stats.php:141
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-stats.php:174
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-stats.php:199
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-stats.php:266
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-stats.php:328
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:139
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:169
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:192
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:221
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:241
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:262
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:284
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:346
+msgid "Apply"
+msgstr "Zastosuj"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:146
+msgid "Status"
+msgstr "Status"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-stats.php:30
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:150
+msgid "Visits"
+msgstr "Goście"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:151
+msgid "Page views in last 24 hours"
+msgstr "Obejrzane strony w trakcie ostatnich 24 godzin"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:152
+msgid "Visits in last 24 hours"
+msgstr "Goście w trakcie ostatnich 24 godzin"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:158
+msgid "Recent referrers"
+msgstr "Najnowsze adresy, z których przychodzili odwiedzający"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:165
+#, php-format
+msgid "Show at most %s items for the last %s days, sorted by %s"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:179
+msgid "Search terms"
+msgstr "Szukane wyrażenia"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:186
+#, php-format
+msgid "Show at most %s search terms for %s"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:196
+msgid "Start date:"
+msgstr "Data rozpoczecia:"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:197
+msgid "End date:"
+msgstr "Data zakończenia:"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:211
+msgid "Recent popular pages"
+msgstr "Najpopularniejsze strony"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:217
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:279
+#, php-format
+msgid "Show at most %s items for the last %s days"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:231
+msgid "Browsers"
+msgstr "Przeglądarki"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:237
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:258
+#, php-format
+msgid "Show items for the last %s days"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:252
+msgid "Operating systems"
+msgstr "Systemy operacyjne"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:273
+msgid "Countries"
+msgstr "Kraje"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:292
+msgid "Hits table"
+msgstr "Tabela odwiedzonych stron"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:296
+msgid "Number of hits to show"
+msgstr "Liczba odwiedzonych stron do pokazania"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:313
+msgid "User agent"
+msgstr "Klient użytkownika"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-stats.php:299
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:317
+msgid "Filter"
+msgstr "Filtr"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-sites.php:118
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-stats.php:323
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:341
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-edit-site.php:26
+msgid "Clear"
+msgstr "Wyczyść"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:362
+msgid "Newest first"
+msgstr "Najnowsze najpierw"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:363
+#, fuzzy
+msgid "Most hits first"
+msgstr "odwiedzone strony: %d od %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:372
+msgid "the last 24 hours"
+msgstr "ostatnie 24 godziny"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:373
+msgid "the last week"
+msgstr "ostatni tydzień"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:374
+msgid "the last month"
+msgstr "ostatni miesiąc"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:375
+msgid "the three months"
+msgstr "trzy miesiące"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:376
+msgid "the last six months"
+msgstr "ostatnie sześć miesięcy"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:377
+msgid "the last year"
+msgstr "ostatni rok"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:378
+msgid "all time"
+msgstr "cały czas"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-stats.php:379
+msgid "time range"
+msgstr "zakres czasu"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-tools.php:8
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tabbed-pane.php:63
+msgid "Tools"
+msgstr "Narzędzie"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-tools.php:9
+msgid "This section contains various tools"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-tools.php:14
+msgid "I agree to send system information"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-tools.php:18
+msgid "Diagnostics"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-tools.php:19
+msgid "System diagnostics page"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-tools.php:19
+msgid "Open"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-tools.php:24
+msgid "PHP Version"
+msgstr "Wersja PHP"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-tools.php:27
+msgid "MySQL Version"
+msgstr "Wersja MySQL"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-tools.php:30
+msgid "Memory limit"
+msgstr "Limit pamięci"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-tools.php:36
+msgid "Database cache"
+msgstr "Pamięć podręczna bazy danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-tools.php:37
+msgid "The following section can recalculate different aspects of the database. you don't normally need to use it."
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-tools.php:40
+#, fuzzy
+msgid "Recalculate country codes"
+msgstr "Przelicz pamięć podręczną bazy danych"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-tools.php:45
+#, fuzzy
+msgid "Rebuild database cache"
+msgstr "Wystąpił bląd podczas przebudowywania pamieci  podręcznej bazy danych:"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-tools.php:50
+#, fuzzy
+msgid "Recalculate search engine terms"
+msgstr "Przelicz pamięć podręczną bazy danych"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-stats.php:29
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-users.php:26
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools-menu.php:5
+msgid "Manage users"
+msgstr "Zarządzaj użytkownikami"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-users.php:35
+msgid "You can manage users here"
+msgstr "Możesz tutaj edytować użytkowników"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:21
+msgid "Statistics widget"
+msgstr "Widget statystyk"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-wordpress-settings.php:17
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:46
+#, fuzzy, php-format
+msgid "You can configure the sidebar widgets from %s"
+msgstr "Możesz skonfigurować widgety na pasku bocznym %s"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-wordpress-settings.php:21
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:50
+#, php-format
+msgid "The statistics widget requires the %s plugin for optimal usage."
+msgstr "Widget statystyk potrzebuje wtyczkę %s do optymalnego działania."
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-wordpress-settings.php:24
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:53
+msgid "Widgets"
+msgstr "Widgety"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-wordpress-settings.php:26
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:55
+msgid "You can also manually add the following code to your theme sidebar:"
+msgstr "Możesz również ręcznie dodać następujący kod do paska bocznego:"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-wordpress-settings.php:34
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:63
+msgid "Comments icons"
+msgstr "Ikony komentarzy"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-wordpress-settings.php:42
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:71
+msgid "Add flag icon to comments"
+msgstr "Dodaj ikonkę flagi do komentarzy"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-wordpress-settings.php:51
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:78
+msgid "Add browser and operating system icons to comments"
+msgstr "Dodaj ikonki przeglądarki i systemu operacyjnego do komentarzy"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:81
+msgid "Blog footer"
+msgstr "Stopka bloga"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:88
+msgid "Add FireStats footer to blog"
+msgstr "Dodaj stopkę FireStats do bloga"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:96
+msgid "Show statistics in footer"
+msgstr "Pokaż statystyki w stopce"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:102
+msgid "Excluded users"
+msgstr "Wykluczeni użytkownicy"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:103
+msgid "WordPress users selected here will not be counted in the statistics"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:107
+msgid "Permissions"
+msgstr "Uprawnienia"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:108
+msgid "Select the minimum user role that can access FireStats (Only administrators can manage FireStats)"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:112
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-edit-user.php:12
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-user.php:7
+#, fuzzy
+msgid "Administrator"
+msgstr "Administrator"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:113
+msgid "Editor"
+msgstr "Edytor"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:114
+msgid "Author"
+msgstr "Autor"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:115
+msgid "Contributor"
+msgstr "Felietonista"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:116
+msgid "Subscriber"
+msgstr "Abonent"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:124
+msgid "Advanced"
+msgstr "Zaawansowane"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:125
+msgid "WordPress site ID, every hit From this blog is recorded with this as the source Site ID"
+msgstr "ID strony WordPress, każde odwiedziny zliczone na tym blogu są zapisywane pod ID żródłowej strony"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-wordpress-settings.php:130
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:126
+msgid "This should be the same ID as the Site ID in the sites table. you don't normally need to change this."
+msgstr "To powinno być takie samo ID jak ID strony w tabeli stron. Normalnie nie musisz tego zmieniać."
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-wordpress-settings.php:130
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/page-wordpress-settings.php:136
+#, fuzzy
+msgid "This will update the titles of the blog posts inside FireStats, you don't normally need to use it"
+msgstr "To powinno być takie samo ID jak ID strony w tabeli stron. Normalnie nie musisz tego zmieniać."
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/rebuild-db.php:15
+msgid "Recalculating matching bots"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tabbed-pane.php:22
+msgid "Statistics"
+msgstr "Statystyki"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tabbed-pane.php:25
+msgid "Settings"
+msgstr "Ustawienia"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/tabbed-pane.php:90
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tabbed-pane.php:33
+msgid "WordPress settings"
+msgstr "Ustawienia WordPress"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tabbed-pane.php:44
+msgid "Database"
+msgstr "Baza danych"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/tabbed-pane.php:120
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tabbed-pane.php:50
+msgid "Users management"
+msgstr "Zarządzanie użytkownikami"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/tabbed-pane.php:120
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tabbed-pane.php:57
+msgid "Sites management"
+msgstr "Zarządzanie stronami"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools-menu.php:1
+msgid "FireStats tools"
+msgstr "Narzędzie FireStats "
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools-menu.php:3
+msgid "System test"
+msgstr "Test systemu"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools-menu.php:4
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:16
+msgid "Reset password"
+msgstr "Resetuj hasło"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/version-check.php:41
+#, php-format
+msgid "Error getting version information from %s : %s"
+msgstr "Błąd podczas pobierania informacji o wersji z %s: %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/version-check.php:123
+msgid "A new version of the IP-to-country database is available! you can update it from the settings tab"
+msgstr "Nowa wersja bazy danych IP-to-country jest dostępna! Możesz ją zaktualizować z zakładki ustawienia"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/version-check.php:146
+#, php-format
+msgid "Version %s is available! click %s for more info"
+msgstr "Wersja %s jest dostepna! Kliknij tuta %s aby uzyskać więcej informacji"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/version-check.php:171
+#, php-format
+msgid "Error opening %s"
+msgstr "Bład podczas otwierania %s"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-archive-notification.php:5
+msgid "Yes (Recommended)"
+msgstr "Tak (rekomendowane)"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/tabbed-pane.php:67
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-archive-notification.php:6
+msgid "No"
+msgstr "Nie"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-archive-notification.php:9
+msgid "Compacting old data"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-archive-notification.php:10
+msgid "FireStats can tranform old data to a more compact form,"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-archive-notification.php:11
+msgid "This will reduce storage size and improve performance at the cost of losing some information which is not essential."
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-archive-notification.php:12
+msgid "it is highly recommended that you allow FireStats to do this automatically."
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-archive-notification.php:14
+#, php-format
+msgid "Click %s if you would like FireStats to automatically compact data older than %s days"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-archive-notification.php:15
+#, php-format
+msgid "Click %s if you want to compact data manually or change compacting options (From the Settings tab)"
+msgstr ""
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-sites.php:91
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-delete-site.php:10
+msgid "Delete site"
+msgstr "Usuń stronę"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-sites.php:133
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-delete-site.php:14
+msgid "This will delete this site from the database, the operation is irreversible!"
+msgstr "To usunie tę stronę z bazy danych, operacja jest nieodwracalna!"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-sites.php:134
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-delete-site.php:15
+msgid "What do you want to do with the site hits?"
+msgstr "Co zamierzasz zrobić z zapisanymi odwiedzinami?"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/page-sites.php:137
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-delete-site.php:18
+msgid "Delete all the hits"
+msgstr "Usuń wszystkie zapisane wizyty"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-delete-site.php:19
+msgid "Transfer the hits to another site"
+msgstr "Transferuj wizyty do innej strony"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-delete-site.php:22
+msgid "Enter an existing site ID to transfer the hits to"
+msgstr "Wpisz ID istniejącej strony aby transferować wizyty do"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-delete-site.php:31
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-delete-user.php:20
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-edit-user.php:41
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-edit-site.php:50
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-user.php:36
+msgid "Close"
+msgstr "Zamknij"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-delete-user.php:9
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-edit-user.php:9
+msgid "No such user"
+msgstr "Nie ma takiego użytkownika"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-delete-user.php:12
+msgid "Delete user"
+msgstr "Usuń użytkownika"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-do-you-agree-to-send-sysinfo.php:9
+msgid "You can help by sending anonymous system information that will help make better decisions about new features."
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-do-you-agree-to-send-sysinfo.php:13
+msgid "You can change this later from the Tools tab"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-do-you-agree-to-send-sysinfo.php:17
+msgid "Do you agree to send anonymous system information?"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-do-you-agree-to-send-sysinfo.php:20
+msgid "Sure, send system information"
+msgstr "Jasne, wyślij informacje o systemie"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-do-you-agree-to-send-sysinfo.php:23
+msgid "Nope, don't send"
+msgstr "Nie, nie wysyłaj"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-donation.php:8
+msgid "Even though FireStats is free, it takes a lot of time and hard work to develop and maintain."
+msgstr "FireStats jest darmowy, jakkolwiek praca nad rozbudową tego systemu pochłania bardzo dużo czasu."
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-donation.php:9
+msgid "If you like FireStats and would like to show your support for the hard work I put into it, You can make a small Donation. Even a $5 donation would be greatly appreciated."
+msgstr "Jesli lubisz FireStats i chciałbyś wesprzeć pracę jaką w to włożyłem, możesz wysłać mi małą dotację. Każda kwota będzie mile widziana."
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-donation.php:11
+msgid "Yeah, I want to help"
+msgstr "Tak, chcę pomóc"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-donation.php:12
+msgid "Nah, go away"
+msgstr "Raczej nie"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-donation.php:13
+msgid "Maybe later"
+msgstr "Może kiedy indziej"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-donation.php:14
+msgid "Already donated"
+msgstr "Już to zrobiłem"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-edit-user.php:16
+msgid "Edit user"
+msgstr "Edytuj użytkownika"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-edit-user.php:27
+msgid "New password (Optional)"
+msgstr "Nowe hasło (opcja)"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-edit-user.php:31
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:88
+msgid "Verify new password"
+msgstr "Potwierdź nowe hasło"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-edit-site.php:18
+msgid "Edit site"
+msgstr "Edytuj stronę"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/html-utils.php:62
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-edit-site.php:18
+msgid "Create a new site"
+msgstr "Utwórz nową stronę"
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats-1-1/php/page-stats.php:29
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-edit-site.php:40
+#, fuzzy
+msgid "Baseline page views"
+msgstr "Obejrzane strony"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-edit-site.php:44
+#, fuzzy
+msgid "Baseline visitors"
+msgstr "Goście łącznie:"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/window-new-user.php:11
+msgid "Create a new user"
+msgstr "Utwórz użytkownika"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/emergency-manage-users.php:9
+msgid "Message"
+msgstr "Wiadomość"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/emergency-manage-users.php:10
+msgid "This page will allow you to change the password of any user in FireStats."
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/emergency-manage-users.php:11
+#, php-format
+msgid "For security reasons, you must first edit the file %s"
+msgstr ""
+
+# F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.2/firestats/php/help-window.php:199
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/emergency-manage-users.php:12
+#, fuzzy, php-format
+msgid "and change the line %s to %s and then refresh this page."
+msgstr "and then edit the lines in %s to contain this:"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/emergency-manage-users.php:13
+msgid "Don't forget to change it back when you are done."
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/emergency-manage-users.php:18
+msgid "IMPORTANT"
+msgstr "WAŻNE"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:18
+#, php-format
+msgid "You can request an password reset email from here. If it does not work or you don't know your username or email, you can also change your password using the %s"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:18
+msgid "Emergency user management page"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:28
+msgid "A user with this username and email was not found"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:37
+msgid "FireStats password recovery"
+msgstr "Odzyskiwanie hasła FireStats"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:38
+#, php-format
+msgid "Click %s to change your FireStats password, this link will work for a short time"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:42
+msgid "Email sent"
+msgstr "E-mail wysłany"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:46
+msgid "Failed to send email"
+msgstr "Nie udało się wysłać wiadomości e-mail"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:61
+#, php-format
+msgid "Failed, maybe too much time have passed since you generated the email? %s"
+msgstr ""
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:61
+msgid "try again"
+msgstr "spróbuj ponownie"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:84
+msgid "New password"
+msgstr "Nowe hsło"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:93
+msgid "Change password"
+msgstr "Zmiana hasła"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:113
+msgid "Email address"
+msgstr "Adres e-mail"
+
+#: F:\PRACA\materia³y\wordpress\wtyczki\Firestats\firestats-1.4/firestats/php/tools/reset-password.php:118
+msgid "Send password reset email"
+msgstr "Prześlij e-mail resetujący hasło"
+

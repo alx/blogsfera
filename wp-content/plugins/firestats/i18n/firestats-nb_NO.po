@@ -1,0 +1,1389 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Firestats\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2007-11-18 22:02+0100\n"
+"Last-Translator: Christian Lomsdalen <christian@vindstille.net>\n"
+"Language-Team: Christian Lomsdalen <christian@vindstille.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Norwegian Bokmal\n"
+"X-Poedit-Country: NORWAY\n"
+"X-Poedit-KeywordsList: fs_r;fs_e\n"
+
+msgid "FireStats"
+msgstr "FireStats"
+
+msgid "Loading..."
+msgstr "Laster..."
+
+#, php-format
+msgid "Total : %s page views and %s visits"
+msgstr "Totalt : %s sidevisninger og %s unike treff"
+
+#, php-format
+msgid "Last 24 hours : %s page views and %s visits"
+msgstr "Siste 24 timer: %s sidevisninger og %s unike treff"
+
+msgid "You are not authorized to access FireStats"
+msgstr "Du har ikke autorisasjon til &#229; vise FireStats"
+
+msgid "Title:"
+msgstr "Tittel:"
+
+msgid "Hide FireStats logo"
+msgstr "Skjul FireStats logo"
+
+msgid "Popular posts"
+msgstr "Popul&#230;re innlegg"
+
+msgid "Number to show"
+msgstr "Antall som skal vises"
+
+msgid "Days ago (Empty for all time)"
+msgstr "Dager siden (tomt for alle)"
+
+msgid "Pages displayed : "
+msgstr "Viste sider :"
+
+msgid "Unique visitors : "
+msgstr "Unike treff :"
+
+msgid "Pages displayed in last 24 hours : "
+msgstr "Sider som er vist de siste 24 timer :"
+
+msgid "Unique visitors in last 24 hours : "
+msgstr "Unike treff de siste 24 timer :"
+
+msgid "pages viewed"
+msgstr "Viste sider"
+
+msgid "today"
+msgstr "i dag"
+
+msgid "visits"
+msgstr "treff"
+
+msgid "Powered by FireStats"
+msgstr "Drevet av FireStats"
+
+msgid "Error"
+msgstr "Feil"
+
+msgid "Access denied"
+msgstr "Adgang nektet"
+
+msgid "Login"
+msgstr "Logg inn"
+
+msgid "Username"
+msgstr "Brukernavn"
+
+msgid "Password"
+msgstr "Passord"
+
+msgid "Remember me for the next 14 days"
+msgstr "Husk meg (14 dagers varighet)"
+
+#, php-format
+msgid "Forgot your password? click %s."
+msgstr "Glemt passordet ditt? trykk p&#229; %s"
+
+msgid "here"
+msgstr "her"
+
+msgid "Stop"
+msgstr "Stopp"
+
+msgid "Compacting..."
+msgstr "Komprimerer..."
+
+msgid "Stopping..."
+msgstr "Stopper..."
+
+msgid "Compact now"
+msgstr "Komprimer n&#229;"
+
+msgid "Abort"
+msgstr "Avbryt"
+
+msgid "Start"
+msgstr "Start"
+
+msgid "Canceled"
+msgstr "Avbrutt"
+
+msgid "Not a positive number : "
+msgstr "Ikke et positivt tall :"
+
+msgid "Session expired, press ok to reload"
+msgstr "Sesjonen er utl&#248;pt, trykk ok for &#229; laste om igjen siden"
+
+msgid "Upgrading, do not interrupt"
+msgstr "Oppgraderer, ikke avbryt"
+
+msgid "Upgrade"
+msgstr "Oppgrader"
+
+msgid "You need to select an bot you want to remove from the table"
+msgstr "Du m&#229; velge en Bot om du vil fjerne den fra tabellen"
+
+msgid "Invalid IP address"
+msgstr "Ugyldig IP-adresse"
+
+msgid "You need to select an IP address you want to remove from the table"
+msgstr "Du m&#229; velge en IP-adresse om du vil fjerne den fra tabellen"
+
+msgid "Automatic"
+msgstr "Automatisk"
+
+msgid "Delete"
+msgstr "slett"
+
+msgid "Transfer"
+msgstr "Flytt"
+
+msgid "User name and password are required to connect to database"
+msgstr "Brukernavn og passord er n&#248;dvendig for &#229; koble til databasen"
+
+msgid "Error establishing mySQL database connection"
+msgstr "Feil under tilkobling til mySQL-databasen"
+
+msgid "Database name is required to connect to database"
+msgstr "Databasenavn er n&#248;dvendig for &#229; koble til databasen"
+
+msgid "mySQL database connection is not active"
+msgstr "mySQL-databasens tilkobling er ikke aktiv"
+
+msgid "Unexpected error while querying database"
+msgstr "Uventet feil under sp&#248;rring til databasen"
+
+#, php-format
+msgid "Can't disconnect: %s"
+msgstr "Kan ikke koble fra: %s"
+
+msgid "Not connected"
+msgstr "Ikke tilkoblet"
+
+#, php-format
+msgid "Unsupported action code : %s"
+msgstr "Ust&#248;ttet handlingskode: %s"
+
+#, php-format
+msgid "Unexpexted output: %s"
+msgstr "Uventet utkom: %s"
+
+#, php-format
+msgid "Added %s to exclude list"
+msgstr "Har lagt til %s til forbudslisten"
+
+#, php-format
+msgid "Removed %s from exclude list"
+msgstr "Har fjernet %s fra forbudslisten"
+
+msgid "Excluded users list saved"
+msgstr "Forbudte brukere-listen er lagret"
+
+#, php-format
+msgid "Added %s to bots list"
+msgstr "Har lagt til %s til Bot-listen"
+
+msgid "Empty string is not allowed"
+msgstr "Tom streng er ikke tillatt"
+
+msgid "Removed"
+msgstr "Fjernet"
+
+msgid "Not using configuration file"
+msgstr "Ingen konfigurasjonsfil i bruk"
+
+msgid "Not installed inside Wordpress"
+msgstr "Ikke installert i Wordpress"
+
+#, php-format
+msgid "Failed to delete fs-config.php : %s"
+msgstr "Klarte ikke &#229; slette fs-config.php: %s"
+
+msgid "Error creating config file: "
+msgstr "Klarte ikke &#229; lage konfigurasjonsfileni:"
+
+msgid "Error upgrading tables"
+msgstr "Klarte ikke &#229; oppgradere tabellene"
+
+msgid "Error installing tables"
+msgstr "Klarte ikke &#229; installere tabellene"
+
+msgid "Error rebuilding database cache"
+msgstr "Klarte ikke &#229; gjenoppbygge databasens cache"
+
+msgid "Database cache rebuilt successfully"
+msgstr "Databasens cache gjenoppbygget med suksess"
+
+#, php-format
+msgid "%s days can be compacted, database size %s"
+msgstr "%s dager kan komprimeres, Databasest&#248;rrelse %s"
+
+#, php-format
+msgid "Unkown field: %s"
+msgstr "Ukjent felt: %s"
+
+msgid "IP-to-country database is already up-to-date"
+msgstr "IP-to-country databasen er allerede oppdatert"
+
+msgid "An error has occured while trying to update the IP-to-country database"
+msgstr "Det skjedde en feil i fors&#248;ket p&#229; oppdatere IP-to-country databasen"
+
+msgid "file"
+msgstr "fil"
+
+#, php-format
+msgid "You can update the database manually by downloading this %s and extracting it into %s"
+msgstr "Du kan oppdatere databasen manuelt ved &#229; laste ned %s og pakke den ut i %s"
+
+msgid "this"
+msgstr "dette"
+
+#, php-format
+msgid "You can update the database manually by opening %s and downloading the <b>zip_url</b>, and extracting it into %s"
+msgstr "Du kan oppdatere databasen manuelt ved &#229; &#229;pne %s og laste ned <b>zip_url</b>, og &#229; pakke den ut i %s"
+
+#, php-format
+msgid "Error updating bots list: %s"
+msgstr "Feil under oppdatering av Bot-listen: %s"
+
+msgid "Successfully updated bots list"
+msgstr "Oppdatering av Bot-listen var vellykket"
+
+#, php-format
+msgid "Error purging excluded records: %s"
+msgstr "Feil under sletting av eksluderte registreringer: %s"
+
+msgid "Purged excluded records"
+msgstr "Eksluderte registreringer slettet"
+
+msgid "Error connecting to database"
+msgstr "Feil under tilkobling av database"
+
+#, php-format
+msgid "Compacting %s days, %s done, database size is %s"
+msgstr "Komprimerer %s dager, %s ferdig, Database st&#248;rrelsen er %s"
+
+#, php-format
+msgid "%d of %d"
+msgstr "%d av %d"
+
+#, php-format
+msgid "Done, took %s second"
+msgstr "Ferdig p&#229; %s sekunder"
+
+msgid "Incorrect user-name or password"
+msgstr "Feil brukernavn eller passord"
+
+msgid "User name not specified"
+msgstr "Brukernavn ble ikke angitt"
+
+msgid "Email not specified"
+msgstr "E-postadresse ble ikke angitt"
+
+msgid "Password not specified"
+msgstr "Passord ble ikke angitt"
+
+msgid "Passwords did not match"
+msgstr "Passordene var ikke identiske"
+
+msgid "Empty password"
+msgstr "Tomt passord"
+
+#, php-format
+msgid "Error connecting to database (%s)"
+msgstr "Feil under tilkobling til databasen (%s)"
+
+msgid "Invalid email address"
+msgstr "Ugyldig E-postadresse"
+
+msgid "A user with this name already exists"
+msgstr "Brukernavnet er allerede i bruk"
+
+msgid "A user with this email address already exists"
+msgstr "E-postadressen er allerede i bruk av annen bruker"
+
+msgid "FireStats is properly installed in the database"
+msgstr "FireStats er korrekt installert i databasen"
+
+msgid "FireStats is not configured"
+msgstr "FireStats er ikke konfigurert"
+
+msgid "Database error, check your configuration"
+msgstr "Feil med databasen, sjekk konfigurasjonen"
+
+msgid "FireStats is not installed in the database"
+msgstr "FireStats er ikke installert i databasen"
+
+msgid "FireStats database need to be upgraded"
+msgstr "FireStats databasen trenger oppgradering"
+
+msgid "The FireStats database version is newer than this code version, you need to upgrade FireStats"
+msgstr "FireStats-databasen er nyere enn kodeutgaven du fors&#248;ker &#229; bruke, du m&#229; oppgradere FireStats"
+
+msgid "Unknown database status code"
+msgstr "Database statuskoden er ukjent"
+
+#, php-format
+msgid "Database error: %s"
+msgstr "Databasefeil: %s"
+
+msgid "Error accessing database"
+msgstr "Feil under tilkobling til databasen"
+
+msgid "Cannot write configuration file (read only file or directory)"
+msgstr "Kan ikke skrive til konfigurasjonsfilen (Ikke skriverettigheter til fil eller mappe)"
+
+msgid "Error creating database"
+msgstr "Feil under laging av database"
+
+msgid "Error creating user"
+msgstr "Feil under laging av bruker"
+
+msgid "Error creating tables"
+msgstr "Feil under laging av tabeller"
+
+msgid "Error saving configuration"
+msgstr "Feil under lagring av konfigurasjonen"
+
+msgid "Wrong password"
+msgstr "Feil passord"
+
+msgid "FireStats tables are not installed"
+msgstr "FireStats Tabellene er ikke installert"
+
+msgid "FireStats is installed"
+msgstr "FireStats er installert"
+
+msgid "Another FireStats database detected"
+msgstr "En annen FireStats database er oppdaget"
+
+msgid "New database created successfuly"
+msgstr "Ny database er klar"
+
+#, php-format
+msgid "Unexpected error code %s"
+msgstr "Uventet kodefeil %s"
+
+msgid "Not configured"
+msgstr "Ikke konfigurert"
+
+msgid "FireStats configuration file"
+msgstr "FireStats Konfigurasjonsfil"
+
+msgid "Wordpress configuration file"
+msgstr " Wordpress Konfigurasjonsfil"
+
+msgid "Operation already in progress"
+msgstr "Operasjonen er allerede i gang"
+
+msgid "Data compacting is already in progress"
+msgstr "Datakomprimering er allerede i gang"
+
+msgid "MySQL 4.1.14 or newer is required for data compacting support"
+msgstr "MySQL 4.1.14 eller nyere er n&#248;dvendig for &#229; mulighet for &#229; komprimere data"
+
+msgid "Site name not specified"
+msgstr "Sidenavn er ikke angitt"
+
+msgid "Site ID must be a positive number"
+msgstr "SideID m&#229; v&#230;re et positivt nummer"
+
+#, php-format
+msgid "A site with the ID %s already exists"
+msgstr "En side med ID %s eksisterer allerede"
+
+#, php-format
+msgid "No site with the id %s exists"
+msgstr "Ingen side med ID %s eksisterer"
+
+msgid "New site_id must not be empty"
+msgstr "ID for ny side m&#229; ikke v&#230;re tom"
+
+msgid "Can't move the hits to the same site"
+msgstr "Kan ikke flytte treffene til den samme siden"
+
+#, php-format
+msgid "Invalid IP address: %s"
+msgstr "Ugyldig IP-adresse: %s"
+
+#, php-format
+msgid "The IP address %s is already in the database"
+msgstr "IP-adresse %s er allerede i databasen"
+
+#, php-format
+msgid "The bot wildcard %s is already in the database"
+msgstr "Boten %s er allede i databasen"
+
+msgid "Unknown"
+msgstr "Ukjent"
+
+#, php-format
+msgid "Error opening file : %s"
+msgstr "Feil under &#229;pning av fil: %s"
+
+msgid "Error exporting bots list"
+msgstr "Feil under eksportering av Bot-listen"
+
+#, php-format
+msgid "If you have any problems or questions, please visit the %s"
+msgstr "Hvis du har noen problemer eller sp&#248;rsm&#229;l, bes&#248;k oss p&#229; %s"
+
+msgid "FireStats homepage"
+msgstr "FireStats hjemmeside"
+
+msgid "Support FireStats"
+msgstr "St&#248;tt FireStats"
+
+msgid "Log out"
+msgstr "Logg ut"
+
+msgid "Demo"
+msgstr "Demostrasjon"
+
+msgid "Hide"
+msgstr "Skjul"
+
+msgid "Unknown site type"
+msgstr "Ukjent sidetype"
+
+msgid "Collect hits from PHP pages"
+msgstr "Samle treff fra PHP-sider"
+
+msgid "To allow FireStats to track access to your pages, you need to add the following line inside the head tag of each of the pages you want to monitor (the page must be a php page)."
+msgstr "For &#229; tillate at FireStats samler treff for siden din m&#229; den f&#248;lgende linjen plasseres i Head-taggen p&#229; alle siden du vil ha overv&#229;ket. (Siden m&#229; v&#230;re en PHP-side)."
+
+msgid "A typical page header will look like this:"
+msgstr "En typisk Header vil se slik ut: "
+
+msgid "WordPress"
+msgstr "WordPress"
+
+msgid "The WordPress plugin registers itself automatically when it's activated"
+msgstr "Wordpress-innstikket registrerer seg selv automatisk n&#229;r det blir aktivisert"
+
+msgid "plugin"
+msgstr "Innstikk"
+
+msgid "module"
+msgstr "modul"
+
+#, php-format
+msgid "Collect hits from a %s site"
+msgstr "Samle treff fra en %s side"
+
+#, php-format
+msgid "and then configure it in the administration menu with the path %s and the ID %s"
+msgstr "og s&#229; konfigur den i administrasjonsmenyen med adresse %s og ID %s"
+
+#, php-format
+msgid "and then edit the lines in %s to contain this:"
+msgstr "og s&#229; rediger linjene i %s til &#229; inneholde dette:"
+
+#, php-format
+msgid "To collect statistics from your %s site your need to install the %s"
+msgstr "For &#229; samle statistikk fra din %s side m&#229; du installere %s"
+
+msgid "Link here"
+msgstr "Link hit"
+
+msgid "Name"
+msgstr "Navn"
+
+msgid "Email"
+msgstr "E-postadresse"
+
+msgid "Security level"
+msgstr "Sikkerhetsniv&#229;"
+
+msgid "Admin"
+msgstr "Admin"
+
+msgid "User"
+msgstr "Bruker"
+
+msgid "Add a new user"
+msgstr "Legg til ny bruker"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Page views"
+msgstr "Sidevisninger"
+
+msgid "How to integrate with this site"
+msgstr "Hvordan integrere med denne siden"
+
+msgid "Orphaned hits"
+msgstr "Foreldrel&#248;se treff"
+
+msgid "Add a new site"
+msgstr "Legg til en ny side"
+
+msgid "Generic PHP site"
+msgstr "Generisk PHP-side"
+
+msgid "Wordpress"
+msgstr "Wordpress"
+
+msgid "Django"
+msgstr "Django"
+
+msgid "Drupal"
+msgstr "Drupal"
+
+msgid "Gregarius"
+msgstr "Gregarius"
+
+msgid "Joomla"
+msgstr "Joomla"
+
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+msgid "Trac"
+msgstr "Trac"
+
+msgid "Gallery2"
+msgstr "Gallery2"
+
+msgid "Invalid"
+msgstr "Ugyldig"
+
+msgid "All"
+msgstr "Alle"
+
+msgid "Show statistics from"
+msgstr "Vis statistikk fra"
+
+msgid "unknown"
+msgstr "ukjent"
+
+msgid "IP"
+msgstr "IP"
+
+msgid "TimeStamp"
+msgstr "Tidsstempel"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Referrer"
+msgstr "Refererer"
+
+msgid "Image"
+msgstr "Bilde"
+
+msgid "UserAgent"
+msgstr "UserAgent"
+
+msgid "No data yet, go get some hits"
+msgstr "Ingen data forel&#248;pig, skaff noen treff n&#229;..."
+
+msgid "Empty"
+msgstr "Tomt"
+
+msgid "Start date is missing"
+msgstr "Ingen startdato er oppgitt"
+
+msgid "End date is missing"
+msgstr "Ingen sluttdato er oppgitt"
+
+msgid "Please wait..."
+msgstr "Vennligst vent..."
+
+#, php-format
+msgid "%d hits from %s"
+msgstr "%d treff fra %s"
+
+msgid "Others"
+msgstr "Andre"
+
+msgid "System information"
+msgstr "Systeminformasjon"
+
+msgid "You can help by sending anonymous system information that will help make better decisions about new features"
+msgstr "Du kan hjelpe til gjennom &#229; sende anonymisert systeminformasjon som gj&#248;r at vi kan ta bedre valg i forhold til nye funksjoner"
+
+msgid "The information will be sent anonymously, but a unique identifier will be sent to prevent duplicate entries from the same FireStats"
+msgstr "Informasjonen vil bli sendt anonymt, men en unik identifikasjonsgiver vil bli sendt for &#229; forhindre duplikat informasjon fra samme FireStats-installasjon"
+
+msgid "Import bots list"
+msgstr "Importer Bot-liste"
+
+msgid "Select bot-list file"
+msgstr "Velg Bot-liste"
+
+msgid "Import type"
+msgstr "Import type"
+
+msgid "Add to bots list"
+msgstr "Legg til p&#229; Bot-listen"
+
+msgid "Replace bots list"
+msgstr "Bytt ut Bot-listen"
+
+msgid "Send File"
+msgstr "Send fil"
+
+msgid "Incorrect file format"
+msgstr "Feil filformat"
+
+#, php-format
+msgid "Error importing bots list : %s"
+msgstr "Feil under importering av Bot-liste: %s"
+
+msgid "bots list imported successfully"
+msgstr "Bot-listen ble import med hell"
+
+msgid "Error creating temporary file"
+msgstr "Problemer med &#229; lage midlertidig fil"
+
+#, php-format
+msgid "Error opening connection to %s"
+msgstr "Feil under tilkobling til %s"
+
+#, php-format
+msgid "Error sending request to %s"
+msgstr "Feil under sp&#248;rring til %s"
+
+#, php-format
+msgid "Server returned error %s for %s"
+msgstr "Tjener returnerte med feil %s for %s"
+
+#, php-format
+msgid "Error reading data from %s : %s"
+msgstr "Feil under lesing av data fra %s: %s"
+
+#, php-format
+msgid "Error extracting IP-to-country database: %s"
+msgstr "Problem med &#229; hente ut IP-to-country database: %s"
+
+#, php-format
+msgid "Unsupported file type : %s"
+msgstr "Ukjent filtype: %s"
+
+#, php-format
+msgid "can't update ip-to-country database, read-only directory : %s"
+msgstr "Kan ikke oppdatere IP-to-country databasen, mappen er kan bare leses: %s"
+
+#, php-format
+msgid "can't update ip-to-country database, read-only file : %s"
+msgstr "Kan ikke oppdatere IP-to-country databasen, filen kan bare leses: %s"
+
+msgid "Error installing new IP-to-country database"
+msgstr "Klarte ikke &#229; installere ny IP-to-country database"
+
+msgid "Successfuly updated IP-to-country database"
+msgstr "IP-to-country databasen ble oppdatert med suksess"
+
+#, php-format
+msgid "Error updating version file : %s"
+msgstr "Feil under oppdatering av versjonsfilen: %s"
+
+msgid "Create administrator user"
+msgstr "Lag en administrasjonsbruker"
+
+msgid "You need to create an administrator user for FireStats."
+msgstr "Du m&#229; lage en administrasjonsbruker til FireStats"
+
+msgid "The administrator has full control over FireStats, and will be able to create other users/administrators from the administration interface"
+msgstr "Administratoren har full kontroll over FireStats, og vil ha muligheten til &#229; lage andre brukere/administratorer fra administrasjonsvinduet"
+
+msgid "User name"
+msgstr "Brukernavn"
+
+msgid "Verify password"
+msgstr "Bekreft passord"
+
+msgid "Create user"
+msgstr "Lag bruker"
+
+msgid "Database status"
+msgstr "Databasestatus"
+
+msgid "Click to upgrade"
+msgstr "Klikk for &#229; oppgradere"
+
+#, php-format
+msgid "Configuration source : %s"
+msgstr "Konfigurasjonskilde : %s"
+
+msgid "To use wordpress database, click this button."
+msgstr "For &#229; bruke Wordpressdatabasen, trykk  her."
+
+msgid "FireStats database configuration will be lost."
+msgstr "Konfigurasjonsfilen til FireStats vil g&#229; tapt."
+
+msgid "Use Wordpress database"
+msgstr "Bruk Wordpressdatabasen"
+
+msgid "To perform one of the following actions:"
+msgstr "For &#229; gj&#248;re en av de f&#248;lgende handlingene:"
+
+msgid "Attach to an existing FireStats installation"
+msgstr "Koble til en eksisterende FireStats-installasjon"
+
+msgid "Install FireStats into an existing database"
+msgstr "Installer FireStats i en eksisterende database"
+
+msgid "Create a new database and install FireStats there"
+msgstr "Lag en ny database og install FireStats der"
+
+msgid "Follow instructions in the help"
+msgstr "F&#248;lg instruksjonene i hjelp."
+
+msgid "Database host"
+msgstr "Databaseserver"
+
+msgid "Database name"
+msgstr "Databasenavn"
+
+msgid "Database user name"
+msgstr "Databasebruker"
+
+msgid "Database password"
+msgstr "Databasepassord"
+
+msgid "Tables prefix"
+msgstr "Tabell prefiks"
+
+msgid "Test connection"
+msgstr "Test tilkobling"
+
+msgid "Click to install and switch to new FireStats tables"
+msgstr "Trykk for &#229; installere og bytte til nye FireStatstabeller"
+
+msgid "Install tables"
+msgstr "Installer tabeller"
+
+msgid "Click to use this FireStats database"
+msgstr "Trykk for &#229; bruke denne FireStatsdatabasen"
+
+msgid "Use this database"
+msgstr "Bruk denne databasen"
+
+msgid "To create a new database, an administrator user should be used in the above fields."
+msgstr "For &#229; lage en ny database, en administrator m&#229; bli brukt i de overst&#229;ende felt"
+
+msgid "However, For security reason, it is recommended not to use a database administrator user for day to day operations."
+msgstr "Det er midlertidig ikke anbefalt &#229; bruke en administratorbruker for hverdagslige operasjoner."
+
+msgid "Enter new user name and password for FireStats, this user will only have access to the FireStats database"
+msgstr "Legg inn nytt brukernavn og passord for FireStats, denne brukeren vil bare ha tilgang til FireStats-databasen"
+
+msgid "If you will not specify user and password the Admin user and password will be used."
+msgstr "Hvis du ikke angir en bruker og passord s&#229; vil administratorbrukeren bli benyttet"
+
+msgid "FireStats User name"
+msgstr "FireStats Brukernavn"
+
+msgid "FireStats password"
+msgstr "FireStats Passord"
+
+msgid "Create database"
+msgstr "Lag database"
+
+msgid "Help"
+msgstr "Hjelo"
+
+msgid "Attach to an existing FireStats database"
+msgstr "Koble til en eksisterende FireStats-database"
+
+#, php-format
+msgid "Enter the parameters in the table, press %s, and then %s."
+msgstr "Legg inn parametrene i tabell og trykk %s. Deretter %s."
+
+#, php-format
+msgid "Enter the parameters into the table, <u>you need to enter a database administrator user</u>. press %s, and then enter FireStats database user and password, and finally press %s."
+msgstr "Legg inn parametrene i tabellen. <u>Du m&#229; legge inn en administrator</u>. Trykk p&#229; %s. og legg inn FireStats databasebruker og riktig passord, og trykk tilslutt p&#229; %s."
+
+msgid "Options"
+msgstr "Innstillinger"
+
+msgid "Select language"
+msgstr "Velg spr&#229;k"
+
+msgid "Save"
+msgstr "Lagre"
+
+msgid "How to translate to a new language"
+msgstr "Hvordan oversette til et nytt spr&#229;k"
+
+msgid "Select your time zone"
+msgstr "Velg tidssone"
+
+#, php-format
+msgid "Time zone selection requires %s or newer"
+msgstr "Tidssonevalg krever %s eller nyere"
+
+msgid "Select WHOIS provider"
+msgstr "Velg WHOIS-tilbyder"
+
+msgid "Compact old data"
+msgstr "Komprimer gamle data"
+
+#, php-format
+msgid "%s compact data older than %s"
+msgstr "%s komprimer data eldre enn %s"
+
+msgid "Automatic version check"
+msgstr "Automatisk versjonskontroll"
+
+msgid "Automatically check if there is a new version of FireStats (recommended)"
+msgstr "Sjekk automatisk om det finnes noen nyere utgave av FireStats (Anbefalt)"
+
+msgid "IP-to-country database"
+msgstr "IP-to-country database"
+
+#, php-format
+msgid "IP-to-country database version : %s"
+msgstr "IP-to-country versjon: %s"
+
+msgid "Automatically check if there is a new version of IP-to-country database"
+msgstr "Sjekk automatisk om det finnes en ny utgave av IP-to-country"
+
+msgid "Update IP-to-country database now (only if needed)"
+msgstr "Oppdater IP-to-country n&#229; (Bare hvis det er n&#248;dvendig)"
+
+msgid "Update"
+msgstr "Oppdater"
+
+msgid "Exclude hits"
+msgstr "Eksluder registreringer"
+
+msgid "Save excluded records (not recommended)"
+msgstr "Lagre eksluderte registreringer (Ikke anbefalt)"
+
+msgid "Purge excluded records stored in the database"
+msgstr "Slett ekskluderte registreringer i databasen"
+
+msgid "Purge"
+msgstr "Slett"
+
+msgid "Bots list"
+msgstr "Bots-liste"
+
+msgid "Add"
+msgstr "Legg til"
+
+msgid "Remove"
+msgstr "Fjern"
+
+msgid "Automatic update"
+msgstr "Oppdater automatisk"
+
+msgid "Update now"
+msgstr "Oppdater n&#229;"
+
+msgid "Import"
+msgstr "Importer"
+
+msgid "Export"
+msgstr "Eksporter"
+
+msgid "Excluded IPs"
+msgstr "Ekskluderte IP-adresser"
+
+msgid "Automatically"
+msgstr "Automatisk"
+
+msgid "Manually"
+msgstr "Manuelt"
+
+msgid "Please select"
+msgstr "Vennligst velg"
+
+msgid "One month"
+msgstr "En m&#229;ned"
+
+msgid "Two months"
+msgstr "To m&#229;neder"
+
+msgid "Three months"
+msgstr "Tre m&#229;neder"
+
+msgid "Half a year"
+msgstr "Et Halvt &#229;r"
+
+msgid "One year"
+msgstr "Et &#229;r"
+
+msgid "Two years"
+msgstr "To &#229;r"
+
+msgid "Manage sites"
+msgstr "Administrer sider"
+
+msgid "Warning, you can really mess things up from here, be careful!"
+msgstr "Advarsel, her kan du rote ting til ordentlig, v&#230;r forsiktig"
+
+msgid "FireStats can collect statistics from multiple sites (on the same server)."
+msgstr "FireStats kan samle informasjon fra flere sider (p&#229; samme server)"
+
+msgid "The site need to be registered in the sites table"
+msgstr "Siden m&#229; v&#230;re registrert i sidetabellen"
+
+msgid "The site should be configured to use its ID when reporting a hit, click on the help button next to the site you created for more information"
+msgstr "Siden m&#229; bli konfigurert til &#229; bruk ID n&#229;r det rapporteres treff, trykk p&#229; hjelpknappen ved siden av siden du registrerte for mer informasjon"
+
+#, php-format
+msgid "Click %s for more information"
+msgstr "Trykk %s for mer informasjon"
+
+msgid "Refresh statistics"
+msgstr "Oppdater statistikk"
+
+msgid "Auto refresh every"
+msgstr "Autooppdater hvert"
+
+msgid "minutes"
+msgstr "minutter"
+
+msgid "Apply"
+msgstr "Bruk"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Visits"
+msgstr "Treff"
+
+msgid "Page views in last 24 hours"
+msgstr "Sidevisninger de siste 24 timer"
+
+msgid "Visits in last 24 hours"
+msgstr "Treff de siste 24 timer"
+
+msgid "Recent referrers"
+msgstr "Siste referenter"
+
+#, php-format
+msgid "Show at most %s items for the last %s days, sorted by %s"
+msgstr "Vis h&#248;yst %s registreringer for de siste %s dager, sortert etter %s"
+
+msgid "Search terms"
+msgstr "S&#248;keord"
+
+#, php-format
+msgid "Show at most %s search terms for %s"
+msgstr "Vis h&#248;yst %s s&#248;keord for %s"
+
+msgid "Start date:"
+msgstr "Startdato:"
+
+msgid "End date:"
+msgstr "Sluttdato:"
+
+msgid "Recent popular pages"
+msgstr "Siste popul&#230;re sider"
+
+#, php-format
+msgid "Show at most %s items for the last %s days"
+msgstr "Vis h&#248;yst %s registreringer for de siste %s dagene"
+
+msgid "Browsers"
+msgstr "Nettlesere"
+
+#, php-format
+msgid "Show items for the last %s days"
+msgstr "Vis registreringer fra de siste %s dagene"
+
+msgid "Operating systems"
+msgstr "Operativsystemer"
+
+msgid "Countries"
+msgstr "Land"
+
+msgid "Hits table"
+msgstr "Sidevisningstabell"
+
+msgid "Number of hits to show"
+msgstr "Antall registreringer som vises"
+
+msgid "User agent"
+msgstr "Useragent"
+
+msgid "Filter"
+msgstr "Filter"
+
+msgid "Clear"
+msgstr "Slett"
+
+msgid "Newest first"
+msgstr "Nyeste f&#248;rst"
+
+msgid "Most hits first"
+msgstr "Mest treff f&#248;rst"
+
+msgid "the last 24 hours"
+msgstr "siste 24 timer"
+
+msgid "the last week"
+msgstr "siste uke"
+
+msgid "the last month"
+msgstr "siste m&#229;ned"
+
+msgid "the three months"
+msgstr "siste 3 m&#229;neder"
+
+msgid "the last six months"
+msgstr "siste 6 m&#229;neder"
+
+msgid "the last year"
+msgstr "siste &#229;ret"
+
+msgid "all time"
+msgstr "alle"
+
+msgid "time range"
+msgstr "tidsrom"
+
+msgid "Tools"
+msgstr "Verkt&#248;y"
+
+msgid "This section contains various tools"
+msgstr "Denne seksjonen inneholder forskjellige verkt&#248;y"
+
+msgid "I agree to send system information"
+msgstr "Jeg aksepterer &#229; sende systeminformasjon"
+
+msgid "Diagnostics"
+msgstr "Diagnoseverkt&#248;y"
+
+msgid "System diagnostics page"
+msgstr "Systemdiagnose"
+
+msgid "Open"
+msgstr "&#229;pne"
+
+msgid "PHP Version"
+msgstr "PHP-Versjon"
+
+msgid "MySQL Version"
+msgstr "MySQL Versjon"
+
+msgid "Memory limit"
+msgstr "Minnegrense"
+
+msgid "Database cache"
+msgstr "Databasecache"
+
+msgid "The following section can recalculate different aspects of the database. you don't normally need to use it."
+msgstr "Den f&#248;lgende seksjonen kan rekalkulere forskjellige aspekter ved databasen, du vil normalt sett ikke trenge dette."
+
+msgid "Recalculate country codes"
+msgstr "Rekalkuler landskodene"
+
+msgid "Rebuild database cache"
+msgstr "Gjenoppbygg databasecache"
+
+msgid "Recalculate search engine terms"
+msgstr "Rekalkuler s&#248;keordene"
+
+msgid "Manage users"
+msgstr "Administrer brukere"
+
+msgid "You can manage users here"
+msgstr "Du kan administrere brukere her"
+
+msgid "Statistics widget"
+msgstr "Statistikk Widget"
+
+#, php-format
+msgid "You can configure the sidebar widgets from %s"
+msgstr "Du kan ogs&#229; konfigurere sidekolonnen fra %s"
+
+#, php-format
+msgid "The statistics widget requires the %s plugin for optimal usage."
+msgstr "Sidekolonne widgetten trenger %s innstikket for &#229; fungere optimalt."
+
+msgid "Widgets"
+msgstr "Widgets"
+
+msgid "You can also manually add the following code to your theme sidebar:"
+msgstr "Du kan ogs&#229; legge til den f&#248;lgende koden for &#229; forandre utseende p&#229; sidekolonnen"
+
+msgid "Comments icons"
+msgstr "Kommentarikoner"
+
+msgid "Add flag icon to comments"
+msgstr "Legg til et flaggikon til kommentarene"
+
+msgid "Add browser and operating system icons to comments"
+msgstr "Legg til nettleser og operativsystemikoner til kommentarene"
+
+msgid "Blog footer"
+msgstr "Bloggbunntekst"
+
+msgid "Add FireStats footer to blog"
+msgstr "Legg til FireStats bunnteksten til din blogg"
+
+msgid "Show statistics in footer"
+msgstr "Vis statistikk i bunnteksten"
+
+msgid "Excluded users"
+msgstr "Ekskluderte brukere"
+
+msgid "WordPress users selected here will not be counted in the statistics"
+msgstr "Wordpress brukere som blir valgt her vil ikke bli telt med i statistikkene"
+
+msgid "Permissions"
+msgstr "Tillatelser"
+
+msgid "Select the minimum user role that can access FireStats (Only administrators can manage FireStats)"
+msgstr "Velg den laveste brukerrollen som kan benyttes for &#229; ha tilgang til FireStats (kun administratorer f&#229;r lov til &#229; administrere FireStats)"
+
+msgid "Administrator"
+msgstr "Administrator"
+
+msgid "Editor"
+msgstr "Bearbeider"
+
+msgid "Author"
+msgstr "Forfatter"
+
+msgid "Contributor"
+msgstr "Medarbeider"
+
+msgid "Subscriber"
+msgstr "Abonnent"
+
+msgid "Advanced"
+msgstr "Avansert"
+
+msgid "WordPress site ID, every hit From this blog is recorded with this as the source Site ID"
+msgstr "Wordpress side ID, hvert treff fra denne bloggen vil bli registrert med denne IDen som kildeID"
+
+msgid "This should be the same ID as the Site ID in the sites table. you don't normally need to change this."
+msgstr "Dette burde v&#230;re den samme ID som i sidetabellen, du trenger normalt sett ikke endre dette."
+
+msgid "This will update the titles of the blog posts inside FireStats, you don't normally need to use it"
+msgstr "Dette vil oppdatere titlene til bloggpostene internt i FireStats, du trenger normalt sett ikke &#229; gj&#248;re det"
+
+msgid "Recalculating matching bots"
+msgstr "Rekalkuler matchende Boter"
+
+msgid "Statistics"
+msgstr "Statistikk"
+
+msgid "Settings"
+msgstr "Innstillinger"
+
+msgid "WordPress settings"
+msgstr "WordPress innstillinger"
+
+msgid "Database"
+msgstr "Database"
+
+msgid "Users management"
+msgstr "Brukeradministrasjon"
+
+msgid "Sites management"
+msgstr "Sideadministrering"
+
+msgid "FireStats tools"
+msgstr "FireStats Verkt&#248;y"
+
+msgid "System test"
+msgstr "Systemtest"
+
+msgid "Reset password"
+msgstr "Nullstill passordet"
+
+#, php-format
+msgid "Error getting version information from %s : %s"
+msgstr "Problemer med &#229; hente versjonsinformasjon fra %s: %s"
+
+msgid "A new version of the IP-to-country database is available! you can update it from the settings tab"
+msgstr "En ny utgave av IP-to-country er tilgjengelig, Du kan oppdatere fra Innstillinger-tabben"
+
+#, php-format
+msgid "Version %s is available! click %s for more info"
+msgstr "Versjon %s er tilgjengelig! Trykk p&#229; %s for mer informasjon"
+
+#, php-format
+msgid "Error opening %s"
+msgstr "Feil ved &#229;pning av %s"
+
+msgid "Yes (Recommended)"
+msgstr "Ja (Anbefalt)"
+
+msgid "No"
+msgstr "Nei"
+
+msgid "Compacting old data"
+msgstr "Komprimerer gamle data"
+
+msgid "FireStats can tranform old data to a more compact form,"
+msgstr "FireStats kan transformere gamle data til en mer kompakt form"
+
+msgid "This will reduce storage size and improve performance at the cost of losing some information which is not essential."
+msgstr "Dette vil redusere plassen som opptas og forbedre ytelsen, gjennom &#229; miste noe informasjon som ikke er viktig."
+
+msgid "it is highly recommended that you allow FireStats to do this automatically."
+msgstr "Det er anbefalt &#229; la FireStats gjennomf&#248;re dette automatisk."
+
+#, php-format
+msgid "Click %s if you would like FireStats to automatically compact data older than %s days"
+msgstr "Trykk p&#229; %s hvis du vil at FireStats skal komprimere data eldre enn %s dager automatisk"
+
+#, php-format
+msgid "Click %s if you want to compact data manually or change compacting options (From the Settings tab)"
+msgstr "Trykk p&#229; %s hvis du vil komprimere data manuelt eller endre komprimeringsinstillingene (Under innstillinger-tabben)"
+
+msgid "Delete site"
+msgstr "Slett siden"
+
+msgid "This will delete this site from the database, the operation is irreversible!"
+msgstr "Dette vil slette siden fra databasen og dette kan ikke gj&#248;res ugjort!"
+
+msgid "What do you want to do with the site hits?"
+msgstr "Hva vil du gj&#248;re med sidens registreringer?"
+
+msgid "Delete all the hits"
+msgstr "Slett alle registreringene"
+
+msgid "Transfer the hits to another site"
+msgstr "Flytt registreringene til en annen side"
+
+msgid "Enter an existing site ID to transfer the hits to"
+msgstr "Skriv inn en eksisterende ID for &#229; flytte registreringene dit"
+
+msgid "Close"
+msgstr "Steng"
+
+msgid "No such user"
+msgstr "Det finnes ingen slik bruker"
+
+msgid "Delete user"
+msgstr "Slett brukeren"
+
+msgid "You can help by sending anonymous system information that will help make better decisions about new features."
+msgstr "Du kan hjelpe til gjennom &#229; sende anonymisert systeminformasjon som gj&#248;r at vi kan ta bedre valg i forhold til nye funksjoner"
+
+msgid "You can change this later from the Tools tab"
+msgstr "Du kan endre dette senere under verkt&#248;ys-tabben"
+
+msgid "Do you agree to send anonymous system information?"
+msgstr "Aksepterer du &#229; sende anonymisert systeminformasjon?"
+
+msgid "Sure, send system information"
+msgstr "Ja, send systeminformasjon"
+
+msgid "Nope, don't send"
+msgstr "Nei, ikke send systeminformasjonen"
+
+msgid "Even though FireStats is free, it takes a lot of time and hard work to develop and maintain."
+msgstr "Selv om FireStats er gratis, s&#229; tar det mye tid og hardt arbeid &#229; utvikle og oppdatere programmet."
+
+msgid "If you like FireStats and would like to show your support for the hard work I put into it, You can make a small Donation. Even a $5 donation would be greatly appreciated."
+msgstr "Hvis du liker FireStats og vil vise din st&#248;tte for det harde arbeidet jeg legger i dette s&#229; kan du gjerne gi meg en liten donasjon. Selv $5 vil bli h&#248;yt verdsatt."
+
+msgid "Yeah, I want to help"
+msgstr "Ja, jeg vil gjerne hjelpe"
+
+msgid "Nah, go away"
+msgstr "Nei, g&#229; vekk"
+
+msgid "Maybe later"
+msgstr "Kanskje senere"
+
+msgid "Already donated"
+msgstr "Har allerede donert"
+
+msgid "Edit user"
+msgstr "Endre bruker"
+
+msgid "New password (Optional)"
+msgstr "Nytt passord (valgfritt)"
+
+msgid "Verify new password"
+msgstr "Bekreft nytt passord"
+
+msgid "Edit site"
+msgstr "Endre side"
+
+msgid "Create a new site"
+msgstr "Lag ny side"
+
+msgid "Baseline page views"
+msgstr "Startpunkt for sidevisninger"
+
+msgid "Baseline visitors"
+msgstr "Startpunkt for treff"
+
+msgid "Create a new user"
+msgstr "Lag ny bruker"
+
+msgid "Message"
+msgstr "Melding"
+
+msgid "This page will allow you to change the password of any user in FireStats."
+msgstr "Denne siden vil la deg skifte passordet til enhver bruker i FireStats"
+
+#, php-format
+msgid "For security reasons, you must first edit the file %s"
+msgstr "Av sikkerhetsgrunner m&#229; du f&#248;rst endre filen %s"
+
+#, php-format
+msgid "and change the line %s to %s and then refresh this page."
+msgstr "og skifte filen %s til %s for s&#229; &#229; oppdatere siden."
+
+msgid "Don't forget to change it back when you are done."
+msgstr "Ikke glem &#229; endre tilbake n&#229;r du er ferdig."
+
+msgid "IMPORTANT"
+msgstr "Viktig!"
+
+#, php-format
+msgid "You can request an password reset email from here. If it does not work or you don't know your username or email, you can also change your password using the %s"
+msgstr "Du kan be om en e-post for &#229; sette nytt passord herfra. Hvis det ikke fungerer eller du ikke vet brukernavnet eller e-postadressen din s&#229; kan du ogs&#229; endre passordet ved &#229; bruke %s"
+
+msgid "Emergency user management page"
+msgstr "N&#248;dsadministreringsside for brukere"
+
+msgid "A user with this username and email was not found"
+msgstr "Ingen bruker med dette brukernavnet og e-postadresse ble funnet"
+
+msgid "FireStats password recovery"
+msgstr "FireStats Passordtilbakef&#248;ring"
+
+#, php-format
+msgid "Click %s to change your FireStats password, this link will work for a short time"
+msgstr "Trykk p&#229; %s for &#229; endre ditt FireStats passord, lenken vil kun fungere for en kort tid."
+
+msgid "Email sent"
+msgstr "E-post sendt"
+
+msgid "Failed to send email"
+msgstr "E-post kunne ikke bli sendt"
+
+#, php-format
+msgid "Failed, maybe too much time have passed since you generated the email? %s"
+msgstr "Dette feilet, kanskje det har g&#229;tt for lang tid siden e-posten ble laget? %s"
+
+msgid "try again"
+msgstr "Pr&#248;v igjen"
+
+msgid "New password"
+msgstr "Nytt passord"
+
+msgid "Change password"
+msgstr "Endre passord"
+
+msgid "Email address"
+msgstr "E-postadresse"
+
+msgid "Send password reset email"
+msgstr "Send passord-tilbakef&#248;ringsepost"
+

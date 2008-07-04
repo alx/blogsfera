@@ -1,0 +1,1972 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FireStats\n"
+"POT-Creation-Date: 2007-11-24 17:08+0200\n"
+"PO-Revision-Date: 2007-11-24 17:47+0200\n"
+"Last-Translator: Omry Yadan <omry@yadan.net>\n"
+"Language-Team: Omry Yadan <omry@yadan.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Country: ISRAEL\n"
+"X-Poedit-KeywordsList: fs_e;fs_r\n"
+"X-Poedit-Basepath: /home/omry/dev/php/firestats-1.4/\n"
+"X-Poedit-Language: Hebrew (עברית)\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: login.php:10
+#: login.php:25
+msgid "Login"
+msgstr "כניסה"
+
+#: login.php:13
+msgid "Username"
+msgstr "שם משתמש"
+
+#: login.php:17
+#: php/page-add-admin.php:37
+#: php/window-new-user.php:22
+msgid "Password"
+msgstr "סיסמא"
+
+#: login.php:24
+msgid "Remember me for the next 14 days"
+msgstr "זכור אותי בשבועיים הקרובים"
+
+#: login.php:30
+#, php-format
+msgid "Forgot your password? click %s."
+msgstr "שכחת את הסיסמא? לחץ %s"
+
+#: login.php:30
+#: php/version-check.php:148
+#: php/page-sites.php:33
+#: php/page-wordpress-settings.php:28
+#: php/page-wordpress-settings.php:36
+#: php/page-wordpress-settings.php:40
+#: php/tools/reset-password.php:38
+msgid "here"
+msgstr "כאן"
+
+#: index.php:15
+#: php/ajax-handler.php:753
+msgid "Error"
+msgstr "שגיאה"
+
+#: index.php:15
+msgid "Access denied"
+msgstr "גישה נדחתה"
+
+#: firestats-wordpress.php:305
+#: firestats-wordpress.php:720
+#: php/html-utils.php:1097
+#: php/footer.php:5
+#: php/header.php:38
+msgid "FireStats"
+msgstr "FireStats"
+
+#: firestats-wordpress.php:305
+#: php/tabbed-pane.php:94
+msgid "Loading..."
+msgstr "טוען..."
+
+#: firestats-wordpress.php:324
+#, php-format
+msgid "Total : %s page views and %s visits"
+msgstr "סך הכל: %s דפים נצפים ו-%s ביקורים"
+
+#: firestats-wordpress.php:325
+#, php-format
+msgid "Last 24 hours : %s page views and %s visits"
+msgstr "ב-24 השעות האחרונות: %s דפים נצפים ו-%s ביקורים"
+
+#: firestats-wordpress.php:472
+msgid "You are not authorized to access FireStats"
+msgstr "אתה לא מורשה לגשת אל FireStats"
+
+#: firestats-wordpress.php:743
+#: firestats-wordpress.php:850
+msgid "Title:"
+msgstr "כותרת:"
+
+#: firestats-wordpress.php:748
+#: firestats-wordpress.php:864
+msgid "Hide FireStats logo"
+msgstr "הסתר את הלוגו של FireStats"
+
+#: firestats-wordpress.php:816
+msgid "Popular posts"
+msgstr "פוסטים פופולריים"
+
+#: firestats-wordpress.php:854
+msgid "Number to show"
+msgstr "מספר הרשומות להצגה"
+
+#: firestats-wordpress.php:858
+msgid "Days ago (Empty for all time)"
+msgstr "מספר ימים (ריק בשביל הכל)"
+
+#: firestats-wordpress.php:931
+msgid "Pages displayed : "
+msgstr "דפים נצפים:"
+
+#: firestats-wordpress.php:932
+msgid "Unique visitors : "
+msgstr "ביקורים:"
+
+#: firestats-wordpress.php:933
+msgid "Pages displayed in last 24 hours : "
+msgstr "דפים נצפים ב-24 השעות האחרונות:"
+
+#: firestats-wordpress.php:934
+msgid "Unique visitors in last 24 hours : "
+msgstr "מבקרים ב-24 השעות האחרונות:"
+
+#: firestats-wordpress.php:985
+msgid "pages viewed"
+msgstr "דפים נצפים"
+
+#: firestats-wordpress.php:985
+#: firestats-wordpress.php:986
+msgid "today"
+msgstr "היום"
+
+#: firestats-wordpress.php:986
+msgid "visits"
+msgstr "ביקורים"
+
+#: firestats-wordpress.php:995
+msgid "Powered by FireStats"
+msgstr "‏מריץ FireStats‏"
+
+#: js/page-database.js.php:66
+msgid "Upgrading, do not interrupt"
+msgstr "מבצע עדכון, נא לא להפריע"
+
+#: js/page-database.js.php:73
+#: php/page-database.php:60
+msgid "Upgrade"
+msgstr "שדרג"
+
+#: js/page-sites.js.php:27
+#: js/page-sites.js.php:29
+#: js/page-sites.js.php:47
+#: js/page-sites.js.php:49
+#: php/window-new-edit-site.php:23
+#: php/window-new-edit-site.php:24
+msgid "Automatic"
+msgstr "אוטומטי"
+
+#: js/page-sites.js.php:93
+#: php/window-delete-user.php:19
+#: php/window-delete-site.php:30
+msgid "Delete"
+msgstr "מחק"
+
+#: js/page-sites.js.php:93
+msgid "Transfer"
+msgstr "העבר"
+
+#: js/firestats.js.php:50
+#: js/firestats.js.php:97
+msgid "Stop"
+msgstr "עצור"
+
+#: js/firestats.js.php:51
+msgid "Compacting..."
+msgstr "מבצע דחיסה..."
+
+#: js/firestats.js.php:63
+msgid "Stopping..."
+msgstr "עוצר..."
+
+#: js/firestats.js.php:74
+#: php/page-settings.php:70
+msgid "Compact now"
+msgstr "דחוס עכשיו"
+
+#: js/firestats.js.php:119
+#: js/firestats.js.php:139
+msgid "Abort"
+msgstr "בטל"
+
+#: js/firestats.js.php:134
+#: js/firestats.js.php:146
+#: js/firestats.js.php:154
+#: php/page-tools.php:41
+#: php/page-tools.php:46
+#: php/page-tools.php:51
+msgid "Start"
+msgstr "התחל"
+
+#: js/firestats.js.php:135
+msgid "Canceled"
+msgstr "בוטל"
+
+#: js/firestats.js.php:368
+#: php/page-stats.php:66
+msgid "Not a positive number : "
+msgstr "לא מספר חיובי: "
+
+#: js/firestats.js.php:744
+msgid "Session expired, press ok to reload"
+msgstr "פג תוקף ה-Session, לחץ אישור לכדי לטעון מחדש"
+
+#: js/page-settings.js.php:19
+msgid "You need to select an bot you want to remove from the table"
+msgstr "יש לבחור רובוט להסרה מהטבלה"
+
+#: js/page-settings.js.php:40
+msgid "Invalid IP address"
+msgstr "כתובת IP לא תקינה"
+
+#: js/page-settings.js.php:49
+msgid "You need to select an IP address you want to remove from the table"
+msgstr "יש לבחור כתובת IP להסרה מהטבלה"
+
+#: lib/ezsql/mysql/ez_sql_mysql.php:41
+msgid "User name and password are required to connect to database"
+msgstr "נדרשים שם משתמש וסיסמה להתחברות אל בסיס הנתונים"
+
+#: lib/ezsql/mysql/ez_sql_mysql.php:42
+msgid "Error establishing mySQL database connection"
+msgstr "שגיאה בהתחברות לבסיס הנתונים"
+
+#: lib/ezsql/mysql/ez_sql_mysql.php:43
+msgid "Database name is required to connect to database"
+msgstr "שם בסיס נתונים נחוץ כדי להתחבר לבסיס הנתונים"
+
+#: lib/ezsql/mysql/ez_sql_mysql.php:44
+msgid "mySQL database connection is not active"
+msgstr "החיבור לבסיס הנתונים אינו פעיל"
+
+#: lib/ezsql/mysql/ez_sql_mysql.php:45
+msgid "Unexpected error while querying database"
+msgstr "שגיאה לא צפויה בזמן תשאול בסיס הנתונים"
+
+#: lib/ezsql/mysql/ez_sql_mysql.php:122
+#: lib/ezsql/mysql/ez_sql_mysql.php:133
+#, php-format
+msgid "Can't disconnect: %s"
+msgstr "שגיאה בהתנתקות: %s"
+
+#: lib/ezsql/mysql/ez_sql_mysql.php:133
+msgid "Not connected"
+msgstr "לא מחובר"
+
+#: php/db-sql.php:39
+msgid "Data compacting is already in progress"
+msgstr "דחיסת נתונים כבר מתבצעת"
+
+#: php/db-sql.php:59
+#: php/page-settings.php:77
+msgid "MySQL 4.1.14 or newer is required for data compacting support"
+msgstr "נדרש MySQL מגירסה 4.1.4 ומעלה לתמיכה בדחיסת נתונים"
+
+#: php/db-sql.php:259
+#: php/db-sql.php:297
+msgid "Site name not specified"
+msgstr "לא צוין שם אתר"
+
+#: php/db-sql.php:271
+#: php/db-sql.php:301
+msgid "Site ID must be a positive number"
+msgstr "על מזהה האתר להיות מספר חיובי"
+
+#: php/db-sql.php:274
+#: php/db-sql.php:320
+#, php-format
+msgid "A site with the ID %s already exists"
+msgstr "אתר עם המזהה %s כבר קיים"
+
+#: php/db-sql.php:308
+#: php/db-sql.php:378
+#: php/db-sql.php:425
+#, php-format
+msgid "No site with the id %s exists"
+msgstr "לא קיים אתר עם המזהה %s"
+
+#: php/db-sql.php:410
+msgid "New site_id must not be empty"
+msgstr "מזהה האתר חייב להיות מלא"
+
+#: php/db-sql.php:416
+msgid "Can't move the hits to the same site"
+msgstr "לא ניתן להזיז את הכניסות לאותו האתר"
+
+#: php/db-sql.php:508
+#: php/db-sql.php:548
+#, php-format
+msgid "Invalid IP address: %s"
+msgstr "כתובת IP לא תקינה: %s"
+
+#: php/db-sql.php:521
+#, php-format
+msgid "The IP address %s is already in the database"
+msgstr "כתובת ה-IP %s נמצאת כבר בבסיס הנתונים"
+
+#: php/db-sql.php:583
+#, php-format
+msgid "The bot wildcard %s is already in the database"
+msgstr "מזהה הרובוט %s כבר נמצא בבסיס הנתונים"
+
+#: php/db-sql.php:1087
+#: php/db-sql.php:1133
+#: php/html-utils.php:167
+#: php/html-utils.php:305
+msgid "Unknown"
+msgstr "לא ידוע"
+
+#: php/db-sql.php:1500
+#, php-format
+msgid "Error opening file : %s"
+msgstr "ארעה שגיאה בעת פתיחת הקובץ %s"
+
+#: php/ip2country.php:116
+#: php/ip2country.php:120
+#: php/ip2country.php:250
+msgid "Error creating temporary file"
+msgstr "שגיאה ביצירת קובץ זמני"
+
+#: php/ip2country.php:128
+#, php-format
+msgid "Error opening connection to %s"
+msgstr "שגיאה בהתחברות אל %s"
+
+#: php/ip2country.php:133
+#, php-format
+msgid "Error sending request to %s"
+msgstr "שגיאה בהתחברות אל %s"
+
+#: php/ip2country.php:139
+#: php/utils.php:305
+#, php-format
+msgid "Server returned error %s for %s"
+msgstr "השרת החזיר שגיאה %s עבור %s"
+
+#: php/ip2country.php:153
+#, php-format
+msgid "Error reading data from %s : %s"
+msgstr "שגיאה בקריאת נתונים מ-%s ‏: %s"
+
+#: php/ip2country.php:182
+#, php-format
+msgid "Error extracting IP-to-country database: %s"
+msgstr "ארעה שגיאה בעת פריסת בסיס הנתונים של IP-למדינה : %s"
+
+#: php/ip2country.php:187
+#, php-format
+msgid "Unsupported file type : %s"
+msgstr "סוג קובץ לא נתמך : %s"
+
+#: php/ip2country.php:207
+#, php-format
+msgid "can't update ip-to-country database, read-only directory : %s"
+msgstr "נכשל עדכון בסיס נתוני IP-למדינה, אין הרשאת כתיבה לספריה %s"
+
+#: php/ip2country.php:209
+#: php/ip2country.php:211
+#, php-format
+msgid "can't update ip-to-country database, read-only file : %s"
+msgstr "נכשל עדכון בסיס נתוני IP-למדינה, אין הרשאת כתיבה לקובץ %s"
+
+#: php/ip2country.php:226
+msgid "Error installing new IP-to-country database"
+msgstr "ארעה שגיאה בעת התקנת בסיס נתוני IP-למדינה חדש"
+
+#: php/ip2country.php:232
+msgid "Successfuly updated IP-to-country database"
+msgstr "בסיס נתונים IP-למדינה עודכן בהצלחה"
+
+#: php/ip2country.php:236
+#, php-format
+msgid "Error updating version file : %s"
+msgstr "שגיאה בעדכון קובץ הגירסה : %s"
+
+#: php/page-settings.php:12
+msgid "Options"
+msgstr "אפשרויות"
+
+#: php/page-settings.php:13
+msgid "Select language"
+msgstr "בחר שפה"
+
+#: php/page-settings.php:19
+#: php/page-settings.php:30
+#: php/page-settings.php:46
+#: php/page-stats.php:301
+#: php/page-wordpress-settings.php:131
+#: php/window-new-edit-site.php:49
+msgid "Save"
+msgstr "שמור"
+
+#: php/page-settings.php:21
+msgid "How to translate to a new language"
+msgstr "איך לתרגם לשפה חדשה"
+
+#: php/page-settings.php:26
+msgid "Select your time zone"
+msgstr "בחר את איזור הזמן שלך"
+
+#: php/page-settings.php:36
+#, php-format
+msgid "Time zone selection requires %s or newer"
+msgstr "בחירת איזור זמן דורשת %s או חדש יותר"
+
+#: php/page-settings.php:40
+msgid "Select WHOIS provider"
+msgstr "בחר ספק WHOIS"
+
+#: php/page-settings.php:56
+msgid "Compact old data"
+msgstr "דחוס נתונים ישנים"
+
+#: php/page-settings.php:67
+#, php-format
+msgid "%s compact data older than %s"
+msgstr "דחוס %s נתונים ישנים יותר מ-%s"
+
+#: php/page-settings.php:72
+#: php/ajax-handler.php:692
+#, php-format
+msgid "%s days can be compacted, database size %s"
+msgstr "ניתן לדחוס %s ימים, גודל בסיס הנתונים הוא %s"
+
+#: php/page-settings.php:84
+msgid "Automatic version check"
+msgstr "בדיקת גירסה אוטומטית"
+
+#: php/page-settings.php:86
+msgid "Automatically check if there is a new version of FireStats (recommended)"
+msgstr "בדוק אוטומטית אם יש גירסה חדשה של FireStats (מומלץ)"
+
+#: php/page-settings.php:93
+msgid "IP-to-country database"
+msgstr "בסיס נתוני IP למדינה"
+
+#: php/page-settings.php:95
+#, php-format
+msgid "IP-to-country database version : %s"
+msgstr "גירסת בסיס נתוני IP-למדינה : %s"
+
+#: php/page-settings.php:98
+msgid "Automatically check if there is a new version of IP-to-country database"
+msgstr "בדוק אוטומטית אם יש גירסה חדשה של בסיס הנתונים של IP-למדינה"
+
+#: php/page-settings.php:102
+msgid "Update IP-to-country database now (only if needed)"
+msgstr "עדכן את בסיס הנתונים של IP-למדינה עכשיו (רק אם יש צורך)"
+
+#: php/page-settings.php:104
+#: php/page-wordpress-settings.php:137
+#: php/window-edit-user.php:40
+msgid "Update"
+msgstr "עדכן"
+
+#: php/page-settings.php:112
+msgid "Exclude hits"
+msgstr "סינון רשומות"
+
+#: php/page-settings.php:119
+msgid "Save excluded records (not recommended)"
+msgstr "שמור רשומות מסוננות (לא מומלץ)"
+
+#: php/page-settings.php:122
+msgid "Purge excluded records stored in the database"
+msgstr "מחק רשומות מסוננות מבסיס הנתונים"
+
+#: php/page-settings.php:125
+msgid "Purge"
+msgstr "מחק"
+
+#: php/page-settings.php:135
+msgid "Bots list"
+msgstr "רשימת רובוטים"
+
+#: php/page-settings.php:141
+#: php/page-settings.php:185
+msgid "Add"
+msgstr "הוסף"
+
+#: php/page-settings.php:142
+#: php/page-settings.php:186
+msgid "Remove"
+msgstr "הסר"
+
+#: php/page-settings.php:156
+msgid "Automatic update"
+msgstr "עדכון אוטומטי"
+
+#: php/page-settings.php:159
+msgid "Update now"
+msgstr "עדכן עכשיו"
+
+#: php/page-settings.php:161
+msgid "Import"
+msgstr "ייבא"
+
+#: php/page-settings.php:164
+msgid "Export"
+msgstr "יצא"
+
+#: php/page-settings.php:180
+msgid "Excluded IPs"
+msgstr "כתובות IP לסינון"
+
+#: php/page-settings.php:203
+msgid "Automatically"
+msgstr "אוטומטית"
+
+#: php/page-settings.php:204
+msgid "Manually"
+msgstr "ידנית"
+
+#: php/page-settings.php:205
+msgid "Please select"
+msgstr "נא בחר"
+
+#: php/page-settings.php:222
+msgid "One month"
+msgstr "חודש אחד"
+
+#: php/page-settings.php:223
+msgid "Two months"
+msgstr "חודשיים"
+
+#: php/page-settings.php:224
+msgid "Three months"
+msgstr "שלושה חודשים"
+
+#: php/page-settings.php:225
+msgid "Half a year"
+msgstr "חצי שנה"
+
+#: php/page-settings.php:226
+msgid "One year"
+msgstr "שנה"
+
+#: php/page-settings.php:227
+msgid "Two years"
+msgstr "שנתיים"
+
+#: php/window-archive-notification.php:5
+msgid "Yes (Recommended)"
+msgstr "כן (מומלץ)"
+
+#: php/window-archive-notification.php:6
+msgid "No"
+msgstr "לא"
+
+#: php/window-archive-notification.php:9
+msgid "Compacting old data"
+msgstr "דחיסת נתונים ישנים"
+
+#: php/window-archive-notification.php:10
+msgid "FireStats can tranform old data to a more compact form,"
+msgstr "FireStats מסוגל להמיר נתונים ישנים לצורה יותר חסכונית,"
+
+#: php/window-archive-notification.php:11
+msgid "This will reduce storage size and improve performance at the cost of losing some information which is not essential."
+msgstr "התהליך יקטין את נפח הנתונים וישפר ביצועים, במחיר של אובדן נתונים לא חיוניים."
+
+#: php/window-archive-notification.php:12
+msgid "it is highly recommended that you allow FireStats to do this automatically."
+msgstr "מומלץ מאוד לאפשר ל-FireStats לבצע זאת אוטומטית."
+
+#: php/window-archive-notification.php:14
+#, php-format
+msgid "Click %s if you would like FireStats to automatically compact data older than %s days"
+msgstr "לחץ על %s אם ברצונך ש-FireStats ידחוס בצורה אוטומטית נתונים ישנים יותר מ-%s ימים"
+
+#: php/window-archive-notification.php:15
+#, php-format
+msgid "Click %s if you want to compact data manually or change compacting options (From the Settings tab)"
+msgstr "לחץ על %s אם ברצונך לדחוס נתונים ידנית או לשנות את הגדרות הדחיסה (מלשונית ההגדרות)"
+
+#: php/tabbed-pane.php:22
+msgid "Statistics"
+msgstr "סטטיסטיקות"
+
+#: php/tabbed-pane.php:25
+msgid "Settings"
+msgstr "הגדרות"
+
+#: php/tabbed-pane.php:33
+msgid "WordPress settings"
+msgstr "הגדרות וורדפרס"
+
+#: php/tabbed-pane.php:44
+msgid "Database"
+msgstr "בסיס נתונים"
+
+#: php/tabbed-pane.php:50
+msgid "Users management"
+msgstr "ניהול משתמשים"
+
+#: php/tabbed-pane.php:57
+msgid "Sites management"
+msgstr "ניהול אתרים"
+
+#: php/tabbed-pane.php:63
+#: php/page-tools.php:8
+msgid "Tools"
+msgstr "כלים"
+
+#: php/version-check.php:41
+#, php-format
+msgid "Error getting version information from %s : %s"
+msgstr "שגיאה בקריאת נתוני גירסה מ%s : %s"
+
+#: php/version-check.php:123
+msgid "A new version of the IP-to-country database is available! you can update it from the settings tab"
+msgstr "גירסה חדשה של בסיס הנתונים של IP-למדינה זמינה! אפשר לעדכן אותו מחוצץ ההגדרות"
+
+#: php/version-check.php:146
+#, php-format
+msgid "Version %s is available! click %s for more info"
+msgstr "גירסה %s זמינה להורדה! לחץ %s לפרטים נוספים"
+
+#: php/version-check.php:171
+#, php-format
+msgid "Error opening %s"
+msgstr "שגיאה בפתיחת %s"
+
+#: php/auth.php:86
+#, php-format
+msgid "Error connecting to database (%s)"
+msgstr "ארעה שגיאה בזמן ההתחברות לבסיס הנתונים (%s)"
+
+#: php/auth.php:189
+#: php/auth.php:218
+msgid "Invalid email address"
+msgstr "כתובת אימייל לא תקינה"
+
+#: php/auth.php:199
+#: php/auth.php:228
+msgid "A user with this name already exists"
+msgstr "משתמש בשם זה כבר קיים"
+
+#: php/auth.php:203
+#: php/auth.php:232
+msgid "A user with this email address already exists"
+msgstr "משתמש עם אימייל זה כבר קיים"
+
+#: php/page-database.php:51
+msgid "Database status"
+msgstr "מצב בסיס נתונים"
+
+#: php/page-database.php:59
+msgid "Click to upgrade"
+msgstr "לחץ לשדרוג"
+
+#: php/page-database.php:83
+#, php-format
+msgid "Configuration source : %s"
+msgstr "מקור הגדרות: %s"
+
+#: php/page-database.php:89
+msgid "To use wordpress database, click this button."
+msgstr "לשימוש בבסיס הנתונים של וורדפרס, לחץ כאן."
+
+#: php/page-database.php:90
+msgid "FireStats database configuration will be lost."
+msgstr "ההגדרות הנוכחיות יאבדו"
+
+#: php/page-database.php:91
+msgid "Use Wordpress database"
+msgstr "השתמש בבסיס הנתונים של וורדפרס"
+
+#: php/page-database.php:102
+msgid "To perform one of the following actions:"
+msgstr "לביצוע אחת הפעולות הבאות:"
+
+#: php/page-database.php:104
+msgid "Attach to an existing FireStats installation"
+msgstr "התחבר לבסיס נתונים קיים של FireStats"
+
+#: php/page-database.php:105
+#: php/page-database.php:223
+msgid "Install FireStats into an existing database"
+msgstr "התקן FireStats בבסיס נתונים קיים"
+
+#: php/page-database.php:106
+#: php/page-database.php:226
+msgid "Create a new database and install FireStats there"
+msgstr "צור בסיס נתונים חדש והתקן בו את FireStats"
+
+#: php/page-database.php:108
+msgid "Follow instructions in the help"
+msgstr "עקוב אחרי ההוראות בעזרה"
+
+#: php/page-database.php:116
+msgid "Database host"
+msgstr "כתובת שרת"
+
+#: php/page-database.php:122
+msgid "Database name"
+msgstr "שם בסיס נתונים"
+
+#: php/page-database.php:128
+msgid "Database user name"
+msgstr "שם משתמש"
+
+#: php/page-database.php:134
+msgid "Database password"
+msgstr "סיסמא"
+
+#: php/page-database.php:140
+msgid "Tables prefix"
+msgstr "רישית טבלאות"
+
+#: php/page-database.php:149
+#: php/page-database.php:221
+#: php/page-database.php:224
+#: php/page-database.php:227
+msgid "Test connection"
+msgstr "בדוק חיבור"
+
+#: php/page-database.php:159
+msgid "Click to install and switch to new FireStats tables"
+msgstr "לחץ כדי להתקין טבלאות חדשות ולהשתמש בהן"
+
+#: php/page-database.php:162
+#: php/page-database.php:224
+msgid "Install tables"
+msgstr "התקן טבלאות"
+
+#: php/page-database.php:171
+msgid "Click to use this FireStats database"
+msgstr "לחץ כדי להשתמש בבסיס הנתונים הזה"
+
+#: php/page-database.php:175
+#: php/page-database.php:221
+msgid "Use this database"
+msgstr "השתמש בבסיס נתונים זה"
+
+#: php/page-database.php:187
+msgid "To create a new database, an administrator user should be used in the above fields."
+msgstr "ליצירת בסיס נתונים חדש, יש להשתמש בפרטי משתמש בעל הרשאות ניהול בשדות שלמעלה."
+
+#: php/page-database.php:188
+msgid "However, For security reason, it is recommended not to use a database administrator user for day to day operations."
+msgstr "אולם, מסיבות של אבטחה מומלץ לא להשתמש במשתמש כזה לעבודה יום-יומית."
+
+#: php/page-database.php:189
+msgid "Enter new user name and password for FireStats, this user will only have access to the FireStats database"
+msgstr "הכנס שם משתמש וסיסמא חדשים עבור FireStats, משתמש זה יוכל לגשת לבסיס הנתונים של FireStats בלבד."
+
+#: php/page-database.php:190
+msgid "If you will not specify user and password the Admin user and password will be used."
+msgstr "אם לא תציין שם משתמש וסיסמא, המערכת תשתמש במשתמש המנהל."
+
+#: php/page-database.php:197
+msgid "FireStats User name"
+msgstr "שם משתמש של FireStats"
+
+#: php/page-database.php:201
+msgid "FireStats password"
+msgstr "סיסמא של FireStats"
+
+#: php/page-database.php:207
+#: php/page-database.php:227
+msgid "Create database"
+msgstr "צור בסיס נתונים"
+
+#: php/page-database.php:219
+#: php/page-sites.php:23
+#: php/page-users.php:34
+msgid "Help"
+msgstr "עזרה"
+
+#: php/page-database.php:220
+msgid "Attach to an existing FireStats database"
+msgstr "התחבר לבסיס נתונים קיים של FireStats"
+
+#: php/page-database.php:221
+#: php/page-database.php:224
+#, php-format
+msgid "Enter the parameters in the table, press %s, and then %s."
+msgstr "הכנס את הנתונים בטבלה, לחץ %s ואז %s."
+
+#: php/page-database.php:227
+#, php-format
+msgid "Enter the parameters into the table, <u>you need to enter a database administrator user</u>. press %s, and then enter FireStats database user and password, and finally press %s."
+msgstr "הזן את הפרטים לטבלה. <u>עליך להזיו פרטי משתמש בעל הרשאות ניהול</u>. לחץ %s, ואז הזן משתמש וסיסמא לשימוש FireStats, ולבסוף לחץ על %s."
+
+#: php/window-delete-user.php:9
+#: php/window-edit-user.php:9
+msgid "No such user"
+msgstr "אין משתמש כזה"
+
+#: php/window-delete-user.php:12
+msgid "Delete user"
+msgstr "מחק משתמש"
+
+#: php/window-delete-user.php:20
+#: php/window-new-edit-site.php:50
+#: php/window-edit-user.php:41
+#: php/window-delete-site.php:31
+#: php/window-new-user.php:36
+msgid "Close"
+msgstr "סגור"
+
+#: php/page-sites.php:14
+msgid "Manage sites"
+msgstr "ניהול אתרים"
+
+#: php/page-sites.php:24
+msgid "Warning, you can really mess things up from here, be careful!"
+msgstr "אזהרה, אתה באמת יכול לגרום נזק פה, פעל בזהירות!"
+
+#: php/page-sites.php:26
+msgid "FireStats can collect statistics from multiple sites (on the same server)."
+msgstr "באפשרותו של FireStats לאסוף סטטיסטיקות מכמה אתרים (באותו שרת)"
+
+#: php/page-sites.php:28
+msgid "The site need to be registered in the sites table"
+msgstr "על האתר להיות רשום בטבלת האתרים"
+
+#: php/page-sites.php:29
+msgid "The site should be configured to use its ID when reporting a hit, click on the help button next to the site you created for more information"
+msgstr "על האתר להיות מוגדר לשימוש במזהה (ID) שלו בעת דיווח על כניסה. לחץ על כפתור העזרה שליד האתר לקבלת מידע נוסף"
+
+#: php/page-sites.php:32
+#, php-format
+msgid "Click %s for more information"
+msgstr "לחץ %s למידע נוסף"
+
+#: php/html-utils.php:8
+msgid "Link here"
+msgstr "קשר לכאן"
+
+#: php/html-utils.php:134
+#: php/html-utils.php:197
+#: php/window-new-edit-site.php:32
+msgid "Name"
+msgstr "שם"
+
+#: php/html-utils.php:135
+#: php/window-edit-user.php:23
+#: php/page-add-admin.php:33
+#: php/window-new-user.php:18
+msgid "Email"
+msgstr "אימייל"
+
+#: php/html-utils.php:136
+#: php/window-edit-user.php:35
+#: php/window-new-user.php:30
+msgid "Security level"
+msgstr "רמת גישה"
+
+#: php/html-utils.php:158
+msgid "Admin"
+msgstr "מנהל"
+
+#: php/html-utils.php:163
+#: php/window-edit-user.php:13
+#: php/window-new-user.php:8
+msgid "User"
+msgstr "משתמש"
+
+#: php/html-utils.php:183
+msgid "Add a new user"
+msgstr "הוסף משתמש חדש"
+
+#: php/html-utils.php:196
+#: php/window-new-edit-site.php:21
+msgid "ID"
+msgstr "מזהה"
+
+#: php/html-utils.php:198
+#: php/window-new-edit-site.php:36
+msgid "Type"
+msgstr "סוג"
+
+#: php/html-utils.php:199
+#: php/page-stats.php:149
+msgid "Page views"
+msgstr "דפים נצפים"
+
+#: php/html-utils.php:216
+msgid "How to integrate with this site"
+msgstr "איך להתממשק עם האתר הזה"
+
+#: php/html-utils.php:239
+msgid "Orphaned hits"
+msgstr "כניסות מיותמות"
+
+#: php/html-utils.php:251
+msgid "Add a new site"
+msgstr "הוסף אתר חדש"
+
+#: php/html-utils.php:287
+msgid "Generic PHP site"
+msgstr "אתר PHP כללי"
+
+#: php/html-utils.php:289
+msgid "Wordpress"
+msgstr "וורדפרס"
+
+#: php/html-utils.php:291
+msgid "Django"
+msgstr "Django"
+
+#: php/html-utils.php:293
+msgid "Drupal"
+msgstr "דרופל"
+
+#: php/html-utils.php:295
+msgid "Gregarius"
+msgstr "גרגריוס"
+
+#: php/html-utils.php:297
+msgid "Joomla"
+msgstr "ג'ומלה"
+
+#: php/html-utils.php:299
+msgid "MediaWiki"
+msgstr "מדיה-וויקי"
+
+#: php/html-utils.php:301
+msgid "Trac"
+msgstr "טראק"
+
+#: php/html-utils.php:303
+msgid "Gallery2"
+msgstr "Gallery2"
+
+#: php/html-utils.php:396
+msgid "Invalid"
+msgstr "לא תקין"
+
+#: php/html-utils.php:408
+msgid "All"
+msgstr "הכל"
+
+#: php/html-utils.php:409
+msgid "Show statistics from"
+msgstr "הצג סטטיסטיקות מ-"
+
+#: php/html-utils.php:437
+msgid "unknown"
+msgstr "לא ידוע"
+
+#: php/html-utils.php:508
+#: php/page-stats.php:310
+msgid "IP"
+msgstr "כתובת IP"
+
+#: php/html-utils.php:509
+msgid "TimeStamp"
+msgstr "זמן"
+
+#: php/html-utils.php:510
+#: php/page-stats.php:311
+msgid "URL"
+msgstr "דף נצפה"
+
+#: php/html-utils.php:511
+#: php/page-stats.php:312
+msgid "Referrer"
+msgstr "אתר מפנה"
+
+#: php/html-utils.php:512
+msgid "Image"
+msgstr "תמונה"
+
+#: php/html-utils.php:513
+msgid "UserAgent"
+msgstr "דפדפן"
+
+#: php/html-utils.php:534
+#: php/html-utils.php:598
+#: php/html-utils.php:783
+#: php/html-utils.php:875
+#: php/html-utils.php:908
+#: php/html-utils.php:953
+#: php/html-utils.php:1030
+msgid "No data yet, go get some hits"
+msgstr "אין נתונים עדיין"
+
+#: php/html-utils.php:659
+#: php/html-utils.php:682
+#: php/html-utils.php:707
+msgid "Empty"
+msgstr "ריק"
+
+#: php/html-utils.php:812
+msgid "Start date is missing"
+msgstr "תאריך התחלה חסר"
+
+#: php/html-utils.php:817
+msgid "End date is missing"
+msgstr "תאריך סיום חסר"
+
+#: php/html-utils.php:837
+msgid "Please wait..."
+msgstr "נא המתן..."
+
+#: php/html-utils.php:927
+#, php-format
+msgid "%d hits from %s"
+msgstr "%d כניסות מ-%s"
+
+#: php/html-utils.php:1014
+msgid "Others"
+msgstr "אחרים"
+
+#: php/html-utils.php:1057
+#: php/window-do-you-agree-to-send-sysinfo.php:8
+msgid "System information"
+msgstr "מידע מערכת"
+
+#: php/html-utils.php:1058
+msgid "You can help by sending anonymous system information that will help make better decisions about new features"
+msgstr "תוכל לעזור על ידי שליחת מידע אנונימי שיסייע בקבלת החלטות טובות יותר לגבי תכונות חדשות"
+
+#: php/html-utils.php:1059
+#: php/window-do-you-agree-to-send-sysinfo.php:11
+msgid "The information will be sent anonymously, but a unique identifier will be sent to prevent duplicate entries from the same FireStats"
+msgstr "המידע ישלח באופן אנונימי, אבל מזהה יחודי יישלח כדי למנוע רשומות כפולות מאותה התקנת FireStats"
+
+#: php/db-setup.php:17
+msgid "Operation already in progress"
+msgstr "התהליך כבר מתבצע"
+
+#: php/page-stats.php:43
+#: php/page-stats.php:77
+#: php/page-stats.php:109
+msgid "Refresh statistics"
+msgstr "רענן נתונים"
+
+#: php/page-stats.php:135
+msgid "Auto refresh every"
+msgstr "רענן אוטומטית כל"
+
+#: php/page-stats.php:138
+msgid "minutes"
+msgstr "דקות"
+
+#: php/page-stats.php:139
+#: php/page-stats.php:169
+#: php/page-stats.php:192
+#: php/page-stats.php:221
+#: php/page-stats.php:241
+#: php/page-stats.php:262
+#: php/page-stats.php:284
+#: php/page-stats.php:346
+msgid "Apply"
+msgstr "החל"
+
+#: php/page-stats.php:146
+msgid "Status"
+msgstr "מצב כניסות"
+
+#: php/page-stats.php:150
+msgid "Visits"
+msgstr "ביקורים"
+
+#: php/page-stats.php:151
+msgid "Page views in last 24 hours"
+msgstr "דפים נצפים ב-24 השעות האחרונות"
+
+#: php/page-stats.php:152
+msgid "Visits in last 24 hours"
+msgstr "ביקורים ב-24 השעות האחרונות"
+
+#: php/page-stats.php:158
+msgid "Recent referrers"
+msgstr "מפנים אחרונים"
+
+#: php/page-stats.php:165
+#, php-format
+msgid "Show at most %s items for the last %s days, sorted by %s"
+msgstr "הצג לכל היותר %s נתונים עבור %s הימים האחרונים, ממויינים לפי %s"
+
+#: php/page-stats.php:179
+msgid "Search terms"
+msgstr "מילות חיפוש"
+
+#: php/page-stats.php:186
+#, php-format
+msgid "Show at most %s search terms for %s"
+msgstr "הצג לכל היותר %s מילות חיפוש עבור %s"
+
+#: php/page-stats.php:196
+msgid "Start date:"
+msgstr "תאריך התחלה:"
+
+#: php/page-stats.php:197
+msgid "End date:"
+msgstr "תאריך סיום:"
+
+#: php/page-stats.php:211
+msgid "Recent popular pages"
+msgstr "הדפים הנצפים ביותר"
+
+#: php/page-stats.php:217
+#: php/page-stats.php:279
+#, php-format
+msgid "Show at most %s items for the last %s days"
+msgstr "הצג לכל היותר %s נתונים עבור %s הימים האחרונים"
+
+#: php/page-stats.php:231
+msgid "Browsers"
+msgstr "דפדפנים"
+
+#: php/page-stats.php:237
+#: php/page-stats.php:258
+#, php-format
+msgid "Show items for the last %s days"
+msgstr "הצג נתונים עבור %s הימים האחרונים"
+
+#: php/page-stats.php:252
+msgid "Operating systems"
+msgstr "מערכות הפעלה"
+
+#: php/page-stats.php:273
+msgid "Countries"
+msgstr "מדינות"
+
+#: php/page-stats.php:292
+msgid "Hits table"
+msgstr "טבלת כניסות"
+
+#: php/page-stats.php:296
+msgid "Number of hits to show"
+msgstr "מספר הכניסות לתצוגה"
+
+#: php/page-stats.php:313
+msgid "User agent"
+msgstr "דפדפן"
+
+#: php/page-stats.php:317
+msgid "Filter"
+msgstr "סינון"
+
+#: php/page-stats.php:341
+#: php/window-new-edit-site.php:26
+msgid "Clear"
+msgstr "נקה"
+
+#: php/page-stats.php:362
+msgid "Newest first"
+msgstr "החדשים יותר קודם"
+
+#: php/page-stats.php:363
+msgid "Most hits first"
+msgstr "יותר כניסות קודם"
+
+#: php/page-stats.php:372
+msgid "the last 24 hours"
+msgstr "ב-24 השעות האחרונות"
+
+#: php/page-stats.php:373
+msgid "the last week"
+msgstr "השבוע האחרון"
+
+#: php/page-stats.php:374
+msgid "the last month"
+msgstr "החודש האחרון"
+
+#: php/page-stats.php:375
+msgid "the three months"
+msgstr "שלושת החודשים האחרונים"
+
+#: php/page-stats.php:376
+msgid "the last six months"
+msgstr "ששת החודשים האחרונים"
+
+#: php/page-stats.php:377
+msgid "the last year"
+msgstr "השנה האחרונה"
+
+#: php/page-stats.php:378
+msgid "all time"
+msgstr "אי פעם"
+
+#: php/page-stats.php:379
+msgid "time range"
+msgstr "טווח זמן"
+
+#: php/db-hit.php:350
+#: php/db-common.php:544
+#, php-format
+msgid "Database error: %s"
+msgstr "שגיאת בסיס נתונים: %s"
+
+#: php/page-users.php:26
+#: php/tools-menu.php:5
+msgid "Manage users"
+msgstr "ניהול משתמשים"
+
+#: php/page-users.php:35
+msgid "You can manage users here"
+msgstr "תוכל לנהל את המשתמשים פה"
+
+#: php/page-wordpress-settings.php:21
+msgid "Statistics widget"
+msgstr "ווידג'ט סטטיסטיקות"
+
+#: php/page-wordpress-settings.php:46
+#, php-format
+msgid "You can configure the sidebar widgets from %s"
+msgstr "באפשרותך להגדיר את הווידג'טים של הסרגל הצדדי %s"
+
+#: php/page-wordpress-settings.php:50
+#, php-format
+msgid "The statistics widget requires the %s plugin for optimal usage."
+msgstr "הווידג'ט של הסטטיסטיקות דורש את הפלאגין %s לשימוש אופטימלי."
+
+#: php/page-wordpress-settings.php:53
+msgid "Widgets"
+msgstr "ווידג'טים"
+
+#: php/page-wordpress-settings.php:55
+msgid "You can also manually add the following code to your theme sidebar:"
+msgstr "תוכל גם להוסיף ידנית את שורת הקוד הבאה לסרגל הצדדי שלך:"
+
+#: php/page-wordpress-settings.php:63
+msgid "Comments icons"
+msgstr "איקוני תגובות"
+
+#: php/page-wordpress-settings.php:71
+msgid "Add flag icon to comments"
+msgstr "הוסף אייקון דגל לתגובות"
+
+#: php/page-wordpress-settings.php:78
+msgid "Add browser and operating system icons to comments"
+msgstr "הוסף אייקוני מערכת הפעלה ודפדפן לתגובות"
+
+#: php/page-wordpress-settings.php:81
+msgid "Blog footer"
+msgstr "תחתית בלוג"
+
+#: php/page-wordpress-settings.php:88
+msgid "Add FireStats footer to blog"
+msgstr "הוסף שורת \"מריץ FireStats\" לתחתית הבלוג"
+
+#: php/page-wordpress-settings.php:96
+msgid "Show statistics in footer"
+msgstr "הראה סטטיסטיקות בשורה בתחתית הבלוג"
+
+#: php/page-wordpress-settings.php:102
+msgid "Excluded users"
+msgstr "סנן משתמשים"
+
+#: php/page-wordpress-settings.php:103
+msgid "WordPress users selected here will not be counted in the statistics"
+msgstr "משתמשי וורדפרס שנבחרים פה לא יספרו בסטטיסטיקות"
+
+#: php/page-wordpress-settings.php:107
+msgid "Permissions"
+msgstr "הרשאות גישה"
+
+#: php/page-wordpress-settings.php:108
+msgid "Select the minimum user role that can access FireStats (Only administrators can manage FireStats)"
+msgstr "בחר את סוג המשתמש המינימלי שיוכל לגשת לסטטיסטיקות (רק מנהלים יכולים לנהל את פיירסטטס)"
+
+#: php/page-wordpress-settings.php:112
+#: php/window-edit-user.php:12
+#: php/window-new-user.php:7
+msgid "Administrator"
+msgstr "מנהל"
+
+#: php/page-wordpress-settings.php:113
+msgid "Editor"
+msgstr "עורך"
+
+#: php/page-wordpress-settings.php:114
+msgid "Author"
+msgstr "מחבר"
+
+#: php/page-wordpress-settings.php:115
+msgid "Contributor"
+msgstr "תורם"
+
+#: php/page-wordpress-settings.php:116
+msgid "Subscriber"
+msgstr "מנוי"
+
+#: php/page-wordpress-settings.php:124
+msgid "Advanced"
+msgstr "מתקדם"
+
+#: php/page-wordpress-settings.php:125
+msgid "WordPress site ID, every hit From this blog is recorded with this as the source Site ID"
+msgstr "מזהה אתר-וורדפרס, כל כניסה לבלוג זה נרשמת באמצעותו כמזהה של אתר המקור"
+
+#: php/page-wordpress-settings.php:126
+msgid "This should be the same ID as the Site ID in the sites table. you don't normally need to change this."
+msgstr "זה אמור להיות זהה למזהה של האתר בטבלת האתרים. בדרך כלל אין צורך לשנות את זה."
+
+#: php/page-wordpress-settings.php:136
+msgid "This will update the titles of the blog posts inside FireStats, you don't normally need to use it"
+msgstr "זה יעדכן את הכותרות של הפוסטים בבלוג בתוך FireStats, לא צריך לעשות את זה באופן נורמלי"
+
+#: php/window-new-edit-site.php:18
+msgid "Edit site"
+msgstr "ערוך אתר"
+
+#: php/window-new-edit-site.php:18
+msgid "Create a new site"
+msgstr "צור אתר חדש"
+
+#: php/window-new-edit-site.php:40
+msgid "Baseline page views"
+msgstr "מספר בסיס לדפים נצפים"
+
+#: php/window-new-edit-site.php:44
+msgid "Baseline visitors"
+msgstr "מספר בסיס למבקרים"
+
+#: php/import-bots-list.php:15
+#: php/import-bots-list.php:23
+msgid "Import bots list"
+msgstr "ייבא רשימת בוטים"
+
+#: php/import-bots-list.php:34
+msgid "Select bot-list file"
+msgstr "בחר קובץ רשימת-רובוטים"
+
+#: php/import-bots-list.php:35
+msgid "Import type"
+msgstr "סוג ייבוא"
+
+#: php/import-bots-list.php:37
+msgid "Add to bots list"
+msgstr "הוסף בוטים לרשימה הקיימת"
+
+#: php/import-bots-list.php:38
+msgid "Replace bots list"
+msgstr "החלף את הרשימה הקיימת"
+
+#: php/import-bots-list.php:40
+msgid "Send File"
+msgstr "שלח קובץ"
+
+#: php/import-bots-list.php:56
+msgid "Incorrect file format"
+msgstr "מבנה קובץ לא תקין"
+
+#: php/import-bots-list.php:68
+#, php-format
+msgid "Error importing bots list : %s"
+msgstr "ארעה שגיאה בעת יבוא קובץ הרובוטים: %s"
+
+#: php/import-bots-list.php:73
+msgid "bots list imported successfully"
+msgstr "רשימת הרובוטים יובאה בהצלחה"
+
+#: php/db-config-utils.php:20
+msgid "Error accessing database"
+msgstr "שגיאה בגישה לבסיס הנתונים"
+
+#: php/db-config-utils.php:23
+#: php/ajax-handler.php:896
+#: php/db-common.php:134
+msgid "Error connecting to database"
+msgstr "ארעה שגיאה בזמן ההתחברות לבסיס הנתונים"
+
+#: php/db-config-utils.php:26
+msgid "Cannot write configuration file (read only file or directory)"
+msgstr "אין אפשרות לכתוב קובץ הגדרות (ספריה לקריאה בלבד)"
+
+#: php/db-config-utils.php:29
+msgid "Error creating database"
+msgstr "שגיאה ביצירת בסיס הנתונים"
+
+#: php/db-config-utils.php:32
+msgid "Error creating user"
+msgstr "שגיאה ביצירת משתמש"
+
+#: php/db-config-utils.php:35
+msgid "Error creating tables"
+msgstr "שגיאה ביצירת בסיס הנתונים"
+
+#: php/db-config-utils.php:38
+msgid "Error saving configuration"
+msgstr "שגיאה בשמירת הגדרות"
+
+#: php/db-config-utils.php:41
+#: php/ajax-handler.php:1212
+msgid "Password not specified"
+msgstr "לא צוינה סיסמא"
+
+#: php/db-config-utils.php:44
+msgid "Wrong password"
+msgstr "סיסמא שגויה"
+
+#: php/db-config-utils.php:54
+msgid "FireStats tables are not installed"
+msgstr "טבלאות FireStats לא מותקנות"
+
+#: php/db-config-utils.php:59
+msgid "FireStats is installed"
+msgstr "FireStats מותקן"
+
+#: php/db-config-utils.php:64
+msgid "Another FireStats database detected"
+msgstr "זוהה בסיס נתונים אחר של FireStats"
+
+#: php/db-config-utils.php:69
+msgid "New database created successfuly"
+msgstr "בסיס נתונים חדש נוצר בהצלחה"
+
+#: php/db-config-utils.php:72
+#, php-format
+msgid "Unexpected error code %s"
+msgstr "שגיאה לא צפויה : %s"
+
+#: php/db-config-utils.php:281
+msgid "Not configured"
+msgstr "לא מוגדר"
+
+#: php/db-config-utils.php:284
+msgid "FireStats configuration file"
+msgstr "קובץ הגדרות של FireStats"
+
+#: php/db-config-utils.php:287
+msgid "Wordpress configuration file"
+msgstr "קובץ הגדרות וורדפרס"
+
+#: php/rebuild-db.php:15
+msgid "Recalculating matching bots"
+msgstr "חשב מחדש התאמת רובוטים"
+
+#: php/tools-menu.php:1
+msgid "FireStats tools"
+msgstr "כלים"
+
+#: php/tools-menu.php:3
+msgid "System test"
+msgstr "בדיקת מערכת"
+
+#: php/tools-menu.php:4
+#: php/tools/reset-password.php:16
+msgid "Reset password"
+msgstr "איפוס סיסמא"
+
+#: php/window-do-you-agree-to-send-sysinfo.php:9
+msgid "You can help by sending anonymous system information that will help make better decisions about new features."
+msgstr "תוכל לעזור על ידי שליחת מידע אנונימי שיסייע בקבלת החלטות טובות יותר לגבי תכונות חדשות"
+
+#: php/window-do-you-agree-to-send-sysinfo.php:13
+msgid "You can change this later from the Tools tab"
+msgstr "תוכל לשנות זאת אחר כך מלשונית הכלים"
+
+#: php/window-do-you-agree-to-send-sysinfo.php:17
+msgid "Do you agree to send anonymous system information?"
+msgstr "האם אתה מסכים לשלוח מידע מערכת אנונימי?"
+
+#: php/window-do-you-agree-to-send-sysinfo.php:20
+msgid "Sure, send system information"
+msgstr "כן, שלח מידע מערכת"
+
+#: php/window-do-you-agree-to-send-sysinfo.php:23
+msgid "Nope, don't send"
+msgstr "לא, אל תשלח"
+
+#: php/window-edit-user.php:16
+msgid "Edit user"
+msgstr "ערוך משתמש"
+
+#: php/window-edit-user.php:19
+#: php/page-add-admin.php:29
+#: php/window-new-user.php:14
+#: php/tools/reset-password.php:80
+#: php/tools/reset-password.php:108
+msgid "User name"
+msgstr "שם משתמש"
+
+#: php/window-edit-user.php:27
+msgid "New password (Optional)"
+msgstr "סיסמא חדשה (לא חובה)"
+
+#: php/window-edit-user.php:31
+#: php/tools/reset-password.php:88
+msgid "Verify new password"
+msgstr "סיסמא חדשה (אימות)"
+
+#: php/help-window.php:34
+msgid "Unknown site type"
+msgstr "אתר מסוג לא ידוע"
+
+#: php/help-window.php:80
+msgid "Collect hits from PHP pages"
+msgstr "איסוף נתונים מדפי PHP"
+
+#: php/help-window.php:81
+msgid "To allow FireStats to track access to your pages, you need to add the following line inside the head tag of each of the pages you want to monitor (the page must be a php page)."
+msgstr "כדי לאפשר ל-FireStats לעקוב אחר כניסות לדפים שלך, צריך להוסיף שורה דומה לשורה הבאה בתוך תגית ה-HEAD של כל אחד מהדפים שברצונך לנטר. הדף חייב להיות דף PHP."
+
+#: php/help-window.php:87
+msgid "A typical page header will look like this:"
+msgstr "כותרת דף טיפוסית תראה כך:"
+
+#: php/help-window.php:104
+msgid "WordPress"
+msgstr "וורדפרס"
+
+#: php/help-window.php:105
+msgid "The WordPress plugin registers itself automatically when it's activated"
+msgstr "התוסף לוורדפרס רושם את עצמו אוטומטית כשהוא מופעל"
+
+#: php/help-window.php:111
+#: php/help-window.php:119
+#: php/help-window.php:139
+#: php/help-window.php:145
+#: php/help-window.php:157
+msgid "plugin"
+msgstr "תוסף"
+
+#: php/help-window.php:127
+#: php/help-window.php:133
+msgid "module"
+msgstr "מודול"
+
+#: php/help-window.php:176
+#, php-format
+msgid "Collect hits from a %s site"
+msgstr "אסוף נתונים מאתר %s"
+
+#: php/help-window.php:197
+#, php-format
+msgid "and then configure it in the administration menu with the path %s and the ID %s"
+msgstr "ולאחר מכן להגדיר אותו במסך הניהול עם המסלול %s והמזהה %s"
+
+#: php/help-window.php:207
+#, php-format
+msgid "and then edit the lines in %s to contain this:"
+msgstr "ואז לערוך את השורות ב-%s כך שיכילו את זה:"
+
+#: php/help-window.php:214
+#, php-format
+msgid "To collect statistics from your %s site your need to install the %s"
+msgstr "לאיסוף סטטיסטיקות מאתר ה-%s שלך יש להתקין את ה-%s"
+
+#: php/page-tools.php:9
+msgid "This section contains various tools"
+msgstr "סעיף זה מכיל כלים שונים"
+
+#: php/page-tools.php:14
+msgid "I agree to send system information"
+msgstr "אני מסכים לשלוח מידע מערכת"
+
+#: php/page-tools.php:18
+msgid "Diagnostics"
+msgstr "דיאגנוסטיקה"
+
+#: php/page-tools.php:19
+msgid "System diagnostics page"
+msgstr "דף דיאגנוזת מערכת"
+
+#: php/page-tools.php:19
+msgid "Open"
+msgstr "פתח"
+
+#: php/page-tools.php:24
+msgid "PHP Version"
+msgstr "גירסת PHP"
+
+#: php/page-tools.php:27
+msgid "MySQL Version"
+msgstr "גירסת MySQL"
+
+#: php/page-tools.php:30
+msgid "Memory limit"
+msgstr "מגבלת נפח זכרון"
+
+#: php/page-tools.php:36
+msgid "Database cache"
+msgstr "מטמון בסיס הנתונים"
+
+#: php/page-tools.php:37
+msgid "The following section can recalculate different aspects of the database. you don't normally need to use it."
+msgstr "קטע זה משמש לחישוב היבטים שונים של מטמון בסיס הנתונים. באופן רגיל אין צורך להשתמש בו."
+
+#: php/page-tools.php:40
+msgid "Recalculate country codes"
+msgstr "חשב מחדש קודי מדינות"
+
+#: php/page-tools.php:45
+msgid "Rebuild database cache"
+msgstr "בנה מחדש את מטמון בסיס הנתונים"
+
+#: php/page-tools.php:50
+msgid "Recalculate search engine terms"
+msgstr "חשב מחדש מילות חיפוש"
+
+#: php/footer.php:3
+#, php-format
+msgid "If you have any problems or questions, please visit the %s"
+msgstr "אם יש לך שאלות או בעיות, בקר ב%s"
+
+#: php/footer.php:3
+msgid "FireStats homepage"
+msgstr "דף הבית של FireStats"
+
+#: php/window-delete-site.php:10
+msgid "Delete site"
+msgstr "מחק אתר"
+
+#: php/window-delete-site.php:14
+msgid "This will delete this site from the database, the operation is irreversible!"
+msgstr "פעולה זו תמחק את האתר מבסיס הנתונים, הפעולה בלתי הפיכה!"
+
+#: php/window-delete-site.php:15
+msgid "What do you want to do with the site hits?"
+msgstr "מה ברצונך לעשות עם הכניסות של האתר?"
+
+#: php/window-delete-site.php:18
+msgid "Delete all the hits"
+msgstr "מחק את כל הכניסות"
+
+#: php/window-delete-site.php:19
+msgid "Transfer the hits to another site"
+msgstr "העבר את הכניסות לאתר אחר"
+
+#: php/window-delete-site.php:22
+msgid "Enter an existing site ID to transfer the hits to"
+msgstr "הכנס מזהה של אתר קיים כדי להעביר אליו את הכניסות"
+
+#: php/page-add-admin.php:22
+msgid "Create administrator user"
+msgstr "צור משתמש מנהל"
+
+#: php/page-add-admin.php:24
+msgid "You need to create an administrator user for FireStats."
+msgstr "עליך ליצור משתמש מנהל עבור FireStats"
+
+#: php/page-add-admin.php:25
+msgid "The administrator has full control over FireStats, and will be able to create other users/administrators from the administration interface"
+msgstr "למנהל שליטה מלאה על FireStats, והוא יוכל להוסיף משתמשים/מנהלים אחרים דרך ממשק הניהול"
+
+#: php/page-add-admin.php:41
+#: php/window-new-user.php:26
+msgid "Verify password"
+msgstr "סיסמא (אימות)"
+
+#: php/page-add-admin.php:45
+#: php/window-new-user.php:35
+msgid "Create user"
+msgstr "צור משתמש"
+
+#: php/ajax-handler.php:193
+#, php-format
+msgid "Unsupported action code : %s"
+msgstr "פעולה לא נתמכת: %s"
+
+#: php/ajax-handler.php:202
+#, php-format
+msgid "Unexpexted output: %s"
+msgstr "פלט לא צפוי: %s"
+
+#: php/ajax-handler.php:229
+#, php-format
+msgid "Added %s to exclude list"
+msgstr "%s הוסף לרשימת הסינון"
+
+#: php/ajax-handler.php:245
+#, php-format
+msgid "Removed %s from exclude list"
+msgstr "%s הוסר מרשימת הסינון"
+
+#: php/ajax-handler.php:354
+msgid "Excluded users list saved"
+msgstr "רשימת סינון משתמשים נשמרה"
+
+#: php/ajax-handler.php:371
+#, php-format
+msgid "Added %s to bots list"
+msgstr "%s נוסף לרשימת הבוטים"
+
+#: php/ajax-handler.php:382
+msgid "Empty string is not allowed"
+msgstr "אין להכניס מילה ריקה"
+
+#: php/ajax-handler.php:392
+msgid "Removed"
+msgstr "הוסר"
+
+#: php/ajax-handler.php:444
+msgid "Not using configuration file"
+msgstr "לא משתמש בקובץ הגדרות"
+
+#: php/ajax-handler.php:450
+msgid "Not installed inside Wordpress"
+msgstr "לא מותקן בתוך וורדפרס"
+
+#: php/ajax-handler.php:460
+#, php-format
+msgid "Failed to delete fs-config.php : %s"
+msgstr "נכשלתי במחיקת קובץ ההגדרות fs-config.php ‏: %s"
+
+#: php/ajax-handler.php:480
+msgid "Error creating config file: "
+msgstr "שגיאה ביצירת קובץ הגדרות:"
+
+#: php/ajax-handler.php:504
+msgid "Error upgrading tables"
+msgstr "שגיאה בשדרוג טבלאות"
+
+#: php/ajax-handler.php:530
+msgid "Error installing tables"
+msgstr "שגיאה בהתקנת טבלאות"
+
+#: php/ajax-handler.php:609
+msgid "Error rebuilding database cache"
+msgstr "שגיאה בבניית מטמון בסיס הנתונים"
+
+#: php/ajax-handler.php:613
+msgid "Database cache rebuilt successfully"
+msgstr "מטמון בסיס הנתונים נבנה מחדש בהצלחה"
+
+#: php/ajax-handler.php:695
+#, php-format
+msgid "Unkown field: %s"
+msgstr "שדה לא מוכר: %s"
+
+#: php/ajax-handler.php:731
+msgid "IP-to-country database is already up-to-date"
+msgstr "בסיס הנתונים של IP-למדינה כבר מעודכן"
+
+#: php/ajax-handler.php:738
+msgid "An error has occured while trying to update the IP-to-country database"
+msgstr "ארעה שגיאה בזמן נסיון העדכון של בסיס הנתונים של IP-למדינה"
+
+#: php/ajax-handler.php:742
+msgid "file"
+msgstr "קובץ"
+
+#: php/ajax-handler.php:744
+#, php-format
+msgid "You can update the database manually by downloading this %s and extracting it into %s"
+msgstr "תוכל לעדכן את בסיס הנתונים ידנית על ידי הורדה של %s זה ופריסתו לתוך %s"
+
+#: php/ajax-handler.php:749
+msgid "this"
+msgstr "זה"
+
+#: php/ajax-handler.php:751
+#, php-format
+msgid "You can update the database manually by opening %s and downloading the <b>zip_url</b>, and extracting it into %s"
+msgstr "תוכל לעדכן את בסיס הנתונים ידנית על ידי פתיחת %s והורדת <b>zip_url</b>, ולאחר מכן, פריסתו לתוך %s"
+
+#: php/ajax-handler.php:777
+#: php/ajax-handler.php:795
+#, php-format
+msgid "Error updating bots list: %s"
+msgstr "שגיאה בעדכון רשימת הבוטים: %s"
+
+#: php/ajax-handler.php:789
+msgid "Successfully updated bots list"
+msgstr "רשימת הרובוטים עודכנה בהצלחה"
+
+#: php/ajax-handler.php:808
+#, php-format
+msgid "Error purging excluded records: %s"
+msgstr "שגיאה במחיקת רשומות מסוננות : %s"
+
+#: php/ajax-handler.php:812
+msgid "Purged excluded records"
+msgstr "מחק רשומות מסוננות"
+
+#: php/ajax-handler.php:979
+#, php-format
+msgid "Compacting %s days, %s done, database size is %s"
+msgstr "דוחס %s ימים, %s בוצע, גודל בסיס הנתונים הוא %s"
+
+#: php/ajax-handler.php:1054
+#, php-format
+msgid "%d of %d"
+msgstr "%d מתוך %d"
+
+#: php/ajax-handler.php:1066
+#, php-format
+msgid "Done, took %s second"
+msgstr "סיימתי, לקח %s שניות"
+
+#: php/ajax-handler.php:1189
+msgid "Incorrect user-name or password"
+msgstr "שם משתמש או סיסמא שגויה"
+
+#: php/ajax-handler.php:1210
+#: php/ajax-handler.php:1245
+#: php/ajax-handler.php:1266
+msgid "User name not specified"
+msgstr "שם חסר"
+
+#: php/ajax-handler.php:1211
+#: php/ajax-handler.php:1246
+msgid "Email not specified"
+msgstr "אימייל חסר"
+
+#: php/ajax-handler.php:1213
+#: php/ajax-handler.php:1249
+#: php/ajax-handler.php:1267
+msgid "Passwords did not match"
+msgstr "הסיסמאות לא תואמות"
+
+#: php/ajax-handler.php:1268
+msgid "Empty password"
+msgstr "סיסמא ריקה"
+
+#: php/export-bots-list.php:21
+msgid "Error exporting bots list"
+msgstr "שגיאה ביצוא רשימת הרובוטים"
+
+#: php/window-donation.php:7
+#: php/header.php:19
+msgid "Support FireStats"
+msgstr "תמוך ב-FireStats"
+
+#: php/window-donation.php:8
+msgid "Even though FireStats is free, it takes a lot of time and hard work to develop and maintain."
+msgstr "למרות ש-FireStats אינו עולה כסף, הפיתוח והתחזוקה שלו דורשים הרבה זמן ועבודה קשה."
+
+#: php/window-donation.php:9
+msgid "If you like FireStats and would like to show your support for the hard work I put into it, You can make a small Donation. Even a $5 donation would be greatly appreciated."
+msgstr "אם אתה אוהב את FireStats ורוצה להראות את תמיכתך בעבור העבודה הקשה שאני משקיע בו, תוכל לתרום תרומה קטנה. אפילו תרומה של $5 תוערך מאוד."
+
+#: php/window-donation.php:11
+msgid "Yeah, I want to help"
+msgstr "כן, אני רוצה לעזור"
+
+#: php/window-donation.php:12
+msgid "Nah, go away"
+msgstr "לא, לך מפה"
+
+#: php/window-donation.php:13
+msgid "Maybe later"
+msgstr "אולי אחר כך"
+
+#: php/window-donation.php:14
+msgid "Already donated"
+msgstr "תרמתי כבר"
+
+#: php/header.php:28
+msgid "Log out"
+msgstr "יציאה"
+
+#: php/header.php:40
+msgid "Demo"
+msgstr "הדגמה"
+
+#: php/header.php:54
+msgid "Hide"
+msgstr "הסתר"
+
+#: php/db-common.php:116
+msgid "FireStats is properly installed in the database"
+msgstr "FireStats הותקן בהצלחה"
+
+#: php/db-common.php:119
+msgid "FireStats is not configured"
+msgstr "FireStats לא הוגדר"
+
+#: php/db-common.php:122
+msgid "Database error, check your configuration"
+msgstr "שגיאת בסיס נתונים, בדוק את ההגדרות שלך"
+
+#: php/db-common.php:125
+msgid "FireStats is not installed in the database"
+msgstr "FireStats לא מותקן בבסיס הנתונים"
+
+#: php/db-common.php:128
+msgid "FireStats database need to be upgraded"
+msgstr "יש לשדרג את בסיס הנתונים"
+
+#: php/db-common.php:131
+msgid "The FireStats database version is newer than this code version, you need to upgrade FireStats"
+msgstr "גירסת בסיס הנתונים חדשה יותר מגרסת הקוד, עליך לשדרג את FireStats"
+
+#: php/db-common.php:137
+msgid "Unknown database status code"
+msgstr "קוד בסיס נתונים לא ידוע"
+
+#: php/window-new-user.php:11
+msgid "Create a new user"
+msgstr "צור משתמש חדש"
+
+#: php/tools/emergency-manage-users.php:9
+msgid "Message"
+msgstr "הודעה"
+
+#: php/tools/emergency-manage-users.php:10
+msgid "This page will allow you to change the password of any user in FireStats."
+msgstr "דף זה מאפשר לך לשנות את הסיסמאות של כל משתמש בFireStats"
+
+#: php/tools/emergency-manage-users.php:11
+#, php-format
+msgid "For security reasons, you must first edit the file %s"
+msgstr "משיקולי אבטחה, עליך לערוך את הקובץ %s"
+
+#: php/tools/emergency-manage-users.php:12
+#, php-format
+msgid "and change the line %s to %s and then refresh this page."
+msgstr "ולשנות את השורה %s ל%s, ואז לרענן את הדף הזה."
+
+#: php/tools/emergency-manage-users.php:13
+msgid "Don't forget to change it back when you are done."
+msgstr "אל תשכח לשנות את השורה בחזרה כשתסיים."
+
+#: php/tools/emergency-manage-users.php:18
+msgid "IMPORTANT"
+msgstr "חשוב"
+
+#: php/tools/reset-password.php:18
+#, php-format
+msgid "You can request an password reset email from here. If it does not work or you don't know your username or email, you can also change your password using the %s"
+msgstr "תוכל לבקש אימייל לאיפוס סיסמא מפה. אם זה לא עובד או שאתה לא זוכר את שם המשתמש או האימייל שלך, תוכל לשנות את הסיסמא בעזרת %s"
+
+#: php/tools/reset-password.php:18
+msgid "Emergency user management page"
+msgstr "דף החירום לניהול משתמשים"
+
+#: php/tools/reset-password.php:28
+msgid "A user with this username and email was not found"
+msgstr "משתמש עם שם המשתמש והאימייל הזה לא נמצא"
+
+#: php/tools/reset-password.php:37
+msgid "FireStats password recovery"
+msgstr "שחזור סיסמת FireStats"
+
+#: php/tools/reset-password.php:38
+#, php-format
+msgid "Click %s to change your FireStats password, this link will work for a short time"
+msgstr "לחץ %s כדי לשנות את הסיסמא שלך בFireStats, הקישור יעבוד במשך זמן קצר בלבד."
+
+#: php/tools/reset-password.php:42
+msgid "Email sent"
+msgstr "האימייל נשלח"
+
+#: php/tools/reset-password.php:46
+msgid "Failed to send email"
+msgstr "שליחת האימייל נכשלה"
+
+#: php/tools/reset-password.php:61
+#, php-format
+msgid "Failed, maybe too much time have passed since you generated the email? %s"
+msgstr "כשלון, אולי עבר יותר מדי זמן מאז שיצרת את האימייל? %s"
+
+#: php/tools/reset-password.php:61
+msgid "try again"
+msgstr "נסה שוב"
+
+#: php/tools/reset-password.php:84
+msgid "New password"
+msgstr "סיסמא חדשה"
+
+#: php/tools/reset-password.php:93
+msgid "Change password"
+msgstr "שנה סיסמא"
+
+#: php/tools/reset-password.php:113
+msgid "Email address"
+msgstr "כתובת אימייל"
+
+#: php/tools/reset-password.php:118
+msgid "Send password reset email"
+msgstr "שלח אימייל לאיפוס סיסמא"
+

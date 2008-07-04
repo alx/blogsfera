@@ -1,0 +1,517 @@
+/*
+This is a good idea, but it breaks the tree, so I`ll leave it out for now.
+* { margin: 0; padding: 0; }
+*/ /* This is the Holly Hack \*/
+* html .fwrap {
+	height: 1%
+}
+
+/* For Win IE's eyes only */ /*
+#firestats body {
+	border: none;
+	background: #f9fcfe;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+*/
+#firestats h2 a {
+	color: #000000;
+	border-bottom: 0px solid #69c;
+}
+
+#firestats h2 a:hover {
+	color: #000000;
+}
+
+#firestats a img {
+	border: 0;
+	border-bottom: 0px;
+}
+
+#firestats a {
+	border-bottom: 1px solid #69c;
+	color: #00019b;
+	text-decoration: none;
+}
+
+#firestats a.delete:hover {
+	background: #c00;
+	color: #fff;
+}
+
+#firestats a.edit,#firestats a.delete,#firestats a.edit:hover,#firestats a.delete:hover
+	{
+	border-bottom: none;
+	display: block;
+	padding: 5px 0;
+	text-align: center;
+}
+
+#firestats a.edit:hover {
+	background: #ccc;
+	color: #036;
+}
+
+#firestats a:visited {
+	color: #006;
+}
+
+#firestats a:hover {
+	color: #069;
+}
+
+#firestats a.anchor {
+	border: none;
+	font-size: .5em;
+	vertical-align: middle;
+	color: #a0a0a0;
+}
+
+#firestats body,td {
+	font: 13px "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana;
+}
+
+#firestats fieldset {
+	border: none;
+	padding: 3px;
+}
+
+#firestats fieldset label.selectit {
+	display: block;
+	font-size: 11px;
+	padding: 0 2px;
+}
+
+#firestats fieldset label.selectit:hover {
+	background: #e9e9e9;
+}
+
+#firestats fieldset legend {
+	padding: .1em .3em;
+}
+
+#firestats fieldset span.cat-nest {
+	display: block;
+	margin-left: 10px;
+}
+
+#firestats fieldset.options {
+	padding: 1em;
+}
+
+#firestats fieldset.options legend {
+	font-size: 16px;
+}
+
+#firestats form,label input {
+	margin: 0;
+	padding: 0;
+}
+
+#firestats h2 {
+	border-bottom: .5em solid #f0f8ff;
+	color: #333;
+	font: normal 30px/ 5px serif;
+	margin: 5px 10px;
+}
+
+#firestats h2 small.quickjump {
+	display: block;
+	text-align: right;
+}
+
+#firestats h2 small.quickjump a {
+	text-decoration: none;
+	border-bottom: 0;
+	font-size: 15px;
+	background: #f0f8ff;
+	padding: 5px 10px;
+}
+
+#firestats input:focus,#firestats textarea:focus,#firestats label:focus
+	{
+	background: #fff;
+	border: 1px solid #686868;
+}
+
+#firestats label {
+	cursor: pointer;
+}
+
+#firestats li,#firestats dd {
+	margin-bottom: 6px;
+}
+
+#firestats p,#firestats li,#firestats dl,#firestats dd,#firestats dt {
+	line-height: 130%;
+}
+
+#firestats textarea,#firestats input,#firestats select {
+	background: #f4f4f4;
+	border: 1px solid #b2b2b2;
+	color: #000;
+	font: 13px Verdana, Arial, Helvetica, sans-serif;
+	margin: 1px;
+	padding: 3px;
+}
+
+#firestats .anchors {
+	margin: 10px 20px 10px 20px;
+}
+
+#firestats .checkbox {
+	background: #fff;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+#firestats .clear {
+	clear: both;
+	height: 2px;
+}
+
+#firestats .hidden {
+	display: none;
+}
+
+#firestats .submit input,#firestats .submit input:focus,#firestats .button,#firestats .button:focus
+{
+	background: url(../img/fade-butt.png);
+	border: 1px double #999;
+	border-left-color: #ccc;
+	border-top-color: #ccc;
+	color: #333;
+}
+
+#firestats .submit input:active,#firestats .button:active {
+	background: #f4f4f4;
+	border: 1px double #ccc;
+	border-left-color: #999;
+	border-top-color: #999;
+}
+
+#firestats .error {
+	background: #FFEFF7;
+	border: 1px solid #c69;
+	margin: 1em 5% 10px;
+	padding: 0 1em 0 1em;
+}
+
+#firestats .warning {
+	background: #fff287;
+	border: 1px solid #c69;
+	margin: 1em 5% 10px;
+	padding: 0 1em 0 1em;
+}
+
+#firestats .fatal {
+	background: #ffb9b9;
+	border: 1px solid #c69;
+	margin: 1em 5% 10px;
+	padding: 0 1em 0 1em;
+}
+
+#firestats .info {
+	background: #c3ffb7;
+	border: 1px solid #c69;
+	margin: 1em 5% 10px;
+	padding: 0 1em 0 1em;
+}
+
+#firestats .fwrap {
+	background: #fff;
+	border: 1px solid #ccc;
+	clear: both;
+	margin: 4px 2%;
+	padding: .5em 1em;
+}
+
+#firestats .fwrap h2 {
+	margin: .8em 0 .5em;
+	clear: both;
+}
+
+#firestats table .vers,#firestats table .name {
+	text-align: center;
+}
+
+#firestats .notice {
+	color: red;
+}
+
+#firestats .normal_font {
+	font: 13px "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana;
+}
+
+#firestats .config_cell {
+	border: 1px solid #d2d2ff;
+	height: 100%;
+	vertical-align: top;
+}
+
+#firestats .width_margin {
+	margin: 1em 2% 10px;
+	padding: 0 1em 0 1em;
+}
+
+#firestats .title {
+	background: #d2d2ff;
+	border: 1px solid #f2f2f0;
+	text-align: center;
+}
+
+#firestats .floatright {
+	float: right;
+}
+
+#firestats .ltr {
+	text-align: left;
+	direction: ltr;
+}
+
+#firestats .rtl {
+	text-align: right;
+	direction: rtl;
+}
+
+#firestats .center {
+	text-align: center;
+}
+
+#firestats .fs_body {
+	border: 1px solid #d2d2ff;
+	padding: 0 0 0 0;
+}
+
+#firestats .config_table {
+	background-color: #f0f0ff;
+	/*border: 1px dotted #777;*/
+	width: 100%;
+}
+
+#firestats .configuration_area { /*border: 1px dashed #ff0000;*/
+	/*display: none;*/
+	
+}
+
+#firestats #feedback_div {
+	position: fixed;
+	border: 1px dotted #0f0ff0;
+	display: none;
+	width: 60%;
+	left: 20%;
+	top: 0px;
+	z-index: 90;
+}
+
+#firestats .php_error {
+	text-align: left;
+	font-size: 11px;
+	position: fixed;
+	background: #ffcb8e;
+	border: 3px solid #ba9d7a;
+	width: 80%;
+	left: 10%;
+	top: 20%;
+	display: block; /*show regardless of parent display state*/
+}
+
+#firestats .php_error_hide {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	background: #ffcb8e;
+	border: 1px solid #ba9d7a;
+}
+
+#firestats .stats_area {
+	background: #f0f0ff;
+}
+
+#firestats h3 {
+	background: #a9c9ff;
+	border: 1px dotted #0f0ff0;
+}
+
+#firestats td p {
+	font-size: 1.8em;
+	font-weight: bolder;
+	vertical-align: bottom;
+}
+
+#firestats #status_table tr td {
+	text-align: center;
+}
+
+#firestats table thead tr td {
+	font-weight: bolder;
+	background: #f0f0ff;
+}
+
+#firestats .bold {
+	font-weight: bolder;
+}
+
+#firestats table .records_table_row1 {
+	width: 4%;
+}
+
+#firestats table .records_table_row2 {
+	width: 7%;
+}
+
+#firestats table .records_table_row3 {
+	width: 10%;
+}
+
+#firestats table .records_table_row4 {
+	width: 20%;
+}
+
+#firestats table .records_table_row5 {
+	width: 25%;
+}
+
+#firestats table .records_table_row6 {
+	width: 3%;
+}
+
+#firestats table .records_table_row7 {
+	width: 31%;
+}
+
+#firestats #status_table {
+	width: 100%;
+}
+
+#firestats .full_width {
+	width: 100%;
+}
+
+#firestats .tree_container {
+	text-align: left;
+	direction: ltr;
+}
+
+#firestats #network_status {
+	background: url(../img/hourglass.png);
+	display: none;
+	background-repeat: no-repeat;
+	position: fixed;
+	width: 120px;
+	height: 129px;
+	left: 50%;
+	top: 50%;
+	z-index: 1000; /*above and beyond*/
+}
+
+/* $Id: example.css,v 1.5 2006/03/27 02:44:36 pat Exp $ */
+	/*--------------------------------------------------
+  REQUIRED to hide the non-active tab content.
+  But do not hide them in the print stylesheet!
+  --------------------------------------------------*/
+#firestats .tabberlive .tabbertabhide {
+	display: none;
+}
+
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  .tabberlive = after the tabber interface is set up
+  --------------------------------------------------*/
+#firestats .tabber {
+	
+}
+
+#firestats .tabberlive {
+	margin-top: 1em;
+}
+
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+#firestats ul.tabbernav {
+	margin: 0;
+	padding: 3px 0;
+	border-bottom: 1px solid #778;
+	font: bold 12px Verdana, sans-serif;
+}
+
+#firestats ul.tabbernav li {
+	list-style: none;
+	margin: 0;
+	display: inline;
+}
+
+#firestats ul.tabbernav li a {
+	padding: 3px 0.5em;
+	margin-left: 3px;
+	border: 1px solid #778;
+	border-bottom: none;
+	background: #DDE;
+	text-decoration: none;
+}
+
+#firestats ul.tabbernav li a:link {
+	color: #448;
+}
+
+#firestats ul.tabbernav li a:visited {
+	color: #667;
+}
+
+#firestats ul.tabbernav li a:hover {
+	color: #000;
+	background: #AAE;
+	border-color: #227;
+}
+
+#firestats ul.tabbernav li.tabberactive a {
+	background-color: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+#firestats ul.tabbernav li.tabberactive a:hover {
+	color: #000;
+	background: white;
+	border-bottom: 1px solid white;
+}
+
+#firestats .img_btn:focus {
+	border: 0px;
+}
+
+#firestats .img_btn {
+	margin: 0px;
+	border: 0px solid transparent;
+	background: transparent;
+	overflow: hidden;
+	cursor: pointer; /* hand-shaped cursor */
+}
+
+#firestats .config_img {
+	width: 22px;
+	height: 22px;
+}
+
+#firestats .hidden {
+	display: none;
+}
+
+/*--------------------------------------------------
+  .tabbertab = the tab content
+  Add style only after the tabber interface is set up (.tabberlive)
+  --------------------------------------------------*/
+#firestats .tabberlive .tabbertab {
+	padding: 5px;
+	border: 1px solid #aaa;
+	border-top: 0;
+}
+
+#firestats .scroll {
+	height: 200px;
+	overflow: auto;
+	padding: 8px;
+}

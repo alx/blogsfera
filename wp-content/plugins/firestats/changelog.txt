@@ -1,0 +1,44 @@
+10/27/2007 : Omry : BUG  : Fixed a bug effecting IE7 connecting to a Windows server (#496)
+10/27/2007 : Omry : RELEASE : FireStats 1.4.3-RC1 released
+10/27/2007 : Omry : FEATURE : Added two Czech search engines (Atlas.cz,Centrum.cz)
+10/27/2007 : Omry : BUG : Fixed registraton of WordPress blog when installing in satallite mode
+10/27/2007 : Omry : BUG : Fixed to delete site from archive tables when deleting a site from the sites tab (#498)
+10/26/2007 : Omry : RELEASE : FireStats Installer 1.0.0-beta released (#26)
+10/15/2007 : Omry : BUG : Fixed a bug in the recognition of google search terms 
+10/14/2007 : Omry : BUG : Fixed a bug that effected the display of strings with a particular character (value \255) (#483)
+10/13/2007 : Omry : BUG : trac plugin now records query string in urls (#454)
+10/13/2007 : Omry : RELEASE : FireStats 1.4.2-beta released
+10/13/2007 : Omry : BUG : Worked around a WordPress bug that prevented saving of Widgets with non English names (#469)
+10/13/2007 : Omry : BUG : Fixed a bug with the number of displayed search terms
+10/13/2007 : Omry : BUG : Renamed css class wrap to fwrap to prevent conflicts with WordPress 2.3 Hebrew
+10/13/2007 : Omry : FEATURE : Added pending maintenance jobs support, and using it to automatically rebuild search terms after upgrade to 1.4 
+10/10/2007 : Omry : FEATURE : Now using the plugin activation hook for WordPress > 2.0, this enables mass activation by the Plugin-Commander in WPMU
+08/10/2007 : Omry : FEATURE : Change UI design of sites table tab to make better use of space
+08/10/2007 : Omry : FEATURE : Added scroll bar to the users list
+07/10/2007 : Omry : BUG : Fixed hits table filters
+07/10/2007 : Omry : BUG : Fixed initial language problem when installed in satellite WordPress
+07/10/2007 : Omry : BUG : Fixed login problem in satellite wordpress installations
+06/10/2007 : Omry : RELEASE : FireStats 1.4.1-beta released
+06/10/2007 : Omry : BUG : Fixed a bug that caused all newly inserted referrers to be considered internal, and thus filtered from the referrers list
+06/10/2007 : Omry : BUG : Fixed a few bugs with the popular posts widget in WordPress
+05/10/2007 : Omry : BUG : Fixed a bug that prevented upgrade from 1.2 to 1.4
+05/10/2007 : Omry : BUG : Fixed a bug in the way the API is used from an external app
+03/10/2007 : Omry : RELEASE : FireStats 1.4.0-beta released
+03/10/2007 : Omry : BUG : Fixed javascript security induced bug in wp satellite mode
+29/09/2007 : Omry : FEATURE : Added password recovery emergency page (through tools.php)
+28/09/2007 : Omry : FEATURE : Now uses url title (if available) in hits table, recent referrers and popular pages.
+28/09/2007 : Omry : FEATURE : Improved recent referrers, now filters internal referrers and allow sorting by new-first or by more-hits-first.
+27/09/2007 : Omry : FEATURE : Removed database lock functionality, no longer needed now that we have real authentication
+27/09/2007 : Omry : FEATURE : Added database size indication to settings tab (in the Database compaction section)
+27/09/2007 : Omry : FEATURE : Merged URLs and Referrers table. this will result in reduced storage and will enable functions that were not possible
+19/09/2007 : Omry : FEATURE : Added option to set minimum user role that can access FireStats when installed inside WordPress
+19/09/2007 : Omry : FEATURE : Added caching for WordPress widgets to reduce server load
+17/09/2007 : Omry : FEATURE : Added the API fs_api_get_popular_pages to api.php
+16/09/2007 : Omry : FEATURE : Added popular pages WordPress widget
+14/09/2007 : Omry : FEATURE : Added support for url metadata
+10/09/2007 : Omry : FEATURE : Changed all tabs except stats to load lazily, significantly improving startup time
+09/09/2007 : Omry : FEATURE : Changed sites managemenet UI to use dhtml windows
+08/09/2007 : Omry : FEATURE : Moved all libraries to /lib
+07/09/2007 : Omry : FEATURE : Created functionality for delayed data commit for heavily loaded sites. activate from config.php
+07/09/2007 : Omry : FEATURE : Added sample-config.php. copy to config.php to control various FireStats options
+07/09/2007 : Omry : FEATURE : Created change log file

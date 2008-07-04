@@ -1,0 +1,12 @@
+Django Firestats integration middleware
+===========================================
+
+INSTALLING
+
+In your django site's settings.py add the middleware to the installed middleware list MIDDLEWARE_CLASSES by putting:
+   your_site.middleware.firestats.FireStatsIntegrationMiddleware
+This assumed you have a your_site/middleware directory and put firestats.py from this archive there.
+Now add a new variable to settings.py to tell the middleware how to run firestats. Add the line:
+   FIRESTATS_DIRECTORY = '/var/www/firestats'
+Or the appropriate equivalent for your system.
+Have your firestats and django environments working and you should be good to go (worked for me).

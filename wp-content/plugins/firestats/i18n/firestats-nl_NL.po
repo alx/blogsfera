@@ -1,0 +1,1162 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FireStats\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2007-03-21 22:19+0100\n"
+"Last-Translator: Martijn <pjottum@gmail.com>\n"
+"Language-Team: Martijn <pjottum@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-KeywordsList: fs_e;fs_r\n"
+"X-Poedit-Basepath: d:\\poedit\\versie-1.2\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Language: Nederlands\n"
+"X-Poedit-SearchPath-0: d:\\poedit\\versie-1.2\n"
+
+msgid "FireStats"
+msgstr "FireStats"
+
+msgid "Loading..."
+msgstr "Laden..."
+
+#, php-format
+msgid "Total : %s page views and %s visits"
+msgstr "Totaal: %s paginaweergaves en %s bezoeken"
+
+#, php-format
+msgid "Last 24 hours : %s page views and %s visits"
+msgstr "Laatste 24 uur: %s paginaweergaves en %s bezoeken"
+
+# d:\poedit\versie-1.2/firestats/firestats-wordpress.php:195
+msgid "Only blog administrators can access FireStats"
+msgstr "Alleen Administrators van het blog kunnen FireStats openen"
+
+msgid "Pages displayed : "
+msgstr "Pagina's getoond:"
+
+msgid "Unique visitors : "
+msgstr "Unieke bezoekers:"
+
+msgid "Pages displayed in last 24 hours : "
+msgstr "Paginaweergaves in de afgelopen 24 uur"
+
+msgid "Unique visitors in last 24 hours : "
+msgstr "Unieke bezoekers in de afgelopen 24 uur"
+
+# d:\poedit\versie-1.1/firestats-wordpress.php:469
+msgid "pages viewed"
+msgstr "pagina's gezien"
+
+# d:\poedit\versie-1.1/firestats-wordpress.php:469
+# d:\poedit\versie-1.1/firestats-wordpress.php:470
+msgid "today"
+msgstr "vandaag"
+
+# d:\poedit\versie-1.1/firestats-wordpress.php:470
+msgid "visits"
+msgstr "bezoeken"
+
+msgid "Powered by FireStats"
+msgstr "Powered bij FireStats"
+
+msgid "FireStats is installed inside WordPress"
+msgstr "FireStats is geïnstalleerd bij Wordpress"
+
+msgid "Please access it from the WordPress admin interface"
+msgstr "Gebruik het beheer scherm van Wordpress"
+
+msgid "Not a positive number : "
+msgstr "Geen positief nummer :"
+
+# d:\poedit\versie-1.2/firestats/js/firestats.js.php:525
+msgid "Session expired, press ok to reload"
+msgstr "Uw sessie is verlopen, klik op OK om opnieuw in te laden"
+
+#, php-format
+msgid "Unsupported action code : %s"
+msgstr "Niet ondersteunde bewerking, code: %s"
+
+#, php-format
+msgid "Unexpexted output: %s"
+msgstr "Onverwachte output: %s"
+
+#, php-format
+msgid "Saved %d entries to show"
+msgstr "%d entries opgeslagen om te laten zien"
+
+msgid "Saved"
+msgstr "Opgeslagen"
+
+#, php-format
+msgid "Imported %d records from Counterize"
+msgstr "%d records van Counterize geïmporteerd"
+
+msgid "Import"
+msgstr "Importeer"
+
+#, php-format
+msgid "An Error occured while importing from Counterize : %s"
+msgstr "Er is een fout opgetreden tijdens het importeren uit Counterize : %s"
+
+#, php-format
+msgid "Added %s to exclude list"
+msgstr "%s toegevoegd aan de uitsluitlijst"
+
+#, php-format
+msgid "Removed %s from exclude list"
+msgstr "%s verwijderd van de uitsluitlijst"
+
+msgid "Excluded users list saved"
+msgstr "Lijst met uitgesloten gebruikers opgeslagen"
+
+#, php-format
+msgid "Added %s to bots list"
+msgstr "%s bots toegevoegd aan de lijst"
+
+msgid "Empty string is not allowed"
+msgstr "Een lege waarde is hier niet toegestaan"
+
+msgid "Removed"
+msgstr "Verwijderd"
+
+msgid "Not using configuration file"
+msgstr "Configuratie bestand niet in gebruik"
+
+msgid "Not installed inside Wordpress"
+msgstr "Niet geïnstalleerd op Wordpress"
+
+#, php-format
+msgid "Failed to delete fs-config.php : %s"
+msgstr "Het verwijderen van fs-config.php is mislukt : %s"
+
+msgid "Error creating config file: "
+msgstr "Fout opgetreden bij het schrijven van het configuratie bestand:"
+
+msgid "Error upgrading tables"
+msgstr "Fout opgetreden bij het upgraden tabellen"
+
+msgid "Error installing tables"
+msgstr "Fout bij het installeren van tabellen"
+
+msgid "Error rebuilding database cache"
+msgstr "Het opnieuw bouwen van de database cache is mislukt"
+
+msgid "Database cache rebuilt successfully"
+msgstr "Het opnieuw bouwen van de database cache is gelukt."
+
+#, php-format
+msgid "Unkown field: %s"
+msgstr "Onbekend veld: %s"
+
+# d:\poedit\flerpnet\firestats/php/ajax-handler.php:573
+msgid "IP-to-country database is already up-to-date"
+msgstr "De IP-land database is al bijgewerkt"
+
+# d:\poedit\flerpnet\firestats/php/ajax-handler.php:565
+msgid "An error has occured while trying to update the IP-to-country database"
+msgstr "Er is een fout opgetreden tijdens het updaten van de IP-land database."
+
+# d:\poedit\flerpnet\firestats/php/ajax-handler.php:563
+msgid "file"
+msgstr "bestand"
+
+# d:\poedit\flerpnet\firestats/php/ajax-handler.php:567
+#, php-format
+msgid "You can update the database manually by downloading this %s and extracting it into %s"
+msgstr "U kunt de database handmatig updaten door %s op te halen en uit te pakken in %s"
+
+# d:\poedit\versie-1.2/firestats/php/ajax-handler.php:734
+msgid "this"
+msgstr "dit"
+
+# d:\poedit\flerpnet\firestats/php/ajax-handler.php:567
+#, php-format
+msgid "You can update the database manually by opening %s and downloading the <b>zip_url</b>, and extracting it into %s"
+msgstr "U kunt de database handmatig updaten door %s op te openen en <b>zip_url</b> te downloaden. Daarna dient deze uitgepakt te worden in %s."
+
+# d:\poedit\flerpnet\firestats/php/ajax-handler.php:568
+msgid "Error"
+msgstr "Fout"
+
+#, php-format
+msgid "Error updating bots list: %s"
+msgstr "Probleem bij het bijwerken van de bots list: %s"
+
+msgid "Successfully updated bots list"
+msgstr "Het bijwerken van de bots list is goed gegaan."
+
+# d:\poedit\flerpnet\firestats/php/ajax-handler.php:583
+#, php-format
+msgid "Error purging excluded records: %s"
+msgstr "Fout bij het verwijderen van uitgesloten records: %s"
+
+# d:\poedit\flerpnet\firestats/php/ajax-handler.php:588
+msgid "Purged excluded records"
+msgstr "Uitgesloten records verwijderd."
+
+msgid "Error connecting to database"
+msgstr "Fout bij het verbinden met de database"
+
+msgid "FireStats is properly installed in the database"
+msgstr "FireStats is correct geïnstalleerd in de database"
+
+msgid "FireStats is not configured"
+msgstr "FireStats is niet geconfigureerd"
+
+msgid "Database error, check your configuration"
+msgstr "Database fout, controleer uw configuratie"
+
+msgid "FireStats is not installed in the database"
+msgstr "FireStats is niet geïnstalleerd in de database"
+
+msgid "FireStats database need to be upgraded"
+msgstr "De FireStats database dient bijgewerkt te worden."
+
+msgid "The FireStats database version is newer this code version, you need to upgrade FireStats"
+msgstr "Versie van de FireStats database is hoger dan de code die nu in gebruik is, u dient FireStats bij te werken"
+
+msgid "Unknown database status code"
+msgstr "Onbekende database status code"
+
+msgid "Error accessing database"
+msgstr "Fout bij het benaderen van de database"
+
+msgid "Cannot write configuration file (read only file or directory)"
+msgstr "Kan de configuratie file niet schrijven (alleen leesbaar bestand of map)"
+
+msgid "Error creating database"
+msgstr "Fout bij het aanmaken van de database"
+
+msgid "Error creating user"
+msgstr "Fout bij het maken van gebruiker"
+
+msgid "Error creating tables"
+msgstr "Fout bij het maken van tabellen"
+
+msgid "Error saving configuration"
+msgstr "Fout bij het schrijven van de configuratie"
+
+msgid "Password not specified"
+msgstr "Geen wachtwoord opgegeven"
+
+msgid "Wrong password"
+msgstr "Verkeerd wachtwoord"
+
+msgid "FireStats tables are not installed"
+msgstr "De tabellen van FireStats zijn niet geïnstalleerd"
+
+msgid "FireStats is installed"
+msgstr "FireStats is geïnstalleerd"
+
+msgid "Another FireStats database detected"
+msgstr "Er is een andere FireStats database gevonden"
+
+msgid "New database created successfuly"
+msgstr "Het aanmaken van de nieuwe database is gelukt"
+
+msgid "Configuration is locked"
+msgstr "Configuratie is gesloten"
+
+msgid "Error changing lock file"
+msgstr "Probleem bij het aanpassen van het slot bestand"
+
+msgid "Configuration unlocked"
+msgstr "Configuratie is mogelijk"
+
+#, php-format
+msgid "Unexpected error code %s"
+msgstr "Onverwachte foutcode %s"
+
+msgid "Not configured"
+msgstr "Niet geconfigureerd"
+
+msgid "FireStats configuration file"
+msgstr "FireStats configuratie bestand"
+
+msgid "Wordpress configuration file"
+msgstr "Wordpress configuratie bestand"
+
+#, php-format
+msgid "Database error: %s"
+msgstr "Database fout: %s"
+
+msgid "Counterize not detected"
+msgstr "Counterize niet gevonden"
+
+msgid "Site name not specified"
+msgstr "De naam van de site is niet opgegeven"
+
+msgid "Site ID must be a positive number"
+msgstr "Site ID dient een positief getal te zijn"
+
+# d:\poedit\versie-1.2/firestats/php/db-sql.php:39
+# d:\poedit\versie-1.2/firestats/php/db-sql.php:73
+#, php-format
+msgid "A site with the ID %s already exists"
+msgstr "Een site met het ID %s bestaat al"
+
+# d:\poedit\versie-1.2/firestats/php/db-sql.php:64
+# d:\poedit\versie-1.2/firestats/php/db-sql.php:115
+# d:\poedit\versie-1.2/firestats/php/db-sql.php:131
+#, php-format
+msgid "No site with the id %s exists"
+msgstr "Er bestaat geen site met het ID %s"
+
+#, php-format
+msgid "Invalid IP address: %s"
+msgstr "Foutief IP adres: %s"
+
+#, php-format
+msgid "The IP address %s is already in the database"
+msgstr "Het IP adres %s staat al in de database"
+
+#, php-format
+msgid "The bot wildcard %s is already in the database"
+msgstr "De bot wildcard %s staat al in de database"
+
+msgid "Unknown"
+msgstr "Onbekend"
+
+# d:\poedit\flerpnet\firestats/php/db-sql.php:541
+msgid "Others"
+msgstr "Overigen"
+
+#, php-format
+msgid "Error opening file : %s"
+msgstr "Fout bij openen van bestand: %s"
+
+msgid "Support FireStats"
+msgstr "Ondersteun FireStats"
+
+# d:\poedit\versie-1.1/php/page-stats.php:29
+msgid "Page views"
+msgstr "Pagina weergaven"
+
+# d:\poedit\versie-1.1/php/page-stats.php:30
+msgid "Visits"
+msgstr "Bezoeken"
+
+msgid "Installed"
+msgstr "Geïnstalleerd"
+
+# d:\poedit\versie-1.1/php/donation-window.php:42
+msgid "Even though FireStats is free, it takes a lot of time and hard work to develop and maintain.<br/>"
+msgstr "FireStats is gratis. Het kost veel tijd en lange uren om het te maken en te onderhouden.<br/ >"
+
+# d:\poedit\versie-1.1/php/donation-window.php:43
+msgid "If you like FireStats and would like to show your support for the hard work I put into it, You can make a small Donation. Even a $5 donation would be greatly appreciated.<br/>"
+msgstr "Als je FireStats handig vindt en je steun wil laten blijken voor het harde werk wat de maker erin stopt, kan je een kleine donatie doen. Zelfs €5 wordt erg gewaardeerd. <br />"
+
+# d:\poedit\versie-1.1/php/donation-window.php:47
+msgid "Yeah, I want to help"
+msgstr "Ja, ik wil helpen"
+
+# d:\poedit\versie-1.1/php/donation-window.php:48
+msgid "Nah, go away"
+msgstr "Nah, hou toch op"
+
+# d:\poedit\versie-1.1/php/donation-window.php:49
+msgid "Maybe later"
+msgstr "Misschien later"
+
+# d:\poedit\versie-1.1/php/donation-window.php:50
+msgid "Already donated"
+msgstr "Ik heb al gedoneerd."
+
+# d:\poedit\versie-1.1/php/donation-window.php:60
+#, php-format
+msgid "%d seconds ago"
+msgstr "%d seconden geleden"
+
+#, php-format
+msgid "%d minutes ago"
+msgstr "%d minuten geleden"
+
+# d:\poedit\versie-1.1/php/donation-window.php:66
+msgid "one hour ago"
+msgstr "één uur geleden"
+
+# d:\poedit\versie-1.1/php/donation-window.php:69
+#, php-format
+msgid "%d hours ago"
+msgstr "%d uur geleden"
+
+msgid "one day ago"
+msgstr "één dag geleden"
+
+#, php-format
+msgid "%d days ago"
+msgstr "%d dagen geleden"
+
+# d:\poedit\versie-1.1/php/donation-window.php:78
+#, php-format
+msgid "%d weeks ago"
+msgstr "%d weken geleden"
+
+# d:\poedit\versie-1.1/php/donation-window.php:81
+#, php-format
+msgid "%d months ago"
+msgstr "%d maanden geleden"
+
+# d:\poedit\versie-1.1/php/donation-window.php:84
+#, php-format
+msgid "%d years ago"
+msgstr "%d jaar geleden"
+
+msgid "Error exporting bots list"
+msgstr "Fout bij het exporteren van de bots list"
+
+msgid "Unknown site type"
+msgstr "Onbekend type site"
+
+msgid "Collect hits from PHP pages"
+msgstr "Verzamel hits van PHP pagina's"
+
+msgid "To allow FireStats to track access to your pages, you need to add the following line inside the head tag of each of the pages you want to monitor (the page must be a php page)."
+msgstr "Om toegang tot uw site door FireStats te laten monitoren, dient u de volgende regel in de header van de pagina's welke u wilt laten monitoren toe te voegen (dit moeten php pagina's zijn)."
+
+msgid "A typical page header will look like this:"
+msgstr "Een voorbeeld van een header:"
+
+# d:\poedit\versie-1.1/php/tabbed-pane.php:90
+msgid "WordPress"
+msgstr "WordPress"
+
+# d:\poedit\versie-1.2/firestats/php/help-window.php:102
+msgid "The WordPress plugin registers itself automatically when the its activated"
+msgstr "De plugin voor WordPress registreerd zichzelf automatisch als deze wordt geactiveerd"
+
+# d:\poedit\versie-1.2/firestats/php/help-window.php:108
+# d:\poedit\versie-1.2/firestats/php/help-window.php:116
+# d:\poedit\versie-1.2/firestats/php/help-window.php:131
+# d:\poedit\versie-1.2/firestats/php/help-window.php:137
+# d:\poedit\versie-1.2/firestats/php/help-window.php:149
+msgid "plugin"
+msgstr "plugin"
+
+# d:\poedit\versie-1.2/firestats/php/help-window.php:124
+msgid "module"
+msgstr "module"
+
+#, php-format
+msgid "Collect hits from a %s site"
+msgstr "Verzamel hits van een %s site"
+
+# d:\poedit\versie-1.2/firestats/php/help-window.php:189
+#, php-format
+msgid "and then configure it in the administration menu with the path %s and the ID %s"
+msgstr "vervolgens dient deze in het menu Beheer geconfigureerd te worden met het path %s en het ID %s"
+
+# d:\poedit\versie-1.2/firestats/php/help-window.php:199
+#, php-format
+msgid "and then edit the lines in %s to contain this:"
+msgstr "en pas dan de regels in %s aan zodat ze het volgende bevatten:"
+
+# d:\poedit\versie-1.2/firestats/php/help-window.php:206
+#, php-format
+msgid "To collect statistics from your %s site your need to install the %s"
+msgstr "Om statistieken te verzamelen van een %s site dient %s geïnstalleerd te worden"
+
+# d:\poedit\versie-1.2/firestats/php/html-utils.php:30
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:110
+msgid "ID"
+msgstr "ID"
+
+# d:\poedit\versie-1.2/firestats/php/html-utils.php:31
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:122
+msgid "Name"
+msgstr "Naam"
+
+# d:\poedit\versie-1.2/firestats/php/html-utils.php:32
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:123
+msgid "Type"
+msgstr "Type"
+
+# d:\poedit\versie-1.2/firestats/php/html-utils.php:47
+msgid "How to integrate with this site"
+msgstr "Hoe te integreren met deze site"
+
+# d:\poedit\versie-1.2/firestats/php/html-utils.php:73
+msgid "Orphaned hits"
+msgstr "Verweesde bezoeken"
+
+# d:\poedit\versie-1.2/firestats/php/html-utils.php:62
+msgid "Add a new site"
+msgstr "Voeg een nieuwe site toe"
+
+# d:\poedit\versie-1.2/firestats/php/html-utils.php:97
+msgid "Generic PHP site"
+msgstr "Generieke PHP pagina"
+
+# d:\poedit\versie-1.2/firestats/php/html-utils.php:99
+msgid "Wordpress"
+msgstr "Wordpress"
+
+# d:\poedit\versie-1.2/firestats/php/html-utils.php:101
+msgid "Django"
+msgstr "Django"
+
+# d:\poedit\versie-1.2/firestats/php/html-utils.php:103
+msgid "Drupal"
+msgstr "Drupal"
+
+# d:\poedit\versie-1.2/firestats/php/html-utils.php:105
+msgid "Gregarius"
+msgstr "Gregarius"
+
+# d:\poedit\versie-1.2/firestats/php/html-utils.php:107
+msgid "Joomla"
+msgstr "Joomla"
+
+# d:\poedit\versie-1.2/firestats/php/html-utils.php:109
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+# d:\poedit\versie-1.2/firestats/php/html-utils.php:111
+msgid "Trac"
+msgstr "Trac"
+
+msgid "Invalid"
+msgstr "Niet geldig"
+
+# d:\poedit\versie-1.2/firestats/php/html-utils.php:211
+msgid "All"
+msgstr "Alle"
+
+# d:\poedit\versie-1.1/php/page-wordpress-settings.php:73
+msgid "Show statistics from"
+msgstr "Laat statistieken zien van"
+
+msgid "unknown"
+msgstr "Onbekend"
+
+msgid "IP"
+msgstr "IP"
+
+msgid "TimeStamp"
+msgstr "Datum"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Referrer"
+msgstr "Verwijzing"
+
+msgid "Image"
+msgstr "Plaatje"
+
+msgid "UserAgent"
+msgstr "UserAgent"
+
+msgid "No data yet, go get some hits"
+msgstr "Er is nog geen data, zorg dat je wat hits krijgt"
+
+msgid "Empty"
+msgstr "Leeg"
+
+msgid "excluded"
+msgstr "uitgesloten"
+
+#, php-format
+msgid "(%d hits) (%d more from %s)"
+msgstr "(%d hits) (%d meer van %s)"
+
+#, php-format
+msgid "%d hits"
+msgstr "%d hits"
+
+#, php-format
+msgid "%d hits from %s"
+msgstr "%d hits van %s"
+
+msgid "Import bots list"
+msgstr "Importeer bots list"
+
+# d:\poedit\versie-1.1/php/import-bots-list.php:18
+msgid "Select bot-list file"
+msgstr "Selecteer bot-list bestand"
+
+msgid "Import type"
+msgstr "Importeer type"
+
+msgid "Add to bots list"
+msgstr "Voeg toe aan de bots list"
+
+msgid "Replace bots list"
+msgstr "Vervang de bots list"
+
+# d:\poedit\versie-1.2/firestats/php/import-bots-list.php:31
+msgid "Send File"
+msgstr "Stuur bestand"
+
+# d:\poedit\versie-1.1/php/import-bots-list.php:34
+msgid "Incorrect file format"
+msgstr "Onjuist bestandsformaat"
+
+#, php-format
+msgid "Error importing bots list : %s"
+msgstr "Fout bij het importeren van de bots list: %s"
+
+msgid "bots list imported successfully"
+msgstr "Het importeren van de bots list is goed gegaan."
+
+msgid "Error creating temporary file"
+msgstr "Fout bij het creëeren van het tijdelijke bestand"
+
+#, php-format
+msgid "Error opening connection to %s"
+msgstr "Fout bij het verbinden met %s"
+
+# d:\poedit\flerpnet\firestats/php/ip2country.php:98
+#, php-format
+msgid "Error sending request to %s"
+msgstr "Probleem bij het verzenden van verzoek naar %s"
+
+#, php-format
+msgid "Error reading data from %s : %s"
+msgstr "Probleem bij het lezen van %s : %s"
+
+#, php-format
+msgid "Error extracting IP-to-country database: %s"
+msgstr "Probleem bij het uitpakken van de IP-land database: %s"
+
+#, php-format
+msgid "Unsupported file type : %s"
+msgstr "Niet ondersteunde actie, code: %s"
+
+# d:\poedit\flerpnet\firestats/php/ip2country.php:157
+#, php-format
+msgid "can't update ip-to-country database, read-only directory : %s"
+msgstr "Kan de IP-land database niet bijwerken, de directory is alleen leesbaar: %s"
+
+# d:\poedit\flerpnet\firestats/php/ip2country.php:159
+# d:\poedit\flerpnet\firestats/php/ip2country.php:161
+#, php-format
+msgid "can't update ip-to-country database, read-only file : %s"
+msgstr "Kan de IP-land database niet bijwerken, het bestand is alleen leesbaar: %s"
+
+msgid "Error installing new IP-to-country database"
+msgstr "Probleem bij het installeren van de nieuwe IP-land database"
+
+# d:\poedit\flerpnet\firestats/php/ip2country.php:182
+msgid "Successfuly updated IP-to-country database"
+msgstr "Het bijwerken van de IP-land database is goedgegaan"
+
+#, php-format
+msgid "Error updating version file : %s"
+msgstr "Probleem bij het bijwerken van het versie bestand: %s"
+
+msgid "Database status"
+msgstr "Database status"
+
+# d:\poedit\versie-1.2/firestats/php/page-database.php:138
+msgid "Click to upgrade"
+msgstr "Klik om op te waarderen"
+
+msgid "Upgrade"
+msgstr "Werk bij"
+
+#, php-format
+msgid "Configuration source : %s"
+msgstr "Configuratie bron: %s"
+
+msgid "To use wordpress database, click this button."
+msgstr "Om de database van Wordpress te gebruiken, click op deze knop"
+
+msgid "FireStats database configuration will be lost."
+msgstr "De configuratie van de FireStats database zal verloren gaan."
+
+msgid "Use Wordpress database"
+msgstr "Gebruik de Wordpress database"
+
+msgid "To perform one of the following actions:"
+msgstr "Om een van de volgende acties uit te voeren: "
+
+msgid "Attach to an existing FireStats installation"
+msgstr "Gebruik een bestaande FireStats installatie"
+
+msgid "Install FireStats into an existing database"
+msgstr "Installeer FireStats in een bestaande database"
+
+msgid "Create a new database and install FireStats there"
+msgstr "Maak een nieuwe database, en installeer FireStats daarin"
+
+msgid "Follow instructions in the help"
+msgstr "Volg de instructies onder help"
+
+msgid "Database host"
+msgstr "Database host"
+
+msgid "Database name"
+msgstr "Database naam"
+
+msgid "Database user name"
+msgstr "Database gebruikersnaam"
+
+msgid "Database password"
+msgstr "Database wachtwoord"
+
+msgid "Tables prefix"
+msgstr "Tabel prefix"
+
+msgid "Test connection"
+msgstr "Test de connectie"
+
+msgid "Click to install and switch to new FireStats tables"
+msgstr "Click om te installeren en over te gaan op de nieuwe FireStats tabellen"
+
+msgid "Install tables"
+msgstr "Installeer tabellen"
+
+msgid "Click to use this FireStats database"
+msgstr "Klik om deze FireStats database te gebruiken"
+
+msgid "Use this database"
+msgstr "Gebruik deze database"
+
+msgid "To create a new database, an administrator user should be used in the above fields."
+msgstr "Om een nieuwe database te maken, dienen de gegevens van een beheerdersaccount in bovenstaande velden ingevuld te worden."
+
+msgid "However, For security reason, it is recommanded not to use a database administrator user for day to day operations."
+msgstr "Om veiligheidsredenen is het niet aan te raden om altijd een beheerdersaccount te gebruiken."
+
+msgid "Enter new user name and password for FireStats, this user will only have access to the FireStats database"
+msgstr "Vul een nieuwe gebruikersnaam en wachtwoord in voor FireStats, deze gebruiker heeft alleen toegang tot de FireStats database"
+
+msgid "If you will not specify user and password the Admin user and password will be used."
+msgstr "Indien U geen gebruikersnaam en wachtwoord invult, zal het beheerdersaccount gebruikt worden"
+
+msgid "FireStats User name"
+msgstr "FireStats gebruikersnaam"
+
+msgid "FireStats password"
+msgstr "FireStats wachtwoord"
+
+msgid "Create database"
+msgstr "Creëer database"
+
+msgid "Help"
+msgstr "Help"
+
+msgid "Attach to an existing FireStats database"
+msgstr "Verbind met een bestaande FireStats database"
+
+#, php-format
+msgid "Enter the parameters in the table, press %s, and then %s."
+msgstr "Vul de parameters in in de tabel, click op %s, daarna op %s"
+
+#, php-format
+msgid "Enter the parameters into the table, <u>you need to enter a database administrator user</u>. press %s, and then enter FireStats database user and password, and finally press %s."
+msgstr "Vul de parameters in in de tabel, <u>U moet een database beheerdersaccount invullen</u>. Klik op %s, en vul dan de FireStats database gebruiker en wachtwoord in, klik als laatste op %s."
+
+msgid "Configuration locked"
+msgstr "Configuratie vergrendeld"
+
+msgid "To change the database configuration you need to unlock it, please enter the password."
+msgstr "Om de database configuratie te veranderen dient U deze te ontgrendelen. Vul het wachtwoord in."
+
+#, php-format
+msgid "if you forgot your password you can simply delete the file %s from firestats/php directory."
+msgstr "Indien U het wachtwoord vergeten bent, kunt u het bestand %s uit de firestats/php directory verwijderen"
+
+msgid "Database configuration is locked, to unlock for 5 minutes enter the lock password."
+msgstr "De configuratie van de database is vergrendeld, om deze voor 5 minuten te ontgrendelen vul het vergrendel wachtwoord in."
+
+msgid "Password"
+msgstr "Wachtwoord"
+
+msgid "Unlock"
+msgstr "Ontgrendel"
+
+msgid "Database configuration is open for changes, enter a password to lock."
+msgstr "De database configuratie kan veranderd worden, vul een wachtwoord in om deze te vergrendelen."
+
+msgid "Lock"
+msgstr "Vergrendelen"
+
+msgid "Import in progress"
+msgstr "De import is bezig"
+
+msgid "You can import your hits from another statistics system here."
+msgstr "U kunt uw hits uit een andere meetsysteem hier importeren."
+
+msgid "Recalculate database cache"
+msgstr "Bouw de database cache opnieuw"
+
+msgid "In case of data consistency problems, The database cache may need to be rebuilt."
+msgstr "In geval van data inconsistentie, kan het noodzakelijk zijn om de database cache weg te gooien en opnieuw op te bouwen."
+
+msgid "Its not normally needed, but it does not cause any damage"
+msgstr "Dit is normaal niet nodig, maar het veroorzaakt geen problemen"
+
+msgid "Counterize"
+msgstr "Counterize"
+
+# d:\poedit\flerpnet\firestats/php/page-import.php:16
+#, php-format
+msgid "%s detected"
+msgstr "%s gevonden"
+
+#, php-format
+msgid "%s was not detected"
+msgstr "%s is niet gevonden"
+
+msgid "You need to select an bot you want to remove from the table"
+msgstr "U dient een bot uit te zoeken welke u wilt verwijderen uit de tabel"
+
+msgid "Invalid IP address"
+msgstr "Ongeldig IP adres"
+
+msgid "You need to select an IP address you want to remove from the table"
+msgstr "U dient het IP adres wat u wilt verwijderen te selecteren in de tabel"
+
+# d:\poedit\flerpnet\firestats/php/page-settings.php:5
+msgid "Automatic version check"
+msgstr "Automatische versie controle"
+
+msgid "Automatically check if there is a new version of FireStats (recommended)"
+msgstr "Controleer automagisch of er een nieuwe versie van FireStats is (aanbevolen)"
+
+# d:\poedit\flerpnet\firestats/php/page-settings.php:22
+msgid "IP-to-country database"
+msgstr "IP-land database"
+
+# d:\poedit\flerpnet\firestats/php/page-settings.php:25
+#, php-format
+msgid "IP-to-country database version : %s"
+msgstr "IP-land database versie: %s"
+
+msgid "Automatically check if there is a new version of IP-to-country database"
+msgstr "Controleer automatisch of er een nieuwe versie van IP-land database is (aanbevolen)"
+
+# d:\poedit\flerpnet\firestats/php/page-settings.php:32
+msgid "Update IP-to-country database now (only if needed)"
+msgstr "Werk de IP-land database nu bij (indien dit nodig is)"
+
+msgid "Update"
+msgstr "Werk bij"
+
+# d:\poedit\versie-1.2/firestats/php/page-settings.php:113
+msgid "Options"
+msgstr "Opties"
+
+msgid "Select language"
+msgstr "Kies taal"
+
+msgid "Save"
+msgstr "Bewaar"
+
+# d:\poedit\flerpnet\firestats/php/page-settings.php:48
+msgid "How to translate to a new language"
+msgstr "Hoe te vertalen naar een andere taal"
+
+# d:\poedit\versie-1.1/php/page-settings.php:52
+msgid "Select your time zone"
+msgstr "Selecteer uw tijdzone."
+
+# d:\poedit\versie-1.1/php/page-settings.php:67
+#, php-format
+msgid "Time zone selection requires %s or newer"
+msgstr "Tijdzone selectie vereist versie %s of nieuwer"
+
+# d:\poedit\versie-1.2/firestats/php/page-settings.php:142
+msgid "Select WHOIS provider"
+msgstr "Selecteer WHOIS provider"
+
+msgid "Exclude hits"
+msgstr "Uitgesloten hits"
+
+# d:\poedit\flerpnet\firestats/php/page-settings.php:69
+msgid "Save excluded records (not recommended)"
+msgstr "Sla uitgesloten records op (niet aangeraden)"
+
+msgid "Purge excluded records stored in the database"
+msgstr "De bot wildcard %s staat al in de database"
+
+# d:\poedit\flerpnet\firestats/php/page-settings.php:75
+msgid "Purge"
+msgstr "Leeggooien"
+
+msgid "Bots list"
+msgstr "Lijst met webrobots"
+
+msgid "Add"
+msgstr "Voeg toe"
+
+msgid "Remove"
+msgstr "Verwijder"
+
+# d:\poedit\versie-1.1/php/page-settings.php:115
+msgid "Automatic update"
+msgstr "Automatisch bijwerken"
+
+msgid "Update now"
+msgstr "Werk nu bij"
+
+msgid "Export"
+msgstr "Exporteer"
+
+msgid "Excluded IPs"
+msgstr "Uitgesloten IP nummers"
+
+# d:\poedit\versie-1.1/php/page-settings.php:115
+msgid "Automatic"
+msgstr "Automatisch"
+
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:91
+msgid "Delete"
+msgstr "Verwijder"
+
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:91
+msgid "Transfer"
+msgstr "Overdragen"
+
+msgid "Manage sites"
+msgstr "Beheer sites"
+
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:118
+# d:\poedit\versie-1.2/firestats/php/page-stats.php:323
+msgid "Clear"
+msgstr "Wis"
+
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:125
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:148
+msgid "Close"
+msgstr "Sluit"
+
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:133
+msgid "This will delete this site from the database, the operation is irreversible!"
+msgstr "Dit verwijderd deze site uit de database, deze aktie is niet terug te draaien!"
+
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:134
+msgid "What do you want to do with the site hits?"
+msgstr "Wat wilt u doen met de hits van deze site?"
+
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:137
+msgid "Delete all the hits"
+msgstr "Verwijder alle hits"
+
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:138
+msgid "Transfer the hits to another site"
+msgstr "Draag de hits over naar een andere site"
+
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:141
+msgid "Enter an existing site ID to transfer the hits to"
+msgstr "Voer een bestaand ID van een site in, om de hits naartoe te verplaatsen"
+
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:159
+msgid "Warning, you can really mess things up from here, be careful!"
+msgstr "Let op! Dit kan goed mis gaan! "
+
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:161
+msgid "FireStats can collect statistics from multiple sites (on the same server)."
+msgstr "FireStats kan statistieken verzamelen van meerdere sites (op één en dezelfde server)."
+
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:163
+msgid "The site need to be registered in the sites table"
+msgstr "De site moet opgenomen worden in de sites tabel"
+
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:164
+msgid "The site should be configured to use its ID when reporting a hit, click on the help button next to the site you created for more information"
+msgstr "De site dient te worden geconfigureerd om het ID te gebruiken om een hit te registreren. Klik op de help knop naast de site welke u gecreëerd heeft voor meer informatie."
+
+# d:\poedit\versie-1.2/firestats/php/page-sites.php:167
+#, php-format
+msgid "Click %s for more information"
+msgstr "Klik %s voor meer informatie"
+
+msgid "here"
+msgstr "hier"
+
+msgid "Refresh statistics"
+msgstr "Ververs de statistieken"
+
+msgid "Auto refresh every"
+msgstr "Ververs elke "
+
+msgid "minutes"
+msgstr "minuten"
+
+# d:\poedit\versie-1.2/firestats/php/page-stats.php:141
+# d:\poedit\versie-1.2/firestats/php/page-stats.php:174
+# d:\poedit\versie-1.2/firestats/php/page-stats.php:199
+# d:\poedit\versie-1.2/firestats/php/page-stats.php:266
+# d:\poedit\versie-1.2/firestats/php/page-stats.php:328
+msgid "Apply"
+msgstr "Toepassen"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Page views in last 24 hours"
+msgstr "Paginaweergaves in de afgelopen 24 uur"
+
+msgid "Visits in last 24 hours"
+msgstr "Bezoeken in de afgelopen 24 uur"
+
+msgid "Recent referrers"
+msgstr "Recente verwijzingen"
+
+msgid "Maximum"
+msgstr "Maximum"
+
+msgid "Days ago"
+msgstr "Dagen geleden"
+
+msgid "Recent popular pages"
+msgstr "Populaire pagina's"
+
+msgid "Browsers"
+msgstr "Browsers"
+
+msgid "Operating systems"
+msgstr "Besturingssystemen"
+
+msgid "Countries"
+msgstr "Counterize"
+
+msgid "Hits table"
+msgstr "Hits tabel"
+
+msgid "Number of hits to show"
+msgstr "Aantal weer te geven hits"
+
+msgid "User agent"
+msgstr "User Agent"
+
+# d:\poedit\versie-1.2/firestats/php/page-stats.php:299
+msgid "Filter"
+msgstr "Filter"
+
+msgid "Statistics widget"
+msgstr "Statistieken widget"
+
+# d:\poedit\versie-1.1/php/page-wordpress-settings.php:17
+#, php-format
+msgid "You can configure the sidebar widget from %s"
+msgstr "U kunt de sidebar widget %s configureren"
+
+# d:\poedit\versie-1.1/php/page-wordpress-settings.php:21
+#, php-format
+msgid "The statistics widget requires the %s plugin for optimal usage."
+msgstr "De statistieken widget heeft de %s plugin nodig om optimaal te functioneren."
+
+# d:\poedit\versie-1.1/php/page-wordpress-settings.php:24
+msgid "Widgets"
+msgstr "Widgets"
+
+# d:\poedit\versie-1.1/php/page-wordpress-settings.php:26
+msgid "You can also manually add the following code to your theme sidebar:"
+msgstr "U kunt ook handmatig de volgende code toevoegen aan de sidebar van uw thema."
+
+# d:\poedit\versie-1.1/php/page-wordpress-settings.php:34
+msgid "Comments icons"
+msgstr "Comments iconen"
+
+# d:\poedit\versie-1.1/php/page-wordpress-settings.php:42
+msgid "Add flag icon to comments"
+msgstr "Voeg vlag icoon toe aan comments"
+
+# d:\poedit\versie-1.1/php/page-wordpress-settings.php:51
+msgid "Add browser and operating system icons to comments"
+msgstr "Voeg browser en besturingssysteem iconen to aan comments"
+
+# d:\poedit\versie-1.1/php/page-wordpress-settings.php:56
+msgid "Blog footer"
+msgstr "Blog voettekst"
+
+# d:\poedit\versie-1.1/php/page-wordpress-settings.php:64
+msgid "Add FireStats footer to blog"
+msgstr "Voeg FireStats voettekst toe aan het blog"
+
+# d:\poedit\versie-1.1/php/page-wordpress-settings.php:73
+msgid "Show statistics in footer"
+msgstr "Laat statistieken zien onderaan de pagina"
+
+msgid "Excluded users"
+msgstr "Uitgesloten gebruikers"
+
+# d:\poedit\versie-1.2/firestats/php/page-wordpress-settings.php:128
+msgid "Advanced"
+msgstr "Geavanceerd"
+
+# d:\poedit\versie-1.2/firestats/php/page-wordpress-settings.php:129
+msgid "WordPress site ID, every hit From this blog is recorded with this as the source Site ID"
+msgstr "WordPress site ID, elke hit van dit blog wordt ermee opgeslagen als het ID van de site"
+
+# d:\poedit\versie-1.2/firestats/php/page-wordpress-settings.php:130
+msgid "This should be the same ID as the Site ID in the sites table. you don't normally need to change this."
+msgstr "Dit zou hetzelfde ID moeten zijn als de site ID in de sites tabel. Normaal gesproken hoeft u dit niet te veranderen."
+
+msgid "Demo"
+msgstr "Demo"
+
+msgid "Hide"
+msgstr "Verberg"
+
+# d:\poedit\versie-1.2/firestats/php/tabbed-pane.php:67
+msgid "No"
+msgstr "Nee"
+
+# d:\poedit\versie-1.2/firestats/php/tabbed-pane.php:68
+msgid "Yes"
+msgstr "Ja"
+
+msgid "Statistics"
+msgstr "Statistieken"
+
+msgid "Settings"
+msgstr "Instellingen"
+
+# d:\poedit\versie-1.1/php/tabbed-pane.php:90
+msgid "WordPress settings"
+msgstr "WordPress instellingen"
+
+msgid "Database"
+msgstr "Database"
+
+# d:\poedit\versie-1.2/firestats/php/tabbed-pane.php:120
+#, fuzzy
+msgid "Sites management"
+msgstr "Site beheer"
+
+#, php-format
+msgid "Error getting version information from %s : %s"
+msgstr "Fout bij het ophalen van versie informatie van %s : %s"
+
+# d:\poedit\flerpnet\firestats/php/version-check.php:135
+msgid "A new version of the IP-to-country database is available! you can update it from the settings tab"
+msgstr "Een nieuwe versie van de IP-land database is beschikbaar! U kunt deze bijwerken vanuit de instellingen tab"
+
+#, php-format
+msgid "Version %s is available! click %s for more info"
+msgstr "Versie %s is beschikbaar! Klik %s voor meer informatie"
+
+#, php-format
+msgid "Error opening %s"
+msgstr "Fout bij openen %s"
+
+msgid "User name and password are required to connect to database"
+msgstr "Gebruikersnaam en wachtwoord zijn nodig om met de database te kunnen verbinden"
+
+msgid "Error establishing mySQL database connection"
+msgstr "Probleem bij het verbinden met de MySQL database"
+
+msgid "Database name is required to connect to database"
+msgstr "De naam van de database is nodig om verbinding te maken"
+
+msgid "mySQL database connection is not active"
+msgstr "De connectie naar de MySQL database werkt niet"
+
+msgid "Unexpected error while querying database"
+msgstr "Onverwachte fout bij het benaderen van de database "
+
+#, php-format
+msgid "Can't disconnect: %s"
+msgstr "Kan de verbinding niet verbreken: %s"
+
+msgid "Not connected"
+msgstr "Niet verbonden"
+

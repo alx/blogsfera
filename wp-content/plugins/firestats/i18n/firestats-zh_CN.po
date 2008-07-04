@@ -1,0 +1,1654 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FireStats\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2007-08-18 21:17+0800\n"
+"Last-Translator: awflasher <awflasher@gmail.com>\n"
+"Language-Team: Awflasher <awflasher@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: CHINA\n"
+"X-Poedit-KeywordsList: fs_e;fs_r\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: F:\\Apache\\blog\\wp-content\\plugins\\FS1.3\n"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/firestats-wordpress.php:158
+#: F:\Apache\blog\wp-content\plugins\FS1.3/index.php:19
+#: F:\Apache\blog\wp-content\plugins\FS1.3/index.php:42
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/footer.php:46
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/tabbed-pane.php:24
+msgid "FireStats"
+msgstr "FireStats"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/firestats-wordpress.php:158
+msgid "Loading..."
+msgstr "载入中……"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/firestats-wordpress.php:177
+#, php-format
+msgid "Total : %s page views and %s visits"
+msgstr "共计：%s次PV和%s次独立访问"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/firestats-wordpress.php:178
+#, php-format
+msgid "Last 24 hours : %s page views and %s visits"
+msgstr "最近24小时内：%s次PV和%s次独立访问"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/firestats-wordpress.php:227
+msgid "Only blog administrators can access FireStats"
+msgstr "必须拥有管理员权限才能使用FireStats"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/firestats-wordpress.php:493
+msgid "Pages displayed : "
+msgstr "访问页面总数："
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/firestats-wordpress.php:494
+msgid "Unique visitors : "
+msgstr "唯一访问者："
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/firestats-wordpress.php:495
+msgid "Pages displayed in last 24 hours : "
+msgstr "最近24小时内访问页面总数："
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/firestats-wordpress.php:496
+msgid "Unique visitors in last 24 hours : "
+msgstr "最近24小时内唯一访问者："
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/firestats-wordpress.php:547
+msgid "pages viewed"
+msgstr "页面访问次数"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/firestats-wordpress.php:547
+#: F:\Apache\blog\wp-content\plugins\FS1.3/firestats-wordpress.php:548
+msgid "today"
+msgstr "今天"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/firestats-wordpress.php:548
+msgid "visits"
+msgstr "访问数"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/firestats-wordpress.php:557
+msgid "Powered by FireStats"
+msgstr "由FireStats提供支持"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/index.php:22
+msgid "FireStats is installed inside WordPress"
+msgstr "FireStats已安装在WordPress中"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/index.php:23
+msgid "Please access it from the WordPress admin interface"
+msgstr "请从WordPress管理界面进入"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/help-window.php:34
+msgid "Unknown site type"
+msgstr "未知站点类型"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/help-window.php:80
+msgid "Collect hits from PHP pages"
+msgstr "从PHP页面统计点击"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/help-window.php:81
+msgid "To allow FireStats to track access to your pages, you need to add the following line inside the head tag of each of the pages you want to monitor (the page must be a php page)."
+msgstr "欲使FireStats能统计访问情况，请将以下代码加入相应页面的head标签中（必须是PHP脚本）"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/help-window.php:87
+msgid "A typical page header will look like this:"
+msgstr "一个典型的页面头应该是这样的："
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/help-window.php:104
+msgid "WordPress"
+msgstr "WordPress"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/help-window.php:105
+msgid "The WordPress plugin registers itself automatically when it's activated"
+msgstr "当激活时，WordPress插件将会自动注册"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/help-window.php:111
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/help-window.php:119
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/help-window.php:139
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/help-window.php:145
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/help-window.php:157
+msgid "plugin"
+msgstr "插件"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/help-window.php:127
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/help-window.php:133
+msgid "module"
+msgstr "模块"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/help-window.php:176
+#, php-format
+msgid "Collect hits from a %s site"
+msgstr "从%s统计访问"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/help-window.php:197
+#, php-format
+msgid "and then configure it in the administration menu with the path %s and the ID %s"
+msgstr "然后在管理面板中设置其path：%s以及ID：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/help-window.php:207
+#, php-format
+msgid "and then edit the lines in %s to contain this:"
+msgstr "然后编辑%s中的内容，以包含这些："
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/help-window.php:214
+#, php-format
+msgid "To collect statistics from your %s site your need to install the %s"
+msgstr "要想从你的%s站点获得统计数据，必须安装%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:175
+#, php-format
+msgid "Unsupported action code : %s"
+msgstr "未支持的动作码：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:184
+#, php-format
+msgid "Unexpexted output: %s"
+msgstr "异常输出：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:196
+#, php-format
+msgid "Saved %d entries to show"
+msgstr "保存%d条记录"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:198
+msgid "Saved"
+msgstr "已保存"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:210
+#, php-format
+msgid "Added %s to exclude list"
+msgstr "已经将%s加入到排除列表中"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:226
+#, php-format
+msgid "Removed %s from exclude list"
+msgstr "已经将%s从排除列表中移除"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:323
+msgid "Excluded users list saved"
+msgstr "排除用户列表已经保存"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:340
+#, php-format
+msgid "Added %s to bots list"
+msgstr "已经将%s加入到机器人（爬虫）列表中"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:351
+msgid "Empty string is not allowed"
+msgstr "不允许空字符串"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:361
+msgid "Removed"
+msgstr "已经移除"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:411
+msgid "Not using configuration file"
+msgstr "未使用配置文件"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:417
+msgid "Not installed inside Wordpress"
+msgstr "WordPress中未安装"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:427
+#, php-format
+msgid "Failed to delete fs-config.php : %s"
+msgstr "删除fs-config.php失败：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:447
+msgid "Error creating config file: "
+msgstr "产生配置文件时出错："
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:469
+msgid "Error upgrading tables"
+msgstr "升级数据库出错"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:493
+msgid "Error installing tables"
+msgstr "安装表出错"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:601
+msgid "Error rebuilding database cache"
+msgstr "重建数据库缓存出错"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:605
+msgid "Database cache rebuilt successfully"
+msgstr "数据库缓存重建成功"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:681
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:171
+#, php-format
+msgid "%s days can be compacted"
+msgstr "%s天可合并"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:684
+#, php-format
+msgid "Unkown field: %s"
+msgstr "位置内容：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:718
+msgid "IP-to-country database is already up-to-date"
+msgstr "IP-国家对应数据库已经是最新版"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:725
+msgid "An error has occured while trying to update the IP-to-country database"
+msgstr "尝试更新IP-国家对应数据库时发生错误"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:729
+msgid "file"
+msgstr "文件"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:731
+#, php-format
+msgid "You can update the database manually by downloading this %s and extracting it into %s"
+msgstr "你可以下载%s并解压到%s来手动升级数据库"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:736
+msgid "this"
+msgstr "这"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:738
+#, php-format
+msgid "You can update the database manually by opening %s and downloading the <b>zip_url</b>, and extracting it into %s"
+msgstr "您可以打开%s，下载压缩包，解压到%s来手动升级数据库"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:740
+msgid "Error"
+msgstr "错误"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:762
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:780
+#, php-format
+msgid "Error updating bots list: %s"
+msgstr "更新机器人（爬虫）列表出错：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:774
+msgid "Successfully updated bots list"
+msgstr "更新机器人（爬虫）列表成功"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:792
+#, php-format
+msgid "Error purging excluded records: %s"
+msgstr "清空排除记录失败：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:796
+msgid "Purged excluded records"
+msgstr "成功清空排除记录"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:878
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-common.php:135
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:22
+msgid "Error connecting to database"
+msgstr "连接数据库失败"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:954
+#, php-format
+msgid "Compacting %s days, %s done"
+msgstr "压缩%s天，%s完成"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ajax-handler.php:1037
+#, php-format
+msgid "Done, took %s second"
+msgstr "完成，共计时%s秒"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/footer.php:44
+#, php-format
+msgid "If you have any problems or questions, please visit the %s"
+msgstr "有任何故障或者疑问，请访问%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/footer.php:44
+msgid "FireStats homepage"
+msgstr "FireStats主页"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/export-bots-list.php:21
+msgid "Error exporting bots list"
+msgstr "到处机器人（爬虫）列表失败"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:30
+msgid "Statistics widget"
+msgstr "统计Widget（侧边栏挂件）"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:35
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:43
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:47
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/version-check.php:148
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:182
+msgid "here"
+msgstr "这里"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:53
+#, php-format
+msgid "You can configure the sidebar widget from %s"
+msgstr "您可以从%s设置侧边栏Widget"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:57
+#, php-format
+msgid "The statistics widget requires the %s plugin for optimal usage."
+msgstr "优化统计侧边栏Widget需要%s插件"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:60
+msgid "Widgets"
+msgstr "Widgets（侧边栏挂件）"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:62
+msgid "You can also manually add the following code to your theme sidebar:"
+msgstr "您可以手工加入以下代码到您的侧边栏："
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:70
+msgid "Comments icons"
+msgstr "评论图标"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:78
+msgid "Add flag icon to comments"
+msgstr "为评论列表增加留言者的国旗图标"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:87
+msgid "Add browser and operating system icons to comments"
+msgstr "为评论列表增加留言者的操作系统、浏览器图标"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:92
+msgid "Blog footer"
+msgstr "Blog底部"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:100
+msgid "Add FireStats footer to blog"
+msgstr "为Blog底增加FireStats声明"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:109
+msgid "Show statistics in footer"
+msgstr "在Blog底显示FireStats统计"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:117
+msgid "Excluded users"
+msgstr "已经排除的用户"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:121
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:143
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:214
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:225
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:241
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:139
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:293
+msgid "Save"
+msgstr "保存"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:136
+msgid "Advanced"
+msgstr "高级"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:137
+msgid "WordPress site ID, every hit From this blog is recorded with this as the source Site ID"
+msgstr "WordPress站点ID，该Blog的每一次点击计入该ID下"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-wordpress-settings.php:138
+msgid "This should be the same ID as the Site ID in the sites table. you don't normally need to change this."
+msgstr "这就是站点ID，您一般不用修改"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/version-check.php:41
+#, php-format
+msgid "Error getting version information from %s : %s"
+msgstr "从%s：%s获取版本信息出错"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/version-check.php:123
+msgid "A new version of the IP-to-country database is available! you can update it from the settings tab"
+msgstr "发现新的IP-国家对照数据库！您可以在设置面板中立即更新"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/version-check.php:146
+#, php-format
+msgid "Version %s is available! click %s for more info"
+msgstr "发现新版本%s，点击%s获得更多信息"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/version-check.php:172
+#, php-format
+msgid "Error opening %s"
+msgstr "错误打开%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:8
+msgid "Link here"
+msgstr "连接到这里"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:109
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:116
+msgid "ID"
+msgstr "ID"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:110
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:125
+msgid "Name"
+msgstr "名字"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:111
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:126
+msgid "Type"
+msgstr "类型"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:112
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:144
+msgid "Page views"
+msgstr "页面访问次数"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:131
+msgid "How to integrate with this site"
+msgstr "如何为这个站点集成"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:158
+msgid "Orphaned hits"
+msgstr "孤立点击"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:170
+msgid "Add a new site"
+msgstr "增加一个新站点"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:206
+msgid "Generic PHP site"
+msgstr "PHP站点"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:208
+msgid "Wordpress"
+msgstr "WordPress"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:210
+msgid "Django"
+msgstr "Django"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:212
+msgid "Drupal"
+msgstr "Drupal"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:214
+msgid "Gregarius"
+msgstr "Gregarius聚合器"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:216
+msgid "Joomla"
+msgstr "Joomla"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:218
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:220
+msgid "Trac"
+msgstr "Trac系统"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:222
+msgid "Gallery2"
+msgstr "Gallery2"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:224
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:823
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:995
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:1041
+msgid "Unknown"
+msgstr "未知"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:309
+msgid "Invalid"
+msgstr "不合法"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:321
+msgid "All"
+msgstr "全部"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:322
+msgid "Show statistics from"
+msgstr "显示统计自："
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:350
+msgid "unknown"
+msgstr "未知"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:421
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:302
+msgid "IP"
+msgstr "IP"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:422
+msgid "TimeStamp"
+msgstr "时间戳"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:423
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:303
+msgid "URL"
+msgstr "URL地址"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:424
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:304
+msgid "Referrer"
+msgstr "引用（来源）"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:425
+msgid "Image"
+msgstr "图片"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:426
+msgid "UserAgent"
+msgstr "用户代理（客户端）"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:447
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:512
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:698
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:790
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:814
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:904
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:980
+msgid "No data yet, go get some hits"
+msgstr "还没有数据，快让大家访问吧"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:573
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:597
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:623
+msgid "Empty"
+msgstr "空"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:605
+msgid "excluded"
+msgstr "排除"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:727
+msgid "Start date is missing"
+msgstr "缺少起始日期"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:732
+msgid "End date is missing"
+msgstr "缺少结束日期"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:752
+msgid "Please wait..."
+msgstr "请稍后……"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:844
+#, php-format
+msgid "(%d hits) (%d more from %s)"
+msgstr "（%d次点击）（另有%d次来自%s）"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:849
+#, php-format
+msgid "%d hits"
+msgstr "%d次点击"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:867
+#, php-format
+msgid "%d hits from %s"
+msgstr "%d次点击来自%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:964
+msgid "Others"
+msgstr "其他"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1098
+msgid "System information"
+msgstr "系统信息"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1099
+msgid "You can help by sending anonymous system information that will help make better decisions about new features"
+msgstr "您可以匿名身份发送系统信息来帮助我们完善FireStats系统"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1100
+msgid "The information will be sent anonymously, but a unique identifier will be sent to prevent duplicate entries from the same FireStats"
+msgstr "信息将被匿名发送（将同时发送唯一标识符避免重复发送）"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1103
+msgid "You can change this later from the Tools tab"
+msgstr "您可以稍候在工具面板中改变这些"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1120
+msgid "Sure, send system information"
+msgstr "好，发送"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1121
+msgid "Nope, don't send"
+msgstr "不，不要发送"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1123
+msgid "Do you agree to send anonymous system information?"
+msgstr "您是否统一发送匿名系统信息"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1135
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/tabbed-pane.php:21
+msgid "Support FireStats"
+msgstr "支援FireStats"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1136
+msgid "Even though FireStats is free, it takes a lot of time and hard work to develop and maintain."
+msgstr "即时FireStats是免费的，我们仍然花费了大量的精力和时间"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1137
+msgid "If you like FireStats and would like to show your support for the hard work I put into it, You can make a small Donation. Even a $5 donation would be greatly appreciated."
+msgstr "如果您支持FireStats，请捐助我们，哪怕5美元也会很有帮助：）"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1138
+msgid "Yeah, I want to help"
+msgstr "恩，我想帮助"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1139
+msgid "Maybe later"
+msgstr "也许等我有钱了~"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1140
+msgid "Nah, go away"
+msgstr "我才不要呢！"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1141
+msgid "Already donated"
+msgstr "已经捐助"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1159
+msgid "Compacting old data"
+msgstr "压缩旧数据"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1160
+msgid "FireStats can tranform old data to a more compact form,"
+msgstr "FireStats可以将就数据压缩"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1161
+msgid "This will reduce storage size and improve performance at the cost of losing some information which is not essential."
+msgstr "这样，可以减少物理存储消耗。"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1162
+msgid "it is highly recommended that you allow FireStats to do this automatically."
+msgstr "强烈推荐您让FireStats自动处理这些"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1163
+msgid "Yes (Recommended)"
+msgstr "好（推荐）"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1164
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/tabbed-pane.php:42
+msgid "No"
+msgstr "不"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1166
+#, php-format
+msgid "Click %s if you would like FireStats to automatically compact data older than %s days"
+msgstr "点击%s如果您想让FireStats自动压缩%s天前的数据"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/html-utils.php:1167
+#, php-format
+msgid "Click %s if you want to compact data manually or change compacting options (From the Settings tab)"
+msgstr "点击%s如果您想自己手动压缩数据"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/tabbed-pane.php:26
+msgid "Demo"
+msgstr "演示"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/tabbed-pane.php:36
+msgid "Hide"
+msgstr "隐藏"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/tabbed-pane.php:43
+msgid "Yes"
+msgstr "是"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/tabbed-pane.php:69
+msgid "Statistics"
+msgstr "统计"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/tabbed-pane.php:73
+msgid "Settings"
+msgstr "设置"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/tabbed-pane.php:79
+msgid "WordPress settings"
+msgstr "WordPress设置"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/tabbed-pane.php:87
+msgid "Database"
+msgstr "数据库"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/tabbed-pane.php:91
+msgid "Sites management"
+msgstr "站点管理"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/tabbed-pane.php:95
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:49
+msgid "Tools"
+msgstr "工具"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:9
+msgid "Abort"
+msgstr "放弃"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:24
+msgid "Canceled"
+msgstr "取消"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:25
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:29
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:37
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:82
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:87
+msgid "Start"
+msgstr "开始"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:50
+msgid "This section contains various tools"
+msgstr "这一部分包含许多工具"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:55
+msgid "I agree to send system information"
+msgstr "我同意发送系统信息"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:59
+msgid "Diagnostics"
+msgstr "诊断"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:60
+msgid "System diagnostics page"
+msgstr "系统诊断页面"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:60
+msgid "Open"
+msgstr "打开"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:65
+msgid "PHP Version"
+msgstr "PHP版本"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:68
+msgid "MySQL Version"
+msgstr "MySQL版本"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:71
+msgid "Memory limit"
+msgstr "内存极限"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:77
+msgid "Database cache"
+msgstr "数据库缓存"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:78
+msgid "The following section can recalculate different aspects of the database. you don't normally need to use it."
+msgstr "以下是重新计算数据库的模块，您不需要动它。"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:81
+msgid "Recalculate country codes : "
+msgstr "重新计算国家代码："
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-tools.php:86
+msgid "Rebuild database cache: "
+msgstr "重建数据库缓存："
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:17
+msgid "You need to select an bot you want to remove from the table"
+msgstr "您需要选择一个要移除的机器人（爬虫）"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:38
+msgid "Invalid IP address"
+msgstr "错误IP表"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:47
+msgid "You need to select an IP address you want to remove from the table"
+msgstr "您需要选择一个移除的IP地址"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:72
+msgid "Stop"
+msgstr "停止"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:73
+msgid "Compacting..."
+msgstr "压缩……"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:96
+msgid "Stopping..."
+msgstr "停止……"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:105
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:168
+msgid "Compact now"
+msgstr "现在压缩"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:154
+msgid "Compact old data"
+msgstr "压缩旧数据"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:165
+#, php-format
+msgid "%s compact data older than %s"
+msgstr "%s压缩旧于%s的数据"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:176
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:67
+msgid "MySQL 4.1.14 or newer is required for data compacting support"
+msgstr "必须有MySQL4.1.14或者更新版本支持数据压缩"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:183
+msgid "Automatic version check"
+msgstr "自动版本检测"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:185
+msgid "Automatically check if there is a new version of FireStats (recommended)"
+msgstr "自动检测FireStats新版本（推荐）"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:191
+msgid "IP-to-country database"
+msgstr "IP-国家对应数据库"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:193
+#, php-format
+msgid "IP-to-country database version : %s"
+msgstr "IP-国家对应数据库版本：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:195
+msgid "Automatically check if there is a new version of IP-to-country database"
+msgstr "自动检测IP-国家对应数据库升级"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:197
+msgid "Update IP-to-country database now (only if needed)"
+msgstr "将IP-国家对应数据库立即升级到最新版（如果有必要）"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:199
+msgid "Update"
+msgstr "升级"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:207
+msgid "Options"
+msgstr "选项"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:208
+msgid "Select language"
+msgstr "选择语言"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:216
+msgid "How to translate to a new language"
+msgstr "如何进行翻译"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:221
+msgid "Select your time zone"
+msgstr "选择您的时区"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:231
+#, php-format
+msgid "Time zone selection requires %s or newer"
+msgstr "时区选择需要%s或者更新"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:235
+msgid "Select WHOIS provider"
+msgstr "选择WHOIS提供源"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:249
+msgid "Exclude hits"
+msgstr "排除点击"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:256
+msgid "Save excluded records (not recommended)"
+msgstr "保存已经排除的记录（不推荐）"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:259
+msgid "Purge excluded records stored in the database"
+msgstr "清空数据库中的排除记录"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:262
+msgid "Purge"
+msgstr "清空"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:272
+msgid "Bots list"
+msgstr "机器人（爬虫）列表"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:278
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:322
+msgid "Add"
+msgstr "添加"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:279
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:323
+msgid "Remove"
+msgstr "移除"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:293
+msgid "Automatic update"
+msgstr "自动更新"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:296
+msgid "Update now"
+msgstr "现在更新"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:298
+msgid "Import"
+msgstr "导入"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:301
+msgid "Export"
+msgstr "导出"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:317
+msgid "Excluded IPs"
+msgstr "排除的IP"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:339
+msgid "Automatically"
+msgstr "自动"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:340
+msgid "Manually"
+msgstr "手动"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:341
+msgid "Please select"
+msgstr "请选择"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:358
+msgid "One month"
+msgstr "一个月"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:359
+msgid "Two months"
+msgstr "两个月"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:360
+msgid "Three months"
+msgstr "三个月"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:361
+msgid "Half a year"
+msgstr "半年"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:362
+msgid "One year"
+msgstr "一年"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-settings.php:363
+msgid "Two years"
+msgstr "两年"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-common.php:117
+msgid "FireStats is properly installed in the database"
+msgstr "FireStats数据库已经正确安装"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-common.php:120
+msgid "FireStats is not configured"
+msgstr "FireStats为设置"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-common.php:123
+msgid "Database error, check your configuration"
+msgstr "数据库错误，请检查您的设置"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-common.php:126
+msgid "FireStats is not installed in the database"
+msgstr "FireStats数据库未安装"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-common.php:129
+msgid "FireStats database need to be upgraded"
+msgstr "FireStats数据库需要升级"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-common.php:132
+msgid "The FireStats database version is newer this code version, you need to upgrade FireStats"
+msgstr "FiresStats数据库比您的FireStats新，请更新FireStats"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-common.php:138
+msgid "Unknown database status code"
+msgstr "未知数据库状态码"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-common.php:465
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-hit.php:261
+#, php-format
+msgid "Database error: %s"
+msgstr "数据库错误：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:63
+msgid "Upgrading, do not interrupt"
+msgstr "升级中，请勿中断……"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:70
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:148
+msgid "Upgrade"
+msgstr "升级"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:112
+msgid "Database status"
+msgstr "数据库状态"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:147
+msgid "Click to upgrade"
+msgstr "点击升级"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:174
+#, php-format
+msgid "Configuration source : %s"
+msgstr "配置源：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:180
+msgid "To use wordpress database, click this button."
+msgstr "使用WordPress数据库，点击这里"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:181
+msgid "FireStats database configuration will be lost."
+msgstr "FireStats数据库设置将被清空"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:182
+msgid "Use Wordpress database"
+msgstr "使用WordPress数据库"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:193
+msgid "To perform one of the following actions:"
+msgstr "进行以下操作："
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:195
+msgid "Attach to an existing FireStats installation"
+msgstr "添加到一份已经存在的FireStats系统中"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:196
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:316
+msgid "Install FireStats into an existing database"
+msgstr "在已经存在的数据库中安装FireStats"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:197
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:319
+msgid "Create a new database and install FireStats there"
+msgstr "在新数据库中安装FireStats"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:199
+msgid "Follow instructions in the help"
+msgstr "请遵照帮助"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:208
+msgid "Database host"
+msgstr "数据库主机地址"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:214
+msgid "Database name"
+msgstr "数据库名"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:220
+msgid "Database user name"
+msgstr "数据库用户名"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:226
+msgid "Database password"
+msgstr "数据库密码"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:232
+msgid "Tables prefix"
+msgstr "表前缀"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:241
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:314
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:317
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:320
+msgid "Test connection"
+msgstr "测试连接"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:251
+msgid "Click to install and switch to new FireStats tables"
+msgstr "点击安装并且转换成新的FireStats表"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:254
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:317
+msgid "Install tables"
+msgstr "安装表"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:263
+msgid "Click to use this FireStats database"
+msgstr "点击使用这个FireStats数据库"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:267
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:314
+msgid "Use this database"
+msgstr "使用这个数据库"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:279
+msgid "To create a new database, an administrator user should be used in the above fields."
+msgstr "要想建立一个新数据库，请使用管理帐号"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:280
+msgid "However, For security reason, it is recommended not to use a database administrator user for day to day operations."
+msgstr "然而，由于安全原因，建议不要使用一个管理员帐号进行日常数据库维护"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:281
+msgid "Enter new user name and password for FireStats, this user will only have access to the FireStats database"
+msgstr "键入新的用户名和密码，这个用户将只能接触到FireStats数据库"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:282
+msgid "If you will not specify user and password the Admin user and password will be used."
+msgstr "如果您不指定用户名和密码，将采用管理员帐号"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:289
+msgid "FireStats User name"
+msgstr "FireStats用户名"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:293
+msgid "FireStats password"
+msgstr "FireStats密码"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:299
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:320
+msgid "Create database"
+msgstr "创建数据库"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:312
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:323
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:172
+msgid "Help"
+msgstr "帮助"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:313
+msgid "Attach to an existing FireStats database"
+msgstr "添加到一个已经存在的FireStats数据库"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:314
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:317
+#, php-format
+msgid "Enter the parameters in the table, press %s, and then %s."
+msgstr "设置表，您需要按%s然后%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:320
+#, php-format
+msgid "Enter the parameters into the table, <u>you need to enter a database administrator user</u>. press %s, and then enter FireStats database user and password, and finally press %s."
+msgstr "设置数据库，<u>您需要键入一个数据库管理员用户</u>。按%s，然后键入FireStats用户名和密码，然后按%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:324
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:339
+msgid "Configuration locked"
+msgstr "设置已锁定"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:325
+msgid "To change the database configuration you need to unlock it, please enter the password."
+msgstr "要改变数据库设置，您必须先解锁，请输入密码"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:326
+#, php-format
+msgid "if you forgot your password you can simply delete the file %s from firestats/php directory."
+msgstr "如果您忘记了密码，只要删除FireStats/php下的%s就可以了"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:340
+msgid "Database configuration is locked, to unlock for 5 minutes enter the lock password."
+msgstr "数据库设置已锁定，要解锁5分钟，请输入锁定密码"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:342
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:350
+msgid "Password"
+msgstr "密码"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:343
+msgid "Unlock"
+msgstr "解锁"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:347
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:80
+msgid "Configuration unlocked"
+msgstr "设置已解锁"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:348
+msgid "Database configuration is open for changes, enter a password to lock."
+msgstr "数据库设置目前未锁定，键入密码以锁定"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-database.php:351
+msgid "Lock"
+msgstr "锁定"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ip2country.php:116
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ip2country.php:120
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ip2country.php:244
+msgid "Error creating temporary file"
+msgstr "建立零时文件错误"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ip2country.php:128
+#, php-format
+msgid "Error opening connection to %s"
+msgstr "连接到%s出错"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ip2country.php:133
+#, php-format
+msgid "Error sending request to %s"
+msgstr "发送请求到%s出错"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ip2country.php:147
+#, php-format
+msgid "Error reading data from %s : %s"
+msgstr "从%s读取数据出错：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ip2country.php:176
+#, php-format
+msgid "Error extracting IP-to-country database: %s"
+msgstr "解压IP-国家对应数据库出错：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ip2country.php:181
+#, php-format
+msgid "Unsupported file type : %s"
+msgstr "不支持的文件类型：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ip2country.php:201
+#, php-format
+msgid "can't update ip-to-country database, read-only directory : %s"
+msgstr "无法更新，目录只读：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ip2country.php:203
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ip2country.php:205
+#, php-format
+msgid "can't update ip-to-country database, read-only file : %s"
+msgstr "无法更新，文件只读：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ip2country.php:220
+msgid "Error installing new IP-to-country database"
+msgstr "安装新IP-国家对应数据库时出错"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ip2country.php:226
+msgid "Successfuly updated IP-to-country database"
+msgstr "成功升级IP-国家对应数据库"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ip2country.php:230
+#, php-format
+msgid "Error updating version file : %s"
+msgstr "错误升级版本文件：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:19
+msgid "Error accessing database"
+msgstr "访问数据库出错"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:25
+msgid "Cannot write configuration file (read only file or directory)"
+msgstr "不能写配置文件（目录只读）"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:28
+msgid "Error creating database"
+msgstr "建立数据库出错"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:31
+msgid "Error creating user"
+msgstr "建立用户出错"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:34
+msgid "Error creating tables"
+msgstr "简历表出错"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:37
+msgid "Error saving configuration"
+msgstr "设置配置出错"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:40
+msgid "Password not specified"
+msgstr "密码未指定"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:43
+msgid "Wrong password"
+msgstr "错误的密码"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:53
+msgid "FireStats tables are not installed"
+msgstr "FireStats表没有安装"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:58
+msgid "FireStats is installed"
+msgstr "FireStats已经安装"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:63
+msgid "Another FireStats database detected"
+msgstr "检测到另一个FireStats数据库"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:68
+msgid "New database created successfuly"
+msgstr "新的数据库建立成功"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:72
+msgid "Configuration is locked"
+msgstr "设置锁定"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:75
+msgid "Error changing lock file"
+msgstr "改变锁定文件出错"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:83
+#, php-format
+msgid "Unexpected error code %s"
+msgstr "未知错误代码：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:301
+msgid "Not configured"
+msgstr "为设定"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:304
+msgid "FireStats configuration file"
+msgstr "FireStats配置文件"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-config-utils.php:307
+msgid "Wordpress configuration file"
+msgstr "WordPress配置文件"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:24
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:26
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:69
+msgid "Automatic"
+msgstr "自动"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:97
+msgid "Delete"
+msgstr "删除"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:97
+msgid "Transfer"
+msgstr "传输"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:109
+msgid "Manage sites"
+msgstr "管理站点"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:121
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:333
+msgid "Clear"
+msgstr "清除"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:129
+msgid "Baseline page views"
+msgstr "页面访问基数"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:133
+msgid "Baseline visitors"
+msgstr "独立访问者基数"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:138
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:162
+msgid "Close"
+msgstr "关闭"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:147
+msgid "This will delete this site from the database, the operation is irreversible!"
+msgstr "这样将删除数据库中的该站点信息，不可逆操作！"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:148
+msgid "What do you want to do with the site hits?"
+msgstr "您想对访问数据记录进行什么操作？"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:151
+msgid "Delete all the hits"
+msgstr "删除所有的访问记录"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:152
+msgid "Transfer the hits to another site"
+msgstr "转移到另一个站点"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:155
+msgid "Enter an existing site ID to transfer the hits to"
+msgstr "输入目标站点ID"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:173
+msgid "Warning, you can really mess things up from here, be careful!"
+msgstr "注意！您这样操作可能会造成数据错误！"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:175
+msgid "FireStats can collect statistics from multiple sites (on the same server)."
+msgstr "FireStats可以统计同一台数据库上不同站点的访问记录"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:177
+msgid "The site need to be registered in the sites table"
+msgstr "这个站点必须注册在站点列表中"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:178
+msgid "The site should be configured to use its ID when reporting a hit, click on the help button next to the site you created for more information"
+msgstr "这个站点必须设置好ID，点击帮助按钮获得更多信息"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-sites.php:181
+#, php-format
+msgid "Click %s for more information"
+msgstr "点击%s获得更多信息"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:44
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:78
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:110
+msgid "Refresh statistics"
+msgstr "刷新统计"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:67
+#: F:\Apache\blog\wp-content\plugins\FS1.3/js/firestats.js.php:247
+msgid "Not a positive number : "
+msgstr "不是一个正数："
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:130
+msgid "Auto refresh every"
+msgstr "自动刷新每"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:133
+msgid "minutes"
+msgstr "分钟"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:134
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:164
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:185
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:213
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:233
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:254
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:276
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:338
+msgid "Apply"
+msgstr "应用"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:141
+msgid "Status"
+msgstr "状态"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:145
+msgid "Visits"
+msgstr "访问"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:146
+msgid "Page views in last 24 hours"
+msgstr "过去24小时页面访问次数"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:147
+msgid "Visits in last 24 hours"
+msgstr "过去24小时访问者"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:153
+msgid "Recent referrers"
+msgstr "最近的引用（来源）"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:160
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:209
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:271
+#, php-format
+msgid "Show at most %s items for the last %s days"
+msgstr "显示最多%s条记录，来自最近的%s天"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:174
+msgid "Search terms"
+msgstr "搜索短语"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:181
+#, php-format
+msgid "Show at most %s search terms for %s"
+msgstr "显示最多%s条搜索记录为%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:188
+msgid "Start date:"
+msgstr "开始时间："
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:189
+msgid "End date:"
+msgstr "结束时间："
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:203
+msgid "Recent popular pages"
+msgstr "最近频繁访问页面："
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:223
+msgid "Browsers"
+msgstr "浏览器"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:229
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:250
+#, php-format
+msgid "Show items for the last %s days"
+msgstr "显示最近%s天的记录"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:244
+msgid "Operating systems"
+msgstr "操作系统"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:265
+msgid "Countries"
+msgstr "国家"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:284
+msgid "Hits table"
+msgstr "访问列表"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:288
+msgid "Number of hits to show"
+msgstr "访问列表显示条数"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:305
+msgid "User agent"
+msgstr "用户代理（客户端）"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:309
+msgid "Filter"
+msgstr "过滤器"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:354
+msgid "the last 24 hours"
+msgstr "过去24小时"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:355
+msgid "the last week"
+msgstr "过去一周"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:356
+msgid "the last month"
+msgstr "过去一个月"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:357
+msgid "the three months"
+msgstr "过去三个月"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:358
+msgid "the last six months"
+msgstr "过去半年"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:359
+msgid "the last year"
+msgstr "过去一年"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:360
+msgid "all time"
+msgstr "所有时间"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/page-stats.php:361
+msgid "time range"
+msgstr "时间范围"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:48
+msgid "Data compacting is already in progress"
+msgstr "数据压缩已经在进行中"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:249
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:287
+msgid "Site name not specified"
+msgstr "站点名称未设定"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:261
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:291
+msgid "Site ID must be a positive number"
+msgstr "站点ID必须为正数"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:264
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:310
+#, php-format
+msgid "A site with the ID %s already exists"
+msgstr "ID为%s的站点已经存在"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:298
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:368
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:392
+#, php-format
+msgid "No site with the id %s exists"
+msgstr "没有ID为%s的站点"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:449
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:487
+#, php-format
+msgid "Invalid IP address: %s"
+msgstr "错误IP地址：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:462
+#, php-format
+msgid "The IP address %s is already in the database"
+msgstr "IP地址%s已经在数据库中"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:520
+#, php-format
+msgid "The bot wildcard %s is already in the database"
+msgstr "机器人%s已经在数据库中"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-sql.php:1404
+#, php-format
+msgid "Error opening file : %s"
+msgstr "错误打开文件：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/db-setup.php:17
+msgid "Operation already in progress"
+msgstr "操作已经在进行"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/import-bots-list.php:15
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/import-bots-list.php:23
+msgid "Import bots list"
+msgstr "导入机器人（爬虫）列表"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/import-bots-list.php:34
+msgid "Select bot-list file"
+msgstr "选择机器人（爬虫）列表文件"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/import-bots-list.php:35
+msgid "Import type"
+msgstr "导入文件"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/import-bots-list.php:37
+msgid "Add to bots list"
+msgstr "添加到机器人（爬虫）列表"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/import-bots-list.php:38
+msgid "Replace bots list"
+msgstr "替换机器人（爬虫）列表"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/import-bots-list.php:40
+msgid "Send File"
+msgstr "发送文件"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/import-bots-list.php:50
+msgid "Incorrect file format"
+msgstr "错误文件格式"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/import-bots-list.php:62
+#, php-format
+msgid "Error importing bots list : %s"
+msgstr "错误导入：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/import-bots-list.php:67
+msgid "bots list imported successfully"
+msgstr "机器人（爬虫）列表导入成功！"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ezsql/mysql/ez_sql_mysql.php:41
+msgid "User name and password are required to connect to database"
+msgstr "必须设置正确的用户名和密码以访问数据库"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ezsql/mysql/ez_sql_mysql.php:42
+msgid "Error establishing mySQL database connection"
+msgstr "建立mySQL数据库链接时发生错误"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ezsql/mysql/ez_sql_mysql.php:43
+msgid "Database name is required to connect to database"
+msgstr "未指定数据库名"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ezsql/mysql/ez_sql_mysql.php:44
+msgid "mySQL database connection is not active"
+msgstr "无法连接mySQL数据库"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ezsql/mysql/ez_sql_mysql.php:45
+msgid "Unexpected error while querying database"
+msgstr "请求数据库时发生未知错误"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ezsql/mysql/ez_sql_mysql.php:122
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ezsql/mysql/ez_sql_mysql.php:133
+#, php-format
+msgid "Can't disconnect: %s"
+msgstr "无法断开：%s"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/php/ezsql/mysql/ez_sql_mysql.php:133
+msgid "Not connected"
+msgstr "链接未建立"
+
+#: F:\Apache\blog\wp-content\plugins\FS1.3/js/firestats.js.php:596
+msgid "Session expired, press ok to reload"
+msgstr "Session过期，请按“确认（ok）”重新载入"
+

@@ -1,0 +1,71 @@
+	.dhtmlgoodies_window{
+		width:300px;
+		font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+		font-size:0.9em;
+		position:fixed;
+		overflow:hidden;	
+		z-index:10000;	
+		
+		
+	}
+	.dhtmlgoodies_window div{
+		position:relative;
+	}
+	.dhtmlgoodies_window .dhtmlgoodies_window_top{
+		width:100%;
+		height:17px;
+		position:relative;
+		background-color: #707070;
+		
+		
+	}
+	
+	.dhtmlgoodies_window .top_buttons{
+		float:right;
+		z-index:10;
+		position:absolute;
+		right:0px;
+		width:35px;
+		
+		
+	}
+	.top_buttons img{
+		float:left;
+		padding-left:2px;
+		
+	}
+	.dhtmlgoodies_windowMiddle{
+		border-left:3px solid #707070;
+		
+	}
+	.dhtmlgoodies_windowContent{
+		border-right:3px solid #707070;
+		padding-left:5px;
+		padding-right:2px;
+
+		height:100%;
+		overflow:hidden;
+		background-color:#FFF;
+	}
+	.dhtmlgoodies_window_bottom{
+		border-left: 3px solid #707070;
+		border-right:3px solid #707070;
+		border-bottom: 3px solid #707070;
+		position:relative;
+		height:0px;
+		background-color:#FFFFFF;
+	}
+	.dhtmlgoodies_window_bottom img{
+		float:right;
+	}
+	.topCenterImage{
+		position:absolute;
+		left:3px;
+		width:5000px;
+		height:17px;
+	}
+	.resizeImage{
+		position:absolute;
+		right:1px;
+		bottom:1px;
+	}
