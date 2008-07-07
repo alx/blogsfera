@@ -1,4 +1,12 @@
 <?php
+/*
+Plugin Name: Blogsfera Portal Widgets
+Plugin URI: http://github.com/alx/blogsfera/tree
+Description: Various widgets to be displayed on Blogsfera portal
+Author: Alexandre Girard, Las Indias
+Version: 1.0
+Author URI: http://blog.alexgirard.com
+*/
 
 // Widget: Recent articles
 // Description: Show last articles from the blogsfera
@@ -56,10 +64,6 @@ function blogsfera_widget_search($args) {
 	<li id="busqueda" class="clearfix">
 		<h2><?php echo $title; ?></h2>
 		<ul>
-
-			<li id="portal">
-				<p><strong><a href='http://feevy.bbvablogs.com'>Ver todos los blogs</a></strong></p>
-			</li>
 
 			<li id="por-nombre">
 				<p>Busca por nombre</p>
@@ -214,7 +218,6 @@ function blogsfera_widget_news($args) {
 		    ?>
 			<h2>&iexcl;&iexcl;Bienvenidos!!</h2>
 			<ul>
-			<li><a href="http://bbvablogs.com/que-es-la-blogsfera-bbva/">&iquest;Qu&eacute; es la blogsfera BBVA?</a></li>
 			<li class="last clearfix">
 			<?php the_content(); ?>
 			</li>

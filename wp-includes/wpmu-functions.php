@@ -149,11 +149,11 @@ function get_blog_details( $id, $getall = true ) {
 		return $details;
 	}
 
-	$wpdb->suppress_errors();
+	$wpdb->hide_errors();
 	$details->blogname   = get_blog_option($id, 'blogname');
 	$details->siteurl    = get_blog_option($id, 'siteurl');
 	$details->post_count = get_blog_option($id, 'post_count');
-	$wpdb->suppress_errors( false );
+	$wpdb->show_errors();
 
 	$details = apply_filters('blog_details', $details);
 
@@ -414,7 +414,9 @@ function get_blogs_of_user( $id, $all = false ) {
 	if ( !$user )
 		return false;
 
-	$blogs = $match = array();
+	$blogs = array();
+
+	$i = 0;
 	foreach ( (array) $user as $key => $value ) {
 		if ( strstr( $key, '_capabilities') && strstr( $key, $wpdb->base_prefix) ) {
 			preg_match('/' . $wpdb->base_prefix . '(\d+)_capabilities/', $key, $match);
@@ -512,12 +514,91 @@ function get_blog_status( $id, $pref ) {
 	return $wpdb->get_var( "SELECT $pref FROM {$wpdb->blogs} WHERE blog_id = '$id'" );
 }
 
-function get_last_updated( $display = false ) {
-	global $wpdb;
-	return $wpdb->get_results( "SELECT blog_id, domain, path FROM $wpdb->blogs WHERE site_id = '$wpdb->siteid' AND public = '1' AND archived = '0' AND mature = '0' AND spam = '0' AND deleted = '0' AND last_updated != '0000-00-00 00:00:00' ORDER BY last_updated DESC limit 0,40", ARRAY_A );
+function get_last_updated($num = 10, $display = false ) {
+	
+	$selection = array();
+	$offset = 0;
+	
+	$limit = false;
+	$result = get_updated_blogs($limit);
+	
+	// Update limit in second to remove long forgotten posts that has been edited recently.
+	// $update_limit = 3600*24;
+	
+	// Push valid element from DB result into selection
+	foreach ( (array) $result as $key => $details ) {
+		$post = get_last_blog_post($details['blog_id']);
+		
+		// $post_update = strtotime($post->post_modified) - strtotime($post->post_date_gmt);
+		
+		// Do not include if the post title is empty
+		if(!empty($post->post_title)) {
+			// Do not include "Hello World!"
+			if($post->post_title != __("Hello World!") and $post->post_status != 'private'){
+				$post->domain_url = "http://" . $details['domain'] . $details['path'];
+				array_push($selection, $post);
+			}
+		}
+	}
+	
+	// sort posts by modified date
+	usort($selection, "sort_post_by_date");
+	// Slice array
+	$selection = array_slice($selection, 0, $num);
+	
+	if($display == true){
+		reset( $selection );
+		$list = "";
+		$last = count($selection) - 1;
+		$i = 0;
+		
+		foreach ( (array) $selection as $post ) {
+				
+			$post_link = $post->guid;
+			// No guid set on last post, display homepage
+			if(strlen($post_link) == 0) $post_link = $post->domain_url;
+				
+			$list .= "<li";
+			// Display class for last element
+			if($i == $last) { $list .= " class='last clearfix'"; }
+				
+			$list .= "><a class='avatar' href='$post_link'><img src='".author_image_path($post->post_author, $display = false)."' width='48px' height='48px' alt='".strip_tags($post->post_title)."'/></a><h3><a href='$post_link'>$post->post_title</a></h3><p>hace ".get_time_difference($post->post_modified, $decorate=true)."</p></li>";
+			$i++;
+		}
+		echo "<ul>$list</ul>";
+	}
+	
+	return $result;
 }
 
-function get_most_active_blogs( $num = 10, $display = true ) {
+function get_updated_blogs($limit = true, $count = 10, $offset = 0){
+	global $wpdb;
+	$query = "SELECT blog_id, domain, path, last_updated ".
+	         "FROM $wpdb->blogs WHERE site_id = '$wpdb->siteid' ".
+			 "AND mature = '0' AND spam = '0' AND deleted = '0' ". 
+			 "AND last_updated >= DATE_SUB(CURRENT_DATE(), INTERVAL 7 DAY) ".
+			 "ORDER BY last_updated DESC";
+			
+	if($limit) $query .= " LIMIT $offset, $count";
+	
+	return $wpdb->get_results( $query, ARRAY_A );
+}
+
+function get_last_blog_post($blog_id) {
+	global $wpdb;
+
+	$key = $blog_id."-".$post_id."-last_blog_post";
+	$post = wp_cache_get( $key, "site-options" );
+	if( $post == false ) {
+		$post = $wpdb->get_row( "SELECT * FROM {$wpdb->base_prefix}{$blog_id}_posts WHERE post_type = 'post' AND post_status = 'publish' ORDER BY post_date_gmt DESC LIMIT 1" );
+		wp_cache_add( $key, $post, "site-options", 120 );
+	}
+
+	return $post;
+}
+
+function get_most_active_blogs( $num = 10, $display = true, $title = "blogs") {
+	global $wpdb;
 	$most_active = get_site_option( "most_active" );
 	$update = false;
 	if( is_array( $most_active ) ) {
@@ -547,17 +628,42 @@ function get_most_active_blogs( $num = 10, $display = true ) {
 		}
 		update_site_option( "most_active", $most_active );
 	}
+	
+	$most_active = array_slice( $most_active, 0, $num );
 
 	if( $display == true ) {
 		if( is_array( $most_active ) ) {
 			reset( $most_active );
-			foreach ( (array) $most_active as $key => $details ) {
-				$url = clean_url("http://" . $details['domain'] . $details['path']);
-				echo "<li>" . $details['postcount'] . " <a href='$url'>$url</a></li>";
+			$list = "";
+			$last = count($most_active) - 1;
+			$i = 0;
+			foreach($most_active as $blog) {
+				$url = "http://" . $blog['domain'] . $blog['path'];
+				
+				switch ($title) {
+					case "blogs": $title = get_blog_option($blog['blog_id'], 'blogname');
+					break;
+
+					case "posts": $title = get_blog_option($blog['blog_id'], 'blogname');
+					break;
+
+					default: $title = get_blog_option($blog['blog_id'], 'blogname');
+					break;
+				}
+				
+				if($i != $last){
+					$list .= "<li><a href='$url'>$title</a></li>";
+				} else {
+					$list .= "<li class='last clearfix'><a href='$url'>$title</a></li>";
+				}
+				$i++;
 			}
+			
+			// Display resulting list
+			echo "<ul>$list</ul>";
 		}
 	}
-	return array_slice( $most_active, 0, $num );
+	return $most_active;
 }
 
 function get_blog_list( $start = 0, $num = 10, $display = true ) {
@@ -1977,4 +2083,44 @@ function maybe_redirect_404() {
 	}
 }
 add_action( 'template_redirect', 'maybe_redirect_404' );
+
+function get_time_difference($post_time, $decorate = false){
+	$timestamp = time() - strtotime($post_time);
+	
+	if($decorate == true){
+		return duration($timestamp);
+	} else {
+		return $timestamp;
+	}
+}
+
+function duration($timestamp) {
+	
+	$years=floor($timestamp / (60*60*24*365));
+	$timestamp%=60*60*24*365;
+	
+	$weeks=floor($timestamp / (60*60*24*7));
+	$timestamp%=60*60*24*7;
+	
+	$days=floor($timestamp / (60*60*24));
+	$timestamp%=60*60*24;
+    
+	$hrs=floor($timestamp / (60*60));
+	$timestamp%=60*60;
+    
+	$mins=floor($timestamp / 60);
+	$secs=$timestamp % 60;
+   
+   $str="";
+
+   if ($secs >= 1) { $str ="{$secs} segundos "; }
+   if ($mins >= 1) { $str ="{$mins} minutos "; }
+   if ($hrs >= 1) { $str ="{$hrs} horas "; }
+   if ($days >= 1) { $str ="{$days} d&iacute;as "; }
+   if ($weeks >= 1) { $str ="{$weeks} semanas "; }
+   if ($years >= 1) { $str ="{$years} a&ntilde;os "; }
+   
+   return $str;
+}
+
 ?>

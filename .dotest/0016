@@ -1,0 +1,92 @@
+From 3397b2c2cc718ef01e95758a43e79c846ec6a4d9 Mon Sep 17 00:00:00 2001
+From: redwarrior <redwarrior@debian-redwarrior.(none)>
+Date: Wed, 9 Jul 2008 18:22:43 +0200
+Subject: some changes in comunidad
+
+---
+ wp-content/mu-plugins/socialmu.php   |   13 +++++++++++++
+ wp-content/themes/people/index.php   |   10 +++++-----
+ wp-content/themes/people/sidebar.php |    6 +++---
+ 3 files changed, 21 insertions(+), 8 deletions(-)
+
+diff --git a/wp-content/mu-plugins/socialmu.php b/wp-content/mu-plugins/socialmu.php
+index fc2b4578cf414e6b639b3c4c441e070871ae31c1..5b8d0537c4acd655f602adec292f773ceb8df00d 100644
+--- a/wp-content/mu-plugins/socialmu.php
++++ b/wp-content/mu-plugins/socialmu.php
+@@ -38,6 +38,19 @@ function del_friend($user_id, $friend_user_id){
+ 	delete_usermeta($user_id, 'SocialMu_friend_'.$friend_user_id);
+ }
+ 
++function get_last_blog_posts($blog_id, $count=1) {
++	global $wpdb;
++
++	$key = $blog_id."-".$post_id."-last_".$count."_blog_post";
++	$posts = wp_cache_get( $key, "site-options" );
++	if( $posts == false ) {
++		$posts = $wpdb->get_results( "SELECT * FROM {$wpdb->base_prefix}{$blog_id}_posts WHERE post_type = 'post' AND post_status = 'publish' ORDER BY post_date_gmt DESC LIMIT {$count}", ARRAY_A );
++		wp_cache_add( $key, $post, "site-options", 120 );
++	}
++
++	return $posts;
++}
++
+ //show basic form to add xfn rel
+ function show_xfn_form($user_id){
+ 
+diff --git a/wp-content/themes/people/index.php b/wp-content/themes/people/index.php
+index f8287d2bf879fc487a06d6583e40b0a55711202d..92b879c3eb0109e7d0f618ef7a376074770a423c 100644
+--- a/wp-content/themes/people/index.php
++++ b/wp-content/themes/people/index.php
+@@ -28,7 +28,7 @@
+ 		$users = $wpdb->get_col("SELECT ID FROM $wpdb->users ORDER BY user_login ASC LIMIT $i,$inc");
+ 	}
+ 	$alt = "";
+-	$extra_data = new User_Extra_Data;
++	//$extra_data = new User_Extra_Data;
+ 	foreach($users as $user_id){
+ 		setup_userdata($user_id); ?>
+ 		<?php if ($alt == "") { $alt = " alt"; } else { $alt = ""; } ?>
+@@ -37,10 +37,10 @@
+ 			<span class="m-email"><?php echo $user_email; ?></span>
+ 			<span class="m-mobile">
+ 				<?php
+-					$area = get_usermeta($user_id, 'area');
+-					$unidad = 'unidad_'.$area;
+-					$unidad_extra = $extra_data->$unidad;
+-					echo '<a href="'.$url.'/?area='.$area.'" >'.$extra_data->area[$area].'</a> - '.'<a href="'.$url.'/?unidad='.get_usermeta($user_id, 'unidad').'" >'.$unidad_extra[get_usermeta($user_id, 'unidad')].'</a>';					
++					//$area = get_usermeta($user_id, 'area');
++					//$unidad = 'unidad_'.$area;
++					//$unidad_extra = $extra_data->$unidad;
++					//echo '<a href="'.$url.'/?area='.$area.'" >'.$extra_data->area[$area].'</a> - '.'<a href="'.$url.'/?unidad='.get_usermeta($user_id, 'unidad').'" >'.$unidad_extra[get_usermeta($user_id, 'unidad')].'</a>';					
+ 					
+ 				?>
+ 			</span>
+diff --git a/wp-content/themes/people/sidebar.php b/wp-content/themes/people/sidebar.php
+index debca89e69eb6e210d7b907fa3e20ed578ac52ec..48efbb194d7770d92a35521e21b80dc52c0654eb 100644
+--- a/wp-content/themes/people/sidebar.php
++++ b/wp-content/themes/people/sidebar.php
+@@ -16,17 +16,17 @@
+ 	<?php include (TEMPLATEPATH . '/searchform.php'); ?>
+ 
+ 	<h3 class="site-subtitle">Areas</h3>
+-	<?php if(!isset($extra_data)){$extra_data = new User_Extra_Data;}?>
++	<?php //if(!isset($extra_data)){$extra_data = new User_Extra_Data;}?>
+ 	
+ 	<?php
+-		$areas = $extra_data->area;
++		/*$areas = $extra_data->area;
+ 		echo '<ul>';
+ 		foreach ($areas as $key => $area){
+ 			echo '<li><a href="'.$url.'/?area='.$key.'" >'.$area.'</a></li>';
+ 
+ 		}
+ 		echo '</ul>';
+-
++	       */
+ 	?>
+ 
+ </div>
+-- 
+1.5.5.3
+
+

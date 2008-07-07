@@ -9,15 +9,19 @@
  * This file compresses the TinyMCE JavaScript using GZip.
  **/
 
-// Discard any buffers
-while ( @ob_end_clean() );
+	function wp_translate_tinymce_lang($text) {
+		if ( ! function_exists('__') ) {
+			return $text;
+		} else {
+			$search1 = "/^tinyMCELang\\[(['\"])(.*)\\1\]( ?= ?)(['\"])(.*)\\4/Uem";
+			$replace1 = "'tinyMCELang[\\1\\2\\1]\\3'.stripslashes('\\4').__('\\5').stripslashes('\\4')";
 
 @ require('../../../wp-load.php');
 
-function getFileContents($path) {
+			$search = array($search1, $search2);
+			$replace = array($replace1, $replace2);
 
-	if ( function_exists('realpath') )
-		$path = realpath($path);
+			$text = preg_replace($search, $replace, $text);
 
 	if ( ! $path || ! @is_file($path) )
 		return '';
@@ -177,23 +181,17 @@ $initArray = array (
 // You can modify initArray to add, remove, change elements of the config before tinyMCE.init (changed from action to filter)
 $initArray = apply_filters('tiny_mce_before_init', $initArray);
 
-// Setting "valid_elements", "invalid_elements" and "extended_valid_elements" can be done through "tiny_mce_before_init".
-// Best is to use the default cleanup by not specifying valid_elements, as TinyMCE contains full set of XHTML 1.0.
+	$mce_buttons = apply_filters('mce_buttons', array('bold', 'italic', 'strikethrough', 'separator', 'bullist', 'numlist', 'outdent', 'indent', 'separator', 'justifyleft', 'justifycenter', 'justifyright', 'separator', 'link', 'unlink', 'image', 'wp_more', 'separator', 'spellchecker', 'separator', 'wp_help', 'wp_adv', 'wp_adv_start', 'formatselect', 'underline', 'justifyfull', 'forecolor', 'separator', 'pastetext', 'pasteword', 'separator', 'removeformat', 'cleanup', 'separator', 'charmap', 'separator', 'undo', 'redo', 'wp_adv_end'));
+	$mce_buttons = implode($mce_buttons, ',');
 
-// support for deprecated actions
-ob_start();
-do_action('mce_options');
-$mce_deprecated = ob_get_contents();
-ob_end_clean();
+	$mce_buttons_2 = apply_filters('mce_buttons_2', array());
+	$mce_buttons_2 = implode($mce_buttons_2, ',');
 
-$mce_deprecated = (string) $mce_deprecated;
-if ( strlen( $mce_deprecated ) < 10 || ! strpos( $mce_deprecated, ':' ) || ! strpos( $mce_deprecated, ',' ) )	
-	$mce_deprecated = '';
+	$mce_buttons_3 = apply_filters('mce_buttons_3', array());
+	$mce_buttons_3 = implode($mce_buttons_3, ',');
 
-// Settings for the gzip compression and cache
-$disk_cache = ( ! isset($initArray['disk_cache']) || false == $initArray['disk_cache'] ) ? false : true;
-$compress = ( ! isset($initArray['compress']) || false == $initArray['compress'] ) ? false : true;
-$old_cache_max = ( isset($initArray['old_cache_max']) ) ? (int) $initArray['old_cache_max'] : 0;
+	$mce_browsers = apply_filters('mce_browsers', array('msie', 'gecko', 'opera', 'safari'));
+	$mce_browsers = implode($mce_browsers, ',');
 
 $initArray['disk_cache'] = $initArray['compress'] = $initArray['old_cache_max'] = null;
 unset( $initArray['disk_cache'], $initArray['compress'], $initArray['old_cache_max'] );

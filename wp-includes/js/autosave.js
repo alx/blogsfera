@@ -7,7 +7,12 @@ var previewwin;
 jQuery(function($) {
 	autosaveLast = $('#post #title').val()+$('#post #content').val();
 	autosavePeriodical = $.schedule({time: autosaveL10n.autosaveInterval * 1000, func: function() { autosave(); }, repeat: true, protect: true});
-
+	
+function autosave_start_timer() {
+	var form = $('post');
+	autosaveLast = form.post_title.value+form.content.value;
+	// Keep autosave_interval in sync with edit_post().
+	autosavePeriodical = new PeriodicalExecuter(autosave, autosaveL10n.autosaveInterval);
 	//Disable autosave after the form has been submitted
 	$("#post").submit(function() { $.cancel(autosavePeriodical); });
 	
@@ -50,51 +55,47 @@ function autosave_parse_response(response) {
 			}
 		}
 	}
-	if ( message ) { jQuery('#autosave').html(message); } // update autosave message
-	else if ( autosaveOldMessage && res ) { jQuery('#autosave').html( autosaveOldMessage ); }
-	return res;
+}
+addLoadEvent(autosave_start_timer)
+
+function autosave_cur_time() {
+	var now = new Date();
+	return "" + ((now.getHours() >12) ? now.getHours() -12 : now.getHours()) + 
+	((now.getMinutes() < 10) ? ":0" : ":") + now.getMinutes() +
+	((now.getSeconds() < 10) ? ":0" : ":") + now.getSeconds();
 }
 
-// called when autosaving pre-existing post
-function autosave_saved(response) {
-	autosave_parse_response(response); // parse the ajax response
-	autosave_enable_buttons(); // re-enable disabled form buttons
+function autosave_update_nonce() {
+	var response = nonceAjax.response;
+	document.getElementsByName('_wpnonce')[0].value = response;
 }
 
-// called when autosaving new post
-function autosave_saved_new(response) {
-	var res = autosave_parse_response(response); // parse the ajax response
-	// if no errors: update post_ID from the temporary value, grab new save-nonce for that new ID
-	if ( res && res.responses.length && !res.errors ) {
-		var tempID = jQuery('#post_ID').val();
-		var postID = parseInt( res.responses[0].id );
-		autosave_update_post_ID( postID ); // disabled form buttons are re-enabled here
-		if ( tempID < 0 && postID > 0) // update media buttons
-			jQuery('#media-buttons a').each(function(){
-				this.href = this.href.replace(tempID, postID);
-			});
+function autosave_update_post_ID() {
+	var response = autosaveAjax.response;
+	var res = parseInt(response);
+	var message;
+
+	if(isNaN(res)) {
+		message = autosaveL10n.errorText.replace(/%response%/g, response);
 	} else {
-		autosave_enable_buttons(); // re-enable disabled form buttons
-	}
-}
-
-function autosave_update_post_ID( postID ) {
-	if ( !isNaN(postID) && postID > 0 ) {
-		if ( postID == parseInt(jQuery('#post_ID').val()) ) { return; } // no need to do this more than once
-		jQuery('#post_ID').attr({name: "post_ID"});
-		jQuery('#post_ID').val(postID);
+		message = autosaveL10n.saveText.replace(/%time%/g, autosave_cur_time());
+		$('post_ID').name = "post_ID";
+		$('post_ID').value = res;
 		// We need new nonces
-		jQuery.post(autosaveL10n.requestFile, {
-			action: "autosave-generate-nonces",
-			post_ID: postID,
-			autosavenonce: jQuery('#autosavenonce').val(),
-			post_type: jQuery('#post_type').val()
-		}, function(html) {
-			jQuery('#_wpnonce').val(html);
-			autosave_enable_buttons(); // re-enable disabled form buttons
-		});
-		jQuery('#hiddenaction').val('editpost');
+		nonceAjax = new sack();
+		nonceAjax.element = null;
+		nonceAjax.setVar("action", "autosave-generate-nonces");
+		nonceAjax.setVar("post_ID", res);
+		nonceAjax.setVar("cookie", document.cookie);
+		nonceAjax.setVar("post_type", $('post_type').value);
+		nonceAjax.requestFile = autosaveL10n.requestFile;
+		nonceAjax.onCompletion = autosave_update_nonce;
+		nonceAjax.method = "POST";
+		nonceAjax.runAJAX();
+		$('hiddenaction').value = 'editpost';
 	}
+	$('autosave').innerHTML = message;
+	autosave_enable_buttons();
 }
 
 function autosave_update_preview_link(post_id) {
@@ -122,27 +123,27 @@ function autosave_update_preview_link(post_id) {
 	}
 }
 
-function autosave_update_slug(post_id) {
-	// create slug area only if not already there
-	if ( jQuery.isFunction(make_slugedit_clickable) && !jQuery('#edit-slug-box > *').size() ) {
-		jQuery.post(
-			slugL10n.requestFile,
-			{
-				action: 'sample-permalink',
-				post_id: post_id,
-				new_title: jQuery('#title').val(), 
-				samplepermalinknonce: jQuery('#samplepermalinknonce').val()
-			},
-			function(data) {
-				jQuery('#edit-slug-box').html(data);
-				make_slugedit_clickable();
-			}
-		);
+function autosave_saved() {
+	var response = autosaveAjax.response;
+	var res = parseInt(response);
+	var message;
+
+	if(isNaN(res)) {
+		message = autosaveL10n.errorText.replace(/%response%/g, response);
+	} else {
+		message = autosaveL10n.saveText.replace(/%time%/g, autosave_cur_time());
 	}
+	$('autosave').innerHTML = message;
+	autosave_enable_buttons();
 }
 
-function autosave_loading() {
-	jQuery('#autosave').html(autosaveL10n.savingText);
+function autosave_disable_buttons() {
+	var form = $('post');
+	form.save ? form.save.disabled = 'disabled' : null;
+	form.submit ? form.submit.disabled = 'disabled' : null;
+	form.publish ? form.publish.disabled = 'disabled' : null;
+	form.deletepost ? form.deletepost.disabled = 'disabled' : null;
+	setTimeout('autosave_enable_buttons();', 1000); // Re-enable 1 sec later.  Just gives autosave a head start to avoid collisions.
 }
 
 function autosave_enable_buttons() {
@@ -153,31 +154,11 @@ function autosave_enable_buttons() {
 	}
 }
 
-function autosave_disable_buttons() {
-	jQuery("#submitpost :button:enabled, #submitpost :submit:enabled").attr('disabled', 'disabled');
-	setTimeout(autosave_enable_buttons, 5000); // Re-enable 5 sec later.  Just gives autosave a head start to avoid collisions.
-}
+function autosave() {
+	var form = $('post');
+	var rich = ((typeof tinyMCE != "undefined") && tinyMCE.getInstanceById('content')) ? true : false;
 
-var autosave = function() {
-	// (bool) is rich editor enabled and active
-	var rich = (typeof tinyMCE != "undefined") && tinyMCE.activeEditor && !tinyMCE.activeEditor.isHidden();
-	var post_data = {
-		action: "autosave",
-		post_ID:  jQuery("#post_ID").val() || 0,
-		post_title: jQuery("#title").val() || "",
-		autosavenonce: jQuery('#autosavenonce').val(),
-		tags_input: jQuery("#tags-input").val() || "",
-		post_type: jQuery('#post_type').val() || "",
-		autosave: 1
-	};
-
-	// We always send the ajax request in order to keep the post lock fresh.
-	// This (bool) tells whether or not to write the post to the DB during the ajax request.
-	var doAutoSave = true;
-
-	// No autosave while thickbox is open (media buttons)
-	if ( jQuery("#TB_window").css('display') == 'block' )
-		doAutoSave = false;
+	autosaveAjax = new sack();
 
 	/* Gotta do this up here so we can check the length when tinyMCE is in use */
 	if ( rich ) {		
@@ -196,11 +177,14 @@ var autosave = function() {
 		doAutoSave = false
 	}
 
+	if(form.post_title.value.length==0 || form.content.value.length==0 || form.post_title.value+form.content.value == autosaveLast)
+		return;
+
 	autosave_disable_buttons();
 
 	var origStatus = jQuery('#original_post_status').val();
 
-	autosaveLast = jQuery("#title").val()+jQuery("#content").val();
+	cats = document.getElementsByName("post_category[]");
 	goodcats = ([]);
 	jQuery("[@name='post_category[]']:checked").each( function(i) {
 		goodcats.push(this.value);
@@ -220,25 +204,36 @@ var autosave = function() {
 	if ( rich && tinyMCE.activeEditor.plugins.spellchecker && tinyMCE.activeEditor.plugins.spellchecker.active ) {
 		doAutoSave = false;
 	}
+	catslist = goodcats.join(",");
 
-	if(parseInt(post_data["post_ID"]) < 1) {
-		post_data["temp_ID"] = post_data["post_ID"];
-		var successCallback = autosave_saved_new;; // new post
+	autosaveAjax.setVar("action", "autosave");
+	autosaveAjax.setVar("cookie", document.cookie);
+	autosaveAjax.setVar("catslist", catslist);
+	autosaveAjax.setVar("post_ID", $("post_ID").value);
+	autosaveAjax.setVar("post_title", form.post_title.value);
+	autosaveAjax.setVar("post_type", form.post_type.value);
+	if ( form.comment_status.checked )
+		autosaveAjax.setVar("comment_status", 'open');
+	if ( form.ping_status.checked )
+		autosaveAjax.setVar("ping_status", 'open');
+	if(form.excerpt)
+		autosaveAjax.setVar("excerpt", form.excerpt.value);
+
+	if ( typeof tinyMCE == "undefined" || tinyMCE.configs.length < 1 || rich == false ) {
+		autosaveAjax.setVar("content", form.content.value);
 	} else {
-		var successCallback = autosave_saved; // pre-existing post
+		tinyMCE.wpTriggerSave();
+		autosaveAjax.setVar("content", form.content.value);
 	}
 
-	if ( !doAutoSave ) {
-		post_data['autosave'] = 0;
-	}
-
-	autosaveOldMessage = jQuery('#autosave').html();
-
-	jQuery.ajax({
-		data: post_data,
-		beforeSend: doAutoSave ? autosave_loading : null,
-		type: "POST",
-		url: autosaveL10n.requestFile,
-		success: successCallback
-	});
+	autosaveAjax.requestFile = autosaveL10n.requestFile;
+	autosaveAjax.method = "POST";
+	autosaveAjax.element = null;
+	autosaveAjax.onLoading = autosave_loading;
+	autosaveAjax.onInteractive = autosave_loading;
+	if(parseInt($("post_ID").value) < 1)
+		autosaveAjax.onCompletion = autosave_update_post_ID;
+	else
+		autosaveAjax.onCompletion = autosave_saved;
+	autosaveAjax.runAJAX();
 }

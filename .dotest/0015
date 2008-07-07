@@ -1,0 +1,1194 @@
+From 536c8d9728d494af2af6b677e477895a09c7efe7 Mon Sep 17 00:00:00 2001
+From: redwarrior <redwarrior@debian-redwarrior.(none)>
+Date: Tue, 8 Jul 2008 16:59:14 +0200
+Subject: added people them
+
+---
+ wp-content/themes/people/archive.php               |   41 ++++++
+ wp-content/themes/people/footer.php                |    9 ++
+ wp-content/themes/people/header.php                |   19 +++
+ wp-content/themes/people/images/bg-vlines.png      |  Bin 0 -> 106 bytes
+ .../themes/people/images/blogsfera-logo-1.jpg      |  Bin 0 -> 39409 bytes
+ .../themes/people/images/contact-default.png       |  Bin 0 -> 1298 bytes
+ wp-content/themes/people/index.php                 |   61 ++++++++
+ wp-content/themes/people/searchform.php            |    5 +
+ wp-content/themes/people/sidebar.php               |   32 +++++
+ wp-content/themes/people/single.php                |  148 ++++++++++++++++++++
+ wp-content/themes/people/style-ie6.css             |   69 +++++++++
+ wp-content/themes/people/style.css                 |  122 ++++++++++++++++
+ wp-content/themes/people/test.php                  |   62 ++++++++
+ 13 files changed, 568 insertions(+), 0 deletions(-)
+ create mode 100644 wp-content/themes/people/archive.php
+ create mode 100644 wp-content/themes/people/footer.php
+ create mode 100644 wp-content/themes/people/header.php
+ create mode 100644 wp-content/themes/people/images/bg-vlines.png
+ create mode 100644 wp-content/themes/people/images/blogsfera-logo-1.jpg
+ create mode 100644 wp-content/themes/people/images/contact-default.png
+ create mode 100644 wp-content/themes/people/index.php
+ create mode 100644 wp-content/themes/people/searchform.php
+ create mode 100644 wp-content/themes/people/sidebar.php
+ create mode 100644 wp-content/themes/people/single.php
+ create mode 100644 wp-content/themes/people/style-ie6.css
+ create mode 100644 wp-content/themes/people/style.css
+ create mode 100644 wp-content/themes/people/test.php
+
+diff --git a/wp-content/themes/people/archive.php b/wp-content/themes/people/archive.php
+new file mode 100644
+index 0000000000000000000000000000000000000000..262c3f5729f014a245ea152417c3ca8da52c605d
+--- /dev/null
++++ b/wp-content/themes/people/archive.php
+@@ -0,0 +1,41 @@
++<?php get_header(); ?>
++
++<div id="site">
++
++<div id="content">
++	<?php if (is_tag()) { ?>
++		<h2>Contacts Tagged with <span class="archived-feature"><?php single_tag_title(); ?></span></h2>
++	<?php /* If this is a category archive */ } elseif (is_category()) { ?>
++		<h2>Contacts in the <span class="archived-feature"><?php single_cat_title(''); ?></span> category.</h2>
++	<?php /* If this is a yearly archive */ } elseif (is_day()) { ?>
++		<h2>Contacts added on <span class="archived-feature"><?php the_time('l, F jS, Y'); ?></span></h2>
++	<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
++		<h2>Contacts added in <span class="archived-feature"><?php the_time('F, Y'); ?></span></h2>
++	<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
++		<h2>Contacts added in <span class="archived-feature"><?php the_time('Y'); ?></span></h2>
++	<?php /* If these are search results */ } elseif (is_search()) { ?>
++		<h2>Contacts that match '<span class="archived-feature"><?php the_search_query(); ?></span>'</h2>
++	<?php /* Anything else that may get through the above filters */ } else {?>
++		<h2>Contacts</h2>
++	<?php } ?>
++	
++	<?php $alt = ""; ?>
++	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
++	<?php if ($alt == "") { $alt = " alt"; } else { $alt = ""; } ?>	
++	
++	<div class="contact<?php echo $alt; ?>">
++		<span class="m-name"><a href="<?php the_permalink(); ?>"><?php echo get_post_meta($post->ID, "First Name", true); ?> <?php echo get_post_meta($post->ID, "Last Name", true); ?></a></span>
++		<span class="m-email"><?php $has_email = get_post_meta($post->ID, "Email", true); if ( $has_email == '' ) { echo '&nbsp;'; } else { ?><a href="mailto:<?php echo get_post_meta($post->ID, "Email", true); ?>"><?php echo get_post_meta($post->ID, "Email", true); } ?></a></span>
++		<span class="m-mobile">Mobile: <span><?php echo get_post_meta($post->ID, "Mobile", true); ?></span></span>
++		<hr/>
++	</div>
++	
++	<?php endwhile; else: ?>
++	<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
++	
++	<?php endif; ?>
++	
++</div>
++
++<?php get_sidebar(); ?>
++<?php get_footer(); ?>
+\ No newline at end of file
+diff --git a/wp-content/themes/people/footer.php b/wp-content/themes/people/footer.php
+new file mode 100644
+index 0000000000000000000000000000000000000000..4749b469dacf98fe2a720fa9706ce8fa783b74bd
+--- /dev/null
++++ b/wp-content/themes/people/footer.php
+@@ -0,0 +1,9 @@
++	<div id="site-meta">
++	<p><a class="home-link" href="<?php bloginfo('url') ?>"><?php bloginfo('name') ?></a> | <a class="home-link" href="http://bbvablogs.com"><strong>Blosfera Portal</strong></a></p>
++	</div>
++
++</div>
++
++<?php wp_footer(); ?>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/wp-content/themes/people/header.php b/wp-content/themes/people/header.php
+new file mode 100644
+index 0000000000000000000000000000000000000000..d09a2a1b540c4bbee9695e918cadb05b2b560d5b
+--- /dev/null
++++ b/wp-content/themes/people/header.php
+@@ -0,0 +1,19 @@
++<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
++"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
++<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
++<head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
++<title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; Blog Archive <?php } ?> <?php wp_title(); ?></title>
++<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats -->
++<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" /><link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" /><link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
++
++<!--[if IE 6]>
++<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style-ie6.css" type="text/css" media="screen" />
++<![endif]-->
++
++<?php wp_head(); ?>
++
++</head>
++<body>
++
++<div id="site">
++<div id="header"></div>
+diff --git a/wp-content/themes/people/images/bg-vlines.png b/wp-content/themes/people/images/bg-vlines.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..789f115854636fbe6075b921e8da4a0c61f77c85
+GIT binary patch
+literal 106
+zcmeAS@N?(olHy`uVBq!ia0vp^AT}2V8<6ZZI=>f4aTa()7Bet#3xhBt!>l<HKtUN#
+x7srr_TgerFe|`NA0_rZth60>!qCxJ84A1q{_D6_pIto<B;OXk;vd$@?2>{Ac9Dx7;
+
+literal 0
+HcmV?d00001
+
+diff --git a/wp-content/themes/people/images/blogsfera-logo-1.jpg b/wp-content/themes/people/images/blogsfera-logo-1.jpg
+new file mode 100644
+index 0000000000000000000000000000000000000000..ff626dfaf8df07ada10d79cb95b0103fa4cd0563
+GIT binary patch
+literal 39409
+zcmeEv2Urx#(&#Kp&QZxZD0!E-M3F2Y83YA{Wyx{Ls9-=uq5^^hK}0}AKtQ4aGZ`d{
+zVj_c)oR`<T7|-#Xd*6HC`@Z|%cZP3zs;jGOs;hfCRM$3J&$r$}^!s%5bs!iK4AKLC
+z(AGN&8tqVb7YH&kf<z$*B8SLej1U|^Fz^S#*dY=E3_(sXj_<GsY}Z#BB0z(HKnQVz
+z8w*1cU}gZHJL3)!f6aRpJfA_78^<9?g#O!8!`asf!)xN^8|WM0=Ih6+X)eQS<cN0n
+z!N(z_w6vm<w5*aeiWecTBrB&RCk;XH%dj7^T_*a*AI^Ij{tbru!MpGmDGdIVmh|Ux
+zz_@>u119`)Ie<>S$_tYu`p%ndaGM=oTX>CZKev9?B_4;@<wuB`P$maWBM7$j38E#$
+zAm`)woLeuUD2SSzoScH3nu3Cwfr^rffrXBmnvR8)iHU`YiIstxaD9DjNB$VXXsD=Y
+zXldwaY3Z41X=$190WI@(7KVR^!Pb3<fgBQpF2iB`5D^0m&H&qb1&U3%^%$lOq$Gh6
+zE+8=ef`f)aOhQUVPC-cpn!~S&Fo+2LEs-9A5yRj_#6%=yq~s)UY8jBo04L^SM388h
+zIx_M5pFol_pU<n<D<H^X_P|L-7JIT=lT0Yt{L8ypbb#EBE0w2&wNfmcwIAjO%J1y4
+z9Kp<0MLp^b8lBe>Nxgdd)`iD?V+#e<Px{9ftz3em(+X>z4ooa5=vupmoJlXLZ5o_h
+zW`Kx@fV9K}naD^<<Om}0AsC5)1pfR?B*+uzneh@lFzfyzBk1%Fdoo$moCO^qJ1azr
+z7l2Gy?qLrQB7di|wxxU^X5_mFe=UK?4-vLrK-6%;I~gE#XyT^-%L^I%WwH;vv?F<|
+z4-tK$TeLRqp7G%^cz^Lm*b!TMcnp;Bly*S<M!k|`759XL1(g`GM=Mc&cHYjRU&;GD
+za}cH1ElU@T;K}G_CcD5$h5AO_kk1mId>&Juy++G{Tju_N@OXDm?TWL^<HjvWt*`d=
+z)E2a}FYGOBx$?=$cIA>Oo4b;^y+cNWJ>(oAnV*L0<eFYK_P(mc3M(9{6`RTbB3@P_
+zv!m9m>DHxAPqC$)a&NLfn_9QPRngbjR=Sp*>v&qm&rk>|>Rn{KWhKtZ`7t5AaoLtC
+zX?RFa_3Am=%MZ97aAn^W*l_5zyrdX+u)exq1Fgt(xMDyhdQ(K%BWW<V<l<dT0n&D>
+zDkeT$l|umgGcKYc>!s**??%_#E?pD-<QqC7yQA_RaR|h&+;f=uQZC)|asFx#9f|FO
+z;{0pjJH3uv530V!b>O|{>(+beD+<GJx{P&SU^$1q(oxkfy`9>`xhIqky>VH2G3kTz
+zwv!=RhlCcATRpCp_9ht>rlXR|`&w8(U8`$xKYQfR!P|XB8&VUy%@Y#mwFaFJCVy}}
+za+~J7?=xJ$n+5f(J!9}ZoWq)E@zvzoggCoXJOTD28~I5-z1+`T29GgKHx7>#Ur9O0
+zh4J+dwjOF%_Pv!DajH?TZ@)&_TBOwa1#{C~2<gLL(8hNUc{3RlO9imYa2RA8SD7q@
+zca=}A#lKu{-Cx?YqdnLX4Yi};oce+vD;v9LO4F2aFExjGVvDbwC)PR%dwag?fjz72
+zy%+2XRxf>Oiad<x9m~+RlhwI}RUrkqxIUaW?Z{-{2VZoFTg{Z`Sp<LX8$D;@<4Rl5
+zRODKzMZdmaO5YZ=^=xd=1}9m`tyH>lQ(o!J!P_?H*2I!#%8c9=Bx^%7JA=KME0@*s
+z^)aVA=qHgKFH4qvHW{btvt5PR9`cXr<ai-uHH^>qS4xLBnH}aX)fHX2cIh&YW#=2d
+z+i9}2R=LK0Gh9IfuMQf&$PMZ&6UytNt95&`p18J)%eK(GZ%!1g$=(F9cSA>P17YGp
+zY<`vo$M@;B_2j?0cK)59c=YoLuG9OBs7f^J7j?@Q#i>jDD|~757SkJwj(?$X_F9;H
+zV?Cd=Cf18AdDteGecdMHs=@WwBJO@KHX8?gt3PfmPQuFqZP)Z~${y^q<=mCu8^8_E
+z9{8|$(4oM1YV(c0d*g;<;AVc$qt=RNLS+ljVM+OoeN`c=aXT+IrAY2qbV~K|fHtL8
+zZ(KgUE1mAWj<7J#0O#-_rL6rj$3&2Yn>(^Z%U-g#tcfpjes<~z$X<CpGWE<yaC)-<
+zT|C)X97Hw$;fBTgHm92*-k$6)F7~YWEPK1&wX$8&idLjJ`Vhg0Tc#_H`D85_#`olL
+zog0Plo|S^TThN`)cMA1Y4L$|m8~wCqdnvMXy~Q{3vvN~PSFCfgxp17gU+L|f_vD@j
+z1k+JXo(F5^b0)=t7ZU63E|><>9`w3*(8#xRZZkg&gPy-DuMqK=dZ%2*O45;22iju~
+zEptJhUZq_}8j}Z3zZ`X4$o8pt@6hKTtbW5TD`9F(?!&^zyal_6h^95>^<e9`#)W%D
+zpu>3hJg+0oWEK4+PdSK!=(UVU;bJ&Rkrb0~o}PC)$AK^GgN&`EH*e1$ny62xP<S4m
+z|30YErTLgs;n>}E?zg*xKO66E+JtW^%OBi=NE-|}6EDO$?4J$`>(kjU@4LS<SoO+q
+zxLb3;=ceY$f!iPYCzM52n`$?B=Cf3l`tPXSefCA>ddQ1N>*iM3Gz*d&>$GwX6*n_-
+zmhFs(u2l>;2kAt_Zb99+4C%>>4NXrPY2aq%>z|09efl!ZKR((YmmVRpqh@Va#fQQP
+z`iXltBQ??X9UZ|lHGE>c&nx;px4OrA^o4qF?iNhe-={B_Y?iDqn0hr?U+A|8<E^2s
+zk0RVZCL}VF(vad_eIsK0v;cz0IKecB2>cOnLIfPW4)xqw;X11qH?v`RH;c}N;M3qU
+z_%s#~74=YWFWz7bHo)E2N0lETDb3G|@j?4KyZgAR@>^QyNGS5Ft5K@(X&Gx;*qCVZ
+z`gyqr1oE0#?lsic<mH!;lG5<=^TJ3;X<2CTni%SvTkrxNQc~Lc`FZ)>0t5Y&q@+SZ
+zLL?pWRFY_4Z#-dulnK_?4}%R1GX%^eKn6+YKxcmNnr-gChy$?B?&v@@N(vQEOqd#A
+z@s*h$7EHq=O&nb@I=)zMM*te>`C{F}eSHEQz05EHDpGiQknL;s-{%i>M|)xdCDB-n
+zW1uhgTOJCPfIz_B^{3Z)_&ROVsz`lJqonv-mhOQVZw)NgG3*CZM|>2B1TuaT>MwZw
+z>tf-V0HM9q6p$)X1OU(XZzT!{bPUAkcsaU$mk7`UC1PALST$)Csc#@bK&fvMsz`kk
+zTjd+>U)O{&)*S=tArQ2xZ!h~^<lpB0pHL6KDHLAg-_(ZqRfGR2Rbh^H^a4%!zo#1h
+zP@wN00?_||+;?CFdO3Gc0smF~(QgX%y%PQ-d!ugx|Doml&+n1`qF~=^<3Hq+2ncer
+z*dAy79KpEn;O^t%>+o$f{dY#`Uxq^sXOEzOK#VgUX@)@ue(TwO8dU#xhM0eMtpD5o
+z{Lh0uh03>K6JHzO22(uzFQ+koSwMX5pSXe;p~I7w1cUdFuJ2!<6%=KDM=d9Z`UU-C
+z*avU@z0hCB?B7i*evFELm{(AIpF{wr-)9y-VgGm31KQGmc?0-k3IC!6NFWq{sl2ZZ
+z<1f&PNZH>}%PA=Qg8r#`{u5dNP=!9|H^4OC1mB75cl5^mcYOJOS1`Qdzb-f21AHYM
+zLB;)8ef($DilvX^e`Uw~qk8_Pgn#i}{{PT3|6V@;``^<w|9eIJi#G5Vo$z0v|7Z8j
+zetypXz5VlF74D}#TH`;gfBrf{(=gEoD+RoX@5hMwbr_MBmPCRn+K)lyxAU*Bd;-J#
+zej0PX=J~Tl?(64bL74LY#QXcy@9*C6XIZ}ufPWPA@3{Od>9_oU7WA9x@Q;#y6I4Zt
+zV31U!B-m5oAGhtPU$<F_zC8)HR$)RKEg>WX>c^pND=ZBminq^d6DZlf$GHiX*m**n
+zf)IiLww;TT5C@yNcp9)FjlU=fo4a_3h>&v;4+1HqTwFkk7YM;NGPq!0F?ku8-!Vu6
+z-WG)4XygbOi60mO&lM1dAV08G{M!pYg-`x%($@b?8vfnH<apkYBDg`hiS}&YV7nh;
+z3jsJ484ysYfFwFa5Rkcm0Fw!Dj2r-BiG>k(;J5f8!Y28)9@+6xxFra-%Z-mh_zieC
+zFL=^JPLLPm3%No8kPC!?u#h7p@fG6>AOxTR%>Q)#gd^|){C>TDBKV$wuf(r-pCB(U
+z5X1W<kUIGW`8Wp{J9(ggq?@4w@vkNr^(}zkftRn3D~J;=LySw{&+)y1zTRKs1ToB9
+z-M*$1L?aFGaz|qVth@{ZKz7(K?;#<i0W>4H$p{gBt)F<4xng~T{C+`^0u#HdyAQ@E
+z$Q$IL);7m;2Zm9A192M1pg><;j1LA2EX~dU0a<`9<0~=cHZdN9Pto^w<pq!b*X4%?
+zVZAK04_JU#{iOU~F-8Hdm|rlYj$VNlj;_DpXweuiFAGd)pnia!g^{6?udf%LA^A7-
+zFT@mXzSwXLFL&2(nxfk-JlLVwMuVJW&KMWRAg@3GQUn7#;cv+C_8kKHS8^&RS503p
+zU+hoHW!UDwSND4Y$O7&6^}*|!BGA{*I4Cdx^K-+Y^a2g(PgrUv-$2ly{)DFjRqXah
+za>5t43;!aB8r(4TF9dk|%fma^Y&T&Q0v(<LBE$D~c(q*yw-^B5LXZi7feQ;Oa6tLT
+zW#u22m5HT)Tvq;ZS^39h<sX-oe_U4nJ6u+_=L39T#D^eDaKrEu06Itmat2dxCot{i
+zg-jqf00)9QfB=C72*mU+D0m@F$Q;723bxlwbe91L!Kl3*ecbiUbj-ftHGH)2Q{T7X
+z{__+Z??w!1=$QXJGlF!0rTMoLX6UDhJD!R#S(f4s7r=AT!Ri8U+90PrrhD*F!UY)r
+ze(L>=6Jd(46Y$F%8_0wGHl^R@5}<?qCJ%mk{_Ty1nm#|tjh|(i`4Scu+bb!M7muUM
+zBQW9gcEP#>2*2p~Ne|nzVmuw$Gg1@BKsR3e%7f_YFY6@&gYUt2?%y##fSmxuSMMJ$
+z7-aBl4PrFv{nHZ$?PAb@7<9`ZA@2f+Wz+)VZzYD<Bh~;P&elkX|JgXiGqnN<?plHb
+z$owFo6Qm$TN^=4dD;R}j=}jTA8XZV+_%<Z=^cqM}6WD~rE}VeW9Ni(YK}tw1rymk$
+zO#vy&B&Q(>^<$9o-DXIlXAV*crh+61YiB)$>yVt^Rmjkw8<NXwgG?M&AUQxm1iA6%
+zLGo6_kefXXB>PGVa?1*XWIZAQH}}pI2nl5K!pcIj;qM?{mVQWH@D)h$uMdV4d7nVx
+zJP1h9X+Lx_>OG{GKM1&8liGk3A7?|g%~k|V!$cQ>0tR&%q(buP2~f}2C?ws7g9ajG
+zATdT?z-^?V7-HnS0lnKN0MP?3Z-y>GbYesx<r#bsqK?yoIxWW`YEZ)VqIrl4=mZ9}
+z-njr#>^K9p7}Da`&rs9L7>IN_3`kJ7?oX(iGOv#iDf1ENdhaEOQi2xbsW4iDXo=aN
+z$`i~G?a)rB>XsBlSH=wTT<5SQyt(isCBzWg4_!Wa8e#+`he5f<9uNzt5Bzf{pv6Dg
+zUJ8JeD<%6OcAtyTRT~Y69ncn%$v_-3G9V>iSQz3s%>!lo*h3u7w$O!|3lN898b~=l
+zunKX2nv0M*K&byCNwpB0TL4J$ql$tUlMX>HAJ0IH_HvM2*I9^Bf|jtZ*k0F@Z9B%p
+zz|RHfo_%#Z^9hi2#5?d4{LVrh{iN`&X%KLE^K-;IeepVBz^YZ1|MTreeqMKHReozZ
+zBWWW)O^lnnUN{zG9=_iK9qx%nIRg(kUX@U#P;WnPOrRq#@R;)nPzqJ$Cooq6Fdi+%
+z&r2W)^i<_1IMwqWFf!rQ^u=O$WhD_3XlWUFURilbq=LKxQd*qX$k&Hg2jj$xK=Fc~
+z5h(B?kxB>|C0QBXuNOafCDz$R$xKV<>kC0l^=Fs55E)5dtg93Pg+fV5Bc+f?2|ytc
+z5C+_?LM40x1io?5!UUkP?tXYzEM7cEM__OWROJWa63XF>{?648ER_j7ozYSlFN`<v
+z;0gdbL*R?HU1mqW@5H}V?oWh9Mt@K0?fso?K%g1sN7;VMH~_!Yl>%NgzCl<t*!6c2
+z`1YzmcbC7&i%%g``8QGw_!Y_Tg~F%&LhASJCm+A3|DOCclQUY$h2Vs!%J1$C+!CZb
+z{4lQIwT^yDnqXrdcotd!bHTTU@xy)dm*128M32z|_7hcp{0~edq-7<fQ5N_gm`E!j
+z6~&~HO47hd6VKWRxM{kC{gxE}Ta;f&K?`+u40QZ=h>eVtw0zM)`0Cf!QsoZ{a(7lj
+zBD56bWn@50)s{mbw6qlE735JeI&uoqdo`s|8X5$FKt_EZ;0@q|#(dAHqm4iywGkSB
+zoe^J6N<X>Q0WVa3UIOv}zP`PJ@GV!BAAB|7l0x9aujw}bBK=3QrH?yk^2o3G_5;7f
+zV2qZ#D<%Msm6I1o$|-<b5!@(oq&!j_sUQn(fK!wemy?kOHv+%_uP7sqM9GWGNF&5$
+z5Q^YNiOV6uErSF&z(+wE+<;aAAD08^;Fgh<K`J9;6m%41<TYgFq)}S3TCylDc{v4?
+zoE$<&T0;>j4MfAYK_wISP>k0BEq9>&ZI4_<d})6q+5D7*M96$iBG`P)L9Yhd3{W0{
+z{MSOt$Scaripxr)<fREA5MKd-+zych%yuXP@N$T48d-6CE(JmeiVBJWFdzgNSw%T%
+zLI{cpU{FX90<|c}0HxtWKo3F`K2!vhAjH2*2B;7p;@=_zRErNmUJw%U0>#QAWI-xE
+z1k!?V8>2vg74abo$O%FM4N4Bc3P?O&0aOAAK~>2jP=F^s#OFmR;`5>u@iZt!JPis(
+zpg|!BFrFKVzzv1MzY#^?iNZ^Qlt##lgX$CqO+Z{;TtQq>93>7^gFuKQkm3j#afGZm
+zs9r#XP!I=g0rcuf&_X~10c}SPG$YUoK!XA8KzXmW_Fe@AMdV(Dv>XDZp(77U1{#B`
+zw2qFPjGVL%KkxSrMTt<C;L8S8399!8USCracul*wdx3-iGu^$s`r4ZE2$a0M1X2>z
+z`42)p;8X334Ff$qe$;aG!+*{gENJk~I#^$CUP5Q9<o?I+bo&EG?)~fUbUUN-AA1I!
+zy$TvyNQ9!af~LZ6dj=^Wh7^9_`Dq~fh61A-9{fJGs(l;&{(1hRfqyjcj|TqHz&{%J
+zM+5&KY2e4|9ODC)<RM_~y){C80L*?IOw5dR^bNHM=0j>dLw6rvB4Eez_6fw|r$Yy9
+zY<bB#fwh7HSgwEx%Ml&mXJoE}-}i;UREZZqXChcWwgX_JS{eYB1#tCB=$Y{HZlnM0
+zkOA$71v|Ge6Ocp387#2@90g#nkU&2?{tJMaojma{5#Gkfj0FM$m=zDZZo}dPnr(Ow
+z9(MNj0h{JTc$xj2y`Ay!V*tkl2jMr<;f4T?4tB=?ZwPoFfCasRyn#gzj`!JM_Qp5@
+zD<?62msKzjgLVV3G=QnG7G|0NRslQJ)UH3lPCvncU{@Q^LYlsQVT65N-d*V3z%+qU
+z<kiE3cwqtqB}{<H#1ZQZ3>w~kjy_=!v|VO=E{O3@^HBnNJNVngpXmM$#MkY1`n)Nj
+z&R{#*f8c)P{DJem0&Jg)KsV=p;G8lbsP;4jvA+0$6TA#8(NPdo)Adt%cHrB~Pd{FC
+z$Dk$g3jKclOM>r|e+~TfK1uxhzR%@(wYJ>?c=4?o4Yv7%u)G2IwH>d-9~<%iamJs-
+z`biFPU{}Fl!OuT2yjGx<fgg>5>h^JVCzy`heSTSS{KVn^FxyWY@Zfg41_0Al9K`G(
+z3DI{kL-3F75HS-K1V5AmQefZf&5*(hY#Bh1HP7UBy9Y2xCxpKQL`fh@6yQ#9HGwqE
+zEO^mD*x+pvV*G;ycvaCs%n%zm97F)x1$=&xkOHI(?SZtReULF^0og$I5E^VscmwaC
+z5a=j$0*Z#>pmWd#C=<$su0q978B__?LU*7C&{L=l93s*Wy#%`r<IsEP3$z5SgX1d5
+zU^Fl$7#oZSCIl0MAz_LzHJCQc5M~CmfgOgq!hB#su%ob3usB#UEEARoD~46T>R}IH
+zEwFCb5bPan8a4-8BZ3oA6EPEU5eXAX5h)UB5E&3z5ZMvA68RH_6Gagv5?v&^LUe<u
+zhUfuN8&N;eTcY<wi{N|_D)<gKA6x>i2-k!g!)@U%a4b9m9t%%{UxAmw8{kdwUie%1
+z2ly&6DKQf<FR=u%GO-@9B{7=VpE!azo;Z{E8gUKrW8z-ocf?<aaU?V(oFrl-N+kLu
+z2S{8=LP(-X(ntzPs!5)Z^plK}ERm9u?jRK*RUp+PwITH&Jwh5!dWp20^gd}f=_u(U
+z85tQHnHZTWnK79oSs+<7Sq9k+vPQBVvT?E%aw>8jawNG9xh=U5`APCL^6TXH$a}~q
+z$=509DTFALD2yqbDZ(g{D6Ud8P;^m@Q>;@mP>N8hQd&@YP@bT?NLfbtgmRd2o{EZ!
+zp9)1~O65*<oa!RgO{!+9cT}s?jMSpkn$(A=gQyd!i>U8Y4^hw4(9j6e?4hxx38YD+
+zDW-Wu^O|ObmWfu9R-e|HHj*}rwuZKc_7fcioe-S{ojqMRT^d~#T^HR4dJ1}BdQEyq
+z`Uv_g`g;07`b7pN1_XmKgEvDw!*zxhhABoeMqx&6MrXz-#(c&{jH66&CIKc*CN$G2
+zrmIX(n8uk&nMIiOnLU`}m`j;EnZK|wvdFSnv4pZ@vD{^Oy92&Mc!&NDuN_G{Dt8R*
+zSlh|9Q)4G)=h>ZQJ9~C6vvRQRVa2e<vX-;<v#zo6vT3t<vYltEWqZX=%r44q${xa=
+z!~TT*0|zsQG6$L?mZOs61t$@wD5n|c5zc(hcFsjEZZ2IeKdua}M_eDccX03F_TWzC
+zzQ;Yy!^ES;<Ia=H)5tT!%fhR{>&1JK_c8AmK2AP8z97ClzD~Y%ei434{*(OW{I3Kk
+z1r!Bb1X2Ya3Vadd5i}A!Dp(@;LWn|0QOHdwU8qTDSy)8aTKJ4`t?-lxtBAfxxJZe}
+z@GhEN>bv}RUD?&Qn{>D0ZqMD9c0Us(5|tBm6U`Fs5+f3m7jqZ8B-SlX0?aKw;#b56
+zC8#AdB!VSMB;HBxkTjG$DOoG|NlH-4R_eS|lN3%`PTEWQs`N_)BVr%oB%%Q^hZIGk
+zky*$-85$WKnMj#BnORveS&VFs>~lFLIU~6<au4M;f%y_EUnW1TAgFLyAzNWkky+71
+zF<!A5MS|LkibUN(tt!bY1u9i4eO8uG_Ef&EJf$L{f>F7uGOEh2>ZqEh`c{os?XcQq
+zwYTbg>W=DH)JOIR>~Y>xxMxyhw}ywt4UJEGrT1d@R_|TbRMI@Ad0z{zrK=UI)v3*>
+zZK<89{aS}#$5p39=ZmhK?h)PldL()Vdgt{9^||!X`o;QR_9^T;w(qe4wSl=oroo7z
+zs3F#{!HCFcpHYg@@P48FKKpBpA!B{x6ysMWA}0POw@pb+O-!>)C(ICLN6nhdnamx`
+zubVGf?6pX;cxk!IGRX3w6`j=~t75BVYc1<!>$eA_4jensX2WjdZc}GVW@}|zXuEh&
+z`{0Fx<A>x9MIRcl6R``mYq4jy_p-n1K<D7-P<5E(u=U~Vhc_IJ9j`bpI_W!QJAFZG
+zqSMjuo%cAWI!|L%G0B)o7gd*Jmnm0O*A&-jH+8o(w-4@`?wRhh9(o?R9?PD_o<*Kp
+zUe;da-sIkgz3Y7#eLQ_0`*Qn+`gZ$?`9=G^^;h!0;Qs|{fGrGw1=t1D1u}!lRC~~_
+zpwmI`g4Kevf>%PULaIU;LVZHp!$iZ*hE0a+gclqkK7u~-@F?HW6Gz`2(>RtF0gG^o
+zco-=V85KExT=)336O<=BPjsA=KAC)S;gt2MhA6J6<58ohbx)T>(?(;X2hS*<$&De7
+zagXUdD|0sEEH2hLwlz*VE-h{&9v$DBfJnHQu$AbN*qJ1slyi>soX@#|^XliXB{L+4
+zCy%BWrPQSIrpBf&TyVJ1k|vv$n@*V?l>YXj;l;WP!Hjbm8<}pI{aJgn%CkAM&t@-Q
+za=z4)vnQu4mn%0eckQzK<>z_2c{NvrucYOZ<_G6bT(!E|RG?T;T*zJ+SGZZ^Q}p(l
+z*|o>T3dP0OIj<*`5S0X#Oy4+k<5{UzX<eB_Szh^$^0=GO&7hkz72s5xN`uOWRf<(*
+zw}ftGS2I<|*1&4QYQEIE)xNE>sq3!aSO2g<xuN>D<n5w6e0Q?$vfNF&M|m&m-d1CH
+z<Klh4`yU>-J{W!I@bKlM1CRP1n?CM*V(_H-sm{|!O&U#&&8p3JT9jJqTNPVt+vMA7
+z+U44-JLEd5JLNlTx)i$Vo}r#KbgOjV>rwA{(5uz^v`@dUt$%-i_kiWV^T9)dZ=X9q
+zpBnNSntc)cV*TauVUpq4SM;yaUUR;_@@Ds&^0)GD@4nM|*FIuC@^TbC`hF~6Y-2oX
+zf@UIZl4r7b3ORLWT4(y%%)y!Q_kQo!KSY0I_?Z1^*QZ;b_k3>ua^TDOEOvHlE`FYE
+zzGy*q;o+jm;_D^vrS;|56}FXYtBR{lYu0O%>meIt8y7csZ#LizaKl^Pz>E3E0a*CC
+z!1e)Hq{PI;B*dg7B%~Ci;HDxcB_*e#rlh2zq@<?bKJDu3V>|N45C+CL8fqF=dV1FX
+zn**@=;k<AdI5FzS0a(u904y-A1*f0kFTB9`i<ksXL<)nx9)Lwe1phhpS8qZh7#x29
+z7AYAV1VjNaA~*vvL;_C0(l8}uas($}F(c3Ck+EzaK=n>$htn59?8#XnO<D8gE0ySg
+zhjLmXDfw0MJ1v|8AN7oo3!kE(WMzv=)z-Os%c|FM7yI1kJpK?YOwj2I+XrF&#W`4t
+zdI#J>V=i8+YkoepvKysu;~sW4qqx3hXnIvtX`ih}cx>kNhSnD|Yug8A!AVHKAzsAf
+zaJV<&@GAV7T^b~&Kw?t=6X%h66<?SibiWhW%VOq)os|)k)jYW)*<9!fy7D1eK#$yr
+z)~THqDd2c8RyJXIZFUjoKud+W{HjO0cK43XN2Ol9^{dD_KONrn^Vwa$$ow}V|9ZyO
+z*y^+-RfV-v*%Q0i+bj-r%PqK@o1t_<$E3#7iqdawK`Zy`pUgzwNx$2gB-oW>(lX|7
+zsj#*tayAYpk9roY&~xk~o4rHU)1smX19p4+$fxQfGWsuh^t_)g=7e1?9II_lu!Eay
+zLGd){?q@y=d`3$eXSv`Ox1a&_a%DtIle2ny<Xrmn7BqV<;?9GQ>YoH#Ip0|36e+q&
+zJio3{RxPFeJgGl}-LYc1BIW)TB$sfsi*E}OiX0J8!nNV1pSE<Io_KQVdjWz)KUh95
+z`HzT#)1!Xq*3hy~jrICU<UQlXGw<(*iA_sMs>)Kqwjky*|I8EXEk}kg&KZV{%eIVd
+zL6?MU(;{b+fPNc4L|$EgfmLZz@HRHs$dqlk0~8tg*d@IhckX4v%$<3y;q<VxC3y}>
+zD+QIW)R)gMSEP${21JH$LGO76FU5?FR`Rqpt{N<WYHU`wKfIK?%!r}&z20S>EtB@a
+zGGX;Z@iE-vh#Rdvo9a7|p$Zcj<rzGimYbSNuiFW_js8#7ZTC0bUazU3@L`ncj$vbC
+zrwA{|O<vgbadgp1a$H0Bo`7t?fU}58H+{KCs>;3D%F;$AP0d5c`^WBiKIFCuBYJRM
+z)?mqOAKm4NCDKuE<I5X&`kviTAElfWxQ3gvU*=ayp$#(^xe$TPd}Xr*Jyl<MKCxVh
+z+L4_k+tF*@6Dg7)DW%?r6OesX+AKdBenzFc7Yldrm`Z<y+wI$*et50vZhXC3Xx94R
+z7IXl2=lvNGu5&oMEvVI@2yoL_n<oRGS6#}kfMZtS+3&Jzoo*a#_cq$I1zlISa&eEy
+zjiXQzncp+mZW!6ZbIsLysPR?ZD(dFO^PB%cjr{w!*0|O4txB#XC~tl|v*~!QWg+!U
+zHQDBH<c!ozr%$b~H&5i{w*{d~C0h_zapb7fY-iHWXY6zecibd!@4O;MDRDQ(Wj0-3
+zkLf0>pKHxfX`GK580p$H9tj8=Qi<EIo8>ZIJoP43C*?KIoO(=$x+j*V?sZ1j8`;zs
+zCkMG3<fh8k3mUBs9uIH2%Q&{W<onrS6TLQH%9$Okxf-$s?T*OZg4oF3w{!R6Mhx>h
+z7Hwt%qOq@HE9hjZ<pglo+CTCx+)R1YC=)W+vIPl7<Xy6M*@A*cyRzszPLX}>A%D`n
+zZJB7VBJ1_nXqFHa%X^_E^&@4Iu{E@!w^@E7!uP8G@1tA2zg2!k`il9c=~~sL!imwy
+zxGBX8VUj;|e~RZByRkz3RFV;QbL11TwW_qP#oQz3Py%7&7U>x{ANCG+T+uA*_J<tp
+z5`oSDzrF?IR<yp)7SzvEF2_}ZZ}RFYz2+WtwjR?8r*NXa{b`Qe75EMw{;kQ+Gzmxl
+zt?F+!%Bjlf@QlSjcf+MIhNe%Lmfd!kBb(_gs%pILKiLs8apX^mFJUW=%^RyvFrs+#
+z=$=+HanIem(G{V4ZuORxi9KtgjykqbXsT+jIM1gdBv&&>ms95cNH3W;(jz1hu?120
+zZ^-PhD~XC^lA<oGd6OF9pT558Epg^V@HuddTd6u{Q@S^Lio!U`EK+(^s(p<p!>1Hi
+z;i8}rycp!LIFOw(xgT}D=%Y#)%`uTRJ;i3d<aeBwMj9P47j9b6ou<6@-15LL4dpuG
+z+tB)NHiGN3&m9aXa>T;8S=P-&5vKcZpE!qdqG6PfwLrSzd2qPqd(>92c}v*4ofxs(
+zQ=seJX`W)5NP2aTc$B`jRO-g#SK=3s4v}qmU*L-1nG`u*AQ_+7{4hSMgpP=Y76W&B
+zE_eESqrAT2m=>1IYSJQpCYFCuaEVojkHIzBoNwG$I(KFE+|iY!fdG#Ay2xxcKkhMA
+zTte~mG{@^bPBs+e`sQW|suXPq55DBbMm^Me8kqL)Tz?*a!6}M;zipdkw?8z_B=u)+
+zDkv~*gq|xG?T;L-lG?!FQ1_Y^NK-mKzEJMfzr{0ahPyE#Lua#G4^NiKvDOc3ns{&{
+zEq5k&Fe|5R%(hbHv;0S6jg1o7BaMr??>mg$=V&gzKGP+~{35FVb%WjWEhsi?5p(fg
+z#b>R072&U4!ZprJHoEaQ8wG2T8_qoC(npNf&mzw#^t%>!vb6<^J~;ZKuRm){29wVn
+zU9WO*o^$XZ*~W>rs-h2DP~MfJ&vRV=*af>+Slim_AB!YO^?uym=ZdrBs8}OK&je8W
+zAu$Y?_xBF=+`1&soH+1`KCzOXs$$kfIVC$d-x8H2)Dmx#P}+(--Zb4VAnf*hWKsP#
+z=Vq$);^7gCLrUDm^0PLr_m|)9S?@rMSa?Mk42&~-25GBmCFXx&dD<TnmWA_AZaOd-
+zgbAQcx>jwx%Q9!D@7yR%cU^E4*CwxI-`5g{eji7HCV6|$f6n#dMtUjk%wV2nMtXmB
+zeN0+(===Tt70`!>o||JCebaL1J2+@n^7U<1W#mpa+!MXSX?X`fo3dDL!&x-+LpfH`
+zHiNDOU@Yw8nXNfIQ{DaK=AwS3^sQqbCocq^ksnACJBH0tsm$3&{?XhvchP!RQ<9qF
+zlii{IxLEy|y>#+>I`kKgD8w~f_m^FgMfr~DjiX*DZlq+<FtxsTSTKIoduQRJ!5Y$&
+zjje6>nx5=;9PgWaG=08tqUB=z{tvG0OKD4)uO9E1jmfhoF$rYZW9)Er$gL0)!{}Ar
+zZn|%N_rE_4T#yj!uw@RnfECiqBCgBbr4zlDHv+AcWaEy}nxFgl<Z(n1zYO#JvT^;g
+z!VIQfeL+_XoXO*JGRG1HwcyWWS;UjMVy{0634+~V(r2NGAjQ0yLb0La>yMjJ^&BmU
+z^govWK<-h%MHvD0;1M^9<xXF_7)?HS%6Yis#PXZZ-d!7*6r5l{e$zsdpMRGeXC~M8
+zQNpABDl++o0x>(oS<2?4`6V;(11I|@!z3ogN;xVHt1)V@O!vyY*i=!G;T1LYY7%fS
+zn%KGCh5-W`4~}1kqw-$ykqpe#!+^k^-%f<L`oDdQC2v!oh&C$~mr+nrwmZ!ab7!8t
+z?DQ7emrFg!MKNVFD~~%`LuqKDpf;TNJb_}y{PE+lI)$CDD`q~MFJyNyT<ayPbC)tg
+z_C-E1SgXotRn@+O)n3c66PnD;j4pS_6>o;se&{R><35(<QW&{v@8*NkT%0JmwI;8T
+zGv8q(&sVKemKCTzQn+cOqS?nh7kc!~>&CUFMbN*>irm|qvrDDlQSb%}ahzF1*qIjy
+z5$fY$;#zV_%;yFxcNBd<6!vAIe7Wj8=Al}-2obs6b=4}*`~;1%L$6V*(VjPUZ$Z2f
+zH>Lx5G__VM4s{;>gDxsMMU&<dahT(gPeAw5w^V;aoqi}OtM}t@!R{LWIY|?j-1Haf
+z(;b${Z*z-Z>`HqJ-`g*1QN9W$Z!OJY&)=SW{Tjh_N1xgArUgv*UF>!26T3r}{ZH)4
+zwjfjhvq0PHgY~;@l5q#R@4q?qpe22JSAD|=eJlMVnU!-#$6R(Xw{ScyU$W`Drp~Xk
+z+Sep&Y|VWkc~1ywy?36C;KS?pM@mPEqfZw`B=_@Gd&DHzJE@-!QI8yIKW61iOKNAM
+zW#g*m+PKMaMX~m(&%#OQwm-42@uG!Gif-KFwtHL96XDfNI{D6or@^9GVGd@VG)|1R
+z=Q_2_Y5UL>TaeSx+0sW%@yktpZ1=k@=P#%~W;&-qf*$r=hYJjCLBmP0V-v~OtE4T7
+zD`X)b{iXJv10vF4x(7n<x<>_{kCb~9wV_bdd(mugl=O7_7NngUZ5?@PQ6c{Bjhbc0
+z@E8m+PWHh@9^|pt1b5Ro+AQqjWbK8#9Qjzwb-j@&7iSkiaSm#7pMe*iB{3i0+M6|p
+zUg@LE&3GEXK%Aqo=hmyE=@ak)W{2#!4Y7-^xBQkj<2R5eHYtj^bd1y#4QmnXikg-j
+zRs{{_M;qs*-!chbIq)Ux>a#GWL+_d|S~i}mFMmxU!?9}2vIQ|okzXBL3;Gy^OBmJ>
+znGvfKc%t`w!bQBISyK2p{a#1(I2U#fA^Mmvq1Ni+tYBox-l3#)hgj0Gt_2%v=i4T8
+zITaWx!{#cjlV#o9+PY_n;fWH#sLZj*tA)gZLl++)dpB;Ec+iJ0RglFNgzdB(4tkzB
+zA#Z1|;&L^_nRnm%79{R5AfFI~jj7;+)zzVA*=eGwZHEKWsl%?`kK&5X4T(gZ?1wiq
+zSCE|iAU~rw+g3TAh`^3LrZOCCi8!q4ln{ZH`cmeU)BWgmgy9A<)$T=`XMn`5KE{Vn
+zxTCM+-=A<67GmIQzR7=H$tUjGj7CSclLi~C1!K$97;wR*?-5U5*j266Lpalcx3y^_
+z776IH292L#vZm&Hkk{VN>K&Jg6wJox8qQ6WU%Q<AntgA$5#LDB`0ys1%8NUpOCo{f
+zjPZ4II`zz$K3xQtDaXhfoTSX0w&$_2N%QD#DlsvZ!<MPtsUI}B5?xPuyOk>MyVvI&
+z`eBq&32LVzxh#CCxwXm_6bMX9#xkUmtCy6Yuy2exygT$%H9zjoMn)(`03+I7bUm4_
+zo!!MxeqcZ}!~L~g{~|G?1___4(77+>bL9^Ch{~DS(dU<j$Qi*Iw&Whv`!xMMW%F<7
+zOOG!zT!@I^Y`)0Tk9n77H*R2%r79%x35{s2tQU2ER@3Cw_r6jmOj0@4`}pPg+n<+f
+zMsY|muV+L(8(q__Q=H6<A<m>}nL@f5y`8JMK1)%=F!VTFt}SK@qUm%pI2g~qQ)ZLS
+zT#cwqCF{D1&O!ImPZp8)u9o3gc&X3KMZt<Gbk`oJvFZCrOx9+A2A*gk>+HB!1}Ve1
+zLxGyyyoJx|#fy;%Q<^*8;-%g67Gtgm2IpsbJF>Q*Q;V|ks_ivPcN)Yik4I9*Kib%!
+zxOUcHt-|$Ps?VA64y!hss`@~Ei3<s?XCGZ7(OVr?x^ze+(UikrwbJmghEBxc+=YWu
+zE6u=W!f+wjx?d_l{Dzo<1TDdW^M`3><krBq4*!o9o+Hs0`+7^yY*;mxpyKoU4jpg1
+zv2n#mf<JrMA6YJ`67JGq+aPGJ#+=o`lPXpgZrNw3cCP4oX(VTBZ*cADh%B^t@Z1*E
+z&eMjvQ^0lS;Rm}1sv0Vx7X)4^gwyu2pVam{*RN<+G@f_)_A1?AlH0-onVhha!pCY?
+z7H`(`%pQ!mk%O2amty(0R+uIePCGxuie#6b(h;;}`na?G#mt+RT2g`(?X)ThyDw(k
+zy11hMjyfu?|D{de0s7tw9+hV_D#}?m^6Xul4A@iNNHAPgdEYhBP{}h#>JzB0d1$rb
+zXveQTzgxDYj?NQvDWT637u83p8)rFtmj;*B>0icW^`@gJP*VFhGGy%>CdoE@&s!JF
+zJ+W(J2@$s(uCTro5%j8wG^wEKxTf7r;-$^*_5{>$MM|q{>?5-pH%YWX49`bxUTSsD
+z&iEL4R_RNgb3GOkYNz-FiYrnFr}WiNZ9xxQdW~Obc?*+L?>kT~A!$3XL?Pj0{ZU)=
+zg6u5IjOtS#f0y_t(N}icDzu%uK`YvN^!TawwZ7{Hj3*XqwxANZW7m!$xV`J@uWUim
+ztedtiN7y)XFPd&*%i6f{L%w5JJz;t9yhL%%K7m<2uGsMMu#tmS?(_W@xIbp@@9txg
+zge^pG_|H5I+O+lFhtqXYJBc_T@PV1#Do0{a-u4ij6MDa4WPTx4DB)vALhGTI2z~lN
+zpQsS?5n8(x*6dJB3)HJNAp71sKu^DWPxe!xnuxdO?TJ^oGxB=J6|tt{N0C@T#Z#S)
+z)KiCC0>%!Oob~cSr|ATq?$d1^jB%`E0aElHXC$WeUP)}R&Xmils}{>r)?9RZ1XtFr
+zY8}`4@F*gSq`h=UjxdqgBF{Tq99vuXo+;ao&9VX#;gDEsi!^zs`_ZzWhcRoHRD|F)
+zZxQh^;$7{_6rP2fUJp}@;YlSKBzu*;TXTjAyR}-6D(rPI59}a?sTCI+OO;6Ul?r*<
+zd+nZsj>{b5q>s4_Pjt3<le#Dt_fh0RTX^#03I53v2*$ELov9kkK%IqEu4f&0JUO#8
+z?R(ws0qYfAF=B3_+tjZQpHEXv8Sdt5cqKn^<j9m@v`)g~SWy~L3h2}sS>h`iT=cXb
+z<~to`@7HZX_UbDaJ9fHmLE&nWI{S^4I!`}!&C#jLG!nHq-xgCK#%1J2dCIs^)~<ja
+zNjbwAuj?W*!L#z|P2^LTj<S^XYwMY=?U&7L_#Fj(Ob3H7g7ms=QoLMoJBy64>KbzG
+zQ^KUr^~GHeZ$Tt_>M9fYbg!Si>|Z-nGBlZ<IZzb5QBW6TTB*&pD^{7rvM`W!;mh&o
+ziW6FuzJeZu0e6-{7-fsuDfnFkZ@!MQSb8IOx8NkA7-n?wYM4+&aBZT5R|92u_l+c6
+z^}duXh$=(%64Kuk$JoUCiq8roXQshLE{n?1JlLaB5~SK0=PUTh`P`2EuGqa5L`CD-
+z6AeTtJz7KBE+wFaaG@>8u5m<Hi51H|$ypR(+Kq0!9rkJGh3aYw&F<_4vgbjl)8&1f
+z{&|b~If_HNt1k~^VC;~jyIJ@2&c3K#-(CBmch`rHiURRlP-dH81A=8m4>J_~HX){?
+z%An^?=`sH>!gM=ThA-j+^E0N;*{^F^qxX`D2$MeQ{2clEWztG3=qm*-(W+lPaw;*b
+zP|dR8W=;RV!5$VO=~$h0(RGvDE4L@qYM9cL;&#!~PQ6j`P&)Qu>EVE>jMfdopjQ$6
+zyTnFQmx9^ubMslX37*)ysy1^Vs2Q!pk6INhex4|JYJnl`{aado<1ZCYLyUltmN>Ag
+zjwqRNwqn)<PInujEUDY4B-8qsf$fzkiCv5(w_qmq%ant+?lQg}7;I}0tUOI4>)z`6
+zX)chcv90-;t17C^G?g~@^PzK!nq8khl}U+s#-$_oO%x=}aKjb896x^T11Hv7aqie=
+zJNq50=B8(L*IU@u<tX(Is|2^JJ$oz^-*&@hRJjlrsXkTXFnfLr8WBJ!OU<O$=UDB`
+zN;~t5iQ=oVym4#rFGmXd?1jo2o>|+78xxhswC|`o=*#t#M)u)QU0pL04_M9{w5m_?
+zs*fh2aaEDjuY-3kpBe7WN`W@&Wepnh7bhlfDak#^4Cuhfczk*tCSEiWH6UN~Dw>f<
+z!=PC*ux%{F<@CvuA$gtAD1q0#di=ZGu#W`-eOG1<MwY4DTc=O&raK^2-$9}vfpjc5
+ztQIcU_iPI~C*yf#&35c*mE5nZK2N9Xj3H0VjRk?7)tqj_F@2G`H~2>%Pc(K{X3noW
+z$Typ3_8v*NuDIx@110rNW#h4TmgjQ@IPNkTC+>?qRAI%XvC!#I#F2&!OHW%sjr19&
+zl$W?&GxXAZXn&dV)W<^|Q6Yy7Bq;L_L#y6tdE*Y3X09BgnL_2>kdoYp40g}j->IC&
+z6t>~2V5E2Y;f*sbA#tQ-PG}A6X<+l;#ci<ME3K@{vqKr@=_1n*IjJmP*K^E*#nXC`
+z99SL`C6<HQX**jUB{yado%6aMaC8)JL@ZG)ZKvWeV$!KBSB#@1H6M0HE4EI}>C@@=
+z4DFBeoL-Qh*^#57UKSA6cvoR#QdlJiJ^%iVk}J#elAevaeN$E{x3y?-EFz1p3MIHD
+z`(<Iy9AAW0j*dg6UF^nL+0I0jQ;BUGC*8e|fYl@ujz7TkMXtrMj=E$X*~q4d`Ax9M
+zjG^xAjttttG;#9g7IdVvaa25VmM?vL&A6_DbExYQ#U>fB;3VOMGSxb93rFH2_8Y5r
+ztS5G=#JU$40j6CW+5!46B45+Z)Q*fjsRp|e9|?V3VLHCAD`?O2j(mMBa+E*var8m;
+ztLx|3ma~o5Pk!r2$-Z}_Dxf2E!D-3%`b3T@Y`Dn)o(FIx5t4@JcAnW`ump-P%~BOv
+zHeHr8&M-*Q%%HYEk2PKatG5a2$d-!iF?I02Ueq_|lOxizU3Es04*Zc#`zCSHz$!l~
+zceiMP?!ElTL{*pi>_8k&T53c8=925O>soVLN8-ej(kc7>A`8qs@4-}(3Dvc9X1VC?
+z*yz}OANAK~BL{s~&UY-J$T+JU1Xwm%q<K6CR2tt}WfXi=o+Vp6Sb;_7c#N+_d`^$;
+z9lvibZ_D%P%3w;Sd4?hPiLol&+Yumma^&MGjTh>#bN#T0xx=-MpS_zlFp+@m1itgq
+zm?$lnwhq70mFGkHuu|`(XcE)8t{lZt3?iY(I#WG;!P%i)Uue9Svb2F4KH*;Huw-*O
+z$utYG00Zp`l@Y@^=w|y~zvQ6pix(R1-U9R^awX@OFAaZw$+bVTB4eLfb|cTjinOV6
+zwcG_yU@hH&+Ja8ASz|WMmPN$ayD1Z#nj41}lN%$vs?}e$t(E#uuoY#aB2HxHcJWB1
+zi}x%=F6WQDN=fOey6oR;EDl;t*Cu)kqDRG*;${rrb*RmMUT*`nNU&9qRpN?|WFc=3
+z56de5&P4vp{@E{klShQ&%zEBzYHezw+D~C$bJyo*PVYFgku;k90e5AXA%po&J`M}V
+zDK4qMSNPH~=@=P$tOHfAvOc%a!%@D3svlhNJcT@c;)2HXp+Wi%ncMZrY{z6hB$R*_
+zuNEw;2%XdlGGo(IrlYQrr{tCi&GRWReTIN5DPrC2irR15KN1VnA>L#a7N^gfDxQ$w
+z>r)u8^t?;snR%+{;?$6j_YwV~^}gJsg{J$t*yoNBZhgFW8|f&<V)Ha+3%zbVZ%5yz
+zV9r9a{<1G%E5KrM&Z#&zc}k_1<jA94+>;3b#xFI$%}o{O#_o#D9q*QN$W|}@BGw)D
+z&N|?UT^D}iAsXlMdU~k=lUjS#pQ*Nxe9XX4mDG7!kN72<%KW~0eh=F?+b6I@q4<W|
+zxo2Z|y+|LGxjYR%V20H*F`$QL_CFHWY>q@#8>xLZ?eY5Psy|W9q<TN$R1~8hB?Sv-
+z5>t)$5hc<VN903(j*0PN#(XbJta5%yp6HCG813bR2lur<SmwG#I9K=O(H~+lX!Q?$
+ziAkvtbKriT$+bWEKu1#1X4`qT7e+T$l_qxE+9`(LOmWzID`<&jT~j7-Gmla92+yQ+
+zn%Y?Uf?8?UnZAkfcMlp1T_Vst^ZE0R56umDB;qhT8(vZ!Ik3DyQBu!SrLlHzz-fHI
+zKiogOVB_;dC4FhDU8zT<hjpQoqE>zsL!>Be?tbU#FVy~JjgOz2RW_^Sm22_Y$&Wu&
+zVp??dK0!Qq`l!Y_s(f(TXtrr%qCH?LH7rT1uHtU8R($o<8}<rBd7ky=?+n{|JhVn&
+zYL_4SUpdt)TXI+Do#Sab#>lYUJd}xJ*|+6GM|YUACb!*rbmO3VW=Nkz)}~NC1ApSR
+z)FR>KBE!CE*-7!0@r5@#7qf~)nIBxx=d)nkf1jqM<DI0k+?-K$`;K%8StHi-gJ+~Q
+zWH~Z9dzRuycT*}<MetSXPn2*x?*Al7Eit91DSnyp)(GiX;B-a<XNBVZyN{@kzaZOJ
+z)sV9`{D`UHtVtR)3rPzX6*}Y!qM2OtSrdk8GfO8My2lfVk$PM_CqL<tg;V#qxd@zN
+zs*2EXoSa~b$~m79)%dxxDE-x-5-p$g5ygehqglTGz6Eue^6@RZF;>KkiYIJ&(%jbf
+zI@!nrkq}jE^IR9k!mEe7sABB*PD{`+(lr_mxg)hkW5~iiF3MkcIxeWok$Sjqm3_i=
+z$L>?zK?iiouPD8gR%^I%F7tyP-*J&Iogu_`#P5~A!#ayg2R*A!OYhlXHeae>OSdBM
+zW#Y?B#fhUD`B7DLVz#=juCm;f9g4}doC+2`0&mHdt|?9A9z55%r=N167R}5$m=Sn;
+zWl^~#g^I(SqmOCV^=G}sT)<f01&47g%5@6&#FTy#5pp~`?vtu5F*u%qy_h6pxO-~;
+zpy3*m?RDJ7%W%iY)_41kt#&>=j2W4JvUVt0KCFFUP+EavBs6!`PES2C&@>y<{4!os
+zc+Tk3uys0<K2;N2%q~~6YM~RC%iHAc<|hmD!td5Nag@%NUKmdAKBP-^N9~;13>Bow
+zbXO^;sj5;->tslEs{$I)B$)72&K2El!5Hx_3%O^aZ$Vw`f!w_W;sCycnT`ji$*CX5
+z#!oI*GB)dB56d5JxNv&BwEaq`y|i6j1=-nRLDL48dD;W5{Bat@!rYbv=Ek?(ihSe;
+znW<l0I5UL)_<Ta`_I|8RQ~!<w<JwB|`%g%$8ocM_KAdL<<6%##v{)!}bgSOWoq=^t
+z-dX3=lJC(aQdkoZFuga5?#{<7&1+9dW=YE!JMYxG4cIyzyb~uF^TGM82g})F+m$l6
+z#W2N5$9qJlsQPau=)9O2(LWrio276Aw);uu<vAXe;kSKzO(CuqLX1pZ{6^%7pV&_z
+zFySG)NYvpM?TVQERXGsM3YiND`;3e}T{%4wt!+X{tGzGQ<itIjyuLk}Q8|nZ$-)C+
+zNA&A&^?8?lF80WdeZ-lil6e0(OZf7P-^~0|KSWab>YMHZIti(Roxuv}Rs$b>nGB|t
+z11wn%vr@7jV~ZPFMYD0pc~w$5`lM(`?X-$@YnFA?A@-3+H4y8CM5kXq@W$5jh4~}C
+ztBKi?Xdd^2t7obsggQtMVIL$nNxj3u7^#)k+Zw8`7Ese6t>32c+UTt*9YfVVDQQB4
+z*e|6JG0{m()pmQxFQ<zwx?PBgH~4ZZ-Xc--ZUB!>@!1pc$8^`!AGR_mxHo3YuD7-6
+z(cE$|r%Il>UCnBCIi!7mR~xI|EPIU&Ni>r<@)2L6v)h>cwfiT<J_LlY5sAz8wD0<Z
+z!3G}%|8ePu=g2Q3U-)8v&kGoCZ$w`9!qf3Ps%Nz1y1lwqd74n|xu!nk!zb-c!8i}5
+zn4Cv=7PD4d=5IFMQJcsf&hZ{Qcny6p=F-XA&q|HN3}1UX8SS`MB^G8r;BYoPaa67+
+zvAvf|dkg9@ZpKKDHRrM6cC7OBr;vwkF0T(MtW7RXYSU^IXbS#z=}<Rv9Z7AeEnHVq
+zA3HO&sT{+q;ydU+qC$7HNDb7m$ay{4E?M<<3FL<x?3tT;r#^6I-fsf7X7pz6#ty9Q
+zy_S}w(6v!qOH1M&`&X;`rgoZB-k)2rar3lXS!TQL6~0sbsO9kHtaZRL81vq+pd%vY
+zhURHcFS@-s{p8NcP}}V5dqgdgf>4UaQJ2re*t<16%?OO0>aLR3D-#eoE7<G8rKXF_
+zLr5CxIpZ*M=Bv4FrTJ8659cLBb(gCd@$7lKSs)U;QYAQZl#!g%P|JHH2fcB7-Zxbv
+z#k@CrdhyDPbUy2``b;Ys+&$mGWBEyvkK7~WuAA_Qoj$?BaVl$%cPX=yqt&dnQ*lE1
+z#h@$<6<04a7t7S!$OqPl$*WD0j^{EcKTo_08_2112+}57#Go}|0*zzL+Tu#GGE@!D
+z+FIjW1viH-kn8XtFBE){rce9CoWnu-z5F#sv9w+C<Zl&=)<q{&7A}r?MelW%%4&Zx
+zR(yXr)x1yVdTtC$bCY(Aum0$6N1?MWf)&Fl^&-fN3Y^K>{4E^J=gFNN`xu_Z6BF$!
+z;8=?U|6VL@DDrJ(QtJrL&6w@;LCNY8BPMN$;UuO+$*2#yCt7rk;yD<0+|kC=loZ=O
+znLc=^g*iy#ff0%EQJDu69OsCyou_OpT5MePPXFADv)(zscQ$8{v`;GYgWau9K53~J
+zb7M?QeCJx?O&Q*m8_%1%W;RZ5`r;0PrNhbQ2t0jgS9r_fC96<dwz9Egk)iIyrhBZ@
+zvyY$0R3mq()W;&54)op7IA}9OpP4$8)+lhONHT|M?GztBiw_uSho7R;rcZKTKQ0t;
+zbWigm{Y2sW=17yJhO|7l1g`2w597m-c?HJ%##0_qWSzT3q#59mnL5?o5hNb-5-9`h
+z%!d=nwVuO5V_zEWUF*v2cMT2e&4uslE$|zA!nUb-R)f!B0av>PNmOpG(tTBtNkgAh
+zSu01zYc$VuNzZ*N$A%Q0;?>UU38w0<oI0rLTL4N1tP5gst9dG}ck|2NYtj2+@|e|k
+zqR-6LHD>ON$@4BN^Tsf~)a%{{gY`Xow#er7j*ar%&ExJYUn?YHqXbXN^z=wyS&-4b
+z89tVdwl-FklZb2AJ|{<$YYp!qA=S#m_6c}ZmzuSN9z29>!mZ0<)-&sMjO0<98t2Ya
+z4%#~pl$kUMwOA;##1ohIT&ZVuo7H+w>0+|9R#V_jm+u=OXlju|=_VSUT^Y(J;7nwp
+z7hTvdx4Sz(bH;|D#@SVn=i*aEKBmLO{w(A!X>2<V9BShKR8|;;Nsi%95;6q4O18_i
+z>b6@D=7HF9FCtPPu0Ea3ps2pSF1<g;D$QZiNq<d7SUO%Crg3&x|GaQr#hTOXlsxfi
+z31AJ;#-7T5Z1kll{<2V}%~f|yfMB9W=hLgX0T~Q2L}vt**a}Z-h)Z@i-{sOL`|{M3
+zkvW9Q{mN>Uy~XI_@yOO)QJV|x=6O$!X85O4&4fp#8w4)X4pKDe?SDV_0r@VPNQF22
+zz>uYPfQ?UW)iG+_ndSs}^@%4c+7#lwMtsSx?t(sLkCWX$VW%F$G<H-`{@85&?k5=e
+z!+UAlOm4?OWFc}{05(=`ezQ*kQ*%1aa$S^MoP?bDbEeA0W)YWX_JfzDy(ybdlJD;G
+zeS?Z`w84@IM*Od8t~0EuY|%y?iWNZtkrDv~1?f$SM0yh`Ql&(SAWfPe{it*hLk(3r
+z(n1lWmq_m*MGz2>5>Pq`EfA6yXP(XsGxxqb_uhBE_kQI2a=v^g`|P&%+H0+SbYi1{
+z-djK$Q`><Bp00M8XN{sNTZG*&zxrZ6wdCmV-Iu{7Rh4_)E)mr)v4%6(m=`AtOoN7z
+zN7ptjLMpfl=txd`sLv{+ZPs>5?6-RDr`v_Dnui~9FTY*Z%oLdBIi1p`U^hIG*^ao{
+zm~n(AmjH^a-Jb{8pasKGyzsFki@{Zn_tob#(^Jk{Hbe=H)pxhWdgKD4C8Fe>Be6({
+z%foNo)&>=525Q6v?L=KjPIHjU35s@DZ{p9$oUCABYxGX_G4po9+6j?UeY)LXlECj4
+zaFe>pjQ|oh<F`m!|0VI1d%-T0hBwWu$}~?2$0wb7pM<pOon1)Ir#zLDZ7hLdL-`q?
+z&Q4e6XCHkdgR{IMu<@vTwd>f`ebqP6JB<%iYV-mXhpj)5VL28*0Uf=Ar9xzEylNu!
+zm(s)2#)VaFh`9PopZv*6`6GVzyUo;}22uW`5r1_5_kaF1M)keKy366bM}nvs*UuK^
+zdp%V`8%HbUZua367mgwDd&WEb3{kjNb2JRwPO&@tkpMzWHHp0PKbYPToS$3wT4Heh
+z5E8DS5v(;yA+&V1l~vz5zc{C8soUM^z6bxzBYWW`s#c9m5N}%QG0Lo`#+P5kmD1c)
+zGi)~<{u?pYe5U9Y^%9qNd2aa%X)VUEZ?U$kwa|?O``u*6n+14YpEJgiw^I_iKd*|A
+z2_YuOvnK?HX$B$Vkyj_`ZBvstiWW@^xA=5D;_~ZmYqvC9P{+bBI0C3$8M<#dP5?E}
+z^%lK>R1-Nw29NM*%AQ%}!oTq(-y7&3Y1V(R|9%@4`u_K02WglKG2TX4fLKwT7y{_R
+zI59Z!Y?uJ@=JAX_bK93sU*b<U`(Uv)#=k#0+Nd?dXL2lVP+M^He{s~!^!XOe<e|k`
+zB;whV)NFtkVBc6+)a9FJZ1n4*l!2XZI{pQgZyMNDxnJ6E@-@fWUFs*fA@vV&2iEup
+z#|R+nePA~_{=+u=4zNHA<`Jf#vA-AdpB%wI@*RI@L2qIU-ig6y0L?EQ#HQA=)|{C;
+z!Yw%2{}i!&7xaGC9RF7L>O_SU@Py>F@8&UPY7EWUUQsPfH7?}zeZeJMD*t)oz9SWh
+z)mMNR?G9}s$~~_Mpx~sLeFNNm90S5Dp81ROy`Cix^XNf4q6-IX9PuYlxjRK{$hDA~
+zAtJ|H^qeW=pVsXmfRcN<Fic4F^drc0=6{dO8<kl1;>uFDp@JWonLo_q|6#xt-Nrpb
+z*FT$w+?do`f-8AjG5U5#D0LFoAZz+*)>2{X8Z(IvQ&KX&4WH+uFOEL(EYHBIV#QzU
+z^#DM+{<ywDk?2B1rj{JzM@+9PV@6&)<%>)ud)^S$EUYEou}h~`g;9))V}8{r<GJW~
+zBAA4sjTPO6wj8--Sov;;?<ff?u9pBx@<8uBthk4a?q4ptK5Lbt#yudzacQnW6#h6W
+zXxE3EYugP!Z2nN(!pl_jrZluUc!s)k;o!uDM=o{3$F(E`CZrgGJoqK@5ER`EUj?X`
+zSs)4bjxDWWHIXqXTioN`XrRZvnE>Ljh9nynow?a<JS$5q)T+EDvUmD%T%k!s8k{|T
+z2od5|QU<jae$d8U8_M9aYNmc$D5V|T#b|Q}_1eHE46cQ;^M1f7_K2gPA$~Rj(wD3o
+zS}t?}wI~7YkGyj=7UpAsRgf#jjZ~v8lWa|pb0r4vdiB^5PgUr%P9&&Md(5vH<tDvt
+z;$|`1ohCAVwj5bU4NsjqECtrtGt<aG?<=L=l!V=uLFK(${atELSDUF(+r*7+4-NN7
+zAKlRhE#Ud`BonmY`<|Z$r1;kpXdj|vJ{TR>0ZY-19VIWG$)1XxG-5Kv6v8s9X`jze
+zt9HV6nq4BHST=+JSU<6`<=WP<gV^<wppqSMuRSx~z+JapH+EQzvG!t2Q=5(1Rc?Lr
+zh&;WcZOg5NqkXOxMUuAf=+03tM!70JWzxo8n;TaXa$h{DDt*K;YfR?KhfP&=M5=?F
+zVD?zV2%b#jW^UdMhp2O!v9G!GW*=-?;i7Q)kj>ulgVR?DpfF4<UTX-DsA6L9Og@H1
+zVJ*$(>Z}L6FN=NIOQ;HAzj8pA!J1?erkAUua|cR0)(b0fX_Fw29iiA(rDK+xcQ3d3
+zzA*h5&_s+pWaztc{J=<}ZvR(jxV)8z?U?^S1MS#NbZz`kB+*aX0TdJpAn&eqtM#?S
+z9vzkN^$OBcL@3;M2z#viEVS>O9H;y^e*!}fX-l#GuSwEhGN1Qu<RuF6Qsq&wDFh1!
+z!lhd@PG6KK&z=b5N5uP?D&O)TjX=RTWrHecLS3%zJ9X;^-|V}%0d{qE9x;ztQ2oRl
+zHEQK?nL{%7fj#YB#3hI~e^jJG{I$#qW3*&2!YL~71CN?Y9O$PM^vE(2r^4Nomn>-*
+zZe~5HgFe^}O)m&**t+ecI9b9;!m*<M<ZIkTv}Jg2x#ekpHp{eb8hg#bOajPp8@Ukx
+z*$ry+Q_Cgd4H0g>Es5F%T%>1<ULnQlQ|9R)=vfc}6yUWaPP<=(35CTbo_%4LSe|A0
+zEe-ik(GgEF98ulJWfPAAY<EZD)tVCSOycJN=)rQL1I80r0OOSjAby~m9{(nZ0I~pH
+z$n5ouN=EK3sk|BD*%DXb64KwI4~`V)jXAvt-z8_wKDXg?khIEwhcB3aPhn{0>HbL!
+zYtJ<lPghNT;#atx+=~Azq?yoA#Ci@BHHs4muWEky7%%Jq`ld+UN8Nt!6^Kex<Fh)}
+zxIF}PJm?*P^z$rstvV`*Oo}c%vYCcS0G(Fz6#G`+B5yl=QUibs#iGJNS0J}N5zLwG
+zT)0@#<&$>SGN)?<N8pWj)#Q6}y6zps2)Y9wyinrC8p)|a&SQ|_l-YqfvoZ1dCm7x2
+zEF`Y03ghpuJ6QK}rt1x#fur6MzFJ`eD0n5DqSTaqAqzL9i|rvb7+<avP%j^PJ8mRB
+zT4gXP9o0B_jU@p3ZsBw!DL<dY4C*Krj2Z6&Qi)9_L>1gRu5~g;s*J=UCz=AgTtsxk
+zUuBzHZt$Mj^?-oqD@RFabP1pvH7FuI!zSJxxvbolZ4l~a&}iU$S1sBxWmlqU1^3}4
+zFW!;ZL&{y`ll@>!biL_TnKx_KMw#XSTV16F4#Pz0i<Wi9_c4FGV9lR`spE{>GzT!D
+zlZJam@G?dp?ab;Vyx%E#d{{B7y+uq4{urO9=gqmZc%nJ~xQl#jlqVd*2Q)JQn1CSj
+z1ropZ$Nl4jejeur@t!=8ZTC<_znhz5AEF+)LlkgKI|WK)fD|9S15vDt_hqHdHDwn3
+zi4zHO8dt$L^f#7Y;F%mJAPTcMRQq*FncfdAe+CnW++0_VkBgFS`HOvB7F)GpS=8Ad
+zt=I4xy(f)11?yJLMfss}2lX3q@QyhMCj72^wYPtj$zo(r^I2660q>6*66SA-gtm4u
+z>4_;KvE8&fg8<3_bWCjO103f2DlJ}*Go16XGrn6u0JZ5X960Y`fWWV(uN;FjADS<(
+z-{t5h$KRd{kL}^KxQ^yOB2A}XWT${L0^@F5uz3agl^j`gxs>2G?_U+=&OgDuYH5WR
+ze5RGh<RAB{uQUD;-^1%YW??>^9Jr@+&eRjG;=V(s2ubY>UdAJWJ$&<@Ha(A%4cQ@Q
+zseoqri_*wEzN{y|`DiA8=6HqHIDs9<h-d_AU?yf8-LD`V$4bxm&;EqOofKhM7H6k>
+z$?R=t8~FGc>1de^^q=P##Ewsb5<t;=1Q32S66n}<RvMrB1Y072>Y^So+1ul0i8Bj2
+zuZHynh6PfV`!<3A{TlWGD36b>`(#%~@<W(j&0wrL>{(EmBAmoKSy5q>r_EYq87C1d
+zw&D}L(AG#nvA?!-V?Bm;aMB*F5RK%=)mS-RMs#j?jOk<@yV%O6?(V=IO1kTw0o!Gm
+zdpm}x){np^pOH<!4CXR&hiapX<{9CkxjD2nBilm}HjR2?53X_OZW{tUq9bh@3?EO;
+zwzoo^!?dinhaI@hh^x1dp`0Do7h$OKDArLX->`kVB$73ptBDHM956F+F@EZ6%jY1{
+zI!Xe_X}T+M(Vopcy9*qTSE+n%a4VdbruucX9_;q}v(!<~Hb0(dZGz#rox}<xRoT>~
+z@X>5@&B0`S$Ru!dDV7P(nJD6!!ZZ2Cz$)cQfD|(08l&r^$N_RIR_spC3S~|hV~N5+
+z>}CS{2~P#wEG!;S#vXY*da*+6dXKFFKvXf^kMD=F@1N>-ojh~ulM%lMawgG{{<sJZ
+zMFGc`q9#PTDX%;jv=rVsCAKFbm<CzwB%X>Pi`_os(Qbm<z@z8_hT9<vjGITY@CM^X
+zV$UQCuE)OgTxTB)K`x&a*}vYpg81a#j<?K$GnX!ayS+Ws_}zE(hD_PClfN`rhz;M!
+zJ#`B}&>)vfbNWrzi(A=Kw}5KLdE5FdNf>Gk#dCj;JCTS|PP%xJO0PMQp+#Vt7_l)U
+zfD}a`x1oYQ>hAHIkZy0bJ$H!96TY`~uHw|yyDB1`(y&)htNR<giWJjZ3b-~V($MAH
+zv=BG*0Bwr%d782}PZXz-%?kvOh6Qr1w<Y3`Jh5K=c@HCX4@jqHU!;tM)TY~SYs83t
+z5wo4-zR`zmXbjI#k~cmq=^pl7zkv%qX$8WdndSMOTROBPn3V$-PR0qpaL)XvQ7r<9
+z66=dE)P<mh2%tg*^ezFE2#y?;Hk_O^Qd%_Z#UL??EwEX*{80&iuADidm=Wy`($zJ=
+zOC9L@7w*wDCBEOaNFHZwA_9n9A<%a3XZ%QQ+9Zv9)}?-E|4~-VanZa`_iE;)tUx|g
+zSfn4HCVmhv&_eX$>3nnjWlMrR+!vj1ed?0%-CnELz?XM9x|r$*7zT{Ef+e&u+o9Mx
+zN0PbWgk{Ovlbq?3(x8Z2rjmlA(D_<}1KW{4l2v-HwPY;}TTJ1@_eNhU_&zm<P|48c
+z>S!qQA7nw6PNhB<&ALH#?!E3&M8YaLZ8SQQLoEKnB_dZ~rB>nrc)g+?Xt)%9Ok>o#
+zT{z`LBYM9@p#8j_qCG?c!gK#8IZvVSGtW=DlS5Se=)45=AM`Uw1!JQy)dowJ<>-UV
+z^1e$P_K(~GZh5v{gfk#JiKoxZ5><H~&{q}1?<}MkG~c=$+1(5`tGc|ZBs$P2cr7&@
+z)RFe{5sm*SDQOa~pxg$}$<jLDwZGUntLtBhyyOv-Z26D?npTx}WJE{}bt0K!dB6kj
+zkP9p;1!PIJQBH67=A!nT+~NjisA8}J^|qcg3XPp&y8EL-sClNHq*>4D6mjAP+~zy!
+z*!~^qFd(9-*7NnnWRptJfuf8(eaa|5+7+6~etls7mcl7A1FlMsI&sXv@W3p()KCQE
+zGk;^=A7-VgHLVuE3yfN1mzc|^3+;}UvJY%fVB07Jd_pj5Upk;+<z*+Oq+PdW5E0;b
+zrgWgR*SCD#ae9VfBW0WGMi}jYk28AC*c@G$o2J-6a!}J8$+)Ye+)4l~GjLjRzV3B2
+z{}xI!3_f{2(tTDvumgyxD6o}glx(m?)c9;fOHo5cne-zvpY`R?;xuPs_h0i1(e^+h
+z>kSXYv0<48)tK^9XK!Z>jn?rQbznGl&~UNlE+p`|0-_H5HOb4gYjH{pE3S(13E1P#
+z5?mkcU{PT%f1qGSH<zcv`BI|dYm#g1-RlCgVbIN_c=;9y9MH?>1AR_sFC=u|8o?ft
+z`qIy5Nf_ESx}QeO>cV)}Wrk;D7!>_OW7M<8SA<A7tW<lgg6+J<iHeU5DkX1e&ps|)
+zSuUs9?vWmVOr1DR0NoSL#$kH1i=9865x_|nZT3o<)YYnptZ@H6Zd`QOwE7(<DM{(-
+zH!_EzDHgjKf%m-(lQB(#<zuTC#%gU0380r{ecv1=g}^VTNshtO4snKzklgCeS`rZ}
+z;o*w6K1r*+SynJ??mB6H!sNAkk=7d)@nU<f)(>ovIotMQM0uJBtO+m1xaS+#v#}?8
+zneHj_aI+7Yl*w<l(FaoUvc@RT2tnjco6e`J2FPZM0Ev=P<pnNMqKv5_`jE4=07FI7
+z&33b~k%ht+aA)pNOXr(Q*YqyG(zzP*vLSKCQo>_n*3TqzycymzhFFMtbG_R$s!G)M
+zan6jw*Spr$+I_=sYdR2*tYogAQIGg+wH>%OYB}du<>&ai!sj8T;7itIo%bb33EN|^
+z6E)q9?Z;$tv)5$H)x>EkBj(LMWSTCl5#JDyafCr7>Q0!))h^OF)?iBN^p~Sv4g*|_
+zr$DaVL5*=^*L31dX@6`94?*NVa#;-Y@(|~mH&Ilx?SRbTL^D^`Ru#4gpvjI33Xy(E
+z2lOH~s_WuQzrjR}9BC7gBks|;q_x&%UuTnA6Gi;P?-cn}QPEsO-DAhiOvT#SXQb$S
+zSQsh@4-gKe8qXgrEw-YE1sQ{vEM|G^=U6f*kKxvGb4)0VhFnxBy7n}xkd=XV2JO_Z
+zTCxagYskrgndOL!wpoInS+bIrRCK7-B}sKmQ3|9L8NcU~L2f>1x4L5Y_REyTCfw!9
+zM^~#0=xp>xZ<|Wyy5KzfB42bCKBhIgP^}0P?38>ZAL!-RxAxdt%@v8eB3oY#M}1Z?
+z&kHt0o<;R355}IFnq3(rClB&w4P3OkVT<vAMSG>CVr67ic@#tY%U;B@!DTv?7+@hv
+zVC(X!#X@T#vH1Cv^Ht^Ym&gKvUTGieuhnJMST*TNgM9O7l{{lvcljQ=Jn0w0K3p5^
+zP1C#DK%&^0)@AIi-O}^GbI4kPQ|~qf^}rVAE1tV=hgOsf60c=c`oZRdeJSeW>pPCz
+zh)dRF;JP)q+5^@q|L`{P=A9vQMO}b+P?*hnds^U9pG3!tMtSxmmAKQjckxb%-IDP5
+z46KLnZef<qI8hK~p==bxO%S!`VxnGl-=s>}dlHUlOP|8Fq;Pw<UTlj)K|^Nb-jv&;
+zSq|oqo+T997q;=9(T+PF{eCVckmP#z535K%9y`Gm>G`oi71`3`KMlyfmSaGfQu?cj
+zOyipb_SuyvpVEPD9~j2X!Pg+fcNVy(;EO~Epv@QvZX^-XHH)_e23iWczCf_8_97FD
+z9(VH77il#OC-iSu@JjR!D4HZWnsfvUDxJfFMUy86$(03y(s<PNba0wqx&bj<u~!rJ
+zNp90c=b91?Z)-AR*DZ@<2M@8?`_~(mYw=8O$&s62O#B=TnBgdS&KKt@$3qSd^ssyL
+zd+dR*LJjWOaO|964SU7_lhTOu_(&&Xp&?$!vsoWObo(5E28-B+6lXjCBE*+3{$ZcA
+zj<u0DNur83R&>l0)swX*jDqR<O{vdbR6fUcm@SzWP=+AP3y)IEeI{cuP1LZFnvO}5
+z63!f^jMA)`I|C|z|K?5?>?zI2Nul+o&;Dgo+DvrJK`bLD9mLH8c*`qgRwAc$4j3e^
+z+RB7+q{{`w=<CF3|L*z!vb7O5;L>9$Uu9Fkw&!^=R))Uk(F%R^Wva{q$&1fo=30)2
+zgj0bB6a|SCw6haOlxK5eH3^{1cu3)0ECaYZa8GN4X$Ls;6C|Pm*A8SEvra}^S5KDZ
+zce8!4U*$nTOLq8cGrg*!)H1l+Le5g3Wj)Y3_fRn_@|vbzT;`i%w+Yn~B?-?df<*aw
+zOaq9MoRbqnfq!kJf{!%ESB3pjo{phH-4wb6Nz7j^J{UrNWm8*%%{c)4;IFztJE>a`
+zQTH0{3Zji!05vv9F79z;Wya<TLhh(B#hyRi$``zIsXY_x!5ESaXY#}prdU$PysQIk
+ztU$A;YjvquScczflRmW|n&+91G=e4P4dssH+j#W8ajLjiwz;#z@mwfjUOuAnsG_=F
+zN<bzmZbSNL`cDd*>Z%!nePZrNmA3|50{7}l-b(9ptt_~`rx7xxR-{kz+pK*3NaF>p
+zibeK{K;O+~w4oZSibS_LT=z=+t1$hzR~_u!pd&I-)N$I3nKsqKVGcWDa+`bJ&B0%5
+z%LfE)+Z830G=+2MjBoSC<sM-^xa_Nx?_=(Bza++<-&#)Z?7L4L(iG}XIssN+Y&cPs
+zNM@aE6Sx+7NPGIDUG*FAucQ*Q3n|>Xj5phvRbI8nwXL<rJUVRV%sA@m{+zwcGc9mz
+zx%Zh**Wp5b<tgn?q#Uc?zf3V`SDO~heD@Q6Q^a2$nSbG4;MZg0|KXDVwaNFRiqKz=
+z+Wvp7z#o+6AC>#39oBz^wfxn4p@&a2{F{3AKUR6@pKZktvE%>Km(ahvDfr)nkAG8F
+ILkXk*1!)dfnE(I)
+
+literal 0
+HcmV?d00001
+
+diff --git a/wp-content/themes/people/images/contact-default.png b/wp-content/themes/people/images/contact-default.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..f69769f3df0537d562787776d8ea456a80d0f6ca
+GIT binary patch
+literal 1298
+zcmV+t1?~EYP)<h;3K|Lk000e1NJLTq003kF003kN0ssI2|9}Dm00009a7bBm000XU
+z000XU0RWnu7ytkS#7RU!RCwC$oZV~kN)U(RM=c3P1)-$2Ra(eJZS<n_|G)80OTlkM
+z+TuqwC_zm$TT^4+i*q;}&Uw#CqC2}W?(bT5oX2r?vOAN=`};e`<V{hAfWcz07%T>h
+z!D6r&0`H0k;Y;lIdxX$xwOTHhhG8ItY}<~-Vm!}_qL|5K(&;qM^U)~fpEg3bDAjd+
+zI2@{~>gB_dB<1t@R4R3Lury6;Hk-TM&i8*I9xs(j*=+VKU?GGWjfP<u$1Ea>V!2%A
+zc|OdrR8?)YTDVqI6h)GxaPEfvejg(#j^kRbR=?j5A*@cPGZ+l8FFP0vI-O3aVD<a`
+z$z%ew_+&C66JI1?sj3PQQ~!uBkM&2OVIhR@=BfY5UkIVohSg{^h^0knTd=S+O*^ul
+z@+HGCG)+5ISj}dWaK#I15fGNH>jyl|9I4%Ir|bIZ!5R*SRGvEF>_WlX@Am}u^8cz-
+z_WS)Q!Ghk!saS`CwOXwx!UD1m1#7unQiKI$9SRo7@`{*sma_r?%eHNbuz;*X!HUIV
+z6k!2bhk`};bexQJC|IH>QiKI$9ST+^lc5L;$T}3PbUIBD7Law8vjPAs8jX^?(fhk3
+zNdoGM06e0}=krux!Py0bl}e@JanfBn@pv4ra|HHSxl}3<h6QR77FIT!C0THZq6peu
+z1AY}&E|-bHg0=+?i|2VoQ3#My6a~6oA#r^#Nm8Lu05wr46bMu*gc?I+S<dBhK#S*c
+zIa!toctNh^s8}pQ#8;tEC>D!kTp-%aCd)G3{G})gnV9;sh$H_jl1`^tPpLn#Ze`zM
+zeek};CM-fIHt57)F<8_^bA--u9Lusy(=<(Uy<VH9i4d|Z>yP{7SS*%EBzT?|1R<GB
+z3W6XALL!lfL?Y*s;2p;?O;gjf>2!KnT`G#=_4Rc&n-v6sFgS9NwO+5kzP?7I(UI#I
+zhVd8WySuxao10`Z8Is7dZF@GGb-P`l)<urvqS5H%<KxxU6?B6IAS~Oq$Kx@{sV!NS
+zZ*Onmkb%H*97k2vcDqd_4L?0SNs<JS&hW!B4CC$X?dRu*;y!zEaq;~8jQy?zCoIQt
+zK0iM{K0X3c7Ck&X+~4103^8o5w%hIN>nq*v$bXCH`IncM%gf6ERq(6Ts#2*0jTFam
+z2%$=)f~(UT1FYF>R;$&5{FqX!)n>C9eOQypgyclw!D=)b$Il%f1#3E;5*y||UY$;7
+zI-SyiHJ{IERZ<75-EPn4bJDPMU9Z>cr+Ca#uh$PANIV3VWm(l~l{;Bgt5wUg2*Enh
+zm^$7C->^ob5#8}PT!rBQheiHiA%uFp9v2GrdOg2Yv_DuUxBcOD#|Ny%VnKK061$em
+z<zlhG56f|!5ajjWW_rhQFvD6b7UW;jKtQ|Q&U<iqh1KnLxsb}cYo1_jHk$w*zu*!=
+zXtUX1gEbzHxlqfagYK{#$2tD8FW?%DMqbjqJFNA3&7Fa~xakfH%Nb+v<;BgYmk>P%
+zSYF(8fo0ovD9fwg7F@1xgK&ZM{r%0Ija;3Lvh42NSq2LqERUsaIOOWA3oO$#&j*&P
+zvo5f<+wJ+la&^`P7TwMv!g6(%wRZaugT-JmSPT|}#b7c00$_ZLoze1CF#rGn07*qo
+IM6N<$f*XNsDgXcg
+
+literal 0
+HcmV?d00001
+
+diff --git a/wp-content/themes/people/index.php b/wp-content/themes/people/index.php
+new file mode 100644
+index 0000000000000000000000000000000000000000..f8287d2bf879fc487a06d6583e40b0a55711202d
+--- /dev/null
++++ b/wp-content/themes/people/index.php
+@@ -0,0 +1,61 @@
++<?php get_header(); ?>
++<?php if ($_GET[id]){include('single.php');}else{ ?>
++<div id="content">
++	<h2>Todos los usuarios:</h2>
++	<?php 
++	global $wpdb;
++	$url = get_option('home');
++	if ($_GET['area']){
++		$users = $wpdb->get_col("SELECT user_id FROM $wpdb->usermeta WHERE meta_key='area' and meta_value='".$_GET['area']."' ORDER BY meta_value ASC");
++	}elseif ($_GET['unidad']){
++		$users = $wpdb->get_col("SELECT user_id FROM $wpdb->usermeta WHERE meta_key='unidad' and meta_value='".$_GET['unidad']."' ORDER BY meta_value ASC");
++	}elseif ($result = search_results()){
++		$list = "";
++		$last = count($result) - 1;
++		$i = 0;
++		reset($result);
++		$users = array();
++		foreach ($result as $user){
++			array_push($users, $user['ID']);
++		}
++	}else{
++		$inc = 30;
++		if (!$_GET['pag']){
++			$i = 0;
++		}else{
++			$i = $inc*(int)$_GET['pag'];
++		}
++		$users = $wpdb->get_col("SELECT ID FROM $wpdb->users ORDER BY user_login ASC LIMIT $i,$inc");
++	}
++	$alt = "";
++	$extra_data = new User_Extra_Data;
++	foreach($users as $user_id){
++		setup_userdata($user_id); ?>
++		<?php if ($alt == "") { $alt = " alt"; } else { $alt = ""; } ?>
++		<div class="contact<?php echo $alt; ?>">
++			<span class="m-name"><a href="<?php echo $url.'/?id='.$user_id;  ?>"><?php echo $user_identity; ?></a></span>
++			<span class="m-email"><?php echo $user_email; ?></span>
++			<span class="m-mobile">
++				<?php
++					$area = get_usermeta($user_id, 'area');
++					$unidad = 'unidad_'.$area;
++					$unidad_extra = $extra_data->$unidad;
++					echo '<a href="'.$url.'/?area='.$area.'" >'.$extra_data->area[$area].'</a> - '.'<a href="'.$url.'/?unidad='.get_usermeta($user_id, 'unidad').'" >'.$unidad_extra[get_usermeta($user_id, 'unidad')].'</a>';					
++					
++				?>
++			</span>
++			<hr/>
++		</div>
++	<?php	
++	}
++	?>
++	<p>
++	<?php if ($_GET['pag']){ ?>
++		<a href="<?php echo $url.'/.?pag='; echo $_GET['pag']-1;?>">Página anterior</a>
++	<?php }?>
++	<?php if (isset($inc) && !(count($users)<$inc)) {?>
++		<a href="<?php echo $url.'/.?pag='; echo $_GET['pag']+1;?>">Siguiente página</a>
++	<?php }?>
++	</p>
++</div>
++<?php } get_sidebar(); get_footer(); ?>
+diff --git a/wp-content/themes/people/searchform.php b/wp-content/themes/people/searchform.php
+new file mode 100644
+index 0000000000000000000000000000000000000000..8521ebf627ed6693d90076ba970f71ee48e783c8
+--- /dev/null
++++ b/wp-content/themes/people/searchform.php
+@@ -0,0 +1,5 @@
++<form action="<?php bloginfo('url'); ?>/search/" id="searchform" method="post">
++	<input name="type" value="name" type="hidden" id="s" />
++	<input value="" name="params" type="text" />
++	<input value="Buscar" type="submit" id="searchsubmit" />
++</form>
+diff --git a/wp-content/themes/people/sidebar.php b/wp-content/themes/people/sidebar.php
+new file mode 100644
+index 0000000000000000000000000000000000000000..debca89e69eb6e210d7b907fa3e20ed578ac52ec
+--- /dev/null
++++ b/wp-content/themes/people/sidebar.php
+@@ -0,0 +1,32 @@
++<div id="sidebar">
++	<h3 class="site-subtitle">Mi perfil</h3>
++	<?php if(!isset($url)){$url = get_option('home');}?>
++	<?php 
++		$c_user = wp_get_current_user();
++		echo '<p><img src="'.author_image_path($c_user->ID, $display = false).'" /></p><p><a href="'.$url.'/?id='.$c_user->ID.'" >Ver mi perfil</a><p>';
++
++	?>
++	<ul>
++		<li><a href="http://bbvablogs.com" class='node'>PORTAL</a></li>
++		<li><a href="http://chat.bbvablogs.com" class='node'>SALAS DE CHAT</a></li>
++	</ul>
++
++	<br />
++	<h3 class="site-subtitle">Buscar</h3>
++	<?php include (TEMPLATEPATH . '/searchform.php'); ?>
++
++	<h3 class="site-subtitle">Areas</h3>
++	<?php if(!isset($extra_data)){$extra_data = new User_Extra_Data;}?>
++	
++	<?php
++		$areas = $extra_data->area;
++		echo '<ul>';
++		foreach ($areas as $key => $area){
++			echo '<li><a href="'.$url.'/?area='.$key.'" >'.$area.'</a></li>';
++
++		}
++		echo '</ul>';
++
++	?>
++
++</div>
+diff --git a/wp-content/themes/people/single.php b/wp-content/themes/people/single.php
+new file mode 100644
+index 0000000000000000000000000000000000000000..7dc91430852e58244b08778b2ab7c151d6acb5db
+--- /dev/null
++++ b/wp-content/themes/people/single.php
+@@ -0,0 +1,148 @@
++<div id="content">
++
++
++	<div class="vitals">
++		<img class="contact-picture" src="<?php $avatar = author_image_path($_GET['id'], $display = false); if ($avatar == '') { echo '/wp-content/themes/contact-manager/images/contact-default.png'; }else {echo $avatar;} ?>" alt="" />
++		<?php $user_data = get_userdata($_GET['id']); ?>
++		
++		<p>
++			<span class="name"><h2><?php echo $user_data->display_name; ?><h2></span>
++			
++			<ul class="phone-numbers">
++			<li>e-mail <span class="phone-number"><a href="mailto:<?php echo $user_data->user_email; ?>"><?php echo $user_data->user_email; ?></a></span></li>
++			<li><?php 
++					echo get_usermeta($_GET['id'], 'pais')
++			?></li>
++			<li><?php
++					$url = get_option('home');
++					$area = get_usermeta($_GET['id'], 'area');
++					$unidad = 'unidad_'.$area;
++					$unidad_extra = $extra_data->$unidad;
++					echo '<a href="'.$url.'/?area='.$area.'" >'.$extra_data->area[$area].'</a> - '.'<a href="'.$url.'/?unidad='.get_usermeta($_GET['id'], 'unidad').'" >'.$unidad_extra[get_usermeta($_GET['id'], 'unidad')].'</a>';					
++					
++				?></li>
++			</ul>
++			
++			
++
++
++		</p>
++		<span class="clearer"></span>
++	</div>
++	
++	<div class="phone">
++
++			<?php
++			global $wpdb;
++			$blogs = get_blogs_of_user($_GET['id']);
++			$current_blog_id = $wpdb->blogid;
++			$links_to_blogs = '';
++			$sw = 0;
++			foreach ($blogs as $blog_id => $blog){ 
++				switch_to_blog($blog_id);
++				$user = new WP_User($_GET['id']);
++				if ($user->has_cap('edit_posts')){
++					$links_to_blogs .= '<span class="organization"><a href="'.$blog->siteurl.'">'.$blog->blogname.'</a></span>';
++					$sw += 1;
++				}
++				
++			}
++			if ($sw > 1){
++				echo '<h3 class="site-subtitle">Mis blogs</h3>';
++				echo $links_to_blogs;
++			}elseif ($sw == 1){
++				echo '<h3 class="site-subtitle">Mi Blog</h3>';
++				echo $links_to_blogs;
++			}else{
++				echo '<h3 class="site-subtitle">Mi Blog</h3><span style="font-size:11px;"><p>Todavia no tengo blog</p></span>';
++			}
++			switch_to_blog($current_blog_id);	
++			?>
++		
++	</div>
++
++	<div class="additional-info">
++		<!-- You can easily add extra information here using the h3.site-subtitle and <p> tags for display consistency -->
++		<div class="address">
++			<h3 class="site-subtitle">Información sobre mi</h3>
++			<?php  global $userdata;
++			if ($userdata->ID == $_GET['id'] && !$_GET['edit']){
++				echo '<p><span class="elim"><a href="?id='.$_GET['id'].'&edit=true">Editar Esta información</a></span></p>';
++			}				
++			if ($_GET['edited'] && $_GET['id']==$userdata->ID){
++				update_usermeta($_GET['id'], 'user_info', $_POST['info']);
++			}
++			if ($_GET['edit'] && $_GET['id']==$userdata->ID){
++				echo '<form action="?edited=true&id='.$_GET['id'].'" method="post"><textarea name="info" rows="15" cols="30">'.get_usermeta($_GET['id'],'user_info').'</textarea><br /><span style="text-align: right;"><p><input type="submit" value="enviar cambios" /></p></span></form>';
++			}elseif (strlen(get_usermeta($_GET['id'],'user_info'))==0){
++				echo '<p>Todavía no he escrito nada, pronto lo actualizaré ;).</p>';
++				
++			}else{
++				echo '<p>'.get_usermeta($_GET['id'],'user_info').'</p>';
++			}
++			?>
++
++		</div>
++		<!-- This is an optional area for any extra data fields you may want to add. It shows up beneath the mobile/phone/fax numbers. -->
++		<div class="optional-fields">
++			<h3 class="site-subtitle">Agregame a tu red de contactos</h3>
++			<?php show_xfn_form($_GET['id']); ?>
++			<?php if ($_POST['xfn_post']=='true'){add_friend();}?>
++			<?php if ($_GET['elim']){del_friend($userdata->ID,$_GET['elim']);} ?>
++		</div>
++	</div>
++
++	<div class="extra">
++	
++		<div class="notes">
++			<?php 
++				$primary_blog = get_usermeta($_GET['id'], "primary_blog");
++				if (strlen($primary_blog) > 0 && strcmp($blog->siteurl,'http://bbvablogs.com')!=0){
++					  $posts=get_last_blog_posts($primary_blog, 5);
++				}else{
++					  foreach ($blogs as $blog_id => $blog){
++						$details = get_blog_details($blog_id);
++						if( is_object( $details ) && $details->archived == 0 && $details->spam == 0 && $details->deleted == 0 && strcmp($blog->siteurl,'http://bbvablogs.com')!=0) {
++							$ret = $blog_id;
++							break;
++						}
++					  }
++					  $posts=get_last_blog_posts($ret, 5);
++				}
++			 ?>
++			<h3 class="site-subtitle">Último<?php if (count($posts)>2){echo 's posts';}else{echo ' post';}?> en el blog</h3>
++			<?php	if (count($posts)>1){
++					foreach($posts as $post){
++						if ($post['guid']){
++			?>	
++							<h2><a href="<?php echo $post['guid']; ?>" rel="bookmark" title="Permanent Link: <?php echo $post['guid']; ?>"><?php echo $post['post_title']; ?></a></h2>
++			<?php 		}	}
++				}else{echo '<p>No hay ninguna entrada en el blog todavía.</p>';}
++			?>
++		</div>
++		
++		<div class="related-contacts">
++			<h3 class="site-subtitle">Mis Contactos</h3>
++			<?php 
++				$contacts = get_friends($_GET['id']);
++				if (count($contacts)==0){echo '<p>Todavía no tengo ningún contacto</p>';}else{
++				$result = "<ul>";
++				foreach ($contacts as $contact_id => $rel){
++					$contact_data = get_userdata((int)$contact_id);
++					$result .= '<li><img src="'.author_image_path($contact_id, $display = false).'" width=25 height=25 /> <a href="?id='.$contact_id.'">'.$contact_data->display_name.'</a>. -> '.$rel.'</li>';
++					if ($userdata->ID == $_GET['id']){
++					$result .= '<span class="elim"><a href="?id='.$_GET['id'].'&elim='.$contact_id.'">Eliminar este contacto</a></span>';
++					}
++				}
++				$result .= "</ul>";
++				echo $result;}
++			?>
++			
++		</div>
++		
++		<div class="contact-tags"><?php the_tags('<span>TAGS: </span>',', ',''); ?></div>
++		
++	</div>
++
++	<span class="clearer"></span>
++</div>
+diff --git a/wp-content/themes/people/style-ie6.css b/wp-content/themes/people/style-ie6.css
+new file mode 100644
+index 0000000000000000000000000000000000000000..e514ce6868d47e22dc9dadd82daa710b26b61828
+--- /dev/null
++++ b/wp-content/themes/people/style-ie6.css
+@@ -0,0 +1,69 @@
++/* CSS para ie6 */
++
++
++#site #sidebar {
++font-size: 16px;
++width:8.25em;
++margin-left: 1.25em;
++float:left;
++clear: right; }
++
++#site #content {
++
++width: 36em;}
++
++#site div.contact hr {
++position:relative;
++top: 8px;}
++
++html body div#site div#content div.vitals span.name h2 {
++font-size: 2em;
++}
++
++
++html body div#site div#content div.additional-info div.optional-fields {
++font-family: helvetica, arial, sans-serif;
++font-size: 0.68em;}
++
++html body div#site div#content div.additional-info div.address {
++font-family: helvetica, arial, sans-serif;
++font-size: 0.68em;}
++
++html body div#site div#content div.phone {
++font-family: helvetica, arial, sans-serif;
++font-size: 0.68em;
++float: left;}
++
++html body div#site div#content div.extra  {
++font-family: helvetica, arial, sans-serif;
++font-size: 0.68em;
++width: 100%;}
++
++
++html body div#site div#content div.extra div.notes, 
++html body div#site div#content div.extra div.related-contacts {
++font-size: 1em;}
++
++html body div#site div#content div.extra div.related-contacts h3.site-subtitle {
++font-size: 0.77em;}
++
++
++
++html body div#site div#content div.vitals{
++font-family: helvetica, arial, sans-serif;
++font-size: 0.68em;
++width: 30em;
++}
++
++html body div#site div#content div.vitals img.contact-picture {
++margin: 0 2em 2em 0;}
++
++html body div#site div#content div.vitals ul {
++float: left;}
++
++html body div#site div#content div.vitals span.name {
++display: block;
++float: none;
++border-bottom: none;}
++
++
+diff --git a/wp-content/themes/people/style.css b/wp-content/themes/people/style.css
+new file mode 100644
+index 0000000000000000000000000000000000000000..601b25f478ee9d4b52bd810cb82826ee26543fca
+--- /dev/null
++++ b/wp-content/themes/people/style.css
+@@ -0,0 +1,122 @@
++/*  
++Theme Name: WP Contact Manager
++Theme URI: http://thedesigncanopy.com/downloads/wp-contact-manager/
++Description: A bare-bones contact manager for WordPress.
++Version: 0.1
++Author: David Yeiser
++Author URI: http://thedesigncanopy.com/
++*/
++
++* { margin:0; padding:0; }
++
++body { font-family:"Lucida Grande", Arial, sans-serif; color:#665; background:url("images/bg-vlines.png") 0 0 repeat; }
++
++a:link { color:#554; }
++a:visited { color:#999; }
++a:hover { color:#004d86; }
++a:active { color:#004d86; }
++
++span.clearer { height:0; display:block; clear:both; font-size:1px; line-height:1px; }
++
++
++#header {
++	background: url(images/blogsfera-logo-1.jpg);
++	height: 213px;
++	width: 800px;
++	margin-bottom: 8px;
++}
++
++/* ------- LAYOUT ------- */
++
++#site { width:48.375em; margin:1.25em auto; }
++#content { width:36em; padding:1.25em; float:left; border:0.187em solid #7D81FF; background-color:#fff; }
++#sidebar { width:8.25em; margin-left:1.25em; float:left; }
++#site-meta { clear:both; }
++
++/* ------- MULTIPLE CONTACTS ------- */
++
++h2 { padding-bottom:0.625em; font-family:Georgia, "Times New Roman", serif; font-size:1.125em; font-weight:normal; color:#2D31AF; }
++h2 span.archived-feature { font-family:"Courier New", Courier, monospace; font-weight:bold; color:#333; }
++
++#content .contact, #content .alt { clear:both; }
++
++/*#content .contact {background-color:#dfdfdf;}
++#content .alt {background-color:#dee6f1;}*/
++
++#content .contact {background-color:#fff;}
++#content .alt {background-color:#7D81FF;}
++
++#content .contact span { margin-right:0.063em; padding:5px; display:block; float:left; /*border-top:0.063em solid #d0d0d0;*/ background-color:#fff; }
++#content .alt span {/* border-top:0.063em solid #cdd5e0;*/ background-color:#7D81FF; }
++#content .contact span a { text-decoration:none; }
++#content .contact span a:visited { color:#554; }
++#content .contact span.m-name { /*height:35px;*/ width:10.769em; font-family:"Lucida Grande", Arial, Verdana, sans-serif; font-size:0.813em; font-weight:bold;/* line-height:1.5em;*/ }
++#content .contact span.m-email {/* height:35px;*/ width:16.462em; margin-right:0.063em; font-size:0.813em; /*line-height:1.5em;*/ }
++#content .contact span.m-mobile { /*height:35px;*/ width:14.455em; margin-right:0; font-size:0.813em; /*line-height:1.5em; */}
++#content .contact span.m-mobile span { margin-right:0; padding:0; display:inline; float:none; font-size:1em; font-weight:bold; letter-spacing:1px; border-top:0; }
++#content .contact hr { height:0.063em; display:block; clear:both; border:0; background-color:#fff; }
++
++/* ------- SINGLE CONTACT ------- */
++
++h3.site-subtitle { color: #2D31AF; font-family:Verdana, Arial, sans-serif; font-size:11px; line-height:20px; text-transform:uppercase; }
++
++.vitals { width:21.875em; float:left; font-family:Verdana, Arial, sans-serif; }
++img.contact-picture { margin:0 1em 1em 0; float:left; }
++.vitals p { width:14.625em; float:left; }
++span.name { margin-bottom:0.375em; padding-bottom:1em; display:block; font-family:Georgia, "Times New Roman", serif; font-size:1.125em; color:#2D31AF; border-bottom:0.063em solid #2D31AF; }
++span.organization { padding-bottom:0.375em; display:block; font-size:0.813em; line-height:20px; color:#776; }
++span.email, span.website { display:block; font-size:0.688em; font-weight:bold; line-height:16px; }
++span.website a, span.email a { text-decoration:none; }
++
++.phone { width:12.5em; padding-left:1.625em; float:left; font-family:"Lucida Grande", Arial, Verdana, sans-serif; }
++ul.phone-numbers { list-style:none; }
++ul.phone-numbers li { margin-bottom:1px; /*padding:0.125em 0.375em;*/ font-size:9px; line-height:20px; background-color:#eee; }
++ul.phone-numbers li:first-child { background-color:#ddd; }
++ul.phone-numbers li span.phone-number { font-weight:bold; letter-spacing:1px; }
++
++.additional-info { padding:1.25em 0; clear:both; }
++.address { margin-right:1.625em; float:left; }
++.optional-fields { width:12.5em; float:left; font-size:0.813em; line-height:20px; }
++
++/* The width is static on this element due to alignment with the contact image */
++.address h3.site-subtitle { color: #2D31AF; width:100px; margin-right:1.538em; float:left; text-align:right; } 
++.address p { width:17.75em; float:left; font-size:0.813em; line-height:20px; }
++
++.extra { width:36em; margin-top:20px; padding-top:10px; float:left; clear:both; border-top:3px double #2D31AF; }
++.notes { width:21.875em; float:left; }
++.notes p { padding:3px 0 12px 0; font-size:0.688em; line-height:16px; }
++
++.related-contacts { width:12.5em; margin-left:1.625em; float:left; }
++.related-contacts h3 { color: #2D31AF; font-family:Verdana, Arial, sans-serif; font-size:0.688em; line-height:20px; text-transform:uppercase; }
++.related-contacts ul { padding-top:3px; }
++.related-contacts li { font-family:Georgia, "Times New Roman", serif; font-size:12px; line-height:17px; }
++.related-contacts li a { text-decoration:none; }
++span.elim { font-size:11px;}
++.contact-tags { padding-top:1em; clear:both; }
++.contact-tags span { font-family:Verdana, Helvetica, Arial, sans-serif; font-size:0.688em; font-weight:bold; }
++.contact-tags a { font-size:0.688em; font-weight:bold; text-decoration:none; }
++
++/* ------- SIDEBAR ------- */
++
++#sidebar p { padding-bottom:1.25em; font-size:0.688em; line-height:1em; }
++#sidebar h3 { color: #2D31AF; margin-bottom:0.5em; font-size:0.688em; text-transform:uppercase; border-bottom:0.125em solid #2D31AF; }
++#sidebar p a { text-decoration:none; }
++#sidebar form { padding:0 0 1.25em 0; }
++#sidebar ul { list-style-type: none;padding-top:3px; }
++#sidebar li { font-family:Georgia, "Times New Roman", serif; font-size:12px; line-height:17px; }
++#sidebar li a.node { color:black; font-size:15px; margin-top:10px; font-weight: bold;}
++#sidebar li a { text-decoration:none; }
++#searchform input { padding:0.125em; font-family:Consolas, "Courier New", monospace; font-size:0.688em; font-weight:bold; color:#554; border:0.063em solid #ddd; background-color:#fff; }
++#searchform input#searchsubmit { margin-top:0.313em; padding:0.125em 0.313em; text-transform:uppercase; cursor:pointer; border:0.063em solid #ddd; background-color:#ddd; }
++		
++
++
++}
++
++/* ------- SITE META ------- */
++
++#site-meta p { padding:0.625em; font-size:0.688em; color:#999; }
++#site-meta p a { color:#999; }
++#site-meta p a.home-link { font-weight:bold; color:#554; }
++#site-meta a.home-link:hover, #site-meta a.home-link:active { color:#004d86; }
++#site-meta a:hover, #site-meta a:active { color:#004d86; }
+diff --git a/wp-content/themes/people/test.php b/wp-content/themes/people/test.php
+new file mode 100644
+index 0000000000000000000000000000000000000000..cc1eb2e49245a1fe8d2ff0555eafa09ee5479091
+--- /dev/null
++++ b/wp-content/themes/people/test.php
+@@ -0,0 +1,62 @@
++<?php get_header(); ?>
++<div id="site">
++<div id="content">
++	<h2>Ult&iacute;mos Contactos</h2>
++	
++	<?php
++	global $wpdb;
++	$apage = isset( $_GET['apage'] ) ? intval( $_GET['apage'] ) : 1;
++	$num = isset( $_GET['num'] ) ? intval( $_GET['num'] ) : 15;
++	$query = "SELECT * FROM {$wpdb->users}";
++	
++	if( !empty($_GET['s']) ) {
++		$search = '%' . trim(addslashes($_GET['s'])) . '%';
++		$query .= " WHERE user_login LIKE '$search' OR user_email LIKE '$search'";
++	}
++	
++	if( !isset($_GET['sortby']) ) {
++		$_GET['sortby'] = 'id';
++	}
++	
++	if( $_GET['sortby'] == 'email' ) {
++		$query .= ' ORDER BY user_email ';
++	} elseif( $_GET['sortby'] == 'id' ) {
++		$query .= ' ORDER BY ID ';
++	} elseif( $_GET['sortby'] == 'login' ) {
++		$query .= ' ORDER BY user_login ';
++	} elseif( $_GET['sortby'] == 'name' ) {
++		$query .= ' ORDER BY display_name ';
++	} elseif( $_GET['sortby'] == 'registered' ) {
++		$query .= ' ORDER BY user_registered ';
++	}
++	
++	$query .= ( $_GET['order'] == 'DESC' ) ? 'DESC' : 'ASC';
++
++	if( !empty($_GET['s'])) {
++		$user_list = $wpdb->get_results( $query, ARRAY_A );
++		$total = count($user_list);	
++	} else {
++		$total = $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->users}");
++	}
++	
++	$query .= " LIMIT " . intval( ( $apage - 1 ) * $num) . ", " . intval( $num );
++	error_log($query);
++	$user_list = $wpdb->get_results( $query, ARRAY_A );
++	
++	?>
++	
++	<?php $alt = ""; ?>
++	<?php if ($user_list): foreach ( $user_list as $user ) : ?>
++	<?php if ($alt == "") { $alt = " alt"; } else { $alt = ""; } ?>
++	
++	<div class="contact<?php echo $alt; ?>">
++		<span class="m-name"><a href="http://people.bbvablogs.com/user/<?php echo $user['ID'] ?>"><?php echo $user['display_name'] ?></a></span>
++		<hr/>
++	</div>
++	<?php endforeach; else: ?>
++	<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
++	<?php endif; ?>
++	
++</div>
++<?php get_sidebar(); ?>
++<?php get_footer(); ?>
+\ No newline at end of file
+-- 
+1.5.5.3
+
+
