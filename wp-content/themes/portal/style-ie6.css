@@ -1,0 +1,19 @@
+/* CSS para IE6 */
+
+
+#art-recientes ul li, #search-results ul li {
+height: 48px;}
+
+#users-recientes ul li {
+padding-bottom: 0;}
+
+#tagcloud {
+margin: 0 0 20px 0;}
+
+.columna #avisos-blogsfericos .post ul li {
+margin-left: 18px;
+}
+
+.columna #avisos-blogsfericos .post ol li {
+margin-left: 24px;
+}
