@@ -1,21 +1,24 @@
 <?php
+	$spellCheckerConfig = array();
+
+	// Spellchecker class use
+	// require_once("classes/TinyPspellShell.class.php"); // Command line pspell
+	require_once("classes/TinyGoogleSpell.class.php"); // Google web service
+	// require_once("classes/TinyPspell.class.php"); // Internal PHP version
+
 	// General settings
-	$config['general.engine'] = 'GoogleSpell';
-	//$config['general.engine'] = 'PSpell';
-	//$config['general.engine'] = 'PSpellShell';
+	$spellCheckerConfig['enabled'] = true;
 
-	// PSpell settings
-	$config['PSpell.mode'] = PSPELL_FAST;
-	$config['PSpell.spelling'] = "";
-	$config['PSpell.jargon'] = "";
-	$config['PSpell.encoding'] = "";
+	// Default settings
+	$spellCheckerConfig['default.language'] = 'en';
+	$spellCheckerConfig['default.mode'] = PSPELL_FAST;
 
-	// PSpellShell settings
-	$config['PSpellShell.mode'] = PSPELL_FAST;
-	$config['PSpellShell.aspell'] = '/usr/bin/aspell';
-	$config['PSpellShell.tmp'] = '/tmp';
+	// Normaly not required to configure
+	$spellCheckerConfig['default.spelling'] = "";
+	$spellCheckerConfig['default.jargon'] = "";
+	$spellCheckerConfig['default.encoding'] = "";
 
-	// Windows PSpellShell settings
-	//$config['PSpellShell.aspell'] = '"c:\Program Files\Aspell\bin\aspell.exe"';
-	//$config['PSpellShell.tmp'] = 'c:/temp';
+	// Pspell shell specific settings
+	$spellCheckerConfig['tinypspellshell.aspell'] = '/usr/bin/aspell';
+	$spellCheckerConfig['tinypspellshell.tmp'] = '/tmp';
 ?>
