@@ -571,6 +571,10 @@ function get_last_updated($num = 10, $display = false ) {
 	return $result;
 }
 
+function sort_post_by_date($post_1, $post_2){
+	return ($post_1->post_modified < $post_2->post_modified) ? 1 : -1;
+}
+
 function get_updated_blogs($limit = true, $count = 10, $offset = 0){
 	global $wpdb;
 	$query = "SELECT blog_id, domain, path, last_updated ".

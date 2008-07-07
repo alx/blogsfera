@@ -10,7 +10,7 @@ Author URI: http://blog.alexgirard.com
 
 // Widget: Recent articles
 // Description: Show last articles from the blogsfera
-function blogsfera_widget_recent_articles($args) {
+function blogsfera_widget_recent_articles($args = array()) {
 	extract($args);
 	$title = __('Art&iacute;culos recientes');
 	?>
@@ -24,7 +24,7 @@ function blogsfera_widget_recent_articles($args) {
 
 // Widget: Avisos
 // Description: Display last news from another blog. Blog_id is 2 by default.
-function blogsfera_widget_avisos($args) {
+function blogsfera_widget_avisos($args = array()) {
 	$blog_id = 2;
 	extract($args);
 	$title = __('Avisos');
@@ -56,8 +56,7 @@ function blogsfera_widget_avisos($args) {
 
 // Widget: Search
 // Description: Display search boxes
-function blogsfera_widget_search($args) {
-	extract($args);
+function blogsfera_widget_search() {
 	$title = __('Buscador de blogs');
 	?>
 	
@@ -89,8 +88,7 @@ function blogsfera_widget_search($args) {
 
 // Widget: Chat
 // Description: Display a chat box
-function blogsfera_widget_chat($args) {
-	extract($args);
+function blogsfera_widget_chat() {
 	$title = __('Graffitis');
 	?>
 	
@@ -103,8 +101,7 @@ function blogsfera_widget_chat($args) {
 
 // Widget: Mas Activos
 // Description: Display most active blogs
-function blogsfera_widget_most_active($args) {
-	extract($args);
+function blogsfera_widget_most_active() {
 	$title = __('Blogs m&aacute;s activos en la &uacute;ltima semana');
 	?>
 	
@@ -117,7 +114,7 @@ function blogsfera_widget_most_active($args) {
 
 // Widget: Mas Leidos
 // Description: Display most read blogs
-function blogsfera_widget_most_read($args) {
+function blogsfera_widget_most_read($args = array()) {
 	$numberposts = 6;
 	$days_back = 7;
 	extract($args);
@@ -154,8 +151,7 @@ function blogsfera_widget_most_read($args) {
 
 // Widget: My Blogs
 // Description: Display list of owner blog and administration link
-function blogsfera_widget_my_blog($args) {
-	extract($args);
+function blogsfera_widget_my_blog() {
 	$title = __('Mi Blog');
 	?>
 	
@@ -204,8 +200,7 @@ function blogsfera_widget_my_blog($args) {
 
 // Widget: News
 // Description: Display last post from portal
-function blogsfera_widget_news($args) {
-	extract($args);
+function blogsfera_widget_news() {
 	?>
 	
 	<li id="news" class="clearfix">
@@ -229,8 +224,7 @@ function blogsfera_widget_news($args) {
 
 // Widget: Search Results
 // Description: Display search resut. Need "Search_results" page slug
-function blogsfera_widget_search_result($args) {
-	extract($args);
+function blogsfera_widget_search_result() {
 	$title = __('Resultados de la b&uacute;squeda');
 	?>
 	
@@ -311,8 +305,7 @@ function blogsfera_widget_search_result($args) {
 
 // Widget: Tags Results
 // Description: Display tag resut. Need "Tag_results" page slug
-function blogsfera_widget_tag_results($args) {
-	extract($args);
+function blogsfera_widget_tag_results() {
 	$title = __('Resultados de la tag');
 	?>
 	
@@ -344,8 +337,7 @@ function blogsfera_widget_tag_results($args) {
 
 // Widget: Tags
 // Description: Display a tag cloud
-function blogsfera_widget_tag_cloud($args) {
-	extract($args);
+function blogsfera_widget_tag_cloud() {
 	$title = __('Etiquetas de la comunidad');
 	?>
 	
@@ -379,8 +371,7 @@ function blogsfera_widget_tag_cloud($args) {
 
 // Widget: User recientes
 // Description: Display avatars of recent users
-function blogsfera_widget_recent_users($args) {
-	extract($args);
+function blogsfera_widget_recent_users() {
 	$title = __('Usuarios m&aacute;s recientes de la comunidad');
 	?>
 	
@@ -393,40 +384,62 @@ function blogsfera_widget_recent_users($args) {
 
 // Register widgets
 
+function blogsfera_register_widget($id, $name, $output_callback, $options = array()) {
+	global $wp_registered_widgets;
+
+	if ( empty($output_callback) ) {
+		unset($wp_registered_widgets[$id]);
+		return;
+	}
+
+	$defaults = array('classname' => $output_callback);
+	$options = wp_parse_args($options, $defaults);
+	$widget = array(
+		'name' => $name,
+		'id' => $id,
+		'callback' => $output_callback,
+		'params' => array_slice(func_get_args(), 4)
+	);
+	$widget = array_merge($widget, $options);
+
+	if ( is_callable($output_callback) && ( !isset($wp_registered_widgets[$id]) || did_action( 'widgets_init' ) ) )
+		$wp_registered_widgets[$id] = $widget;
+}
+
 $widget_ops = array('classname' => 'widget_recent_articles', 'description' => __("Show last articles from the blogsfera") );
-wp_register_sidebar_widget('widget_recent_articles', __('Art&iacute;culos recientes'), 'blogsfera_widget_recent_articles', $widget_ops);
+blogsfera_register_widget('widget_recent_articles', __('Art&iacute;culos recientes'), 'blogsfera_widget_recent_articles', $widget_ops);
 
 $widget_ops = array('classname' => 'widget_avisos', 'description' => __("Display last news from another blog. Blog_id is 2 by default.") );
-wp_register_sidebar_widget('widget_avisos', __('Avisos'), 'blogsfera_widget_avisos', $widget_ops);
+blogsfera_register_widget('widget_avisos', __('Avisos'), 'blogsfera_widget_avisos', $widget_ops);
 
 $widget_ops = array('classname' => 'widget_search', 'description' => __("Display search boxes") );
-wp_register_sidebar_widget('widget_search', __('Buscador de blogs'), 'blogsfera_widget_search', $widget_ops);
+blogsfera_register_widget('widget_search', __('Buscador de blogs'), 'blogsfera_widget_search', $widget_ops);
 
 $widget_ops = array('classname' => 'widget_chat', 'description' => __("Display a chat box") );
-wp_register_sidebar_widget('widget_chat', __('Graffitis'), 'blogsfera_widget_chat', $widget_ops);
+blogsfera_register_widget('widget_chat', __('Graffitis'), 'blogsfera_widget_chat', $widget_ops);
 
 $widget_ops = array('classname' => 'widget_most_active', 'description' => __("Display most active blogs") );
-wp_register_sidebar_widget('widget_most_active', __('Blogs m&aacute;s activos en la &uacute;ltima semana'), 'blogsfera_widget_most_active', $widget_ops);
+blogsfera_register_widget('widget_most_active', __('Blogs m&aacute;s activos en la &uacute;ltima semana'), 'blogsfera_widget_most_active', $widget_ops);
 
 $widget_ops = array('classname' => 'widget_most_read', 'description' => __("Display most read blogs") );
-wp_register_sidebar_widget('widget_most_read', __('Contenidos m&aacute;s le&iacute;dos de la semana'), 'blogsfera_widget_most_read', $widget_ops);
+blogsfera_register_widget('widget_most_read', __('Contenidos m&aacute;s le&iacute;dos de la semana'), 'blogsfera_widget_most_read', $widget_ops);
 
 $widget_ops = array('classname' => 'widget_my_blog', 'description' => __("Display list of owner blog and administration link") );
-wp_register_sidebar_widget('widget_my_blog', __('Mi Blog'), 'blogsfera_widget_my_blog', $widget_ops);
+blogsfera_register_widget('widget_my_blog', __('Mi Blog'), 'blogsfera_widget_my_blog', $widget_ops);
 
 $widget_ops = array('classname' => 'widget_news', 'description' => __("Display last post from portal") );
-wp_register_sidebar_widget('widget_news', __('News'), 'blogsfera_widget_news', $widget_ops);
+blogsfera_register_widget('widget_news', __('News'), 'blogsfera_widget_news', $widget_ops);
 
 $widget_ops = array('classname' => 'widget_search_result', 'description' => __("Display search resut. Need 'Search_results' page slug") );
-wp_register_sidebar_widget('widget_search_result', __('Resultados de la b&uacute;squeda'), 'blogsfera_widget_search_result', $widget_ops);
+blogsfera_register_widget('widget_search_result', __('Resultados de la b&uacute;squeda'), 'blogsfera_widget_search_result', $widget_ops);
 
 $widget_ops = array('classname' => 'widget_tag_results', 'description' => __("Display tag resut. Need 'Tag_results' page slug") );
-wp_register_sidebar_widget('widget_tag_results', __('Resultados de la tag'), 'blogsfera_widget_tag_results', $widget_ops);
+blogsfera_register_widget('widget_tag_results', __('Resultados de la tag'), 'blogsfera_widget_tag_results', $widget_ops);
 
 $widget_ops = array('classname' => 'widget_tag_cloud', 'description' => __("Display a tag cloud") );
-wp_register_sidebar_widget('widget_tag_cloud', __('Etiquetas de la comunidad'), 'blogsfera_widget_tag_cloud', $widget_ops);
+blogsfera_register_widget('widget_tag_cloud', __('Etiquetas de la comunidad'), 'blogsfera_widget_tag_cloud', $widget_ops);
 
 $widget_ops = array('classname' => 'widget_recent_users', 'description' => __( "Display avatars of recent users") );
-wp_register_sidebar_widget('recent_users', __('Usuarios m&aacute;s recientes de la comunidad'), 'blogsfera_widget_recent_users', $widget_ops);
+blogsfera_register_widget('recent_users', __('Usuarios m&aacute;s recientes de la comunidad'), 'blogsfera_widget_recent_users', $widget_ops);
 
 ?>
