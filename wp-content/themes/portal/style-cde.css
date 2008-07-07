@@ -1,0 +1,404 @@
+/* =UNDOHTML */
+
+/* undohtml.css */
+/* (CC) 2004 Tantek Celik. Some Rights Reserved.             */
+/*   http://creativecommons.org/licenses/by/2.0                   */
+/* This style sheet is licensed under a Creative Commons License. */
+
+/* Purpose: undo some of the default styling of common (X)HTML browsers */
+
+
+/* link underlines tend to make hypertext less readable, 
+   because underlines obscure the shapes of the lower halves of words */
+:link,:visited { text-decoration:none }
+
+/* no list-markers by default, since lists are used more often for semantics */
+ul,ol { list-style:none }
+
+/* avoid browser default inconsistent heading font-sizes */
+/* and pre/code too */
+h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
+
+/* remove the inconsistent (among browsers) default ul,ol padding or margin  */
+/* the default spacing on headings does not match nor align with 
+   normal interline spacing at all, so let's get rid of it. */
+/* zero out the spacing around pre, form, body, html, p, blockquote as well */
+/* form elements are oddly inconsistent, and not quite CSS emulatable. */
+/*  nonetheless strip their margin and padding as well */
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input
+{ margin:0; padding:0 }
+
+/* whoever thought blue linked image borders were a good idea? */
+a img,:link img,:visited img { border:none }
+
+/* de-italicize address */
+address { font-style:normal }
+
+/* more varnish stripping as necessary... */
+
+/* IE5.5+ PNG Alpha Fix v1.0RC4 */
+img, div { behavior: url(iepngfix.htc) };
+
+/* =global */
+
+body {
+text-align: center;
+}
+
+a:hover {
+text-decoration: underline;}
+
+
+
+/* =contenedor */
+
+#contenedor {
+margin: 10px auto;
+width: 960px;
+background: none;
+text-align: left;
+line-height: 1.2;}
+
+
+
+
+/* =branding */
+
+#branding {
+height: 230px;
+background: url(./images/branding-bg.png) no-repeat 0 0;
+position: relative;
+}
+
+
+#branding h1 {
+height: 130px;
+width: 540px;
+position: absolute;
+top: 40px;
+left: 335px;
+background: none;}
+
+
+
+#branding h1 a {
+display: block;
+height: 120px;
+width: 540px;
+text-indent: -9999px;}
+
+#branding p.descripcion {
+position: absolute;
+top: -9999px;
+left: -9999px;}
+
+
+/* =contenido */
+
+#contenido {
+background: url(./images/contenido-bg.png) repeat-y 0 0;
+padding: 0 50px;}
+
+.columna {
+width: 273px;
+float: left;
+padding: 0 0 0 20px;
+margin-bottom: -20px;
+font-family: Helvetica, Arial, sans-serif;
+font-size: .8em;
+color: #333;}
+
+.columna li {
+background: url(./images/listas.png) no-repeat left bottom;
+padding-bottom: 2px;
+margin-bottom: 20px;}
+
+.columna ul li {
+padding: 9px 10px 11px 10px;
+font-size: 1.2em;
+margin-bottom: 0;
+background: url(./images/divisor.png) no-repeat center bottom;}
+
+.columna ul li:last-child, .columna ul li.last, #busqueda .last {
+background: none;}
+
+.columna a {
+color: #039;
+text-decoration: none;}
+
+.primera {
+padding-left: 0;}
+
+.columna h2 {
+padding: 10px 14px 6px;
+border-bottom: 2px solid #339;
+background: none;
+color: #e8eef8;
+margin: 0;
+line-height: 1.1 ;
+font-size: 1.5em;
+font-family: helvetica, Arial, georgia, times, helvetica, serif;
+font-weight: normal;
+letter-spacing: -1px;
+position: relative;
+z-index: 100;
+background: url(./images/title.png) no-repeat 0 0;}
+
+.columna #mi-blog h2 {
+background-image: url(./images/mi-blog.png);
+padding-left: 50px;}
+
+.columna #mas-leidos h2 {
+background-image: url(./images/mas-leidos.png);
+padding-left: 49px;}
+
+.columna #news h2 {
+background-image: url(./images/news.png);
+padding-left: 63px;
+margin-bottom: 7px;}
+
+.columna #busqueda h2 {
+background-image: url(./images/busqueda.png);
+padding-left: 49px;}
+
+.columna #users-recientes h2 {
+background-image: url(./images/users-recientes.png);
+padding-left: 49px;}
+
+.columna #art-recientes h2 {
+background-image: url(./images/art-recientes.png);
+padding-left: 37px;}
+
+.columna #mas-activos h2 {
+background-image: url(./images/mas-activos.png);
+padding-left: 60px;}
+
+.columna #tags h2 {
+background-image: url(./images/tags.png);
+padding-left: 42px;}
+
+.columna #search-results h2 {
+background-image: url(./images/search-results.png);
+padding-left: 38px;}
+
+/* búsqueda */
+
+#busqueda p {
+padding-bottom: 4px;}
+
+#busqueda li {
+background: url(./images/divisor.png) no-repeat center bottoḿ;}
+
+.columna form select {
+width: 253px !important;
+margin-bottom: 4px;}
+
+
+/* =users-recientes */
+
+#users-recientes ul {
+padding: 10px 9px 7px 9px;}
+
+#users-recientes ul li {
+width: 48px;
+height: 48px;
+float: left;
+background: none;
+padding: 0 3px 3px 0;
+margin: 0;}
+
+#users-recientes ul li a {
+padding: 0;
+margin: 0;}
+
+#users-recientes ul li a img {
+margin: 0;}
+
+/* =news */
+
+#news p { padding: 3px 9px 7px 9px;}
+
+
+/* =art-recientes y =search-results */
+
+#art-recientes {
+clear: left;}
+
+#art-recientes ul, #search-results ul {
+position: relative;}
+
+#art-recientes ul li, #search-results ul li {
+margin: 0;
+min-height: 48px;
+padding: 9px 10px 11px 10px;
+position: relative;}
+
+#art-recientes ul li a.avatar, #search-results ul li a.avatar {
+display: block;
+position: absolute;
+top: 9px;
+left: 10px;}
+
+#art-recientes ul li a, #search-results ul li a {
+font-weight: bold;
+text-decoration: none;}
+
+#search-results ul li a {
+color: #c90;} 
+
+#art-recientes ul li p {
+font-size: 90%;}
+
+#art-recientes ul li p, #art-recientes ul li h3,
+#search-results ul li p, #search-results ul li h3 {
+margin-left: 56px; }
+
+#search-results p.query {
+padding: 10px 10px 0;}
+
+#search-results {
+background: url(./images/lista-naranja.png) no-repeat left bottom;}
+
+#search-results ul li {
+background: url(./images/divisor-naranja.png) no-repeat center bottom;}
+
+#search-results ul li.last {
+background: none;}
+
+
+/* =tags */
+
+#tagcloud {
+padding: 10px;}
+
+#tagcloud a {
+color: #039;}
+
+#tagcloud a:hover, #tagcloud a:focus {
+text-decoration: underline;}
+
+.tag:link {
+text-decoration: none;}
+
+/* =siteinfo */
+
+#siteinfo {
+background: url(./images/siteinfo-bg.png) no-repeat left bottom;
+padding-bottom: 30px;
+text-align: center;
+font: 14px helvetica, arial, "times new roman", serif;
+color: #eee;}
+
+#siteinfo p {
+padding: 10px 50px;}
+
+#siteinfo p a {
+color: #60a0e0;}
+
+#siteinfo .declaracion {
+background: url(./images/declaracion-bg.png) no-repeat 0 0;
+padding-top: 50px;}
+
+/* =codigo-de-estilo */
+
+#contenido {
+padding: 0 30px}
+
+#branding {
+background: url(./images/cde-branding-bg.png) no-repeat 0 0;
+}
+
+#contenido .page {
+font-family: Helvetica, Arial, sans-serif;
+padding: 0 0 20px 0;
+border: none;}
+
+#contenido .page h2 {
+padding: 7px 0 0 100px;
+font-size: 40px;
+height: 73px;
+font-family: helvetica, arial, georgia, "Times New Roman", Times, serif;
+letter-spacing: -1px;
+text-transform: none;
+color: #fff;
+background: url(./images/cde-h2.png) no-repeat 0 0;}
+
+
+#contenido .page p {
+font: 22px/26px helvetica, georgia, "times new roman", Times, serif;
+margin: 0 40px;}
+
+#contenido .page p em {
+font-size: 120%;
+font-weight: bold;
+font-style: normal;
+color: #039;
+display: block;
+text-align: center;}
+
+#contenido .page ul {
+list-style: none;
+margin: 20px 40px;
+color: #039;
+border: 2px solid #cdd6e4;
+border-bottom: 2px solid #a0b8dc;
+border-right: 2px solid #a0b8dc;}
+
+#contenido .page ul li {
+font-size: 20px;
+line-height: 24px;
+letter-spacing: -1px;
+font-family: georgia, "times new roman", Times, serif;
+padding: 20px;
+background: #dee8f7 url(./images/divisor-cde.png) no-repeat center bottom;
+}
+
+#contenido .page ul li.last {
+background: #dee8f7;}
+
+
+/* =otros */
+
+
+.clearfix:after {
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+ .clearfix {
+display: inline-block;
+}  
+
+/* Holly Hack Targets IE Win only \*/
+    * html .clearfix {height: 1%;}
+      .clearfix {display: block;}
+/* End Holly Hack */
+
+/* =page */
+
+.page h2 {
+text-transform: uppercase;
+font-family: helvetica, arial, sans-serif;
+font-size: 2em;
+font-weight: normal;
+margin-bottom: 15px;}
+
+.page {
+padding-bottom: 1em;
+margin-bottom: 1em;
+border-bottom: 1px solid #eee;}
+
+.page p {
+padding-top: 12px;
+padding-bottom: 6px;
+color: #333;}
+
+.page ul {
+list-style-type: disc;
+margin-left: 15px;}
+
+.page ol {
+list-style-type: decimal;
+margin-left: 22px;}
