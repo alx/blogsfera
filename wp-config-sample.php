@@ -30,7 +30,7 @@ $table_prefix  = 'wp_';   // Only numbers, letters, and underscores please!
 // chosen language must be installed to wp-content/languages.
 // For example, install de.mo to wp-content/languages and set WPLANG to 'de'
 // to enable German language support.
-define ('WPLANG', 'es');
+define ('WPLANG', 'es_ES');
 
 // uncomment this to enable wp-content/sunrise.php support
 //define( 'SUNRISE', 'on' );
