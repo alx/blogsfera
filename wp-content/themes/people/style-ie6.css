@@ -1,0 +1,69 @@
+/* CSS para ie6 */
+
+
+#site #sidebar {
+font-size: 16px;
+width:8.25em;
+margin-left: 1.25em;
+float:left;
+clear: right; }
+
+#site #content {
+
+width: 36em;}
+
+#site div.contact hr {
+position:relative;
+top: 8px;}
+
+html body div#site div#content div.vitals span.name h2 {
+font-size: 2em;
+}
+
+
+html body div#site div#content div.additional-info div.optional-fields {
+font-family: helvetica, arial, sans-serif;
+font-size: 0.68em;}
+
+html body div#site div#content div.additional-info div.address {
+font-family: helvetica, arial, sans-serif;
+font-size: 0.68em;}
+
+html body div#site div#content div.phone {
+font-family: helvetica, arial, sans-serif;
+font-size: 0.68em;
+float: left;}
+
+html body div#site div#content div.extra  {
+font-family: helvetica, arial, sans-serif;
+font-size: 0.68em;
+width: 100%;}
+
+
+html body div#site div#content div.extra div.notes, 
+html body div#site div#content div.extra div.related-contacts {
+font-size: 1em;}
+
+html body div#site div#content div.extra div.related-contacts h3.site-subtitle {
+font-size: 0.77em;}
+
+
+
+html body div#site div#content div.vitals{
+font-family: helvetica, arial, sans-serif;
+font-size: 0.68em;
+width: 30em;
+}
+
+html body div#site div#content div.vitals img.contact-picture {
+margin: 0 2em 2em 0;}
+
+html body div#site div#content div.vitals ul {
+float: left;}
+
+html body div#site div#content div.vitals span.name {
+display: block;
+float: none;
+border-bottom: none;}
+
+
