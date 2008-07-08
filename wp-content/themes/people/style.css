@@ -1,0 +1,122 @@
+/*  
+Theme Name: WP Contact Manager
+Theme URI: http://thedesigncanopy.com/downloads/wp-contact-manager/
+Description: A bare-bones contact manager for WordPress.
+Version: 0.1
+Author: David Yeiser
+Author URI: http://thedesigncanopy.com/
+*/
+
+* { margin:0; padding:0; }
+
+body { font-family:"Lucida Grande", Arial, sans-serif; color:#665; background:url("images/bg-vlines.png") 0 0 repeat; }
+
+a:link { color:#554; }
+a:visited { color:#999; }
+a:hover { color:#004d86; }
+a:active { color:#004d86; }
+
+span.clearer { height:0; display:block; clear:both; font-size:1px; line-height:1px; }
+
+
+#header {
+	background: url(images/blogsfera-logo-1.jpg);
+	height: 213px;
+	width: 800px;
+	margin-bottom: 8px;
+}
+
+/* ------- LAYOUT ------- */
+
+#site { width:48.375em; margin:1.25em auto; }
+#content { width:36em; padding:1.25em; float:left; border:0.187em solid #7D81FF; background-color:#fff; }
+#sidebar { width:8.25em; margin-left:1.25em; float:left; }
+#site-meta { clear:both; }
+
+/* ------- MULTIPLE CONTACTS ------- */
+
+h2 { padding-bottom:0.625em; font-family:Georgia, "Times New Roman", serif; font-size:1.125em; font-weight:normal; color:#2D31AF; }
+h2 span.archived-feature { font-family:"Courier New", Courier, monospace; font-weight:bold; color:#333; }
+
+#content .contact, #content .alt { clear:both; }
+
+/*#content .contact {background-color:#dfdfdf;}
+#content .alt {background-color:#dee6f1;}*/
+
+#content .contact {background-color:#fff;}
+#content .alt {background-color:#7D81FF;}
+
+#content .contact span { margin-right:0.063em; padding:5px; display:block; float:left; /*border-top:0.063em solid #d0d0d0;*/ background-color:#fff; }
+#content .alt span {/* border-top:0.063em solid #cdd5e0;*/ background-color:#7D81FF; }
+#content .contact span a { text-decoration:none; }
+#content .contact span a:visited { color:#554; }
+#content .contact span.m-name { /*height:35px;*/ width:10.769em; font-family:"Lucida Grande", Arial, Verdana, sans-serif; font-size:0.813em; font-weight:bold;/* line-height:1.5em;*/ }
+#content .contact span.m-email {/* height:35px;*/ width:16.462em; margin-right:0.063em; font-size:0.813em; /*line-height:1.5em;*/ }
+#content .contact span.m-mobile { /*height:35px;*/ width:14.455em; margin-right:0; font-size:0.813em; /*line-height:1.5em; */}
+#content .contact span.m-mobile span { margin-right:0; padding:0; display:inline; float:none; font-size:1em; font-weight:bold; letter-spacing:1px; border-top:0; }
+#content .contact hr { height:0.063em; display:block; clear:both; border:0; background-color:#fff; }
+
+/* ------- SINGLE CONTACT ------- */
+
+h3.site-subtitle { color: #2D31AF; font-family:Verdana, Arial, sans-serif; font-size:11px; line-height:20px; text-transform:uppercase; }
+
+.vitals { width:21.875em; float:left; font-family:Verdana, Arial, sans-serif; }
+img.contact-picture { margin:0 1em 1em 0; float:left; }
+.vitals p { width:14.625em; float:left; }
+span.name { margin-bottom:0.375em; padding-bottom:1em; display:block; font-family:Georgia, "Times New Roman", serif; font-size:1.125em; color:#2D31AF; border-bottom:0.063em solid #2D31AF; }
+span.organization { padding-bottom:0.375em; display:block; font-size:0.813em; line-height:20px; color:#776; }
+span.email, span.website { display:block; font-size:0.688em; font-weight:bold; line-height:16px; }
+span.website a, span.email a { text-decoration:none; }
+
+.phone { width:12.5em; padding-left:1.625em; float:left; font-family:"Lucida Grande", Arial, Verdana, sans-serif; }
+ul.phone-numbers { list-style:none; }
+ul.phone-numbers li { margin-bottom:1px; /*padding:0.125em 0.375em;*/ font-size:9px; line-height:20px; background-color:#eee; }
+ul.phone-numbers li:first-child { background-color:#ddd; }
+ul.phone-numbers li span.phone-number { font-weight:bold; letter-spacing:1px; }
+
+.additional-info { padding:1.25em 0; clear:both; }
+.address { margin-right:1.625em; float:left; }
+.optional-fields { width:12.5em; float:left; font-size:0.813em; line-height:20px; }
+
+/* The width is static on this element due to alignment with the contact image */
+.address h3.site-subtitle { color: #2D31AF; width:100px; margin-right:1.538em; float:left; text-align:right; } 
+.address p { width:17.75em; float:left; font-size:0.813em; line-height:20px; }
+
+.extra { width:36em; margin-top:20px; padding-top:10px; float:left; clear:both; border-top:3px double #2D31AF; }
+.notes { width:21.875em; float:left; }
+.notes p { padding:3px 0 12px 0; font-size:0.688em; line-height:16px; }
+
+.related-contacts { width:12.5em; margin-left:1.625em; float:left; }
+.related-contacts h3 { color: #2D31AF; font-family:Verdana, Arial, sans-serif; font-size:0.688em; line-height:20px; text-transform:uppercase; }
+.related-contacts ul { padding-top:3px; }
+.related-contacts li { font-family:Georgia, "Times New Roman", serif; font-size:12px; line-height:17px; }
+.related-contacts li a { text-decoration:none; }
+span.elim { font-size:11px;}
+.contact-tags { padding-top:1em; clear:both; }
+.contact-tags span { font-family:Verdana, Helvetica, Arial, sans-serif; font-size:0.688em; font-weight:bold; }
+.contact-tags a { font-size:0.688em; font-weight:bold; text-decoration:none; }
+
+/* ------- SIDEBAR ------- */
+
+#sidebar p { padding-bottom:1.25em; font-size:0.688em; line-height:1em; }
+#sidebar h3 { color: #2D31AF; margin-bottom:0.5em; font-size:0.688em; text-transform:uppercase; border-bottom:0.125em solid #2D31AF; }
+#sidebar p a { text-decoration:none; }
+#sidebar form { padding:0 0 1.25em 0; }
+#sidebar ul { list-style-type: none;padding-top:3px; }
+#sidebar li { font-family:Georgia, "Times New Roman", serif; font-size:12px; line-height:17px; }
+#sidebar li a.node { color:black; font-size:15px; margin-top:10px; font-weight: bold;}
+#sidebar li a { text-decoration:none; }
+#searchform input { padding:0.125em; font-family:Consolas, "Courier New", monospace; font-size:0.688em; font-weight:bold; color:#554; border:0.063em solid #ddd; background-color:#fff; }
+#searchform input#searchsubmit { margin-top:0.313em; padding:0.125em 0.313em; text-transform:uppercase; cursor:pointer; border:0.063em solid #ddd; background-color:#ddd; }
+		
+
+
+}
+
+/* ------- SITE META ------- */
+
+#site-meta p { padding:0.625em; font-size:0.688em; color:#999; }
+#site-meta p a { color:#999; }
+#site-meta p a.home-link { font-weight:bold; color:#554; }
+#site-meta a.home-link:hover, #site-meta a.home-link:active { color:#004d86; }
+#site-meta a:hover, #site-meta a:active { color:#004d86; }
