@@ -16,17 +16,17 @@
 	<?php include (TEMPLATEPATH . '/searchform.php'); ?>
 
 	<h3 class="site-subtitle">Areas</h3>
-	<?php if(!isset($extra_data)){$extra_data = new User_Extra_Data;}?>
+	<?php //if(!isset($extra_data)){$extra_data = new User_Extra_Data;}?>
 	
 	<?php
-		$areas = $extra_data->area;
+		/*$areas = $extra_data->area;
 		echo '<ul>';
 		foreach ($areas as $key => $area){
 			echo '<li><a href="'.$url.'/?area='.$key.'" >'.$area.'</a></li>';
 
 		}
 		echo '</ul>';
-
+	       */
 	?>
 
 </div>
