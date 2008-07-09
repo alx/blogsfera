@@ -28,7 +28,7 @@
 		$users = $wpdb->get_col("SELECT ID FROM $wpdb->users ORDER BY user_login ASC LIMIT $i,$inc");
 	}
 	$alt = "";
-	$extra_data = new User_Extra_Data;
+	//$extra_data = new User_Extra_Data;
 	foreach($users as $user_id){
 		setup_userdata($user_id); ?>
 		<?php if ($alt == "") { $alt = " alt"; } else { $alt = ""; } ?>
@@ -37,10 +37,10 @@
 			<span class="m-email"><?php echo $user_email; ?></span>
 			<span class="m-mobile">
 				<?php
-					$area = get_usermeta($user_id, 'area');
-					$unidad = 'unidad_'.$area;
-					$unidad_extra = $extra_data->$unidad;
-					echo '<a href="'.$url.'/?area='.$area.'" >'.$extra_data->area[$area].'</a> - '.'<a href="'.$url.'/?unidad='.get_usermeta($user_id, 'unidad').'" >'.$unidad_extra[get_usermeta($user_id, 'unidad')].'</a>';					
+					//$area = get_usermeta($user_id, 'area');
+					//$unidad = 'unidad_'.$area;
+					//$unidad_extra = $extra_data->$unidad;
+					//echo '<a href="'.$url.'/?area='.$area.'" >'.$extra_data->area[$area].'</a> - '.'<a href="'.$url.'/?unidad='.get_usermeta($user_id, 'unidad').'" >'.$unidad_extra[get_usermeta($user_id, 'unidad')].'</a>';					
 					
 				?>
 			</span>

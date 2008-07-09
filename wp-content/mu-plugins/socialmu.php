@@ -38,6 +38,19 @@ function del_friend($user_id, $friend_user_id){
 	delete_usermeta($user_id, 'SocialMu_friend_'.$friend_user_id);
 }
 
+function get_last_blog_posts($blog_id, $count=1) {
+	global $wpdb;
+
+	$key = $blog_id."-".$post_id."-last_".$count."_blog_post";
+	$posts = wp_cache_get( $key, "site-options" );
+	if( $posts == false ) {
+		$posts = $wpdb->get_results( "SELECT * FROM {$wpdb->base_prefix}{$blog_id}_posts WHERE post_type = 'post' AND post_status = 'publish' ORDER BY post_date_gmt DESC LIMIT {$count}", ARRAY_A );
+		wp_cache_add( $key, $post, "site-options", 120 );
+	}
+
+	return $posts;
+}
+
 //show basic form to add xfn rel
 function show_xfn_form($user_id){
 
