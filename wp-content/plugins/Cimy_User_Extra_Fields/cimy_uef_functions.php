@@ -269,10 +269,14 @@ function cimy_dropDownOptions($values, $selected) {
 	return $ret;
 }
 
-function cimy_get_thumb_path($file_path) {
+function cimy_get_thumb_path($file_path, $oldname=false) {
 	$file_path_purename = substr($file_path, 0, strrpos($file_path, "."));
-	$file_path_ext = substr($file_path, strlen($file_path_purename));
-	$file_thumb_path = $file_path_purename.".thumbnail".$file_path_ext;
+	$file_path_ext = strtolower(substr($file_path, strlen($file_path_purename)));
+	
+	if ($oldname)
+		$file_thumb_path = $file_path_purename.".thumbnail".$file_path_ext;
+	else
+		$file_thumb_path = $file_path_purename."-thumbnail".$file_path_ext;
 	
 	return $file_thumb_path;
 }
@@ -301,52 +305,28 @@ function cimy_change_enc_type($form_name, $field_name) {
 	<!--
 	
 	function uploadPic() {
-		document.<?php echo $form_name; ?>.enctype = "multipart/form-data";
+		var browser = navigator.appName;
+	
+		if (browser == "Microsoft Internet Explorer")
+			document.<?php echo $form_name; ?>.encoding = "multipart/form-data";
+		else
+			document.<?php echo $form_name; ?>.enctype = "multipart/form-data";
+		
 		var upload = document.<?php echo $form_name.".".$field_name; ?>.value;
 		upload = upload.toLowerCase();
-		var ext1 = upload.substring((upload.length-4),(upload.length));
-		var ext2 = upload.substring((upload.length-5),(upload.length));
+		
+		if (upload != '') {
+			var ext1 = upload.substring((upload.length-4),(upload.length));
+			var ext2 = upload.substring((upload.length-5),(upload.length));
 	
-		if ((ext1 != '.gif') && (ext1 != '.png') && (ext1 != '.jpg') && (ext2 != '.jpeg') && (ext2 != '.tiff')) {
-			alert('<?php _e("Please upload an image with one of the following extensions", $cimy_uef_domain);?>: gif png jpg jpeg tiff');
+			if ((ext1 != '.gif') && (ext1 != '.png') && (ext1 != '.jpg') && (ext2 != '.jpeg') && (ext2 != '.tiff')) {
+				alert("<?php _e("Please upload an image with one of the following extensions", $cimy_uef_domain);?>: gif png jpg jpeg tiff");
+			}
 		}
 	}
 	//-->
 	</script>
 	
-	<?php
-}
-
-function cimy_invert_selection() {
-
-	?>
-	<script type="text/javascript" language="javascript">
-
-	var formblock;
-	var forminputs;
-
-	function invert_sel(formname, name, label) {
-		formblock = document.getElementById(formname);
-		forminputs = formblock.getElementsByTagName('input');
-	
-		for (i = 0; i < forminputs.length; i++) {
-			// regex here to check name attribute
-			var regex = new RegExp(name, "i");
-	
-			if (regex.test(forminputs[i].getAttribute('name'))) {
-				
-				if (forminputs[i].checked == false) {
-					forminputs[i].checked = true;
-				} else {
-					forminputs[i].checked = false;
-				}
-			}
-		}
-	
-		return label;
-	}
-	
-	</script>
 	<?php
 }
 

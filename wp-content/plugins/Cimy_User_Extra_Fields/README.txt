@@ -51,7 +51,7 @@ Bugs or suggestions can be mailed at: cimmino.marco@gmail.com
 
 REQUIREMENTS:
 PHP >= 4.3.0
-WORDPRESS >= 2.1.x
+WORDPRESS >= 2.5.x
 MYSQL >= 4.0
 
 
@@ -60,9 +60,6 @@ INSTALLATION:
 
 UPDATE FROM A PREVIOUS VERSION:
 - always deactivate the plug-in and reactivate after the update
-
-ENABLE PICTURE UPLOAD:
-- to enable picture uplaod you must modify three WordPress files, there is no way to upload file without
 
 
 FUNCTIONS USEFUL FOR YOUR THEMES OR TEMPLATES:
@@ -299,7 +296,6 @@ So if you for example didn't change the default plug-in directory then you must 
 
 KNOWN BUGS/BEHAVIORS:
 - if you add too many fields in the "A&U Extended" menu they will go out of frame
-- if you add too many fields in the registration form you will go out of frame, but in this particular case it's a WordPress limitation; to workaround this you have to modify yourself file [wordpress dir]/wp-admin/images/login-bkg-tile.gif extending its height (by default is only 700 pixels) or you can use one provided by me in the package with these height: 1000, 1500, 2000 or 5000 pixels note that if height is bigger than necessary it's automatically cut, so probably choosing the biggest one is the right solution
 - some rules are applied only during registration (apart editable and visibility rules and max length for text and password fields only)
 - registration date cannot be modified
 
@@ -324,6 +320,17 @@ Q: get_cimyFieldValue function doesn't work, why?
 
 A: From v0.9.1 I have added a security option to disable that function. If you don't really use it then avoid to enable it, this is because this function can be hacked to retrieve all personal data inserted by subscribers in all extra fields.
 Enable and use this function only if extra fields does not contains personal informations.
+
+
+Q1: I got "Fatal error: Allowed memory size of 8388608 bytes exhausted [..]", why?
+Q2: I got blank pages after activating this plug-in, why?
+
+A: Because your memory limit is too low, to fix it edit your php.ini and search memory_limit key and put at least to 12M
+
+
+Q: Your plug-in is great, but when you will add support to add more than one choice in radio and dropdown fields?
+
+A: This feature is here since ages, for radio field just use the same name, for dropdown field read instructions in the add field area (in the plug-in).
 
 
 Q: When feature XYZ will be added?
@@ -354,6 +361,49 @@ A lot of times I cannot reproduce the problem and I need more details, so if you
 
 
 CHANGELOG:
+v1.1.1 - 15/05/2008
+- Added Swedish translation (Peter)
+- Fixed problems with special characters (may need resave the content)
+- Fixed two untranslated strings in the options (thanx to Peter)
+
+v1.1.0 - 07/05/2008
+- Fixed thumbnails were broken with WordPress 2.5.x (thanx to Rita)
+- Fixed thumbnails were broken when an image have an upper-case extension (due to a WordPress issue)
+- Updated German translation (Rita)
+
+v1.1.0 release candidate 1 - 28/04/2008
+- Fixed a regression with WordPress 2.5.x user's without admin privileges cannot edit extra fields at all
+- Fixed pages in A&U Extended page pointed to non Extended page
+- Fixed some hidden text in "Add field" area for certain configurations (thanx to Rik)
+
+v1.1.0 beta2 - 05/04/2008
+- Changed theme for: user's Profile, A&U Extended page, Options and Fields management
+- Code cleanup
+- Updated Italian translation
+- Readme file updated
+
+v1.1.0 beta1 - 31/03/2008
+- Added initial support to WordPress 2.5
+- Added custom css for registration fields
+
+v1.0.2 - 24/03/2008
+- Added Russian translation (mikolka)
+- Added Danish translation (Rune)
+- Fixed a bad bug that in some cases checkbox fields were saved wrongly as checked (thanx to Dana Rockel for the patch)
+- Fixed picture file attributes for broken server (thanx to Chris Adams for the partial patch)
+- Fixed picture url when WordPress URL and Blog URL are different (thanx to Neil Stead for the patch)
+- Fixed picture upload with Internet Explorer, due to a bug in it probably :( (thanx to Nicola aka ala_747 for the partial patch)
+- Fixed picture upload with some localized WordPress (like French) (thanx to buzz)
+- Removed an obsolete part in the Readme file (thanx to Mark)
+
+v1.0.1 - 22/11/2007
+- Added better directory creation handling for images uploader
+- Added French translation (Sev)
+- Updated Brazilian Portuguese translation (Sher)
+- Moved invert selection javascript to a stand-alone file so admin page is XHTML 1.0 Transitional compliant again
+- Fixed a rare image upload failure during registration, can happen if at least one WordPress hidden field is present
+- Fixed warning pop-up for image extension, shown wrongly in certain cases
+
 v1.0.0 - 16/10/2007
 - Added hidden WordPress fields support (First name, Last name, Nickname, Website, AIM, Yahoo IM and Jabber / Google Talk)
 - Added initial WordPress MU compatibility! (Thanx to Martin Cleaver and Beau Lebens for explaining me how MU works)

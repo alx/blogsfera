@@ -1,7 +1,7 @@
 <?php
 
 function cimy_plugin_install () {
-	global $wpdb, $old_wpdb_data_table, $wpdb_data_table, $old_wpdb_fields_table, $wpdb_fields_table, $wpdb_wp_fields_table, $cimy_uef_options, $cimy_uef_version, $is_mu;
+	global $wpdb, $old_wpdb_data_table, $wpdb_data_table, $old_wpdb_fields_table, $wpdb_fields_table, $wpdb_wp_fields_table, $cimy_uef_options, $cimy_uef_version, $is_mu, $cuef_upload_path;
 
 	if (!cimy_check_admin('activate_plugins'))
 		return;
@@ -20,7 +20,17 @@ function cimy_plugin_install () {
 		else
 			$force_update = true;
 	}
-		
+	
+	$charset_collate = "";
+	
+	// try to get proper charset and collate
+	if ( $wpdb->supports_collation() ) {
+		if ( ! empty($wpdb->charset) )
+			$charset_collate = " DEFAULT CHARACTER SET $wpdb->charset";
+		if ( ! empty($wpdb->collate) )
+			$charset_collate .= " COLLATE $wpdb->collate";
+	}
+				
 	if ($force_update) {
 		// switch without breaks so every earlier versions receive all updates
 		switch ($options['version']) {
@@ -84,6 +94,66 @@ function cimy_plugin_install () {
 			
 			case "1.0.0-beta2":
 				$options['version'] = $cimy_uef_version;
+				
+			case "1.0.0":
+				$options['version'] = $cimy_uef_version;
+				
+			case "1.0.1":
+				$options['version'] = $cimy_uef_version;
+				
+			case "1.0.2":
+				$options['version'] = $cimy_uef_version;
+			
+			case "1.1.0-beta1":
+				$options['version'] = $cimy_uef_version;
+
+			case "1.1.0-beta2":
+				$options['version'] = $cimy_uef_version;
+
+			case "1.1.0-rc1":
+				$options['version'] = $cimy_uef_version;
+				
+				$sql = "SELECT ID FROM ".$wpdb_fields_table." WHERE TYPE='picture'";
+				$f_pictures = $wpdb->get_results($sql, ARRAY_A);
+				
+				if (isset($f_pictures)) {
+					if ($f_pictures != NULL) {
+						foreach ($f_pictures as $f_picture) {
+							$sql = "SELECT VALUE FROM ".$wpdb_data_table." WHERE FIELD_ID=".$f_picture['ID'];
+							$p_filenames = $wpdb->get_results($sql, ARRAY_A);
+
+							if (isset($p_filenames)) {
+								if ($p_filenames != NULL) {
+									foreach ($p_filenames as $p_filename) {
+										$path_pieces = explode("/", $p_filename['VALUE']);
+										$p_filename = basename($p_filename['VALUE']);
+										$user_login = array_slice($path_pieces, -2, 1);
+										
+										$p_oldfilename_t = $cuef_upload_path.$user_login[0]."/".cimy_get_thumb_path($p_filename, true);
+										$p_newfilename_t = $cuef_upload_path.$user_login[0]."/".cimy_get_thumb_path($p_filename, false);
+										
+										if (is_file($p_oldfilename_t))
+											rename($p_oldfilename_t, $p_newfilename_t);
+									}
+								}
+							}
+						}
+					}
+				}
+				
+			case "1.1.0":
+				$options['version'] = $cimy_uef_version;
+				
+				if ($charset_collate != "") {
+					$sql = "ALTER TABLE ".$wpdb_fields_table.$charset_collate;
+					$wpdb->query($sql);
+					
+					$sql = "ALTER TABLE ".$wpdb_wp_fields_table.$charset_collate;
+					$wpdb->query($sql);
+					
+					$sql = "ALTER TABLE ".$wpdb_data_table.$charset_collate;
+					$wpdb->query($sql);
+				}
 		}
 		
 		if ($is_mu)
@@ -94,7 +164,7 @@ function cimy_plugin_install () {
 	
 	if ($wpdb->get_var("SHOW TABLES LIKE '$wpdb_wp_fields_table'") != $wpdb_wp_fields_table) {
 
-		$sql = "CREATE TABLE ".$wpdb_wp_fields_table." (ID bigint(20) NOT NULL AUTO_INCREMENT, F_ORDER bigint(20) NOT NULL, NAME varchar(20), LABEL TEXT, DESCRIPTION TEXT, TYPE varchar(20), RULES TEXT, VALUE TEXT, PRIMARY KEY (ID), INDEX F_ORDER (F_ORDER), INDEX NAME (NAME));";
+		$sql = "CREATE TABLE ".$wpdb_wp_fields_table." (ID bigint(20) NOT NULL AUTO_INCREMENT, F_ORDER bigint(20) NOT NULL, NAME varchar(20), LABEL TEXT, DESCRIPTION TEXT, TYPE varchar(20), RULES TEXT, VALUE TEXT, PRIMARY KEY (ID), INDEX F_ORDER (F_ORDER), INDEX NAME (NAME))".$charset_collate.";";
 
 		require_once(ABSPATH . 'wp-admin/upgrade-functions.php');
 		dbDelta($sql);
@@ -102,7 +172,7 @@ function cimy_plugin_install () {
 
 	if ($wpdb->get_var("SHOW TABLES LIKE '$wpdb_data_table'") != $wpdb_data_table) {
 
-		$sql = "CREATE TABLE ".$wpdb_data_table." (ID bigint(20) NOT NULL AUTO_INCREMENT, USER_ID bigint(20) NOT NULL, FIELD_ID bigint(20) NOT NULL, VALUE TEXT NOT NULL, PRIMARY KEY (ID), INDEX USER_ID (USER_ID), INDEX FIELD_ID (FIELD_ID))";
+		$sql = "CREATE TABLE ".$wpdb_data_table." (ID bigint(20) NOT NULL AUTO_INCREMENT, USER_ID bigint(20) NOT NULL, FIELD_ID bigint(20) NOT NULL, VALUE TEXT NOT NULL, PRIMARY KEY (ID), INDEX USER_ID (USER_ID), INDEX FIELD_ID (FIELD_ID))".$charset_collate.";";
 
 		require_once(ABSPATH . 'wp-admin/upgrade-functions.php');
 		dbDelta($sql);
@@ -113,7 +183,7 @@ function cimy_plugin_install () {
 
 	if ($wpdb->get_var("SHOW TABLES LIKE '$wpdb_fields_table'") != $wpdb_fields_table) {
 
-		$sql = "CREATE TABLE ".$wpdb_fields_table." (ID bigint(20) NOT NULL AUTO_INCREMENT, F_ORDER bigint(20) NOT NULL, NAME varchar(20), LABEL TEXT, DESCRIPTION TEXT, TYPE varchar(20), RULES TEXT, VALUE TEXT, PRIMARY KEY (ID), INDEX F_ORDER (F_ORDER), INDEX NAME (NAME));";
+		$sql = "CREATE TABLE ".$wpdb_fields_table." (ID bigint(20) NOT NULL AUTO_INCREMENT, F_ORDER bigint(20) NOT NULL, NAME varchar(20), LABEL TEXT, DESCRIPTION TEXT, TYPE varchar(20), RULES TEXT, VALUE TEXT, PRIMARY KEY (ID), INDEX F_ORDER (F_ORDER), INDEX NAME (NAME))".$charset_collate.";";
 
 		require_once(ABSPATH . 'wp-admin/upgrade-functions.php');
 		dbDelta($sql);
