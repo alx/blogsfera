@@ -3,7 +3,7 @@
 Plugin Name: Cimy User Extra Fields
 Plugin URI: http://www.cimatti.it/blog/cimy-wordpress-plugins/cimy-user-extra-fields/
 Plugin Description: Add some useful fields to registration and user's info
-Version: 1.0.0
+Version: 1.1.1
 Author: Marco Cimmino
 Author URI: mailto:cimmino.marco@gmail.com
 */
@@ -11,7 +11,7 @@ Author URI: mailto:cimmino.marco@gmail.com
 /*
 
 Cimy User Extra Fields - Allows adding mySQL Data fields to store/add more user info
-Copyright (c) 2006, 2007 Marco Cimmino
+Copyright (c) 2006-2008 Marco Cimmino
 
 Code for drop-down support is in part from Raymond Elferink raymond@raycom.com
 
@@ -33,6 +33,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 The full copy of the GNU General Public License is available here: http://www.gnu.org/licenses/gpl.txt
 
 */
+
+// added for WordPress 2.5 compatibility
+global $wpdb, $old_wpdb_data_table, $wpdb_data_table, $old_wpdb_fields_table, $wpdb_fields_table, $wpdb_wp_fields_table, $cimy_uef_options, $cimy_uef_version, $is_mu, $cuef_upload_path;
 
 if (!stristr($wp_version, "mu") === FALSE) {
 	$is_mu = true;
@@ -138,16 +141,18 @@ require_once($cuef_plugin_dir.'/cimy_uef_functions.php');
 require_once($cuef_plugin_dir.'/cimy_uef_options.php');
 require_once($cuef_plugin_dir.'/cimy_uef_admin.php');
 
+$cuef_blog_url = get_bloginfo("wpurl");
 $cuef_upload_path = ABSPATH."wp-content/".$cuef_plugin_path;
-$cuef_upload_webpath = get_bloginfo("url")."/wp-content/".$cuef_plugin_path;
+$cuef_upload_webpath = $cuef_blog_url."/wp-content/".$cuef_plugin_path;
+$cuef_css_webpath = $cuef_blog_url."/wp-content/plugins/".$cuef_plugin_path."css/";
 
 $cimy_uef_name = "Cimy User Extra Fields";
-$cimy_uef_version = "1.0.0";
+$cimy_uef_version = "1.1.1";
 $cimy_uef_url = "http://www.cimatti.it/blog/cimy-wordpress-plugins/cimy-user-extra-fields/";
 
 $start_cimy_uef_comment = "<!--\n";
 $start_cimy_uef_comment .= "\tStart code from ".$cimy_uef_name." ".$cimy_uef_version."\n";
-$start_cimy_uef_comment .= "\tCopyright (c) 2006, 2007 Marco Cimmino\n";
+$start_cimy_uef_comment .= "\tCopyright (c) 2006-2008 Marco Cimmino\n";
 $start_cimy_uef_comment .= "\t".$cimy_uef_url."\n";
 $start_cimy_uef_comment .= "-->\n";
 
@@ -277,9 +282,6 @@ $wp_hidden_fields = array(
 					),
 			);
 
-// this array means: create a new row in the admin table AFTER position # (ex. if 2 means AFTER #2)
-$admin_menu_new_row = array(8);
-
 // strong illegal charset
 $strong_illegal_chars = "/(\%27)|(\/)|(\\\)|(\[)|(\])|(\')|(\")|(\<)|(\>)|(\-\-)|(\%23)|(\#)/ix";
 
@@ -326,7 +328,7 @@ $fields_name_prefix = "cimy_uef_";
 $wp_fields_name_prefix = "cimy_uef_wp_";
 
 // add checks for extra fields in the registration form
-add_action('register_post', 'cimy_registration_check');
+add_action('register_post', 'cimy_registration_check', 10, 3);
 
 // add extra fields to registration form
 add_action('register_form', 'cimy_registration_form');
@@ -336,7 +338,7 @@ add_action('signup_extra_fields', 'cimy_registration_form');
 add_action('preprocess_signup_form', 'cimy_registration_check');
 
 // add extra fields to user's profile
-// add_action('show_user_profile', 'cimy_extract_ExtraFields');
+add_action('show_user_profile', 'cimy_extract_ExtraFields');
 
 // add extra fields in users edit profiles (for ADMIN)
 add_action('edit_user_profile', 'cimy_extract_ExtraFields');
@@ -358,6 +360,15 @@ add_action('admin_menu', 'cimy_admin_menu_custom');
 
 // delete user extra fields data when a user is deleted
 add_action('delete_user', 'cimy_delete_user_info');
+
+// add custom login/registration css
+add_action('login_head', 'cimy_uef_register_css');
+
+function cimy_uef_register_css() {
+	global $cuef_css_webpath;
+	
+	echo "<link rel='stylesheet' href='".$cuef_css_webpath."cimy_uef_register.css"."' type='text/css' />\n";
+}
 
 $cimy_uef_domain = 'cimy_uef';
 $cimy_uef_i18n_is_setup = 0;
@@ -409,8 +420,13 @@ function cimy_manage_upload($input_name, $user_login, $rules, $old_file=false, $
 			unlink($file_path.$old_thumb_file);
 	}
 
-	if (!is_dir($file_path))
-		mkdir($file_path);
+	if (!is_dir($file_path)) {
+		if (!is_writable($cuef_upload_path))
+			return "";
+		
+		mkdir($file_path, 0777);
+		chmod($file_path, 0777);
+	}
 		
 	// picture filesystem path
 	$file_full_path = $file_path.$file_name;
@@ -446,6 +462,9 @@ function cimy_manage_upload($input_name, $user_login, $rules, $old_file=false, $
 	// if there are no errors and filename is empty
 	if (($file_error == 0) && ($file_name != "")) {
 		if (move_uploaded_file($file_tmp_name, $file_full_path)) {
+			// change file permissions for broken servers
+			@chmod($file_full_path, 0644);
+			
 			// if there is an old file to delete
 			if ($old_file) {
 				// delete old file if the name is different, if equal NOPE because new file is already uploaded
@@ -462,10 +481,10 @@ function cimy_manage_upload($input_name, $user_login, $rules, $old_file=false, $
 			// should be stay AFTER DELETIONS
 			if (isset($rules['equal_to'])) {
 				if ($maxside = intval($rules['equal_to'])) {
-					if (!function_exists(wp_create_thumbnail))
-						require_once(ABSPATH . 'wp-admin/admin-functions.php');
+					if (!function_exists(image_resize))
+						require_once(ABSPATH . 'wp-includes/media.php');
 					
-					wp_create_thumbnail($file_full_path, $maxside);
+					image_resize($file_full_path, $maxside, $maxside, false, "thumbnail");
 				}
 			}
 		}

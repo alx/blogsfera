@@ -36,6 +36,8 @@ function cimy_register_user_extra_fields($user_id) {
 			if ($rules['show_in_reg']) {
 				if (isset($_POST[$input_name]))
 					$data = stripslashes($_POST[$input_name]);
+				else
+					$data = "";
 		
 				if ($type == "picture") {
 					$data = cimy_manage_upload($input_name, sanitize_user($_POST['user_login']), $rules);
@@ -95,8 +97,8 @@ function cimy_register_user_extra_fields($user_id) {
 	}
 }
 
-function cimy_registration_check() {
-	global $wpdb,$errors, $rule_canbeempty, $rule_email, $rule_maxlen, $fields_name_prefix, $wp_fields_name_prefix, $rule_equalto_case_sensitive, $apply_equalto_rule, $cimy_uef_domain;
+function cimy_registration_check($user_login, $user_email, $errors) {
+	global $wpdb, $rule_canbeempty, $rule_email, $rule_maxlen, $fields_name_prefix, $wp_fields_name_prefix, $rule_equalto_case_sensitive, $apply_equalto_rule, $cimy_uef_domain;
 
 	$extra_fields = get_cimyFields();
 	$wp_fields = get_cimyFields(true);
@@ -128,6 +130,8 @@ function cimy_registration_check() {
 			
 			if (isset($_POST[$input_name]))
 				$value = stripslashes($_POST[$input_name]);
+			else
+				$value = "";
 	
 			if ($type == "dropdown") {
 				$ret = cimy_dropDownOptions($label, $value);
@@ -158,12 +162,12 @@ function cimy_registration_check() {
 				if ((!$rules['can_be_empty']) || ($value != "")) {
 					if (($rules['email']) && (in_array($type, $rule_email))) {
 						if (!is_email($value))
-							$errors['checkemail'.$name] = '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('hasn&#8217;t a correct email syntax.', $cimy_uef_domain);
+							$errors->add('checkemail'.$name, '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('hasn&#8217;t a correct email syntax.', $cimy_uef_domain));
 					}
 			
 					if ((!$rules['can_be_empty']) && (in_array($type, $rule_canbeempty))) {
 						if ($value == '')
-							$errors['empty'.$name] = '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('couldn&#8217;t be empty.', $cimy_uef_domain);
+							$errors->add('empty'.$name, '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('couldn&#8217;t be empty.', $cimy_uef_domain));
 					}
 			
 					if ((isset($rules['equal_to'])) && (in_array($type, $apply_equalto_rule))) {
@@ -186,14 +190,14 @@ function cimy_registration_check() {
 							else
 								$equalmsg = ' '.__("should be", $cimy_uef_domain).' '.$equalTo;
 							
-							$errors['equalto'.$name.$field_id] = '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.$equalmsg.'.';
+							$errors->add('equalto'.$name.$field_id, '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.$equalmsg.'.');
 						}
 					}
 					
 					// CHECK IF IT IS A REAL PICTURE
 					if ($type == "picture") {
 						if (stristr($file_type, "image/") === false) {
-							$errors['filetype'.$name] = '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('should be an image.', $cimy_uef_domain);
+							$errors->add('filetype'.$name, '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('should be an image.', $cimy_uef_domain));
 						}
 					}
 					
@@ -204,13 +208,13 @@ function cimy_registration_check() {
 						if ($type == "picture") {
 							if ($file_size < $minlen) {
 								
-								$errors['minlength'.$name] = '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('couldn&#8217;t have size less than', $cimy_uef_domain).' '.$minlen.' KB.';
+								$errors->add('minlength'.$name, '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('couldn&#8217;t have size less than', $cimy_uef_domain).' '.$minlen.' KB.');
 							}
 						}
 						else {
 							if (strlen($value) < $minlen) {
 								
-								$errors['minlength'.$name] = '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('couldn&#8217;t have length less than', $cimy_uef_domain).' '.$minlen.'.';
+								$errors->add('minlength'.$name, '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('couldn&#8217;t have length less than', $cimy_uef_domain).' '.$minlen.'.');
 							}
 						}
 					}
@@ -222,13 +226,13 @@ function cimy_registration_check() {
 						if ($type == "picture") {
 							if ($file_size != $exactlen) {
 								
-								$errors['exactlength'.$name] = '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('couldn&#8217;t have size different than', $cimy_uef_domain).' '.$exactlen.' KB.';
+								$errors->add('exactlength'.$name, '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('couldn&#8217;t have size different than', $cimy_uef_domain).' '.$exactlen.' KB.');
 							}
 						}
 						else {
 							if (strlen($value) != $exactlen) {
 								
-								$errors['exactlength'.$name] = '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('couldn&#8217;t have length different than', $cimy_uef_domain).' '.$exactlen.'.';
+								$errors->add('exactlength'.$name, '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('couldn&#8217;t have length different than', $cimy_uef_domain).' '.$exactlen.'.');
 							}
 						}
 					}
@@ -240,13 +244,13 @@ function cimy_registration_check() {
 						if ($type == "picture") {
 							if ($file_size > $maxlen) {
 								
-								$errors['maxlength'.$name] = '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('couldn&#8217;t have size more than', $cimy_uef_domain).' '.$maxlen.' KB.';
+								$errors->add('maxlength'.$name, '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('couldn&#8217;t have size more than', $cimy_uef_domain).' '.$maxlen.' KB.');
 							}
 						}
 						else {
 							if (strlen($value) > $maxlen) {
 								
-								$errors['maxlength'.$name] = '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('couldn&#8217;t have length more than', $cimy_uef_domain).' '.$maxlen.'.';
+								$errors->add('maxlength'.$name, '<strong>'.__("ERROR", $cimy_uef_domain).'</strong>: '.$label.' '.__('couldn&#8217;t have length more than', $cimy_uef_domain).' '.$maxlen.'.');
 							}
 						}
 					}
@@ -254,6 +258,8 @@ function cimy_registration_check() {
 			}
 		}
 	}
+	
+	return $errors;
 }
 
 function cimy_registration_form() {
@@ -361,7 +367,7 @@ function cimy_registration_form() {
 					case "password":
 					case "text":
 						$obj_label = '<label for="'.$prefix.$field_id.'">'.$label.'</label>';
-						$obj_class = ' class="input"';
+						$obj_class = ' class="cimy_uef_input"';
 						$obj_name = ' name="'.$input_name.'"';
 						
 						if ($type == "picture-url")
@@ -382,7 +388,7 @@ function cimy_registration_form() {
 						$html = $ret['html'];
 						
 						$obj_label = '<label for="'.$prefix.$field_id.'">'.$label.'</label>';
-						$obj_class = ' class="input"';
+						$obj_class = ' class="cimy_uef_input"';
 						$obj_name = ' name="'.$input_name.'"';
 						$obj_type = '';
 						$obj_value = '';
@@ -394,7 +400,7 @@ function cimy_registration_form() {
 						
 					case "textarea":
 						$obj_label = '<label for="'.$prefix.$field_id.'">'.$label.'</label>';
-						$obj_class = ' class="input"';
+						$obj_class = ' class="cimy_uef_input"';
 						$obj_name = ' name="'.$input_name.'"';
 						$obj_type = "";
 						$obj_value = "";
@@ -406,7 +412,7 @@ function cimy_registration_form() {
 		
 					case "checkbox":
 						$obj_label = '<label for="'.$prefix.$field_id.'">'.$label.'</label><br />';
-						$obj_class = "";
+						$obj_class = ' class="cimy_uef_checkbox"';
 						$obj_name = ' name="'.$input_name.'"';
 						$obj_type = ' type="'.$type.'"';
 						$obj_value = ' value="1"';
@@ -418,7 +424,7 @@ function cimy_registration_form() {
 		
 					case "radio":
 						$obj_label = '<label for="'.$prefix.$field_id.'"> '.$label.'</label>';
-						$obj_class = "";
+						$obj_class = ' class="cimy_uef_radio"';
 						$obj_name = ' name="'.$input_name.'"';
 						$obj_type = ' type="'.$type.'"';
 						$obj_value = ' value="'.$field_id.'"';
@@ -444,7 +450,7 @@ function cimy_registration_form() {
 						$upload_image_function = true;
 						
 						$obj_label = '<label for="'.$prefix.$field_id.'">'.$label.'</label>';
-						$obj_class = '';
+						$obj_class = ' class="cimy_uef_picture"';
 						$obj_name = ' name="'.$input_name.'"';
 						$obj_type = ' type="file"';
 						$obj_value = ' value="'.$value.'"';
@@ -487,7 +493,7 @@ function cimy_registration_form() {
 					$obj_rowscols = '';
 		
 				echo "\t";
-				$form_object = '<'.$obj_tag.$obj_id.$obj_class.$obj_name.$obj_type.$obj_value.$obj_checked.$obj_maxlen.$obj_rowscols.$obj_tabindex;
+				$form_object = '<'.$obj_tag.$obj_type.$obj_name.$obj_id.$obj_class.$obj_value.$obj_checked.$obj_maxlen.$obj_rowscols.$obj_tabindex;
 				
 				if ($obj_closing_tag)
 					$form_object.= ">".$obj_value2."</".$obj_tag.">";

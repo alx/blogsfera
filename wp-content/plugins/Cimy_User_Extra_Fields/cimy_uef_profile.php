@@ -5,10 +5,10 @@ function cimy_extract_ExtraFields() {
 	
 	// if editing a different user (only admin)
 	if (isset($_GET['user_id'])) {
+		$get_user_id = $_GET['user_id'];
+		
 		if (!current_user_can('edit_user', $get_user_id))
 			return;
-		
-		$get_user_id = $_GET['user_id'];
 	}
 	//editin own profile
 	else {
@@ -46,7 +46,6 @@ function cimy_extract_ExtraFields() {
 		$radio_checked = array();
 
 		$i = 0;
-		$pos = 0;
 		$num_fieldset = 0;
 		
 		if ($options['fieldset_title'] != "")
@@ -54,11 +53,12 @@ function cimy_extract_ExtraFields() {
 		else
 			$fieldset_titles = array();
 		
-		echo "<fieldset>\n";
-		
 		if (isset($fieldset_titles[$num_fieldset]))
-			echo "<legend>".$fieldset_titles[$num_fieldset]."</legend>\n";
+			echo "<h3>".$fieldset_titles[$num_fieldset]."</h3>\n";
 		
+		echo '<table class="form-table">';
+		echo "\n";
+
 		foreach ($extra_fields as $thisField) {
 	
 			$field_id = $thisField['ID'];
@@ -85,37 +85,23 @@ function cimy_extract_ExtraFields() {
 				}
 
 				if ($i == $options['items_per_fieldset']) {
-					echo "</fieldset>\n";
+					echo "</table>\n";
 					
 					$num_fieldset++;
 
-					if ($pos == 1) {
-						echo '<br clear="all" />';
-						echo "\n";
-						
-						$pos = 0;
-					}
-					else
-						$pos = 1;
-					
-					echo "<fieldset>\n";
-					
 					if (isset($fieldset_titles[$num_fieldset]))
-						echo "<legend>".$fieldset_titles[$num_fieldset]."</legend>\n";
+						echo "<h3>".$fieldset_titles[$num_fieldset]."</h3>\n";
+					
+					echo '<table class="form-table">';
+					echo "\n";
 					
 					$i = 0;
 				}
 				
 				$i++;
 
-				if ($description != "") {
-					echo "\t";
-					echo '<p id="'.$fields_name_prefix.'p_desc_'.$field_id.'" class="desc"><br />'.$description.'</p>';
-					echo "\n";
-				}
-		
 				echo "\t";
-				echo '<p id="'.$fields_name_prefix.'p_field_'.$field_id.'">';
+				echo "<tr>";
 				echo "\n\t";
 				
 				$value = attribute_escape($value);
@@ -124,7 +110,7 @@ function cimy_extract_ExtraFields() {
 					case "picture-url":
 					case "password":
 					case "text":
-						$obj_label = '<label for="'.$fields_name_prefix.$field_id.'">'.$label.'</label><br />';
+						$obj_label = '<label for="'.$fields_name_prefix.$field_id.'">'.$label.'</label>';
 						$obj_name = ' name="'.$input_name.'"';
 						
 						if ($type == "picture-url")
@@ -150,7 +136,7 @@ function cimy_extract_ExtraFields() {
 						break;
 						
 					case "textarea":
-						$obj_label = '<label for="'.$fields_name_prefix.$field_id.'">'.$label.'</label><br />';
+						$obj_label = '<label for="'.$fields_name_prefix.$field_id.'">'.$label.'</label>';
 						$obj_name = ' name="'.$input_name.'"';
 						$obj_type = "";
 						$obj_value = "";
@@ -175,7 +161,7 @@ function cimy_extract_ExtraFields() {
 						$label = $ret['label'];
 						$html = $ret['html'];
 						
-						$obj_label = '<label for="'.$fields_name_prefix.$field_id.'">'.$label.'</label><br />';
+						$obj_label = '<label for="'.$fields_name_prefix.$field_id.'">'.$label.'</label>';
 						$obj_name = ' name="'.$input_name.'"';
 						$obj_type = '';
 						$obj_value = '';
@@ -196,7 +182,7 @@ function cimy_extract_ExtraFields() {
 						break;
 						
 					case "checkbox":
-						$obj_label = '<label for="'.$fields_name_prefix.$field_id.'">'.$label.'</label><br />';
+						$obj_label = '<label for="'.$fields_name_prefix.$field_id.'">'.$label.'</label>';
 						$obj_name = ' name="'.$input_name.'"';
 						$obj_type = ' type="'.$type.'"';
 						$obj_value = ' value="1"';
@@ -215,7 +201,7 @@ function cimy_extract_ExtraFields() {
 						break;
 		
 					case "radio":
-						$obj_label = '<label for="'.$fields_name_prefix.$field_id.'"> '.$label.'</label><br />';
+						$obj_label = '<label for="'.$fields_name_prefix.$field_id.'"> '.$label.'</label>';
 						$obj_name = ' name="'.$input_name.'"';
 						$obj_type = ' type="'.$type.'"';
 						$obj_value = ' value="'.$field_id.'"';
@@ -243,7 +229,7 @@ function cimy_extract_ExtraFields() {
 
 						$upload_image_function = true;
 						
-						$obj_label = '<label for="'.$fields_name_prefix.$field_id.'">'.$label.'</label><br />';
+						$obj_label = '<label for="'.$fields_name_prefix.$field_id.'">'.$label.'</label>';
 						$obj_class = '';
 						$obj_name = ' name="'.$input_name.'"';
 						$obj_type = ' type="file"';
@@ -266,11 +252,11 @@ function cimy_extract_ExtraFields() {
 						
 					case "registration-date":
 						if (isset($rules['equal_to']))
-							$registration_date = cimy_get_formatted_date($value, $rules['equal_to']);
+							$obj_value = cimy_get_formatted_date($value, $rules['equal_to']);
 						else
-							$registration_date = cimy_get_formatted_date($value);
+							$obj_value = cimy_get_formatted_date($value);
 					
-						$obj_label = '<label>'.$label.'<br />'.$registration_date.'</label>';
+						$obj_label = '<label>'.$label.'</label>';
 
 						break;
 				}
@@ -295,6 +281,7 @@ function cimy_extract_ExtraFields() {
 					$obj_rowscols = '';
 		
 				echo "\t";
+				
 				$form_object = '<'.$obj_tag.$obj_id.$obj_class.$obj_name.$obj_type.$obj_value.$obj_checked.$obj_maxlen.$obj_rowscols.$obj_style.$obj_disabled;
 				
 				if ($obj_closing_tag)
@@ -302,8 +289,16 @@ function cimy_extract_ExtraFields() {
 				else
 					$form_object.= " />";
 	
-				if ($type != "radio")
+				if ($type != "radio") {
+					echo "<th>";
 					echo $obj_label;
+					echo "</th>\n";
+				}
+				
+				echo "\t\t<td>";
+				
+				if (($description != "") && (($type == "picture") || ($type == "picture-url")))
+					echo $description."<br />";
 	
 				if (($type == "picture") && ($value != "")) {
 					$profileuser = get_user_to_edit($get_user_id);
@@ -364,15 +359,31 @@ function cimy_extract_ExtraFields() {
 				// write to the html the form object built
 				if ($type != "registration-date")
 					echo $form_object;
-	
-				if ($type == "radio")
-					echo $obj_label;
+				else
+					echo $obj_value;
 				
-				echo "\n\t</p>\n";
+				if (($description != "") && ($type != "picture") && ($type != "picture-url")) {
+					if ($type == "textarea")
+						echo "<br />";
+					else
+						echo " ";
+						
+					echo $description;
+				}
+
+				echo "</td>";
+	
+				if ($type == "radio") {
+					echo "<th>";
+					echo $obj_label;
+					echo "<th>";
+				}
+				
+				echo "\n\t</tr>\n";
 			}
 		}
 		
-		echo '</fieldset>';
+		echo "</table>";
 		
 		echo $end_cimy_uef_comment;
 	}
@@ -380,13 +391,17 @@ function cimy_extract_ExtraFields() {
 
 function cimy_update_ExtraFields() {
 	global $wpdb, $wpdb_data_table, $user_ID, $max_length_value, $fields_name_prefix;
-
+	
+	// if updating meta-data from registration post then exit
+	if (isset($_POST['cimy_post']))
+		return;
+	
 	// if editing a different user (only admin)
 	if (isset($_POST['user_id'])) {
+		$get_user_id = $_POST['user_id'];
+		
 		if (!current_user_can('edit_user', $get_user_id))
 			return;
-		
-		$get_user_id = $_POST['user_id'];
 	}
 	//editin own profile
 	else {

@@ -1,7 +1,7 @@
 <?php
 
 function cimy_admin_define_extra_fields() {
-	global $wpdb, $wpdb_fields_table, $wpdb_wp_fields_table, $rule_canbeempty, $rule_email, $rule_maxlen, $rule_maxlen_needed, $available_types, $max_length_name, $max_length_label, $max_length_desc, $max_length_value, $max_size_file, $rule_equalto, $rule_equalto_case_sensitive, $cimy_uef_domain, $is_mu;
+	global $wpdb, $wpdb_fields_table, $wpdb_wp_fields_table, $rule_canbeempty, $rule_email, $rule_maxlen, $rule_maxlen_needed, $available_types, $max_length_name, $max_length_label, $max_length_desc, $max_length_value, $max_size_file, $rule_equalto, $rule_equalto_case_sensitive, $cimy_uef_domain, $is_mu, $cuef_plugin_path;
 	
 	if (!cimy_check_admin('level_10'))
 		return;
@@ -576,7 +576,7 @@ function cimy_admin_define_extra_fields() {
 		</ul>
 		<br />
 
-		<table cellpadding="10">
+		<table  class="widefat" cellpadding="10">
 		<thead align="center">
 		<tr>
 			<td><h3><?php _e("Name"); ?> - <?php _e("Value"); ?></h3></td>
@@ -586,13 +586,13 @@ function cimy_admin_define_extra_fields() {
 			<td><h3><?php _e("Actions"); ?></h3></td>
 		</tr>
 		</thead>
-		<tbody>
-		<tr>
-		<td>
+		<tbody id="plugins">
+		<tr class="active">
+		<td style="vertical-align: middle;">
 			<label><strong><?php _e("Name"); ?></strong><br /><input name="name" type="text" value="<?php echo $selected_input["name"]; ?>" maxlength="<?php echo $max_length_name; ?>" /></label><br /><br />
 			<label><strong><?php _e("Value"); ?></strong><br /><textarea name="value" rows="2" cols="17"><?php echo $selected_input["value"]; ?></textarea></label>
-			</td>
-			<td>
+		</td>
+		<td style="vertical-align: middle;">
 			<label><strong><?php _e("Type", $cimy_uef_domain); ?></strong><br />
 			<select name="type">
 			<?php
@@ -607,11 +607,11 @@ function cimy_admin_define_extra_fields() {
 			</select>
 			</label>
 		</td>
-		<td>
-			<label><strong><? _e("Label", $cimy_uef_domain); ?></strong><br /><textarea name="label" rows="2" cols="18"><?php echo $selected_input["label"]; ?></textarea></label><br /><br />
-			<label><strong><? _e("Description"); ?></strong><br /><textarea name="description" rows="4" cols="18"><?php echo $selected_input["desc"]; ?></textarea></label>
+		<td style="vertical-align: middle;">
+			<label><strong><?php _e("Label", $cimy_uef_domain); ?></strong><br /><textarea name="label" rows="2" cols="18"><?php echo $selected_input["label"]; ?></textarea></label><br /><br />
+			<label><strong><?php _e("Description"); ?></strong><br /><textarea name="description" rows="4" cols="18"><?php echo $selected_input["desc"]; ?></textarea></label>
 		</td>
-		<td>
+		<td style="vertical-align: middle;">
 			<!-- MIN LENGTH -->
 			<input type="checkbox" name="minlen" value="1"<?php echo $selected_input["minlen"]; ?> /> <?php echo $min_length_caption; ?> [1-<?php echo $maxLen; ?>]: &nbsp;&nbsp;&nbsp;<input type="text" name="minlength" value="<?php echo $selected_input["min_length"]; ?>" maxlength="5" size="5" /><br />
 			
@@ -621,15 +621,15 @@ function cimy_admin_define_extra_fields() {
 			<!-- MAX LENGTH -->
 			<input type="checkbox" name="maxlen" value="1"<?php echo $selected_input["maxlen"]; ?> /> <?php echo $max_length_caption; ?> [1-<?php echo $maxLen; ?>]: &nbsp;&nbsp;<input type="text" name="maxlength" value="<?php echo $selected_input["max_length"]; ?>" maxlength="5" size="5" /><br />
 			
-			<input type="checkbox" name="empty" value="1"<?php echo $selected_input["empty"]; ?> /> <? _e("Can be empty", $cimy_uef_domain); ?><br />
-			<input type="checkbox" name="email" value="1"<?php echo $selected_input["email"]; ?> /> <? _e("Check for E-mail syntax", $cimy_uef_domain); ?><br />
+			<input type="checkbox" name="empty" value="1"<?php echo $selected_input["empty"]; ?> /> <?php _e("Can be empty", $cimy_uef_domain); ?><br />
+			<input type="checkbox" name="email" value="1"<?php echo $selected_input["email"]; ?> /> <?php _e("Check for E-mail syntax", $cimy_uef_domain); ?><br />
 			
 			<select name="edit">
-				<option value="ok_edit"<?php echo $selected_input["ok_edit"]; ?>><? _e("Can be modified", $cimy_uef_domain); ?></option>
-				<option value="edit_only_if_empty"<?php echo $selected_input["edit_only_if_empty"]; ?>><? _e("Can be modified only if empty", $cimy_uef_domain); ?></option>
-				<option value="edit_only_by_admin"<?php echo $selected_input["edit_only_by_admin"]; ?>><? _e("Can be modified only by admin", $cimy_uef_domain); ?></option>
+				<option value="ok_edit"<?php echo $selected_input["ok_edit"]; ?>><?php _e("Can be modified", $cimy_uef_domain); ?></option>
+				<option value="edit_only_if_empty"<?php echo $selected_input["edit_only_if_empty"]; ?>><?php _e("Can be modified only if empty", $cimy_uef_domain); ?></option>
+				<option value="edit_only_by_admin"<?php echo $selected_input["edit_only_by_admin"]; ?>><?php _e("Can be modified only by admin", $cimy_uef_domain); ?></option>
 				<option value="edit_only_by_admin_or_if_empty"<?php echo $selected_input["edit_only_by_admin_or_if_empty"]; ?>><?php _e("Can be modified only by admin or if empty", $cimy_uef_domain); ?></option>
-				<option value="no_edit"<?php echo $selected_input["no_edit"]; ?>><? _e("Cannot be modified", $cimy_uef_domain); ?></option>
+				<option value="no_edit"<?php echo $selected_input["no_edit"]; ?>><?php _e("Cannot be modified", $cimy_uef_domain); ?></option>
 			<?php
 				if (isset($selected_input[$edit]))
 					unset($selected_input[$edit]);
@@ -637,22 +637,24 @@ function cimy_admin_define_extra_fields() {
 			</select>
 			<br />
 			<!-- EQUAL TO -->
-			<input type="checkbox" name="equal" value="1"<?php echo $selected_input["equal"]; ?> /> <? _e("Should be equal TO", $cimy_uef_domain); ?>: <input type="text" name="equalto" maxlength="50" value="<?php echo $selected_input["equal_to"]; ?>"/><br />
+			<input type="checkbox" name="equal" value="1"<?php echo $selected_input["equal"]; ?> /> <?php _e("Should be equal TO", $cimy_uef_domain); ?>: <input type="text" name="equalto" maxlength="50" value="<?php echo $selected_input["equal_to"]; ?>"/><br />
 			<!-- CASE SENSITIVE -->
-			&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="equalto_casesens" value="1"<?php echo $selected_input["equal_to_case_sensitive"]; ?> /> <? _e("Case sensitive", $cimy_uef_domain); ?><br />
+			&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="equalto_casesens" value="1"<?php echo $selected_input["equal_to_case_sensitive"]; ?> /> <?php _e("Case sensitive", $cimy_uef_domain); ?><br />
 			
 			<!-- SHOW IN REGISTRATION -->
-			<input type="checkbox" name="show_in_reg" value="1"<?php echo $selected_input["show_in_reg"]; ?> /> <? _e("Show the field in the registration", $cimy_uef_domain); ?><br />
+			<input type="checkbox" name="show_in_reg" value="1"<?php echo $selected_input["show_in_reg"]; ?> /> <?php _e("Show the field in the registration", $cimy_uef_domain); ?><br />
 			
 			<!-- SHOW IN PROFILE -->
-			<input type="checkbox" name="show_in_profile" value="1"<?php echo $selected_input["show_in_profile"]; ?> /> <? _e("Show the field in User's profile", $cimy_uef_domain); ?><br />
+			<input type="checkbox" name="show_in_profile" value="1"<?php echo $selected_input["show_in_profile"]; ?> /> <?php _e("Show the field in User's profile", $cimy_uef_domain); ?><br />
 			
 			<!-- SHOW IN A&U EXTENDED -->
-			<input type="checkbox" name="show_in_aeu" value="1"<?php echo $selected_input["show_in_aeu"]; ?> /> <? _e("Show the field in A&amp;U Extended menu", $cimy_uef_domain); ?><br />
-			</td>
-		<td align="center">
+			<input type="checkbox" name="show_in_aeu" value="1"<?php echo $selected_input["show_in_aeu"]; ?> /> <?php _e("Show the field in A&amp;U Extended menu", $cimy_uef_domain); ?><br />
+		</td>
+		<td align="center" style="vertical-align: middle;">
+			<p class="submit" style="border-width: 0px;">
 			<input name="reset" type="reset" value="<?php _e("Clear", $cimy_uef_domain); ?>" /><br /><br />
 			<input name="submit" type="submit" value="<?php echo $add_caption ?>" />
+			</p>
 		</td>
 		</tr>
 		</tbody>
@@ -662,9 +664,9 @@ function cimy_admin_define_extra_fields() {
 
 	</div>
 
-<?php
-	cimy_invert_selection();
+	<script language="JavaScript" type="text/javascript" src="<?php echo bloginfo("url")."/wp-content/plugins/".$cuef_plugin_path; ?>js/invert_sel.js"></script>
 
+<?php
 	$wp_fields = get_cimyFields(true);
 
 	cimy_admin_show_extra_fields($wp_fields, $submit_msgs, true);
@@ -717,17 +719,17 @@ function cimy_admin_show_extra_fields($allFields, $submit_msgs, $wp_fields) {
 		_e("None!", $cimy_uef_domain);
 	else {
 		?>
-		
+		<p class="submit" style="border-width: 0px; margin-top: 0px;">
 		<input type="button" value="<?php _e("Invert selection", $cimy_uef_domain); ?>" onclick="this.value=invert_sel('<?php echo $form_id; ?>', 'check', '<?php _e("Invert selection", $cimy_uef_domain); ?>')" />
 		<input name="submit" type="submit" value="<?php echo $order_caption ?>" />
 		
 		<?php if (!$wp_fields) { ?>
 			<input name="submit" type="submit" value="<?php echo $delSel_caption ?>" onclick="return confirm('<?php _e("Are you sure you want to delete field(s) and all data inserted into by users?", $cimy_uef_domain); ?>');" />
 		<?php } ?>
-			
+		</p>
 		<p></p>
 
-		<table cellpadding="10">
+		<table class="widefat" cellpadding="10">
 		<thead align="center">
 		<tr>
 			<td><h3><?php _e("Order", $cimy_uef_domain); ?></h3></td>
@@ -740,6 +742,8 @@ function cimy_admin_show_extra_fields($allFields, $submit_msgs, $wp_fields) {
 		<tbody>
 		<?php
 
+		$style = "";
+		
 		foreach ($allFields as $field) {
 
 			$id = $field['ID'];
@@ -890,15 +894,16 @@ function cimy_admin_show_extra_fields($allFields, $submit_msgs, $wp_fields) {
 				$max_length_caption = __("Max length", $cimy_uef_domain);
 			}
 
+			$style = ('class="alternate"' == $style) ? '' : 'class="alternate"';
 			?>
 			
-			<tr>
-			<td align="center">
+			<tr <?php echo $style; ?>>
+			<td align="center" style="vertical-align: middle;">
 				<input name="check<?php echo $order ?>" type="checkbox" value="1" /><br /><br />
 				<label><strong><?php _e("Order", $cimy_uef_domain); ?></strong><br />
 				<input name="order<?php echo $order ?>" type="text" value="<?php echo $order ?>" maxlength="4" size="3" /></label>
 			</td>
-			<td>
+			<td style="vertical-align: middle;">
 			<?php
 			if ($wp_fields) {
 			?>
@@ -926,16 +931,16 @@ function cimy_admin_show_extra_fields($allFields, $submit_msgs, $wp_fields) {
 				?>
 				</select>
 				</label>
-				</td>
-				<td>
+			</td>
+			<td style="vertical-align: middle;">
 				<label><strong><?php _e("Label", $cimy_uef_domain); ?></strong><br />
 				<textarea name="label<?php echo $order ?>" rows="2" cols="18"><?php echo $label; ?></textarea>
 				</label><br /><br />
 				<label><strong><?php _e("Description"); ?></strong><br />
 				<textarea name="description<?php echo $order ?>" rows="4" cols="18"><?php echo $desc ?></textarea>
 				</label>
-				</td>
-				<td>
+			</td>
+			<td style="vertical-align: middle;">
 				<!-- MIN LENGTH -->
 				<input type="checkbox" name="minlen<?php echo $order ?>" value="1"<?php echo $minlen.$dis_maxlength ?> /> <?php echo $min_length_caption; ?> [1-<?php echo $max_length_value; ?>]: &nbsp;&nbsp;&nbsp;<input type="text" name="minlength<?php echo $order ?>" value="<?php echo $minLength ?>" maxlength="5" size="5"<?php echo $dis_maxlength ?> /><br />
 
@@ -971,19 +976,16 @@ function cimy_admin_show_extra_fields($allFields, $submit_msgs, $wp_fields) {
 				
 				<!-- SHOW IN A&U EXTENDED -->
 				<input type="checkbox" name="show_in_aeu<?php echo $order ?>" value="1"<?php echo $show_in_aeu ?> /> <?php _e("Show the field in A&amp;U Extended menu", $cimy_uef_domain); ?><br />
-				</td>
-				<td align="center">
+			</td>
+			<td align="center" style="vertical-align: middle;">
+				<p class="submit" style="border-width: 0px;">
 				<input name="reset" type="reset" value="<?php _e("Reset", $cimy_uef_domain); ?>" /><br /><br />
 				<input name="submit" type="submit" value="<?php echo $edit_caption." #".$order ?>" /><br /><br />
 				
 				<?php if (!$wp_fields) { ?>
 					<input name="submit" type="submit" value="<?php echo $del_caption." #".$order ?>" onclick="return confirm('<?php _e("Are you sure you want to delete field(s) and all data inserted into by users?", $cimy_uef_domain); ?>');" />
 				<?php } ?>
-			</td>
-			</tr>
-			<tr>
-			<td colspan="5" align="center">
-				<hr />
+				</p>
 			</td>
 			</tr>
 		<?php
@@ -1003,7 +1005,7 @@ function cimy_admin_show_extra_fields($allFields, $submit_msgs, $wp_fields) {
 }
 
 function cimy_admin_users_list_page() {
-	global $wpdb, $wp_roles, $wpdb_data_table, $admin_menu_new_row, $cimy_uef_options, $cuef_upload_path, $cimy_uef_domain, $is_mu;
+	global $wpdb, $wp_roles, $wpdb_data_table, $cimy_uef_options, $cuef_upload_path, $cimy_uef_domain, $is_mu;
 
 	if (!cimy_check_admin('level_10'))
 		return;
@@ -1014,72 +1016,137 @@ function cimy_admin_users_list_page() {
 		$options = get_option($cimy_uef_options);
 	
 	$extra_fields = get_cimyFields();
-	//$num_rows_table = count($admin_menu_new_row) + 1;
 
-// FIXME: to modify in the future
-$num_rows_table = 1;
-
-	$userids = $wpdb->get_col("SELECT ID FROM $wpdb->users;");
-	
-	foreach ($userids as $userid) {
-		$tmp_user = new WP_User($userid);
-		$roles = $tmp_user->roles;
-		$role = array_shift($roles);
-		$roleclasses[$role][$tmp_user->user_login] = $tmp_user;
-	}
+	// Query the users
+	$wp_user_search = new WP_User_Search($_POST['usersearch'], $_GET['userspage'], $_GET['role']);
 
 	?>
-
 	<div class="wrap">
+	
+	<form id="posts-filter" action="" method="post">
+	<?php if ( $wp_user_search->is_search() ) : ?>
+	<h2><?php printf(__('Users Matching "%s"'), wp_specialchars($wp_user_search->search_term)); ?></h2>
+	<?php else : ?>
 	<h2><?php _e("Authors &amp; Users Extended List", $cimy_uef_domain); ?></h2>
-	<table cellpadding="3" cellspacing="3" width="100%">
+	<?php endif; ?>
+
+	<ul class="subsubsub">
 	<?php
-	foreach ($roleclasses as $role => $roleclass) {
-		ksort($roleclass);
+	$role_links = array();
+	$avail_roles = array();
+	$users_of_blog = get_users_of_blog();
+	
+	//var_dump($users_of_blog);
+	foreach ( (array) $users_of_blog as $b_user ) {
+		$b_roles = unserialize($b_user->meta_value);
+		foreach ( (array) $b_roles as $b_role => $val ) {
+			if ( !isset($avail_roles[$b_role]) )
+				$avail_roles[$b_role] = 0;
+			$avail_roles[$b_role]++;
+		}
+	}
+	
+	unset($users_of_blog);
+
+	$current_role = false;
+	$class = empty($_GET['role']) ? ' class="current"' : '';
+	$role_links[] = "<li><a href=\"users.php?page=au_extended\"$class>" . __('All Users') . "</a>";
+	
+	foreach ( $wp_roles->get_names() as $role => $name ) {
+		if ( !isset($avail_roles[$role]) )
+			continue;
+
+		$class = '';
+
+		if ( $role == $_GET['role'] ) {
+			$current_role = $_GET['role'];
+			$class = ' class="current"';
+		}
+
+		$name = translate_with_context($name);
+		$name = sprintf(_c('%1$s (%2$s)|user role with count'), $name, $avail_roles[$role]);
+		
+		$tmp_link = clean_url(add_query_arg('role', $role));
+		$role_links[] = "<li><a href=\"$tmp_link\"$class>" . $name . '</a>';
+	}
+	
+	echo implode(' |</li>', $role_links) . '</li>';
+	unset($role_links);
+?>
+	</ul>
+
+	<p id="post-search">
+	<input type="text" id="post-search-input" name="usersearch" value="<?php echo attribute_escape($wp_user_search->search_term); ?>" />
+	<input type="submit" value="<?php _e( 'Search Users' ); ?>" class="button" />
+	</p>
+	
+	<div class="tablenav">
+		<?php if ( $wp_user_search->results_are_paged() ) : ?>
+			<div class="tablenav-pages"><?php echo str_replace("?", "?page=au_extended&", $wp_user_search->paging_text); ?></div>
+		<?php endif; ?>
+	
+		<br class="clear" />
+	</div>
+	
+	<br class="clear" />
+	<?php if ( is_wp_error( $wp_user_search->search_errors ) ) : ?>
+		<div class="error">
+			<ul>
+			<?php
+				foreach ( $wp_user_search->search_errors->get_error_messages() as $message )
+					echo "<li>$message</li>";
+			?>
+			</ul>
+		</div>
+	
+	<?php endif; ?>
+	
+
+	<?php if ( $wp_user_search->get_results() ) : ?>
+		<?php if ( $wp_user_search->is_search() ) : ?>
+			<p><a href="users.php?page=au_extended"><?php _e('&laquo; Back to All Users'); ?></a></p>
+		<?php endif;
+		
+		$wp_scripts = new WP_Scripts();
+		$wp_scripts->print_scripts('admin-forms');
 		?>
 
-		<tr>
-		<th colspan="8" align="left">
-		<h3><?php echo $wp_roles->role_names[$role]; ?></h3>
-		</th></tr>
-	
+		<table class="widefat" cellpadding="3" cellspacing="3" width="100%">
+		
 		<tr class="thead">
-		<th rowspan='<?php echo $num_rows_table?>'><?php _e('User ID', $cimy_uef_domain) ?></th>
-
+		<th scope="col" class="check-column"><input type="checkbox" onclick="checkAll(document.getElementById('posts-filter'));" /> </th>
+	
 		<?php
 		if (!in_array("username", $options['aue_hidden_fields'])) {
-			echo '<th rowspan="'.$num_rows_table.'">'.__("Username").'</th>';
+			echo '<th>'.__("Username").'</th>';
 		}
-
+	
 		if (!in_array("name", $options['aue_hidden_fields'])) {
-			echo '<th rowspan="'.$num_rows_table.'">'.__("Name").'</th>';
+			echo '<th>'.__("Name").'</th>';
 		}
-
+	
 		if (!in_array("email", $options['aue_hidden_fields'])) {
-			echo '<th rowspan="'.$num_rows_table.'">'.__("E-mail").'</th>';
-		}
-
-		if (!in_array("website", $options['aue_hidden_fields'])) {
-			echo '<th rowspan="'.$num_rows_table.'">'.__("Website").'</th>';
-		}
-
-		if (!in_array("posts", $options['aue_hidden_fields'])) {
-			echo '<th rowspan="'.$num_rows_table.'">'.__("Posts").'</th>';
-		}
-
-		if (!in_array("actions", $options['aue_hidden_fields'])) {
-			echo '<th rowspan="'.$num_rows_table.'">'.__("Actions").'</th>';
+			echo '<th>'.__("E-mail").'</th>';
 		}
 		
+		if (!in_array("role", $options['aue_hidden_fields'])) {
+			echo '<th>'.__("Role").'</th>';
+		}
+	
+		if (!in_array("website", $options['aue_hidden_fields'])) {
+			echo '<th>'.__("Website").'</th>';
+		}
+	
+		if (!in_array("posts", $options['aue_hidden_fields'])) {
+			echo '<th>'.__("Posts").'</th>';
+		}
+			
 		$i = 0;
 		if (count($extra_fields) > 0)
 			foreach ($extra_fields as $thisField) {
 				$rules = $thisField['RULES'];
 				if ($rules['show_in_aeu']) {
-	
-					/*if (in_array($i, $admin_menu_new_row)) {
-						echo "</tr><tr>";
-					}*/
+		
 					$i++;
 					
 					$label = $thisField['LABEL'];
@@ -1088,100 +1155,116 @@ $num_rows_table = 1;
 						$ret = cimy_dropDownOptions($label, $value);
 						$label = $ret['label'];
 					}
-				
+					
 					echo "<th>".$label."</th>";
 				}
 			}
 		?>
-	
+		
 		</tr>
 		<?php
 		$style = '';
-
-		foreach ($roleclass as $user_object) {
+	
+		foreach ( $wp_user_search->get_results() as $userid ) {
+			$user_object = new WP_User($userid);
+				
 			$email = $user_object->user_email;
 			$url = $user_object->user_url;
 			$short_url = str_replace('http://', '', $url);
 			$short_url = str_replace('www.', '', $short_url);
-			
+				
 			if ('/' == substr($short_url, -1))
 				$short_url = substr($short_url, 0, -1);
-			
+				
 			if (strlen($short_url) > 35)
 				$short_url =  substr($short_url, 0, 32).'...';
-			
+				
 			$style = ('class="alternate"' == $style) ? '' : 'class="alternate"';
 			$numposts = get_usernumposts( $user_object->ID );
-			
+				
 			if (0 < $numposts) $numposts = "<a href='edit.php?author=$user_object->ID' title='" . __( 'View posts by this author' ) . "'>$numposts</a>";
 			echo "
 			<tr $style>
-			<td rowspan='".$num_rows_table."'><input type='checkbox' name='users[]' id='user_{$user_object->ID}' value='{$user_object->ID}' /> <label for='user_{$user_object->ID}'>{$user_object->ID}</label></td>";
-
+			
+			<th scope='row' class='check-column'><input type='checkbox' name='users[]' id='user_{$user_object->ID}' class='$role' value='{$user_object->ID}' /></th>";
+			
 			if (!in_array("username", $options['aue_hidden_fields'])) {
-				echo "<td rowspan='".$num_rows_table."'><label for='user_{$user_object->ID}'><strong>$user_object->user_login</strong></label></td>";
+				
+				// produce username clickable
+				if ( current_user_can( 'edit_user', $user_object->ID ) ) {
+					$current_user = wp_get_current_user();
+					
+					if ($current_user->ID == $user_object->ID) {
+						$edit = 'profile.php';
+					} else {
+						$edit = clean_url( add_query_arg( 'wp_http_referer', urlencode( clean_url( stripslashes( $_SERVER['REQUEST_URI'] ) ) ), "user-edit.php?user_id=$user_object->ID" ) );
+					}
+					$edit = "<a href=\"$edit\">$user_object->user_login</a>";
+				} else {
+					$edit = $user_object->user_login;
+				}
+				echo "<td><strong>$edit</strong></td>";
 			}
-
+	
 			if (!in_array("name", $options['aue_hidden_fields'])) {
-				echo "<td rowspan='".$num_rows_table."'><label for='user_{$user_object->ID}'>$user_object->first_name $user_object->last_name</label></td>";
+				echo "<td><label for='user_{$user_object->ID}'>$user_object->first_name $user_object->last_name</label></td>";
 			}
-
+	
 			if (!in_array("email", $options['aue_hidden_fields'])) {
-				echo "<td rowspan='".$num_rows_table."'><a href='mailto:$email' title='" . sprintf(__('e-mail: %s'), $email) . "'>$email</a></td>";
+				echo "<td><a href='mailto:$email' title='" . sprintf(__('e-mail: %s'), $email) . "'>$email</a></td>";
 			}
-
-			if (!in_array("website", $options['aue_hidden_fields'])) {
-				echo "<td rowspan='".$num_rows_table."'><a href='$url' title='website: $url'>$short_url</a></td>";
-			}
-
-			if (!in_array("posts", $options['aue_hidden_fields'])) {
-				echo "<td rowspan='".$num_rows_table."' align='right'>$numposts</td>";
-			}
-
-			if (!in_array("actions", $options['aue_hidden_fields'])) {
-				echo "<td rowspan='".$num_rows_table."'>";
-				if (current_user_can('edit_users'))
-					echo "<a href='user-edit.php?user_id=$user_object->ID' class='edit'>".__('Edit')."</a>";
+			
+			if (!in_array("role", $options['aue_hidden_fields'])) {
+				$roles = $user_object->roles;
+				$role = array_shift($roles);
+				$role_name = translate_with_context($wp_roles->role_names[$role]);
+				
+				echo "<td>";
+				echo $role_name;
 				echo '</td>';
 			}
-
+	
+			if (!in_array("website", $options['aue_hidden_fields'])) {
+				echo "<td><a href='$url' title='website: $url'>$short_url</a></td>";
+			}
+	
+			if (!in_array("posts", $options['aue_hidden_fields'])) {
+				echo "<td align='right'>$numposts</td>";
+			}
+	
 			// if user has not yet fields in the data table then create them
 			if (count($extra_fields) > 0)
 				foreach ($extra_fields as $thisField) {
-
+	
 					$field_id = $thisField['ID'];
-
+	
 					cimy_insert_ExtraFields_if_not_exist($user_object->ID, $field_id);
 				}
-
+	
 			$ef_db = $wpdb->get_results("SELECT FIELD_ID, VALUE FROM ".$wpdb_data_table." WHERE USER_ID = ".$user_object->ID, ARRAY_A);
-
+	
 			$i = 0;
 			// print all the content of extra fields if there are some
 			if (count($extra_fields) > 0)
 				foreach ($extra_fields as $thisField) {
-				
+					
 					$rules = $thisField['RULES'];
 					$type = $thisField['TYPE'];
 					$value = $thisField['VALUE'];
-					
+						
 					if ($rules['show_in_aeu']) {
 						$field_id = $thisField['ID'];
-
-						/*if (in_array($i, $admin_menu_new_row)) {
-							echo "</tr><tr $style>";
-						}*/
-
+	
 						foreach ($ef_db as $d_field)
 							if ($d_field['FIELD_ID'] == $field_id)
 								$field = $d_field['VALUE'];
-						
+							
 						echo "<td>";
-						
+							
 						if ($type == "picture-url") {
 							if ($field == "")
 								$field = $value;
-							
+								
 							if ($field != "") {
 								if (intval($rules['equal_to'])) {
 									echo '<a href="'.$field.'">';
@@ -1191,7 +1274,7 @@ $num_rows_table = 1;
 								else {
 									echo '<img src="'.$field.'" alt="picture" />';
 								}
-						
+							
 								echo "<br />";
 								echo "\n\t\t";
 							}
@@ -1205,19 +1288,19 @@ $num_rows_table = 1;
 								//$user_login = $profileuser->user_login;
 								
 								$user_login = $user_object->user_login;
-						
+							
 								$value_thumb = cimy_get_thumb_path($field);
 								$file_thumb = $cuef_upload_path.$user_login."/".cimy_get_thumb_path(basename($field));
-						
+							
 								echo "\n\t\t";
-						
+							
 								if (is_file($file_thumb)) {
 									echo '<a href="'.$field.'"><img src="'.$value_thumb.'" alt="picture" /></a><br />';
 									echo "\n\t\t";
 								}
 								else {
 									echo '<img src="'.$field.'" alt="picture" /><br />';
-									echo "\n\t\t";
+										echo "\n\t\t";
 								}
 							}
 						}
@@ -1226,25 +1309,37 @@ $num_rows_table = 1;
 								$registration_date = cimy_get_formatted_date($field, $rules['equal_to']);
 							else
 								$registration_date = cimy_get_formatted_date($field);
-							
+								
 							echo $registration_date;
 						}
 						else
 							echo $field;
-						
-						//if ($i == 0 || in_array($i, $admin_menu_new_row))
+							
 						echo "&nbsp;"."</td>";
 					}
 				$i++;
 				}
 			echo '</tr>';
 		}
-	}
-
-	?>
-	</table>
+	
+		?>
+		</table>
+				
+		<div class="tablenav">
+		
+			<?php if ( $wp_user_search->results_are_paged() ) : ?>
+				<div class="tablenav-pages"><?php echo str_replace("?", "?page=au_extended&", $wp_user_search->paging_text); ?></div>
+			<?php endif; ?>
+		
+			<br class="clear" />
+		</div>
+	
+	<?php endif; ?>
+	
+	</form>
+	
 	</div>
-
+	
 	<?php
 }
 
