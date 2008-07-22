@@ -1,0 +1,4 @@
+/* CSS Para ie6 */
+
+#navegacion div.bar_content, #extra div.bar_content {
+padding-top: 10px;}
