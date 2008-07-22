@@ -35,7 +35,6 @@ function extract_from_markers( $filename, $marker ) {
 // data.  Creates file if none exists.
 // Returns true on write success, false on failure.
 function insert_with_markers( $filename, $marker, $insertion ) {
-	return;
 	if (!file_exists( $filename ) || is_writeable( $filename ) ) {
 		if (!file_exists( $filename ) ) {
 			$markerdata = '';
@@ -68,7 +67,7 @@ function insert_with_markers( $filename, $marker, $insertion ) {
 			}
 		}
 		if (!$foundit) {
-			fwrite( $f, "# BEGIN {$marker}\n" );
+			fwrite( $f, "\n# BEGIN {$marker}\n" );
 			foreach ( $insertion as $insertline )
 				fwrite( $f, "{$insertline}\n" );
 			fwrite( $f, "# END {$marker}\n" );
@@ -88,6 +87,7 @@ function insert_with_markers( $filename, $marker, $insertion ) {
 
 function save_mod_rewrite_rules() {
 	global $wp_rewrite;
+	return; // We can't allow mod_rewrite rules to be written
 
 	$home_path = get_home_path();
 	$htaccess_file = $home_path.'.htaccess';

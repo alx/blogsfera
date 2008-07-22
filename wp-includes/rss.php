@@ -651,11 +651,12 @@ function is_server_error ($sc) {
 }
 
 class RSSCache {
-	var $BASE_CACHE = 'wp-content/cache';	// where the cache files are stored
+	var $BASE_CACHE;	// where the cache files are stored
 	var $MAX_AGE	= 43200;  		// when are files stale, default twelve hours
 	var $ERROR 		= '';			// accumulate error messages
 
 	function RSSCache ($base='', $age='') {
+		$this->BASE_CACHE = WP_CONTENT_DIR . '/cache';
 		if ( $base ) {
 			$this->BASE_CACHE = $base;
 		}
@@ -672,18 +673,19 @@ class RSSCache {
 	Output:		true on sucess
 \*=======================================================================*/
 	function set ($url, $rss) {
-		global $wpdb;
+		global $wpdb, $wp_object_cache;
 		$cache_option = 'rss_' . $this->file_name( $url );
 		$cache_timestamp = 'rss_' . $this->file_name( $url ) . '_ts';
 
-		// shouldn't these be using get_option() ?
-		if ( !$wpdb->get_var( $wpdb->prepare( "SELECT option_name FROM $wpdb->options WHERE option_name = %s", $cache_option ) ) )
-			add_option($cache_option, '', '', 'no');
-		if ( !$wpdb->get_var( $wpdb->prepare( "SELECT option_name FROM $wpdb->options WHERE option_name = %s", $cache_timestamp ) ) )
-			add_option($cache_timestamp, '', '', 'no');
-
-		update_option($cache_option, $rss);
-		update_option($cache_timestamp, time() );
+		if( $wp_object_cache->cache_enabled ) {
+			wp_cache_set( $cache_option, $rss, 'rss' );
+			wp_cache_set( $cache_timestamp, $cache_timestamp, 'rss' );
+		} else {
+			if( !get_site_option( $cache_option ) )
+				add_site_option( $cache_option, $rss );
+			if( !get_site_option( $cache_timestamp ) )
+				add_site_option( $cache_timestamp, $cache_timestamp );
+		}
 
 		return $cache_option;
 	}
@@ -695,19 +697,23 @@ class RSSCache {
 	Output:		cached object on HIT, false on MISS
 \*=======================================================================*/
 	function get ($url) {
+		global $wp_object_cache;
 		$this->ERROR = "";
 		$cache_option = 'rss_' . $this->file_name( $url );
 
-		if ( ! get_option( $cache_option ) ) {
-			$this->debug(
-				"Cache doesn't contain: $url (cache option: $cache_option)"
-			);
-			return 0;
+		if( $wp_object_cache->cache_enabled ) {
+			if( ! wp_cache_get( $cache_option, 'rss' ) ) {
+				$this->debug( "Cache doesn't contain: $url (cache option: $cache_option)" );
+				return 0;
+			}
+			return wp_cache_get( $cache_option, 'rss' );
+		} else {
+			if ( ! get_site_option( $cache_option ) ) {
+				$this->debug( "Cache doesn't contain: $url (cache option: $cache_option)" );
+				return 0;
+			}
+			return get_site_option( $cache_option );
 		}
-
-		$rss = get_option( $cache_option );
-
-		return $rss;
 	}
 
 /*=======================================================================*\
@@ -718,11 +724,18 @@ class RSSCache {
 	Output:		cached object on HIT, false on MISS
 \*=======================================================================*/
 	function check_cache ( $url ) {
+		global $wp_object_cache;
 		$this->ERROR = "";
 		$cache_option = $this->file_name( $url );
 		$cache_timestamp = 'rss_' . $this->file_name( $url ) . '_ts';
 
-		if ( $mtime = get_option($cache_timestamp) ) {
+		if( $wp_object_cache->cache_enabled ) {
+			$mtime = wp_cache_get( $cache_timestamp, 'rss' );
+		} else {
+			$mtime = get_site_option($cache_timestamp);
+		}
+
+		if ( $mtime ) {
 			// find how long ago the file was added to the cache
 			// and whether that is longer then MAX_AGE
 			$age = time() - $mtime;

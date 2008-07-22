@@ -2,19 +2,14 @@
 define('WP_ADMIN', TRUE);
 
 if ( defined('ABSPATH') )
-	require_once( ABSPATH . 'wp-config.php');
+	require_once(ABSPATH . 'wp-load.php');
 else
-    require_once('../wp-config.php');
+	require_once('../wp-load.php');
 
 if ( get_option('db_version') != $wp_db_version ) {
-	$http_fopen = ini_get("allow_url_fopen");
-	if($http_fopen) {
-		$out = @file( get_option( "siteurl" ) . "/wp-admin/upgrade.php?step=1" ); // upgrade the db!
-	} else {
-		require_once('../wp-includes/class-snoopy.php');
-		$client = new Snoopy();
-		@$client->fetch( get_option( "siteurl" ) . "wp-admin/upgrade.php?step=1");
-	}
+	require_once('../wp-includes/class-snoopy.php');
+	$client = new Snoopy();
+	@$client->fetch( get_option( "siteurl" ) . "wp-admin/upgrade.php?step=1");
 }
 
 require_once(ABSPATH . 'wp-admin/includes/admin.php');
@@ -32,8 +27,8 @@ $time_format = get_option('time_format');
 
 wp_reset_vars(array('profile', 'redirect', 'redirect_url', 'a', 'popuptitle', 'popupurl', 'text', 'trackback', 'pingback'));
 
-wp_admin_css_color('classic', __('Classic'), get_option( 'siteurl' ) . "/wp-admin/css/colors-classic.css", array('#07273E', '#14568A', '#D54E21', '#2683AE'));
-wp_admin_css_color('fresh', __('Fresh'), get_option( 'siteurl' ) . "/wp-admin/css/colors-fresh.css", array('#464646', '#CEE1EF', '#D54E21', '#2683AE'));
+wp_admin_css_color('classic', __('Classic'), admin_url("css/colors-classic.css"), array('#07273E', '#14568A', '#D54E21', '#2683AE'));
+wp_admin_css_color('fresh', __('Fresh'), admin_url("css/colors-fresh.css"), array('#464646', '#CEE1EF', '#D54E21', '#2683AE'));
 
 wp_enqueue_script( 'common' );
 wp_enqueue_script( 'jquery-color' );
@@ -122,5 +117,8 @@ if (isset($plugin_page)) {
 } else {
 	do_action("load-$pagenow");
 }
+
+if ( !empty($_REQUEST['action']) )
+	do_action('admin_action_' . $_REQUEST['action']);
 
 ?>

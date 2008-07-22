@@ -1,10 +1,6 @@
 <?php
 require_once('admin.php');
-
-$http_fopen = ini_get("allow_url_fopen");
-if( !$http_fopen ) {
-	require_once('../wp-includes/class-snoopy.php');
-}
+require_once( ABSPATH . 'wp-includes/class-snoopy.php' );
 
 $title = __('WordPress MU &rsaquo; Admin &rsaquo; Upgrade Site');
 $parent_file = 'wpmu-admin.php';
@@ -19,7 +15,7 @@ echo '<h2>'.__('Upgrade Site').'</h2>';
 switch( $_GET['action'] ) {
 	case "upgrade":
 		$n = ( isset($_GET['n']) ) ? intval($_GET['n']) : 0;
-		
+
 		$blogs = $wpdb->get_results( "SELECT * FROM {$wpdb->blogs} WHERE site_id = '{$wpdb->siteid}' AND spam = '0' AND deleted = '0' AND archived = '0' ORDER BY registered DESC LIMIT {$n}, 5", ARRAY_A );
 		if( is_array( $blogs ) ) {
 			echo "<ul>";
@@ -27,18 +23,8 @@ switch( $_GET['action'] ) {
 				if( $details['spam'] == 0 && $details['deleted'] == 0 && $details['archived'] == 0 ) {
 					$siteurl = $wpdb->get_var("SELECT option_value from {$wpdb->base_prefix}{$details['blog_id']}_options WHERE option_name = 'siteurl'");
 					echo "<li>$siteurl</li>";
-					if( $http_fopen ) {
-						$fp = fopen( $siteurl . "wp-admin/upgrade.php?step=1", "r" );
-						if( $fp ) {
-							while( feof( $fp ) == false ) {
-								fgets($fp, 4096);
-							}
-							fclose( $fp );
-						}
-					} else {
-						$client = new Snoopy();
-						@$client->fetch($siteurl . "wp-admin/upgrade.php?step=1");
-					}
+					$client = new Snoopy();
+					@$client->fetch($siteurl . "wp-admin/upgrade.php?step=1");
 				}
 			}
 			echo "</ul>";
@@ -57,7 +43,7 @@ switch( $_GET['action'] ) {
 			echo '<p>'.__('All Done!').'</p>';
 		}
 	break;
-	
+
 	default: ?>
 		<p><?php _e("You can upgrade all the blogs on your site through this page. It works by calling the upgrade script of each blog automatically. Hit the link below to upgrade."); ?></p>
 		<p><a class="button" href="wpmu-upgrade-site.php?action=upgrade"><?php _e("Upgrade Site"); ?></a></p>

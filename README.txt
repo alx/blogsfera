@@ -39,7 +39,7 @@ wildcard record to your DNS records.
 This usually means adding a "*" hostname record pointing at your 
 webserver in your DNS configuration tool.
 Matt has a more detailed explanation:
-http://photomatt.net/2003/10/10/wildcard-dns-and-sub-domains/
+http://ma.tt/2003/10/10/wildcard-dns-and-sub-domains/
 
 
 PHP

@@ -27,19 +27,19 @@ $sentence = sprintf( __( 'You have %1$s and %2$s.' ), $blog_text, $user_text );
 
 <div class="wrap">
 	<h2><?php _e('WordPress MU : Admin') ?></h2>
-	
+
 	<div id="rightnow">
 	<h3 class="reallynow">
 		<span><?php _e('Right Now'); ?></span>
-		
+
 		<a href="wpmu-blogs.php#form-add-blog" class="rbutton"><strong><?php _e('Create a New Blog'); ?></strong></a>
 		<a href="wpmu-users.php#form-add-user" class="rbutton"><?php _e('Create a New User'); ?></a>
 		<br class="clear" />
 	</h3>
-	
-	<p class="youhave"><?php echo $sentence; ?></p>	
+
+	<p class="youhave"><?php echo $sentence; ?></p>
 	<?php do_action('wpmuadminresult', ''); ?>
-	
+
 	<form name="searchform" action="wpmu-users.php" method="get">
 		<p>
 			<input type="hidden" name="action" value="users" />
@@ -47,7 +47,7 @@ $sentence = sprintf( __( 'You have %1$s and %2$s.' ), $blog_text, $user_text );
 			<input class="button" type="submit" name="submit" value="<?php _e("Search Users &raquo;"); ?>" />
 		</p> 
 	</form>
-		
+
 	<form name="searchform" action="wpmu-blogs.php" method="get">
 		<p>
 			<input type="hidden" name="action" value="blogs" />
@@ -55,7 +55,7 @@ $sentence = sprintf( __( 'You have %1$s and %2$s.' ), $blog_text, $user_text );
 			<input class="button" type="submit" name="blog_name" value="<?php _e("Search Blogs &raquo;"); ?>" />
 		</p>
 	</form>
-	
+
 	<?php do_action( 'mu_rightnow_end' ); ?>
 	<?php do_action( 'mu_activity_box_end' ); ?>
 	</div><!-- rightnow -->

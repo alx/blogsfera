@@ -4,7 +4,6 @@ if( $current_site && $current_blog )
 
 // depreciated
 $wpmuBaseTablePrefix = $table_prefix;
-$wpdb->base_prefix = $table_prefix;
 
 $domain = addslashes( $_SERVER['HTTP_HOST'] );
 if( substr( $domain, 0, 4 ) == 'www.' )
@@ -104,12 +103,7 @@ if( constant( 'VHOST' ) == 'yes' ) {
 
 if( defined( "WP_INSTALLING" ) == false ) {
 	if( $current_site && $current_blog == null ) {
-		if( defined( 'NOBLOGREDIRECT' ) && constant( 'NOBLOGREDIRECT' ) != '' ) {
-			header( "Location: " . constant( 'NOBLOGREDIRECT' ) . "?new=" . urlencode( $blogname ) );
-		} else {
-			header( "Location: http://{$current_site->domain}{$current_site->path}wp-signup.php?new=" . urlencode( $blogname ) );
-		}
-		die();
+		$current_blog = $wpdb->get_row("SELECT * FROM {$wpdb->blogs} WHERE domain = '{$current_site->domain}' AND path = '{$current_site->path}'");
 	}
 	if( $current_blog == false || $current_site == false )
 		is_installed();
@@ -135,10 +129,11 @@ function is_blogname_page( $blogname ) {
 
 $blog_id = $current_blog->blog_id;
 $public  = $current_blog->public;
+
+if( $current_blog->site_id == 0 || $current_blog->site_id == '' )
+	$current_blog->site_id = 1;
 $site_id = $current_blog->site_id;
 
-if( $site_id == 0 )
-	$site_id = 1;
 
 $current_site->site_name = $wpdb->get_var( "SELECT meta_value FROM $wpdb->sitemeta WHERE site_id = '$site_id' AND meta_key = 'site_name'" );
 if( $current_site->site_name == null )
@@ -158,6 +153,7 @@ if( $blog_id == false ) {
 	    // default to using the "main" blog.
 	    $blog_id = 1;
 	}
+	$current_blog->blog_id = $blog_id;
     } else {
 	$check = $wpdb->get_results( "SELECT * FROM $wpdb->site" );
 	if( $check == false ) {
@@ -207,7 +203,5 @@ function is_installed() {
 		die( "<h1>Fatal Error</h1> " . $msg );
 	}
 }
-
-$table_prefix = $table_prefix . $blog_id . '_';
 
 ?>

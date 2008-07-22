@@ -145,13 +145,13 @@ case 'delete':
 	?>
 	</ul>
 <?php if ( $go_delete ) : ?>
-	<p><?php _e('What should be done with posts and links owned by this user?'); ?></p>
+	<fieldset><p><legend><?php _e('What should be done with posts and links owned by this user?'); ?></legend></p>
 	<ul style="list-style:none;">
 		<li><label><input type="radio" id="delete_option0" name="delete_option" value="delete" checked="checked" />
 		<?php _e('Delete all posts and links.'); ?></label></li>
 		<li><input type="radio" id="delete_option1" name="delete_option" value="reassign" />
 		<?php echo '<label for="delete_option1">'.__('Attribute all posts and links to:')."</label> $user_dropdown"; ?></li>
-	</ul>
+	</ul></fieldset>
 	<input type="hidden" name="action" value="dodelete" />
 	<p class="submit"><input type="submit" name="submit" value="<?php _e('Confirm Deletion'); ?>" class="button-secondary" /></p>
 <?php else : ?>
@@ -181,7 +181,7 @@ case 'doremove':
 			$update = 'err_admin_remove';
 			continue;
 		}
-		remove_user_from_blog($id);
+		remove_user_from_blog($id, $blog_id);
 	}
 
 	wp_redirect('users.php?update=' . $update);
@@ -412,6 +412,7 @@ unset($role_links);
 ?>
 </ul>
 	<p id="post-search">
+	<label class="hidden" for="post-search-input"><?php _e( 'Search Users' ); ?>:</label>
 	<input type="text" id="post-search-input" name="usersearch" value="<?php echo attribute_escape($wp_user_search->search_term); ?>" />
 	<input type="submit" value="<?php _e( 'Search Users' ); ?>" class="button" />
 	</p>
@@ -424,7 +425,7 @@ unset($role_links);
 
 <div class="alignleft">
 <input type="submit" value="<?php _e('Remove'); ?>" name="removeit" class="button-secondary delete" />
-<select name="new_role"><option value=''><?php _e('Change role to&hellip;') ?></option>"<?php wp_dropdown_roles(); ?></select>
+<label class="hidden" for="new_role"><?php _e('Change role to&hellip;') ?></label><select name="new_role" id="new_role"><option value=''><?php _e('Change role to&hellip;') ?></option>"<?php wp_dropdown_roles(); ?></select>
 <input type="submit" value="<?php _e('Change'); ?>" name="changeit" class="button-secondary" />
 <?php wp_nonce_field('bulk-users'); ?>
 </div>
@@ -455,7 +456,7 @@ unset($role_links);
 <table class="widefat">
 <thead>
 <tr class="thead">
-	<th scope="col" class="check-column"><input type="checkbox" onclick="checkAll(document.getElementById('posts-filter'));" /> </th>
+	<th scope="col" class="check-column"><input type="checkbox" /></th>
 	<th><?php _e('Username') ?></th>
 	<th><?php _e('Name') ?></th>
 	<th><?php _e('E-mail') ?></th>
@@ -487,9 +488,9 @@ foreach ( $wp_user_search->get_results() as $userid ) {
 <br class="clear" />
 </div>
 
-</form>
 <?php endif; ?>
 
+</form>
 </div>
 
 <?php
@@ -503,6 +504,7 @@ foreach ( $wp_user_search->get_results() as $userid ) {
 ?>
 
 <br class="clear" />
+<?php if ( current_user_can('create_users') ) { ?>
 
 <?php if( apply_filters('show_adduser_fields', true) ) {?>
 <div class="wrap">
@@ -529,7 +531,7 @@ foreach ( $wp_user_search->get_results() as $userid ) {
 </table>
 <p class="submit">
 	<?php echo $referer; ?>
-	<input name="adduser" type="submit" id="addusersub" value="<?php _e('Add User &raquo;') ?>" />
+	<input name="adduser" type="submit" id="addusersub" value="<?php _e('Add User') ?>" />
 </p>
 </form>
 </div>
@@ -547,6 +549,7 @@ foreach ( $wp_user_search->get_results() as $userid ) {
 </div>
 
 <?php
+}
 break;
 
 } // end of the $action switch

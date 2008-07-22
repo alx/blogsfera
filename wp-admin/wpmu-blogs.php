@@ -73,7 +73,7 @@ switch( $_GET['action'] ) {
 		$editblog_roles = get_blog_option( $id, "{$wpdb->base_prefix}{$id}_user_roles" );
 		?>
 		<div class="wrap">
-		<h2><?php _e('Edit Blog'); ?> - <a href='http://<?php echo $details['domain'].$details['path']; ?>'><?php echo $details['domain'].$details['path']; ?></a></h2>		
+		<h2><?php _e('Edit Blog'); ?> - <a href='http://<?php echo $details['domain'].$details['path']; ?>'><?php echo $details['domain'].$details['path']; ?></a></h2>
 		<form method="post" action="wpmu-edit.php?action=updateblog"> 
 			<?php wp_nonce_field('editblog'); ?>
 			<input type="hidden" name="id" value="<?php echo $id ?>" /> 
@@ -136,7 +136,7 @@ switch( $_GET['action'] ) {
 								</td> 
 							</tr> 
 						</table>
-						
+
 						<h3><?php printf( __('Blog options (wp_%s_options)'), $id ); ?></h3>
 						<table class="form-table">
 							<?php
@@ -189,23 +189,23 @@ switch( $_GET['action'] ) {
 					foreach( $themes as $key => $theme ) {
 						$theme_key = wp_specialchars( $theme['Stylesheet'] );
 						if( isset($allowed_themes[$theme_key] ) == false ) {
-							$checked = ( isset($blog_allowed_themes[ $theme_key ]) ) ? 'checked="checked"' : '';							
-							$out .= '<tr class="form-field form-required"> 
+							$checked = ( isset($blog_allowed_themes[ $theme_key ]) ) ? 'checked="checked"' : '';
+							$out .= '<tr class="form-field form-required">
 									<th title="'.htmlspecialchars( $theme["Description"] ).'" scope="row">'.$key.'</th> 
 									<td><input name="theme['.$theme_key.']" type="checkbox" value="on" '.$checked.'/></td> 
 								</tr>';
 						}
 					}
-					
-							
+
+
 					if( $out != '' ) {
 						echo "<h3>" . __('Blog Themes') . "</h3>";
-						echo '<table class="form-table">';						
+						echo '<table class="form-table">';
 							echo '<tr class=""><th>' . __('Theme') . '</th><th>' . __('Enable') . '</th></tr>';
 							echo $out;
 						echo "</table>";
 					}
-					
+
 					// Blog users
 					$blogusers = get_users_of_blog( $id );
 					echo '<h3>' . __('Blog Users') . '</h3>';
@@ -244,7 +244,7 @@ switch( $_GET['action'] ) {
 						}
 						echo "</table>";
 					}
-					
+
 					// New blog user
 					echo "<h3>" . __('Add a new user') . "</h3>"; ?>
 					<p><?php _e('As you type WordPress will offer you a choice of usernames.<br /> Click them to select and hit <em>Update Options</em> to add the user.') ?></p>
@@ -269,14 +269,14 @@ switch( $_GET['action'] ) {
 							</td>
 						</tr>
 					</table>
-					
+
 					<h3><?php _e('Misc Blog Actions') ?></h3>
 					<table class="form-table">
 						<?php do_action( 'wpmueditblogaction', $id ); ?>
 					</table>
-					
+
 					<p class="submit">
-						<input type="submit" name="Submit" value="<?php _e('Update Options &raquo;') ?>" /></p>				
+						<input type="submit" name="Submit" value="<?php _e('Update Options &raquo;') ?>" /></p>
 				</td>
 			</tr>
 			</table>
@@ -284,16 +284,16 @@ switch( $_GET['action'] ) {
 		</div>
 		<?php
 	break;
-	
+
 	// List blogs
 	default:
 		$apage = isset( $_GET['apage'] ) ? intval( $_GET['apage'] ) : 1;
 		$num = isset( $_GET['num'] ) ? intval( $_GET['num'] ) : 15;
-		
+		$s = wp_specialchars( trim( $_GET[ 's' ] ) );
+
 		$query = "SELECT * FROM {$wpdb->blogs} WHERE site_id = '{$wpdb->siteid}' ";
-		
+
 		if( isset($_GET['blog_name']) ) {
-			$s = trim($_GET['s']);
 			$query = "SELECT blog_id, {$wpdb->blogs}.domain, {$wpdb->blogs}.path, registered, last_updated
 				FROM {$wpdb->blogs}, {$wpdb->site}
 				WHERE site_id = '{$wpdb->siteid}'
@@ -309,13 +309,13 @@ switch( $_GET['action'] ) {
 				FROM {$wpdb->blogs}, {$wpdb->registration_log}
 				WHERE site_id = '{$wpdb->siteid}'
 				AND {$wpdb->blogs}.blog_id = {$wpdb->registration_log}.blog_id
-				AND {$wpdb->registration_log}.IP LIKE ('%".$_GET['s']."%')";
+				AND {$wpdb->registration_log}.IP LIKE ('%{$s}%')";
 		}
-		
+
 		if( isset( $_GET['sortby'] ) == false ) {
 			$_GET['sortby'] = 'id';
 		}
-		
+
 		if( $_GET['sortby'] == 'registered' ) {
 			$query .= ' ORDER BY registered ';
 		} elseif( $_GET['sortby'] == 'id' ) {
@@ -327,20 +327,25 @@ switch( $_GET['action'] ) {
 		}
 
 		$query .= ( $_GET['order'] == 'DESC' ) ? 'DESC' : 'ASC';
-		
+
 		if( !empty($_GET['s']) ) {
-			$blog_list = $wpdb->get_results( $query, ARRAY_A );	
-			$total = count($blog_list);	
+			$blog_list = $wpdb->get_results( $query, ARRAY_A );
+			$total = count($blog_list);
 		} else {
-			$total = $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->blogs} WHERE site_id = '{$wpdb->siteid}' ");	
+			$total = $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->blogs} WHERE site_id = '{$wpdb->siteid}' ");
 		}
-		
+
 		$query .= " LIMIT " . intval( ( $apage - 1 ) * $num) . ", " . intval( $num );
-			
-		$blog_list = $wpdb->get_results( $query, ARRAY_A );	
+
+		$blog_list = $wpdb->get_results( $query, ARRAY_A );
 
 		// Pagination
-		$url2 = "&order=" . $_GET['order'] . "&amp;sortby=" . $_GET['sortby'] . "&amp;s=" . $_GET['s'] . "&ip_address=" . $_GET['ip_address'];
+		$url2 = "&order=" . $_GET['order'] . "&amp;sortby=" . $_GET['sortby'] . "&amp;s=";
+		if( $_GET[ 'blog_ip' ] ) {
+			$url2 .= "&ip_address=" . urlencode( $s );
+		} else {
+			$url2 .= $s . "&ip_address=" . urlencode( $s );
+		}
 		$blog_navigation = paginate_links( array(
 			'base' => add_query_arg( 'apage', '%#%' ).$url2,
 			'format' => '',
@@ -351,19 +356,19 @@ switch( $_GET['action'] ) {
 
 		<div class="wrap" style="position:relative;">
 		<h2><?php _e('Blogs') ?></h2>
-		
+
 		<form id="searchform" action="wpmu-blogs.php" method="get" style="position:absolute;right:0;top:0;">
-			<input type="hidden" name="action" value="blogs" />			
-			<input type="text" name="s" value="<?php if (isset($_GET['s'])) echo stripslashes(wp_specialchars($_GET['s'], 1)); ?>" size="17" />
+			<input type="hidden" name="action" value="blogs" />
+			<input type="text" name="s" value="<?php if (isset($_GET['s'])) echo stripslashes( wp_specialchars( $s, 1 ) ); ?>" size="17" />
 			<input type="submit" class="button" name="blog_name" value="<?php _e('Search blogs by name') ?>" />
-			<input type="submit" class="button" name="blog_id" value="<?php _e('by blog ID') ?>" />		
-			<input type="submit" class="button" name="blog_ip" value="<?php _e('by IP address') ?>" />		
+			<input type="submit" class="button" name="blog_id" value="<?php _e('by blog ID') ?>" />
+			<input type="submit" class="button" name="blog_ip" value="<?php _e('by IP address') ?>" />
 		</form>
-	
+
 		<form id="form-blog-list" action="wpmu-edit.php?action=allblogs" method="post">
-		
+
 		<div class="tablenav">
-			<?php if ( $blog_navigation ) echo "<div class='tablenav-pages'>$blog_navigation</div>"; ?>	
+			<?php if ( $blog_navigation ) echo "<div class='tablenav-pages'>$blog_navigation</div>"; ?>
 
 			<div class="alignleft">
 				<input type="submit" value="<?php _e('Delete') ?>" name="allblog_delete" class="button-secondary delete" />
@@ -375,10 +380,10 @@ switch( $_GET['action'] ) {
 		</div>
 
 		<br class="clear" />
-		
+
 		<?php if( isset($_GET['s']) && !empty($_GET['s']) ) : ?>
-			<p><a href="wpmu-users.php?action=users&s=<?php echo stripslashes(wp_specialchars($_GET['s'], 1)) ?>"><?php _e('Search Users:') ?> <strong><?php echo stripslashes(wp_specialchars($_GET['s'], 1)); ?></strong></a></p>
-		<?php endif; ?>		
+			<p><a href="wpmu-users.php?action=users&s=<?php echo urlencode( stripslashes( $s ) ) ?>"><?php _e('Search Users:') ?> <strong><?php echo stripslashes( $s ); ?></strong></a></p>
+		<?php endif; ?>
 
 		<?php
 		// define the columns to display, the syntax is 'internal name' => 'display name'
@@ -401,9 +406,14 @@ switch( $_GET['action'] ) {
 		$posts_columns['control_spam']   	= '';
 		$posts_columns['control_delete']    = '';
 
-		$sortby_url = "s=" . $_GET['s'] . "&amp;ip_address=" . $_GET['ip_address'];
+		$sortby_url = "s=";
+		if( $_GET[ 'blog_ip' ] ) {
+			$sortby_url .= "&ip_address=" . urlencode( $s );
+		} else {
+			$sortby_url .= urlencode( $s ) . "&ip_address=" . urlencode( $s );
+		}
 		?>
-		
+
 		<table width="100%" cellpadding="3" cellspacing="3" class="widefat">
 			<thead>
 				<tr>
@@ -414,7 +424,7 @@ switch( $_GET['action'] ) {
 						$column_link .= $_GET[ 'order' ] == 'DESC' ? 'order=ASC&amp;' : 'order=DESC&amp;';
 					}
 					$column_link .= "apage={$apage}'>{$column_display_name}</a>";
-					
+
 					$col_url = ($column_id == 'users' || $column_id == 'plugins') ? $column_display_name : $column_link;
 					?>
 					<th scope="col"><?php echo $col_url ?></th>
@@ -429,7 +439,7 @@ switch( $_GET['action'] ) {
 				foreach ($blog_list as $blog) { 
 					$class = ('alternate' == $class) ? '' : 'alternate';
 					reset( $status_list );
-					
+
 					$bgcolour = "";
 					foreach ( $status_list as $status => $col ) {
 						if( get_blog_status( $blog['blog_id'], $status ) == 1 ) {
@@ -437,7 +447,7 @@ switch( $_GET['action'] ) {
 						}
 					}
 					echo "<tr $bgcolour class='$class'>";
-					
+
 					$blogname = ( constant( "VHOST" ) == 'yes' ) ? str_replace('.'.$current_site->domain, '', $blog['domain']) : $blog['path']; 
 					foreach( $posts_columns as $column_name=>$column_display_name ) {
 						switch($column_name) {
@@ -570,15 +580,15 @@ switch( $_GET['action'] ) {
 
 			</tbody>
 		</table>
-		</form>		
+		</form>
 		</div>
-		
+
 		<div class="wrap">
 			<h2><?php _e('Add Blog') ?></h2>
 			<form method="post" action="wpmu-edit.php?action=addblog">
 				<?php wp_nonce_field('add-blog') ?>
 				<table class="form-table">
-					<tr class="form-field form-required">	
+					<tr class="form-field form-required">
 						<th style="text-align:center;" scope='row'><?php _e('Blog Address') ?></th>
 						<td>
 						<?php if( constant( "VHOST" ) == 'yes' ) : ?>
@@ -592,7 +602,7 @@ switch( $_GET['action'] ) {
 						<th style="text-align:center;" scope='row'><?php _e('Blog Title') ?></th>
 						<td><input name="blog[title]" type="text" size="20" title="<?php _e('Title') ?>"/></td>
 					</tr>
-					<tr class="form-field form-required">	
+					<tr class="form-field form-required">
 						<th style="text-align:center;" scope='row'><?php _e('Admin Email') ?></th>
 						<td><input name="blog[email]" type="text" size="20" title="<?php _e('Email') ?>"/></td>
 					</tr>

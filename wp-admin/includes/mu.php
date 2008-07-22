@@ -41,25 +41,12 @@ function wpmu_delete_blog($blog_id, $drop = false) {
 	update_blog_status( $blog_id, 'deleted', 1 );
 
 	if ( $drop ) {
-		$drop_tables = array( $wpdb->base_prefix . $blog_id . "_categories",
-		$wpdb->base_prefix . $blog_id . "_comments",
-		$wpdb->base_prefix . $blog_id . "_linkcategories",
-		$wpdb->base_prefix . $blog_id . "_links",
-		$wpdb->base_prefix . $blog_id . "_link2cat",
-		$wpdb->base_prefix . $blog_id . "_options",
-		$wpdb->base_prefix . $blog_id . "_post2cat",
-		$wpdb->base_prefix . $blog_id . "_postmeta",
-		$wpdb->base_prefix . $blog_id . "_posts",
-		$wpdb->base_prefix . $blog_id . "_terms",
-		$wpdb->base_prefix . $blog_id . "_term_taxonomy",
-		$wpdb->base_prefix . $blog_id . "_term_relationships" );
-
+		$drop_tables = $wpdb->get_results("show tables LIKE '". $wpdb->base_prefix . $blog_id . "_%'", ARRAY_A); 
 		$drop_tables = apply_filters( 'wpmu_drop_tables', $drop_tables ); 
-		reset( $drop_tables );
 
-		foreach ( (array) $drop_tables as $drop_table) {
-			$wpdb->query( "DROP TABLE IF EXISTS $drop_table" );
-		}
+		reset( $drop_tables );
+		foreach ( (array) $drop_tables as $drop_table => $name )
+			$wpdb->query( "DROP TABLE IF EXISTS ". current( $name ) ."" );
 
 		$wpdb->query( "DELETE FROM $wpdb->blogs WHERE blog_id = '$blog_id'" );
 		$dir = constant( "ABSPATH" ) . "wp-content/blogs.dir/{$blog_id}/files/";
@@ -138,6 +125,38 @@ function wpmu_delete_user($id) {
 	wp_cache_delete($user->user_login, 'userlogins');
 
 	return true;
+}
+
+function confirm_delete_users( $users ) {
+	if( !is_array( $users ) )
+		return;
+	echo '<p>Transfer posts before deleting users:</p>';
+	echo '<form action="wpmu-edit.php?action=allusers" method="post">';
+	echo '<input type="hidden" name="alluser_transfer_delete" />';
+	wp_nonce_field( 'allusers' );
+	foreach ( (array) $_POST['allusers'] as $key => $val ) {
+		if( $val != '' && $val != '0' && $val != '1' ) {
+			$blogs = get_blogs_of_user( $val, true );
+			foreach ( (array) $blogs as $key => $details ) {
+				$blog_users = get_users_of_blog( $details->userblog_id );
+				if( is_array( $blog_users ) && !empty( $blog_users ) ) {
+					echo "<p><a href='http://{$details->domain}{$details->path}'>{$details->blogname}</a> ";
+					echo "<select name='blog[$val][{$key}]'>";
+					$out = '';
+					foreach( $blog_users as $user ) {
+						if( $user->user_id != $val )
+							$out .= "<option value='{$user->user_id}'> {$user->user_login}";
+					}
+					if( $out == '' )
+						$out = "<option value='1'> admin";
+					echo $out;
+					echo "</select>\n";
+				}
+			}
+		}
+	}
+	echo "<br /><input type='submit' value='Delete user and transfer posts' />";
+	echo "</form>";
 }
 
 function wpmu_get_blog_allowedthemes( $blog_id = 0 ) {
@@ -401,7 +420,6 @@ function wpmu_menu() {
 	unset( $submenu['themes.php'][10] );
 	unset( $submenu['plugins.php'][5] );
 	unset( $submenu['plugins.php'][10] );
-	unset( $submenu['edit.php'][30] );
 	unset( $menu['35'] ); // Plugins
 
 	$menu_perms = get_site_option( "menu_items" );
@@ -645,11 +663,15 @@ remove_action( 'media_buttons', 'media_buttons' );
 function secret_salt_warning() {
 	if( !is_site_admin() )
 		return;
-	if( !defined( 'SECRET_KEY' ) || !defined( 'SECRET_SALT' ) ) {
-		$salt1 = wp_generate_password() . wp_generate_password();
-		$salt2 = wp_generate_password() . wp_generate_password();
-		$msg = sprintf( __( 'Warning! You must define SECRET_KEY and SECRET_SALT in <strong>%swp-config.php</strong><br />Please add the following code before the line, <code>/* That\'s all, stop editing! Happy blogging. */</code>' ), ABSPATH );
-		$msg .= "<blockquote>define('SECRET_KEY', '$salt1');<br />define('SECRET_SALT', '$salt2');</blockquote>";
+	$secret_keys = array( 'SECRET_KEY', 'SECRET_SALT', 'LOGGED_IN_KEY', 'LOGGED_IN_SALT', 'AUTH_KEY', 'SECURE_AUTH_KEY' );
+	$out = '';
+	foreach( $secret_keys as $key ) {
+		if( !defined( $key ) )
+			$out .= "define( '$key', '" . wp_generate_password() . wp_generate_password() . "' );<br />";
+	}
+	if( $out != '' ) {
+		$msg = sprintf( __( 'Warning! WordPress encrypts user cookies, but you must add the following lines to <strong>%swp-config.php</strong> for it to work properly.<br />Please add the code before the line, <code>/* That\'s all, stop editing! Happy blogging. */</code>' ), ABSPATH );
+		$msg .= "<blockquote>$out</blockquote>";
 
 		echo "<div id='update-nag'>$msg</div>";
 	}
@@ -673,4 +695,40 @@ function profile_update_primary_blog() {
 	}
 }
 add_action( 'personal_options_update', 'profile_update_primary_blog' );
+
+function admin_notice_feed() {
+	global $current_user;
+	if( substr( $_SERVER[ 'PHP_SELF' ], -19 ) != '/wp-admin/index.php' )
+		return;
+
+	if( $_GET[ 'feed_dismiss' ] )
+		update_user_option( $current_user->id, 'admin_feed_dismiss', $_GET[ 'feed_dismiss' ], true );
+
+	$url = get_site_option( 'admin_notice_feed' );
+	if( $url == '' )
+		return;
+	include_once( ABSPATH . 'wp-includes/rss.php' );
+	$rss = @fetch_rss( $url );
+	if( isset($rss->items) && 1 <= count($rss->items) ) {
+		if( md5( $rss->items[0][ 'title' ] ) == get_user_option( 'admin_feed_dismiss', $current_user->id ) )
+			return;
+		$item = $rss->items[0];
+		$msg = "<h3>" . wp_specialchars( $item[ 'title' ] ) . "</h3>\n";
+		if ( isset($item['description']) )
+			$content = $item['description'];
+		elseif ( isset($item['summary']) )
+			$content = $item['summary'];
+		elseif ( isset($item['atom_content']) )
+			$content = $item['atom_content'];
+		else
+			$content = __( 'something' );
+		$content = wp_html_excerpt($content, 200) . ' ...';
+		$link = clean_url( strip_tags( $item['link'] ) );
+		$msg .= "<p>" . $content . " <a href='$link'>" . __( 'Read More' ) . "</a> <a href='index.php?feed_dismiss=" . md5( $item[ 'title' ] ) . "'>" . __( "Dismiss" ) . "</a></p>";
+		echo "<div class='updated fade'>$msg</div>";
+	} elseif( is_site_admin() ) {
+		echo "<div id='update-nag'>Your feed at " . wp_specialchars( $url ) . " is empty.</div>";
+	}
+}
+add_action( 'admin_notices', 'admin_notice_feed' );
 ?>

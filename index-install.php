@@ -339,6 +339,9 @@ function step2() {
 				break;
 			case "define('SECRET_K":
 			case "define('SECRET_S":
+			case "define('LOGGED_I":
+			case "define('AUTH_KEY":
+			case "define('SECURE_A":
 				fwrite($handle, str_replace('put your unique phrase here', md5( mt_rand() ) . md5( mt_rand() ), $line));
 				break;
 			default:
@@ -352,7 +355,7 @@ function step2() {
 }
 
 function step3() {
-	global $wpdb, $current_site, $dirs, $wp_version;
+	global $wpdb, $current_site, $dirs, $wpmu_version;
 	$base = stripslashes( dirname( $_SERVER["SCRIPT_NAME"] ) );
 	if( $base != "/") {
 		$base .= "/";
@@ -440,7 +443,7 @@ Thanks!
 	<p>Thanks for installing WordPress &micro;!<br /><br />
 	
 	Donncha<br />
-	<code>wpmu version: <?php echo $wp_version ?></code></p>
+	<code>wpmu version: <?php echo $wpmu_version ?></code></p>
 	<?php
 }
 
@@ -499,7 +502,7 @@ switch($action) {
 }
 ?>
 <br /><br />
-<div align='center'>
+<div style="text-align:center;">
 <a href="http://mu.wordpress.org/">WordPress &micro;</a> | <a href="http://mu.wordpress.org/forums/">Support Forums</a>
 </div>
 </body>

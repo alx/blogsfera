@@ -40,18 +40,19 @@ if ( $_GET['updated'] == 'true' ) {
 	<?php
 	$apage = isset( $_GET['apage'] ) ? intval( $_GET['apage'] ) : 1;
 	$num = isset( $_GET['num'] ) ? intval( $_GET['num'] ) : 15;
+	$s = wp_specialchars( trim( $_GET[ 's' ] ) );
 
 	$query = "SELECT * FROM {$wpdb->users}";
-	
-	if( !empty($_GET['s']) ) {
-		$search = '%' . trim(addslashes($_GET['s'])) . '%';
+
+	if( !empty( $s ) ) {
+		$search = '%' . trim( $s ) . '%';
 		$query .= " WHERE user_login LIKE '$search' OR user_email LIKE '$search'";
 	}
-	
+
 	if( !isset($_GET['sortby']) ) {
 		$_GET['sortby'] = 'id';
 	}
-	
+
 	if( $_GET['sortby'] == 'email' ) {
 		$query .= ' ORDER BY user_email ';
 	} elseif( $_GET['sortby'] == 'id' ) {
@@ -63,18 +64,18 @@ if ( $_GET['updated'] == 'true' ) {
 	} elseif( $_GET['sortby'] == 'registered' ) {
 		$query .= ' ORDER BY user_registered ';
 	}
-	
+
 	$query .= ( $_GET['order'] == 'DESC' ) ? 'DESC' : 'ASC';
 
-	if( !empty($_GET['s'])) {
+	if( !empty( $s )) {
 		$user_list = $wpdb->get_results( $query, ARRAY_A );
-		$total = count($user_list);	
+		$total = count($user_list);
 	} else {
 		$total = $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->users}");
 	}
-	
+
 	$query .= " LIMIT " . intval( ( $apage - 1 ) * $num) . ", " . intval( $num );
-	
+
 	$user_list = $wpdb->get_results( $query, ARRAY_A );
 
 	// Pagination
@@ -87,13 +88,13 @@ if ( $_GET['updated'] == 'true' ) {
 	?>
 	<h2><?php _e("Users"); ?></h2>
 	<form action="wpmu-users.php" method="get" style="position:absolute;right:0;top:0;"> 
-		<input type="text" name="s" value="<?php if (isset($_GET['s'])) echo stripslashes(wp_specialchars($_GET['s'], 1)); ?>" size="17" />
+		<input type="text" name="s" value="<?php if (isset($_GET['s'])) echo stripslashes( $s ); ?>" size="17" />
 		<input type="submit" id="post-query-submit" value="<?php _e('Search Users') ?>" class="button" />
 	</form>
 
 	<form id="form-user-list" action='wpmu-edit.php?action=allusers' method='post'>
 		<div class="tablenav">
-			<?php if ( $user_navigation ) echo "<div class='tablenav-pages'>$user_navigation</div>"; ?>	
+			<?php if ( $user_navigation ) echo "<div class='tablenav-pages'>$user_navigation</div>"; ?>
 
 			<div class="alignleft">
 				<input type="submit" value="<?php _e('Delete') ?>" name="alluser_delete" class="button-secondary delete" />
@@ -105,9 +106,9 @@ if ( $_GET['updated'] == 'true' ) {
 		</div>
 
 		<br class="clear" />
-		
+
 		<?php if( isset($_GET['s']) && $_GET['s'] != '' ) : ?>
-			<p><a href="wpmu-blogs.php?action=blogs&amp;s=<?php echo stripslashes(wp_specialchars($_GET['s'], 1)); ?>"><?php _e('Search Blogs:') ?> <strong><?php echo stripslashes(wp_specialchars($_GET['s'], 1)) ?></strong></a></p>
+			<p><a href="wpmu-blogs.php?action=blogs&amp;s=<?php echo urlencode( stripslashes( $s ) ); ?>"><?php _e('Search Blogs:') ?> <strong><?php echo stripslashes( $s ) ?></strong></a></p>
 		<?php endif; ?>
 
 		<?php
@@ -143,7 +144,7 @@ if ( $_GET['updated'] == 'true' ) {
 				foreach ( (array) $user_list as $user) { 
 					$class = ('alternate' == $class) ? '' : 'alternate';
 					?>
-					
+
 					<tr class="<?php echo $class; ?>">
 					<?php
 					foreach( (array) $posts_columns as $column_name=>$column_display_name) :
@@ -152,8 +153,8 @@ if ( $_GET['updated'] == 'true' ) {
 								<th scope="row" class="check-column"><input type='checkbox' id='user_<?php echo $user['ID'] ?>' name='allusers[]' value='<?php echo $user['ID'] ?>' /></th>
 							<?php 
 							break;
-							
-							case 'id': ?>								
+
+							case 'id': ?>
 								<td><?php echo $user['ID'] ?></td>
 							<?php
 							break;
@@ -228,11 +229,11 @@ if( apply_filters('show_adduser_fields', true) ) :
 	<h2><?php _e('Add user') ?></h2>
 	<form action="wpmu-edit.php?action=adduser" method="post">
 	<table class="form-table">
-		<tr class="form-field form-required">	
+		<tr class="form-field form-required">
 			<th scope='row'><?php _e('Username') ?></th>
 			<td><input type="text" name="user[username]" /></td>
 		</tr>
-		<tr class="form-field form-required">	
+		<tr class="form-field form-required">
 			<th scope='row'><?php _e('Email') ?></th>
 			<td><input type="text" name="user[email]" /></td>
 		</tr>

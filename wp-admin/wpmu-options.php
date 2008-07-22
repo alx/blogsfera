@@ -20,7 +20,7 @@ if (isset($_GET['updated'])) {
 	<h2><?php _e('Site Options') ?></h2> 
 	<form method="post" action="wpmu-edit.php?action=siteoptions">  
 		<?php wp_nonce_field( "siteoptions" ); ?>
-		
+
 		<h3><?php _e('Operational Settings <em>(These settings cannot be modified by blog owners)</em>') ?></h3> 
 		<table class="form-table">
 			<tr valign="top"> 
@@ -31,7 +31,7 @@ if (isset($_GET['updated'])) {
 					<?php _e('What you would like to call this website.') ?>
 				</td> 
 			</tr> 
-			
+
 			<tr valign="top"> 
 				<th scope="row"><?php _e('Site Admin Email') ?></th> 
 				<td>
@@ -40,7 +40,7 @@ if (isset($_GET['updated'])) {
 					<?php printf( __( 'Registration and support mails will come from this address. Make it generic like "support@%s"' ), $current_site->domain ); ?>
 				</td>
 			</tr> 
-			
+
 			<tr valign="top"> 
 				<th scope="row"><?php _e('Allow new registrations') ?></th> 
 				<?php
@@ -55,7 +55,7 @@ if (isset($_GET['updated'])) {
 					<?php _e('Disable or enable registration and who or what can be registered. (Default=all)') ?>
 				</td> 
 			</tr> 
-			
+
 			<tr valign="top"> 
 				<th scope="row"><?php _e('Registration notification') ?></th> 
 				<?php
@@ -68,7 +68,7 @@ if (isset($_GET['updated'])) {
 					<?php _e('Send the site admin an email notification every time someone registers a blog or user account.') ?>
 				</td> 
 			</tr> 
-			
+
 			<tr valign="top"> 
 				<th scope="row"><?php _e('Welcome Email') ?></th> 
 				<td>
@@ -77,7 +77,7 @@ if (isset($_GET['updated'])) {
 					<?php _e('The welcome email sent to new blog owners.') ?>
 				</td> 
 			</tr> 
-			
+
 			<tr valign="top"> 
 				<th scope="row"><?php _e('First Post') ?></th> 
 				<td>
@@ -86,7 +86,7 @@ if (isset($_GET['updated'])) {
 					<?php _e('First post on a new blog.') ?>
 				</td> 
 			</tr> 
-			
+
 			<tr valign="top"> 
 				<th scope="row"><?php _e('Banned Names') ?></th> 
 				<td>
@@ -95,7 +95,7 @@ if (isset($_GET['updated'])) {
 					<?php _e('Users are not allowed to register these blogs. Separate names by spaces.') ?>
 				</td> 
 			</tr> 
-			
+
 			<tr valign="top">
 				<th scope="row"><?php _e('Limited Email Registrations') ?></th> 
 				<td>
@@ -106,7 +106,7 @@ if (isset($_GET['updated'])) {
 					<?php _e('If you want to limit blog registrations to certain domains. One domain per line.') ?>
 				</td> 
 			</tr> 
-			
+
 			<tr valign="top"> 
 				<th scope="row"><?php _e('Banned Email Domains') ?></th> 
 				<td>
@@ -115,24 +115,31 @@ if (isset($_GET['updated'])) {
 					<?php _e('If you want to ban certain email domains from blog registrations. One domain per line.') ?>
 				</td> 
 			</tr>
-			
+
 			<tr valign="top"> 
 				<th scope="row"><?php _e('Blog upload space') ?></th> 
 				<td><input name="blog_upload_space" type="text" id="blog_upload_space" value="<?php echo get_site_option('blog_upload_space', 10) ?>" size="3" /> MB</td>
 			</tr>
-			
+
 			<tr valign="top"> 
 				<th scope="row"><?php _e('Upload File Types') ?></th> 
 				<td><input name="upload_filetypes" type="text" id="upload_filetypes" value="<?php echo get_site_option('upload_filetypes', 'jpg jpeg png gif') ?>" size="45" /></td>
 			</tr>
-			
+
 			<tr valign="top"> 
 				<th scope="row"><?php _e('Max upload file size') ?></th> 
 				<td><input name="fileupload_maxk" type="text" id="fileupload_maxk" value="<?php echo get_site_option('fileupload_maxk', 300) ?>" size="5" /> KB</td>
 			</tr> 
+			<tr valign="top"> 
+				<th scope="row"><?php _e('Admin Notice Feed') ?></th> 
+				<td><input name="admin_notice_feed" style="width: 95%" type="text" id="admin_notice_feed" value="<?php echo get_site_option( 'admin_notice_feed' ) ?>" size="80" /><br />
+				<?php _e( 'Display the latest post from this RSS or Atom feed on all blog dashboards. Leave blank to disable.' ); ?><br />
+				<?php if( get_site_option( 'admin_notice_feed' ) != 'http://' . $current_site->domain . $current_site->path . 'feed/' )
+					echo __( "A good one to use would be the feed from your main blog: " ) . 'http://' . $current_site->domain . $current_site->path . 'feed/'; ?></td>
+			</tr> 
 		</table>
-		
-		<h3><?php _e('Administration Settings') ?></h3> 	
+
+		<h3><?php _e('Administration Settings') ?></h3> 
 		<table class="form-table">
 			<tr valign="top"> 
 				<th scope="row"><?php _e('Site Admins') ?></th> 
@@ -143,7 +150,7 @@ if (isset($_GET['updated'])) {
 				</td> 
 			</tr> 
 		</table>
-		
+
 		<h3><?php _e('Site Wide Settings <em>(These settings may be overridden by blog owners)</em>') ?></h3> 
 		<table class="form-table">
 			<?php
@@ -166,7 +173,7 @@ if (isset($_GET['updated'])) {
 			} // languages
 			?>
 		</table>
-		
+
 		<h3><?php _e('Menus <em>(Enable or disable WP Backend Menus)</em>') ?></h3> 
 		<table class="form-table">
 			<tr>
@@ -184,7 +191,7 @@ if (isset($_GET['updated'])) {
 		</table>
 
 		<?php do_action( 'wpmu_options' ); // Add more options here ?>
-		
+
 		<p class="submit"> 
 			<input type="submit" name="Submit" value="<?php _e('Update Options') ?>" /></p> 
 	</form> 

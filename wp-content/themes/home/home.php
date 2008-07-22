@@ -4,7 +4,7 @@
 				
 <h2>WordPress &micro;</h2>
 <p>This is a <a href="http://mu.wordpress.org/">WordPress Mu</a> powered site.</p>
-<p>You can: <ul><li> <a href="wp-login.php">Login</a> </li><li> <a href="wp-signup.php">Create a new blog</a></li><li> Edit this file at <code>wp-content/themes/home/home.php</code> with your favourite text editor and customize this screen.</li></ul></p>
+<p>You can: <ul><?php wp_register(); ?><li> <?php wp_loginout(); ?></li><li> <a href="wp-signup.php">Create a new blog</a></li><li> Edit this file at <code>wp-content/themes/home/home.php</code> with your favourite text editor and customize this screen.</li></ul></p>
 <h3>The Latest News</h3>
 <ul>
 <strong>Site News</strong>

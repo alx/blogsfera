@@ -180,11 +180,11 @@ $structures = array(
 
 <table class="form-table">
 	<tr>
-		<th><?php _e('Category base'); ?></th>
-		<td><?php if( constant( 'VHOST' ) == 'no' && $current_site->domain.$current_site->path == $current_blog->domain.$current_blog->path ) { echo "/blog"; $category_base = str_replace( "/blog", "", $category_base ); }?> <input name="category_base" type="text" class="code"  value="<?php echo attribute_escape( $category_base ); ?>" size="30" /></td>
+		<th><label for="category_base"><?php _e('Category base'); ?></label></th>
+		<td><?php if( constant( 'VHOST' ) == 'no' && $current_site->domain.$current_site->path == $current_blog->domain.$current_blog->path ) { echo "/blog"; $category_base = str_replace( "/blog", "", $category_base ); }?> <input name="category_base" id='category_base' type="text" class="code"  value="<?php echo attribute_escape( $category_base ); ?>" size="30" /></td>
 	</tr>
 	<tr>
-		<th><?php _e('Tag base'); ?></th>
+		<th><label for="tag_base"><?php _e('Tag base'); ?></label></th>
 		<td><?php if( constant( 'VHOST' ) == 'no' && $current_site->domain.$current_site->path == $current_blog->domain.$current_blog->path ) { echo "/blog"; $tag_base = str_replace( "/blog", "", $tag_base ); }?> <input name="tag_base" id="tag_base" type="text" class="code"  value="<?php echo attribute_escape($tag_base); ?>" size="30" /></td>
 	</tr>
 </table>

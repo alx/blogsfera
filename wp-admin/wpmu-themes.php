@@ -21,7 +21,7 @@ $allowed_themes = get_site_allowed_themes();
 <div class="wrap">
 	<form action='wpmu-edit.php?action=updatethemes' method='post'>
 		<h2><?php _e('Site Themes') ?></h2>
-		<p><?php _e('Disable themes site-wide. You can enable themes on a blog by blog basis.') ?></p>		
+		<p><?php _e('Disable themes site-wide. You can enable themes on a blog by blog basis.') ?></p>
 		<table class="widefat">
 			<thead>
 				<tr>
@@ -37,7 +37,7 @@ $allowed_themes = get_site_allowed_themes();
 				$theme_key = wp_specialchars($theme['Stylesheet']);
 				$class = ('alt' == $class) ? '' : 'alt';
 				$class1 = $enabled = $disabled = '';
-				
+		
 				if( isset( $allowed_themes[ $theme_key ] ) == true ) {
 					$enabled = 'checked="checked" ';
 					$class1 = ' active';
@@ -58,7 +58,7 @@ $allowed_themes = get_site_allowed_themes();
 			<?php endforeach; ?>
 			</tbody>
 		</table>
-		
+
 		<p class="submit">
 			<input type='submit' value='<?php _e('Update Themes &raquo;') ?>' /></p>
 	</form>
