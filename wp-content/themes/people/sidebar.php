@@ -6,27 +6,29 @@
 		echo '<p><img src="'.author_image_path($c_user->ID, $display = false).'" /></p><p><a href="'.$url.'/?id='.$c_user->ID.'" >Ver mi perfil</a><p>';
 
 	?>
-	<ul>
-		<li><a href="http://bbvablogs.com" class='node'>PORTAL</a></li>
-		<li><a href="http://chat.bbvablogs.com" class='node'>SALAS DE CHAT</a></li>
-	</ul>
 
 	<br />
 	<h3 class="site-subtitle">Buscar</h3>
 	<?php include (TEMPLATEPATH . '/searchform.php'); ?>
 
 	<h3 class="site-subtitle">Areas</h3>
-	<?php //if(!isset($extra_data)){$extra_data = new User_Extra_Data;}?>
 	
 	<?php
-		/*$areas = $extra_data->area;
-		echo '<ul>';
-		foreach ($areas as $key => $area){
-			echo '<li><a href="'.$url.'/?area='.$key.'" >'.$area.'</a></li>';
-
-		}
-		echo '</ul>';
-	       */
+                $allFields = get_cimyFields();
+                if (count($allFields) > 0) {
+                    foreach ($allFields as $field) {
+                            echo "ID: ".$field['ID']." \n";
+                            echo "F_ORDER: ".$field['F_ORDER']." \n";
+                            echo "NAME: ".$field['NAME']." \n";
+                            echo "TYPE: ".$field['TYPE']." \n";
+                            echo "VALUE: ".$field['VALUE']." \n";
+                            echo "LABEL: ".$field['LABEL']." \n";
+                            echo "DESCRIPTION: ".$field['DESCRIPTION']." \n";
+                            echo "RULES: ";
+                            print_r($field['RULES']);
+                            echo "\n\n";
+                    }
+                }
 	?>
 
 </div>
