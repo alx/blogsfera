@@ -11,24 +11,4 @@
 	<h3 class="site-subtitle">Buscar</h3>
 	<?php include (TEMPLATEPATH . '/searchform.php'); ?>
 
-	<h3 class="site-subtitle">Areas</h3>
-	
-	<?php
-                $allFields = get_cimyFields();
-                if (count($allFields) > 0) {
-                    foreach ($allFields as $field) {
-                            echo "ID: ".$field['ID']." \n";
-                            echo "F_ORDER: ".$field['F_ORDER']." \n";
-                            echo "NAME: ".$field['NAME']." \n";
-                            echo "TYPE: ".$field['TYPE']." \n";
-                            echo "VALUE: ".$field['VALUE']." \n";
-                            echo "LABEL: ".$field['LABEL']." \n";
-                            echo "DESCRIPTION: ".$field['DESCRIPTION']." \n";
-                            echo "RULES: ";
-                            print_r($field['RULES']);
-                            echo "\n\n";
-                    }
-                }
-	?>
-
 </div>
