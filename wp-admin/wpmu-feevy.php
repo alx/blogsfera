@@ -1,10 +1,8 @@
 <?php
 require_once('admin.php');
 
-$title = __('WordPress MU &rsaquo; Stats');
+$title = __('Feevy admin');
 $parent_file = 'wpmu-admin.php';
-wp_enqueue_script('timeframe');
-
 
 require_once('admin-header.php');
 
