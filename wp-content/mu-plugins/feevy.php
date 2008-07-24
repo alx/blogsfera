@@ -19,7 +19,13 @@ include "feevy_soup.php";
 define('API_KEY','');		# Your Feevy api key, available at: http://feevy.com/api/view_key
 define('FEEVY_CODE','');	# Your feevy code, the number appearing in your Feevy javascript code: http://feevy.com/admin/
 
+add_action('admin_menu', 'add_menu');
 
+function add_menu(){
+	if (is_site_admin()){
+		add_submenu_page('wpmu-admin.php', 'Feevy admin', 'Feevy admin', 8, 'wpmu-feevy.php');
+	}
+}
 
 /*
 * ===========
