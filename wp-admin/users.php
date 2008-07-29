@@ -264,8 +264,9 @@ case 'addexistinguser':
 			if( ($username != null && is_site_admin( $username ) == false ) && ( array_key_exists($blog_id, get_blogs_of_user($user_id)) ) ) {
 				$location = 'users.php?update=add_existing';
 			} else {
-				add_user_to_blog('', $user_id, $_REQUEST[ 'new_role' ]);
-				do_action( "added_existing_user", $user_id );
+				$newuser_key = substr( md5( $user_id ), 0, 5 );
+				add_option( 'new_user_' . $newuser_key, array( 'user_id' => $user_id, 'email' => $user->user_email, 'role' => $_REQUEST[ 'new_role' ] ) );
+				wp_mail( $new_user_email, sprintf( __( '[%s] Joining confirmation' ), get_option( 'blogname' ) ), "Hi,\n\nYou have been invited to join '" . get_option( 'blogname' ) . "' at\n" . site_url() . "\nPlease click the following link to confirm the invite:\n" . site_url( "/newbloguser/$newuser_key/" ) );
 				$location = 'users.php?update=add';
 			}
 			wp_redirect("$location");

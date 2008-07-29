@@ -312,7 +312,9 @@ function print_plugins_table($plugins, $context = '') {
 <?php print_plugins_table($active_plugins, 'active') ?>
 </form>
 
+<?php if( is_site_admin() ) { ?>
 <p><?php printf(__('If something goes wrong with a plugin and you can&#8217;t use WordPress, delete or rename that file in the <code>%s</code> directory and it will be automatically deactivated.'), WP_PLUGIN_DIR); ?></p>
+<?php } ?>
 <?php endif; ?>
 
 <?php if ( ! empty($recent_plugins) ) : ?>

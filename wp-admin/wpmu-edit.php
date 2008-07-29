@@ -95,9 +95,9 @@ switch( $_GET['action'] ) {
 		check_admin_referer('add-blog');
 
 		$blog = $_POST['blog'];
-		$domain = ereg_replace("[^A-Za-z0-9]", "", strtolower( wp_specialchars( $blog['domain'] ) ) );
-		$email = wp_specialchars( $blog['email'] );
-		$title = stripslashes( wp_specialchars( $blog['title'] ) );
+		$domain = sanitize_user( str_replace( '/', '', $blog[ 'domain' ] ) );
+		$email = sanitize_email( $blog[ 'email' ] );
+		$title = $blog[ 'title' ];
 
 		if ( empty($domain) || empty($email))
 			wp_die( __('Missing blog address or email address.') );
@@ -129,7 +129,7 @@ switch( $_GET['action'] ) {
 		if( !is_wp_error($id) ) {
 			if( get_user_option( $user_id, 'primary_blog' ) == 1 )
 				update_user_option( $user_id, 'primary_blog', $id, true );
-			$content_mail = sprintf( __( "New blog created by %1s\n\nAddress: http://%2s\nName: %3s"), $current_user->user_login , $newdomain.$path, $title );
+			$content_mail = sprintf( __( "New blog created by %1s\n\nAddress: http://%2s\nName: %3s"), $current_user->user_login , $newdomain.$path, stripslashes( $title ) );
 			wp_mail( get_site_option('admin_email'),  sprintf(__('[%s] New Blog Created'), $current_site->site_name), $content_mail, 'From: "Site Admin" <' . get_site_option( 'admin_email' ) . '>' );
 			wp_redirect( add_query_arg( array('updated' => 'true', 'action' => 'add-blog'), $_SERVER['HTTP_REFERER'] ) );
 			exit();
@@ -241,6 +241,7 @@ switch( $_GET['action'] ) {
 					$wpdb->query( "INSERT INTO " . $wpdb->usermeta . "( `umeta_id` , `user_id` , `meta_key` , `meta_value` ) VALUES ( NULL, '$userid', '" . $wpdb->base_prefix . $id . "_capabilities', 'a:1:{s:" . strlen( $_POST['new_role'] ) . ":\"" . $_POST['new_role'] . "\";b:1;}')" );
 			}
 		}
+		do_action( 'wpmu_update_blog_options' );
 		wpmu_admin_do_redirect( "wpmu-blogs.php?action=editblog&updated=true&id=".$id );
 	break;
 

@@ -294,23 +294,16 @@ switch( $_GET['action'] ) {
 		$query = "SELECT * FROM {$wpdb->blogs} WHERE site_id = '{$wpdb->siteid}' ";
 
 		if( isset($_GET['blog_name']) ) {
-			$query = "SELECT blog_id, {$wpdb->blogs}.domain, {$wpdb->blogs}.path, registered, last_updated
-				FROM {$wpdb->blogs}, {$wpdb->site}
-				WHERE site_id = '{$wpdb->siteid}'
-				AND {$wpdb->blogs}.site_id = {$wpdb->site}.id
-				AND ( {$wpdb->blogs}.domain LIKE '%{$s}%' OR {$wpdb->blogs}.path LIKE '%{$s}%' )";
+			$query .= " AND ( {$wpdb->blogs}.domain LIKE '%{$s}%' OR {$wpdb->blogs}.path LIKE '%{$s}%' ) ";
 		} elseif( isset($_GET['blog_id']) ) {
-			$query = "SELECT * 
-				FROM {$wpdb->blogs}
-				WHERE site_id = '{$wpdb->siteid}'
-				AND   blog_id = '".intval($_GET['s'])."'";
+			$query .= " AND   blog_id = '".intval($_GET['s'])."' ";
 		} elseif( isset($_GET['blog_ip']) ) {
 			$query = "SELECT *
 				FROM {$wpdb->blogs}, {$wpdb->registration_log}
 				WHERE site_id = '{$wpdb->siteid}'
 				AND {$wpdb->blogs}.blog_id = {$wpdb->registration_log}.blog_id
 				AND {$wpdb->registration_log}.IP LIKE ('%{$s}%')";
-		}
+		} 
 
 		if( isset( $_GET['sortby'] ) == false ) {
 			$_GET['sortby'] = 'id';
@@ -328,15 +321,13 @@ switch( $_GET['action'] ) {
 
 		$query .= ( $_GET['order'] == 'DESC' ) ? 'DESC' : 'ASC';
 
-		if( !empty($_GET['s']) ) {
-			$blog_list = $wpdb->get_results( $query, ARRAY_A );
-			$total = count($blog_list);
+		if( !empty($s) ) {
+			$total = $wpdb->get_var( str_replace('SELECT *', 'SELECT COUNT(blog_id)', $query) );
 		} else {
-			$total = $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->blogs} WHERE site_id = '{$wpdb->siteid}' ");
+			$total = $wpdb->get_var( "SELECT COUNT(blog_id) FROM {$wpdb->blogs} WHERE site_id = '{$wpdb->siteid}' ");
 		}
 
 		$query .= " LIMIT " . intval( ( $apage - 1 ) * $num) . ", " . intval( $num );
-
 		$blog_list = $wpdb->get_results( $query, ARRAY_A );
 
 		// Pagination
@@ -357,7 +348,7 @@ switch( $_GET['action'] ) {
 		<div class="wrap" style="position:relative;">
 		<h2><?php _e('Blogs') ?></h2>
 
-		<form id="searchform" action="wpmu-blogs.php" method="get" style="position:absolute;right:0;top:0;">
+		<form action="wpmu-blogs.php" method="get" id="wpmu-search">
 			<input type="hidden" name="action" value="blogs" />
 			<input type="text" name="s" value="<?php if (isset($_GET['s'])) echo stripslashes( wp_specialchars( $s, 1 ) ); ?>" size="17" />
 			<input type="submit" class="button" name="blog_name" value="<?php _e('Search blogs by name') ?>" />
@@ -396,7 +387,7 @@ switch( $_GET['action'] ) {
 			'users'        => __('Users'),
 			'plugins'      => __('Actions')
 		);
-		$posts_columns = apply_filters('manage_posts_columns', $posts_columns);
+		$posts_columns = apply_filters('wpmu_blogs_columns', $posts_columns);
 
 		// you can not edit these at the moment
 		$posts_columns['control_edit']      = '';

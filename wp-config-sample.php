@@ -15,6 +15,7 @@ $base = 'BASE';
 // to get keys generated for you, or just make something up.  Each key should have a different phrase.
 define('AUTH_KEY', 'put your unique phrase here'); // Change this to a unique phrase.
 define('SECURE_AUTH_KEY', 'put your unique phrase here'); // Change this to a unique phrase.
+define('SECURE_AUTH_SALT', 'put your unique phrase here'); // Change this to a unique phrase.
 define('LOGGED_IN_KEY', 'put your unique phrase here'); // Change this to a unique phrase.
 define('SECRET_KEY', 'put your unique phrase here'); // Change these to unique phrases.
 define('SECRET_SALT', 'put your unique phrase here');
@@ -30,7 +31,7 @@ $table_prefix  = 'wp_';   // Only numbers, letters, and underscores please!
 // chosen language must be installed to wp-content/languages.
 // For example, install de.mo to wp-content/languages and set WPLANG to 'de'
 // to enable German language support.
-define ('WPLANG', 'es_ES');
+define ('WPLANG', '');
 
 // uncomment this to enable wp-content/sunrise.php support
 //define( 'SUNRISE', 'on' );

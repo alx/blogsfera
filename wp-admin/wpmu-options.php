@@ -49,9 +49,9 @@ if (isset($_GET['updated'])) {
 				?>
 				<td>
 					<label><input name="registration" type="radio" id="registration1" value='none' <?php echo get_site_option('registration') == 'none' ? 'checked="checked"' : ''; ?> /> <?php _e('Disabled'); ?></label><br />
-					<label><input name="registration" type="radio" id="registration2" value='all' <?php echo get_site_option('registration') == 'all' ? 'checked="checked"' : ''; ?> /> <?php _e('Enabled for all. Blogs and user accounts can be created.'); ?></label><br />
-					<label><input name="registration" type="radio" id="registration3" value='user' <?php echo get_site_option('registration') == 'user' ? 'checked="checked"' : ''; ?> /> <?php _e('Enabled for users only. Only user account can be created.'); ?></label><br />
-					<label><input name="registration" type="radio" id="registration4" value='blog' <?php echo get_site_option('registration') == 'blog' ? 'checked="checked"' : ''; ?> /> <?php _e('Enabled for blogs only. Only logged in users can create new blogs.'); ?></label><br />
+					<label><input name="registration" type="radio" id="registration2" value='all' <?php echo get_site_option('registration') == 'all' ? 'checked="checked"' : ''; ?> /> <?php _e('Enabled. Blogs and user accounts can be created.'); ?></label><br />
+					<label><input name="registration" type="radio" id="registration3" value='user' <?php echo get_site_option('registration') == 'user' ? 'checked="checked"' : ''; ?> /> <?php _e('Only user account can be created.'); ?></label><br />
+					<label><input name="registration" type="radio" id="registration4" value='blog' <?php echo get_site_option('registration') == 'blog' ? 'checked="checked"' : ''; ?> /> <?php _e('Only logged in users can create new blogs.'); ?></label><br />
 					<?php _e('Disable or enable registration and who or what can be registered. (Default=all)') ?>
 				</td> 
 			</tr> 

@@ -299,7 +299,8 @@ if ( !defined('WP_PLUGIN_URL') )
 if ( !defined('PLUGINDIR') )
 	define( 'PLUGINDIR', 'wp-content/plugins' ); // Relative to ABSPATH.  For back compat.
 
-$current_site->site_name = get_site_option('site_name');
+if( !isset($current_site->site_name) )
+	$current_site->site_name = get_site_option('site_name');
 if( $current_site->site_name == false )
 	$current_site->site_name = ucfirst( $current_site->domain );
 

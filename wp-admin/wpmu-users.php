@@ -68,10 +68,9 @@ if ( $_GET['updated'] == 'true' ) {
 	$query .= ( $_GET['order'] == 'DESC' ) ? 'DESC' : 'ASC';
 
 	if( !empty( $s )) {
-		$user_list = $wpdb->get_results( $query, ARRAY_A );
-		$total = count($user_list);
+		$total = $wpdb->get_var( str_replace('SELECT *', 'SELECT COUNT(ID)', $query) );
 	} else {
-		$total = $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->users}");
+		$total = $wpdb->get_var( "SELECT COUNT(ID) FROM {$wpdb->users}");
 	}
 
 	$query .= " LIMIT " . intval( ( $apage - 1 ) * $num) . ", " . intval( $num );
@@ -87,7 +86,7 @@ if ( $_GET['updated'] == 'true' ) {
 	));
 	?>
 	<h2><?php _e("Users"); ?></h2>
-	<form action="wpmu-users.php" method="get" style="position:absolute;right:0;top:0;"> 
+	<form action="wpmu-users.php" method="get" id="wpmu-search"> 
 		<input type="text" name="s" value="<?php if (isset($_GET['s'])) echo stripslashes( $s ); ?>" size="17" />
 		<input type="submit" id="post-query-submit" value="<?php _e('Search Users') ?>" class="button" />
 	</form>
@@ -122,7 +121,7 @@ if ( $_GET['updated'] == 'true' ) {
 			'registered' => __('Registered'),
 			'blogs'      => ''
 		);
-		$posts_columns = apply_filters('manage_posts_columns', $posts_columns);
+		$posts_columns = apply_filters('wpmu_users_columns', $posts_columns);
 		?>
 		<table class="widefat" cellpadding="3" cellspacing="3">
 			<thead>

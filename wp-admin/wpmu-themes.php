@@ -33,13 +33,17 @@ $allowed_themes = get_site_allowed_themes();
 			</thead>
 			<tbody id="plugins">
 			<?php
+			$total_theme_count = 0;
+			$activated_themes_count = 0;
 			foreach( (array) $themes as $key => $theme ) :
+                                $total_theme_count++;
 				$theme_key = wp_specialchars($theme['Stylesheet']);
 				$class = ('alt' == $class) ? '' : 'alt';
 				$class1 = $enabled = $disabled = '';
 		
 				if( isset( $allowed_themes[ $theme_key ] ) == true ) {
 					$enabled = 'checked="checked" ';
+                                        $activated_themes_count++;
 					$class1 = ' active';
 				} else {
 					$disabled = 'checked="checked" ';
@@ -62,6 +66,8 @@ $allowed_themes = get_site_allowed_themes();
 		<p class="submit">
 			<input type='submit' value='<?php _e('Update Themes &raquo;') ?>' /></p>
 	</form>
+<p>Total Themes Installed: <?php echo $total_theme_count; ?><br />
+Themes Activated: <?php echo $activated_themes_count; ?></p>
 </div>
 
 <?php include('admin-footer.php'); ?>

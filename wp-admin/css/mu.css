@@ -33,3 +33,9 @@ form#all-my-blogs p, form#all-my-blogs p * {
 #all-my-blogs a:hover, #all-my-blogs a:active  {
 	text-decoration: none;
 }
+
+form#wpmu-search {
+	position:absolute;
+	right:0;
+	top:0;
+}

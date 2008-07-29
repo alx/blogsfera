@@ -417,7 +417,10 @@ if( $active_signup == "none" ) {
 					$newblog = 'http://' . $current_site->domain . $current_site->path . $newblogname . '/';
 				else
 					$newblog = 'http://' . $newblogname . '.' . $current_site->domain . $current_site->path;
-				printf(__("<p><em>The blog you were looking for, <strong>%s</strong> doesn't exist but you can create it now!</em></p>"), $newblog );
+				if ($active_signup == 'blog' || $active_signup == 'all')
+					printf(__("<p><em>The blog you were looking for, <strong>%s</strong> doesn't exist but you can create it now!</em></p>"), $newblog );
+				else
+					printf(__("<p><em>The blog you were looking for, <strong>%s</strong> doesn't exist.</em></p>"), $newblog );
 			}
 			break;
 	}
