@@ -131,6 +131,7 @@ function feevy_update_tag_from_user($blog_id){
 * Parameters: 
 * 	- $user_id: user to fech metadata from
 */
+/*
 function user_meta_to_feevy_tags($user_id) {
 	$tags = "";
 	
@@ -160,7 +161,7 @@ function user_meta_to_feevy_tags($user_id) {
 	
 	return preg_replace('/\+(.*)/','$1',$tags);
 }
-
+*/
 
 
 /**
@@ -233,42 +234,6 @@ function feevy_code($display = true, $style = "white"){
 	
 	// Initialize feevy code
 	$feevy = "<script type='text/javascript' src='http://www.feevy.com/code/".FEEVY_CODE;
-	
-	// Set area tag
-	if (strlen($_POST['area']) > 0 ) {
-		$area = $_POST['area'];
-		$feevy .= "/tags/$area";
-	}
-	
-	// Set unidad tag
-	if (strlen($_POST['unidad']) > 0 ){
-		$unidad = $_POST['unidad'];
-		if(stripos($feevy, "tags")) {
-			$feevy .= "+$unidad";
-		}else{
-			$feevy .= "/tags/$unidad";
-		}
-	}
-	
-	// Set pais tag
-	if (strlen($_POST['pais']) > 0 ){
-		$pais = $_POST['pais'];
-		if(stripos($feevy, "tags")) {
-			$feevy .= "+$pais";
-		}else{
-			$feevy .= "/tags/$pais";
-		}
-	}
-
-	// Set sex tag
-	if (strlen($_POST['sexo']) > 0 ){
-		$sexo = $_POST['sexo'];
-		if(stripos($feevy, "tags")) {
-			$feevy .= "+$sexo";
-		}else{
-			$feevy .= "/tags/$sexo";
-		}
-	}
 	
 	// Close code
 	$feevy .= "/$style'></script>";

@@ -224,7 +224,7 @@ function blogsfera_widget_news() {
 
 // Widget: Search Results
 // Description: Display search resut. Need "Search_results" page slug
-function blogsfera_widget_search_result() {
+function blogsfera_widget_search_results() {
 	$title = __('Resultados de la b&uacute;squeda');
 	?>
 	
