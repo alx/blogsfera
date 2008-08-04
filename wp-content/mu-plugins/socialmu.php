@@ -10,6 +10,14 @@ License URI: http://www.gnu.org/licenses/gpl.html
 */
 
 
+add_action('admin_menu', 'add_menu_comunidad_admin');
+
+function add_menu_comunidad_admin(){
+	if (is_site_admin()){
+		add_submenu_page('wpmu-admin.php', 'Comunidad admin', 'Comunidad admin', 8, 'wpmu-socialmu.php');
+	}
+}
+
 //add xfn rel metada for each user and each friend
 function add_friend() {
 	global $userdata;
