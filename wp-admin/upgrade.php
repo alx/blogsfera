@@ -1,4 +1,4 @@
-<?php
+	<?php
 define('WP_INSTALLING', true);
 
 require('../wp-load.php');

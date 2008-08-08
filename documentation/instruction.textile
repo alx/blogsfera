@@ -7,13 +7,10 @@ h4. List of default plugins
 h5. Feevy
 
 New blogs and posts in the Blogsfera will be directly updated in your Feevy. To configure it, you need  to configure this file: _wp-content/mu-plugins/feevy.php_
-You'll need a Feevy account to activate this plugin.
-"A Feevy panel in the administration should be available soon":http://lasindias.lighthouseapp.com/projects/13796/tickets/4-add-administration-panel-for-feevy-portal
 
-@@@
-define('API_KEY','');		# Your Feevy api key, available at: http://feevy.com/api/view_key
-define('FEEVY_CODE','');	# Your feevy code, the number appearing in your Feevy javascript code: http://feevy.com/admin/
-@@@
+You'll need a Feevy account to activate this plugin.
+
+You will need to configure the plugin in the Feevy panel to make it work correctly.
 
 h5. MuSearch
 
