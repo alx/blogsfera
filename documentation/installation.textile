@@ -1,6 +1,6 @@
 h1. Server installation
 
-h2. Requierements
+h2. Requirements
 
 * PHP version 4.3 or greater
 * MySQL version 4.0 or greater
