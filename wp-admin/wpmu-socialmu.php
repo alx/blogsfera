@@ -1,7 +1,7 @@
 <?php
 require_once('admin.php');
 
-$title = __('Feevy admin');
+$title = __('Comunidad Admin');
 $parent_file = 'wpmu-admin.php';
 
 require_once('admin-header.php');
@@ -12,23 +12,14 @@ if( is_site_admin() == false ) {
 
 if (isset($_POST['updated'])) {
 	?>
-	<div id="message" class="updated fade"><p><?php _e('Options saved.') ?></p></div>
+	<div id="message" class="updated fade"><p><?php _e('Options updated.') ?></p></div>
 	<?php
 }
 ?>
 
 <?php 
-
-if (isset($_POST['feevy_number']) && isset($_POST['api_code'])){
-	add_site_option("feevy_number", $_POST['feevy_number']);
-	add_site_option("api_code", $_POST['api_code']);
-}
-
-?>
-
-<?php 
 	global $wpdb;
-if (($_GET['action']=='addfeevyportal')){
+if (($_GET['action']=='addcomunidad')){
 	check_admin_referer('add-blog');
 
 		$blog = $_POST['blog'];
@@ -73,47 +64,27 @@ if (($_GET['action']=='addfeevyportal')){
 		} else {
 			wp_die( $id->get_error_message() );
 		}
-		update_blog_option( $id, 'template', 'feevy-portal');
-		update_blog_option( $id, 'stylesheet', 'feevy-portal');
+		update_blog_option( $id, 'template', 'people');
+		update_blog_option( $id, 'stylesheet', 'people');
 		
-		add_site_option("feevy_url", "http://".$newdomain.$path);
+		add_site_option("comunidad_url", "http://".$newdomain.$path);
 }
+
+
+
 ?>
 
-<div class="wrap">
-
-<h2><?php _e('Feevy parameters'); ?></h2>
-		<form method="post" action="<?php bloginfo('url'); ?>/wp-admin/wpmu-feevy.php" >
-		<table class="form-table">
-			<tr class="form-field form-required">
-				<th style="text-align:center;" scope='row'><?php _e('Feevy number') ?> </th>
-				<td><input name="feevy_number" type="text" size="20" title="<?php _e('Portal feevy Title') ?>" value="<?php echo get_site_option('feevy_number'); ?>"/></td>
-				<td><p>Your feevy number, the number appearing in your Feevy javascript code: <a href="http://feevy.com/admin/">http://feevy.com/admin/</a></p></td>
-			</tr>
-			<tr class="form-field form-required">
-				<th style="text-align:center;" scope='row'><?php _e('Api code') ?></th>
-				<td><input name="api_code" type="text" size="20" title="<?php _e('Portal feevy Title') ?>" value="<?php echo get_site_option('feevy_number'); ?>" value="<?php echo get_site_option('api_code'); ?>"/></td>
-				<td><p>Your Feevy api key, available at: <a href="http://feevy.com/api/view_key">http://feevy.com/api/view_key</a></p></td>
-			</tr>
-		</table>
-			<p class="submit">
-				<input type="hidden" name="updated" value="updated">
-				<input class="button" type="submit" name="go" value="<?php _e('Update Options') ?>" /></p>
-			</form>
-
-
-</div>
 
 <div class="wrap">
 
-<h2><?php _e('Portal feevy Automatic install '); ?></h2>
+<h2><?php _e('Comunidad Automatic install '); ?></h2>
 
-<?php if (strlen(get_site_option("feevy_url")) == 0){ ?>
-			<form method="post" action="wpmu-feevy.php?action=addfeevyportal">
+<?php if (strlen(get_site_option("comunidad_url")) == 0){ ?>
+			<form method="post" action="wpmu-socialmu.php?action=addcomunidad">
 				<?php wp_nonce_field('add-blog') ?>
 				<table class="form-table">
 					<tr class="form-field form-required">
-						<th style="text-align:center;" scope='row'><?php _e('Portal feevy Address') ?></th>
+						<th style="text-align:center;" scope='row'><?php _e('Comunidad Address') ?></th>
 						<td>
 						<?php if( constant( "VHOST" ) == 'yes' ) : ?>
 							<input name="blog[domain]" type="text" title="<?php _e('Domain') ?>"/>.<?php echo $current_site->domain;?>
@@ -123,7 +94,7 @@ if (($_GET['action']=='addfeevyportal')){
 						</td>
 					</tr>
 					<tr class="form-field form-required">
-						<th style="text-align:center;" scope='row'><?php _e('Portal feevy Title') ?></th>
+						<th style="text-align:center;" scope='row'><?php _e('Comunidad Title') ?></th>
 						<td><input name="blog[title]" type="text" size="20" title="<?php _e('Title') ?>"/></td>
 					</tr>
 					<tr class="form-field form-required">
@@ -136,16 +107,20 @@ if (($_GET['action']=='addfeevyportal')){
 				</table>
 				<p class="submit">
 					<input type="hidden" name="updated" value="updated">
-					<input class="button" type="submit" name="go" value="<?php _e('Add Portal feevy') ?>" /></p>
+					<input class="button" type="submit" name="go" value="<?php _e('Add Comunidad') ?>" /></p>
 			</form>
 <?php 
 }else{
-	echo '<p>Portal feevy is instaled on <a href="' . get_site_option("feevy_url").'">'.get_site_option("feevy_url").'</a></p>';
+	echo '<p>comunidad is instaled on <a href="' . get_site_option("comunidad_url").'">'.get_site_option("comunidad_url").'</a></p>';
 }
 
 
 
 
 ?>
+
+</div>
+
+
 
 <?php include('admin-footer.php'); ?>
