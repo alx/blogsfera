@@ -1,0 +1,104 @@
+h2. General administration
+
+h3. Plugins
+
+h4. List of default plugins
+
+h5. Feevy
+
+New blogs and posts in the Blogsfera will be directly updated in your Feevy. To configure it, you need  to configure this file: _wp-content/mu-plugins/feevy.php_
+
+You'll need a Feevy account to activate this plugin.
+
+You will need to configure the plugin in the Feevy panel to make it work correctly.
+
+h5. MuSearch
+
+This plugin will allow you to search the entire blogsfera by blog title, post title or author. Widgets are available on Blogsfera portal to display a search box and the results.
+
+h5. MuTags
+
+This plugin will allow you to search the entire blogsfera by tags. Widgets are available on Blogsfera portal to display a search box and the results.
+
+h5. Plugin Commander
+
+This is an helper for the Blogsfera administrator to quickly install, activate or desactivate plugins for the entire Blosgfera. You'll learn more about this plugins in the next chapters.
+
+h5. Profile Picture
+
+Adds picture to Author profile.
+
+h5. SocialMu
+
+A social networking plugin that's used on the Community portal, it could easily be use for other parts of the Blogsfera.
+
+h5. Widget Subscribe
+
+Widget that would allow users to subscribe or unsubscribe to a blog. When a new post ill be publish on a subscribe blog, this user will receive a notification.
+
+h5. Zappo Wpmu Topposts
+
+Simple WordPressMU plugin for tracking top posts and top blogs. Inspired by WordPress.com's Top Posts feature, devloped in the style of wp-shortstats.
+
+h4. Install a new plugin
+
+h4. Activate plugins for all Blogsfera
+
+h4. Activate plugins for a single blog
+
+h3. Users
+
+h3. Blogs
+
+h3. Options
+
+h2. Users
+
+h3. Creation
+
+h3. Profile modification
+
+h2. Blogs
+
+h3. Creation
+
+h3. Administration
+
+h2. Portals
+
+h3. Blogsfera portal
+
+All widgets code is in _wp-content/mu-plugins/portal_widgets.php_
+Some referenced methods are available in _wp-includes/wpmu-functions.php_
+
+h4. Widgets description
+
+*Recent articles* : Show last articles from the blogsfera.
+
+*Avisos* : Display last news from another blog. Blog_id is 2 by default.
+
+*Search* : Display search boxes. Depends on Mu_Search plugin.
+
+*Chat* : Display a chat box. Depends on Wordspew plugin.
+
+*Mas Activos* : Display most active blogs, the ones with the biggest number of posts. 10 blogs are displayed by default
+
+*Mas Leidos* : Display most read blogs. Depends on Zappo Wpmu Topposts plugin.
+
+*My Blogs* : Display list of owner blog and administration link.
+
+*News* : Display last post from Blogsfera portal.
+
+*Search Results* : Display search results.
+
+*Tags Results* : Display tag results.
+
+*Tags* : Display a tag cloud.
+
+*User recientes* : Display avatars of recent users. 20 users are displayed by default.
+
+h4. Widgets management
+
+h3. Feevy Portal
+
+h3. Community Portal

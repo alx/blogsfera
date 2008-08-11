@@ -1,0 +1,50 @@
+h1. Server installation
+
+h2. Requierements
+
+* MySQL Database
+* Apache, or any webserver
+* rewrite mod enabled in web server
+* PHP
+
+
+h2. 5 minutes install
+
+* "Download the source code":http://github.com/alx/blogsfera/tarball/master
+* Upload it to your webserver
+* Launch the website in your browser, you'll find the configuration process
+* If necessary, create the _wp-config.php_ in your installation directory, and fill the database configuration:
+
+@@@
+cp wp-config-sample.php wp-config.php
+@@@
+
+h2. Cimy Extra Fields Plugin
+
+* Needed by Comunidad and feevy portal to show user extra info
+* Activate Cimy Extra Fields Plugin
+* Add as many extra fields as you want
+
+h1. Themes installation
+
+h2. Blogsfera portal
+
+* Go to admin panel, on the Design tab, and select Portal Theme
+* Go in "Site Admin", "Opciones", and activate the plugin menu at the end of the page
+* Activate plugins: Wordspew, Blogsfera Portal Widgets
+* Return to "Site Admin", "Opciones", and desactivate the plugin menu
+* Create new page, set "Search_results" as page slug
+* Create new page, set "Tag_results" as page slug
+
+h2. Feevy portal
+
+* Create a new blog
+* Activate feevy-portal theme on this blog
+* go to admin page of feevy and configure options
+* Have fun
+
+h2. Comunidad
+
+* Create a new blog
+* Activate WP Contact Manager theme on this blog
+* Have fun
