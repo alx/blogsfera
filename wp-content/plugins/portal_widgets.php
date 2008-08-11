@@ -406,6 +406,45 @@ function blogsfera_register_widget($id, $name, $output_callback, $options = arra
 		$wp_registered_widgets[$id] = $widget;
 }
 
+function get_time_difference($post_time, $decorate = false){
+	$timestamp = time() - strtotime($post_time);
+	
+	if($decorate == true){
+		return duration($timestamp);
+	} else {
+		return $timestamp;
+	}
+}
+
+function duration($timestamp) {
+	
+	$years=floor($timestamp / (60*60*24*365));
+	$timestamp%=60*60*24*365;
+	
+	$weeks=floor($timestamp / (60*60*24*7));
+	$timestamp%=60*60*24*7;
+	
+	$days=floor($timestamp / (60*60*24));
+	$timestamp%=60*60*24;
+    
+	$hrs=floor($timestamp / (60*60));
+	$timestamp%=60*60;
+    
+	$mins=floor($timestamp / 60);
+	$secs=$timestamp % 60;
+   
+   $str="";
+
+   if ($secs >= 1) { $str ="{$secs} segundos "; }
+   if ($mins >= 1) { $str ="{$mins} minutos "; }
+   if ($hrs >= 1) { $str ="{$hrs} horas "; }
+   if ($days >= 1) { $str ="{$days} d&iacute;as "; }
+   if ($weeks >= 1) { $str ="{$weeks} semanas "; }
+   if ($years >= 1) { $str ="{$years} a&ntilde;os "; }
+   
+   return $str;
+}
+
 $widget_ops = array('classname' => 'widget_recent_articles', 'description' => __("Show last articles from the blogsfera") );
 blogsfera_register_widget('widget_recent_articles', __('Art&iacute;culos recientes'), 'blogsfera_widget_recent_articles', $widget_ops);
 
