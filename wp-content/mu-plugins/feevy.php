@@ -40,7 +40,7 @@ function add_menu(){
 */
 function feevy_get_blog($blog_id) {
 	
-	if(!isset(API_KEY))
+	if(!API_KEY)
 		return null;
 		
 	switch_to_blog($blog_id);
@@ -66,7 +66,7 @@ function feevy_get_blog($blog_id) {
 */
 function feevy_add_blog($new_blog_id) {
 	
-	if(!isset(API_KEY))
+	if(!API_KEY)
 		return null;
 		
 	switch_to_blog($blog_id);
@@ -93,7 +93,7 @@ function feevy_add_blog($new_blog_id) {
 */
 function feevy_update_tag($blog_id, $tags){
 
-	if(!isset(API_KEY))
+	if(!API_KEY)
 		return null;
 		
 	// Get blog from blog_id
@@ -181,7 +181,7 @@ function user_meta_to_feevy_tags($user_id) {
 */
 function feevy_update_avatar(){
 
-	if(!isset(API_KEY))
+	if(!API_KEY)
 		return null;
 		
 	global $user_ID;
@@ -246,7 +246,7 @@ function feevy_ping(){
 */
 function feevy_code($display = true, $style = "white"){
 
-	if(!isset(FEEVY_CODE))
+	if(!FEEVY_CODE)
 		return null;
 		
 	// Initialize feevy code
