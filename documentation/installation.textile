@@ -22,9 +22,6 @@ h1. Themes installation
 
 h2. Blogsfera portal
 
-* Go in "Site Admin", "Opciones", and activate the plugin menu at the end of the page
-* Activate plugins: Wordspew, Blogsfera Portal Widgets
-* Return to "Site Admin", "Opciones", and desactivate the plugin menu
 * Create new page, set "Search_results" as Page Template, and Publish
 * Create new page, set "Tag_results" as Page Template, and Publish
 

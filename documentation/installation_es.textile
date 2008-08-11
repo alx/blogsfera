@@ -20,9 +20,6 @@ cp wp-config-sample.php wp-config.php
 
 h2. Portal de la Blogsfera
 
-* En Site Admin > Opciones, active el menu de plugins al final de la página
-* En Plugins (menú derecho) active los plugins: Wordspew, Blogsfera Portal Widgets 
-* Vuelva a Site Admin>Opciones, y desactive el menú de plugins
 * Cree una nueva página. En Page Template escoja "Search_results". Pulse botón Publicar.
 * Cree una nueva página. En Page Template escoja "Tag_results". Pulse botón Publicar. 
 

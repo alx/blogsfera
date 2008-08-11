@@ -1,4 +1,4 @@
-h2. General administration
+h2. Administracióm General
 
 h3. Plugins
 
@@ -6,13 +6,14 @@ h4. List of default plugins
 
 h5. Feevy
 
-New blogs and posts in the Blogsfera will be directly updated in your Feevy. To configure it, you need  to configure this file: _wp-content/mu-plugins/feevy.php_
+Nuevos blogs y posts de la Blogsfera seran actualizados en Feevy. Para configurar ese plugin, va en Site Admin -> Feevy.
 
-You'll need a Feevy account to activate this plugin.
-
-You will need to configure the plugin in the Feevy panel to make it work correctly.
+Necesite una cuenta de "Feevy.com" para usar ese plugin.
 
 h5. MuSearch
+
+Ese plugin permite de buscar dentro la blogsfera entera: titulo de blog, titulo de post o nombre de autor.
+
 
 This plugin will allow you to search the entire blogsfera by blog title, post title or author. Widgets are available on Blogsfera portal to display a search box and the results.
 
