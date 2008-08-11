@@ -16,8 +16,8 @@ Author URI: http://blog.alexgirard.com
 * =========
 */
 include_once( ABSPATH . 'wp-content/mu-plugins/feevy_soup.php');
-define('API_KEY',get_site_option('api_code'));		# Your Feevy api key, available at: http://feevy.com/api/view_key
-define('FEEVY_CODE',get_site_option('feevy_number'));	# Your feevy code, the number appearing in your Feevy javascript code: http://feevy.com/admin/
+define('API_KEY', get_site_option('api_code'));		# Your Feevy api key, available at: http://feevy.com/api/view_key
+define('FEEVY_CODE', get_site_option('feevy_number'));	# Your feevy code, the number appearing in your Feevy javascript code: http://feevy.com/admin/
 
 add_action('admin_menu', 'add_menu');
 
@@ -39,6 +39,10 @@ function add_menu(){
 * 	- $blog_id: id of the blog to get on feevy
 */
 function feevy_get_blog($blog_id) {
+	
+	if(!isset(API_KEY))
+		return null;
+		
 	switch_to_blog($blog_id);
 	
 	// Set request to Feevy API
@@ -62,6 +66,9 @@ function feevy_get_blog($blog_id) {
 */
 function feevy_add_blog($new_blog_id) {
 	
+	if(!isset(API_KEY))
+		return null;
+		
 	switch_to_blog($blog_id);
 	
 	// Set request to Feevy API
@@ -85,7 +92,10 @@ function feevy_add_blog($new_blog_id) {
 *	- $tags: tags list to set
 */
 function feevy_update_tag($blog_id, $tags){
-	
+
+	if(!isset(API_KEY))
+		return null;
+		
 	// Get blog from blog_id
 	$blog_details = get_blog_details($blog_id);
 	
@@ -170,6 +180,10 @@ function user_meta_to_feevy_tags($user_id) {
 * 	- $user_id: user to fech metadata from
 */
 function feevy_update_avatar(){
+
+	if(!isset(API_KEY))
+		return null;
+		
 	global $user_ID;
 	
 	$avatar_url = author_image_path($user_ID, false);
@@ -231,7 +245,10 @@ function feevy_ping(){
 *	- $_POST: set area, unidad, pais and sexo to display
 */
 function feevy_code($display = true, $style = "white"){
-	
+
+	if(!isset(FEEVY_CODE))
+		return null;
+		
 	// Initialize feevy code
 	$feevy = "<script type='text/javascript' src='http://www.feevy.com/code/".FEEVY_CODE;
 	
