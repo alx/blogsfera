@@ -7,7 +7,6 @@ h2. Requierements
 * rewrite mod enabled in web server
 * PHP
 
-
 h2. 5 minutes install
 
 * "Download the source code":http://github.com/alx/blogsfera/tarball/master
@@ -19,32 +18,23 @@ h2. 5 minutes install
 cp wp-config-sample.php wp-config.php
 @@@
 
-h2. Cimy Extra Fields Plugin
-
-* Needed by Comunidad and feevy portal to show user extra info
-* Activate Cimy Extra Fields Plugin
-* Add as many extra fields as you want
-
 h1. Themes installation
 
 h2. Blogsfera portal
 
-* Go to admin panel, on the Design tab, and select Portal Theme
 * Go in "Site Admin", "Opciones", and activate the plugin menu at the end of the page
 * Activate plugins: Wordspew, Blogsfera Portal Widgets
 * Return to "Site Admin", "Opciones", and desactivate the plugin menu
-* Create new page, set "Search_results" as page slug
-* Create new page, set "Tag_results" as page slug
+* Create new page, set "Search_results" as Page Template, and Publish
+* Create new page, set "Tag_results" as Page Template, and Publish
 
 h2. Feevy portal
 
 * Create a new blog
 * Activate feevy-portal theme on this blog
-* go to admin page of feevy and configure options
-* Have fun
+* Go to admin page of feevy and configure options
 
 h2. Comunidad
 
 * Create a new blog
 * Activate WP Contact Manager theme on this blog
-* Have fun

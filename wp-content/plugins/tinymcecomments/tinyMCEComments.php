@@ -1,175 +1,193 @@
 <?php
 /*
-Plugin Name: TinyMCEComments
+Plugin Name: MCEComments
 Plugin URI: http://mk.netgenes.org/my-plugins/mcecomments/
 Description: A simple hack to enable WYSIWYG editor TinyMCE on the comment field.
-Version: 0.4.1
+Version: 0.4.5
 Author: Thomas Au(MK)
 Author URI: http://mk.netgenes.org
 */
 
-if ( !function_exists('wp_nonce_field') ) {
-	function mceComment_nonce_field($action = -1) { return; }
-	$mceComment_nonce = -1;
-} else {
-	function mceComment_nonce_field($action = -1) { return wp_nonce_field($action); }
-	$mceComment_nonce = 'mceComment-update-key';
+define('SETTINGS', dirname(__FILE__) . '/settings.js');
+
+if (isset($_GET['init']) || isset($_GET['regen'])) {
+	$mcecomment_expiresOffset = 3600 * 24 * 10; // Cache for 10 days in browser cache
+	
+	include_once(realpath(dirname(__FILE__) . '/../../../wp-config.php'));
+	header("Content-type: text/javascript");
+	header("Vary: Accept-Encoding");  // Handle proxies
+	header("Expires: " . gmdate("D, d M Y H:i:s", time() + $mcecomment_expiresOffset) . " GMT");
+	if (!isset($_GET['regen']))
+		$content = mcecomment_getFileContents(SETTINGS);
+	if ($content == '' || isset($_GET['regen'])) {
+		$content = mcecomment_getInitJS();
+		mcecomment_putFileContents(SETTINGS, $content);
+	}
+	echo $content;
+	die();
 }
 
-function mce_addAdminPages() {
-	add_options_page('TinyMCEComments Options', 'TinyMCEComments', 8, 'tinyMCEComments', 'mceComment_optionPage');
+if ( !function_exists('wp_nonce_field') ) {
+	function mcecomment_nonce_field($action = -1) { return; }
+	$mcecomment_nonce = -1;
+} else {
+	function mcecomment_nonce_field($action = -1) { return wp_nonce_field($action); }
+	$mcecomment_nonce = 'mcecomment-update-key';
+}
+
+function mcecomment_adminpages() {
+	add_options_page('MCEComments Options', 'MCEComments', 8, 'tinyMCEComments', 'mcecomment_optionpage');
 }
 
 //Get available plugins of TinyMCE
-function getMCEPlugins() {
-    if ($h = opendir(ABSPATH . 'wp-includes/js/tinymce/plugins')) {
-        while (($file = readdir($h)) !== false) {
-            if (is_file(ABSPATH . 'wp-includes/js/tinymce/plugins/' . $file . '/editor_plugin.js')) 
-                $plugins[] = $file;
-        }
-        closedir($h);
-    }
+function mcecomment_getplugins() {
+	if ($h = opendir(ABSPATH . 'wp-includes/js/tinymce/plugins')) {
+		while (($file = readdir($h)) !== false) {
+			if (is_file(ABSPATH . 'wp-includes/js/tinymce/plugins/' . $file . '/editor_plugin.js')) 
+				$plugins[] = $file;
+			}
+		closedir($h);
+	}
 
-    return $plugins;
+	return $plugins;
 }
 
-//Get Available Languages in the directory
-function getMCELangs() {
-    if ($h = opendir(ABSPATH . 'wp-includes/js/tinymce/langs/')) {
-        while (($file = readdir($h)) !== false) {
-            if (is_file(ABSPATH . 'wp-includes/js/tinymce/langs/' . $file) && strpos($file, '.js') !== false) 
-                $langs[] = basename($file, '.js');
-        }
-        closedir($h);
-    }
-
-    return $langs;
+//Get Available Languages in the directory (for pre-2.5 only)
+function mcecomment_getlangs() {
+	if ($h = opendir(ABSPATH . 'wp-includes/js/tinymce/langs/')) {
+		while (($file = readdir($h)) !== false) {
+			if (is_file(ABSPATH . 'wp-includes/js/tinymce/langs/' . $file) && strpos($file, '.js') !== false) 
+				$langs[] = basename($file, '.js');
+			}
+		closedir($h);
+	}	
+	return $langs;
 }
 
-function mceComment_optionPage() {
-	global $mceComment_nonce;
+function mcecomment_optionpage() {
+	global $mcecomment_nonce;
+	$mcecomment_options = get_option('mcecomment_options');
 
 	if ( isset($_POST['submit']) ) {
 		if ( function_exists('current_user_can') && !current_user_can('manage_options') )
 			die(__('Cheatin&#8217; uh?'));
 
-		check_admin_referer($mceComment_nonce);
+		check_admin_referer($mcecomment_nonce);
 
-		if (isset($_POST['use_rtl'])) {
-			update_option('mcecomment_rtl', '1');
-		} else {
-			update_option('mcecomment_rtl', '0');
-		}
+		$mcecomment_options['language'] = (isset($_POST['mcecomment_language']) ? $_POST['mcecomment_language'] : $mcecomment_options['language']);
+			
+		$mcecomment_options['rtl'] = (isset($_POST['mcecomment_rtl']) ? '1' : '0');
+		$mcecomment_options['viewhtml'] = (isset($_POST['mcecomment_viewhtml']) ? '1' : '0');
+		$mcecomment_options['resize'] = (isset($_POST['mcecomment_resize']) ? '1' : '0');
 
-		if (isset($_POST['use_htmlsrc'])) {
-			update_option('mcecomment_viewhtml', '1');
-		} else {
-			update_option('mcecomment_viewhtml', '0');
-		}
-		
-        	if (isset($_POST['language'])) {
-			update_option('mcecomment_lang', $_POST['language']);
-		} else {
-			update_option('mcecomment_lang', $_POST['language']);
-		}
-        
-        	if (isset($_POST['mcecomment_scripts'])) {
-			update_option('mcecomment_scripts', '1');
-		} else {
-			update_option('mcecomment_scripts', '0');
-		}
-
-		if (isset($_POST['mcecomment_add_plugins'])) {
-			$plugins = trim($_POST['mcecomment_add_plugins']);
-			if ($plugins[strlen($plugins)-1] == ',') {
-				$plugins = substr($plugins, 0, -1);
-			}
-			update_option('mcecomment_add_plugins', $plugins);
-		}
-
-		if (isset($_POST['mcecomment_add_buttons'])) {
-			$buttons = trim($_POST['mcecomment_add_buttons']);
+		if (isset($_POST['mcecomment_buttons'])) {
+			$buttons = trim($_POST['mcecomment_buttons']);
 			if ($buttons[strlen($buttons)-1] == ',') {
 				$buttons = substr($buttons, 0, -1);
 			}
-			update_option('mcecomment_add_buttons', $buttons);
+			$mcecomment_options['buttons'] = $buttons;
 		}
-            
-	        if (isset($_POST['mcecomment_css']))
-	            	update_option('mcecomment_css', trim($_POST['mcecomment_css']));
+
+		if (isset($_POST['mcecomment_plugins'])) {
+			$plugins = trim($_POST['mcecomment_plugins']);
+			if ($plugins[strlen($plugins)-1] == ',') {
+				$plugins = substr($plugins, 0, -1);
+			}
+			$mcecomment_options['plugins'] = $plugins;
+		}
+
+		if (isset($_POST['mcecomment_css']))
+			$mcecomment_options['css'] = trim($_POST['mcecomment_css']);
+	
+		update_option('mcecomment_options', $mcecomment_options);
+		//Save the settings into cache file
+		mcecomment_putFileContents(SETTINGS, mcecomment_getInitJS());
 	}
+	 
+	mcecomment_init();
 ?>
 
-<?php if ( !empty($_POST ) ) : ?>
+<?php if ( !empty($_POST ) ) : 
+?>
 <div id="message" class="updated fade"><p><strong><?php _e('Options saved.') ?></strong></p></div>
 <?php endif; ?>
-	<div class="wrap">
-<h2>TinyMCEComments Options</h2>
+
+<div class="wrap">
+<h2>MCEComments Options</h2>
 
 <form method="post">
-<?php mceComment_nonce_field($mceComment_nonce);?>
-<fieldset class="options"> 
-<legend>Interface</legend> 
+<?php mcecomment_nonce_field($mcecomment_nonce);?>
+<h3>Interface</h3> 
 <script type="text/javascript">
 //<![CDATA[
-function addplug(obj) {
-	plugs = $('mcecomment_add_plugins');
-	//alert(plugs.getValue().length);
-	if (plugs.getValue().length > 0){
-		plugs.value += ',';
-	}
-	plugs.value += $(obj).innerHTML;
+function inserttext(obj_out,obj_in) {
+	obj = document.getElementById(obj_out);
+	obj.value += ((obj.value != '') ? ',' : '') + (obj_in).innerHTML;
 }
 //]]>
 </script>
-<table width="100%" cellspacing="2" cellpadding="5" class="optiontable editform"> 
-<tr valign="top"> 
-<th width="33%" scope="row">Language:</th> 
-<td><select name="language" id="language">
+<table width="100%" cellspacing="2" cellpadding="5" class="form-table">
+<?php if(!mcecomment_isNewWP()) : ?> 
+<tr class="form-field"> 
+<th scope="row">Language:</th> 
+<td><select name="mcecomment_language" id="mcecomment_language">
 <?php
-$langs = getMCELangs();
-for ($i=0;$i<count($langs);$i++) echo "<option".($langs[$i] == get_option('mcecomment_lang')?' selected="selected"':'').">$langs[$i]</option>\n";
+$langs = mcecomment_getlangs();
+for ($i=0;$i<count($langs);$i++) echo "<option".($langs[$i] == $mcecomment_options['language'] ? ' selected="selected"' : '') . ">$langs[$i]</option>\n";
 ?>
 </select>
 </td></tr>
-<tr valign="top"> 
-<th>Options:</th>
+<?php endif; ?>
+<tr class="form-field"> 
+<th>Options:(TinyM:<?php echo $mcecomment_options['rtl']; ?>)</th>
 <td>
-<p><input name="use_rtl" type="checkbox" id="use_rtl" value="1" <?php echo (get_option('mcecomment_rtl') ? 'checked="checked"':'') ?>/>
-<label for="use_linksupdate">Right-To-Left(RTL) Mode</label></p>
-
-<p><input name="use_htmlsrc" type="checkbox" id="use_htmlsrc" value="1" <?php echo (get_option('mcecomment_viewhtml') ? 'checked="checked"':'') ?>  />
-<label for="use_linksupdate">Allow visitors to view HTML source of their comment</label></p>
-<p><input name="mcecomment_scripts" type="checkbox" id="mcecomment_scripts" value="1" <?php echo (get_option('mcecomment_scripts') ? 'checked="checked"':'') ?>  />
-<label for="use_linksupdate">Display subscript/superscript buttons</label></p>
+<p><input name="mcecomment_rtl" type="checkbox" id="mcecomment_rtl" value="1" <?php echo ($mcecomment_options['rtl'] ? 'checked="checked"':''); ?>/>
+<label for="mcecomment_rtl">Enable right-to-left (RTL) editing mode in comment field</label></p>
+<p><input name="mcecomment_viewhtml" type="checkbox" id="mcecomment_viewhtml" value="1" <?php echo ($mcecomment_options['viewhtml'] ? 'checked="checked"':''); ?>  />
+<label for="mcecomment_viewhtml">Enable HTML source editing of the comment field</label></p>
+<p><input name="mcecomment_resize" type="checkbox" id="mcecomment_resize" value="1" <?php echo ($mcecomment_options['resize'] ? 'checked="checked"':''); ?>  />
+<label for="mcecomment_resize">Enable vertical resizing of the comment field writing area</label></p>
 </td></tr></table>
-</fieldset>
-<fieldset class="options"> 
-<legend>Advance Options</legend> 
-<table width="100%" cellspacing="2" cellpadding="5" class="optiontable editform"> 
-<tr valign="top"> 
-<th>Additional plugins:</th>
-<td><input name="mcecomment_add_plugins" type="text" id="mcecomment_add_plugins" value="<?php echo get_option('mcecomment_add_plugins')?>" style="width:98%" />(separated with commas)<br /> 
-Detected plugins:
-<?php $pls = getMCEPlugins(); 
+
+<h3>Advance Options</h3> 
+<table width="100%" cellspacing="2" cellpadding="5" class="form-table"> 
+<tr class="form-field">
+<th>Buttons in use:</th>
+<td><input name="mcecomment_buttons" type="text" id="mcecomment_buttons" value="<?php echo $mcecomment_options['buttons']; ?>" style="width:98%" /><br />
+(separated with commas)<br /> 
+Available buttons: 
+<?php $pls = array('separator','bold','italic','underline','strikethrough','justifyleft','justifycenter','justifyright','justifyfull','bullist','numlist','outdent','indent','cut','copy','paste','undo','redo','link','unlink','cleanup','help','code','hr','removeformat','sub','sup','forecolor','backcolor','charmap','visualaid','blockquote','spellchecker','fullscreen');
 for ($i=0; $i<count($pls); $i++) {
-echo '<a href="#" onclick="addplug(this);return false;">'.$pls[$i].'</a> '; 
+echo '<span style="cursor: pointer; text-decoration: underline;" onclick="inserttext(\'mcecomment_buttons\', this);">'.$pls[$i].'</span>  '; 
 }?>
 </td>
-</tr><tr>
-<th>Additional buttons:</th>
-<td><input name="mcecomment_add_buttons" type="text" id="mcecomment_add_buttons" value="<?php echo get_option('mcecomment_add_buttons')?>" style="width:98%" /><br />
-seperated with commas
+</tr><tr class="form-field"> 
+<th>Plugins in use:</th>
+<td><input name="mcecomment_plugins" type="text" id="mcecomment_plugins" value="<?php echo $mcecomment_options['plugins']; ?>" style="width:98%" /><br />
+(separated with commas)<br /> 
+Detected plugins: 
+<?php $pls = mcecomment_getplugins(); 
+for ($i=0; $i<count($pls); $i++) {
+echo '<span style="cursor: pointer; text-decoration: underline;" onclick="inserttext(\'mcecomment_plugins\', this);">'.$pls[$i].'</span>  '; 
+}?>
 </td>
-</tr><tr>
+</tr><tr class="form-field">
 <th>User defined CSS:</th>
-<td><input name="mcecomment_css" type="text" id="mcecomment_css" value="<?php echo get_option('mcecomment_css')?>" style="width:98%" /><br />
-Fully qualified URL required(Leave it blank to use default CSS)
+<td><input name="mcecomment_css" type="text" id="mcecomment_css" value="<?php echo $mcecomment_options['css']; ?>" style="width:98%" /><br />
+Fully qualified URL required (leave blank to use default CSS)
 </td></tr>
 </table>
+
+<h3>Preview</h3> 
+<table width="100%" cellspacing="2" cellpadding="5" class="form-table"> 
+<tr valign="top" class="form-field"> 
+<th>Preview:</th>
+<td>Update options to preview how the comment textarea box will appear.<br /><textarea name="comment" id="comment" rows="5" tabindex="4" style="width:99%">This is a preview textarea</textarea>
+</td></tr>
+</table>
+
 <p class="submit">
 <input type="hidden" name="action" value="update" />
-<input type="hidden" name="page_options" value="hack_file,use_linksupdate,uploads_use_yearmonth_folders,upload_path" />
 <input type="submit" name="submit" value="Update Options &raquo;" />
 </p>
 </form>
@@ -177,70 +195,139 @@ Fully qualified URL required(Leave it blank to use default CSS)
 <?php
 }
 
-function addTinyMCESupport() {
-    global $post;
-    if (('open' == $post-> comment_status) or ('comment' == $post-> comment_type) ) { ?>
-<script type="text/javascript" src="<?php echo get_settings('home'); ?>/wp-includes/js/tinymce/tiny_mce_gzip.php?ver=20070326"></script>
-<script type="text/javascript">
-//<![CDATA[
-function brstonewline(element_id, html, body) {
-	html = html.replace(/<br\s*\/>/gi, '\n');;
-	return html;
+function mcecomment_getcss() {
+	$mcecomment_options = get_option('mcecomment_options');
+
+	if ($mcecomment_options['css'] != '') {
+		return $mcecomment_options['css'];
+	} elseif (mcecomment_isNewWP()) {
+		return get_option('siteurl') . '/wp-includes/js/tinymce/wordpress.css';
+	} else {
+		return get_option('siteurl') . '/wp-includes/js/tinymce/plugins/wordpress/wordpress.css';
+	}
 }
 
-function insertHTML(html) {
-	tinyMCE.execCommand('mceInsertContent',false, html);
+function mcecomment_getInitJS() {
+	
+	$mcecomment_options = get_option('mcecomment_options');
+	if (!is_array($mcecomment_options))
+	{
+		$mcecomment_options['language'] = 'en';
+		$mcecomment_options['buttons'] = 'bold,italic,underline,|,strikethrough,|,bullist,numlist,|,undo,redo,|,link,unlink,|,removeformat';
+		update_option('mcecomment_options', $mcecomment_options);
+	}
+	
+	$res = 'function brstonewline(element_id, html, body) {';
+	$res .= 'html = html.replace(/<br\s*\/>/gi, "\n");';
+	$res .= 'return html;}';
+			
+
+	$res .= 'function insertHTML(html) {';
+	$res .= 'tinyMCE.execCommand("mceInsertContent",false, html);}';
+
+	$res .= 'tinyMCE.init({';
+	$res .= 'mode : "exact",';
+	$res .= 'elements : "comment",';
+	$res .= 'theme : "advanced",';
+	$res .= 'theme_advanced_buttons1 : "' . $mcecomment_options['buttons'] . '",';
+	$res .= 'theme_advanced_buttons2 : "",';
+	$res .= 'theme_advanced_buttons3 : "",';
+	$res .= 'theme_advanced_toolbar_location : "top",';
+	$res .= 'theme_advanced_toolbar_align : "left",';
+	$res .= 'theme_advanced_statusbar_location : "' . ($mcecomment_options['resize'] ? 'bottom' : 'none') . '",';
+	$res .= 'theme_advanced_resizing : ' . ($mcecomment_options['resize'] ? 'true' : 'false') . ',';
+	$res .= 'theme_advanced_resize_horizontal : false,';
+	$res .= 'theme_advanced_disable : "' . ($mcecomment_options['viewhtml'] ? '':'code') . '",';
+	$res .= 'force_p_newlines : false,';
+	$res .= 'force_br_newlines : true,';
+	$res .= 'forced_root_block : "",';
+	$res .= 'gecko_spellcheck : true,';
+	$res .= 'content_css : "' . mcecomment_getcss() . '",';
+	$res .= 'directionality : "' . ($mcecomment_options['rtl'] ? 'rtl' : 'ltr') . '",';
+	$res .= 'save_callback : "brstonewline",';
+	$res .= 'language : "' . $mcecomment_options['language'] . '",';
+	$res .= 'entity_encoding : "raw",';
+	$res .= 'plugins : "' . $mcecomment_options['plugins'] . '",';
+	$res .= 'extended_valid_elements : "a[name|href|title],hr[class|width|size|noshade],font[face|size|color|style],span[class|align|style],blockquote[cite]"});';
+	if (mcecomment_isNewWP()) {
+		$language = ('' == get_locale()) ? $mcecomment_options['language'] : strtolower( substr(get_locale(), 0, 2) );
+		include_once(ABSPATH . 'wp-includes/js/tinymce/langs/wp-langs.php');
+		$res .= $strings;
+	}
+	$res .= 'var subBtn = document.getElementById("submit");';
+	$res .= 'if (subBtn != null) {';
+	$res .= 'subBtn.onclick=function() {';
+	$res .= 'var inst = tinyMCE.getInstanceById("comment");';
+	$res .= 'document.getElementById("comment").value = inst.getContent();';
+	$res .= 'document.getElementById("commentform").submit();';
+	$res .= 'return false;}}';
+
+	return $res;
 }
 
-tinyMCE.init({
-	mode : "exact",
-	elements : "comment",
-	theme : "advanced",
-	theme_advanced_buttons1 : "bold,italic,underline,separator,strikethrough,undo,redo,link,unlink<?php echo (get_option('mcecomment_viewhtml') ? ',code':''); echo (get_option('mcecomment_scripts') ? ',sub,sup':''); echo (get_option('mcecomment_add_buttons') == '' ? '':(','.get_option('mcecomment_add_buttons'))); ?>",
-	force_p_newlines : false,
-    force_br_newlines : true,
-	gecko_spellcheck : true,
-	content_css : "<?php echo (get_option('mcecomment_css') == '' ? get_settings('home') . '/wp-includes/js/tinymce/plugins/wordpress/wordpress.css' : get_option('mcecomment_css'));?>",
-	theme_advanced_buttons2 : "",
-	theme_advanced_buttons3 : "",
-	theme_advanced_toolbar_location : "top",
-	theme_advanced_toolbar_align : "left",
-	<?php echo (get_option('mcecomment_rtl') ? 'directionality : "rtl",'."\n":'') ?>
-	save_callback : "brstonewline",
-	language : "<?php echo get_option('mcecomment_lang') ?>",
-	entity_encoding : "raw",
-    	plugins : "<?php echo get_option('mcecomment_add_plugins') ?>",
-	extended_valid_elements : "a[name|href|title],font[face|size|color|style],span[class|align|style]"
-});
+function mcecomment_init() {
+	global $post;
+	
+	$mcecomment_options = get_option('mcecomment_options');
+	
+	$mcecomment_mce_path = get_option('siteurl');
+	if (mcecomment_isNewWP()) {
+		//TODO: Gzip & cache support
+		$mcecomment_mce_path .= '/wp-includes/js/tinymce/tiny_mce.js';
+	} else {
+		$mcecomment_mce_path .= '/wp-includes/js/tinymce/tiny_mce_gzip.php';
+	}
+	$mcecomment_mce_init = get_option('siteurl') . '/wp-content/plugins/' . basename(dirname(__FILE__)) . '/tinyMCEComments.php?init';
+	if (('open' == $post-> comment_status) or ('comment' == $post-> comment_type) or (is_plugin_page()) ) {
+		echo '<script type="text/javascript" src="' . $mcecomment_mce_path . '"></script>';
+		echo '<script type="text/javascript" src="' . $mcecomment_mce_init . '"></script>';
+	}
+}
 
-//]]>
-</script>
-<?php
-    }
+//Handy function from TinyMCE Editor PHP GZip Compressor
+function mcecomment_getFileContents($path) {
+		$path = realpath($path);
+		
+		if (!$path || !@is_file($path))
+			return "";
+
+		if (function_exists("file_get_contents"))
+			return @file_get_contents($path);
+
+		$content = "";
+		$fp = @fopen($path, "r");
+		if (!$fp)
+			return "";
+
+		while (!feof($fp))
+			$content .= fgets($fp);
+
+		fclose($fp);
+
+		return $content;
+	}
+
+function mcecomment_putFileContents($path, $content) {
+	if (function_exists("file_put_contents"))
+		return @file_put_contents($path, $content);
+
+	$fp = @fopen($path, "wb");
+	if ($fp) {
+		fwrite($fp, $content);
+		fclose($fp);
+	}
 }
-function detect_submit() { 
-if (('open' == $post-> comment_status) or ('comment' == $post-> comment_type) ) { ?>
-<script type="text/javascript">
-//<![CDATA[
-if(typeof jQuery != 'function') {
-$(function(event){
-     $("#submit").click( function() {
-     var inst = tinyMCE.getInstanceById('comment');
-     $("#comment").value = inst.getHTML(); 
-     return false;});}
+
+function mcecomment_isNewWP() {
+	global $wp_version;
+
+	list($major, $minor, $rev) = explode('.', $wp_version);
+	if ($major >= 2 && $minor >= 5) return true;
+	else return false;
 }
-//]]>
-</script>
-<?php }
-}
-add_action('comment_form', 'addTinyMCESupport');
-add_action('wp_footer', 'detect_submit');
-add_action('admin_menu', 'mce_addAdminPages');
-add_option('mcecomment_rtl', '0', 'Make TinyMCE Comment Field supports RTL languages');
-add_option('mcecomment_viewhtml', '1', 'Allow visitors display html code in comment field');
-add_option('mcecomment_lang', 'en', 'TinyMCEComments Language');
-add_option('mcecomment_scripts', '0', 'Sub/superscripts in Comments');
-add_option('mcecomment_add_plugins', '', 'User supplied additional plugins');
-add_option('mcecomment_add_buttons', '', 'User supplied additional buttons');
-add_option('mcecomment_css', '', 'User supplied content_css');
+
+add_action('comment_form', 'mcecomment_init');
+add_action('admin_menu', 'mcecomment_adminpages');
+
+add_option('mcecomment_options', '', 'TinyMCE Comments');
 ?>
