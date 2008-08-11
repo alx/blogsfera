@@ -138,7 +138,7 @@ if (($_GET['action']=='addfeevyportal')){
 			</form>
 <?php 
 }else{
-	echo '<p>Portal feevy is instaled on <a href="' . get_site_option("comunidad_url").'">'.get_site_option("comunidad_url").'</a></p>';
+	echo '<p>Portal feevy is instaled on <a href="' . get_site_option("feevy_url").'">'.get_site_option("feevy_url").'</a></p>';
 }
 
 
