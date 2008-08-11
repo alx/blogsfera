@@ -2,10 +2,10 @@ h1. Instalación en el servidor:
 
 h2. Requerimientos
 
-* Base de datos
-* Apache, o cualquier servidor HTTP
-* rewrite mod habilitado en servidor HTTP
-* PHP
+* PHP versión 4.3 o más reciente
+* MySQL versión 4.0 o más reciente
+* Para activar los permalinks, la extensión mod_rewrite para Apache es necesaria
+* "Más acerca de los requerimientos Wordpress":http://wordpress.org/about/requirements/
 
 h2. Instalación (5 minutos)
 
