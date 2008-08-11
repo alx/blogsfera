@@ -459,7 +459,7 @@ function get_avatar_list($count = 20){
 		$avatar = author_image_path( $user_id, $display = false);
 			
 		// Create element
-		$list .= "<li><a href='http://comunidad.bbvablogs.com/?id=".$user_id."' title='$user->display_name'>";
+		$list .= "<li><a href='".get_site_option("comunidad_url")."?id=".$user_id."' title='$user->display_name'>";
 		$list .= "<img src='$avatar' alt='$user->display_name' width='48px' height='48px'/></a></li>";
 	}
 	echo "<ul class='clearfix'>$list</ul>";
