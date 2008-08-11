@@ -83,18 +83,17 @@ if (($_GET['action']=='addfeevyportal')){
 <div class="wrap">
 
 <h2><?php _e('Feevy parameters'); ?></h2>
-<p>Your feevy number, the number appearing in your Feevy javascript code: http://feevy.com/admin/</p>
-<p>Your Feevy api code, available at: http://feevy.com/api/view_key</p>
 		<form method="post" action="<?php bloginfo('url'); ?>/wp-admin/wpmu-feevy.php" >
 		<table class="form-table">
 			<tr class="form-field form-required">
-				<th style="text-align:center;" scope='row'><?php _e('Feevy number') ?></th>
-				
+				<th style="text-align:center;" scope='row'><?php _e('Feevy number') ?> </th>
 				<td><input name="feevy_number" type="text" size="20" title="<?php _e('Portal feevy Title') ?>" value="<?php echo get_site_option('feevy_number'); ?>"/></td>
+				<td><p>Your feevy number, the number appearing in your Feevy javascript code: <a href="http://feevy.com/admin/">http://feevy.com/admin/</a></p></td>
 			</tr>
 			<tr class="form-field form-required">
 				<th style="text-align:center;" scope='row'><?php _e('Api code') ?></th>
 				<td><input name="api_code" type="text" size="20" title="<?php _e('Portal feevy Title') ?>" value="<?php echo get_site_option('feevy_number'); ?>" value="<?php echo get_site_option('api_code'); ?>"/></td>
+				<td><p>Your Feevy api key, available at: <a href="http://feevy.com/api/view_key">http://feevy.com/api/view_key</a></p></td>
 			</tr>
 		</table>
 			<p class="submit">
