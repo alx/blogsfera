@@ -141,7 +141,6 @@ function feevy_update_tag_from_user($blog_id){
 * Parameters: 
 * 	- $user_id: user to fech metadata from
 */
-/*
 function user_meta_to_feevy_tags($user_id) {
 	$tags = "";
 	
@@ -171,7 +170,6 @@ function user_meta_to_feevy_tags($user_id) {
 	
 	return preg_replace('/\+(.*)/','$1',$tags);
 }
-*/
 
 
 /**
@@ -444,11 +442,13 @@ if(isset($_POST['feevy_portal_update'])) {
 //add_action('admin_menu', 'feevy_options');
 
 add_action('wpmu_new_blog','feevy_add_blog');
-add_action('wpmu_new_blog','feevy_update_tag');
 add_action('wpmu_new_blog','feevy_update_avatar');
 
-add_action('profile_update','feevy_update_tag_from_user');
 add_action('profile_update','feevy_update_avatar');
 
 add_action('publish_post', 'feevy_ping');
+
+// Blog tagging with blog or user info. Activate when Extra_Fields plugin ready
+//add_action('wpmu_new_blog','feevy_update_tag');
+//add_action('profile_update','feevy_update_tag_from_user');
 ?>
