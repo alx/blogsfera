@@ -1,11 +1,12 @@
 === Viper's Video Quicktags ===
 Contributors: Viper007Bond
 Donate link: http://www.viper007bond.com/donate/
-Tags: video, quicktags, wysiwyg, tinymce, youtube, google video, stage6, ifilm, metacafe, myspace, vimeo, quicktime
+Tags: video, quicktags, wysiwyg, tinymce, youtube, google video, ifilm, metacafe, myspace, vimeo, quicktime
 Requires at least: 2.0
+Tested up to: 2.5
 Stable tag: trunk
 
-Allows easy and XHTML valid posting of YouTube, Google Video, Stage6, IFILM, Metacafe, MySpace, FLV, Quicktime, and generic video files into posts.
+Allows easy and XHTML valid posting of YouTube, Google Video, IFILM, Metacafe, MySpace, FLV, Quicktime, and generic video files into posts.
 
 == Description ==
 
@@ -17,7 +18,6 @@ Currently supports these video sites:
 
 * [YouTube](http://www.youtube.com/)
 * [Google Video](http://video.google.com/)
-* [Stage6](http://stage6.divx.com/)
 * [IFILM](http://www.ifilm.com/)
 * [Metacafe](http://www.metacafe.com/)
 * [MySpace](http://www.myspace.com/)
@@ -58,7 +58,6 @@ This should result in the following file structure:
                 | ifilm.png
                 | metacafe.png
                 | myspace.png
-                | stage6.png
                 | quicktime.png
                 | videofile.png
                 | vimeo.png
@@ -69,7 +68,11 @@ This should result in the following file structure:
             - resources
                 | buttonsnap.php
                 | flvplayer.swf
-                - tinymce
+                - tinymce2
+                    | editor_plugin.js
+                    - langs
+                        | en.js
+                - tinymce3
                     | editor_plugin.js
                     - langs
                         | en.js`
@@ -84,9 +87,9 @@ To configure this plugin, visit it's options page. It can be found under the "Op
 
 == Frequently Asked Questions ==
 
-= Where can I get support for this plugin? =
+= Where are the buttons for embedding Quicktime and regular video files in TinyMCE in WordPress 2.5+? =
 
-I provide support via [my WordPress plugin forums](http://www.viper007bond.com/wordpress-plugins/forums/viewforum.php?id=23), although just because you post a request for help doesn't mean I will have time to answer your question. This is a free plugin and as such, you aren't guaranteed support. Then again, I'll help as much as I can and have time for.
+TinyMCE 3.x supports this by itself (click the "Advanced Toolbar" button), so I've opted to let it handle this since my plugin's support of those filetypes aren't perfect.
 
 = The playback of generic video files is buggy / won't work in my browser / etc. =
 
@@ -103,6 +106,10 @@ There are few possible reasons for this:
 = Does this plugin support other languages? =
 
 Yes, it does. Included in the `localization` folder is the translation template you can use to translate the plugin. See the [WordPress Codex](http://codex.wordpress.org/Translating_WordPress) for details. You may also be able to find some translations listed at [this plugin's homepage](http://www.viper007bond.com/wordpress-plugins/vipers-video-quicktags/#translations) if any exist.
+
+= Where can I get additional support for this plugin? =
+
+I provide support via [my WordPress plugin forums](http://www.viper007bond.com/wordpress-plugins/forums/viewforum.php?id=23), although just because you post a request for help doesn't mean I will have time to answer your question. This is a free plugin and as such, you aren't guaranteed support. Then again, I'll help as much as I can and have time for.
 
 = I love your plugin! Can I donate to you? =
 
@@ -132,6 +139,32 @@ If you'd like to add a border for example, try adding something like this to you
 }`
 
 == ChangeLog ==
+
+**Version 5.4.4*
+
+* Add the Quicktime and generic video buttons back to TinyMCE for users who prefer them over the native TinyMCE embedder.
+
+**Version 5.4.3*
+
+* More code changes to try and fix hard-to-reproduce bugs under WordPress 2.5. Thanks to everyone that helped me debug including [Maciek](http://ibex.pl).
+
+**Version 5.4.2*
+
+* Some code to hopefully fix some seemingly random bugs under WordPress 2.5.
+* Other minor code improvements.
+
+**Version 5.4.1**
+
+* Video alignment wasn't working due to the switch to SWFObject. This has been fixed. Props to [zerocrash](http://www.zerocrash.dk/) for the bug report.
+
+**Version 5.4.0**
+
+This is a hotfix version to address WordPress 2.5 plus some bugfixes and such. A minor recode of this plugin is planned to improve it, mainly the video file support.
+
+* Updated to support WordPress 2.5 and it's TinyMCE 3 (required a whole new TinyMCE plugin to be written).
+* Switched from UFO to SWFObject for the embedding of Flash video (YouTube, etc.) since UFO is deprecated.
+* Update of FLV player SWF file.
+* Removed Stage6 due to site shutdown. BBCode usage now displays an error message.
 
 **Version 5.3.1**
 
