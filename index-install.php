@@ -412,6 +412,8 @@ Thanks!
 	wpmu_create_blog( $domain, $base, $weblog_title, $user_id, array( 'blog_public' => 1, 'public' => 1 ) );
 	update_blog_option( 1, 'template', 'portal');
 	update_blog_option( 1, 'stylesheet', 'portal');
+	activate_plugin("portal_widgets.php");
+	activate_plugin("wordspew/wordspew.php");
 	if( constant( 'VHOST' ) == 'yes' ) {
 		update_blog_option( 1, 'permalink_structure', '/%year%/%monthnum%/%day%/%postname%/');
 	} else {
