@@ -382,7 +382,7 @@ function step3() {
 	$wpdb->query( "INSERT INTO ".$wpdb->sitemeta." (meta_id, site_id, meta_key, meta_value) VALUES (NULL, 1, 'blog_upload_space', '10' )" );
 	$wpdb->query( "INSERT INTO ".$wpdb->sitemeta." (meta_id, site_id, meta_key, meta_value) VALUES (NULL, 1, 'fileupload_maxk', '1500' )" );
 	$wpdb->query( "INSERT INTO ".$wpdb->sitemeta." (meta_id, site_id, meta_key, meta_value) VALUES (NULL, 1, 'site_admins', '" . serialize( array( 'admin' ) ) . "' )" );
-	$wpdb->query( "INSERT INTO ".$wpdb->sitemeta." (meta_id, site_id, meta_key, meta_value) VALUES (NULL, 1, 'allowedthemes', '" . serialize( array( 'classic' => 1, 'default' => 1 ) ) . "' )" );
+	$wpdb->query( "INSERT INTO ".$wpdb->sitemeta." (meta_id, site_id, meta_key, meta_value) VALUES (NULL, 1, 'allowedthemes', '" . serialize( array( 'portal' => 1, 'default' => 1 ) ) . "' )" );
 	$wpdb->query( "INSERT INTO ".$wpdb->sitemeta." (meta_id, site_id, meta_key, meta_value) VALUES (NULL, 1, 'illegal_names', '" . serialize( array(  "www", "web", "root", "admin", "main", "invite", "administrator" ) ) . "' )" );
 	$wpdb->query( "INSERT INTO ".$wpdb->sitemeta." (meta_id, site_id, meta_key, meta_value) VALUES (NULL, 1, 'welcome_email', 'Dear User,
 
@@ -410,8 +410,8 @@ Thanks!
 	$current_site->site_name = ucfirst( $domain );
 
 	wpmu_create_blog( $domain, $base, $weblog_title, $user_id, array( 'blog_public' => 1, 'public' => 1 ) );
-	update_blog_option( 1, 'template', 'home');
-	update_blog_option( 1, 'stylesheet', 'home');
+	update_blog_option( 1, 'template', 'portal');
+	update_blog_option( 1, 'stylesheet', 'portal');
 	if( constant( 'VHOST' ) == 'yes' ) {
 		update_blog_option( 1, 'permalink_structure', '/%year%/%monthnum%/%day%/%postname%/');
 	} else {
