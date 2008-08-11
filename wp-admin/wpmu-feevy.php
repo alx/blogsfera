@@ -83,10 +83,13 @@ if (($_GET['action']=='addfeevyportal')){
 <div class="wrap">
 
 <h2><?php _e('Feevy parameters'); ?></h2>
+<p>Your feevy number, the number appearing in your Feevy javascript code: http://feevy.com/admin/</p>
+<p>Your Feevy api code, available at: http://feevy.com/api/view_key</p>
 		<form method="post" action="<?php bloginfo('url'); ?>/wp-admin/wpmu-feevy.php" >
 		<table class="form-table">
 			<tr class="form-field form-required">
 				<th style="text-align:center;" scope='row'><?php _e('Feevy number') ?></th>
+				
 				<td><input name="feevy_number" type="text" size="20" title="<?php _e('Portal feevy Title') ?>" value="<?php echo get_site_option('feevy_number'); ?>"/></td>
 			</tr>
 			<tr class="form-field form-required">
