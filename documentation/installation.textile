@@ -20,11 +20,6 @@ cp wp-config-sample.php wp-config.php
 
 h1. Themes installation
 
-h2. Blogsfera portal
-
-* Create new page, set _Search_results_ as Page Template, and Publish
-* Create new page, set _Tag_results_ as Page Template, and Publish
-
 h2. Feevy portal
 
 * Create a new blog

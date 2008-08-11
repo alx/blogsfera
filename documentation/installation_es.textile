@@ -1,4 +1,4 @@
-h1. Instalación en el servidor:
+h1. Instalación en el servidor
 
 h2. Requerimientos
 
@@ -18,10 +18,7 @@ h2. Instalación (5 minutos)
 cp wp-config-sample.php wp-config.php
 @@@
 
-h2. Portal de la Blogsfera
-
-* Cree una nueva página. En _Plantilla de la página_ escoja "Search_results". Pulse botón Publicar.
-* Cree una nueva página. En _Plantilla de la página_ escoja "Tag_results". Pulse botón Publicar. 
+h1. Instalación de los portales
 
 h2. Portal Feevy
 
