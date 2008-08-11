@@ -15,7 +15,7 @@ Author URI: http://blog.alexgirard.com
 *  HEADER
 * =========
 */
-include "feevy_soup.php";
+include_once('./feevy_soup.php');
 define('API_KEY',get_site_option('api_code'));		# Your Feevy api key, available at: http://feevy.com/api/view_key
 define('FEEVY_CODE',get_site_option('feevy_number'));	# Your feevy code, the number appearing in your Feevy javascript code: http://feevy.com/admin/
 
