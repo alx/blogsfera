@@ -22,11 +22,12 @@ h1. Themes installation
 
 h2. Feevy portal
 
-* Create a new blog
-* Activate feevy-portal theme on this blog
-* Go to admin page of feevy and configure options
+* Go to feevy admin page on site administration
+* set the parameters use auto-install
+* have fun
 
 h2. Comunidad
 
-* Create a new blog
-* Activate WP Contact Manager theme on this blog
+* Go to comunidad admin page on site administration
+* set the parameters and use auto-install
+* have fun
