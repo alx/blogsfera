@@ -1,11 +1,11 @@
 h1. Server installation
 
-h2. Requierements
+h2. Requirements
 
-* MySQL Database
-* Apache, or any webserver
-* rewrite mod enabled in web server
-* PHP
+* PHP version 4.3 or greater
+* MySQL version 4.0 or greater
+* The mod_rewrite Apache module, to support permalinks
+* "More about Wordpress requirements":http://wordpress.org/about/requirements/
 
 h2. 5 minutes install
 
@@ -19,11 +19,6 @@ cp wp-config-sample.php wp-config.php
 @@@
 
 h1. Themes installation
-
-h2. Blogsfera portal
-
-* Create new page, set "Search_results" as Page Template, and Publish
-* Create new page, set "Tag_results" as Page Template, and Publish
 
 h2. Feevy portal
 

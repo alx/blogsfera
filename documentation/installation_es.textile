@@ -1,35 +1,32 @@
-h1. Instalación en el servidor:
+h1. Instalación en el servidor
 
 h2. Requerimientos
 
-* Base de datos
-* Apache, o cualquier servidor HTTP
-* rewrite mod habilitado en servidor HTTP
-* PHP
+* PHP versión 4.3 o más reciente
+* MySQL versión 4.0 o más reciente
+* Para activar los permalinks, la extensión mod_rewrite para Apache es necesaria
+* "Más acerca de los requerimientos Wordpress":http://wordpress.org/about/requirements/
 
 h2. Instalación (5 minutos)
 
-* Descargar el código fuente1
+* "Descargar el código":http://github.com/alx/blogsfera/tarball/master
 * Suba el código al servidor seleccionado
 * Llame al sitio web desde el navegador, encontrará el proceso de configuración
-* Si es necesario, cree el wp-config.php en su directorio de instalación, y complete la configuración de la base de datos:
+* Si es necesario, cree el _wp-config.php_ en su directorio de instalación, y complete la configuración de la base de datos:
 
 @@@
 cp wp-config-sample.php wp-config.php
 @@@
 
-h2. Portal de la Blogsfera
-
-* Cree una nueva página. En Page Template escoja "Search_results". Pulse botón Publicar.
-* Cree una nueva página. En Page Template escoja "Tag_results". Pulse botón Publicar. 
+h1. Instalación de los portales
 
 h2. Portal Feevy
 
 * Cree un nuevo blog
-* Active el tema feevy-portal en este blog
-* Vaya a Site Admin>Feevy y configure las opciones en la página de administración (seguir instrucciones para la configuración).
+* Active el tema _feevy-portal_ en este blog
+* Vaya a _Site Admin>Feevy_ y configure las opciones en la página de administración (seguir instrucciones para la configuración).
 
 h2. Comunidad
 
 * Cree un nuevo blog
-* Active el tema WP Contact Manager en este blog
+* Active el tema _WP Contact Manager_ en este blog
