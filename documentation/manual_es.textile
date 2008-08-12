@@ -1,12 +1,12 @@
-h2. Administracióm General
+h2. Administración General
 
 h3. Plugins
 
-h4. List of default plugins
+h4. Lista de los plugins por defecto
 
 h5. Feevy
 
-Nuevos blogs y posts de la Blogsfera seran actualizados en Feevy. Para configurar ese plugin, va en Site Admin -> Feevy.
+Nuevos blogs y posts de la Blogsfera serán actualizados en Feevy. Para configurar ese plugin, va en Site Admin -> Feevy.
 
 Necesite una cuenta de "Feevy.com" para usar ese plugin.
 
@@ -14,36 +14,38 @@ h5. MuSearch
 
 Ese plugin permite de buscar dentro toda la blogsfera: titulo de blog, titulo de post o nombre de autor.
 
-Hay un widget en la portada de la blogsfera para buscar en la blogsfera y monstrar los resultados.
+Hay un widget en la portada de la blogsfera para buscar en la blogsfera y mostrar los resultados.
 
 
 h5. MuTags
 
 Ese plugin permite de buscar dentro toda la blogsfera con los tags.
 
-Hay un widget en la portada de la blogsfera para buscar en la blogsfera y monstrar los resultados.
+Hay un widget en la portada de la blogsfera para buscar en la blogsfera y mostrar los resultados.
 
 h5. Plugin Commander
 
-Ese plugin ayuda el administrador de la blogsfera para instalar, activar o desactivar plugins rapidamente. 
+Ese plugin ayuda el administrador de la blogsfera para instalar, activar o desactivar plugins rápidamente. 
 
 "Más informaciones sobre ese plugin":http://firestats.cc/wiki/WPMUPluginCommander
 
 h5. Profile Picture
 
-Adds picture to Author profile.
+Permite a los usuarios de añadir fotos a sus perfiles.
 
 h5. SocialMu
 
-A social networking plugin that's used on the Community portal, it could easily be use for other parts of the Blogsfera.
+Plugin para construir un red social. Se usa en el portal de Communidad, y se puede usar fácilmente en las otras partes de la blogsfera.
 
 h5. Widget Subscribe
 
-Widget that would allow users to subscribe or unsubscribe to a blog. When a new post ill be publish on a subscribe blog, this user will receive a notification.
+Widget para subscribirse (o desuscribirse) a un blog. Cuando un nuevo post aparece en el blog, los usuarios suscritos a el recibirán una notificación
 
 h5. Zappo Wpmu Topposts
 
-Simple WordPressMU plugin for tracking top posts and top blogs. Inspired by WordPress.com's Top Posts feature, devloped in the style of wp-shortstats.
+Plugin para seguir los blogs y posts más leidos.
+
+"Más informaciones sobre ese plugin":http://heftagaub.wordpress.com/2007/05/26/latest-wpmu-topposts-plugin/
 
 h4. Install a new plugin
 
@@ -73,34 +75,34 @@ h2. Portals
 
 h3. Blogsfera portal
 
-All widgets code is in _wp-content/mu-plugins/portal_widgets.php_
-Some referenced methods are available in _wp-includes/wpmu-functions.php_
+Puede encontrar todos los widget de la blogsfera en _wp-content/mu-plugins/portal_widgets.php_
+Algunas funciones se encuentran en _wp-includes/wpmu-functions.php_
 
 h4. Widgets description
 
-*Recent articles* : Show last articles from the blogsfera.
+*Recent articles* : Muestra los últimos posts de la blogsfera.
 
-*Avisos* : Display last news from another blog. Blog_id is 2 by default.
+*Avisos* : Muestra el ultimo post de un blog determinado. Blog_id es 2 por defecto, se puede cambiar dentro el plugin.
 
-*Search* : Display search boxes. Depends on Mu_Search plugin.
+*Search* : Muestra la caja del buscador. Depende del plugin Mu_Search.
 
-*Chat* : Display a chat box. Depends on Wordspew plugin.
+*Chat* : Muestra la caja de chat. Depende del plugin Wordspew.
 
-*Mas Activos* : Display most active blogs, the ones with the biggest number of posts. 10 blogs are displayed by default
+*Mas Activos* : Muestra los blogs más activos (aquellos con mayor numero de post). Por defecto, se muestran 10 blogs.
 
-*Mas Leidos* : Display most read blogs. Depends on Zappo Wpmu Topposts plugin.
+*Mas Leidos* : Muestra los blogs más leidos. Depende del plugin Zappo Wpmu Topposts.
 
-*My Blogs* : Display list of owner blog and administration link.
+*My Blogs* : Muestra la lista de los blogs del usuario conectado, y el enlace a la parte de administración
 
-*News* : Display last post from Blogsfera portal.
+*News* : Muestra el ultimo post del portal de la blogsfera.
 
-*Search Results* : Display search results.
+*Search Results* : Muestra los resultados de la busceda.
 
-*Tags Results* : Display tag results.
+*Tags Results* : Muestra los resultados de la busceda de tags.
 
-*Tags* : Display a tag cloud.
+*Tags* : Muestra el nube de tags.
 
-*User recientes* : Display avatars of recent users. 20 users are displayed by default.
+*User recientes* : Muestra los avatars de los usuarios recientes. Por defecto, se muestran 20 usuarios.
 
 h4. Widgets management
 
