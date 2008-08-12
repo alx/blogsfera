@@ -3,13 +3,27 @@
 Plugin Name: Plugin Commander 
 Plugin URI: http://firestats.cc/wiki/WPMUPluginCommander
 Description: Plugin Commander is a plugin management plugin for WPMU
-Version: 1.0.1
+Version: 1.1.2
 Author: Omry Yadan
 Author URI: http://firefang.net/blog
 License: GPL (see http://www.gnu.org/copyleft/gpl.html)
 
 Instructions: copy into mu-plugins  
 */
+
+function pc_textdomain()
+{
+//		uncommet lines to work around wpmu 1.5.1 and 1.3.3 locale bug (http://trac.mu.wordpress.org/ticket/665)
+    global $locale;
+    $old = $locale;
+    $locale = WPLANG;
+    load_plugin_textdomain('plugin-commander', 'wp-content/mu-plugins/plugin-commander-i18n');
+    $locale = $old;
+}
+
+
+add_action('init', 'pc_textdomain');
+
 
 add_action('admin_menu', 'pc_add_menu');
 add_action('wpmu_new_blog','pc_new_blog');
@@ -24,18 +38,19 @@ function pc_add_menu()
 {
 	if (is_site_admin())
 	{
-		add_submenu_page(PC_HOME, 'Plugin Commander', 'Plugin Commander', 8, 'Plugin Commander', 'pc_page');
+		add_submenu_page(PC_HOME, __('Plugin Commander', 'plugin-commander'), __('Plugin Commander', 'plugin-commander'), 8, __('Plugin Commander', 'plugin-commander'), 'pc_page');
 	}
 
-	if (strlen(get_site_option('pc_user_control_list')) > 0)
+	// only show plugins menu to site admins or if the can control one plugin or more.
+	if (is_site_admin() || strlen(get_site_option('pc_user_control_list')) > 0)
 	{
 		add_submenu_page(PC_PLUGINS_HOME,
-						 'Plugins', 
-						 'Plugins', 1, 
-						 'Plugins', 
-						 'pc_user_plugins_page');
+				'Plugins', 
+				'Plugins', 1, 
+				'Plugins', 
+				'pc_user_plugins_page');
 	}
-	
+
 	//$file = substr(__FILE__,strlen(ABSPATH));
 	//add_menu_page( "Plugin Commander","Plugin Commander", 8, $file);
 }
@@ -45,36 +60,46 @@ function pc_user_plugins_page()
 	pc_handle_plugins_cmd();
 ?>
 <div class='wrap'>
-<h2>Manage plugins</h2>
-<table>
+<h2><?php _e('Manage plugins', 'plugin-commander'); ?></h2>
+<?php if (is_site_admin())
+{
+?>
+<?php _e('As site administrator, you can activate or deactivate all plugins for this blog,<br/>even plugins that are not under user control in Site Admin -> Plugin Commander.<br/>Plugins that are under user control are marked in grey.', 'plugin-commander'); ?><br/>
+<?php
+}
+?>
+<table class="widefat">
 	<tr>
-		<th>Name</th>
-		<th>Description</th>
-		<th>Action</th>
+		<th><?php _e('Name', 'plugin-commander'); ?></th>
+		<th><?php _e('Description', 'plugin-commander'); ?></th>
+		<th><?php _e('Action', 'plugin-commander'); ?></th>
 	</tr>
 <?php
 $plugins = get_plugins();
 $user_control = explode(',',get_site_option('pc_user_control_list'));
 $active_plugins = get_option('active_plugins');
+#var_dump($active_plugins);
 foreach($plugins as $file=>$p)
 {
-	if(!in_array($file, $user_control)) continue;
+	$user_controls = in_array($file, $user_control);
+	if (!is_site_admin() && !$user_controls) continue;
+	$bg = $user_controls ? "#eeeeee" : "#ffffff";
 ?>
-	<tr>
+	<tr style="background-color:<?php echo $bg?>">
 		<td><?php echo $p['Name']." ".$p['Version']?></td>
-		<td><?php echo $p['Description']. " by ". $p['Author']?></td>
+		<td><?php echo $p['Description']." ". __("by", 'plugin-commander'). " ".  $p['Author']?></td>
 		<td>
 		<?php 
 			$checked = in_array($file, $active_plugins);
 			if ($checked)
 			{
 				$cmd = "deactivate=$file";
-				$text = "<span style='background-color:#00BFFF'>Deactivate</span>";
+				$text = "<span style='color:#9e0b0f'><strong>".__('Deactivate', 'plugin-commander')."</strong></span>";
 			}
 			else
 			{
 				$cmd = "activate=$file";
-				$text = "<span class='pc_off'>Activate</span>";
+				$text = "<span class='pc_off'>".__('Activate', 'plugin-commander')."</span>";
 			}
 			echo "<a href='".PC_PLUGINS_CMD_BASE."&$cmd'>$text</a>";
 		?>
@@ -88,19 +113,27 @@ echo "</table></div>";
 
 function pc_page()
 {
+	if (!is_site_admin()) return;
 	pc_handle_command();
 ?>
 <div class='wrap'>
-<h2>Plugin Commander</h2>
-<table>
+<h2><?php _e('Manage plugins', 'plugin-commander'); ?></h2>
+<h3><?php _e('Help', 'plugin-commander'); ?></h3>
+<p><strong><?php _e('Auto activation', 'plugin-commander'); ?></strong><br/>
+<?php _e('When auto activation is on for a plugin, newly created blogs will have that plugin activated automatically.<br/>this does not effect existing blogs.', 'plugin-commander'); ?></p>
+<p><strong><?php _e('User control', 'plugin-commander'); ?></strong><br/>
+<?php _e('When user control is enabled for a plugin, all users will be able to activate/deactivate the plugin through the <cite>Manage->Plugins</cite> menu.<br/>This menu will only appear if there is at least one plugin with user control enabled.<br/>Note: if you want to use this, be sure to disable the built-in plugins menu from <cite>Site Admin->Options->Menus</cite> to prevent users from activating plugins which should not be under user control.', 'plugin-commander'); ?></p>
+<p><strong><?php _e('Mass activation/deactivation', 'plugin-commander'); ?></strong><br/>
+<?php _e('Mass activate and Mass deactivate buttons activate/deactivates the specified plugin for all blogs. this only effects existing blogs.', 'plugin-commander'); ?></p>
+<table class="widefat">
 	<tr>
-		<th>Name</th>
-		<th>Version</th>
-		<th>Author</th>
-		<th title='Automatically activate for new blogs'>Auto-activate</th>
-		<th title='Users may activate/deactivate'>User control</th>
-		<th>Mass activate</th>
-		<th>Mass deactivate</th>
+		<th><?php _e('Name', 'plugin-commander'); ?></th>
+		<th><?php _e('Version', 'plugin-commander'); ?></th>
+		<th><?php _e('Author', 'plugin-commander'); ?></th>
+		<th title="<?php _e('Automatically activate for new blogs', 'plugin-commander'); ?>"><?php _e('Auto-activate', 'plugin-commander'); ?></th>
+		<th title="<?php _e('Users may activate/deactivate', 'plugin-commander'); ?>"><?php _e('User control', 'plugin-commander'); ?></th>
+		<th><?php _e('Mass activate', 'plugin-commander'); ?></th>
+		<th><?php _e('Mass deactivate', 'plugin-commander'); ?></th>
 	</tr>
 <?php
 
@@ -120,12 +153,12 @@ foreach($plugins as $file=>$p)
 			if ($checked)
 			{
 				$cmd = "auto_activate_off=$file";
-				$text = "<span style='background-color:#00BFFF'>Turn off</span>";
+				$text = "<span style='color:#9e0b0f'><strong>".__('On, click to turn off', 'plugin-commander')."</strong></span>";
 			}
 			else
 			{
 				$cmd = "auto_activate_on=$file";
-				$text = "<span class='pc_off'>Turn on</span>";
+				$text = "<span class='pc_off'>".__('Off, click to turn on', 'plugin-commander')."</span>";
 			}
 			echo "<a href='".PC_CMD_BASE."&$cmd'>$text</a>";
 		?>
@@ -136,18 +169,18 @@ foreach($plugins as $file=>$p)
 			if ($checked)
 			{
 				$cmd = "user_control_off=$file";
-				$text = "<span style='background-color:#00BFFF'>Disallow</span>";
+				$text = "<span style='color:#9e0b0f'><strong>".__('Enabled, click to disable', 'plugin-commander')."</strong></span>";
 			}
 			else
 			{
 				$cmd = "user_control_on=$file";
-				$text = "<span class='pc_off'>Allow</span>";
+				$text = "<span class='pc_off'>".__('Disabled, click to enable', 'plugin-commander')."</span>";
 			}
 			echo "<a href='".PC_CMD_BASE."&$cmd'>$text</a>";
 		?>
 		</td>
-		<td><?php echo "<a href='".PC_CMD_BASE."&mass_activate=$file'>Activate all</a>"?></td>
-		<td><?php echo "<a href='".PC_CMD_BASE."&mass_deactivate=$file'>Deactivate all</a>"?></td>
+		<td><?php echo "<a href='".PC_CMD_BASE."&mass_activate=$file'>".__('Activate all', 'plugin-commander')."</a>"?></td>
+		<td><?php echo "<a href='".PC_CMD_BASE."&mass_deactivate=$file'>".__('Deactivate all', 'plugin-commander')."</a>"?></td>
 	</tr>
 <?php
 }
@@ -184,7 +217,7 @@ function pc_activate_plugin($blog_id, $plugin)
 	update_option('active_plugins', $current);
 	do_action('activate_' . $plugin);
 	$res = ob_get_clean();
-	if (!empty($res)) echo "Error activating $plugin for blog id=$blog_id: $res<br/>";
+	if (!empty($res)) echo __("Error activating $plugin for blog id=$blog_id: $res<br/>");
 	restore_current_blog();
 }
 

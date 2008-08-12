@@ -12,18 +12,22 @@ Necesite una cuenta de "Feevy.com" para usar ese plugin.
 
 h5. MuSearch
 
-Ese plugin permite de buscar dentro la blogsfera entera: titulo de blog, titulo de post o nombre de autor.
+Ese plugin permite de buscar dentro toda la blogsfera: titulo de blog, titulo de post o nombre de autor.
 
+Hay un widget en la portada de la blogsfera para buscar en la blogsfera y monstrar los resultados.
 
-This plugin will allow you to search the entire blogsfera by blog title, post title or author. Widgets are available on Blogsfera portal to display a search box and the results.
 
 h5. MuTags
 
-This plugin will allow you to search the entire blogsfera by tags. Widgets are available on Blogsfera portal to display a search box and the results.
+Ese plugin permite de buscar dentro toda la blogsfera con los tags.
+
+Hay un widget en la portada de la blogsfera para buscar en la blogsfera y monstrar los resultados.
 
 h5. Plugin Commander
 
-This is an helper for the Blogsfera administrator to quickly install, activate or desactivate plugins for the entire Blosgfera. You'll learn more about this plugins in the next chapters.
+Ese plugin ayuda el administrador de la blogsfera para instalar, activar o desactivar plugins rapidamente. 
+
+"Más informaciones sobre ese plugin":http://firestats.cc/wiki/WPMUPluginCommander
 
 h5. Profile Picture
 
