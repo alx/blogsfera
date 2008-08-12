@@ -65,32 +65,49 @@ h4. Activar un plugin para toda Blogsfera
 h4. Activar un plugin para un blog selectionado
 
 * Ir a la administración del sitio _wp-admin/wpmu-admin.php_
-* Seleccionen el panel de Opciones
+* Seleccionen el panel de _Opciones_
 * Abajo de la pagina, habilitar el menú de plugin
 * Ir en la administración del blog seleccionado
 * Abrir el panel de plugin y activar el plugin a instalar
 * Volver en el panel de Opciones de la administración del sitio
 * Deshabilitar el menú de plugin
 
-h3. Users
+h3. Usuarios
+
+h4. Buscar un usuario
+
+h4. Lista completa de los usuarios
 
 h3. Blogs
 
-h3. Options
+h4. Buscar un blog
 
-h2. Users
+h4. Lista completa de los blogs
 
-h3. Creation
+h3. Design
 
-h3. Profile modification
+h4. Instalar una nueva plantilla
 
-h2. Blogs
+Para cada blog, pueden usar las plantillas de Wordpress.
 
-h3. Creation
+"Descargar plantillas de Wordpress":http://wordpress.org/extend/themes/
 
-h3. Administration
+Para usarlas en la blogsfera, suben la carpeta entera de la plantilla dentro _wp-content/themes_
 
-h2. Portals
+h4. Activar una plantilla
+
+* Ir a la administración del sitio _wp-admin/wpmu-admin.php_
+* Seleccionen el panel de _Temas_
+* Activar la plantilla necesitada
+* Ir a administración del blog donde hay que instalar el tema
+* Seleccionen el panel de _Design_
+* Pinchar la nueva plantilla disponible 
+
+Si no quieren que todos los usuario usan esta nueva plantilla, vuelven a la administración del sitio en la parte de _Temas_, y desactivas la plantilla. No podrían seleccionar de nuevo la plantilla en los blog, pero quedara en blog de antes.
+
+h3. Opciones
+
+h4. Dominios permitidos
 
 h3. Blogsfera portal
 
@@ -122,8 +139,6 @@ h4. Widgets description
 *Tags* : Muestra el nube de tags.
 
 *User recientes* : Muestra los avatars de los usuarios recientes. Por defecto, se muestran 20 usuarios.
-
-h4. Widgets management
 
 h3. Feevy Portal
 
