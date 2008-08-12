@@ -47,11 +47,30 @@ Plugin para seguir los blogs y posts más leidos.
 
 "Más informaciones sobre ese plugin":http://heftagaub.wordpress.com/2007/05/26/latest-wpmu-topposts-plugin/
 
-h4. Install a new plugin
+h4. Instalar un nuevo plugin
 
-h4. Activate plugins for all Blogsfera
+Wordpress Mu contiene 2 carpetas para instalar nuevos plugins:
 
-h4. Activate plugins for a single blog
+* _wp-content/mu-plugins/_ : plugins activados para toda la blogsfera
+* _wp-content/plugins/_ : plugins activados solo para los blogs seleccionados
+
+Depende del tipo de plugin necesitado, suben el archivo del plugin en uno de esos carpetas, después siguen las instrucciones de activación
+
+h4. Activar un plugin para toda Blogsfera
+
+* Ir a la administración del sitio _wp-admin/wpmu-admin.php_
+* Seleccionen el panel del Plugin Commander
+* Pinchen el buton *Mass Activate* para el plugin a instalar
+
+h4. Activar un plugin para un blog selectionado
+
+* Ir a la administración del sitio _wp-admin/wpmu-admin.php_
+* Seleccionen el panel de Opciones
+* Abajo de la pagina, habilitar el menú de plugin
+* Ir en la administración del blog seleccionado
+* Abrir el panel de plugin y activar el plugin a instalar
+* Volver en el panel de Opciones de la administración del sitio
+* Deshabilitar el menú de plugin
 
 h3. Users
 
