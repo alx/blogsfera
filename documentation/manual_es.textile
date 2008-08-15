@@ -72,17 +72,45 @@ h4. Activar un plugin para un blog selectionado
 * Volver en el panel de Opciones de la administración del sitio
 * Deshabilitar el menú de plugin
 
-h3. Usuarios
-
-h4. Buscar un usuario
-
-h4. Lista completa de los usuarios
-
 h3. Blogs
+
+h4. Añadir un blog
+
+* Ir a la administración del sitio _wp-admin/wpmu-admin.php_
+* Seleccionar el panel _Blogs_
+* En el formulario abajo, añadir los datos del nuevo blog
 
 h4. Buscar un blog
 
+* Ir a la administración del sitio _wp-admin/wpmu-admin.php_
+* El primero panel permite de buscar para un blog
+
 h4. Lista completa de los blogs
+
+* Ir a la administración del sitio _wp-admin/wpmu-admin.php_
+* Seleccionar el panel _Blogs_
+
+Las acciones para cada blogs permiten de configurar, administrar y desactivar los blogs.
+
+h3. Usuarios
+
+h4. Añadir un usuario
+
+* Ir a la administración del sitio _wp-admin/wpmu-admin.php_
+* Seleccionar el panel _Usuarios_
+* En el formulario abajo, añadir los datos del nuevo usuario
+
+h4. Buscar un usuario
+
+* Ir a la administración del sitio _wp-admin/wpmu-admin.php_
+* El primero panel permite de buscar para un usuario
+
+h4. Lista completa de los usuarios
+
+* Ir a la administración del sitio _wp-admin/wpmu-admin.php_
+* Seleccionar el panel _Usuarios_
+
+Cada usuarios tiene una lista de blog, eso permite al administrador de ir rapidamente a configurar el blog de un usuario.
 
 h3. Design
 
@@ -107,7 +135,14 @@ Si no quieren que todos los usuario usan esta nueva plantilla, vuelven a la admi
 
 h3. Opciones
 
+* Ir a la administración del sitio _wp-admin/wpmu-admin.php_
+* Seleccionen el panel de _Opciones_
+
 h4. Dominios permitidos
+
+La mejor manera de limitar la inscripción de nuevos blog es de limitar los dominios email con cual los usuarios pueden registrarse.
+
+2 opciones lo permiten: _Limited Email Registrations_ y _Banned Email Domains_
 
 h3. Blogsfera portal
 
@@ -139,7 +174,3 @@ h4. Widgets description
 *Tags* : Muestra el nube de tags.
 
 *User recientes* : Muestra los avatars de los usuarios recientes. Por defecto, se muestran 20 usuarios.
-
-h3. Feevy Portal
-
-h3. Community Portal
