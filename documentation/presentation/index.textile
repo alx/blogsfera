@@ -1,0 +1,28 @@
+h1. Qué es la blogsfera
+
+h2. Wordpress CMS
+h2. Mutli-blog
+h2. Viene en español con varios plugins y temas
+
+h1. Diferencias entre bbvablogs.com y blogsfera
+
+h2. Wordpress-mu 2.3 y 2.6
+h2. Control de identidad en bbvablogs.com
+h2. Panel de Stats
+
+h1. Funcionalidad y plugins (manual)
+
+h1. Administración (Screenshot)
+
+h2. Administación de blogs
+h2. Administacion de usuarios
+h2. Administación de plugins
+h2. Administacion de temas
+
+h1. Instalación (5 min. demo)
+
+h1. Preguntas?
+
+h1. Eliminar diferencias (Taller sobre campos especiales o red cerrada)
+
+h1. Uso de Git y LightHouseApp (Taller)
