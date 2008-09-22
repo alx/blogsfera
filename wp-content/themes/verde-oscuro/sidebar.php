@@ -82,10 +82,12 @@
 
 <?php widget_suscribe(); ?>
 
+<? if get_site_option('feevy_number') : ?>
 <li id="feevy">
 <h2>Feevy</h2>
-<script type="text/javascript" src="http://www.feevy.com/code/6362/open-css"></script>
+<script type="text/javascript" src="http://www.feevy.com/code/<?php echo get_site_option('feevy_number'); ?>/open-css"></script>
 </li>
+<? endif; ?>
 
 <?php endif; ?>
 
