@@ -29,8 +29,8 @@
 <p class="descripcion"><?php bloginfo('description'); ?></p>
 
 <ul>
-	<li><a href="http://bbvablogs.com">Portal</a></li>
-	<li><a href="http://bbvablogs.com/codigo-de-estilo/">C&oacute;digo de estilo</a></li>
+<?php global $current_site; ?>
+<li><a href="<?php echo $current_site->domain; ?>">Portal</a></li>
 <?php wp_list_pages('title_li=' ); ?>
 </ul>
 
